@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -36,11 +37,128 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
       integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
   </head>
 
   <body
-    style="--bga:fixed; --bg:url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cstyle%20type%3D%22text%2Fcss%22%3E%20path%20%7B%20fill%3A%20none%3B%20stroke%3A%20rgba(235,201,143,0.451)%3B%20stroke-width%3A%201.01px%3B%20%7D%20%3C%2Fstyle%3E%20%3Cpath%20vector-effect%3D%22non-scaling-stroke%22%20d%3D%22M111.2%2C81.7L-33.7%2C226.6c-13.9%2C13.9-36.5%2C13.9-50.5%2C0L-229.1%2C81.7%20c-22.5-22.5-6.6-60.9%2C25.2-60.9H86C117.7%2C20.7%2C133.7%2C59.2%2C111.2%2C81.7z%22%2F%3E%20%3Cpath%20vector-effect%3D%22non-scaling-stroke%22%20d%3D%22M366.8%2C338.3L221.9%2C483.2c-13.9%2C13.9-36.5%2C13.9-50.5%2C0L26.6%2C338.3%20c-22.5-22.5-6.6-60.9%2C25.2-60.9h289.8C373.4%2C277.4%2C389.3%2C315.8%2C366.8%2C338.3z%22%2F%3E%20%3Cpath%20vector-effect%3D%22non-scaling-stroke%22%20d%3D%22M40.6%2C423l-144.9-144.9c-13.9-13.9-13.9-36.5%2C0-50.5L40.6%2C82.8%20c22.5-22.5%2C60.9-6.6%2C60.9%2C25.2v289.8C101.5%2C429.6%2C63.1%2C445.5%2C40.6%2C423z%22%2F%3E%20%3Cpath%20vector-effect%3D%22non-scaling-stroke%22%20d%3D%22M296.3%2C679.7L151.4%2C534.8c-13.9-13.9-13.9-36.5%2C0-50.5l144.9-144.9%20c22.5-22.5%2C60.9-6.6%2C60.9%2C25.2v289.8C357.2%2C686.3%2C318.8%2C702.2%2C296.3%2C679.7z%22%2F%3E%20%3Cpath%20vector-effect%3D%22non-scaling-stroke%22%20d%3D%22M623.5%2C81.7L478.6%2C226.6c-13.9%2C13.9-36.5%2C13.9-50.5%2C0L283.2%2C81.7%20c-22.5-22.5-6.6-60.9%2C25.2-60.9h289.8C630%2C20.7%2C646%2C59.2%2C623.5%2C81.7z%22%2F%3E%20%3Cpath%20vector-effect%3D%22non-scaling-stroke%22%20d%3D%22M296.3%2C166.4L151.4%2C21.5c-13.9-13.9-13.9-36.5%2C0-50.5l144.9-144.9%20c22.5-22.5%2C60.9-6.6%2C60.9%2C25.2v289.8C357.2%2C173%2C318.8%2C188.9%2C296.3%2C166.4z%22%2F%3E%20%3Cpath%20vector-effect%3D%22non-scaling-stroke%22%20d%3D%22M552.9%2C423L408%2C278.2c-13.9-13.9-13.9-36.5%2C0-50.5L552.9%2C82.8%20c22.5-22.5%2C60.9-6.6%2C60.9%2C25.2v289.8C613.8%2C429.6%2C575.4%2C445.5%2C552.9%2C423z%22%2F%3E%3C%2Fsvg%3E');">
-    <div style="--c:#333;
+  style="--bga:fixed; --bg:url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cstyle%20type%3D%22text%2Fcss%22%3E%20path%20%7B%20fill%3A%20none%3B%20stroke%3A%20rgba(235,201,143,0.451)%3B%20stroke-width%3A%201.01px%3B%20%7D%20%3C%2Fstyle%3E%20%3Cpath%20vector-effect%3D%22non-scaling-stroke%22%20d%3D%22M111.2%2C81.7L-33.7%2C226.6c-13.9%2C13.9-36.5%2C13.9-50.5%2C0L-229.1%2C81.7%20c-22.5-22.5-6.6-60.9%2C25.2-60.9H86C117.7%2C20.7%2C133.7%2C59.2%2C111.2%2C81.7z%22%2F%3E%20%3Cpath%20vector-effect%3D%22non-scaling-stroke%22%20d%3D%22M366.8%2C338.3L221.9%2C483.2c-13.9%2C13.9-36.5%2C13.9-50.5%2C0L26.6%2C338.3%20c-22.5-22.5-6.6-60.9%2C25.2-60.9h289.8C373.4%2C277.4%2C389.3%2C315.8%2C366.8%2C338.3z%22%2F%3E%20%3Cpath%20vector-effect%3D%22non-scaling-stroke%22%20d%3D%22M40.6%2C423l-144.9-144.9c-13.9-13.9-13.9-36.5%2C0-50.5L40.6%2C82.8%20c22.5-22.5%2C60.9-6.6%2C60.9%2C25.2v289.8C101.5%2C429.6%2C63.1%2C445.5%2C40.6%2C423z%22%2F%3E%20%3Cpath%20vector-effect%3D%22non-scaling-stroke%22%20d%3D%22M296.3%2C679.7L151.4%2C534.8c-13.9-13.9-13.9-36.5%2C0-50.5l144.9-144.9%20c22.5-22.5%2C60.9-6.6%2C60.9%2C25.2v289.8C357.2%2C686.3%2C318.8%2C702.2%2C296.3%2C679.7z%22%2F%3E%20%3Cpath%20vector-effect%3D%22non-scaling-stroke%22%20d%3D%22M623.5%2C81.7L478.6%2C226.6c-13.9%2C13.9-36.5%2C13.9-50.5%2C0L283.2%2C81.7%20c-22.5-22.5-6.6-60.9%2C25.2-60.9h289.8C630%2C20.7%2C646%2C59.2%2C623.5%2C81.7z%22%2F%3E%20%3Cpath%20vector-effect%3D%22non-scaling-stroke%22%20d%3D%22M296.3%2C166.4L151.4%2C21.5c-13.9-13.9-13.9-36.5%2C0-50.5l144.9-144.9%20c22.5-22.5%2C60.9-6.6%2C60.9%2C25.2v289.8C357.2%2C173%2C318.8%2C188.9%2C296.3%2C166.4z%22%2F%3E%20%3Cpath%20vector-effect%3D%22non-scaling-stroke%22%20d%3D%22M552.9%2C423L408%2C278.2c-13.9-13.9-13.9-36.5%2C0-50.5L552.9%2C82.8%20c22.5-22.5%2C60.9-6.6%2C60.9%2C25.2v289.8C613.8%2C429.6%2C575.4%2C445.5%2C552.9%2C423z%22%2F%3E%3C%2Fsvg%3E');">
+  <!-- partial:index.partial.html -->
+    <header
+      style="--w-xl: calc(100vw + 1rem); --t-xl: translate(calc(((100vw - var(--maxw-md)) / -2) - 0rem)); --z: 1000">
+      <a href="#skip" style="--d: none">Skip to main content</a>
+      <a class="home-link" style="--d: none" href="/">Freedom Frome Poverty Foundation</a>
+      <nav style="
+        --bg:var(--oklch-lch-4); 
+        --p:0.2em; 
+        --d:flex; 
+        --ai:center; 
+        --fd: column;">
+    <a style="
+            --d: block;" href="/">
+        <img alt="Sage.Education" src="https://image.startr.cloud/40x40/collaborate_
+            " style="
+            --p:0;">
+    </a>
+
+    <ul style="
+            --d:flex; 
+            --jc:center; 
+            --ai:center; 
+            --list:none; 
+            --ml: 8em; 
+            --w:80%; 
+            --p:0;">
+        <li style="
+                --cur:pointer; 
+                --pos:relative; 
+                --fx:1;">
+            <a style="
+                    --p:1em; 
+                    --td: none; 
+                    --d: block; 
+                    --c: black; 
+                    --translatey-hvr:-8px;" href="
+                    /en/about-us/">About Us</a>
+            <ul style=" 
+                    --d:none; 
+                    --list:none; 
+                    --p:1em; 
+                    --pt:0.8em; 
+                    --m:0; 
+                    --bgc:white; 
+                    --pos:absolute; 
+                    --bt:4px solid #ed1c24">
+                <li style="--translatey-hvr:-8px;"><a href="/en/about-us#history">Our History</a></li>
+                <li style="--translatey-hvr:-8px;"><a href="/en/about-us#vision">Our Vision
+                <li style="--translatey-hvr:-8px;"><a href="/en/about-us#values">Our Values</li>
+                <li style="--translatey-hvr:-8px;"><a href="/en/about-us#partnership">Partnership</li>
+                <li style="--translatey-hvr:-8px;"><a href="/en/about-us#board">Board of Directors</li>
+            </ul>
+        </li>
+
+        <li style=" --cur:pointer; --pos: relative; --fx:1;">
+            <a style=" 
+                    --p:1em; 
+                    --d: block; 
+                    --c: black; 
+                    --td: none; 
+                    --translatey-hvr:-8px;" href="
+                    /en/mission">Mission</a>
+            <ul style=" --d:none; 
+                    --list:none; 
+                    --p:1em; 
+                    --pt:0.8em;
+                    --m:0; 
+                    --bgc:white; 
+                    --pos:absolute; 
+                    --bt:4px solid #ed1c24">
+                <li style="--translatey-hvr:-8px;"><a href="/en/mission#upcoming">Upcoming Mission</a></li>
+                <li style="--translatey-hvr:-8px;"><a href="/en/mission#past">Past Mission</a></li>
+                <li style="--translatey-hvr:-8px;"><a href="/en/mission#covid-19">Covid-19</a></li>
+                <li style="--translatey-hvr:-8px;"><a href="/en/mission#sponsorship">Sponsorship</a></li>
+            </ul>
+        </li>
+
+        <li style=" --cur:pointer; --pos: relative; --fx:1;">
+            <a style=" --p:1em; --d: block; --c: black;  --td: none; --translatey-hvr:-8px;" href="/en/get-involved">Get
+                Involved</a>
+            <ul style=" --d:none; --list:none; --p:1em; --pt:0.8em;
+                    --m:0; --bgc:white; --pos:absolute; 
+                    --bt:4px solid #ed1c24">
+                <li style="--translatey-hvr:-8px;"><a href="/en/get-involved#volunteer">Be a Volunteer</a></li>
+                <li style="--translatey-hvr:-8px;"><a href="/en/get-involved#apply">How to Apply?</a></li>
+                <li style="--translatey-hvr:-8px;"><a href="/en/get-involved#fundraising">Fundraising</a></li>
+                <li style="--translatey-hvr:-8px;"><a href="/en/get-involved#make_a_donation">Make a Donation</a></li>
+            </ul>
+        </li>
+
+
+        <li style="--cur:pointer; --pos: relative; --fx:1;">
+            <a style=" --p:1em; --d: block; --c: black;  --td: none;" href="/fr/">Français</a>
+        </li>
+    </ul>
+</nav>
+    </header>
+
+    <main style="--z: 10" id="skip">
+      
+      <section aria-roledescription="Title Card" 
+        class="wow fadeIn"
+        style="
+          --w-xl: calc(100vw + 1rem);
+          --t-xl: translate(calc(((100vw - var(--maxw-md)) / -2) - 0rem));">
+        <figure style="--h: 66vh; --br: 5px; --of: hidden; --grad: 0deg; --pos: relative; --w:100%">
+          <img src="https://image.startr.cloud/800x401/collaborate_" alt="sample" />
+          <figcaption style="--d: flex; --fd:column; --jc: center; --ai: center; --inset: 0; --pos: absolute">
+            <h1 style=" --c: white; --ts: black 1px 0 10px">Sage. Education</h1>
+            <span style="--c: white; --ts: black 1px 0 10px">  </span>
+          </figcaption>
+        </figure>
+      </section>
+      
+      <section aria-roledescription="Main Content" style="
+          --p: 0 1rem;">
+<div style="--c:#333;
                     --p:2em;
                     --pt:8rem;
                     --radius:8px;
@@ -204,8 +322,34 @@
     </div>
   </section>
 
-</div>
+</div></section>
+    </main>
 
+    <!-- Footer -->
+    <footer style="
+        --w-xl: calc(100vw + 1rem);
+        --t-xl: translate(calc(((100vw - var(--maxw-md)) / -2) - 0rem));
+        --bg: #333;
+        --c: white;
+        --p: 20px;
+      ">
+      <p style="--m: 10px 0">
+    <a style="--c: white" href="/en/contact/">Contact</a><br />
+    <a href="https://www.facebook.com/sage.education/" target="_blank"
+        style="--c: white; --td: none; --f: block; --ft: right; --m: 1em">
+        Follow us on facebook
+        <b style="--bg: white; --c: #333; --p: 0 0.3em; --m: 0.2em">f</b>
+    </a>
+</p>
+
+<p></p>
+<p style="--m: 10px 0">
+    © Startr, LLC 2024<br />
+    All rights reserved.<br />
+    1309 Coffeen Avenue STE 4572<br />
+    Sheridan Wyoming 82801<br />
+</p>
+    </footer>
   </body>
 
 </html>

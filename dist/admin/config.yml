@@ -1,0 +1,23 @@
+# when using the default proxy server port
+local_backend: true
+
+backend:
+  name: git-gateway
+
+media_folder: "static/uploads" # Path to where uploaded files will be stored in your repo
+public_folder: "/uploads" # Path users will access the files from on the deployed site
+
+collections:
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog" # Used in the UI
+    folder: "src/posts/blog" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/blog.njk" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "list", default: "education" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Rating (scale of 1-5)", name: "rating", widget: "number" }
+      - { label: "Summary", name: "summary",widget: "markdown" } 
+      - { label: "Body", name: "body", widget: "markdown" }

@@ -2,9 +2,9 @@
 layout: layouts/blog.njk
 title: "The Power of Politeness: How Language Shapes AI Interactions"
 tags:
-  - "#teachers"
-  - "AI"
-  - "#kindness"
+  - teachers
+  - AI
+  - kindness
 date: 2024-09-26T11:54:00.000Z
 rating: 5
 summary: Using polite, positive language with AI doesn't just promote

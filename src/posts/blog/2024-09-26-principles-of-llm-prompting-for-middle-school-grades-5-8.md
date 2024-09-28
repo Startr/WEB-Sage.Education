@@ -2,9 +2,9 @@
 layout: layouts/blog.njk
 title: Principles of LLM Prompting for Middle School (Grades 5-8)
 tags:
-  - "#students"
-  - "#middle-school"
-  - "AI"
+  - students
+  - middle-school
+  - AI
 date: 2024-09-26T12:00:00.000Z
 rating: 5
 summary: Unlock AI for your schoolwork by asking clear, smart questions. This

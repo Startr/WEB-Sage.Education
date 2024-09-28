@@ -2,9 +2,9 @@
 layout: layouts/blog.njk
 title: Principles of LLM Prompting for Teachers
 tags:
-  - "#teachers"
-  - "AI"
-  - "#prompts"
+  - teachers
+  - AI
+  - prompts
 date: 2024-09-26T11:03:00.000Z
 thumbnail: /uploads/image-6-.webp
 rating: 5
@@ -149,7 +149,7 @@ Repeating important terms helps reinforce what the teacher needs.
 
 **Rationale**: Repetition reinforces the focus of the task.
 
-## **12. Test Understanding**
+### **12. Test Understanding**
 
 Teachers can use the LLM to create quizzes or tests to check student understanding.
 

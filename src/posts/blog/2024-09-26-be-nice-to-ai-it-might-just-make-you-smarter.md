@@ -2,9 +2,9 @@
 layout: layouts/blog.njk
 title: "Be Nice to AI: It Might Just Make You Smarter"
 tags:
-  - "#students"
-  - "AI"
-  - "#kindness"
+  - students
+  - AI
+  - kindness
 date: 2024-09-26T11:45:00.000Z
 rating: 5
 summary: Polite talk with AI chatbots like ChatGPT leads to better answers. For

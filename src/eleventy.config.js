@@ -51,4 +51,8 @@ module.exports = function (eleventyConfig) {
 
 	eleventyConfig.addPlugin(sectionizePlugin);
 	eleventyConfig.addTemplateFormats("md");
+
+	// note at the moment Nunjucks (njk) file are being parsed as Liquid (liquid) files
+	// this results in a number of errors when using Nunjucks specific syntax.
+	// For now, I'm using Liquid syntax in the Nunjucks files to avoid these errors.
 };

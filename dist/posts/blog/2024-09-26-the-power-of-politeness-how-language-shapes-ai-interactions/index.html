@@ -3,41 +3,108 @@
 
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sage Education</title>
-    <!-- Social Card-->
-    <meta property="og:title" content="Sage Education" />
-    <meta property="og:description" content="Sage Education is a platform that provides a wide range of educational resources for students and teachers." />
-    <meta property="og:image" content="https://sage.education/social-card.png" />
-    <meta property="og:url" content="https://sage.education" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Sage Education" />
-    <meta name="twitter:description" content="Sage Education is a platform that provides a wide range of educational resources for students and teachers." />
-    <meta name="twitter:image" content="https://sage.education/social-card.png" />
-    <!-- Include WOW.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"
-      integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-      new WOW().init();
-      // Add smooth scrolling on # links use only native javascript
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault();
-          document.querySelector(this.getAttribute('href')).scrollIntoView({
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sage Education</title>
+<!-- Social Card-->
+<meta property="og:title" content="Sage Education" />
+<meta property="og:description"
+  content="Sage Education is a platform that provides a wide range of educational resources for students and teachers." />
+<meta property="og:image" content="https://sage.education/social-card.png" />
+<meta property="og:url" content="https://sage.education" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Sage Education" />
+<meta name="twitter:description"
+  content="Sage Education is a platform that provides a wide range of educational resources for students and teachers." />
+<meta name="twitter:image" content="https://sage.education/social-card.png" />
+<!-- Include WOW.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"
+  integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- Smooth Scroll Script -->
+<script>
+  new WOW().init();
+
+  // Function to enable smooth scroll
+  function smoothScrollLinks() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetElement = document.querySelector(this.getAttribute('href'));
+        if (targetElement) {
+          targetElement.scrollIntoView({
             behavior: 'smooth'
           });
-        });
+        }
       });
-      
-    </script>
-    <!-- Include Startr Style CSS -->
-    <link rel="stylesheet" href="https://startr.style/style.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-      integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
- 
+    });
+  }
+
+  // Initialize smooth scrolling on first load
+  (document.readyState === "loading") ? document.addEventListener('DOMContentLoaded', smoothScrollLinks) : smoothScrollLinks();
+</script>
+
+<!-- Include Swup (last, to avoid interference with initializations) -->
+<script src="https://unpkg.com/swup@4"></script>
+<script>
+  const swup = new Swup();
+
+  // Reapply smooth scrolling after Swup content is replaced
+  swup.on('contentReplaced', smoothScrollLinks);
+</script>
+
+
+<!-- Include Startr Style CSS -->
+<link rel="stylesheet" href="https://startr.style/style.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+  integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    --bgc: hsla(0deg 100% 54.48% / 66%);
+    --grad: 50deg;
+    --grad-color: hsl(273, 100%, 55%);
+    --c: #d72263;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    background-image: linear-gradient(var(--grad), hsl(235, 100%, 55%) 0%, var(--grad-color) 50%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  blockquote {
+    p {
+      margin: auto;
+    }
+  }
+
+  html.is-changing .transition-fade {
+    view-transition-name: main;
+  }
+
+  ::view-transition-old(main) {
+    animation: fade 0.5s ease-in-out both;
+  }
+
+  ::view-transition-new(main) {
+    animation: fade 0.5s ease-in-out both reverse;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+</style>
   </head>
 
   <body
@@ -140,32 +207,34 @@
 </nav>
     </header>
 
-    <main style="--z: 10" id="skip">
+    <main style="--z: 10" id="swup" class="transition-fade">
       
       <section aria-roledescription="Main Content" style="
-          --p: 0 1rem;">
-<section class="wow fadeIn" style="
-	  --m: auto;	
-	  --bg:white;
-	  --p:3em;
-	  --br:12px;
-	  --shadow:5;
-	  outline:#e6e6e6 dashed;
-	  outline-offset: -0.6em;
-	  --b-width:2px;
-	  --w:80%;
-	  --maxw:66rem;
-	  --ai:center;">
-<h1>The Power of Politeness: How Language Shapes AI Interactions</h1>
+          --p: 0 1rem;"><section class="wow fadeIn" style="
+	--m: auto;	
+	--bg:white;
+	--p:3em;
+	--br:12px;
+	--shadow:5;
+	outline:#e6e6e6 dashed;
+	outline-offset: -0.6em;
+	--b-width:2px;
+	--w:80%;
+	--maxw:66rem;
+	--ai:center;">
+	<h1>The Power of Politeness: How Language Shapes AI Interactions</h1>
 
-<ul class="post-metadata">
-	<time datetime="2024-09-26">September 26, 2024</time>
-	<li style="--ml:2rem"><a href="/tags/teachers/" class="post-tag">teachers</a>, </li>
-	<li style="--ml:2rem"><a href="/tags/ai/" class="post-tag">AI</a>, </li>
-	<li style="--ml:2rem"><a href="/tags/kindness/" class="post-tag">kindness</a></li>
-</ul>
+	<ul class="post-metadata">
+		<time datetime="2024-09-26">September 26, 2024</time>
+		<li style="--ml:2rem"><a href="/tags/teachers/" class="post-tag">teachers</a>, 
+		</li>
+		<li style="--ml:2rem"><a href="/tags/ai/" class="post-tag">AI</a>, 
+		</li>
+		<li style="--ml:2rem"><a href="/tags/kindness/" class="post-tag">kindness</a>
+		</li>
+	</ul>
 
-<p>While ChatGPT and similar AI language models lack genuine emotions, they're designed to mimic human-like conversations. The secret sauce? Engagement. The way we phrase our prompts can dramatically influence an AI's response.</p>
+	<p>While ChatGPT and similar AI language models lack genuine emotions, they're designed to mimic human-like conversations. The secret sauce? Engagement. The way we phrase our prompts can dramatically influence an AI's response.</p>
 <p>Imagine asking your virtual assistant, &quot;Hey, could you please dive deeper into this topic?&quot; Chances are, you'll get a detailed, thoughtful reply. Now picture demanding, &quot;Just give me the answer!&quot; Prepare for a curt, possibly unhelpful response. It turns out even our silicon friends appreciate good manners!</p>
 <section ><h2>Nice Guys Finish First (in AI Land)</h2>
 <p>Research and real-world experience show that when we play nice with AI, it plays nice back. These language models are like social chameleons, adapting their tone to match ours. So, when we're courteous and thoughtful, the AI is more likely to respond in kind, often with more accurate and nuanced information.</p>
@@ -195,10 +264,10 @@
 	  --w:40%;
 	  --maxw:44rem;
 	  --ai:center;">
-<ul class="links-nextprev"><li>Previous: <a href="/posts/blog/2024-09-26-be-nice-to-ai-it-might-just-make-you-smarter/">Be Nice to AI: It Might Just Make You Smarter</a></li><li>Next: <a href="/posts/blog/2024-09-26-principles-for-llm-prompting-for-high-school-grades-9-11/">Principles for LLM Prompting for High School (Grades 9-11)</a></li>
-</ul>
-</section>
-</section>
+	<ul class="links-nextprev"><li>Previous: <a href="/posts/blog/2024-09-26-be-nice-to-ai-it-might-just-make-you-smarter/">Be Nice to AI: It Might Just Make You Smarter</a></li>
+		<li>Next: <a href="/posts/blog/2024-09-26-principles-for-llm-prompting-for-high-school-grades-9-11/">Principles for LLM Prompting for High School (Grades 9-11)</a></li>
+	</ul>
+</section></section>
     </main>
 
     <!-- Footer -->

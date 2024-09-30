@@ -3,41 +3,108 @@
 
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sage Education</title>
-    <!-- Social Card-->
-    <meta property="og:title" content="Sage Education" />
-    <meta property="og:description" content="Sage Education is a platform that provides a wide range of educational resources for students and teachers." />
-    <meta property="og:image" content="https://sage.education/social-card.png" />
-    <meta property="og:url" content="https://sage.education" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Sage Education" />
-    <meta name="twitter:description" content="Sage Education is a platform that provides a wide range of educational resources for students and teachers." />
-    <meta name="twitter:image" content="https://sage.education/social-card.png" />
-    <!-- Include WOW.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"
-      integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-      new WOW().init();
-      // Add smooth scrolling on # links use only native javascript
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault();
-          document.querySelector(this.getAttribute('href')).scrollIntoView({
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sage Education</title>
+<!-- Social Card-->
+<meta property="og:title" content="Sage Education" />
+<meta property="og:description"
+  content="Sage Education is a platform that provides a wide range of educational resources for students and teachers." />
+<meta property="og:image" content="https://sage.education/social-card.png" />
+<meta property="og:url" content="https://sage.education" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Sage Education" />
+<meta name="twitter:description"
+  content="Sage Education is a platform that provides a wide range of educational resources for students and teachers." />
+<meta name="twitter:image" content="https://sage.education/social-card.png" />
+<!-- Include WOW.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"
+  integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- Smooth Scroll Script -->
+<script>
+  new WOW().init();
+
+  // Function to enable smooth scroll
+  function smoothScrollLinks() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetElement = document.querySelector(this.getAttribute('href'));
+        if (targetElement) {
+          targetElement.scrollIntoView({
             behavior: 'smooth'
           });
-        });
+        }
       });
-      
-    </script>
-    <!-- Include Startr Style CSS -->
-    <link rel="stylesheet" href="https://startr.style/style.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-      integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
- 
+    });
+  }
+
+  // Initialize smooth scrolling on first load
+  (document.readyState === "loading") ? document.addEventListener('DOMContentLoaded', smoothScrollLinks) : smoothScrollLinks();
+</script>
+
+<!-- Include Swup (last, to avoid interference with initializations) -->
+<script src="https://unpkg.com/swup@4"></script>
+<script>
+  const swup = new Swup();
+
+  // Reapply smooth scrolling after Swup content is replaced
+  swup.on('contentReplaced', smoothScrollLinks);
+</script>
+
+
+<!-- Include Startr Style CSS -->
+<link rel="stylesheet" href="https://startr.style/style.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+  integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    --bgc: hsla(0deg 100% 54.48% / 66%);
+    --grad: 50deg;
+    --grad-color: hsl(273, 100%, 55%);
+    --c: #d72263;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    background-image: linear-gradient(var(--grad), hsl(235, 100%, 55%) 0%, var(--grad-color) 50%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  blockquote {
+    p {
+      margin: auto;
+    }
+  }
+
+  html.is-changing .transition-fade {
+    view-transition-name: main;
+  }
+
+  ::view-transition-old(main) {
+    animation: fade 0.5s ease-in-out both;
+  }
+
+  ::view-transition-new(main) {
+    animation: fade 0.5s ease-in-out both reverse;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+</style>
   </head>
 
   <body
@@ -140,139 +207,173 @@
 </nav>
     </header>
 
-    <main style="--z: 10" id="skip">
+    <main style="--z: 10" id="swup" class="transition-fade">
       
       <section aria-roledescription="Main Content" style="
-          --p: 0 1rem;">
-<section class="wow fadeIn" style="
-	  --m: auto;	
-	  --bg:white;
-	  --p:3em;
-	  --br:12px;
-	  --shadow:5;
-	  outline:#e6e6e6 dashed;
-	  outline-offset: -0.6em;
-	  --b-width:2px;
-	  --w:80%;
-	  --maxw:66rem;
-	  --ai:center;">
-<h1>Principles of LLM Prompting for Teachers</h1>
+          --p: 0 1rem;"><section class="wow fadeIn" style="
+	--m: auto;	
+	--bg:white;
+	--p:3em;
+	--br:12px;
+	--shadow:5;
+	outline:#e6e6e6 dashed;
+	outline-offset: -0.6em;
+	--b-width:2px;
+	--w:80%;
+	--maxw:66rem;
+	--ai:center;">
+	<h1>Principles of LLM Prompting for Teachers</h1>
 
-<ul class="post-metadata">
-	<time datetime="2024-09-26">September 26, 2024</time>
-	<li style="--ml:2rem"><a href="/tags/teachers/" class="post-tag">teachers</a>, </li>
-	<li style="--ml:2rem"><a href="/tags/ai/" class="post-tag">AI</a>, </li>
-	<li style="--ml:2rem"><a href="/tags/prompts/" class="post-tag">prompts</a></li>
-</ul>
+	<ul class="post-metadata">
+		<time datetime="2024-09-26">September 26, 2024</time>
+		<li style="--ml:2rem"><a href="/tags/teachers/" class="post-tag">teachers</a>, 
+		</li>
+		<li style="--ml:2rem"><a href="/tags/ai/" class="post-tag">AI</a>, 
+		</li>
+		<li style="--ml:2rem"><a href="/tags/prompts/" class="post-tag">prompts</a>
+		</li>
+	</ul>
 
-<p>Teachers have a foundational knowledge of education but may not be familiar with advanced concepts in AI or prompting. This list of &quot;Prompt Principles&quot; is practical, easy to understand, and directly relevant to their daily instructional tasks. The aim is to empower educators to use large language models (LLMs) effectively in creating curriculum content, enhancing their lesson plans, and supporting student learning.</p>
-<section ><h3>Prompt Principles for Teachers</h3>
-</section><section ><h3>1. <strong>Be Direct but Consider Politeness</strong></h3>
+	<p>Teachers have a foundational knowledge of education but may not be familiar with advanced concepts in AI or prompting. This list of &quot;Prompt Principles&quot; is practical, easy to understand, and directly relevant to their daily instructional tasks. The aim is to empower educators to use large language models (LLMs) effectively in creating curriculum content, enhancing their lesson plans, and supporting student learning. <a href="#consider-the-audience">consider-the-audience</a></p>
+<section ><h3>1. Be Direct but Consider Politeness</h3>
 <p>While brevity is important, studies have shown that using polite language can encourage more creative and human-like responses from AI. Feel free to use phrases like &quot;please&quot; or &quot;thank you,&quot; especially if it mirrors the tone you'd like to see in the response.</p>
-<p><strong>Example Prompt</strong>:</p>
-<ul>
-<li>Please list five activities to teach addition to first graders.</li>
-</ul>
-<p><strong>Rationale</strong>: Teachers are accustomed to modeling politeness in the classroom, and using polite language with AI can result in more nuanced, thoughtful responses while maintaining clarity. <strong>LINK NEEDED</strong></p>
-</section><section ><h3>2. <strong>Consider the Audience</strong></h3>
+</p>
+<section style="--m:2rem auto;--p:2rem;--br:2rem; --shadow:8"><h4 style="--d:none">Example Prompt and Rational</h4>
+<section ><h5>Example Prompt:</h5>
+<blockquote>
+<p>Please list five activities to teach addition to first graders.</p>
+</blockquote>
+</section><section ><h5>Rationale:</h5>
+<p>Teachers are accustomed to modeling politeness in the classroom, and using polite language with AI can result in more nuanced, thoughtful responses while maintaining clarity. LINK NEEDED</p>
+</section></section></section><section ><h3 id="consider-the-audience">2. Consider the Audience</h3>
 <p>Clearly specify the grade level or student group when asking the LLM for resources or explanations. This helps the model tailor its output to be age-appropriate.</p>
-<p><strong>Example Prompt</strong>:</p>
-<ul>
-<li>Explain the concept of photosynthesis in simple terms suitable for third graders.</li>
-</ul>
-<p><strong>Rationale</strong>: Teachers need resources that match their students' comprehension levels, so directing the model to consider the audience ensures relevance.</p>
-</section><section ><h3>3. <strong>Break Down Tasks</strong></h3>
+</p>
+<section style="--m:2rem auto;--p:2rem;--br:2rem; --shadow:8"><h4 style="--d:none">Example Prompt and Rational</h4>
+<section ><h5>Example Prompt:</h5>
+<blockquote>
+<p style="--levitate-hvr:8">Explain the concept of photosynthesis in simple terms suitable for third graders.</p>
+</blockquote>
+</section><section ><h5>Rationale:</h5>
+<p>Teachers need resources that match their students' comprehension levels, so directing the model to consider the audience ensures relevance.</p>
+</section></section></section><section ><h3>3. Break Down Tasks</h3>
 <p>If your task is complex, break it down into smaller steps and ask the LLM one question at a time. This helps ensure that each part of the task is handled thoroughly.</p>
-<p><strong>Example Prompt</strong>:</p>
-<ul>
-<li>First, list the key events of the American Revolution. Then, for each event, provide a short description suitable for fourth graders.</li>
-</ul>
-<p><strong>Rationale</strong>: Teachers often scaffold lessons to build understanding, so they should do the same when using an LLM to create content.</p>
-</section><section ><h3>4. <strong>Use Affirmative Language</strong></h3>
+</p>
+<section style="--m:2rem auto;--p:2rem;--br:2rem; --shadow:8"><h4 style="--d:none">Example Prompt and Rational</h4>
+<section ><h5>Example Prompt:</h5>
+<blockquote>
+<p>First, list the key events of the American Revolution. Then, for each event, provide a short description suitable for fourth graders.</p>
+</blockquote>
+</section><section ><h5>Rationale:</h5>
+<p>Teachers often scaffold lessons to build understanding, so they should do the same when using an LLM to create content.</p>
+</section></section></section><section ><h3>4. Use Affirmative Language</h3>
 <p>Use clear, positive instructions like &quot;Create&quot; or &quot;Explain,&quot; rather than using negatives like &quot;Don't forget.&quot;</p>
-<p><strong>Example Prompt</strong>:</p>
-<ul>
-<li>Create a list of fun science experiments for second graders.</li>
-</ul>
-<p><strong>Rationale</strong>: Positive language helps ensure the model focuses on what you want rather than what you don’t want.</p>
-</section><section ><h3>5. <strong>Seek Clarity</strong></h3>
+</p>
+<section style="--m:2rem auto;--p:2rem;--br:2rem; --shadow:8"><h4 style="--d:none">Example Prompt and Rational</h4>
+<section ><h5>Example Prompt:</h5>
+<blockquote>
+<p>Create a list of fun science experiments for second graders.</p>
+</blockquote>
+</section><section ><h5>Rationale:</h5>
+<p>Positive language helps ensure the model focuses on what you want rather than what you don’t want.</p>
+</section></section></section><section ><h3>5. Seek Clarity</h3>
 <p>If you need a clearer explanation or want to understand a topic better, ask the LLM to explain it in simple terms or as if you're teaching young students.</p>
-<p><strong>Example Prompts</strong></p>
+</p>
+<section style="--m:2rem auto;--p:2rem;--br:2rem; --shadow:8"><h4 style="--d:none">Example Prompt and Rational</h4>
+<section ><h5>Example Prompt:</h5>
+<blockquote>
 <ul>
 <li>Explain the water cycle in a way a second-grader would understand.</li>
 <li>Break down the steps of a simple science experiment for first graders.</li>
 </ul>
-<p><strong>Rationale</strong>: Teachers need content that’s easily digestible for their students, so prompts should be clear and focused on simplicity.</p>
-</section><section ><h3>6. <strong>Example-Driven Prompts</strong></h3>
-<p>Provide examples when asking the LLM to generate content. This helps the model understand what you’re looking for. or even go further and use chain of thought prompting, <strong>Link needed</strong></p>
-<p><strong>Example Prompt</strong>:</p>
-<ul>
-<li>Here's an example of a math problem I use for second grade: 'If you have 5 apples and you eat 2, how many do you have left?' Now, create five similar problems.</li>
-</ul>
-<p><strong>Rationale</strong>: Examples clarify expectations, which is particularly useful when creating consistent and effective educational materials.</p>
-</section><section ><h2>7.  Markdown: <strong>Unlock the Power of Simple Formatting</strong></h2>
+</blockquote>
+</section><section ><h5>Rationale:</h5>
+<p>Teachers need content that’s easily digestible for their students, so prompts should be clear and focused on simplicity.</p>
+</section></section></section><section ><h3>6. Example-Driven Prompts</h3>
+<p>Provide examples when asking the LLM to generate content. This helps the model understand what you’re looking for. or even go further and use chain of thought prompting, Link needed.</p>
+</p>
+<section style="--m:2rem auto;--p:2rem;--br:2rem; --shadow:8"><h4 style="--d:none">Example Prompt and Rational</h4>
+<section ><h5>Example Prompt:</h5>
+<blockquote>
+<p>Here's an example of a math problem I use for second grade: 'If you have 5 apples and you eat 2, how many do you have left?' Now, create five similar problems.</p>
+</blockquote>
+</section><section ><h5>Rationale:</h5>
+<p>Examples clarify expectations, which is particularly useful when creating consistent and effective educational materials.</p>
+</section></section></section><section ><h3>7.  Markdown: Unlock the Power of Simple Formatting</h3>
 <p>Learning Markdown can greatly enhance your experience instructing AIs. This simple, lightweight formatting system is easy to grasp, requiring just a few basic rules.</p>
 <p>One essential rule to understand is how to add examples. This is achieved by placing three backticks ``` on their own line before and after any  you wish to display.</p>
-<p><strong>Tip:</strong> Hold Shift + Return to create new lines before submitting your prompts.</p>
-<p><strong>Example Prompt:</strong></p>
-<ul>
-<li>
+<p><em><strong>Tip: Hold Shift + Return to create new lines before submitting your prompts.</strong></em></p>
+</p>
+<section style="--m:2rem auto;--p:2rem;--br:2rem; --shadow:8"><h4 style="--d:none">Example Prompt and Rational</h4>
+<section ><h5>Example Prompt:</h5>
 <p>Acting as grade three english instructor write three sentences in the same style</p>
-<pre><code>The cat sat on the mat.
-
-
-</code></pre>
+<blockquote>
+<p><strong>```</strong></p>
+<p>The cat sat on the mat.</p>
+<p><strong>```</strong></p>
 <p>Explain the structure of the sentences.</p>
-</li>
-</ul>
-<p><strong>Rationale:</strong> By following this pattern, you can clearly separate instructions from examples. This helps improve the understanding of language models, which have learned this pattern from research and development README files.</p>
-</section><section ><h2><strong>8. Use Delimiters and Output Primers</strong>:</h2>
+</blockquote>
+</section><section ><h5>Rationale:</h5>
+<p>By following this pattern, you can clearly separate instructions from examples. This helps improve the understanding of language models, which have learned this pattern from research and development README files.</p>
+</section></section></section><section ><h3>8. Use Delimiters and Output Primers:</h3>
 <p>Encourage teachers to use delimiters like triple pound <code>###</code> to organize their prompts. These come from the traditional headers of Markdown formatting.
-<strong>Note: Shift Return allows you to add new lines before you submit your prompt.</strong></p>
-<p><strong>Example Prompt</strong>:</p>
-<ul>
-<li>
-<section ><h3>Instruction: Create five math problems for second graders.</h3>
-</li>
-</ul>
-</section><section ><h3>Example: If you have 10 pencils and give away 3, how many do you have left?</h3>
-<p><strong>Rationale</strong>: This ensures clarity and structure in the generated content.</p>
-</section><section ><h3>9. <strong>Start with Clear Instructions</strong></h3>
+Note: Shift Return allows you to add new lines before you submit your prompt.</p>
+</p>
+<section style="--m:2rem auto;--p:2rem;--br:2rem; --shadow:8"><h4 style="--d:none">Example Prompt and Rational</h4>
+<section ><h5>Example Prompt:</h5>
+<blockquote>
+<p>Create five math problems for second graders.</p>
+<p><strong>###</strong> Example:</p>
+<p>If you have 10 pencils and give away 3, how many do you have left?</p>
+</blockquote>
+</section><section ><h5>Rationale:</h5>
+<p>This ensures clarity and structure in the generated content.</p>
+</section></section></section><section ><h3>9. Start with Clear Instructions</h3>
 <p>Among with markdown formatting for breaking up sections it’s a great ideas to begin your prompt with a clear instruction, then add examples or specific questions if needed. This helps the LLM stay focused on your request.</p>
-<p><strong>Example Prompt</strong>:</p>
-<ul>
-<li>
-</section><section ><h3>Instruction</h3>
+</p>
+<section style="--m:2rem auto;--p:2rem;--br:2rem; --shadow:8"><h4 style="--d:none">Example Prompt and Rational</h4>
+<section ><h5>Example Prompt:</h5>
+<blockquote>
 <p>Create a lesson plan outline for teaching fractions to third graders.</p>
-</li>
-</ul>
-</section><section ><h3>Example Include activities like using pie charts or visual aids.</h3>
-<p><strong>Rationale</strong>: Structured prompts are more likely to yield organized and useful outputs, making lesson planning more straightforward for teachers.</p>
-</section><section ><h3>10. <strong>Assign a Role</strong></h3>
+<p>Include activities like using pie charts or visual aids.</p>
+</blockquote>
+</section><section ><h5>Rationale:</h5>
+<p>Structured prompts are more likely to yield organized and useful outputs, making lesson planning more straightforward for teachers.</p>
+</section></section></section><section ><h3>10. Assign a Role</h3>
 <p>Tell the LLM what role it should take, such as a curriculum developer, to get more tailored responses.</p>
-<p><strong>Example Prompt</strong>:</p>
-<ul>
-<li>Act as a curriculum developer and create a weekly lesson plan for a seventh-grade science unit on ecosystems.</li>
-</ul>
-<p><strong>Rationale</strong>: Specifying a role helps the model generate responses that are more aligned with the teacher's specific needs.</p>
-</section><section ><h3><strong>11. Repeat Key Words</strong></h3>
+</p>
+<section style="--m:2rem auto;--p:2rem;--br:2rem; --shadow:8"><h4 style="--d:none">Example Prompt and Rational</h4>
+<section ><h5>Example Prompt:</h5>
+<blockquote>
+<p>Act as a curriculum developer and create a weekly lesson plan for a seventh-grade science unit on ecosystems.</p>
+</blockquote>
+</section><section ><h5>Rationale:</h5>
+<p>Specifying a role helps the model generate responses that are more aligned with the teacher's specific needs.</p>
+</section></section></section><section ><h3>11. Repeat Key Words</h3>
 <p>Repeating important terms helps reinforce what the teacher needs.</p>
-<p><strong>Example Prompt</strong>:</p>
-<ul>
-<li>Create a list of vocabulary words for first graders. Focus on simple, everyday words they will encounter often: cat, dog, house.</li>
-</ul>
-<p><strong>Rationale</strong>: Repetition reinforces the focus of the task.</p>
-</section><section ><h3><strong>12. Test Understanding</strong></h3>
+</p>
+<section style="--m:2rem auto;--p:2rem;--br:2rem; --shadow:8"><h4 style="--d:none">Example Prompt and Rational</h4>
+<section ><h5>Example Prompt:</h5>
+<blockquote>
+<p>Create a list of vocabulary words for first graders.</p>
+<p>Focus on simple, everyday vocabulary words first graders will encounter often. For example, start with: cat, dog, house.</p>
+</blockquote>
+</section><section ><h5>Rationale:</h5>
+<p>Repetition reinforces the focus of the task.</p>
+</section></section></section><section ><h3>12. Test Understanding</h3>
 <p>Teachers can use the LLM to create quizzes or tests to check student understanding.</p>
-<p><strong>Example Prompt</strong>:</p>
-<ul>
-<li>Generate a five-question quiz on the water cycle for third graders.</li>
-</ul>
-<p><strong>Rationale</strong>: This allows teachers to quickly create assessment tools that are aligned with their lesson objectives.</p>
-</section><section ><h3>Conclusion</h3>
+</p>
+<section style="--m:2rem auto;--p:2rem;--br:2rem; --shadow:8"><h4 style="--d:none">Example Prompt and Rational</h4>
+<section ><h5>Example Prompt:</h5>
+<blockquote>
+<p>Generate a five-question quiz on the water cycle for third graders.</p>
+</blockquote>
+</section><section ><h5>Rationale:</h5>
+<p>This allows teachers to quickly create assessment tools that are aligned with their lesson objectives.</p>
+</p>
+</section></section></section><section style="--m:3rem auto;"><h2>Conclusion</h2>
 <p>We're excited to share these simple prompting principles with you, educators and teachers. Our hope is that these guidelines will inspire you to experiment with and effectively harness the power of large language models for your students.</p>
 <p>Empowering teachers and learners alike, these models hold incredible potential for creative expression and innovative lesson planning. Stay tuned for more lessons where we'll dive deeper into these exciting topics!</p>
-</section><section ><h3><strong>Next Stop</strong></h3>
+<section ><h4>Next Stop</h4>
 <p>If you found this brief introduction intriguing, take the next step and explore our guide to prompt principles for students. The possibilities are endless, and we can't wait to see what you create!</p>
 </section></section>
 </section>
@@ -288,10 +389,10 @@
 	  --w:40%;
 	  --maxw:44rem;
 	  --ai:center;">
-<ul class="links-nextprev"><li>Previous: <a href="/our_test_page/">Canadians.Love/our_test_page</a></li><li>Next: <a href="/posts/blog/2024-09-26-be-nice-to-ai-it-might-just-make-you-smarter/">Be Nice to AI: It Might Just Make You Smarter</a></li>
-</ul>
-</section>
-</section>
+	<ul class="links-nextprev"><li>Previous: <a href="/our_test_page/">Canadians.Love/our_test_page</a></li>
+		<li>Next: <a href="/posts/blog/2024-09-26-be-nice-to-ai-it-might-just-make-you-smarter/">Be Nice to AI: It Might Just Make You Smarter</a></li>
+	</ul>
+</section></section>
     </main>
 
     <!-- Footer -->

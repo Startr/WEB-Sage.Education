@@ -3,41 +3,108 @@
 
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sage Education</title>
-    <!-- Social Card-->
-    <meta property="og:title" content="Sage Education" />
-    <meta property="og:description" content="Sage Education is a platform that provides a wide range of educational resources for students and teachers." />
-    <meta property="og:image" content="https://sage.education/social-card.png" />
-    <meta property="og:url" content="https://sage.education" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Sage Education" />
-    <meta name="twitter:description" content="Sage Education is a platform that provides a wide range of educational resources for students and teachers." />
-    <meta name="twitter:image" content="https://sage.education/social-card.png" />
-    <!-- Include WOW.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"
-      integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-      new WOW().init();
-      // Add smooth scrolling on # links use only native javascript
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault();
-          document.querySelector(this.getAttribute('href')).scrollIntoView({
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sage Education</title>
+<!-- Social Card-->
+<meta property="og:title" content="Sage Education" />
+<meta property="og:description"
+  content="Sage Education is a platform that provides a wide range of educational resources for students and teachers." />
+<meta property="og:image" content="https://sage.education/social-card.png" />
+<meta property="og:url" content="https://sage.education" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Sage Education" />
+<meta name="twitter:description"
+  content="Sage Education is a platform that provides a wide range of educational resources for students and teachers." />
+<meta name="twitter:image" content="https://sage.education/social-card.png" />
+<!-- Include WOW.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"
+  integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- Smooth Scroll Script -->
+<script>
+  new WOW().init();
+
+  // Function to enable smooth scroll
+  function smoothScrollLinks() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetElement = document.querySelector(this.getAttribute('href'));
+        if (targetElement) {
+          targetElement.scrollIntoView({
             behavior: 'smooth'
           });
-        });
+        }
       });
-      
-    </script>
-    <!-- Include Startr Style CSS -->
-    <link rel="stylesheet" href="https://startr.style/style.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-      integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
- 
+    });
+  }
+
+  // Initialize smooth scrolling on first load
+  (document.readyState === "loading") ? document.addEventListener('DOMContentLoaded', smoothScrollLinks) : smoothScrollLinks();
+</script>
+
+<!-- Include Swup (last, to avoid interference with initializations) -->
+<script src="https://unpkg.com/swup@4"></script>
+<script>
+  const swup = new Swup();
+
+  // Reapply smooth scrolling after Swup content is replaced
+  swup.on('contentReplaced', smoothScrollLinks);
+</script>
+
+
+<!-- Include Startr Style CSS -->
+<link rel="stylesheet" href="https://startr.style/style.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+  integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    --bgc: hsla(0deg 100% 54.48% / 66%);
+    --grad: 50deg;
+    --grad-color: hsl(273, 100%, 55%);
+    --c: #d72263;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    background-image: linear-gradient(var(--grad), hsl(235, 100%, 55%) 0%, var(--grad-color) 50%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  blockquote {
+    p {
+      margin: auto;
+    }
+  }
+
+  html.is-changing .transition-fade {
+    view-transition-name: main;
+  }
+
+  ::view-transition-old(main) {
+    animation: fade 0.5s ease-in-out both;
+  }
+
+  ::view-transition-new(main) {
+    animation: fade 0.5s ease-in-out both reverse;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+</style>
   </head>
 
   <body
@@ -140,192 +207,194 @@
 </nav>
     </header>
 
-    <main style="--z: 10" id="skip">
+    <main style="--z: 10" id="swup" class="transition-fade">
       
       <section aria-roledescription="Main Content" style="
-          --p: 0 1rem;">
-<section class="wow fadeIn" style="
-	  --m: auto;	
-	  --bg:white;
-	  --p:3em;
-	  --br:12px;
-	  --shadow:5;
-	  outline:#e6e6e6 dashed;
-	  outline-offset: -0.6em;
-	  --b-width:2px;
-	  --w:80%;
-	  --maxw:66rem;
-	  --ai:center;">
-<h1>Principles for LLM Prompting for High School (Grades 9-11)</h1>
+          --p: 0 1rem;"><section class="wow fadeIn" style="
+	--m: auto;	
+	--bg:white;
+	--p:3em;
+	--br:12px;
+	--shadow:5;
+	outline:#e6e6e6 dashed;
+	outline-offset: -0.6em;
+	--b-width:2px;
+	--w:80%;
+	--maxw:66rem;
+	--ai:center;">
+	<h1>Principles for LLM Prompting for High School (Grades 9-11)</h1>
 
-<ul class="post-metadata">
-	<time datetime="2024-09-26">September 26, 2024</time>
-	<li style="--ml:2rem"><a href="/tags/student/" class="post-tag">#student</a>, </li>
-	<li style="--ml:2rem"><a href="/tags/high-school/" class="post-tag">#high-school</a>, </li>
-	<li style="--ml:2rem"><a href="/tags/ai/" class="post-tag">AI</a></li>
-</ul>
+	<ul class="post-metadata">
+		<time datetime="2024-09-26">September 26, 2024</time>
+		<li style="--ml:2rem"><a href="/tags/student/" class="post-tag">#student</a>, 
+		</li>
+		<li style="--ml:2rem"><a href="/tags/high-school/" class="post-tag">#high-school</a>, 
+		</li>
+		<li style="--ml:2rem"><a href="/tags/ai/" class="post-tag">AI</a>
+		</li>
+	</ul>
 
-<p>You might be familiar with school subjects, but chances are you haven't had much exposure to how artificial intelligence (AI) and Large Language Models (LLMs) work. While we often think of AI as a single entity, the reality is that what powers today's AI tools are LLMs - advanced systems trained on vast amounts of data. Think of LLMs as condensed versions of the internet's knowledge, distilled into structures that can help us generate new ideas and insights.</p>
+	<p>You might be familiar with school subjects, but chances are you haven't had much exposure to how artificial intelligence (AI) and Large Language Models (LLMs) work. While we often think of AI as a single entity, the reality is that what powers today's AI tools are LLMs - advanced systems trained on vast amounts of data. Think of LLMs as condensed versions of the internet's knowledge, distilled into structures that can help us generate new ideas and insights.</p>
 <p>At the heart of using AI effectively is the &quot;prompt&quot; - the input you provide to the model. Suppose your prompt is vague or lacks detail. In that case, the AI's response will likely miss the mark, delivering irrelevant or unsatisfactory results. For example, asking, &quot;What can you tell me about history?&quot; will likely yield a broad, unfocused response. However, refining the question to &quot;What were the causes of World War II?&quot; will return a much more targeted and insightful answer.</p>
 <p>This is why clear communication is key when working with LLMs. The more specific your questions, the more useful and accurate the AI's responses will be. Developing the ability to craft precise prompts can turn AI into a powerful ally, whether you're brainstorming ideas for a project, enhancing your school assignments, or exploring new areas of learning. In fact, learning how to ask good questions isn't just useful for working with AI - it's a fundamental skill that will benefit you across all aspects of life.</p>
 <p>That's where this guide comes in. It offers straightforward tips called &quot;Prompt Principles,&quot; designed to help you communicate more effectively with AI tools. These principles are easy to grasp and can make your schoolwork more engaging and fun by using AI to spark new ideas and deepen your understanding of what you're learning in class.</p>
 <hr>
 <section ><h3>Prompt Principles for High School Students</h3>
-</section><section ><h3>1. <strong>Break Down Complex Tasks</strong></h3>
-<p><strong>Description</strong>: Instead of asking for a broad answer, break the question into smaller, more specific parts to make it easier for the LLM to respond.</p>
-<p><strong>Weak Prompt Example</strong>:</p>
+</section><section ><h3>1. Break Down Complex Tasks</h3>
+<p>Description: Instead of asking for a broad answer, break the question into smaller, more specific parts to make it easier for the LLM to respond.</p>
+<p>Weak Prompt Example:</p>
 <ul>
 <li>&quot;Explain how governments work.&quot;</li>
 </ul>
-<p><strong>Why it's weak</strong>: The prompt is too broad and doesn't guide the LLM on which aspect of government to focus on, leading to an unfocused answer.</p>
-<p><strong>Improved Prompt Example</strong>:</p>
+<p>Why it's weak: The prompt is too broad and doesn't guide the LLM on which aspect of government to focus on, leading to an unfocused answer.</p>
+<p>Improved Prompt Example:</p>
 <ul>
 <li>&quot;Can you explain how laws are made by the government, starting with how a bill becomes a law?&quot;</li>
 </ul>
-<p><strong>How it's improved</strong>: The improved version narrows the focus to a specific part of government (law-making), making it a more digestible task.</p>
+<p>How it's improved: The improved version narrows the focus to a specific part of government (law-making), making it a more digestible task.</p>
 <hr>
-</section><section ><h3>2. <strong>Explain Concepts in Simple Terms</strong></h3>
-<p><strong>Description</strong>: Ask the LLM to explain a complex topic in a way that’s easy to understand by specifying the difficulty level.</p>
-<p><strong>Weak Prompt Example</strong>:</p>
+</section><section ><h3>2. Explain Concepts in Simple Terms</h3>
+<p>Description: Ask the LLM to explain a complex topic in a way that’s easy to understand by specifying the difficulty level.</p>
+<p>Weak Prompt Example:</p>
 <ul>
 <li>&quot;Explain quantum physics.&quot;</li>
 </ul>
-<p><strong>Why it's weak</strong>: This prompt is too general and doesn’t specify the difficulty level, which may result in a response that’s too advanced or vague.</p>
-<p><strong>Improved Prompt Example</strong>:</p>
+<p>Why it's weak: This prompt is too general and doesn’t specify the difficulty level, which may result in a response that’s too advanced or vague.</p>
+<p>Improved Prompt Example:</p>
 <ul>
 <li>&quot;Explain the basic idea of quantum physics as if I’m just starting to learn it.&quot;</li>
 </ul>
-<p><strong>How it's improved</strong>: The revised prompt makes it clear that the explanation should be simplified, helping the LLM tailor its response to a beginner level.</p>
+<p>How it's improved: The revised prompt makes it clear that the explanation should be simplified, helping the LLM tailor its response to a beginner level.</p>
 <hr>
-</section><section ><h3>3. <strong>Use Affirmative Language</strong></h3>
-<p><strong>Description</strong>: Use clear, positive instructions about what you want the model to do, rather than focusing on what it shouldn't do.</p>
-<p><strong>Weak Prompt Example</strong>:</p>
+</section><section ><h3>3. Use Affirmative Language</h3>
+<p>Description: Use clear, positive instructions about what you want the model to do, rather than focusing on what it shouldn't do.</p>
+<p>Weak Prompt Example:</p>
 <ul>
 <li>&quot;Don’t give me an unclear answer.&quot;</li>
 </ul>
-<p><strong>Why it's weak</strong>: Focusing on what <em>not</em> to do is unhelpful. The model might still give a vague answer, as it’s not clear what is expected.</p>
-<p><strong>Improved Prompt Example</strong>:</p>
+<p>Why it's weak: Focusing on what <em>not</em> to do is unhelpful. The model might still give a vague answer, as it’s not clear what is expected.</p>
+<p>Improved Prompt Example:</p>
 <ul>
 <li>&quot;Give me a clear, detailed answer about how renewable energy works.&quot;</li>
 </ul>
-<p><strong>How it's improved</strong>: The improved prompt focuses on what you <em>want</em>—a clear and detailed explanation—making it easier for the LLM to meet expectations.</p>
+<p>How it's improved: The improved prompt focuses on what you <em>want</em>—a clear and detailed explanation—making it easier for the LLM to meet expectations.</p>
 <hr>
-</section><section ><h3>4. <strong>Role-Play Prompts</strong></h3>
-<p><strong>Description</strong>: Ask the LLM to take on a specific role (e.g., teacher, historian) to help deliver more tailored, context-specific responses.</p>
-<p><strong>Weak Prompt Example</strong>:</p>
+</section><section ><h3>4. Role-Play Prompts</h3>
+<p>Description: Ask the LLM to take on a specific role (e.g., teacher, historian) to help deliver more tailored, context-specific responses.</p>
+<p>Weak Prompt Example:</p>
 <ul>
 <li>&quot;Tell me about history like you're talking to an alien.&quot;</li>
 </ul>
-<p><strong>Why it's weak</strong>: Asking the model to explain to an alien can confuse the tone and level of the response.</p>
-<p><strong>Improved Prompt Example</strong>:</p>
+<p>Why it's weak: Asking the model to explain to an alien can confuse the tone and level of the response.</p>
+<p>Improved Prompt Example:</p>
 <ul>
 <li>&quot;Pretend you are a historian. Explain the causes of World War I to someone who is learning it for the first time.&quot;</li>
 </ul>
-<p><strong>How it's improved</strong>: The improved prompt uses a relatable role (a historian) and asks for an explanation in a clear and accessible way.</p>
+<p>How it's improved: The improved prompt uses a relatable role (a historian) and asks for an explanation in a clear and accessible way.</p>
 <hr>
-</section><section ><h3>5. <strong>Use Delimiters (Boundaries)</strong></h3>
-<p><strong>Description</strong>: Set clear boundaries or limits in your prompt, such as word count or specific topics, to guide the model’s response.</p>
-<p><strong>Weak Prompt Example</strong>:</p>
+</section><section ><h3>5. Use Delimiters (Boundaries)</h3>
+<p>Description: Set clear boundaries or limits in your prompt, such as word count or specific topics, to guide the model’s response.</p>
+<p>Weak Prompt Example:</p>
 <ul>
 <li>&quot;Give me a short explanation of climate change.&quot;</li>
 </ul>
-<p><strong>Why it's weak</strong>: &quot;Short&quot; is too vague; the model might not know how brief the answer should be.</p>
-<p><strong>Improved Prompt Example</strong>:</p>
+<p>Why it's weak: &quot;Short&quot; is too vague; the model might not know how brief the answer should be.</p>
+<p>Improved Prompt Example:</p>
 <ul>
 <li>&quot;Give me a 100-word explanation of climate change.&quot;</li>
 </ul>
-<p><strong>How it's improved</strong>: Setting a specific word limit makes the expectations clear, allowing the LLM to provide a concise but informative answer.</p>
+<p>How it's improved: Setting a specific word limit makes the expectations clear, allowing the LLM to provide a concise but informative answer.</p>
 <hr>
-</section><section ><h3>6. <strong>Use Leading Words Like ‘Step by Step’</strong></h3>
-<p><strong>Description</strong>: Ask the LLM to explain a process or concept step by step to ensure a clear and structured explanation.</p>
-<p><strong>Weak Prompt Example</strong>:</p>
+</section><section ><h3>6. Use Leading Words Like ‘Step by Step’</h3>
+<p>Description: Ask the LLM to explain a process or concept step by step to ensure a clear and structured explanation.</p>
+<p>Weak Prompt Example:</p>
 <ul>
 <li>&quot;Explain how to write an argumentative essay.&quot;</li>
 </ul>
-<p><strong>Why it's weak</strong>: The instruction is too broad and may result in a general or unclear response.</p>
-<p><strong>Improved Prompt Example</strong>:</p>
+<p>Why it's weak: The instruction is too broad and may result in a general or unclear response.</p>
+<p>Improved Prompt Example:</p>
 <ul>
 <li>&quot;Explain step by step how to write an argumentative essay, starting with choosing a topic.&quot;</li>
 </ul>
-<p><strong>How it's improved</strong>: The improved prompt asks for a structured, step-by-step breakdown of the process, leading to a more detailed and helpful response.</p>
+<p>How it's improved: The improved prompt asks for a structured, step-by-step breakdown of the process, leading to a more detailed and helpful response.</p>
 <hr>
-</section><section ><h3>7. <strong>Ask for Examples</strong></h3>
-<p><strong>Description</strong>: To make abstract concepts easier to understand, ask for specific examples in the model’s response.</p>
-<p><strong>Weak Prompt Example</strong>:</p>
+</section><section ><h3>7. Ask for Examples</h3>
+<p>Description: To make abstract concepts easier to understand, ask for specific examples in the model’s response.</p>
+<p>Weak Prompt Example:</p>
 <ul>
 <li>&quot;Explain Newton’s laws of motion.&quot;</li>
 </ul>
-<p><strong>Why it's weak</strong>: While the model might explain the laws, without an example it could feel too abstract for the student to grasp.</p>
-<p><strong>Improved Prompt Example</strong>:</p>
+<p>Why it's weak: While the model might explain the laws, without an example it could feel too abstract for the student to grasp.</p>
+<p>Improved Prompt Example:</p>
 <ul>
 <li>&quot;Explain Newton’s first law of motion and give an example of how it works in real life.&quot;</li>
 </ul>
-<p><strong>How it's improved</strong>: By requesting a real-life example, the explanation becomes more tangible and easier to understand.</p>
+<p>How it's improved: By requesting a real-life example, the explanation becomes more tangible and easier to understand.</p>
 <hr>
-</section><section ><h3>8. <strong>Ask for Clarity</strong></h3>
-<p><strong>Description</strong>: If an explanation is unclear, ask the LLM to clarify a specific part rather than asking for a full repeat of the explanation.</p>
-<p><strong>Weak Prompt Example</strong>:</p>
+</section><section ><h3>8. Ask for Clarity</h3>
+<p>Description: If an explanation is unclear, ask the LLM to clarify a specific part rather than asking for a full repeat of the explanation.</p>
+<p>Weak Prompt Example:</p>
 <ul>
 <li>&quot;I didn’t get that. Can you explain it again?&quot;</li>
 </ul>
-<p><strong>Why it's weak</strong>: It doesn’t indicate which part was unclear, so the model might repeat the same explanation without improvement.</p>
-<p><strong>Improved Prompt Example</strong>:</p>
+<p>Why it's weak: It doesn’t indicate which part was unclear, so the model might repeat the same explanation without improvement.</p>
+<p>Improved Prompt Example:</p>
 <ul>
 <li>&quot;Can you explain the difference between speed and velocity more clearly?&quot;</li>
 </ul>
-<p><strong>How it's improved</strong>: The improved prompt focuses on the specific concept needing clarification, making it easier for the LLM to refine its answer.</p>
+<p>How it's improved: The improved prompt focuses on the specific concept needing clarification, making it easier for the LLM to refine its answer.</p>
 <hr>
-</section><section ><h3>9. <strong>Request Multiple Options</strong></h3>
-<p><strong>Description</strong>: Ask for multiple responses or suggestions to provide variety and allow you to choose the best option.</p>
-<p><strong>Weak Prompt Example</strong>:</p>
+</section><section ><h3>9. Request Multiple Options</h3>
+<p>Description: Ask for multiple responses or suggestions to provide variety and allow you to choose the best option.</p>
+<p>Weak Prompt Example:</p>
 <ul>
 <li>&quot;Give me a title for my essay.&quot;</li>
 </ul>
-<p><strong>Why it's weak</strong>: This prompt asks for just one suggestion, which might not be what the student wants.</p>
-<p><strong>Improved Prompt Example</strong>:</p>
+<p>Why it's weak: This prompt asks for just one suggestion, which might not be what the student wants.</p>
+<p>Improved Prompt Example:</p>
 <ul>
 <li>&quot;Give me three different titles for my essay on climate change.&quot;</li>
 </ul>
-<p><strong>How it's improved</strong>: Asking for multiple options gives you a range of choices, allowing you to pick the one you like best.</p>
+<p>How it's improved: Asking for multiple options gives you a range of choices, allowing you to pick the one you like best.</p>
 <hr>
-</section><section ><h3>10. <strong>Combine Chain-of-Thought (CoT) with Few-Shot Prompts</strong></h3>
-<p><strong>Description</strong>: Guide the model to solve problems step by step (chain-of-thought) and provide an example to help structure the response.</p>
-<p><strong>Weak Prompt Example</strong>:</p>
+</section><section ><h3>10. Combine Chain-of-Thought (CoT) with Few-Shot Prompts</h3>
+<p>Description: Guide the model to solve problems step by step (chain-of-thought) and provide an example to help structure the response.</p>
+<p>Weak Prompt Example:</p>
 <ul>
 <li>&quot;How do I solve this math problem: 5x + 2 = 12?&quot;</li>
 </ul>
-<p><strong>Why it's weak</strong>: It may give a direct answer but won’t show the reasoning or steps needed to solve the problem.</p>
-<p><strong>Improved Prompt Example</strong>:</p>
+<p>Why it's weak: It may give a direct answer but won’t show the reasoning or steps needed to solve the problem.</p>
+<p>Improved Prompt Example:</p>
 <ul>
 <li>&quot;Can you explain how to solve this equation step by step: 5x + 2 = 12? Start by explaining how to isolate x.&quot;</li>
 </ul>
-<p><strong>How it's improved</strong>: The improved version asks for a step-by-step explanation (chain-of-thought) and focuses on one part of the solution at a time, encouraging the LLM to show the thinking process.</p>
+<p>How it's improved: The improved version asks for a step-by-step explanation (chain-of-thought) and focuses on one part of the solution at a time, encouraging the LLM to show the thinking process.</p>
 <hr>
-</section><section ><h3>11. <strong>Ask for a Detailed Response</strong></h3>
-<p><strong>Description</strong>: Request a detailed answer when you need a deeper explanation or a more comprehensive understanding of a topic.</p>
-<p><strong>Weak Prompt Example</strong>:</p>
+</section><section ><h3>11. Ask for a Detailed Response</h3>
+<p>Description: Request a detailed answer when you need a deeper explanation or a more comprehensive understanding of a topic.</p>
+<p>Weak Prompt Example:</p>
 <ul>
 <li>&quot;Tell me about the French Revolution.&quot;</li>
 </ul>
-<p><strong>Why it's weak</strong>: It might lead to a short, surface-level response that doesn’t provide enough depth for a high school student.</p>
-<p><strong>Improved Prompt Example</strong>:</p>
+<p>Why it's weak: It might lead to a short, surface-level response that doesn’t provide enough depth for a high school student.</p>
+<p>Improved Prompt Example:</p>
 <ul>
 <li>&quot;Give me a detailed explanation of the causes of the French Revolution, focusing on economic and social factors.&quot;</li>
 </ul>
-<p><strong>How it's improved</strong>: By specifying &quot;detailed&quot; and focusing on particular factors, the LLM can provide a richer, more in-depth answer.</p>
+<p>How it's improved: By specifying &quot;detailed&quot; and focusing on particular factors, the LLM can provide a richer, more in-depth answer.</p>
 <hr>
-</section><section ><h3>12. <strong>Use Output Primers</strong></h3>
-<p><strong>Description</strong>: Start your prompt with part of the desired response or output, guiding the LLM to continue in a consistent way.</p>
-<p><strong>Weak Prompt Example</strong>:</p>
+</section><section ><h3>12. Use Output Primers</h3>
+<p>Description: Start your prompt with part of the desired response or output, guiding the LLM to continue in a consistent way.</p>
+<p>Weak Prompt Example:</p>
 <ul>
 <li>&quot;Finish my story.&quot;</li>
 </ul>
-<p><strong>Why it's weak</strong>: It's too vague, and the model might struggle to keep the tone or structure of the story consistent.</p>
-<p><strong>Improved Prompt Example</strong>:</p>
+<p>Why it's weak: It's too vague, and the model might struggle to keep the tone or structure of the story consistent.</p>
+<p>Improved Prompt Example:</p>
 <ul>
 <li>&quot;Here's the start of my story: 'The storm was getting worse, and Mia knew she had to act fast. She grabbed her bag and…' Can you finish the story, keeping the tone suspenseful?&quot;</li>
 </ul>
-<p><strong>How it's improved</strong>: This version gives a clear starting point and sets expectations for the tone, ensuring the model finishes the story in a way that matches your intention.</p>
+<p>How it's improved: This version gives a clear starting point and sets expectations for the tone, ensuring the model finishes the story in a way that matches your intention.</p>
 <hr>
 </section><section ><h2>Conclusion</h2>
 <p>Understanding how to communicate effectively with AI isn't just about mastering technology - it's about honing the skill of asking the right questions. As you explore these &quot;Prompt Principles,&quot; you'll discover that a well-crafted question can unlock more than just homework help; it can lead to new ways of thinking and deeper insights. So whether you're diving into a school project or navigating the world around you, remember that clarity in your questions will guide you to better answers. Start practicing today, and see how these simple tips can make learning more engaging and fun.</p>
@@ -343,10 +412,10 @@
 	  --w:40%;
 	  --maxw:44rem;
 	  --ai:center;">
-<ul class="links-nextprev"><li>Previous: <a href="/posts/blog/2024-09-26-the-power-of-politeness-how-language-shapes-ai-interactions/">The Power of Politeness: How Language Shapes AI Interactions</a></li><li>Next: <a href="/posts/blog/2024-09-26-principles-of-llm-prompting-for-middle-school-grades-5-8/">Principles of LLM Prompting for Middle School (Grades 5-8)</a></li>
-</ul>
-</section>
-</section>
+	<ul class="links-nextprev"><li>Previous: <a href="/posts/blog/2024-09-26-the-power-of-politeness-how-language-shapes-ai-interactions/">The Power of Politeness: How Language Shapes AI Interactions</a></li>
+		<li>Next: <a href="/posts/blog/2024-09-26-principles-of-llm-prompting-for-middle-school-grades-5-8/">Principles of LLM Prompting for Middle School (Grades 5-8)</a></li>
+	</ul>
+</section></section>
     </main>
 
     <!-- Footer -->

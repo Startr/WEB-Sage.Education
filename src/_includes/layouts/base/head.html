@@ -41,22 +41,21 @@
   (document.readyState === "loading") ? document.addEventListener('DOMContentLoaded', smoothScrollLinks) : smoothScrollLinks();
 </script>
 
-<!-- Include Swup (last, to avoid interference with initializations) -->
-<script src="https://unpkg.com/swup@4"></script>
-<script>
-  const swup = new Swup();
-
-  // Reapply smooth scrolling after Swup content is replaced
-  swup.on('contentReplaced', smoothScrollLinks);
-</script>
-
-
 <!-- Include Startr Style CSS -->
 <link rel="stylesheet" href="https://startr.style/style.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
   integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw=="
   crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- let's ensure that a view transtion is used on any links between pages-->
+
+
 <style>
+  * a {
+
+    scroll-behavior: smooth;
+
+  }
+
   h1,
   h2,
   h3,
@@ -84,11 +83,11 @@
   }
 
   ::view-transition-old(main) {
-    animation: fade 0.5s ease-in-out both;
+    animation: fade 0.8s ease-in-out both;
   }
 
   ::view-transition-new(main) {
-    animation: fade 0.5s ease-in-out both reverse;
+    animation: fade 0.8s ease-in-out both reverse;
   }
 
   @keyframes fade {

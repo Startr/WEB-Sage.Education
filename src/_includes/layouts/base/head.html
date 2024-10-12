@@ -82,6 +82,14 @@
     view-transition-name: main;
   }
 
+  p:empty{
+    display: none;
+  }
+
+  .hidden {
+    display: none;
+  }
+
   ::view-transition-old(main) {
     animation: fade 0.8s ease-in-out both;
   }

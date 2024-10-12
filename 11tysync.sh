@@ -8,7 +8,7 @@
 echo "STATUSTITLE|🔄 11ty 🔄"
 
 # Define source and destination directories
-SRC_DIR="/Users/somma/Documents/Projects/Family Thoughts/Family Thoughts/Projects/Sites/Sage.Education"
+SRC_DIR="/Users/somma/Documents/Projects/family-thoughts/Projects/Sites/Sage.Education"
 DEST_DIR="/Users/somma/Documents/Projects/GitHub/WEB-Sage.Education/src/sage.education"
 
 # Function to sync directories using rsync

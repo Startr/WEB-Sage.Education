@@ -1,0 +1,27 @@
+<clip-svg style="--svg-url:url(/images/sage.education_logo.svg);
+    --bg:linear-gradient(135deg, #ff7e5f, #feb47b);
+    --w: 12rem;
+    --m:0.6em"
+    ></clip-svg>
+
+<style>
+
+    clip-svg {
+        display: inline-block;
+        /* Make it behave like a block element */
+
+        background: ;
+        /* Background to be clipped */
+        background-clip: content-box;
+        -webkit-mask-image: var(--svg-url);
+        /* Mask with the SVG */
+        mask-image: var(--svg-url);
+        /* Standard mask */
+        mask-size: contain;
+        /* Scale the SVG to fit */
+        mask-position: center;
+        /* Center the SVG */
+        mask-repeat: no-repeat;
+        /* Prevent repeating */
+    }
+</style>

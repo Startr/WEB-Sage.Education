@@ -30,10 +30,11 @@ module.exports = function (eleventyConfig) {
 		return tag.toString().toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '');
 	});
 
-	// Copy the contents of the `public` folder to wp-content to emulate WordPress behavior.
 	eleventyConfig.addPassthroughCopy({
-		"./public/": "/wp-content/"
+		"./signup-now_files/": "/signup-now_files/"
 	});
+	// CSS and CSS2 passthrough
+	eleventyConfig.addPassthroughCopy("**/*{.css,.css.map,css2}");
 	// image passthrough
 	eleventyConfig.addPassthroughCopy("**/*.{png,jpg,jpeg,gif,svg,webp}");
 	// yml passthrough

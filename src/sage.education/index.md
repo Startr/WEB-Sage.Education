@@ -12,6 +12,7 @@ Subtitle: Empowering Teams of Learners
   @scope{
     section{
       section:has(>h3){
+	    display:flex;
         background: white;
         padding: 2em;
         margin: 2em auto;
@@ -21,7 +22,9 @@ Subtitle: Empowering Teams of Learners
         outline-offset: -0.6em;
         max-width: 66rem;
         align-items: center;
-
+      }
+      section:has(>h3.none){
+      display:none
       }
     }
     p:has(>img){
@@ -53,7 +56,7 @@ Subtitle: Empowering Teams of Learners
       }
       ul,ol{
         text-align: left;
-        width:30%;
+        width:33%;
         ul, ol{
           width: 100%;
         }
@@ -86,84 +89,129 @@ Subtitle: Empowering Teams of Learners
 </style>
 
 
-{style="--d:none"}
-# index
+
+# index{style="--d:none"}
+
 
 # Content{style="--d:none"}
 
-## Sage.Education{style="--size-sm:2.4em; --ta:center; --m: 2em auto; --m-sm: 4em auto 0 "}
 
-{style="--maxw:60rem; --m: auto; --pt:none; --ta:justify; outline:none; --shadow:none"}
-### **Sparks Curiosity and&nbsp;Ignites Agency**{style="--size:1.2em;--ta:center; --m: 2em auto"} 
+{style="--maxw:60em; --m:2em auto 1em; --m-sm:10em auto 3em"}
+## Sage.Education Sparks Curiosity and Ignites Agency{style="--ta:center; --mb-sm:10rem"} 
 
-Unlock a world of limitless learning possibilities with Sage.Education. Empowering students and educators to creatively harness AI's power, we're transforming education for a brighter tomorrow. Join the movement and transform the future of learning.
+Unlock a world of limitless learning possibilities with Sage.Education. Empowering students and educators to creatively harness AI's power, we're transforming education for a brighter tomorrow. Join the movement and transform the future of learning. {style="--size:1.6em"}
 
 
-### Get Started Now! {style="--ta:center"}
+### [Learn More!](#learn-more) {style="--ta:center"}
+
+
+{style="--maxw: 80rem; --m:auto; --ta:center"}
+## **Why Educators Are Choosing Sage.Education**{#learn-more}
+
+### Other Education AI Platforms Red Flags
+<style>
+    @scope {
+     ul{
+        list-style-position: inside;
+        li {
+	     list-style-type: "❌ "; 
+      }
+ }
+      
+    }
+  </style>
+ 
+- Security and Privacy Concerns
+- Limited Innovation
+- Shallow Learning
+
+### How Sage.Education Works
+- Data Security and Privacy
+- Driver's Seat Approach
+- Critical Thinking and Maker-Mindset
+<style>
+    @scope {
+    ul{ list-style-position:inside;
+	    li {list-style-type: "✅ "; }
+    }
+      
+    }
+</style>
 
 ## Our System{.hidden}
  <style>
 
   </style>
 
-{style="--d:none"}
-### 
 
-### Customize your own learning coaches 
+{style="--d: flex; --fw: wrap; --bg: white; --p: 2em 0; --br: 12px; --shadow: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --maxw: 80rem; --m: 2em auto; --ai: center;"}
+## **Why Students Love Sage** {style="--ta:center; --w: 100%"}
 
-* **Drag-and-Drop Interface**:
-  + Use a visual interface to design and build AI agents, similar to a LEGO block approach
-  + Select pre-built AI components and connect them to create new agents
-* **Developer Community and Collaboration**:
-  + Create a community forum for developers to share knowledge, ask questions, and collaborate on projects
+{style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
+#### Artifact View for Coding
+
+Real-time feedback through our artifact view for CSS, HTML, and Javascript
+
+{style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
+#### Multimedia Integration
+
+Upload and integrate documents and websites for easy integration with Retrieval-Augmented Generation features
+
+{style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
+#### Branching Conversation Overview
+
+Track and review progress and decision-making with branching conversation views
+
+
+### Customize your own learning coaches
+
 * **Training and Customization**:
-  + Provide means for users to train AI models using datasets and machine learning algorithms
-  + Work with your own knowledge basis
-* **Cloud Infrastructure and Storage**:
-  + Maintain a scalable cloud infrastructure for hosting and managing AI agents
+  + Allows educators and learners to develop tailored solutions that directly address their unique needs.
+  + Incorporating your own knowledge bases and proprietary data, personalizing your AI solutions and making them more relevant.
+* **Personalized and Adaptive Learning**: 
+  + Tailored educational experiences that evolve with each student’s progress.
+* **User-Friendly Training Platforms**:
+  + Enable non-technical users to engage with AI development actively by enhancing users' skills in data science and machine learning.
+* **Developer Community and Collaboration**:
+  + Create a community forum for educators to share knowledge, ask questions, and collaborate on projects* 
 
 
-![IMG_1387.jpeg](/iMG_1387.jpeg)
+
+![IMG_1387.jpeg](IMG_1387.jpeg)
 
 ### View your branching conversation maps
 
-![IMG_1389 1.jpeg](/iMG_sage.map.jpeg)
+![IMG_1389 1.jpeg](IMG_sage.map.jpeg)
 
 ### See immediate creative artifacts{--fg:3}
 
+* **Artifact View for Coding (CSS, HTML, Javascript)** 
+  + Allows learners to receive real-time, visual feedback on their coding efforts.
+  + This instantaneous feedback loop helps learners write or modify their code, and see the effects of their changes in real time. 
 * **Drag-and-Drop Interface**:
-  + Use a visual interface to design and build AI agents, similar to a LEGO block approach
-  + Select pre-built AI components and connect them to create new agents
-* **Developer Community and Collaboration**:
-  + Create a community forum for developers to share knowledge, ask questions, and collaborate on projects
+  + Use a visual interface to design and build AI agents, similar to a LEGO block approach.
+  + Select pre-built AI components and connect them to create new agents.
 * **Training and Customization**:
-  + Provide means for users to train AI models using datasets and machine learning algorithms
-  + Work with your own knowledge basis
-* **Cloud Infrastructure and Storage**:
-  + Maintain a scalable cloud infrastructure for hosting and managing AI agents
+  + Provide means for users to train AI models using datasets and machine learning algorithms.
 
-![IMG_1399.jpeg](/iMG_1399.jpeg)
+![IMG_1399.jpeg](IMG_1399.jpeg)
 
 ### Contrast AI assistant outputs 
 
-* **Drag-and-Drop Interface**:
-  + Use a visual interface to design and build AI agents, similar to a LEGO block approach
-  + Select pre-built AI components and connect them to create new agents
-* **Developer Community and Collaboration**:
-  + Create a community forum for developers to share knowledge, ask questions, and collaborate on projects
-* **Training and Customization**:
-  + Provide means for users to train AI models using datasets and machine learning algorithms
-  + Work with your own knowledge basis
-* **Cloud Infrastructure and Storage**:
-  + Maintain a scalable cloud infrastructure for hosting and managing AI agents
+* **Gauge output by contrasting AI assistants:**
+  + Compare and contraste AI assistants to pinpoint errors, uncover new insights, identify biases, and optimize for best results. 
+* **Unlock the full potential of AI**: 
+  + Solve complex problems by aggregating insights from multiple sources.
+  + Overcome the limitations of individual AI systems, leading to better results.
+  + Enhance critical thinking and analytical skills by evaluating evidence, assessing the strengths and weaknesses of each output, and making informed decisions on which information to use.
 
-![IMG_1394.jpeg](/iMG_1394.jpeg)
+![IMG_1394.jpeg](IMG_1394.jpeg)
 
 
 
 #### Work with your own documents
 
-![IMG_1391.jpeg](/iMG_1391.jpeg)
+![IMG_1391.jpeg](IMG_1391.jpeg)
 
 
 ## **A Better Way to Do Educational A.I.** {style="--ta:center"}
@@ -219,85 +267,14 @@ Unlock a world of limitless learning possibilities with Sage.Education. Empoweri
 
 {style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow-hvr: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
 #### See Sage. Education In Action!
-![Screenshot 2024-10-08 at 11.45.02 AM.png](/images/Screenshot_2024-10-08_at_11.45.02_AM.png)
-
-
+<a href="![Screenshot 2024-10-08 at 11.45.02 AM.png](EdPuzzle%20Check-List%20ab1ae1003536478ba871548f36599551/Screenshot_2024-10-08_at_11.45.02_AM.png)"><button class="tag">Learn More</button></a>{hidden}
 
 {style="--mt:4em"}
 ## Platform Integrations
 
-![Screenshot 2024-10-08 at 11.45.33 AM.png](/images/Screenshot_2024-10-08_at_11.45.33_AM.png){style="outline:none; --shadow:none"}
-
-{style="--d: flex; --fw: wrap; --bg: white; --p: 2em 0; --br: 12px; --shadow: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --maxw: 80rem; --m: 2em auto; --ai: center;"}
-## **The Right Solution For Schools** {style="--ta:center; --w: 100%"}
-
-{style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
-#### Protect privacy
-
-Keeping students safe by complying with FERPA, COPPA, and GDPR.
-
-{style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
-#### Standardize content
-
-Consolidate content and collaborate with other in your school.
-
-{style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
-#### Detailed feedback
-
-See learners' conversations, engagements, and creative artifacts. 
+![Screenshot 2024-10-08 at 11.45.33 AM.png](EdPuzzle%20Check-List%20ab1ae1003536478ba871548f36599551/Screenshot_2024-10-08_at_11.45.33_AM.png)
 
 
-{style="--d: flex; --fw: wrap; --bg: white; --p: 2em 0; --br: 12px; --shadow: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --maxw: 80rem; --m: 2em auto; --ai: center;"}
-## **Why Students Love Sage** {style="--ta:center; --w: 100%"}
-
-{style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
-#### Artifact View for Coding
-
-Real-time feedback through our artifact view for CSS, HTML, and Javascript
-
-{style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
-#### Multimedia Integration
-
-Upload and integrate documents and websites for easy integration with Retrieval-Augmented Generation features
-
-{style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
-#### Branching Conversation Overview
-
-Track and review progress and decision-making with branching conversation views
-
-
-{style="--maxw: 80rem; --m:auto; --ta:center"}
-## **Why Educators Are Choosing Sage.Education**{#learn-more}
-
-### Other Education AI Platforms Red Flags
-<style>
-    @scope {
-     ul{
-        list-style-position: inside;
-        li {
-	     list-style-type: "❌ "; 
-      }
- }
-      
-    }
-  </style>
- 
-- Security and Privacy Concerns
-- Limited Innovation
-- Shallow Learning
-
-### How Sage.Education Works
-- Data Security and Privacy
-- Driver's Seat Approach
-- Critical Thinking and Maker-Mindset
-<style>
-    @scope {
-    ul{ list-style-position:inside;
-	    li {list-style-type: "✅ "; }
-    }
-      
-    }
-</style>
 
 
 ## **Ed Tech Blog** {style="--ta:center"}
@@ -322,6 +299,15 @@ Track and review progress and decision-making with branching conversation views
   
 ### Ways{style="--d:none"}
 
+<style>
+@scope{
+      section{
+            flex-direction: row;
+	         justify-content: center;
+		      }
+}
+</style>
+
 {style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow-hvr: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
 #### Principles of LLM Prompting for Teachers
 
@@ -337,6 +323,23 @@ Track and review progress and decision-making with branching conversation views
 
 <a href=https://sage.education/><button class="tag " inactive>Read More</button></a>
 
+{style="--d: flex; --fw: wrap; --bg: white; --p: 2em 0; --br: 12px; --shadow: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --maxw: 80rem; --m: 2em auto; --ai: center;"}
+## **The Right Solution For Schools** {style="--ta:center; --w: 100%"}
+
+{style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
+#### Protect privacy
+
+Keeping students safe by complying with FERPA, COPPA, and GDPR.
+
+{style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
+#### Standardize content
+
+Consolidate content and collaborate with other in your school.
+
+{style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
+#### Detailed feedback
+
+See learners' conversations, engagements, and creative artifacts. 
 
 ### **Learning better with Sage.Education**{style="--m: 2em auto"}
 #### Get Started Now!

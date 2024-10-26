@@ -36,7 +36,7 @@ Subtitle: Empowering Teams of Learners
           &:hover {
             transform: scale(1.15); /* Applying scale on hover */
           }
-          img{
+          IMG{
               border-radius: 12px;
               box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Assuming shadow intensity 5 */
               outline: 2px dashed rgb(230, 230, 230);
@@ -123,11 +123,11 @@ Unlock a world of limitless learning possibilities with Sage.Education. Empoweri
   + Maintain a scalable cloud infrastructure for hosting and managing AI agents
 
 
-![IMG_1387.jpeg](/iMG_1387.jpeg)
+![IMG_1387.jpeg](/IMG_1387.jpeg)
 
 ### View your branching conversation maps
 
-![IMG_1389 1.jpeg](/iMG_sage.map.jpeg)
+![IMG_1389 1.jpeg](/IMG_sage.map.jpeg)
 
 ### See immediate creative artifacts{--fg:3}
 
@@ -142,7 +142,7 @@ Unlock a world of limitless learning possibilities with Sage.Education. Empoweri
 * **Cloud Infrastructure and Storage**:
   + Maintain a scalable cloud infrastructure for hosting and managing AI agents
 
-![IMG_1399.jpeg](/iMG_1399.jpeg)
+![IMG_1399.jpeg](/IMG_1399.jpeg)
 
 ### Contrast AI assistant outputs 
 
@@ -157,13 +157,13 @@ Unlock a world of limitless learning possibilities with Sage.Education. Empoweri
 * **Cloud Infrastructure and Storage**:
   + Maintain a scalable cloud infrastructure for hosting and managing AI agents
 
-![IMG_1394.jpeg](/iMG_1394.jpeg)
+![IMG_1394.jpeg](/IMG_1394.jpeg)
 
 
 
 #### Work with your own documents
 
-![IMG_1391.jpeg](/iMG_1391.jpeg)
+![IMG_1391.jpeg](/IMG_1391.jpeg)
 
 
 ## **A Better Way to Do Educational A.I.** {style="--ta:center"}

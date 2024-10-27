@@ -17,14 +17,14 @@ Subtitle: Empowering Teams of Learners
         padding: 2em;
         margin: 2em auto;
         border-radius: 12px;
-        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Assuming shadow intensity 5 */
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); 
         outline: 2px dashed rgb(230, 230, 230);
         outline-offset: -0.6em;
         max-width: 66rem;
         align-items: center;
       }
       section:has(>h3.none){
-      display:none
+        display:none
       }
     }
     p:has(>img){
@@ -41,7 +41,7 @@ Subtitle: Empowering Teams of Learners
           }
           img{
               border-radius: 12px;
-              box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Assuming shadow intensity 5 */
+              box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
               outline: 2px dashed rgb(230, 230, 230);
               outline-offset: -0.6em;
               padding: 0.6em;
@@ -72,17 +72,8 @@ Subtitle: Empowering Teams of Learners
 /* For landscape iPad mini (width 744px) */
 @media only screen and (max-width: 1024px) and (orientation: landscape) {
     ul, ol {
-        width: 50%; /* On landscape iPad mini, 50% width */
-    }
-}
-
-      section {
-        text-align: center;
-        section {
-          display:flex;}
-          section:nth-child(even){
-            flex-direction: row-reverse;
-		      }
+              width: 50%; /* On landscape iPad mini, 50% width */
+          }
       }
     }
 }
@@ -311,17 +302,17 @@ Track and review progress and decision-making with branching conversation views
 {style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow-hvr: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
 #### Principles of LLM Prompting for Teachers
 
-<a href=https://sage.education/posts/blog/2024-09-26-principles-of-llm-prompting-for-teachers/><button class="tag">Read More</button></a>
+<a href="/posts/blog/2024-09-26-principles-of-llm-prompting-for-teachers/"><button class="tag">Read More</button></a>
 
 {style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow-hvr: 5; outline: #f7e7cc dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
 ####  Be Nice to AI, It Might Just Make You Smarter
 
-<a href=https://sage.education/posts/blog/2024-09-26-be-nice-to-ai-it-might-just-make-you-smarter/><button class="tag">Read More</button></a>
+<a href="/posts/blog/2024-09-26-be-nice-to-ai-it-might-just-make-you-smarter/"><button class="tag">Read More</button></a>
 
 {style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow-hvr: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
 #### Instructional Strategies and Prompting 
 
-<a href=https://sage.education/><button class="tag " inactive>Read More</button></a>
+<a href="/posts/blog/2024-10-27-teaching-with-large-language-models-llms-strategies-for-high-school-educators/"><button class="tag " inactive>Read More</button></a>
 
 {style="--d: flex; --fw: wrap; --bg: white; --p: 2em 0; --br: 12px; --shadow: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --maxw: 80rem; --m: 2em auto; --ai: center;"}
 ## **The Right Solution For Schools** {style="--ta:center; --w: 100%"}

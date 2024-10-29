@@ -31,7 +31,7 @@ module.exports = function (eleventyConfig) {
 	});
 
 	eleventyConfig.addPassthroughCopy({
-		"./signup-now_files/": "/signup-now_files/"
+		"./Sign-up-Now_files/": "/Sign-up-Now_files/"
 	});
 	// CSS and CSS2 passthrough
 	eleventyConfig.addPassthroughCopy("**/*{.css,.css.map,css2}");

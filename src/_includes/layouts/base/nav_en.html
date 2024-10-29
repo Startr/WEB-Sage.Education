@@ -1,14 +1,15 @@
 <nav>
-        <section style="--d:flex; --jc:space-between; --ai:center; gap:1rem">
+        <section style="--d:flex; --fd:column; --fd-sm:row; --jc:space-between; --ai:center; gap:1rem">
                 <h1 style="--d:none">Header</h1>
-                <p></p>
-                <section style="--d:flex; --jc:space-between; --ai:center; gap:1rem">
+
+                <section style="--d:flex;  --jc:space-between; --ai:center; gap:1rem">
                         <h2 style="--d:none">Nav</h2>
-                        <p></p>
                         <section style="--d:flex; --w:100%; gap:1rem">
                                 <h3 style="--d:none">Brand</h3>
                                 {% include "../component/logo.html" %}
-                                <p><a href="/#learn-more"><button class="blue" style="--c:black">Learn More</button></a></p>
+
+                                <a style="--d:none; --d-sm:inline-block" href="/#learn-more"><button class="blue"
+                                                style="--c:black">Learn More</button></a>
                         </section>
                 </section>
                 <section>
@@ -16,8 +17,8 @@
                 </section>
                 <section style="--d:flex; --jc:center; --ai:center; gap:1rem">
                         <h2 style="--d:none">Auth-section</h2>
-                        <p><a href="https://sage.startr.cloud"><button class="white">Login</button></a></p>
-                        <p><a href="/signup-now"><button>Signup</button></a></p>
+                        <a href="https://sage.startr.cloud"><button class="white">Login</button></a>
+                        <a href="/signup-now"><button>Signup</button></a>
                 </section>
         </section>
 </nav>

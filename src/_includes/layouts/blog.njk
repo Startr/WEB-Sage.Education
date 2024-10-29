@@ -20,8 +20,8 @@ layout: layouts/base.html
 		{%- if page.data.author %}<li>Author: {{ page.data.author }}</li>{%- endif %}
 		{%- for tag in tags | filterTagList %}
 		{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-		<li style="--ml:2rem"><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}
-		</li>
+		<!--<li style="--ml:2rem"><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}
+		</li>-->
 		{%- endfor %}
 	</ul>
 

@@ -45,6 +45,7 @@ Subtitle: Empowering Teams of Learners
               outline: 2px dashed rgb(230, 230, 230);
               outline-offset: -0.6em;
               padding: 0.6em;
+              background: white;
           }
     }
     section{

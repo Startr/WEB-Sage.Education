@@ -87,12 +87,11 @@ Subtitle: Empowering Teams of Learners
 
 # Content{style="--d:none"}
 
-
-{style="--maxw:60em; --m:2em auto 1em; --m-sm:10em auto 3em; --ta:center"}
-# We are the best way to learn and create with AI{style="--size:2.8em; --size-sm:6em"}
+{style="--maxw:66em; --m:2em auto 1em; --m-sm:10em auto 3em; --ta:center"}
+# Pull back the curtain on AI{style="--size:2.8em; --size-sm:6em"}
 
 {style="--mb:50vh"}
-## Sage.Education is **your** own **private** and **secure** **AI&nbsp;education platform** {style="--size:2.4em; "}
+## Sage.Education, provides a transparent, private, & secure environment where learners of all levels can explore, experiment, &&nbsp;master AI technologies. {style="--size:2.4em; "}
 
 Let us help you **unlock** limitless learning with **Sage.Education**.  {style="--size:1.6em; "} 
 

@@ -219,7 +219,7 @@ Track and review progress and decision-making with branching conversation views
 * **Effortless Navigation**:
   Users can easily go back to previous conversation pathways and explore alternative conversation.
 
-![IMG_1389 1.jpeg](IMG_sage.map.jpeg)
+![IMG_1389 1.jpeg](IMG_Sage.Map.jpeg)
 
 ### See immediate creative artifacts{--fg:3}
 

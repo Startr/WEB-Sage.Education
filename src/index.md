@@ -358,7 +358,8 @@ Track and review progress and decision-making with branching conversation views
 @scope{
       section{
             flex-direction: row;
-	         justify-content: center;
+            justify-content: center;
+            min-height: 40ch;
 		      }
 }
 </style>
@@ -366,17 +367,21 @@ Track and review progress and decision-making with branching conversation views
 
 #### Principles of LLM Prompting for Teachers
 
-<a href="/posts/blog/2024-09-26-principles-of-llm-prompting-for-teachers/"><button class="tag">Read More</button></a>
+<a href="/posts/blog/en/2024-09-26-principles-of-llm-prompting-for-teachers/"><button class="tag">Read More</button></a>
 
 
 ####  Be Nice to AI, It Might Just Make You Smarter
 
-<a href="/posts/blog/2024-09-26-be-nice-to-ai-it-might-just-make-you-smarter/"><button class="tag">Read More</button></a>
+<a href="/posts/blog/en/2024-09-26-be-nice-to-ai-it-might-just-make-you-smarter/"><button class="tag">Read More</button></a>
 
 
 #### Instructional Strategies and Prompting 
 
-<a href="/posts/blog/2024-10-27-teaching-with-large-language-models-llms-strategies-for-high-school-educators/"><button class="tag " inactive>Read More</button></a>
+<a href="/posts/blog/en/2024-10-27-teaching-with-large-language-models-llms-strategies-for-high-school-educators/"><button class="tag " inactive>Read More</button></a>
+
+#### When to use LLMs vs Search Engines
+
+<a href="/posts/blog/en/2024-11-04-knowing-when-to-use-large-language-models-llms-vs-search-engines/"><button class="tag " inactive>Read More</button></a>
 
 {style="--d: flex; --fw: wrap; "}
 ### **The Right Solution For Schools** {style="--ta:center; --w: 100%"}

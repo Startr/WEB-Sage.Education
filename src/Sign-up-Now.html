@@ -1,79 +1,96 @@
 <html>
-      <head>
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <!-- Include Startr Style CSS -->
-          <link rel="stylesheet" href="https://startr.style/style.css">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/bcrypt.js/2.4.3/bcrypt.min.js"></script>
-      </head>
-      <body style="--jc:center; --ai:center; --d:flex; --fd:column; --h:100vh; --p:2em; --bg:var(--background-alt); --c:oklch(0 0 0.3);">
 
-          <div style="--w:100%; --maxw:400px; --d:flex; --fd:column; --ai:center; --bg:white; --shadow:3; --p:2em; --radius:8px;">
-            <img crossorigin="anonymous" src="//sage.startr.cloud/static/favicon.png" alt="Startr Educational Technology" style="--br: 10%; --h: 10em; --w: 10em;" alt="logo">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Include Startr Style CSS -->
+        <link rel="stylesheet" href="https://startr.style/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bcrypt.js/2.4.3/bcrypt.min.js"></script>
 
-              <h1 style="--size:1.5em; --mb:0.5em; --ta:center;">Sign up to sage.startr.cloud</h1>
-              <p style="--c:oklch(0 0 0.45); --size:0.875em; --mb:1em; --ta:center;">
-                  Powered by <a href="https://Sage.Education/AI"
-                   style="
+        <!-- Permissions Policy Meta Tag -->
+        <meta http-equiv="Permissions-Policy" content="accelerometer=(), camera=(), gyroscope=(), microphone=()">
+
+    </head>
+
+    <body
+        style="--jc:center; --ai:center; --d:flex; --fd:column; --h:100vh; --p:2em; --bg:var(--background-alt); --c:oklch(0 0 0.3);">
+
+        <div
+            style="--w:100%; --maxw:400px; --d:flex; --fd:column; --ai:center; --bg:white; --shadow:3; --p:2em; --radius:8px;">
+            <img crossorigin="anonymous" src="//sage.startr.cloud/static/favicon.png"
+                alt="Startr Educational Technology" style="--br: 10%; --h: 10em; --w: 10em;" alt="logo">
+
+            <h1 style="--size:1.5em; --mb:0.5em; --ta:center;">Sign up to sage.startr.cloud</h1>
+            <p style="--c:oklch(0 0 0.45); --size:0.875em; --mb:1em; --ta:center;">
+                Powered by <a href="https://Sage.Education/AI" style="
                     --weight:bold;
                     --c:oklch(0.65 0.2 270);
                    ">Sage.Education/AI</a><br>
-                  <small>ⓘ Sage.Education/AI does not make any external connections, and your data stays securely on your locally hosted server.</small>
-              </p>
+                <small>ⓘ Sage.Education/AI does not make any external connections, and your data stays securely on your
+                    locally hosted server.</small>
+            </p>
 
-              <form id="signupForm" style="--w:100%; --d:flex; --fd:column; gap:1em;">
-                  <div style="--d:flex; --fd:column;">
-                      <label for="name" style="--mb:0.25em; --size:0.875em; --c:oklch(0 0 0.5);">Name</label>
-                      <input type="text" id="name" name="name" placeholder="Enter Your Full Name" style="--p:0.75em; --border:1px solid oklch(0 0 0.8); --radius:4px;">
-                  </div>
-                  <div style="--d:flex; --fd:column;">
-                      <label for="email" style="--mb:0.25em; --size:0.875em; --c:oklch(0 0 0.5);">Email</label>
-                      <input type="email" id="email" name="email" placeholder="Enter Your Email" style="--p:0.75em; --border:1px solid oklch(0 0 0.8); --radius:4px;">
-                  </div>
-                  <div style="--d:flex; --fd:column;">
-                      <label for="password" style="--mb:0.25em; --size:0.875em; --c:oklch(0 0 0.5);">Password</label>
-                      <div style="--pos:relative; --d:flex; --ai:center;">
-                          <input type="password" id="password" placeholder="Enter Your Password" style="--p:0.75em; --w:100%; --border:1px solid oklch(0 0 0.8); --radius:4px;">
-                          <i class="fas fa-eye" id="togglePassword" style="--pos:absolute; --right:1em; --c:oklch(0 0 0.5); cursor:pointer;"></i>
-                      </div>
-                  </div>
-                  <button type="submit" style="--p:0.75em; --bg:black; --c:white; --radius:4px; --size:1em; --weight:600;">Create Account</button>
-              </form>
+            <form id="signupForm" style="--w:100%; --d:flex; --fd:column; gap:1em;">
+                <div style="--d:flex; --fd:column;">
+                    <label for="name" style="--mb:0.25em; --size:0.875em; --c:oklch(0 0 0.5);">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Your Full Name"
+                        style="--p:0.75em; --border:1px solid oklch(0 0 0.8); --radius:4px;">
+                </div>
+                <div style="--d:flex; --fd:column;">
+                    <label for="email" style="--mb:0.25em; --size:0.875em; --c:oklch(0 0 0.5);">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Your Email"
+                        style="--p:0.75em; --border:1px solid oklch(0 0 0.8); --radius:4px;">
+                </div>
+                <div style="--d:flex; --fd:column;">
+                    <label for="password" style="--mb:0.25em; --size:0.875em; --c:oklch(0 0 0.5);">Password</label>
+                    <div style="--pos:relative; --d:flex; --ai:center;">
+                        <input type="password" id="password" placeholder="Enter Your Password"
+                            style="--p:0.75em; --w:100%; --border:1px solid oklch(0 0 0.8); --radius:4px;">
+                        <i class="fas fa-eye" id="togglePassword"
+                            style="--pos:absolute; --right:1em; --c:oklch(0 0 0.5); cursor:pointer;"></i>
+                    </div>
+                </div>
+                <button type="submit"
+                    style="--p:0.75em; --bg:black; --c:white; --radius:4px; --size:1em; --weight:600;">Create
+                    Account</button>
+            </form>
 
-              <p style="--mt:1em; --size:0.875em; --c:oklch(0 0 0.5);">
-                  Already have an account? <a href="https://sage.startr.cloud/" style="--c:oklch(0.65 0.2 270); text-decoration:none;">Sign in</a>
-              </p>
-          </div>
+            <p style="--mt:1em; --size:0.875em; --c:oklch(0 0 0.5);">
+                Already have an account? <a href="https://sage.startr.cloud/"
+                    style="--c:oklch(0.65 0.2 270); text-decoration:none;">Sign in</a>
+            </p>
+        </div>
 
-          <script>
-              // Toggle password visibility
-              const togglePassword = document.getElementById('togglePassword');
-              const password = document.getElementById('password');
+        <script>
+            // Toggle password visibility
+            const togglePassword = document.getElementById('togglePassword');
+            const password = document.getElementById('password');
 
-              togglePassword.addEventListener('click', function () {
-                  const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-                  password.setAttribute('type', type);
-                  this.classList.toggle('fa-eye');
-                  this.classList.toggle('fa-eye-slash');
-              });
+            togglePassword.addEventListener('click', function () {
+                const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+                password.setAttribute('type', type);
+                this.classList.toggle('fa-eye');
+                this.classList.toggle('fa-eye-slash');
+            });
 
-              // Hash password before submitting
-              document.getElementById('signupForm').addEventListener('submit', async function(event) {
-                  event.preventDefault(); // Prevent form from submitting normally
+            // Hash password before submitting
+            document.getElementById('signupForm').addEventListener('submit', async function (event) {
+                event.preventDefault(); // Prevent form from submitting normally
 
-                  const passwordField = document.getElementById('password');
-                  const hashedPassword = await bcrypt.hash(passwordField.value, 10);
+                const passwordField = document.getElementById('password');
+                const hashedPassword = await bcrypt.hash(passwordField.value, 10);
 
-                  // Replace password field with hashed version
-                  passwordField.value = hashedPassword;
+                // Replace password field with hashed version
+                passwordField.value = hashedPassword;
 
-                  // Optionally, you could disable the password field to prevent accidental edits
-                  passwordField.setAttribute('disabled', true);
+                // Optionally, you could disable the password field to prevent accidental edits
+                passwordField.setAttribute('disabled', true);
 
-                  // Submit the form after hashing
-                  this.submit();
-              });
-          </script>
+                // Submit the form after hashing
+                this.submit();
+            });
+        </script>
 
-      </body>
+    </body>
+
 </html>

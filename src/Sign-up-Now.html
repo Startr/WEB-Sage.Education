@@ -1,281 +1,78 @@
-<!DOCTYPE html>
-<!-- saved from url=(0030)https://sage.startr.cloud/auth -->
-<html lang="en" class="light">
+<html>
+      <head>
+          <!-- Include Startr Style CSS -->
+          <link rel="stylesheet" href="https://startr.style/style.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/bcrypt.js/2.4.3/bcrypt.min.js"></script>
+      </head>
+      <body style="--jc:center; --ai:center; --d:flex; --fd:column; --h:100vh; --p:2em; --bg:var(--background-alt); --c:oklch(0 0 0.3);">
 
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+          <div style="--w:100%; --maxw:400px; --d:flex; --fd:column; --ai:center; --bg:white; --shadow:3; --p:2em; --radius:8px;">
+            <img crossorigin="anonymous" src="//sage.startr.cloud/static/favicon.png" alt="Startr Educational Technology" style="--br: 10%; --h: 10em; --w: 10em;" alt="logo">
 
-		<link rel="icon" href="https://sage.startr.cloud/favicon.png">
-		<link rel="apple-touch-icon" href="https://sage.startr.cloud/favicon.png">
-		<link rel="manifest" href="https://sage.startr.cloud/manifest.json" crossorigin="use-credentials">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
-		<meta name="theme-color" content="#ffffff">
-		<meta name="robots" content="noindex,nofollow">
-		<meta name="description" content="Sage : Open WebUI">
-		<link rel="preconnect" href="https://fonts.googleapis.com/">
-		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-		<link href="./Sign-up-Now_files/css2" rel="stylesheet">
-		<link rel="search" type="application/opensearchdescription+xml" title="Sage : Open WebUI"
-			href="https://sage.startr.cloud/opensearch.xml">
+              <h1 style="--size:1.5em; --mb:0.5em; --ta:center;">Sign up to sage.startr.cloud</h1>
+              <p style="--c:oklch(0 0 0.45); --size:0.875em; --mb:1em; --ta:center;">
+                  Powered by <a href="https://Sage.Education/AI"
+                   style="
+                    --weight:bold;
+                    --c:oklch(0.65 0.2 270);
+                   ">Sage.Education/AI</a><br>
+                  <small>ⓘ Sage.Education/AI does not make any external connections, and your data stays securely on your locally hosted server.</small>
+              </p>
 
-		<script>
-			function resizeIframe(obj) {
-				obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
-			}
-		</script>
+              <form id="signupForm" style="--w:100%; --d:flex; --fd:column; gap:1em;">
+                  <div style="--d:flex; --fd:column;">
+                      <label for="name" style="--mb:0.25em; --size:0.875em; --c:oklch(0 0 0.5);">Name</label>
+                      <input type="text" id="name" name="name" placeholder="Enter Your Full Name" style="--p:0.75em; --border:1px solid oklch(0 0 0.8); --radius:4px;">
+                  </div>
+                  <div style="--d:flex; --fd:column;">
+                      <label for="email" style="--mb:0.25em; --size:0.875em; --c:oklch(0 0 0.5);">Email</label>
+                      <input type="email" id="email" name="email" placeholder="Enter Your Email" style="--p:0.75em; --border:1px solid oklch(0 0 0.8); --radius:4px;">
+                  </div>
+                  <div style="--d:flex; --fd:column;">
+                      <label for="password" style="--mb:0.25em; --size:0.875em; --c:oklch(0 0 0.5);">Password</label>
+                      <div style="--pos:relative; --d:flex; --ai:center;">
+                          <input type="password" id="password" placeholder="Enter Your Password" style="--p:0.75em; --w:100%; --border:1px solid oklch(0 0 0.8); --radius:4px;">
+                          <i class="fas fa-eye" id="togglePassword" style="--pos:absolute; --right:1em; --c:oklch(0 0 0.5); cursor:pointer;"></i>
+                      </div>
+                  </div>
+                  <button type="submit" style="--p:0.75em; --bg:black; --c:white; --radius:4px; --size:1em; --weight:600;">Create Account</button>
+              </form>
 
-		<script>
-			// On page load or when changing themes, best to add inline in `head` to avoid FOUC
-			(() => {
-				const metaThemeColorTag = document.querySelector('meta[name="theme-color"]');
-				const prefersDarkTheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+              <p style="--mt:1em; --size:0.875em; --c:oklch(0 0 0.5);">
+                  Already have an account? <a href="https://sage.startr.cloud/" style="--c:oklch(0.65 0.2 270); text-decoration:none;">Sign in</a>
+              </p>
+          </div>
 
-				if (!localStorage?.theme) {
-					localStorage.theme = 'system';
-				}
+          <script>
+              // Toggle password visibility
+              const togglePassword = document.getElementById('togglePassword');
+              const password = document.getElementById('password');
 
-				if (localStorage.theme === 'system') {
-					document.documentElement.classList.add(prefersDarkTheme ? 'dark' : 'light');
-					metaThemeColorTag.setAttribute('content', prefersDarkTheme ? '#171717' : '#ffffff');
-				} else if (localStorage.theme === 'oled-dark') {
-					document.documentElement.style.setProperty('--color-gray-800', '#101010');
-					document.documentElement.style.setProperty('--color-gray-850', '#050505');
-					document.documentElement.style.setProperty('--color-gray-900', '#000000');
-					document.documentElement.style.setProperty('--color-gray-950', '#000000');
-					document.documentElement.classList.add('dark');
-					metaThemeColorTag.setAttribute('content', '#000000');
-				} else if (localStorage.theme === 'light') {
-					document.documentElement.classList.add('light');
-					metaThemeColorTag.setAttribute('content', '#ffffff');
-				} else if (localStorage.theme === 'her') {
-					document.documentElement.classList.add('dark');
-					document.documentElement.classList.add('her');
-					metaThemeColorTag.setAttribute('content', '#983724');
-				} else {
-					document.documentElement.classList.add('dark');
-					metaThemeColorTag.setAttribute('content', '#171717');
-				}
+              togglePassword.addEventListener('click', function () {
+                  const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+                  password.setAttribute('type', type);
+                  this.classList.toggle('fa-eye');
+                  this.classList.toggle('fa-eye-slash');
+              });
 
-				window.matchMedia('(prefers-color-scheme: dark)').addListener((e) => {
-					if (localStorage.theme === 'system') {
-						if (e.matches) {
-							document.documentElement.classList.add('dark');
-							document.documentElement.classList.remove('light');
-							metaThemeColorTag.setAttribute('content', '#171717');
-						} else {
-							document.documentElement.classList.add('light');
-							document.documentElement.classList.remove('dark');
-							metaThemeColorTag.setAttribute('content', '#ffffff');
-						}
-					}
-				});
-			})();
-		</script>
+              // Hash password before submitting
+              document.getElementById('signupForm').addEventListener('submit', async function(event) {
+                  event.preventDefault(); // Prevent form from submitting normally
 
+                  const passwordField = document.getElementById('password');
+                  const hashedPassword = await bcrypt.hash(passwordField.value, 10);
 
-		<link rel="stylesheet" href="./Sign-up-Now_files/style.css">
-		<style>
-			input[type="file"][hidden] {
-				display: none;
-			}
-		</style>
+                  // Replace password field with hashed version
+                  passwordField.value = hashedPassword;
 
-		<title>
-			Sage.Education/Sign-up-Now
-		</title>
+                  // Optionally, you could disable the password field to prevent accidental edits
+                  passwordField.setAttribute('disabled', true);
 
+                  // Submit the form after hashing
+                  this.submit();
+              });
+          </script>
 
-
-		<link rel="modulepreload" href="https://sage.startr.cloud/_app/immutable/entry/start.BNGzoLI_.js">
-		<link rel="modulepreload" href="https://sage.startr.cloud/_app/immutable/chunks/entry.DQlR9LkO.js">
-		<link rel="modulepreload" href="https://sage.startr.cloud/_app/immutable/chunks/scheduler.D2Z9fKB7.js">
-		<link rel="modulepreload" href="https://sage.startr.cloud/_app/immutable/chunks/index.CCskYd93.js">
-		<link rel="modulepreload" href="https://sage.startr.cloud/_app/immutable/entry/app.C24az6Wy.js">
-		<link rel="modulepreload" href="https://sage.startr.cloud/_app/immutable/chunks/preload-helper.C1FmrZbK.js">
-		<link rel="modulepreload" href="https://sage.startr.cloud/_app/immutable/chunks/index.fZYP2xLQ.js">
-
-
-
-		<link rel="modulepreload" as="script" crossorigin=""
-			href="https://sage.startr.cloud/_app/immutable/nodes/0.C4aTgKKx.js">
-		<link rel="modulepreload" as="script" crossorigin=""
-			href="https://sage.startr.cloud/_app/immutable/chunks/globals.D0QH3NT1.js">
-		<link rel="modulepreload" as="script" crossorigin=""
-			href="https://sage.startr.cloud/_app/immutable/chunks/index.BdTBBnFS.js">
-		<link rel="modulepreload" as="script" crossorigin=""
-			href="https://sage.startr.cloud/_app/immutable/chunks/stores.DnpbQIXD.js">
-		<link rel="modulepreload" as="script" crossorigin=""
-			href="https://sage.startr.cloud/_app/immutable/chunks/spread.CdjXV6ny.js">
-		<link rel="modulepreload" as="script" crossorigin=""
-			href="https://sage.startr.cloud/_app/immutable/chunks/Toaster.svelte_svelte_type_style_lang.B-t6LyVe.js">
-		<link rel="stylesheet" crossorigin="" href="./Sign-up-Now_files/Toaster.436keKGd.css">
-		<link rel="modulepreload" as="script" crossorigin=""
-			href="https://sage.startr.cloud/_app/immutable/chunks/_commonjsHelpers.BosuxZz1.js">
-		<link rel="stylesheet" crossorigin="" href="./Sign-up-Now_files/0.B5WFDPLA.css">
-
-		<link rel="stylesheet" crossorigin="" href="./Sign-up-Now_files/27.DTaFkU6h.css">
-		<link crossorigin="anonymous" rel="icon" href="./Sign-up-Now_files/favicon.png">
-		<link rel="stylesheet" href="./Sign-up-Now_files/all.min.css" class="svelte-s4rxq">
-	</head>
-
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">
-			<script>
-				{
-					__sveltekit_1lwp2e6 = {
-						base: ""
-					};
-
-					const element = document.currentScript.parentElement;
-
-					Promise.all([
-						import("/_app/immutable/entry/start.BNGzoLI_.js"),
-						import("/_app/immutable/entry/app.C24az6Wy.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element);
-					});
-				}
-			</script>
-			<div class="fixed m-10 z-50 svelte-s4rxq">
-				<div class="flex space-x-2 svelte-s4rxq"></div>
-			</div>
-			<div class="bg-white dark:bg-gray-950 min-h-screen w-full flex justify-center font-primary svelte-s4rxq">
-				<div class="w-full sm:max-w-md px-10 min-h-screen flex flex-col text-center svelte-s4rxq">
-					<div class="my-auto pb-10 w-full dark:text-gray-100 svelte-s4rxq">
-						<form class="flex flex-col justify-center svelte-s4rxq">
-							<div class="self-center svelte-s4rxq"><img crossorigin="anonymous"
-									src="./Sign-up-Now_files/favicon.png" style="--br: 50%; --h: 10em; --w: 10em;"
-									alt="logo" class="svelte-s4rxq"></div>
-							<div class="svelte-s4rxq" style="--size: 1.2em; --p: 0.2em;">Sign up to Sage.Education/AI
-							</div>
-							<div class="mt-1 text-xs font-medium text-gray-500 svelte-s4rxq">ⓘ Sage.Education/AI does
-								not make any external connections, and your data stays securely on your locally hosted
-								server.</div>
-							<div class="flex flex-col mt-4 svelte-s4rxq">
-								<div class="svelte-s4rxq">
-									<div class="text-sm font-medium text-left mb-1 svelte-s4rxq">Name</div> <input
-										type="text"
-										class="px-5 py-3 rounded-2xl w-full text-sm outline-none border dark:border-none dark:bg-gray-900 svelte-s4rxq"
-										autocomplete="name" placeholder="Enter Your Full Name" required="">
-								</div>
-								<hr class="my-3 dark:border-gray-900 svelte-s4rxq">
-								<div class="mb-2 svelte-s4rxq">
-									<div class="text-sm font-medium text-left mb-1 svelte-s4rxq">Email</div> <input
-										type="email"
-										class="px-5 py-3 rounded-2xl w-full text-sm outline-none border dark:border-none dark:bg-gray-900 svelte-s4rxq"
-										autocomplete="email" placeholder="Enter Your Email" required="">
-								</div>
-								<div class="relative svelte-s4rxq">
-									<div class="text-sm font-medium text-left mb-1 svelte-s4rxq">Password</div> <input
-										type="password" placeholder="Enter Your Password"
-										autocomplete="current-password" required="" class="svelte-s4rxq"
-										style="--m: 0;"> <button type="button"
-										class="eye absolute right-3 top-9 text-gray-500 dark:text-gray-400 svelte-s4rxq"
-										style="--b: none; --shadow: none;"><i class="fa fa-eye svelte-s4rxq"
-											aria-hidden="true"></i></button>
-								</div>
-							</div>
-							<div class="mt-5 svelte-s4rxq"><button
-									class="bg-gray-900 hover:bg-gray-800 w-full rounded-2xl text-white font-medium text-sm py-3 transition svelte-s4rxq"
-									type="submit">Create Account</button>
-								<div class="mt-4 text-sm text-center svelte-s4rxq">Already have an account? <button
-										id="signup" class="font-medium underline svelte-s4rxq" type="button"
-										style="--b: none; --shadow: none;">Sign in</button></div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-			<div id="svelte-announcer" aria-live="assertive" aria-atomic="true"
-				style="position: absolute; left: 0px; top: 0px; clip: rect(0px, 0px, 0px, 0px); clip-path: inset(50%); overflow: hidden; white-space: nowrap; width: 1px; height: 1px;">
-			</div>
-		</div>
-
-
-
-
-
-
-		<style type="text/css" nonce="">
-			html {
-				overflow-y: hidden !important;
-			}
-
-			#splash-screen {
-				background: #fff;
-			}
-
-			html.dark #splash-screen {
-				background: #000;
-			}
-
-			html.dark #splash-screen img {
-				/*	filter: invert(1);*/
-			}
-
-
-			#progress-background {
-				display: none;
-			}
-
-			#progress-bar {
-				display: none;
-			}
-
-			html.her #logo {
-				display: none;
-			}
-
-			html.her #logo-her {
-				display: block;
-				/*	filter: invert(1);*/
-			}
-
-			html.her #progress-background {
-				display: block;
-			}
-
-			html.her #progress-bar {
-				display: block;
-			}
-
-			@media (max-width: 24rem) {
-				html.her #progress-background {
-					display: none;
-				}
-
-				html.her #progress-bar {
-					display: none;
-				}
-			}
-
-			@keyframes pulse {
-				50% {
-					opacity: 0.65;
-				}
-			}
-
-			.animate-pulse-fast {
-				animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-			}
-
-			button {
-				border-radius: 0.6rem !important;
-			}
-
-			button[aria-controls] {
-				border: none;
-				box-shadow: none;
-			}
-
-			a[href="https://svelteflow.dev"] {
-				display: none;
-			}
-
-			svelte-flow__controls {
-				gap: 0.2rem;
-			}
-		</style>
-	</body>
-
+      </body>
 </html>

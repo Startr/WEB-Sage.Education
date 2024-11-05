@@ -25,59 +25,172 @@
                 Powered by <a href="https://Sage.Education/AI" style="
                     --weight:bold;
                     --c:oklch(0.65 0.2 270);
-                   ">Sage.Education/AI</a><br>
-                <small>ⓘ Sage.Education/AI does not make any external connections, and your data stays securely on your
-                    locally hosted server.</small>
+                   ">Sage.Education/AI</a>
             </p>
 
-            <form id="signupForm" style="--w:100%; --d:flex; --fd:column; gap:1em;">
-                <div style="--d:flex; --fd:column;">
-                    <label for="name" style="--mb:0.25em; --size:0.875em; --c:oklch(0 0 0.5);">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter Your Full Name"
-                        style="--p:0.75em; --border:1px solid oklch(0 0 0.8); --radius:4px;">
-                </div>
-                <div style="--d:flex; --fd:column;">
-                    <label for="email" style="--mb:0.25em; --size:0.875em; --c:oklch(0 0 0.5);">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter Your Email"
-                        style="--p:0.75em; --border:1px solid oklch(0 0 0.8); --radius:4px;">
-                </div>
-                <div style="--d:flex; --fd:column;">
-                    <label for="password" style="--mb:0.25em; --size:0.875em; --c:oklch(0 0 0.5);">Password</label>
-                    <div style="--pos:relative; --d:flex; --ai:center;">
-                        <input type="password" id="password" placeholder="Enter Your Password"
-                            style="--p:0.75em; --w:100%; --border:1px solid oklch(0 0 0.8); --radius:4px;">
-                        <i class="fas fa-eye" id="togglePassword"
-                            style="--pos:absolute; --right:1em; --c:oklch(0 0 0.5); cursor:pointer;"></i>
+            <style type="text/css" scoped>
+                .mauticform-name {
+                    font-weight: bold;
+                    font-size: 1.5em;
+                    margin-bottom: 3px;
+                }
+
+                .mauticform-description {
+                    margin-top: 2px;
+                    margin-bottom: 10px;
+                }
+
+                .mauticform-error {
+                    margin-bottom: 10px;
+                    color: red;
+                }
+
+                .mauticform-message {
+                    margin-bottom: 10px;
+                    color: green;
+                }
+
+                .mauticform-row {
+                    display: block;
+                    margin-bottom: 20px;
+                }
+
+                .mauticform-row.mauticform-required .mauticform-label:after {
+                    color: #e32;
+                    content: " *";
+                    display: inline;
+                }
+
+                .mauticform-helpmessage {
+                    display: block;
+                    font-size: 0.9em;
+                    margin-bottom: 3px;
+                }
+
+                .mauticform-errormsg {
+                    display: block;
+                    color: red;
+                    margin-top: 2px;
+                }
+            </style>
+
+            <style type="text/css" scoped>
+                .mauticform-field-hidden {
+                    display: none
+                }
+            </style>
+            <div style="--w:100%" id="mauticform_wrapper_sageeducationbetasignup" class="mauticform_wrapper">
+                <form autocomplete="false" role="form" method="post"
+                    action="http://nota.startr.cloud/form/submit?formId=1" id="mauticform_sageeducationbetasignup"
+                    data-mautic-form="sageeducationbetasignup" enctype="multipart/form-data">
+                    <div class="mauticform-error" id="mauticform_sageeducationbetasignup_error"></div>
+                    <div class="mauticform-message" id="mauticform_sageeducationbetasignup_message"></div>
+                    <div class="mauticform-innerform">
+                        <div class="mauticform-page-wrapper mauticform-page-1" data-mautic-form-page="1">
+
+                            <div id="mauticform_sageeducationbetasignup_f_name" style="--d:flex; --fd:column;"
+                                class="mauticform-row mauticform-text mauticform-field-1">
+                                <label id="mauticform_label_sageeducationbetasignup_f_name"
+                                    for="mauticform_input_sageeducationbetasignup_f_name" class="mauticform-label"
+                                    style="--mb:0.25em; --size:0.875em; --c:oklch(0 0 0.5);">Name</label>
+
+                                <input type="text" name="mauticform[f_name]" value=""
+                                    style="--p:0.75em; --border:1px solid oklch(0 0 0.8); --radius:4px;"
+                                    id="mauticform_input_sageeducationbetasignup_f_name"
+                                    placeholder="Enter Your Full Name" class="mauticform-input">
+
+                                <span class="mauticform-errormsg" style="display:none;"></span>
+                            </div>
+
+
+
+
+
+                            <div id="mauticform_sageeducationbetasignup_email" style="--d:flex; --fd:column;"
+                                class="mauticform-row mauticform-email mauticform-field-2 mauticform-required"
+                                data-validate="email" data-validation-type="email">
+                                <label id="mauticform_label_sageeducationbetasignup_email"
+                                    for="mauticform_input_sageeducationbetasignup_email" class="mauticform-label"
+                                    style="--mb:0.25em; --size:0.875em; --c:oklch(0 0 0.5);">Email</label>
+
+                                <input type="email" name="mauticform[email]" value=""
+                                    style="--p:0.75em; --border:1px solid oklch(0 0 0.8); --radius:4px;"
+                                    id="mauticform_input_sageeducationbetasignup_email" placeholder="Enter Your Email"
+                                    class="mauticform-input">
+
+                                <span class="mauticform-errormsg" style="display:none;">This is required.</span>
+                            </div>
+
+
+
+
+                            <div id="mauticform_sageeducationbetasignup_password" style="--d:flex; --fd:column;"
+                                class="mauticform-row mauticform-password mauticform-field-3 mauticform-required"
+                                data-validate="password" data-validation-type="password">
+                                <label id="mauticform_label_sageeducationbetasignup_password"
+                                    for="mauticform_input_sageeducationbetasignup_password" class="mauticform-label"
+                                    style="--mb:0.25em; --size:0.875em; --c:oklch(0 0 0.5);">Password</label>
+                                <div style="--pos:relative; --d:flex; --ai:center;">
+                                    <input type="password" name="mauticform[password]" value=""
+                                        id="mauticform_input_sageeducationbetasignup_password" class="mauticform-input"
+                                        placeholder="Enter Your Password"
+                                        style="--p:0.75em; --w:100%; --border:1px solid oklch(0 0 0.8); --radius:4px; --m: 0.4em;--ml: 0;">
+                                    <i class="fas fa-eye" id="togglePassword"
+                                        style="position:absolute; right:1em; color:var(--c); cursor:pointer;"></i>
+                                </div>
+                                <span class="mauticform-errormsg" style="display:none;">This is required.</span>
+                            </div>
+                            <div id="mauticform_sageeducationbetasignup_submit"
+                                class="mauticform-row mauticform-button-wrapper mauticform-field-4">
+                                <button class="btn btn-default mauticform-button" name="mauticform[submit]" value="1"
+                                    id="mauticform_input_sageeducationbetasignup_submit" type="submit"
+                                    style="--p:0.75em; --bg:black; --c:white; --w:100%; --radius:4px; --size:1em; --weight:600;">Create
+                                    Account</button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <button type="submit"
-                    style="--p:0.75em; --bg:black; --c:white; --radius:4px; --size:1em; --weight:600;">Create
-                    Account</button>
-            </form>
+                    <input type="hidden" name="mauticform[formId]" id="mauticform_sageeducationbetasignup_id" value="1">
+                    <input type="hidden" name="mauticform[return]" id="mauticform_sageeducationbetasignup_return"
+                        value="">
+                    <input type="hidden" name="mauticform[formName]" id="mauticform_sageeducationbetasignup_name"
+                        value="sageeducationbetasignup">
 
-            <p style="--mt:1em; --size:0.875em; --c:oklch(0 0 0.5);">
-                Already have an account? <a href="https://sage.startr.cloud/"
-                    style="--c:oklch(0.65 0.2 270); text-decoration:none;">Sign in</a>
-            </p>
+                </form>
+
+
+                <p style="--ta:center; --mt:-1em; --size:0.875em; --c:oklch(0 0 0.5);">
+                    Already have an account? <a href="https://sage.startr.cloud/"
+                        style="--c:oklch(0.65 0.2 270); text-decoration:none;">Sign in</a>
+                </p>
+
+
+
+            </div>
+
         </div>
 
         <script>
             // Toggle password visibility
             const togglePassword = document.getElementById('togglePassword');
-            const password = document.getElementById('password');
+            const password = document.getElementById('mauticform_input_sageeducationbetasignup_password');
 
             togglePassword.addEventListener('click', function () {
-                const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-                password.setAttribute('type', type);
-                this.classList.toggle('fa-eye');
-                this.classList.toggle('fa-eye-slash');
+                if (password.type === 'password') {
+                    password.type = 'text';
+                    togglePassword.classList.remove('fa-eye');
+                    togglePassword.classList.add('fa-eye-slash');
+                } else {
+                    password.type = 'password';
+                    togglePassword.classList.remove('fa-eye-slash');
+                    togglePassword.classList.add('fa-eye');
+                }
             });
 
             // Hash password before submitting
-            document.getElementById('signupForm').addEventListener('submit', async function (event) {
+            document.getElementById('mauticform_sageeducationbetasignup').addEventListener('submit', async function (event) {
                 event.preventDefault(); // Prevent form from submitting normally
 
-                const passwordField = document.getElementById('password');
+                const passwordField = document.getElementById('mauticform_input_sageeducationbetasignup_password');
                 const hashedPassword = await bcrypt.hash(passwordField.value, 10);
 
                 // Replace password field with hashed version
@@ -89,6 +202,28 @@
                 // Submit the form after hashing
                 this.submit();
             });
+        </script>
+
+
+        <script type="text/javascript">
+            /** This section is only needed once per page if manually copying **/
+            if (typeof MauticSDKLoaded == 'undefined') {
+                var MauticSDKLoaded = true;
+                var head = document.getElementsByTagName('head')[0];
+                var script = document.createElement('script');
+                script.type = 'text/javascript';
+                script.src = 'https://nota.startr.cloud/media/js/mautic-form.js?v50337752';
+                script.onload = function () {
+                    MauticSDK.onLoad();
+                };
+                head.appendChild(script);
+                var MauticDomain = 'https://nota.startr.cloud';
+                var MauticLang = {
+                    'submittingMessage': "Please wait..."
+                }
+            } else if (typeof MauticSDK != 'undefined') {
+                MauticSDK.onLoad();
+            }
         </script>
 
     </body>

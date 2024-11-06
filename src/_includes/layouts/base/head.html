@@ -61,10 +61,11 @@
   h2,
   h3,
   h4,
-  h5 {
+  h5,
+  strong {
     --bgc: hsla(0deg 100% 54.48% / 66%);
     --grad: 50deg;
-    --grad-color: hsl(273, 100%, 55%);
+    --grad-color: var(--black);
     --c: #d72263;
     font-family: 'Poppins', sans-serif;
     position: relative;
@@ -75,7 +76,11 @@
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    font-size: 3em
+
+  }
+
+  strong {
+    --grad-color: hsl(273, 100%, 55%);
   }
 
   blockquote {

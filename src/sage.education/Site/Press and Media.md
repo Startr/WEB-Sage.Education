@@ -10,7 +10,7 @@ September 12, 2024
 
 Sage Partners with eKadence to Provide Streamlined Service to More Schools[Read more]
 
-![](https://edpuzzle.imgix.net/landing/2022-08/wave-yellow-hero.png?w=8192&auto=compress)
+![](https://edpuzzle./images/IMGix.net/landing/2022-08/wave-yellow-hero.png?w=8192&auto=compress)
 
 In the newsHot off the presses! Find out what they're saying about Sage.Education.
 

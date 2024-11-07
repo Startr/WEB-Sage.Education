@@ -27,7 +27,7 @@ Subtitle: Empowering Teams of Learners
         display:none
       }
     }
-    p:has(>img){
+    p:has(>/images/IMG){
         margin: 2em auto;
         margin-bottom: 3em;
         max-width: 66rem;
@@ -39,7 +39,7 @@ Subtitle: Empowering Teams of Learners
           &:hover {
             transform: scale(1.15); /* Applying scale on hover */
           }
-          img{
+          /images/IMG{
               border-radius: 12px;
               box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
               outline: 2px dashed rgb(230, 230, 230);
@@ -168,11 +168,11 @@ Track and review progress and decision-making with branching conversation views
 
 
 
-![IMG_1387.jpeg](IMG_1387.jpeg)
+![/images/IMG_1387.webp](/images/IMG_1387.webp)
 
 ### View your branching conversation maps
 
-![IMG_1389 1.jpeg](IMG_sage.map.jpeg)
+![/images/IMG_1389 1.webp](/images/IMG_sage.map.webp)
 
 ### See immediate creative artifacts{--fg:3}
 
@@ -185,7 +185,7 @@ Track and review progress and decision-making with branching conversation views
 * **Training and Customization**:
   + Provide means for users to train AI models using datasets and machine learning algorithms.
 
-![IMG_1399.jpeg](IMG_1399.jpeg)
+![/images/IMG_1399.webp](/images/IMG_1399.webp)
 
 ### Contrast AI assistant outputs 
 
@@ -196,13 +196,13 @@ Track and review progress and decision-making with branching conversation views
   + Overcome the limitations of individual AI systems, leading to better results.
   + Enhance critical thinking and analytical skills by evaluating evidence, assessing the strengths and weaknesses of each output, and making informed decisions on which information to use.
 
-![IMG_1394.jpeg](IMG_1394.jpeg)
+![/images/IMG_1394.webp](/images/IMG_1394.webp)
 
 
 
 #### Work with your own documents
 
-![IMG_1391.jpeg](IMG_1391.jpeg)
+![/images/IMG_1391.webp](/images/IMG_1391.webp)
 
 
 ## **A Better Way to Do Educational A.I.** {style="--ta:center"}

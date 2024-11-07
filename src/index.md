@@ -27,7 +27,7 @@ Subtitle: Empowering Teams of Learners
         display:none
       }
     }
-    p:has(>img){
+    p:has(>/images/IMG){
         margin: 2em auto;
         margin-bottom: 3em;
         max-width: 66rem;
@@ -39,7 +39,7 @@ Subtitle: Empowering Teams of Learners
           &:hover {
             transform: scale(1.6); /* Applying scale on hover */
           }
-          img{
+          /images/IMG{
               border-radius: 12px;
               box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
               outline: 2px dashed rgb(230, 230, 230);
@@ -107,7 +107,17 @@ Subtitle: Empowering Teams of Learners
 <a href="/Sign-up-Now"><button>Signup<lighning-bolt></button></a>
 </div>
 
-![Showing Sage in action](IMG_Sage.Map.jpeg)
+<video preload="none" src="/Sage.mp4"
+       autoplay="false" poster="/images/IMG_Sage.Map.webp"
+       muted="false" loop="false" style="--w:60%; --scale-hvr:140%;
+               --br: 12px;
+               --m:1em;
+               --p:1em;
+               --bg:white;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        outline: 2px dashed rgb(230, 230, 230);
+        outline-offset: -0.6em;">
+</video>
 
 ## [**Unlock**](/Sign-up-Now) limitless learning with [**Sage.Education&nbsp;AI**](/Sign-up-Now).  {style="--size:3em; --grad-color:black;"}
 
@@ -221,7 +231,7 @@ Track and review progress and decision-making with branching conversation views
 - **Learn and Share**:
   Community forum for collaboration and knowledge exchange.
 
-![IMG_1387.jpeg](IMG_1387.jpeg)
+![/images/IMG_1387.webp](/images/IMG_1387.webp)
 
 ### View your branching conversation maps
 
@@ -232,7 +242,7 @@ Track and review progress and decision-making with branching conversation views
 - **Effortless Navigation**:
   Users can easily go back to previous conversation pathways and explore alternative conversation.
 
-![IMG_1389 1.jpeg](IMG_Sage.Map.jpeg)
+![/images/IMG_1389 1.webp](/images/IMG_Sage.Map.webp)
 
 ### See immediate creative artifacts{--fg:3}
 
@@ -243,7 +253,7 @@ Track and review progress and decision-making with branching conversation views
 - **Train, Adapt, Unite**:
   Feed your AI with datasets and algorithms, shape it to perfection.
 
-![IMG_1399.jpeg](IMG_1399.jpeg)
+![/images/IMG_1399.webp](/images/IMG_1399.webp)
 
 ### Compare AI Assistants
 
@@ -254,7 +264,7 @@ Track and review progress and decision-making with branching conversation views
 - **AI Systems**:
   Leverage multiple AI systems, enhance critical thinking, and drive informed decisions.
 
-![IMG_1394.jpeg](IMG_1394.jpeg)
+![/images/IMG_1394.webp](/images/IMG_1394.webp)
 
 ### Work with your own documents
 
@@ -264,7 +274,7 @@ Track and review progress and decision-making with branching conversation views
   Use your own data to train your AI, and keep it focused on your specific needs.
 - **AI in Action**:
   See your AI in action, and watch it grow and adapt to your needs.
-![IMG_1391.jpeg](IMG_1391.jpeg)
+![/images/IMG_1391.webp](/images/IMG_1391.webp)
 
 {style="--d:none"}
 
@@ -279,7 +289,7 @@ Track and review progress and decision-making with branching conversation views
       }
       section {
       text-align: center;
-      
+
       }
   h4{
           font-size: 2.6em;
@@ -297,31 +307,31 @@ Track and review progress and decision-making with branching conversation views
 
 #### Tailored Learning for All
 
-<a href="better_way#Tailored Learning for All"><button class="tag">Learn More</button></a>{hidden}
+<a href="#Tailored Learning for All"><button class="tag">Learn More</button></a>{hidden}
 
 {style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow-hvr: 5; outline: #f7e7cc dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
 
 #### Empower AI Teamwork
 
-<a href="better_way#Empowering Teamwork Through AI"><button class="tag">Learn More</button></a>{hidden}
+<a href="#Empowering Teamwork Through AI"><button class="tag">Learn More</button></a>{hidden}
 
 {style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow-hvr: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
 
 #### Cutting-Edge Creativity
 
-<a href="better_way#Unleashing Creativity with Cutting-Edge Tools"><button class="tag">Learn More</button></a>{hidden}
+<a href="#Unleashing Creativity with Cutting-Edge Tools"><button class="tag">Learn More</button></a>{hidden}
 
 {style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow-hvr: 5; outline: #f7e7cc dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
 
 #### Your Data is Yours to Control
 
-<a href="better_way#Your Data, Your Control: Uncompromising Security"><button class="tag">Learn More</button></a>{hidden}
+<a href="#Your Data, Your Control: Uncompromising Security"><button class="tag">Learn More</button></a>{hidden}
 
 {style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow-hvr: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
 
 #### Tomorrow’s Classroom Today
 
-<a href="better_way#Inclusive Solutions for Tomorrow’s Classroom"><button class="tag">Learn More</button></a>{hidden}
+<a href="#Inclusive Solutions for Tomorrow’s Classroom"><button class="tag">Learn More</button></a>{hidden}
 
 {style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow-hvr: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
 
@@ -387,7 +397,7 @@ Track and review progress and decision-making with branching conversation views
 
 <a href="/posts/blog/en/2024-09-26-principles-of-llm-prompting-for-teachers/"><button class="tag">Read More</button></a>
 
-####  Be nice to AI, it might make you smarter.
+####  Be nice to AI, it might make you smarter
 
 <a href="/posts/blog/en/2024-09-26-be-nice-to-ai-it-might-just-make-you-smarter/"><button class="tag">Read More</button></a>
 
@@ -400,7 +410,9 @@ Track and review progress and decision-making with branching conversation views
 <a href="/posts/blog/en/2024-11-04-knowing-when-to-use-llms-vs-search-engines/"><button class="tag " inactive>Read More</button></a>
 
 {style="--d: flex;"}
+
 ### **The Right Solution For Schools** {style="--ta:center; --w: 100%"}
+
 <style scoped
 #### Protect privacy
 

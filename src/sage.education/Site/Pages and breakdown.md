@@ -3,7 +3,7 @@
 
 Home menu of EdPuzzle
 
-[Edpuzzle](https://edpuzzle.imgix.net/edpuzzle-logos/horizontal-logo.svg) Resources  [Schools & Districts](https://edpuzzle.com/schools-districts)[Open class](https://edpuzzle.com/open/)Log inSign up
+[Edpuzzle](https://edpuzzle./images/IMGix.net/edpuzzle-logos/horizontal-logo.svg) Resources  [Schools & Districts](https://edpuzzle.com/schools-districts)[Open class](https://edpuzzle.com/open/)Log inSign up
 
 
 sage.education

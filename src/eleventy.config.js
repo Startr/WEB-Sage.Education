@@ -45,9 +45,11 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("**/*.yml");
 	// Admin index.html passthrough
 	eleventyConfig.addPassthroughCopy("admin/index.html");
-
 	// Exclude the admin folder from processing
 	eleventyConfig.ignores.add("admin/index.html");
+
+	// Put robots.txt in root
+	eleventyConfig.addPassthroughCopy({ 'robots.txt': '/robots.txt' });
 
 	// Passthrough for admin/index.html to ensure it is copied
 	eleventyConfig.addPassthroughCopy({

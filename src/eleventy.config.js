@@ -8,6 +8,8 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 const sectionizePlugin = require("./_plugins/eleventy-plugin-sectionize");
 
+const { JSDOM } = require('jsdom')
+
 module.exports = function (eleventyConfig) {
 	// Define htmlDateString filter
 	eleventyConfig.addFilter("htmlDateString", (dateObj) => {
@@ -37,6 +39,8 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("**/*{.css,.css.map,css2}");
 	// image passthrough
 	eleventyConfig.addPassthroughCopy("**/*.{png,jpg,jpeg,gif,svg,webp}");
+	// Video passthrough
+	eleventyConfig.addPassthroughCopy("**/*.{mp4,webm}");
 	// yml passthrough
 	eleventyConfig.addPassthroughCopy("**/*.yml");
 	// Admin index.html passthrough
@@ -56,4 +60,25 @@ module.exports = function (eleventyConfig) {
 	// note at the moment Nunjucks (njk) file are being parsed as Liquid (liquid) files
 	// this results in a number of errors when using Nunjucks specific syntax.
 	// For now, I'm using Liquid syntax in the Nunjucks files to avoid these errors.
+
+	eleventyConfig.addTransform(
+		'lazy-load-images',
+		(content, outputPath) => {
+			if (outputPath.endsWith('.html')) {
+				const dom = new JSDOM(content)
+				const document = dom.window.document
+
+				const [...images] = document.getElementsByTagName(
+					'img'
+				)
+
+				images.forEach((image) => {
+					image.setAttribute('loading', 'lazy')
+				})
+
+				return document.documentElement.outerHTML
+			} else {
+				return content
+			}
+		})
 };

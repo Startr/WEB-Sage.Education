@@ -25,6 +25,7 @@
     "markdown-it-anchor": "^8.6.7"
   },
   "dependencies": {
+    "jsdom": "^25.0.1",
     "markdown-it-attrs": "^4.1.6"
   }
 }

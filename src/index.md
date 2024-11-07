@@ -103,8 +103,8 @@ Subtitle: Empowering Teams of Learners
 ## [Learn More!](#learn-more) {style="--d:none; --ta:center; --m:10vh"}
 
 <div style="--ta:center; --m:auto">
-<a href="#learn-more"><button class="white">Learn More</button></a>
-<a href="/Sign-up-Now"><button>Signup<lighning-bolt></button></a>
+<a href="#learn-more" class="button white">Learn More</a>
+<a href="/Sign-up-Now" class="button">Signup<lighning-bolt></a>
 </div>
 
 <video preload="none" src="/Sage.mp4"
@@ -210,8 +210,8 @@ Track and review progress and decision-making with branching conversation views
 
 ##
 
-<a href="#learn-our-features"><button class="white">Learn More</button></a>
-<a href="/Sign-up-Now"><button>Signup<lighning-bolt></button></a>
+<a href="#learn-our-features" class="button white">Learn More</a>
+<a href="/Sign-up-Now" class="button">Signup<lighning-bolt></a>
 <br>
 <clip-svg style="--svg-url:url(/images/sage.education_logo.svg);
     --bg:linear-gradient(135deg, #ff7e5f, #feb47b);
@@ -364,12 +364,6 @@ Track and review progress and decision-making with branching conversation views
         align-items: center;
         visibility: visible;
         animation-name: rotateInUpLeft;
-        &::after{
-          content: "";
-          display: block;
-          clear: both;
-          flex-grow: 1;
-        }
         h4{
                -webkit-text-fill-color: skyblue !important;
             }
@@ -384,30 +378,29 @@ Track and review progress and decision-making with branching conversation views
 <style>
 @scope{
       section{
-            flex-direction: row;
+            flex-direction: column;
             justify-content: center;
             min-height: 100%;
             min-width: 100%;
+            display: flex;
             p{ margin: auto; }
+            br {
+  content: "";
+  margin: 2em;
+  display: block;
+  font-size: 24%;
+}
         }
 }
 </style>
 
-#### Principles of LLM Prompting for Teachers
+#### <a href="/posts/blog/en/2024-09-26-principles-of-llm-prompting-for-teachers/">Principles of LLM Prompting for Teachers<br><button class="tag">Read More</button></a>
 
-<a href="/posts/blog/en/2024-09-26-principles-of-llm-prompting-for-teachers/"><button class="tag">Read More</button></a>
+####  <a href="/posts/blog/en/2024-09-26-be-nice-to-ai-it-might-just-make-you-smarter/">Be nice to AI, it might make you smarter<br><button class="tag">Read More</button></a>
 
-####  Be nice to AI, it might make you smarter
+#### <a href="/posts/blog/en/2024-10-27-teaching-with-large-language-models-llms-strategies-for-high-school-educators/">Instructional Strategies and Prompting<br><button class="tag">Read More</button></a>
 
-<a href="/posts/blog/en/2024-09-26-be-nice-to-ai-it-might-just-make-you-smarter/"><button class="tag">Read More</button></a>
-
-#### Instructional Strategies and Prompting
-
-<a href="/posts/blog/en/2024-10-27-teaching-with-large-language-models-llms-strategies-for-high-school-educators/"><button class="tag " inactive>Read More</button></a>
-
-#### When to use LLMs vs Search Engines
-
-<a href="/posts/blog/en/2024-11-04-knowing-when-to-use-llms-vs-search-engines/"><button class="tag " inactive>Read More</button></a>
+#### <a href="/posts/blog/en/2024-11-04-knowing-when-to-use-llms-vs-search-engines/">When to use LLMs vs Search Engines<br><button class="tag">Read More</button></a>
 
 {style="--d: flex;"}
 
@@ -434,7 +427,7 @@ See learners' conversations, engagements, and creative artifacts.
 
 #### Get Started Now
 
-<div style="">
-<a href="https://sage.startr.cloud"><button class="white">Login</button></a>
-<a href="/Sign-up-Now"><button>Signup<lighning-bolt></button></a>
+<div>
+<a href="https://sage.startr.cloud" class="button white">Login</a>
+<a href="/Sign-up-Now" class="button">Signup<lighning-bolt></a>
 </div>

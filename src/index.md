@@ -107,7 +107,7 @@ Subtitle: Empowering Teams of Learners
 <a href="/Sign-up-Now" class="button">Signup<lighning-bolt></a>
 </div>
 
-<video preload="none" src="/Sage.mp4"
+<video preload="none" src="//cdn.jsdelivr.net/gh/Startr/WEB-Sage.Education@master/src/videos/Sage.mp4"
        autoplay="false" poster="/images/IMG_Sage.Map.webp"
        muted="false" loop="false" style="--w:60%; --scale-hvr:140%;
                --br: 12px;

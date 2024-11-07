@@ -387,7 +387,7 @@ Track and review progress and decision-making with branching conversation views
 
 <a href="/posts/blog/en/2024-09-26-principles-of-llm-prompting-for-teachers/"><button class="tag">Read More</button></a>
 
-####  Be Nice to AI, It Might Just Make You Smarter
+####  Be nice to AI, it might make you smarter.
 
 <a href="/posts/blog/en/2024-09-26-be-nice-to-ai-it-might-just-make-you-smarter/"><button class="tag">Read More</button></a>
 

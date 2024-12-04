@@ -6,13 +6,13 @@ tags:
   - kindness
 date: 2024-09-26T11:02:00.000Z
 rating: 4
-summary: >-
+summary: |-
   Polite talk with AI chatbots like ChatGPT leads to better answers. For
-    example, saying "Could you please explain photosynthesis?" gets clearer
-    responses than demanding "Tell me about photosynthesis now!" Studies show that
-    respectful questions make AI more accurate and reliable. Plus, practicing good
-    manners with AI helps improve your real-life communication skills. Discover
-    how kindness to machines can boost your learning and interactions—learn more!
+  example, saying "Could you please explain photosynthesis?" gets clearer
+  responses than demanding "Tell me about photosynthesis now!" Studies show that
+  respectful questions make AI more accurate and reliable. Plus, practicing good
+  manners with AI helps improve your real-life communication skills. Discover
+  how kindness to machines can boost your learning and interactions—learn more!
 ---
 Imagine having a super-smart robot friend who learns from how you talk. That's what artificial intelligence (AI) chatbots are like. These clever computer programs, like ChatGPT and our Sage, don't have real feelings, but how you speak can change how helpful they are.
 

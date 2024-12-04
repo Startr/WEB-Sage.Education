@@ -1,6 +1,8 @@
 #Apple Finder files
 .DS_Store
 
+# ignore our src/admin/config.yml so it has to be manually commited with -f
+src/admin/config.yml
 
 #ignore dist folder
 dist

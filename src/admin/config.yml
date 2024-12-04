@@ -9,7 +9,7 @@ logo_url:
 backend:
   name: github
   repo: Startr/WEB-Sage.Education
-  branch: main # Branch to update (optional; defaults to master)
+  branch: master # Branch to update (optional; defaults to master)
   site_domain: https://sage.education
   base_url: https://sage.education
   auth_endpoint: /api/auth

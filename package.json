@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "`. 11tysync.sh` & cd src && npx @11ty/eleventy --serve --output=../dist",
-    "admin": "`. 11tysync.sh` & npx decap-server --host $(ipconfig getifaddr $(route get default | grep interface | awk '{print $2}')) --port 8081 --cors & cd src && npx @11ty/eleventy --serve --output=../dist",
+    "start": "cd src && npx @11ty/eleventy --serve --output=../dist",
+    "admin": "./set_our_host.sh && npx decap-server --host $(ipconfig getifaddr $(route get default | grep interface | awk '{print $2}')) --port 8081 --cors & cd src && npx @11ty/eleventy --serve --output=../dist",
     "build": "cd src && npx @11ty/eleventy --output=../dist",
     "buildfresh": "rm -rf dist && mkdir dist && cd src && npx @11ty/eleventy --output=../dist",
     "srvsrc": "cd src && python -m http.server 8000 && cd .."

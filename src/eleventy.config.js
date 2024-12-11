@@ -1,82 +1,108 @@
 const { DateTime } = require("luxon");
 const markdownItAnchor = require("markdown-it-anchor");
+const yaml = require("js-yaml");
 
+// Core 11ty plugins
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginBundle = require("@11ty/eleventy-plugin-bundle");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
+
+// Custom plugins
 const sectionizePlugin = require("./_plugins/eleventy-plugin-sectionize");
 
-const yaml = require("js-yaml");
+module.exports = function(eleventyConfig) {
+  // File Processing
+  // --------------
+  
+  // YAML Support
+  eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
+  eleventyConfig.addDataExtension("yml", contents => yaml.load(contents));
 
-module.exports = function (eleventyConfig) {
-	// Add support for .yaml and .yml files in the _data directory
-	eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
-	eleventyConfig.addDataExtension("yml", contents => yaml.load(contents));
+  // Markdown Configuration
+  eleventyConfig.addTemplateFormats("md");
+  const markdownOptions = {
+    html: true,      // Enable HTML inside Markdown
+    breaks: true,    // Convert line breaks to <br>
+    linkify: true,   // Auto-convert URLs to links
+  };
+  eleventyConfig.setLibrary("md", require("markdown-it")(markdownOptions));
 
+  // Date Filters
+  // -----------
+  eleventyConfig.addFilter("htmlDateString", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-MM-dd");
+  });
 
-	// Define htmlDateString filter
-	eleventyConfig.addFilter("htmlDateString", (dateObj) => {
-		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-MM-dd");
-	});
+  eleventyConfig.addFilter("readableDate", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("MMMM dd, yyyy");
+  });
 
-	// Define readableDate filter
-	eleventyConfig.addFilter("readableDate", (dateObj) => {
-		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("MMMM dd, yyyy");
-	});
+  // Tag Handling
+  // -----------
+  eleventyConfig.addFilter("filterTagList", (tags) => {
+    if (!tags) return [];
+    return tags.filter(tag => !["all", "nav", "post", "posts"].includes(tag));
+  });
 
-	// Define filterTagList filter
-	eleventyConfig.addFilter("filterTagList", function (tags) {
-		if (!tags) return [];
-		return tags.filter(tag => !["all", "nav", "post", "posts"].includes(tag));
-	});
+  eleventyConfig.addFilter("slugify", (tag) => {
+    return tag.toString().toLowerCase()
+              .replace(/\s+/g, '-')
+              .replace(/[^\w-]+/g, '');
+  });
 
-	// Define slugify filter
-	eleventyConfig.addFilter("slugify", function (tag) {
-		return tag.toString().toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '');
-	});
+  // Asset Handling
+  // -------------
+  const passthroughCopies = {
+    // Directories
+    "./Sign-up-Now_files/": "/Sign-up-Now_files/",
+    "admin/index.html": "admin/index.html",
+    
+    // Files
+    'robots.txt': '/robots.txt'
+  };
 
-	eleventyConfig.addPassthroughCopy({
-		"./Sign-up-Now_files/": "/Sign-up-Now_files/"
-	});
-	// CSS and CSS2 passthrough
-	eleventyConfig.addPassthroughCopy("**/*{.css,.css.map,css2}");
-	// image passthrough
-	eleventyConfig.addPassthroughCopy("**/*.{png,jpg,jpeg,gif,svg,webp}");
-	// Video passthrough
-	eleventyConfig.addPassthroughCopy("**/*.{mp4,webm}");
-	// yml passthrough
-	eleventyConfig.addPassthroughCopy("**/*.yml");
-	// Admin index.html passthrough
-	eleventyConfig.addPassthroughCopy("admin/index.html");
-	// Exclude the admin folder from processing
-	eleventyConfig.ignores.add("admin/index.html");
+  // Add each passthrough copy configuration
+  Object.entries(passthroughCopies).forEach(([src, dest]) => {
+    eleventyConfig.addPassthroughCopy({ [src]: dest });
+  });
 
-	// Put robots.txt in root
-	eleventyConfig.addPassthroughCopy({ 'robots.txt': '/robots.txt' });
+  // File type passthroughs using glob patterns
+  const assetTypes = [
+    "**/*{.css,.css.map,css2}",              // CSS files
+    "**/*.{png,jpg,jpeg,gif,svg,webp}",      // Images
+    "**/*.{mp4,webm}",                       // Videos
+    "**/*.yml",                              // YAML files
+    "admin/index.html"                       // Admin page
+  ];
 
-	// Passthrough for admin/index.html to ensure it is copied
-	eleventyConfig.addPassthroughCopy({
-		"admin/index.html": "admin/index.html"
-	});
+  assetTypes.forEach(pattern => {
+    eleventyConfig.addPassthroughCopy(pattern);
+  });
 
-	eleventyConfig.addPlugin(sectionizePlugin);
-	eleventyConfig.addTemplateFormats("md");
-	eleventyConfig.setLibrary("md", require("markdown-it")({
-		html: true, // Enable HTML inside Markdown
-		breaks: true,
-		linkify: true,
-	  }));
+  // Exclusions
+  eleventyConfig.ignores.add("admin/index.html");
 
-	// note at the moment Nunjucks (njk) file are being parsed as Liquid (liquid) files
-	// this results in a number of errors when using Nunjucks specific syntax.
-	// For now, I'm using Liquid syntax in the Nunjucks files to avoid these errors.
+  // Plugins
+  // -------
+  eleventyConfig.addPlugin(sectionizePlugin);
+  eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(pluginSyntaxHighlight);
+  eleventyConfig.addPlugin(pluginBundle);
+  eleventyConfig.addPlugin(pluginNavigation);
+  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
-	eleventyConfig.addTransform("lazy-load-images", (content, outputPath) => {
-		if (outputPath.endsWith(".html")) {
-			return content.replace(/<img(?!.*loading=)/g, '<img loading="lazy"');
-		}
-		return content;
-	});
+  // Transforms
+  // ---------
+  eleventyConfig.addTransform("lazy-load-images", (content, outputPath) => {
+    if (outputPath.endsWith(".html")) {
+      return content.replace(/<img(?!.*loading=)/g, '<img loading="lazy"');
+    }
+    return content;
+  });
+
+  // Note: Currently Nunjucks (.njk) files are being parsed as Liquid (.liquid) files
+  // This can cause errors with Nunjucks-specific syntax.
+  // TODO: Configure proper Nunjucks processing
 };

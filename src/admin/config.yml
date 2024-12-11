@@ -61,15 +61,18 @@ collections:
         label: "Pricing Data"
         fields:
           - { label: "Heading", name: "heading", widget: "string", i18n: true }
-          - { label: "Subheading", name: "subheading", widget: "string", i18n: true }
-          - { label: "Description", name: "description", widget: "text", i18n: true }
-          - { label: "Offer a Deal", name: "deal", widget: "boolean", default: true, i18n: true }
+          - { label: "Subheading", name: "subheading", widget: "string", i18n: true, required: false }
+          - { label: "Description", name: "description", widget: "text", i18n: true, required: false }
+          - { label: "Offer a Deal", name: "deal", widget: "boolean", default: true, i18n: true, required: false }
           - label: "Deal Descriptions"
             name: "deal_description"
             widget: "list"
+            min: 1
+            max: 2
             fields:
               - {label: "title", name: "title", widget: "string", i18n: true}
-              - {label: "subtitle", name: "subtitle", widget: "string", i18n: true}
+              - {label: "subtitle", name: "subtitle", widget: "string", i18n: true, required: false}
+              - {label: "call to action", name: "cta", widget: "string", i18n: true, required: false}
           - label: "Offers"
             name: "offers"
             widget: "list"
@@ -80,18 +83,16 @@ collections:
               - {label: "Price", name: "price", widget: "number", default: 4.89}
               - {label: "Deal Price", name: "deal_price", widget: "number", default: 2.99}
               - {label: "Currency", name: "currency", widget: "string", default: "USD"}
-              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Description", name: "description", widget: "text", i18n: true, required: false}
               - label: "Features"
                 name: "features"
                 widget: "list"
                 fields:
                   - {label: "Feature", name: "feature", widget: "string"}
-                  - {label: "Description", name: "description", widget: "text"}
-                  - {label: "Available", name: "available", widget: "boolean", default: true}
-                  - {label: "Available as part of deal", name: "deal_available", widget: "boolean", default: true}
-              - { label: "Start Date", name: "start_date", widget: "datetime",i18n: duplicate }
-              - { label: "End Date", name: "end_date", widget: "datetime",i18n: duplicate }
-              - { label: "Publish Date", name: "date", widget: "datetime",i18n: duplicate }
+                  - {label: "Only available in deal", name: "deal", widget: "boolean", default: false, required: false}
+              - { label: "Start Date", name: "start_date", widget: "datetime",i18n: duplicate, required: false }
+              - { label: "End Date", name: "end_date", widget: "datetime",i18n: duplicate, required: false }
+              - { label: "Publish Date", name: "date", widget: "datetime",i18n: duplicate, required: false }
   - name: "pages" # Used in routes, e.g., /admin/collections/pages
     label: "Pages" # Used in the UI
     folder: "src/pages" # The path to the folder where the documents are stored

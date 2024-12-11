@@ -8,9 +8,14 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 const sectionizePlugin = require("./_plugins/eleventy-plugin-sectionize");
 
-const { JSDOM } = require('jsdom')
+const yaml = require("js-yaml");
 
 module.exports = function (eleventyConfig) {
+	// Add support for .yaml and .yml files in the _data directory
+	eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
+	eleventyConfig.addDataExtension("yml", contents => yaml.load(contents));
+
+
 	// Define htmlDateString filter
 	eleventyConfig.addFilter("htmlDateString", (dateObj) => {
 		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-MM-dd");
@@ -58,29 +63,20 @@ module.exports = function (eleventyConfig) {
 
 	eleventyConfig.addPlugin(sectionizePlugin);
 	eleventyConfig.addTemplateFormats("md");
+	eleventyConfig.setLibrary("md", require("markdown-it")({
+		html: true, // Enable HTML inside Markdown
+		breaks: true,
+		linkify: true,
+	  }));
 
 	// note at the moment Nunjucks (njk) file are being parsed as Liquid (liquid) files
 	// this results in a number of errors when using Nunjucks specific syntax.
 	// For now, I'm using Liquid syntax in the Nunjucks files to avoid these errors.
 
-	eleventyConfig.addTransform(
-		'lazy-load-images',
-		(content, outputPath) => {
-			if (outputPath.endsWith('.html')) {
-				const dom = new JSDOM(content)
-				const document = dom.window.document
-
-				const [...images] = document.getElementsByTagName(
-					'img'
-				)
-
-				images.forEach((image) => {
-					image.setAttribute('loading', 'lazy')
-				})
-
-				return document.documentElement.outerHTML
-			} else {
-				return content
-			}
-		})
+	eleventyConfig.addTransform("lazy-load-images", (content, outputPath) => {
+		if (outputPath.endsWith(".html")) {
+			return content.replace(/<img(?!.*loading=)/g, '<img loading="lazy"');
+		}
+		return content;
+	});
 };

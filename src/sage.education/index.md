@@ -1,6 +1,6 @@
 ---
 title: Sage.Education
-layout: layouts/base.html
+layout: layouts/base.njk
 tags:
   - "#AI"
   - "#education"

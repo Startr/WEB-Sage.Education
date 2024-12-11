@@ -2,7 +2,7 @@
 tags:
   - todo
 notes: "## Nice to have- [ ] [[For Teachers ]]- [ ] For Students- [ ] For Parentshttps://support.edpuzzle.com/hc/en-us"
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 
 

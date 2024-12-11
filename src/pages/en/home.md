@@ -1,12 +1,7 @@
 ---
-title: Sage.Education
 layout: layouts/base.njk
-tags:
-  - "#AI"
-  - "#education"
-  - "#technology"
-  - "#students"
-Subtitle: Empowering Teams of Learners
+title: Home
+date: 2024-12-06T08:48:00.000Z
 ---
 <style>
   @scope{

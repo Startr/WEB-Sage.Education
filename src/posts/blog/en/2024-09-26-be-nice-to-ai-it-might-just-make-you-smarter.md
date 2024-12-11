@@ -14,7 +14,7 @@ summary: |-
   manners with AI helps improve your real-life communication skills. Discover
   how kindness to machines can boost your learning and interactions—learn more!
 ---
-Imagine having a super-smart robot friend who learns from how you talk. That's what artificial intelligence (AI) chatbots are like. These clever computer programs, like ChatGPT and our Sage, don't have real feelings, but how you speak can change how helpful they are.
+Imagine a super-smart robot friend who learns from how you talk. That's what artificial intelligence (AI) chatbots are like. These clever computer programs, like ChatGPT and our Sage, don't have real feelings, but how you speak can change how helpful they are.
 
 ## Manners Matter, Even with Machines
 
@@ -41,4 +41,3 @@ Further research in sentiment analysis also highlights the role of prompt engine
 So, next time you're chatting with an AI for help with your schoolwork, remember that a little kindness goes a long way. You will likely get better answers, but you'll also be sharpening your communication skills for the real world. Who knew being nice to a computer could make you smarter?
 
 In conclusion, when educators and students use polite and thoughtful language with LLMs, they are more likely to receive helpful, detailed, and contextually appropriate responses. This enhances the learning experience and models positive communication habits that are valuable in digital and real-world interactions.
- 

@@ -1,7 +1,7 @@
 ---
 related: https://startr.cloud/privacy/
 "#todo": 
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 # Sage Privacy & Security
 

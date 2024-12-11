@@ -13,20 +13,22 @@
             <div style="--d:flex; --jc:center; --ai:center; --m:1rem 0;">
                 <label style="--m:0 1rem; --c:#666">{{ pricing.deal_description[0].title }}</label>
                 <div style="--pos:relative; --w:2rem; --h:1rem;">
-                    <div style="--bg:#ccc; --radius:1rem; --w:100%; --h:100%; --pos:absolute;"></div>
-                    <div
-                        style="--bg:#fff; --radius:50%; --w:.9rem; --h:.9rem; --pos:absolute; --top:50%; --left:0; --t:translateY(-50%); --tn:left 0.3s;">
+                    <div style="--bg:#ccc; --radius:1rem; --w:100%; --h:100%; --pos:absolute;"> </div>
+                    <div style="--bg:#fff; --radius:50%; --w:.9rem; --h:.9rem; --pos:absolute; --top:50%; --left:0; --t:translateY(-50%); --tn:left 0.3s;">
                     </div>
-                    <input type="checkbox" id="billing-toggle" onchange="toggleBilling()"
-                        style="--w:100%; --op:0; --cur:pointer; --t:translateY(-50%);" />
+                    <input type="checkbox" id="billing-toggle" aria-live="polite" aria-pressed="false"
+                        onchange="toggleBilling()" style="--w:100%; --op:0; --cur:pointer; --t:translateY(-50%);" />
                 </div>
                 <label style="--m:0 1rem; --c:#666">{{ pricing.deal_description[1].title }}</label>
             </div>
             <div id="pricing" style="--w:100%; --d:flex; --fd:column; --ai:center; --m:2rem 0;">
                 <!-- No Deal Tier Pricing -->
-                <div id="nodeal-tiers" style="--w:100%; --gtc:1fr 1fr 1fr; gap:1rem; --d:flex; --d-md:grid;">
+                <div id="nodeal-tiers"
+                    style="--w:100%; --gtc:1fr 1fr 1fr; gap:1rem; --d:flex; --d-md:grid; --fd:column;">
                     {% for offer in pricing.offers %}
-                    <div style="--bg:#fff; --p:1.5rem; --radius:.5rem; --shadow:8">
+                    <div style="
+                    --bg:#fff; --p:1.5rem; --radius:.5rem; --shadow:8; 
+                    {% if loop.index == 2 %}--scale: 104%; --scale-hvr: 110%;{% endif %}">
                         <div style="--size:1.5rem; --weight:bold; --m:.5rem 0;">${{ offer.price }}</div>
                         <p style="--m:.5rem 0;">Per month</p>
                         <button style="--bg:#6200ea; --c:#fff; --p:.5rem 1rem; --radius:.5rem; --cur:pointer;">
@@ -44,9 +46,11 @@
                     {% endfor %}
                 </div>
                 <!-- Deal Tier Pricing -->
-                <div id="deal-tiers" style="--w:100%; --gtc:1fr 1fr 1fr; gap:1rem; --d:none; --d-md:none;">
+                <div id="deal-tiers" style="--w:100%; --gtc:1fr 1fr 1fr; gap:1rem; --d:none; --d-md:none; --fd:column;">
                     {% for offer in pricing.offers %}
-                    <div style="--bg:#fff; --p:1.5rem; --radius:.5rem; --shadow:8">
+                    <div style="
+                    --bg:#fff; --p:1.5rem; --radius:.5rem; --shadow:8; 
+                    {% if loop.index == 2 %}--scale: 104%; --scale-hvr: 110%;{% endif %}">
                         <div style="--size:1.5rem; --weight:bold; --m:.5rem 0;">${{ offer.deal_price }}</div>
                         <p style="--m:.5rem 0;">Per month</p>
                         <button style="--bg:#6200ea; --c:#fff; --p:.5rem 1rem; --radius:.5rem; --cur:pointer;">
@@ -74,14 +78,16 @@
                 const deal = document.getElementById('deal-tiers');
                 if (dealToggle.checked) {
                     noDeal.style.setProperty('--d', 'none');
-                    noDeal.style.setProperty('--d-md', 'none')
+                    noDeal.style.setProperty('--d-md', 'none');
                     deal.style.setProperty('--d', 'flex');
                     deal.style.setProperty('--d-md', 'grid');
+                    dealToggle.setAttribute("aria-pressed", "true");
                 } else {
                     noDeal.style.setProperty('--d', 'flex');
-                    noDeal.style.setProperty('--d-md', 'grid')
+                    noDeal.style.setProperty('--d-md', 'grid');
                     deal.style.setProperty('--d', 'none');
                     deal.style.setProperty('--d-md', 'none');
+                    dealToggle.setAttribute("aria-pressed", "false");
                 }
             }
         </script>

@@ -13,7 +13,9 @@ DEST_DIR="/Users/somma/Documents/Projects/GitHub/WEB-Sage.Education/src/sage.edu
 
 # Function to sync directories using rsync
 sync_directories() {
-    rsync -avz --delete "$SRC_DIR/" "$DEST_DIR/"
+    # syncing disabled
+    echo "Uncomment the rsync command to enable syncing"
+    #rsync -avz --delete "$SRC_DIR/" "$DEST_DIR/"
 }
 
 

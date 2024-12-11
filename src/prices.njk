@@ -1,0 +1,90 @@
+<html style="--bg:#f8f9fa">
+
+    <head>
+        <!-- Include Startr Style CSS -->
+        <link rel="stylesheet" href="https://startr.style/style.css" />
+    </head>
+
+    <body style="--size:1em; --bg:#f8f9fa; --c:#333; --ta:center; --p:2rem">
+        <section style="--p:5rem 0;">
+            <h1 style="--size-sm:5rem; --weight:bold">
+                {{ pricing.heading }}<br />{{ pricing.subheading }}
+            </h1>
+            <div style="--d:flex; --jc:center; --ai:center; --m:1rem 0;">
+                <label style="--m:0 1rem; --c:#666">{{ pricing.deal_description[0].title }}</label>
+                <div style="--pos:relative; --w:2rem; --h:1rem;">
+                    <div style="--bg:#ccc; --radius:1rem; --w:100%; --h:100%; --pos:absolute;"></div>
+                    <div
+                        style="--bg:#fff; --radius:50%; --w:.9rem; --h:.9rem; --pos:absolute; --top:50%; --left:0; --t:translateY(-50%); --tn:left 0.3s;">
+                    </div>
+                    <input type="checkbox" id="billing-toggle" onchange="toggleBilling()"
+                        style="--w:100%; --op:0; --cur:pointer; --t:translateY(-50%);" />
+                </div>
+                <label style="--m:0 1rem; --c:#666">{{ pricing.deal_description[1].title }}</label>
+            </div>
+            <div id="pricing" style="--w:100%; --d:flex; --fd:column; --ai:center; --m:2rem 0;">
+                <!-- No Deal Tier Pricing -->
+                <div id="nodeal-tiers" style="--w:100%; --gtc:1fr 1fr 1fr; gap:1rem; --d:flex; --d-md:grid;">
+                    {% for offer in pricing.offers %}
+                    <div style="--bg:#fff; --p:1.5rem; --radius:.5rem; --shadow:8">
+                        <div style="--size:1.5rem; --weight:bold; --m:.5rem 0;">${{ offer.price }}</div>
+                        <p style="--m:.5rem 0;">Per month</p>
+                        <button style="--bg:#6200ea; --c:#fff; --p:.5rem 1rem; --radius:.5rem; --cur:pointer;">
+                            Start now
+                        </button>
+                        <div style="--m:1rem 0;">
+                            <p>{{ offer.description }}</p>
+                        </div>
+                        <ul style="--list:none; --p:0;">
+                            {% for feature in offer.features %}
+                            <li style="--m:.5rem 0;">{{ feature.feature }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endfor %}
+                </div>
+                <!-- Deal Tier Pricing -->
+                <div id="deal-tiers" style="--w:100%; --gtc:1fr 1fr 1fr; gap:1rem; --d:none; --d-md:none;">
+                    {% for offer in pricing.offers %}
+                    <div style="--bg:#fff; --p:1.5rem; --radius:.5rem; --shadow:8">
+                        <div style="--size:1.5rem; --weight:bold; --m:.5rem 0;">${{ offer.deal_price }}</div>
+                        <p style="--m:.5rem 0;">Per month</p>
+                        <button style="--bg:#6200ea; --c:#fff; --p:.5rem 1rem; --radius:.5rem; --cur:pointer;">
+                            Start now
+                        </button>
+                        <div style="--m:1rem 0;">
+                            <p>{{ offer.description }}</p>
+                        </div>
+                        <ul style="--list:none; --p:0;">
+                            {% for feature in offer.features %}
+                            {% if feature.deal %}
+                            <li style="--m:.5rem 0;">{{ feature.feature }}</li>
+                            {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+        <script>
+            function toggleBilling() {
+                const dealToggle = document.getElementById('billing-toggle');
+                const noDeal = document.getElementById('nodeal-tiers');
+                const deal = document.getElementById('deal-tiers');
+                if (dealToggle.checked) {
+                    noDeal.style.setProperty('--d', 'none');
+                    noDeal.style.setProperty('--d-md', 'none')
+                    deal.style.setProperty('--d', 'flex');
+                    deal.style.setProperty('--d-md', 'grid');
+                } else {
+                    noDeal.style.setProperty('--d', 'flex');
+                    noDeal.style.setProperty('--d-md', 'grid')
+                    deal.style.setProperty('--d', 'none');
+                    deal.style.setProperty('--d-md', 'none');
+                }
+            }
+        </script>
+    </body>
+
+</html>

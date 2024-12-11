@@ -1,5 +1,5 @@
 heading: Create in Minutes.
-subheading: Make with ease.
+subheading: Not weeks or months.
 description: Enjoy Sage.Education now!
 deal: true
 deal_description:
@@ -20,10 +20,17 @@ offers:
     ends: ""
     description: Enjoy our Startr package
     features:
-      - available: true
-        deal_available: true
-        feature: secure data
+      - feature: secure data
         description: no shared data with 3rd parties
+        deal: false
+      - feature: ✔ Find emails
+        deal: false
+      - feature: ✔ Verify emails
+        deal: false
+      - feature: ✔ Clean data
+        deal: false
+      - feature: ✔ Filter leads
+        deal: true
   - price: 23
     public: true
     begins: ""
@@ -39,10 +46,9 @@ offers:
       6x our pay by month!
       Sooo many leads!!!
     features:
-      - available: true
-        deal_available: true
-        feature: Export leads
+      - feature: Export leads
         description: Export leads now
+        deal: true
   - price: 35
     public: true
     begins: ""
@@ -58,7 +64,5 @@ offers:
       8x our base pay by month!
       How many leads? 10x!
     features:
-      - available: true
-        deal_available: true
-        feature: Find emails
-        description: Find emails with no hassle
+      - feature: Find email
+        deal: false

@@ -14,7 +14,8 @@
                 <label style="--m:0 1rem; --c:#666">{{ pricing.deal_description[0].title }}</label>
                 <div style="--pos:relative; --w:2rem; --h:1rem;">
                     <div style="--bg:#ccc; --radius:1rem; --w:100%; --h:100%; --pos:absolute;"> </div>
-                    <div style="--bg:#fff; --radius:50%; --w:.9rem; --h:.9rem; --pos:absolute; --top:50%; --left:0; --t:translateY(-50%); --tn:left 0.3s;">
+                    <div
+                        style="--bg:#fff; --radius:50%; --w:.9rem; --h:.9rem; --pos:absolute; --top:50%; --left:0; --t:translateY(-50%); --tn:left 0.3s;">
                     </div>
                     <input type="checkbox" id="billing-toggle" aria-live="polite" aria-pressed="false"
                         onchange="toggleBilling()" style="--w:100%; --op:0; --cur:pointer; --t:translateY(-50%);" />
@@ -71,23 +72,42 @@
                 </div>
             </div>
         </section>
+
+
         <script>
             function toggleBilling() {
-                const dealToggle = document.getElementById('billing-toggle');
+                const toggle = document.getElementById('billing-toggle');
+                const toggleSwitch = toggle.previousElementSibling;
                 const noDeal = document.getElementById('nodeal-tiers');
                 const deal = document.getElementById('deal-tiers');
-                if (dealToggle.checked) {
+                if (toggle.checked) {
+                    // Update toggle switch styles
+                    toggleSwitch.style.setProperty('--left', 'calc(100% - .9rem)');
+                    toggleSwitch.previousElementSibling.style.setProperty('--bg', '#4caf50');
+                    // Update ARIA attribute
+                    toggle.setAttribute("aria-pressed", "true");
+
+                    // Toggle deal and no-deal tiers visibility
                     noDeal.style.setProperty('--d', 'none');
                     noDeal.style.setProperty('--d-md', 'none');
                     deal.style.setProperty('--d', 'flex');
                     deal.style.setProperty('--d-md', 'grid');
-                    dealToggle.setAttribute("aria-pressed", "true");
+
+
                 } else {
+                    // Update toggle switch styles
+                    toggleSwitch.style.setProperty('--left', '0');
+                    toggleSwitch.previousElementSibling.style.setProperty('--bg', '#ccc');
+                    // Update ARIA attribute
+                    toggle.setAttribute("aria-pressed", "false");
+
+                    // Toggle deal and no-deal tiers visibility
                     noDeal.style.setProperty('--d', 'flex');
                     noDeal.style.setProperty('--d-md', 'grid');
                     deal.style.setProperty('--d', 'none');
                     deal.style.setProperty('--d-md', 'none');
-                    dealToggle.setAttribute("aria-pressed", "false");
+
+
                 }
             }
         </script>

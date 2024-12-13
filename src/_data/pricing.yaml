@@ -20,7 +20,7 @@ offers:
     ends: ""
     description: Enjoy our Startr package
     features:
-      - feature: secure data
+      - feature: ✔ secure data
         description: no shared data with 3rd parties
         deal: false
       - feature: ✔ Find emails

@@ -6,22 +6,20 @@ tags:
   - music
   - Snap!
   - Startr
-date: 2025-02-21T16:18:00.000Z
+date: 2025-02-21T17:46:00.000Z
 rating: 5
-summary: The Snap! Procedural Music Creation Curriculum. In this course, you
-  will learn to create music through coding, using Snap! – a visual programming
-  language – as your instrument. The curriculum is fun and hands-on. You will
-  start with simple sounds and build up to complex generative music. By the end,
-  you'll be able to code a program that can compose entire songs or even a whole
+summary: Unlock your creativity with the Snap! Procedural Music Creation
+  curriculum. Learn to make music by coding with Snap! as your tool. Start with
+  simple sounds and build up to creating complex generative music. You'll be
+  amazed at what you can do - coding a program that can even compose a whole
   album for you!
 ---
-# Intro to Snap! Procedural Music Creation Curriculum
-
 ## Introduction
 
-Welcome to the Snap! Procedural Music Creation Curriculum. In this course, you will learn to create music through coding, using Snap! – a visual programming language – as your instrument. The curriculum is fun and hands-on. You will start with simple sounds and build up to complex generative music. By the end, you'll be able to code a program that can compose entire songs or even a whole album for you!
+Get ready to create music like never before with the Snap! Procedural Music Creation Curriculum. This hands-on course teaches you to make music by coding with Snap!, a visual programming language as your instrument. You'll start with simple sounds and build up to creating complex, unique music. By the end of the course, you'll be able to code a program that can compose entire songs or even a whole album.
 
-Generative music means music created by a set of rules and randomness, rather than manually writing every note. This approach makes each performance unique. Famous musicians have used generative techniques for creative inspiration. Brian Eno, a pioneer of ambient music, once said he wanted his album _Music for Airports_ to be “made endless” [(GenerativeMusic.com | Apps by Brian Eno and Peter Chilvers))](https://www.generativemusic.com/#:~:text=Air%20is%20like%20%27Music%20for,always%20wanted%20it%20to%20be) – generative music makes that possible. Even movie soundtracks use these ideas: the official _Inception_ app merged the listener’s surroundings with ambient music and Hans Zimmer’s score to create a dreamy, ever-changing soundscape [(Inception App Augments Your Reality, Acoustically | WIRED)](https://www.wired.com/2010/12/inception-app/#:~:text=The%20app%20uses%20just%20about,life%20memories). These examples show how coding and music can blend in exciting ways. Now it's your turn to explore, learn and create!
+
+So, what's generative music? It's music created using rules and randomness, rather than writing every note by hand. This approach makes each performance one-of-a-kind. Many famous musicians, like Brian Eno, have used generative techniques to spark their creativity. In fact, Brian Eno wanted his album _Music for Airports_ to be "made endless" [(GenerativeMusic.com | Apps by Brian Eno and Peter Chilvers)](https://www.generativemusic.com/#:~:text=Air%20is%20like%20%27Music%20for,always%20wanted%20it%20to%20be). Even movie soundtracks use generative music ideas, like the Inception app, which merged the listener's surroundings with ambient music and Hans Zimmer's score to create a unique soundscape  [(Inception App Augments Your Reality, Acoustically | WIRED)](https://www.wired.com/2010/12/inception-app/#:~:text=The%20app%20uses%20just%20about,life%20memories). These examples show how coding and music can blend in exciting ways. Now it's your turn to explore, learn and create!
 
 ## Course Outline
 
@@ -29,7 +27,7 @@ Generative music means music created by a set of rules and randomness, rather th
 2. **Lesson 1: Snap! Sound Basics** – Play notes and make simple tunes using Snap!’s sound blocks.
 3. **Lesson 2: Coding a Simple Snap! Melody** – Use loops and sequences to create your first coded melody.
 4. **Lesson 3: Coding Rhythm and Beats in Snap!** – Learn to program timing and rhythm patterns in your music.
-5. **Lesson 4: Introduction to TuneScope** – Transition to TuneScope for richer instruments and sounds [([PDF] TUNESCOPE - Snap!)](https://snap.berkeley.edu/static/doc/TuneScope%20Book.pdf#:~:text=TuneScope%20extends%20the%20music%20creation,Eric%20Stein).
+5. **Lesson 4: Introduction to TuneScope** – Transition to TuneScope for richer instruments and sounds.
 6. **Lesson 5: Adding Randomness to Music** – Introduce random variations to make music unpredictable and fun.
 7. **Lesson 6: Algorithmic Melody Patterns** – Generate melodies with simple algorithms and patterns.
 8. **Lesson 7: Advanced Melody Generation with TuneScope** – Create more complex tunes with TuneScope’s features.

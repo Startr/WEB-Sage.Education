@@ -136,33 +136,53 @@ Remember, coding music is all about experimentation and creativity. So, have fun
 
 ## Lesson 2: Coding a Simple Snap! Melody
 
+
 **Objective:** Learn to use loops and sequences to create melodies. 
-In this lesson, you will compose a simple melody by coding a sequence of notes and using loops to repeat patterns. This will show you how code can save you time (no need to drag 100 blocks for 100 notes if you can loop a shorter pattern!)
+In this lesson, you'll learn how to use **loops** and **sequences** to create simple melodies. By coding a sequence of notes and using loops to **repeat** patterns, you'll see how code can save you time and effort.
 
 **Activities:**
 
-1. **Compose a Short Tune:** Think of a very simple melody (for example, the first line of “Twinkle Twinkle Little Star” or a few notes from a favorite song). Using what you learned in Lesson 1, arrange a sequence of **`play note`** blocks to play that melody. Don’t worry if it’s not perfect or very long. Even 4-8 notes are fine. Play it to test how it sounds. Adjust the note numbers if need to get the tune right.
-	-  Here are three short melody sequences. If you use, them try to recognize what songs they are from.
+1. **Compose a Short Tune:** Think of a simple melody, like the first line of "Twinkle Twinkle Little Star" or a few notes from your favorite song. 
+	- Using what you learned in Lesson 1, arrange a sequence of **`play note`** blocks to play that melody. Don't worry if it's not perfect or very long - even 4-8 notes are fine. Play it to test how it sounds, and adjust the note numbers if needed to get the tune right.
+	-  Here are three short melody sequences you can use. If do you use them, try to recognize what songs they are from.
 		- 60, 60, 67 , 67 ,69 ,69, 67, 67
 		- 64, 62, 60, 62, 64, 64, 64, 64
 		- 63, 59, 66, 59, 63, 59, 66, 59
 
-2. **Use a Loop for Repetition:** Most songs have repeating parts. Instead of duplicating the same blocks over and over, use a loop. Snap! has a **`repeat (10) { ... }`** block or a **`forever { ... }`** block (It also has the **`for each`** but we'll learn about that in a later chapter). 
-	- Select a few notes from your melody (2-4 notes will do).
-	- Place those note blocks inside a **`repeat`** block. 
-	- Set the repeat count to, say, 4. 
-	- Now click the loop to hear the motif repeat 4 times. You just saved effort by looping! 
-	- Try increasing the repeat count or change how many notes are being repeated. If you want, you can also change the notes. Listen to what sounds best to you!
+2. **Try Looping with Your Melody**: Most songs have repeating parts. Instead of duplicating the same blocks over and over, use a **loop**. Snap! has a **`repeat (10) { ... }`** block and a  **`forever { ... }`** block . (There is also the **`for each`** block, but we'll learn about that in a later chapter). 
+	- **Select a Few Notes**: Choose 2-4 notes from your melody.
+	- **Create a Loop**: Place those note blocks inside a **`repeat`** block.
+	- **Set the Repeat Count**: Set the repeat count to 4.
+	- **Hear the Loop**: Click the loop to hear the motif repeat 4 times. You've just saved effort by looping!
+	- **Experiment with the Loop**: Try increasing the repeat count or changing the number of notes being repeated. You can also modify the notes themselves. Listen to what sounds best to you and have fun experimenting!
 
-3. **Create an A-B-A Melody Structure:** A common song structure is A-B-A (sometimes called verse, chorus, verse). Let’s simulate that simply. Let "A" be the melody motif you just looped. 
-	- Let's create a different short melody motif for your "B" (chose maybe 4 more notes) as another sequence of blocks. If you want, you can also loop your melody B like you did with your melody A. 
-	- Now, let's play your A-B-A melody. For now, we will do it manually: 
+3. **Create an A-B-A Melody Structure:** Let's create a simple song structure using the A-B-A format, also known as verse-chorus-verse. We'll use the looped melody you created earlier as the "A" section.
+	- **Create a New Melody Motif**: Come up with a new short melody motif for the "B" section. Choose 4 more notes and create a sequence of blocks to play them.
+	- **Loop the "B" Melody (Optional)**: If you want, you can loop the "B" melody just like you did with the "A" melody.
+	- **Play the A-B-A Melody**: Now, let's play the A-B-A melody. For now, we will do it manually: 
 		- Play your A looped melody once
 		- Then play the B melody (your new sequence) once
 		- And then play A again.
-	- This A-B-A gives a simple structure to your music. Later, we’ll learn how to automate the structure, but give yourself a high-five for manually creating a structured A-B-A melody with code!
+	This A-B-A gives a simple structure to your music. Later, we’ll learn how to automate the structure, but give yourself a high-five for manually creating a structured A-B-A melody with code!
 
-**The end of Lesson 2,** you have coded an actual melody. You also learned how loops can make coding music easier and more efficient. **This skill will be crucial** as you build longer pieces without writing a million separate blocks. Feel free to experiment: try making the melody longer, or add a **`wait ( ) secs`**  or a **`rest for ( ) beats`** block between notes to create pauses (rests). The more you play around, the more comfortable you'll get. Keep your favorite melody code – you might reuse parts of it in a later project!
+
+**You Did It!**
+
+Congratulations on completing Lesson 2! You've successfully created a simple A-B-A melody structure using code. This is a huge achievement, and you should be proud of yourself. Take a moment to celebrate your success - you've earned it!
+
+**What You've Learned**
+
+In this lesson, you've not only coded a melody, but you've also discovered the power of loops in making music coding easier and more efficient. This skill will be essential as you build longer and more complex pieces. With loops, you'll be able to create intricate melodies without having to write a million separate blocks.
+
+**Experiment and Have Fun**
+
+Now that you've completed the lesson, feel free to experiment and try new things. You can:
+- Make the melody longer and more complex
+- Add pauses between notes using **`wait ( ) secs`**  or a **`rest for ( ) beats`** blocks
+- Play around with different note combinations and rhythms
+
+The more you play around, the more comfortable you'll get. Keep your favourite melody code – you might reuse parts of it in a later project!
+
 
 ## Lesson 3: Coding Rhythm and Beats in Snap!
 

@@ -52,39 +52,42 @@ Each lesson builds on the previous one. Work through them in order, and by the e
 
 ## Lesson 0: Introduction to Snap! Programming
 
-**Objective:** Get comfortable with Snap!’s block-based programming.
-In this lesson, you will be introduced to the Start's Snap! programming platform and how to navigate around it. If you are already familiar with Snap!, feel free to skip to lesson #1. 
+**Objective:** Welcome to Snap! In this lesson, we'll show you how to use the Startr Snap! platform and get started with block-based programming. Don't worry if you're new to programming - we'll take it one step at a time.
 
 **Activities:**
 
-1. **Create a Startr Snap Account:** Let's start by creating a [Startr Snap!]([https://snap.startr.cloud](https://snap.startr.cloud/)) account. 
-	- Clicking the Join button (top right corner) and enter the needed information to Sign Up! 
-	- If you already have an Startr Snap! account, click on the Login button instead.
-	- If you are not ready to make an account, you can always click on the Run Snap! button (top left) and just start coding. While your work wont be saved on the Startr Snap! cloud site, you can always save your work to your computer.
+1. 1. **Create a Startr Snap! Account** : Go to [Startr Snap!]([https://snap.startr.cloud](https://snap.startr.cloud/)) and sign up for an account. It's easy:
+    - Click the **Join** button in the top right corner.
+    - Fill in the required information to create your account.
+    - If you already have an account, click the **Login** button instead.
+    - Not ready to create an account? You can still start coding by clicking the **Run Snap!** button in the top left corner. Keep in mind that your work won't be saved online, but you can always save it to your computer.
 	
-2. **Orient Yourself in the Snap! Workspace:** Because Snap! is a block-based programming language, blocks of code are dragged and snapped together.
-	- Grab a **`Move 10 Steps`** block from the Code Block Palette on the left-hand side of the screen and drag it to the Script Area in the middle of the screen. 
-	- Grab another block, like the **`turn clockwise 15 degrees`** block, and snap it together with the first block. This is now a code script.
-	- Clicking a group of code blocks causes the script to run. In this case, you should see your arrow on the Stage (located on the top right side of your screen) will move and rotate.  
-	
-3. **Explore the Snap! Menus:** There are several menus that can be accessed in the top left-hand corner of the Snap! screen. 
-	- The Start.Snap! icon in the top left-hand corner can be used to access the Snap! reference manual, the Berkeley Snap website, and the Github source code.
-	- Next, explore the File icon. Take notice particularily of the Save button and the Libraries options. We will be using these later in our lessons. If you click on the Librairies option, what do you see? For fun, click on one of those Libraries and read what they do. For now, don't import anything yet. We will do that with TuneScope in a future lesson.
-	- The next icon we will explore is the Cloud icon. Here, you can log into your account, if have not already. Having an accounts allows you to save your work online. 
-	- Up next is the Gear icon. In there, you can change the language settings, select to make your blocks bigger so that it is easier to read and move around, and many other functions. There are also many options in there. While you're exploring this drop down, make sure your JavaScript Extensions is enabled. We need those to add musical features and functionalities. #todo (check if this is right)
+2. **Explore the Startr Snap! Workspace**: Snap! is a block-based programming language, which means you build scripts by dragging and snapping blocks together. Let's dive in and see how it works!
+	- **Drag a Block**: Grab the **`Move 10 Steps`** block from the **Code Block Palette** on the left-hand side of the screen and drag it to the **Script Area** in the middle of the screen. 
+	- **Add Another Block**: Choose another block, like the **`turn clockwise 15 degrees`** block, and snap it  to the first block. Now you have a script!
+	-  **Run Your Script** : Click the group of blocks to make the script happen. Look at the **Stage** (top right corner of your screen) and you'll see the arrow move and turn. Click the script again to make it repeat.  
 
-4. **Explore the Snap! icon:** On the top-right side of the screen we have some useful icons for you to explore. 
-	- Notice the Footsteps icon. When clicked, it turns green. When you have a code script, each block will be highlighted as it is played. If you still have your code blocks from earlier, try this out. 
-	- Notice how you can see the code block steps in-action. There's a toggle to the right of the footsteps that allows you to change the speed at which the scripts runs (left side slower, and right side faster). #todo (check if this is right). 
-	- The next icon is a grey rectangle within a white rectangle. Go ahead and click that icon and see what happens. Also click the one beside it with diagonal arrows. Notice how the size of the stage changes?
-	- The next three buttons (the green flag, yellow pause button, and red stop sign) control the code scripts. Right now, these buttons do nothing because we don't have any code using a green flag in our script area to run. Let's take a moment to add one: 
-		- In the code block palette, select the gold coloured Control tab. 
-		- Grab and drag the **`when (green flag) clicked`** block and snap it to the top of your code script. 
-		- Now, click the green flag icon and see your code in action!
+3. **Discover the Snap! Menus:** In the top left corner of the Snap! screen, you'll find several menus that can help you navigate and customize your experience. Let's explore them: 
+	-  **Start.Snap! Icon** : Click the Start.Snap! icon to access the Snap! reference manual, the Berkeley Snap website, and the Github source code. These resources are perfect for learning more about Snap! and its community.
+	-  **File Menu** : Click the File icon to find options like **Save** , **Open** , and **Libraries** . We'll be using these features later in our lessons. Take a look at the Libraries options and click on one to learn more about what it does. Don't import anything just yet - we'll do that later with **TuneScope**.
+	- **Cloud Icon** : Use the Cloud icon to log into your account or create one if you haven't yet. Having an account allows you to save your work online and access it from anywhere.
+	- **Gear Icon (Settings)** : Click the Gear icon to access a range of settings and options. You can change the language, make the blocks larger for easier reading, and more. While you're here, make sure to enable **JavaScript Extensions** . This is necessary for adding musical features and functionalities to your projects. 
 
-In this brief introduction to Snap! you learned how to orient yourself around the block-based coding program. Now that you have a general knowledge of where things are, let's get started coding some music blocks!
-## Lesson 1: Snap! Sound Basics
+4. **Explore the Snap! icon:** On the top-right side of the screen, you'll find a set of useful icons to help you navigate and control your Snap! experience. Let's explore them: 
+	-  **Footsteps Icon** : Click the Footsteps icon to turn it green. With a code script, each block will be highlighted as it's played. Try it out with your code blocks from earlier.
+	- **Speed Control** : Notice the toggle to the right of the Footsteps icon. This allows you to adjust the speed of your script. Move it to the left to slow down or to the right to speed up.
+	- **Stage Size Icons** : Click the grey rectangle within a white rectangle icon to change the stage size. The icon with diagonal arrows beside it also controls the stage size. Experiment with these icons to see how they work.
+	- **Script Control Buttons** : The next three buttons - the green flag, yellow pause button, and red stop sign - control your code scripts. However, they won't work yet because we need to add a **`when (green flag) clicked`** block to our script. Let's do that:
+	    - Go to the Code Block Palette and select the gold-colored **Control** tab.
+	    - Drag the **`when (green flag) clicked`** block and snap it to the top of your code script.
+	    - Click the **green flag icon** to see your code in action!
+	-  **Saving and Opening Code** : Before we finish, let's practice saving and opening our code. This is an essential skill, especially when working with web versions of Snap! that don't autosave. We'll show you how to do this in the next steps.
 
+**You're Ready to Roll!**
+Congratulations! You've completed the introductory tour of Snap!. You now know where to find the main features and tools. It's time to put your new skills to the test and start creating something amazing. Let's dive into the world of music coding and explore the exciting possibilities of Snap!'s music sound blocks!
+
+
+## Lesson 1: Snap! Sound Basics 
 **Objective:** Explore Snap!’s sound blocks and create simple melodies. 
 You will learn how to play notes and control their pitch. This is the first step toward making music with code.
 

@@ -93,20 +93,46 @@ You will learn how to play notes and control their pitch. This is the first step
 
 **Activities:**
 
-1. **Explore Sound Blocks:** Open Snap! and find the Sound tab in the the code block palette. Drag out the block that says **`play note (60) for (0.5) beats`**. (The numbers might be different in your version; 60 usually means middle C in musical terms, also called C4.) Click the block to hear the note play. If you select the down arrow next to the number in the block, you will see a piano keyboard and the note you are playing.
-	- Try changing the note by changing the number or by using the piano. 
-	- Do you hear how the pitch goes up or down when you change the number? 
-	- That number represents the note’s frequency or pitch. Smaller numbers make lower notes, and larger numbers make higher notes in a scale. For example, duplicate the block several times. 
-	- Right-click and “duplicate” or drag new blocks from the Sound category. 
-	- Set the notes to 60, 62, 64, 65, 67 (which will sound like a simple 5 note scale). 
-	- Click the stack to play the notes in sequence. 
-	- Congratulations! You just coded a little tune, a scale :)
 
-2. **Experiment with Tempo:** Find the block **`set tempo to (60) bpm`** . BMP means beats per minute and in music it's a way to indicate the tempo, or speed, of a piece of music. Try setting the tempo higher (e.g. 120 bpm) or lower (e.g. 30 bpm) and play your note sequence again. Notice how the speed changes. You can also make the tempo change mid-song by inserting another tempo block in between notes. 
+1. **Find the Sound Blocks**: Open Startr Snap! and find the **Sound** tab in the code block palette. 
+	- Drag out the **`play note (60) for (0.5) beats`** block. Click it to hear the note play!
+    - Notice the numbers in the block? The first number (60) represents the note's pitch. In music, this is middle C (also called C4).
+    - Click the down arrow next to the number to see a piano keyboard and the note you're playing.
 
-3. **Experiment with Instruments:** Snap! has an instrument setting, there’s a block  **`set instrument to (1)`** for simple waves. Try it out by changing the instrument number and play your notes to hear different sounds (sine, square, saw-tooth and  triangle). Snap!’s basic sound blocks don't have advanced instruments by default only old school sounds. Bon’t worry – we will get more instruments when we move to TuneScope later. For now, just explore the default sounds.
+2. **Experiment with Notes**: Try changing the note by adjusting the number or using the piano keyboard.
+    - Hear how the pitch changes when you modify the number? Smaller numbers produce lower notes, while larger numbers create higher notes.
 
-Take a moment to reflect on what you did. You used code blocks to play musical notes in order. This is how composers think – except you’re giving instructions to the computer. **By mastering these basics, you're on your way to coding real songs.** Feel free to play around more: make the note sequence longer, or adjust how long individual note blocks are playing for ( this can be done by adjusting the "for _ beats" section of the note block.). Have fun playing around with it!
+3. **Create a Simple Scale**: Duplicate the block several times (right-click and "duplicate" or drag new blocks from the Sound category). Set the notes to:
+    - 60 (C4)
+    - 62 (D4)
+    - 64 (E4)
+    - 65 (F4)
+    - 67 (G4)
+
+4. **Play Your Scale**: Click the stack to play the notes in sequence. Congratulations! You've just coded a simple 5-note scale, your first musical creation!
+
+5. **Experiment with Tempo:** Now that you've created a simple melody, let's experiment with tempo.
+	- **Find the Tempo Block**: Look for the **`set tempo to (60) bpm`** . BMP stands for beats per minute, which is a way to measure the speed of a song. 
+	- **Adjust the Tempo**: Try changing the tempo to a higher value (e.g., 120 bpm) or a lower value (e.g., 30 bpm). Play your note sequence again and notice how the speed changes.
+	- **Change Tempo Mid-Song**: You can also insert another tempo block between notes to change the tempo mid-song. This can add interesting variations to your music.
+
+6. **Experiment with Instruments:** Now that you've created a simple melody with tempo, let's experiment with instrument sounds.
+	- **Find the Instrument Block** : Look for the  **`set instrument to (1)`** block. This block allows you to change the sound of your notes.
+	- **Try Different Instruments** : Change the instrument number and play your notes to hear different sounds, such as:
+	    - Sine wave
+	    - Square wave
+	    - Saw-tooth wave
+	    - Triangle wave
+
+**Note**: Snap!'s basic sound blocks have a limited selection of instruments, with a focus on simple, old-school sounds. Don't worry, we'll explore more advanced instruments when we move to **TuneScope** later. For now, have fun experimenting with the default sounds!
+
+Take a moment to reflect on what you've accomplished. You've used code blocks to create a sequence of musical notes, just like a composer would. The difference is, you're giving instructions to the computer, bringing your musical ideas to life. By mastering the fundamentals of music coding, you're laying the foundation for creating real songs. 
+
+**Keep Exploring and Having Fun!**
+Feel free to play around more: experiment with different note sequences, adjust the tempo, and play with the duration of individual notes. You can do this by modifying the "for _ beats" section of the note block.
+
+Remember, coding music is all about experimentation and creativity. So, have fun and enjoy the process of bringing your musical ideas to life! Have fun playing around with it!
+
 
 ## Lesson 2: Coding a Simple Snap! Melody
 

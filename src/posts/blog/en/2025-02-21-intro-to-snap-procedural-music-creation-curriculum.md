@@ -24,10 +24,17 @@ Video games brought procedural music generation to a wide audience by making it 
 
 These examples show how coding, music, and creativity can blend in exciting ways. Now it's your turn to explore, learn and create!
 
-*Check out our [[History of Procedural Music Generation]] to learn more.*
+## Acknowledgements ##
 
+Before jumping into our lessons, we want to thank **Brian Harvey** and **Jens Möenig** for creating Snap!, a block-based programming language. Snap! makes advanced computer science concepts easy to understand, even for non-programmers. With support from the National Science Foundation, Jens and Brian developed Snap! to be user-friendly. Today, over 1,000 high school and college computer science teachers use Snap! in their classes. Many others use it for fun and personal growth.
+
+We've created our own variation of Snap!, called **Startr Snap!**. It has some unique features and our own custom libraries. This variation is designed to make coding even more accessible and fun for robotics and AI integration. 
+
+We also appreciate the **TuneScope** music library in Snap!, which lets users create different types of music. The University of Virginia's School of Education, Department of Computer Science, and Department of Music worked together to develop TuneScope. In fact, the University of Virginia offers a companion course as an elective in its Bachelor of Arts in Computer Science program. The goal is to help people express their creativity and explore the arts through coding. 
 
 ## Course Outline
+
+Each lesson builds on the previous one. Work through them in order, and by the end you'll be coding music like a pro!
 
 1. **Lesson 0: Introduction to Snap! Programming** - Orient yourself with the Snap! programming platform.
 2. **Lesson 1: Snap! Sound Basics** – Play notes and make simple tunes using Snap!’s sound blocks.
@@ -41,7 +48,7 @@ These examples show how coding, music, and creativity can blend in exciting ways
 10. **Lesson 9: Structuring Your Composition** – Organize your music into sections (intro, chorus, etc.) and balance structure with randomness.
 11. **Lesson 10: Final Project – Generative Music Album** – Build a full generative soundtrack or album using everything you've learned.
 
-Each lesson builds on the previous one. Work through them in order, and by the end you'll be coding music like a pro!
+
 
 ## Lesson 0: Introduction to Snap! Programming
 

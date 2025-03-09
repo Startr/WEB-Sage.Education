@@ -8,7 +8,7 @@ tags:
   - Code
 date: 2025-01-20T11:01
 rating: 5
-summary: Solid projects on Github, each one unique, valuable, bringing something new to the table: Dokploy offers open-source alternative to Vercel, Netlify, and Heroku, while CopilotKit provides a framework for building AI-powered applications, and LocalAI makes AI accessible on consumer-grade hardware, and other notable projects like Fabric, Minimind, Whoogle-Search, and LLM-Course push boundaries in AI, search, and development, making them worth exploring.
+summary: Solid projects on Github, each one unique, valuable, bringing something new to the table Dokploy offers open-source alternative to Vercel, Netlify, and Heroku, while CopilotKit provides a framework for building AI-powered applications, and LocalAI makes AI accessible on consumer-grade hardware, and other notable projects like Fabric, Minimind, Whoogle-Search, and LLM-Course push boundaries in AI, search, and development, making them worth exploring.
 ---
 Github Trending Projects - 20/01/2025
 Here are some super interesting projects that caught my attention:

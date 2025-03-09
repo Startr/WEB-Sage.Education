@@ -8,7 +8,7 @@ tags:
   - Code
 date: 2025-01-16T11:01
 rating: 5
-summary: Github serves up **hot projects**: MiniCPM-o brings AI to mobile, Tabby assists coders, TON decentralizes transactions, Dawarich secures location data, FluentAssertions simplifies unit tests, RealtimeSTT transcribes speech, Spree powers eCommerce, Automatisch automates workflows, Qwerty-Learner trains English skills, Frappe builds web apps, Winget-Pkgs manages Windows packages, Strimzi-Kafka-Operator runs Kafka on Kubernetes, Apktool reverse-engineers Android apps, Marimo creates reactive notebooks, Pixelfed shares photos, Folly boosts C++ performance - **check them out** for inspiration and new ideas.
+summary: Github serves up hot projects, MiniCPM-o brings AI to mobile, Tabby assists coders, TON decentralizes transactions, Dawarich secures location data, FluentAssertions simplifies unit tests, RealtimeSTT transcribes speech, Spree powers eCommerce, Automatisch automates workflows, Qwerty-Learner trains English skills, Frappe builds web apps, Winget-Pkgs manages Windows packages, Strimzi-Kafka-Operator runs Kafka on Kubernetes, Apktool reverse-engineers Android apps, Marimo creates reactive notebooks, Pixelfed shares photos, Folly boosts C++ performance - check them out for inspiration and new ideas.
 ---
 Github Trending Projects - 16/01/2025
 Here are the most interesting projects on GitHub, along with a brief explanation of why they're worth checking out:

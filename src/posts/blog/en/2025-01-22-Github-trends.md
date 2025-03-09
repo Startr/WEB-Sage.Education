@@ -8,7 +8,7 @@ tags:
   - Code
 date: 2025-01-22T11:01
 rating: 5
-summary: Github trending projects catch attention with innovative solutions: EXO lets users run AI clusters at home, Teable offers no-code Postgres, Superfile simplifies file management, Dokploy provides an open-source alternative to deployment platforms, and more, all making AI and tech more accessible, efficient, and open-source, with projects like LocalAI, Minimind, and RAGFlow pushing boundaries in AI model training, local execution, and deep document understanding, each with potential to make a significant impact in its field.
+summary: Github trending projects catch attention with innovative solutions EXO lets users run AI clusters at home, Teable offers no-code Postgres, Superfile simplifies file management, Dokploy provides an open-source alternative to deployment platforms, and more, all making AI and tech more accessible, efficient, and open-source, with projects like LocalAI, Minimind, and RAGFlow pushing boundaries in AI model training, local execution, and deep document understanding, each with potential to make a significant impact in its field.
 ---
 Github Trending Projects - 22/01/2025
 Here are some super interesting projects that caught my attention:

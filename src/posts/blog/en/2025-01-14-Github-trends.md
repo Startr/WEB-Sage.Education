@@ -8,7 +8,7 @@ tags:
   - Code
 date: 2025-01-14T11:01
 rating: 5
-summary: Developers flock to **Github** for innovative projects, and these trending gems deliver: **TabbyML** brings AI coding assistance, **Qwerty-Learner** revolutionizes English learning, **UbiCloud** offers an open-source **AWS** alternative, **Ebook2Audiobook** converts books to audiobooks with AI, **GlaDOS** breathes life into Portal's AI, **Automatisch** automates workflows like **Zapier**, **Agent-Service-Toolkit** empowers AI agent services, **WinUtil** supercharges Windows productivity, **AppFlowy** collaborates with AI, and **Perplexica** searches with AI - all gaining massive traction with thousands of stars, forging a new landscape in the developer world.
+summary: Developers flock to Github for innovative projects, and these trending gems deliver TabbyML brings AI coding assistance, Qwerty-Learner revolutionizes English learning, UbiCloud offers an open-source AWS alternative, Ebook2Audiobook converts books to audiobooks with AI, GlaDOS breathes life into Portal's AI, Automatisch automates workflows like Zapier, Agent-Service-Toolkit empowers AI agent services, WinUtil supercharges Windows productivity, AppFlowy collaborates with AI, and Perplexica searches with AI - all gaining massive traction with thousands of stars, forging a new landscape in the developer world.
 ---
 Github Trending Projects - 14/01/2025
 Here's a list of super interesting projects that caught my attention:

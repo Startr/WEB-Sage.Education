@@ -88,8 +88,6 @@ Subtitle: Empowering Teams of Learners
 }
 </style>
 
-
-
 # index{style="--d:none"}
 
 # Content{style="--d:none"}
@@ -97,14 +95,11 @@ Subtitle: Empowering Teams of Learners
 {style="--maxw:66em; --m:3em auto 3em; --m-md:10em auto 3em; --minh:100vh; --ta:center;"}
 
 
-
-{{ title }}
-
 # Pull back the curtain on&nbsp;**AI** {style=" --grad-color:black;--size:2.8em; --size-sm:6em; --lh:1em"}
 
 ## Join the best **AI&nbsp;Playground** for **Educators** and **Learners** of all ages. {style="--m:1em auto; --size:2em; --grad-color:black;"}
 
-{style="--mb:8vh"}
+{style="--mt:-1em; --mt-sm:1em;--mb:8vh"}
 
 ## [Learn More!](#learn-more) {style="--d:none; --ta:center; --m:10vh"}
 
@@ -115,11 +110,13 @@ Subtitle: Empowering Teams of Learners
 
 <video preload="none" src="//cdn.jsdelivr.net/gh/Startr/WEB-Sage.Education@master/src/videos/Sage.mp4"
        autoplay="false" poster="/images/IMG_Sage.Map.webp"
-       muted="false" loop="false" style="--w:60%; --scale-hvr:140%;
-               --br: 12px;
-               --m:1em;
-               --p:1em;
-               --bg:white;
+       muted="false" loop="false" style="--w:90%; 
+              --scale-hvr:140%;
+              --scale-hvr-sm: 100%;
+              --br: 12px;
+              --m:1em;
+              --p:1em;
+              --bg:white;
         box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
         outline: 2px dashed rgb(230, 230, 230);
         outline-offset: -0.6em;">

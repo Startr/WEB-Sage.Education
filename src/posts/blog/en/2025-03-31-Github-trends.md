@@ -9,6 +9,10 @@ tags:
 date: 2025-03-31T11:03
 rating: 5
 summary: AI and machine learning drive innovation, leading the charge with next-generation tools, as seen in projects like **GitDiagram**, **Crawl4AI**, and **Generative-AI-For-Beginners**, which make interactive diagrams, power AI with data, and teach generative AI from scratch, respectively, while others like **WhatsMeow**, **YouTube Music**, and **Avante.nvim** simplify building WhatsApp projects, offer ad-free music, and bring AI-powered plugins to Neovim, showcasing the rapid progress and exciting future of tech, where innovation happens now and the future is being shaped by these cutting-edge projects.
+eleventyNavigation:
+  key: GitHub Trends
+  parent: Blog
+  order: 20250331
 ---
 Github Trending Projects - 31/03/2025
 Here's a list of super interesting projects on GitHub, along with their URLs and a brief explanation of why they're worth checking out:

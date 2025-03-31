@@ -103,6 +103,15 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/base.njk" }
       - { label: "Title", name: "title", widget: "string", i18n: true }
       - { label: "Publish Date", name: "date", widget: "datetime", i18n: duplicate }
+      - label: "Navigation" # Add Eleventy Navigation settings
+        name: "eleventyNavigation"
+        widget: "object"
+        collapsed: true
+        i18n: true
+        fields:
+          - { label: "Navigation Title", name: "key", widget: "string", hint: "The title shown in the navigation menu", required: false }
+          - { label: "Parent", name: "parent", widget: "string", hint: "Parent navigation item (if this is a child page)", required: false }
+          - { label: "Order", name: "order", widget: "number", hint: "Order in the navigation menu", required: false, value_type: "int" }
       - { label: "Body", name: "body", widget: "markdown", i18n: true }
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
@@ -117,4 +126,13 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime",i18n: duplicate }
       - { label: "Rating (scale of 1-5)", name: "rating", widget: "number", default: 5, i18n: duplicate }
       - { label: "Summary", name: "summary",widget: "markdown", i18n: true }
+      - label: "Navigation" # Add Eleventy Navigation settings
+        name: "eleventyNavigation"
+        widget: "object"
+        collapsed: true
+        i18n: true
+        fields:
+          - { label: "Navigation Title", name: "key", widget: "string", hint: "The title shown in the navigation menu", required: false }
+          - { label: "Parent", name: "parent", widget: "string", default: "Blog", hint: "Parent navigation item (leave as 'Blog' for most posts)", required: false }
+          - { label: "Order", name: "order", widget: "number", hint: "Posts are sorted by date automatically. Only use this if you need custom sorting.", required: false, value_type: "int" }
       - { label: "Body", name: "body", widget: "markdown", i18n: true }

@@ -1,0 +1,116 @@
+---
+layout: layouts/base.njk
+title: Blog
+description: Latest articles and posts
+eleventyNavigation:
+  key: Blog
+  order: 3
+---
+
+<div class="container">
+  <h1>{{ title }}</h1>
+  
+  {% set navPages = collections.all | eleventyNavigation("Blog") %}
+  {% if navPages.length > 0 %}
+    <ul class="posts-list">
+      {%- for entry in navPages | reverse -%}
+        <li class="post-item">
+          <h2 class="post-title">
+            <a href="{{ entry.url }}">{{ entry.title }}</a>
+          </h2>
+          {% if entry.date %}
+          <time class="post-date" datetime="{{ entry.date | htmlDateString }}">
+            {{ entry.date | readableDate }}
+          </time>
+          {% endif %}
+          {% if entry.excerpt %}
+            <p class="post-description">{{ entry.excerpt }}</p>
+          {% endif %}
+          {% if entry.data and entry.data.tags %}
+            <div class="post-tags">
+              {% for tag in entry.data.tags | filterTagList %}
+                <a href="/tags/{{ tag | slugify }}/" class="post-tag">{{ tag }}</a>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </li>
+      {%- endfor -%}
+    </ul>
+  {% else %}
+    <p>No posts found.</p>
+  {% endif %}
+
+  <h2>All Posts</h2>
+  {% set postslist = collections.posts | reverse %}
+  {% if postslist.length > 0 %}
+    <ul class="posts-list">
+      {%- for post in postslist -%}
+        <li class="post-item">
+          <h2 class="post-title">
+            <a href="{{ post.url }}">{{ post.data.title }}</a>
+          </h2>
+          <time class="post-date" datetime="{{ post.date | htmlDateString }}">
+            {{ post.date | readableDate }}
+          </time>
+          {% if post.data.description %}
+            <p class="post-description">{{ post.data.description }}</p>
+          {% elseif post.data.summary %}
+            <p class="post-description">{{ post.data.summary }}</p>
+          {% endif %}
+          {% if post.data.tags %}
+            <div class="post-tags">
+              {% for tag in post.data.tags | filterTagList %}
+                <a href="/tags/{{ tag | slugify }}/" class="post-tag">{{ tag }}</a>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </li>
+      {%- endfor -%}
+    </ul>
+  {% else %}
+    <p>No posts found.</p>
+  {% endif %}
+</div>
+
+<style>
+  .posts-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-item {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .post-title {
+    margin-bottom: 0.5rem;
+  }
+  
+  .post-date {
+    display: block;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+  
+  .post-description {
+    margin-top: 0.5rem;
+  }
+  
+  .post-tags {
+    margin-top: 0.5rem;
+  }
+  
+  .post-tag {
+    display: inline-block;
+    background: #f0f0f0;
+    padding: 0.2rem 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #666;
+  }
+</style>

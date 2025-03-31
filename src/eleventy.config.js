@@ -39,6 +39,14 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("MMMM dd, yyyy");
   });
 
+  // Collections
+  // ----------
+  eleventyConfig.addCollection("posts", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("posts/**/*.md").sort((a, b) => {
+      return b.date - a.date; // Sort in reverse chronological order
+    });
+  });
+
   // Tag Handling
   // -----------
   eleventyConfig.addFilter("filterTagList", (tags) => {

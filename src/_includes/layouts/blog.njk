@@ -40,8 +40,8 @@ layout: layouts/base.njk
 	  --w:40%;
 	  --maxw:44rem;
 	  --ai:center;">
-	{%- set previousPost = collections.all | getPreviousCollectionItem %}
-	{%- set nextPost = collections.all | getNextCollectionItem %}
+	{%- set previousPost = collections.all | getPreviousCollectionItem(page) %}
+	{%- set nextPost = collections.all | getNextCollectionItem(page) %}
 	{%- if nextPost or previousPost %}
 	<ul class="links-nextprev">
 		{%- if previousPost %}<li>Previous: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>

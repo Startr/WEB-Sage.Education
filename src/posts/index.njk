@@ -7,47 +7,22 @@ eleventyNavigation:
   order: 3
 ---
 
-<div class="container">
-  <h1>{{ title }}</h1>
-  
-  {% set navPages = collections.all | eleventyNavigation("Blog") %}
-  {% if navPages.length > 0 %}
-    <ul class="posts-list">
-      {%- for entry in navPages | reverse -%}
-        <li class="post-item">
-          <h2 class="post-title">
-            <a href="{{ entry.url }}">{{ entry.title }}</a>
-          </h2>
-          {% if entry.date %}
-          <time class="post-date" datetime="{{ entry.date | htmlDateString }}">
-            {{ entry.date | readableDate }}
-          </time>
-          {% endif %}
-          {% if entry.excerpt %}
-            <p class="post-description">{{ entry.excerpt }}</p>
-          {% endif %}
-          {% if entry.data and entry.data.tags %}
-            <div class="post-tags">
-              {% for tag in entry.data.tags | filterTagList %}
-                <a href="/tags/{{ tag | slugify }}/" class="post-tag">{{ tag }}</a>
-              {% endfor %}
-            </div>
-          {% endif %}
-        </li>
-      {%- endfor -%}
-    </ul>
-  {% else %}
-    <p>No posts found.</p>
-  {% endif %}
+<div class="container" style="
+  --m: 1em auto;
+  --d:flex;
+  --fd:column;
+  --ai:center;
+  --bg:white;">
+  <h1><strong>{{ title }}</strong></h1>
 
-  <h2>All Posts</h2>
-  {% set postslist = collections.posts | reverse %}
+  <h2>Latest Posts</h2>
+  {% set postslist = collections.posts %}
   {% if postslist.length > 0 %}
     <ul class="posts-list">
       {%- for post in postslist -%}
-        {% if post.data.title %}
+        {% if post.data.title and 'GitHub' not in post.data.tags %}
         <li class="post-item"  class="wow fadeIn" style="
-	--m: 1em auto;	
+	--m: 1em auto;
   --scale-hvr:102%;
 	--bg:white;
 	--p:3em;
@@ -82,7 +57,51 @@ eleventyNavigation:
       {%- endfor -%}
     </ul>
   {% else %}
-    <p>No posts found.</p>
+    <p>No posts found in this section.</p>
+  {% endif %}
+
+  <h2>Github Posts</h2>
+  {% if postslist.length > 0 %}
+    <ul class="posts-list">
+      {%- for post in postslist -%}
+        {% if post.data.title and 'GitHub' in post.data.tags %}
+        <li class="post-item"  class="wow fadeIn" style="
+	--m: 1em auto;
+  --scale-hvr:102%;
+	--bg:white;
+	--p:3em;
+	--br:12px;
+	--shadow:5;
+	outline:#e6e6e6 dashed;
+	outline-offset: -0.6em;
+	--b-width:2px;
+	--w:80%;
+	--maxw:66rem;
+	--ai:center;">
+          <h2 class="post-title">
+            <a href="{{ post.url }}">{{ post.data.title }}</a>
+          </h2>
+          <time class="post-date" datetime="{{ post.date | htmlDateString }}">
+            {{ post.date | readableDate }}
+          </time>
+          {% if post.data.description %}
+            <p class="post-description">{{ post.data.description }}</p>
+          {% elseif post.data.summary %}
+            <p class="post-description">{{ post.data.summary }}</p>
+          {% endif %}
+          {% if post.data.tags %}
+            <div class="post-tags">
+              {% for tag in post.data.tags | filterTagList %}
+                <a href="/tags/{{ tag | slugify }}/" class="post-tag">{{ tag }}</a>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </li>
+        {% endif %}
+      {%- endfor -%}
+    </ul>
+  {% else %}
+    <p>No Github posts found.</p>
   {% endif %}
 </div>
 

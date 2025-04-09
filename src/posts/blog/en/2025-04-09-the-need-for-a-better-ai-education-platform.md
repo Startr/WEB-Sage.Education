@@ -4,10 +4,10 @@ title: " Look Beyond Cookie-Cutter AI Education Tools"
 tags: education
 date: 2025-04-09T16:55:00.000Z
 rating: 5
-summary: The author believes that many AI EdTech platforms are providing
-  superficial solutions that do not empower educators to create and solve
-  problems on their own. Instead, they lead to an overly trusting dependence on
-  algorithms, stifling human creativity and control.
+summary: I believe that many AI EdTech platforms are providing superficial
+  solutions that do not empower educators to create and solve problems on their
+  own. Instead, they lead to an overly trusting dependence on algorithms,
+  stifling human creativity and control.
 eleventyNavigation:
   parent: Blog
 ---

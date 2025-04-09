@@ -1,6 +1,6 @@
 ---
 layout: layouts/blog.njk
-title: The Need For A Better AI Education Platform
+title: Why We Need A To Look Beyond Cookie-Cutter AI Education Tools
 tags: education
 date: 2025-04-09T16:55:00.000Z
 rating: 5

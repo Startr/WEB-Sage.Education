@@ -12,11 +12,12 @@ summary: |-
   responses than demanding "Tell me about photosynthesis now!" Studies show that
   respectful questions make AI more accurate and reliable. Plus, practicing good
   manners with AI helps improve your real-life communication skills. Discover
-  how kindness to machines can boost your learning and interactions—learn more!
+  how kindness to machines can boost your learning and interactions.
 ---
-Imagine a super-smart robot friend who learns from how you talk. That's what artificial intelligence (AI) chatbots are like. These clever computer programs, like ChatGPT and our Sage, don't have real feelings, but how you speak can change how helpful they are.
 
 ## Manners Matter, Even with Machines
+
+Imagine a super-smart robot friend who learns from how you talk. That's what artificial intelligence (AI) chatbots are like. These clever computer programs, like ChatGPT and our Sage, don't have real feelings, but how you speak can change how helpful they are.
 
 Research shows that when people are polite to AI, they get better answers. It's like the old saying, "You catch more flies with honey than vinegar." When you ask nicely, AIs give more detailed and useful responses.
 
@@ -28,11 +29,15 @@ AI chatbots are trained on millions of human conversations. They learn to match 
 
 ## Learning Lessons Beyond the Screen
 
-Using good manners with AI is about more than just getting better homework help. It's practice for real life, too. When students get used to communicating respectfully with AI, they're building habits. They are building good communication habits to help them talk to people better.
+Using good manners with AI is about more than just getting better homework help. It's practice for real life, too. When students get used to communicating respectfully with AI, they're building and reinforcing good habits. They are building healthy communication habits to help them talk to others.
 
 ## The Science Behind the Smile
 
 Recent studies back up the idea that being nice to AI pays off ([Ziqi Yin](https://arxiv.org/search/cs?searchtype=author&query=Yin,+Z) et al., 2024). Researchers found that polite questions usually got more accurate answers from AI. Rude or demanding questions sometimes lead to wrong information. More importantly, just as with people, AIs were more likely to make things up when communicated rudely.
+
+## It's Financially Worth It Too 
+
+Someone on X.com wondered if being polite to AI was a waste of money. Sam Altman, to their surprise, responded to them, and said that even if it costs them more money to be polite, it's worth spending that money. He thinks it's good to be kind, even to machines.
 
 ## Wrapping Up
 

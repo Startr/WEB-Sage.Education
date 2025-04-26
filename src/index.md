@@ -94,7 +94,6 @@ Subtitle: Empowering Teams of Learners
 
 {style="--maxw:66em; --m:3em auto 3em; --m-md:10em auto 3em; --minh:100vh; --ta:center;"}
 
-
 # Pull back the curtain on&nbsp;**AI** {style=" --grad-color:black;--size:2.8em; --size-sm:6em; --lh:1em"}
 
 ## Join the best **AI&nbsp;Playground** for **Educators** and **Learners** of all ages. {style="--m:1em auto; --size:2em; --grad-color:black;"}

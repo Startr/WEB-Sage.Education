@@ -2,9 +2,9 @@
 layout: layouts/base.njk
 ---
 <section class="wow fadeIn" style="
-	--m: auto;	
+	--m: 2em auto;	
 	--bg:white;
-	--p:3em;
+	--p:1.8em 3em;
 	--br:12px;
 	--shadow:5;
 	outline:#e6e6e6 dashed;
@@ -40,8 +40,8 @@ layout: layouts/base.njk
 	  --w:40%;
 	  --maxw:44rem;
 	  --ai:center;">
-	{%- set previousPost = collections.all | getPreviousCollectionItem %}
-	{%- set nextPost = collections.all | getNextCollectionItem %}
+	{%- set previousPost = collections.all | getPreviousCollectionItem(page) %}
+	{%- set nextPost = collections.all | getNextCollectionItem(page) %}
 	{%- if nextPost or previousPost %}
 	<ul class="links-nextprev">
 		{%- if previousPost %}<li>Previous: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>

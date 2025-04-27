@@ -54,11 +54,65 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  // Add a collection for all unique tags - this is crucial for tag pages
+  eleventyConfig.addCollection("tagList", function(collectionApi) {
+    const tagSet = new Set();
+    // Loop through all items
+    collectionApi.getAll().forEach(item => {
+      if ("tags" in item.data) {
+        const tags = Array.isArray(item.data.tags) 
+          ? item.data.tags 
+          : [item.data.tags];
+          
+        // Add each tag to the Set (automatically handles duplicates)
+        for (const tag of tags) {
+          // Skip certain tags that don't need pages
+          if (!["all", "nav", "post", "posts"].includes(tag.toString().toLowerCase())) {
+            // Normalize tag case to lowercase to prevent duplicates like "AI" and "ai"
+            tagSet.add(tag.toString().toLowerCase());
+          }
+        }
+      }
+    });
+    // Convert the Set back to an array and sort it
+    return [...tagSet].sort();
+  });
+
+  // Create normalized tag collections to avoid duplicate output paths
+  eleventyConfig.addCollection("normalizedTagCollections", function(collectionApi) {
+    const tagMap = {};
+    
+    // First, gather all content with tags
+    collectionApi.getAll().forEach(item => {
+      if (!item.data.tags) return;
+      
+      const tags = Array.isArray(item.data.tags) 
+        ? item.data.tags 
+        : [item.data.tags];
+      
+      for (const tag of tags) {
+        if (["all", "nav", "post", "posts"].includes(tag.toString().toLowerCase())) continue;
+        
+        // Use lowercase tag as the key
+        const normalizedTag = tag.toString().toLowerCase();
+        
+        if (!tagMap[normalizedTag]) {
+          tagMap[normalizedTag] = [];
+        }
+        
+        tagMap[normalizedTag].push(item);
+      }
+    });
+    
+    // Add each normalized tag collection to the collections object
+    return tagMap;
+  });
+
   // Tag Handling
   // -----------
   eleventyConfig.addFilter("filterTagList", (tags) => {
     if (!tags) return [];
-    return tags.filter(tag => !["all", "nav", "post", "posts"].includes(tag));
+    return tags.filter(tag => !["all", "nav", "post", "posts"].includes(tag.toString().toLowerCase()));
   });
 
   eleventyConfig.addFilter("slugify", (tag) => {

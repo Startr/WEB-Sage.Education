@@ -1,0 +1,15 @@
+---
+layout: layouts/base.njk
+permalink: /tags/
+title: Tags
+---
+
+<h1>Tags</h1>
+
+{% set taglist = collections.tagList %}
+<ul>
+{% for tag in taglist | sort %}
+  {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+  <li><a href="{{ tagUrl }}">{{ tag }}</a></li>
+{% endfor %}
+</ul>

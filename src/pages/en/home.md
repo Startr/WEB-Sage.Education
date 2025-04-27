@@ -304,7 +304,7 @@ Track and review progress and decision-making with branching conversation views
 
 ### Ways{style="--d:none"}
 
-{style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow-hvr: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
+{style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white;  --size: 0.8em; --p: 3em; --br: 12px; --shadow-hvr: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}  
 
 #### Tailored Learning for All
 
@@ -316,7 +316,7 @@ Track and review progress and decision-making with branching conversation views
 
 <a href="#Empowering Teamwork Through AI"><button class="tag">Learn More</button></a>{hidden}
 
-{style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow-hvr: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
+{style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white;  --size: 0.8em; --p: 3em; --br: 12px; --shadow-hvr: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}  
 
 #### Cutting-Edge Creativity
 
@@ -328,13 +328,13 @@ Track and review progress and decision-making with branching conversation views
 
 <a href="#Your Data, Your Control: Uncompromising Security"><button class="tag">Learn More</button></a>{hidden}
 
-{style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow-hvr: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
+{style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white;  --size: 0.8em; --p: 3em; --br: 12px; --shadow-hvr: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}  
 
 #### Tomorrow’s Classroom Today
 
 <a href="#Inclusive Solutions for Tomorrow’s Classroom"><button class="tag">Learn More</button></a>{hidden}
 
-{style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow-hvr: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
+{style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white;  --size: 0.8em; --p: 3em; --br: 12px; --shadow-hvr: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}  
 
 #### <a href="/sign-up-now/">See Sage. Education In Action!</a>
 

@@ -231,7 +231,7 @@ Track and review progress and decision-making with branching conversation views
 
   
 
-{style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow-hvr: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
+{style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white;  --size: 0.8em; --p: 3em; --br: 12px; --shadow-hvr: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}  
 #### Tailored Learning for All
 
 <a href="better_way#Tailored Learning for All"><button class="tag">Learn More</button></a>{hidden}
@@ -241,7 +241,7 @@ Track and review progress and decision-making with branching conversation views
 
 <a href="better_way#Empowering Teamwork Through AI"><button class="tag">Learn More</button></a>{hidden}
 
-{style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow-hvr: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
+{style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white;  --size: 0.8em; --p: 3em; --br: 12px; --shadow-hvr: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}  
 #### Cutting-Edge Creativity 
 
 <a href="better_way#Unleashing Creativity with Cutting-Edge Tools"><button class="tag">Learn More</button></a>{hidden}
@@ -251,12 +251,12 @@ Track and review progress and decision-making with branching conversation views
 
 <a href="better_way#Your Data, Your Control: Uncompromising Security"><button class="tag">Learn More</button></a>{hidden}
 
-{style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow-hvr: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
+{style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white;  --size: 0.8em; --p: 3em; --br: 12px; --shadow-hvr: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}  
 #### Solutions for Tomorrow’s Classroom
 
 <a href="better_way#Inclusive Solutions for Tomorrow’s Classroom"><button class="tag">Learn More</button></a>{hidden}
 
-{style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow-hvr: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
+{style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white;  --size: 0.8em; --p: 3em; --br: 12px; --shadow-hvr: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}  
 #### See Sage. Education In Action!
 <a href="![Screenshot 2024-10-08 at 11.45.02 AM.png](EdPuzzle%20Check-List%20ab1ae1003536478ba871548f36599551/Screenshot_2024-10-08_at_11.45.02_AM.png)"><button class="tag">Learn More</button></a>{hidden}
 
@@ -299,7 +299,7 @@ Track and review progress and decision-making with branching conversation views
 }
 </style>
 
-{style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow-hvr: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
+{style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white;  --size: 0.8em; --p: 3em; --br: 12px; --shadow-hvr: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}  
 #### Principles of LLM Prompting for Teachers
 
 <a href=https://sage.education/posts/blog/2024-09-26-principles-of-llm-prompting-for-teachers/><button class="tag">Read More</button></a>
@@ -309,7 +309,7 @@ Track and review progress and decision-making with branching conversation views
 
 <a href=https://sage.education/posts/blog/2024-09-26-be-nice-to-ai-it-might-just-make-you-smarter/><button class="tag">Read More</button></a>
 
-{style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow-hvr: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
+{style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white;  --size: 0.8em; --p: 3em; --br: 12px; --shadow-hvr: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}  
 #### Instructional Strategies and Prompting 
 
 <a href=https://sage.education/><button class="tag " inactive>Read More</button></a>

@@ -1,8 +1,7 @@
-
-{% for post in collections.AI  | reverse %}
-<!-- CTA Section -->
-{% capture cycle_animation %}{% cycle 'rotateInUpLeft', 'rotateInUpRight' %}{% endcapture %}
-<section class="wow {{ cycle_animation }}" style="--bg:white;
+{% for post in postslist %}
+{# Determine animation class based on loop index #}
+{% set animation_class = 'rotateInUpLeft' if loop.index % 2 != 0 else 'rotateInUpRight' %}
+<section class="wow {{ animation_class }}" style="--bg:white;
 	  --p:3em;
 	  --br:12px;
 	  --shadow:5;
@@ -31,18 +30,6 @@
 		<a href="{{ post.url }}" style="--bg:#ffe6cc; --c:#333; --p:0.75em 1.5em; --radius:5px; --shadow:1;">Read More
 			→</a>
 	</div>
-	<!-- Loop index 
-	<p>Loop index: {{ loop.index }}
-		<!-- Post number 
-		{{forloop.index}}<br>
-		{% assign mod = forloop.index | modulo: 2 %}
-		{% if mod == 0 %}
-			even
-		{% else %}
-			odd
-		{% endif %}
-		<br>-->
-	</p>
 	<!-- Post date
 	<time class="postlist-date" datetime="{{ post.date | htmlDateString }}">
 		{{ post.date }}

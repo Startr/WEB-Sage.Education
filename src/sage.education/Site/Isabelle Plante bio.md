@@ -1,5 +1,1 @@
-# Isabelle Plante Bio
-
-Isabelle Plante is an International Baccalaureate high school music teacher with 20 years of experience teaching concert band, guitar, music technology and creating interdisciplinary projects. She is the current president of the Quebec Music Educators‘ Association and continues to perform violin in the Serenade String Orchestra and with the rock group The Island Bandits.   
-
-Isabelle graduated from the concurrent Bachelor of Music (Major: Music Education - violin) and Bachelor of Education (Music Elementary and Secondary) program from McGill University, receiving a Canadian Millennium Scholarship (2001) and the Chantal Malard Memorial Prize (2004). In 2019, she presented her paper, Music Students Grapple the growing E-waste threat: A self-study Y- PAR action-research project, at the Action Research Network of the Americas Conference. This past August 2024, she earned her Master of Music Education (Curriculum Development) from Boston University.
+../../../../../Family Thoughts/Projects/Sites/Sites/Sage.Education/Site/Isabelle Plante Bio.md

@@ -1,0 +1,21 @@
+---
+pagination:
+  data: collections.tagList # Paginate over the unique list of tags
+  size: 1
+  alias: tag
+  # Removed filter, as collections.tagList is already filtered by filterTagList
+  addAllPagesToCollections: true
+layout: layouts/base.njk
+permalink: /tags/{{ tag | slugify }}/index.html
+eleventyComputed:
+  title: "Tagged “{{ tag }}”"
+---
+
+<h1>Tagged “{{ tag }}”</h1>
+
+{# Use the existing postslist partial to display the posts #}
+{# Assumes postslist.njk expects a variable named 'postslist' #}
+<ol reversed class="postlist" style="counter-reset: start-from {{ collections[tag].length + 1 }}">
+{% set postslist = collections[tag] | reverse %}
+{% include "postslist.njk" %}
+</ol>

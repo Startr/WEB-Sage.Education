@@ -13,6 +13,13 @@ const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 const sectionizePlugin = require("./_plugins/eleventy-plugin-sectionize");
 
 module.exports = function(eleventyConfig) {
+  // Explicitly set Nunjucks as the engine for .njk files
+  eleventyConfig.setTemplateFormats(["html", "njk", "md"]); // Ensure njk is listed
+  eleventyConfig.setNunjucksEnvironmentOptions({
+    throwOnUndefined: true, // Optional: helps catch errors
+    autoescape: false, // Optional: adjust based on needs
+  });
+
   // File Processing
   // --------------
   
@@ -109,8 +116,4 @@ module.exports = function(eleventyConfig) {
     }
     return content;
   });
-
-  // Note: Currently Nunjucks (.njk) files are being parsed as Liquid (.liquid) files
-  // This can cause errors with Nunjucks-specific syntax.
-  // TODO: Configure proper Nunjucks processing
 };

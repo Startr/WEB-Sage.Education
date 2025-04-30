@@ -121,13 +121,13 @@ Subtitle: Empowering Teams of Learners
         outline-offset: -0.6em;">
 </video>
 
-## [**Unlock**](/Sign-up-Now) limitless learning with [**Sage.Education&nbsp;AI**](/Sign-up-Now).  {style="--size:3em; --grad-color:black;"}
+## [**Unlock**](/Sign-up-Now) limitless learning with [**Sage Education&nbsp;AI**](/Sign-up-Now).  {style="--size:3em; --grad-color:black;"}
 
 ## Learn to harness **AI**'s power to **create** in new ways & prepare for **change** today  
 
 {style="--maxw: 80rem; --m:auto; --ta:center; --minh:100vh;"}
 
-# **Why Choose Sage.Education?**{#learn-more}
+# **Why Choose Sage Education?**{#learn-more}
 
 'Cause we're the best! We offer a **unique** and **innovative** approach to AI education.{style="--size:1.6em; --m:2em auto"}
 
@@ -422,8 +422,7 @@ Consolidate content and collaborate with other in your school.
 See learners' conversations, engagements, and creative artifacts.
 
 {style="--m: 2em auto; --shadow:none; outline: none !important; --maxw: 80rem; --ta:center; --bg:none"}
-
-### **Learning better with Sage.Education**
+### **Learning better with Sage&nbsp;Education**
 
 {style="--size:1em"}
 

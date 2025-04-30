@@ -96,7 +96,9 @@ Subtitle: Empowering Teams of Learners
 
 # Pull back the curtain on&nbsp;**AI** {style=" --grad-color:black;--size:2.8em; --size-sm:6em; --lh:1em"}
 
-## Join the best **AI&nbsp;Playground** for **Educators** and **Learners** of all ages. {style="--m:1em auto; --size:2em; --grad-color:black;"}
+## Join the best **AI&nbsp;Makerspace** {style="--m:1em auto 0; --size:2em; --grad-color:black;"} 
+
+## for **Educators** and **Learners** of all ages. {style="--m:0 auto 1em; --size:2em; --grad-color:black;"}
 
 {style="--mt:-1em; --mt-sm:1em;--mb:8vh"}
 
@@ -104,7 +106,8 @@ Subtitle: Empowering Teams of Learners
 
 <div style="--ta:center; --m:auto">
 <a href="#learn-more" class="button white">Learn More</a>
-<a href="/Sign-up-Now" class="button">Signup<lighning-bolt></a>
+<a href="/Sign-up-Now" class="button">Sign Up<lighning-bolt></a>
+<a href="https://sage.startr.cloud" style="--size:0.4; --c:blue; --td:underline "><br>login now</a>
 </div>
 
 <video preload="none" src="//cdn.jsdelivr.net/gh/Startr/WEB-Sage.Education@master/src/videos/Sage.mp4"
@@ -188,23 +191,23 @@ We give educators and learners the tools they need to create **cutting-edge** AI
 
 {style="--d: flex; --fw: wrap; --bg: white; --p: 2em 0; --br: 12px; --shadow: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --maxw: 80rem; --m: 2em auto; --ai: center;"}
 
-## Why Students Love **Sage** {style="--ta:center; --w: 100%"}
+## Why Learners Love **Sage** {style="--ta:center; --w: 100%"}
 
 {style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
 
-##### Artifact View for Coding
+##### In Browser Live Coding
 
 Real-time feedback through our artifact view for CSS, HTML, and Javascript
 
 {style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
 
-##### Integrated Media
+##### Powerful Knowledge Bases
 
-Upload and integrate documents and websites for easy integration with Retrieval-Augmented Generation features
+Upload and use documents and websites as refrences that are always cited.
 
 {style="--maxw: 90%; --maxw-md: 30%; --m: 0.6em auto; --minh:26ch; --bg: white; --p: 3em; --br: 12px; --shadow: 5; outline: rgb(230, 230, 230) dashed; outline-offset: -0.6em; --b-width: 2px; --ai: center; visibility: visible; animation-name: rotateInUpLeft;"}
 
-##### Dialogue Branches
+##### Explore Idea Spaces
 
 Track and review progress and decision-making with branching conversation views
 
@@ -268,7 +271,9 @@ Track and review progress and decision-making with branching conversation views
 
 ![/images/IMG_1394.webp](/images/IMG_1394.webp)
 
-### Work with your own documents
+### Turn Documents into Sage Knowledge
+
+![/images/Knowledge_Sage.EducationAI.jpeg](/images/Knowledge_Sage.EducationAI.jpeg)
 
 - **Integrated Media**:
   Upload and integrate documents and websites for easy integration with Retrieval-Augmented Generation features.

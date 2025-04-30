@@ -4,12 +4,29 @@ permalink: /tags/
 title: Tags
 ---
 
-<h1>Tags</h1>
+<div class="container" style="
+  --m: 1em auto;
+  --d:flex;
+  --fd:column;
+  --ai:center;">
 
-{% set taglist = collections.tagList %}
-<ul>
-{% for tag in taglist | sort %}
-  {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-  <li><a href="{{ tagUrl }}">{{ tag }}</a></li>
-{% endfor %}
-</ul>
+  <h1><strong>Blog<strong></h1>
+  <h2>Tags</h2>
+
+  <p style="--c:#555; --size:1.125rem; --lh:1.8">
+  We've tagged our posts with various topics to help you find what you're looking for.
+  </p>
+  {% set taglist = collections.tagList %}
+  <ul style="--list:none; --p:0; --m:0; --ta:left; --w:100%; --maxw:66rem; --m:auto; display: flex; flex-wrap: wrap; gap: 0.5rem;">
+    {% for tag in taglist | sort %}
+      {% if not tag.startsWith('#') %}
+        {# Filter out tags starting with # #}
+        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+        <li>
+          <a href="{{ tagUrl }}">{{ tag }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  <p>See <a href="/posts">all posts</a>.</p>
+</div>

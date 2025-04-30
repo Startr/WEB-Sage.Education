@@ -1,26 +1,27 @@
 {% for post in postslist %}
 {# Determine animation class based on loop index #}
 {% set animation_class = 'rotateInUpLeft' if loop.index % 2 != 0 else 'rotateInUpRight' %}
-<section class="wow {{ animation_class }}" style="--bg:white;
-	  --p:3em;
-	  --br:12px;
-	  --shadow:5;
-	  outline:#e6e6e6 dashed;
-	  outline-offset: -0.6em;
-	  --b-width:2px;
-	  --w:80%;
-	  --maxw:66rem;
-	  --ai:center;">
+<section class="wow {{ animation_class }}" 
+	style="--bg:white;
+			--p:3em;
+			--br:12px;
+			--shadow:5;
+			outline:#e6e6e6 dashed;
+			outline-offset: -0.6em;
+			--b-width:2px;
+			--w:80%;
+			--m:0.2em auto;
+			--maxw:66rem;
+			--ai:center;">
 	<h2 style="--c:#333; --size:2rem; --ta:center;">
 		<!-- all variables we can access -->
-		{{ loop.index }}
 		{% if post.data.title %}
 		{{ post.data.title }}{% else %}
 		<code>{{ post.url }}</code>
 		{% endif %}
 	</h2>
 	{% if post.data.summary %}
-	<p style="--c:#555; --size:1.125rem; --ta:center; --lh:1.8">
+	<p style="--c:#555; --size:1.125rem; --lh:1.8">
 		{{ post.data.summary }}
 	</p>{% endif %}
 	<div style="--d:flex; --jc:center; --mt:1.5em;">
@@ -33,5 +34,5 @@
 	</time> -->
 </section>
 <!-- Vertical connecting dashed line -->
-<div class="wow fadeIn" style="--h:100px; --b:#e6e6e6 dashed; --ml:auto; --mr:auto;"></div>
+<div class="wow fadeIn" style="--h:100px; --b:#e6e6e6 dashed; --ml:auto; --mr:auto; --w:0"></div>
 {% endfor %}

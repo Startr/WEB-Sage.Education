@@ -1,6 +1,6 @@
 ---
 layout: layouts/blog.njk
-title: Principles for LLM Prompting for High Schoolers (Grades 9-11)
+title: Prompting for High Schoolers (Grades 9-11)
 tags:
   - "#student"
   - "#high-school"

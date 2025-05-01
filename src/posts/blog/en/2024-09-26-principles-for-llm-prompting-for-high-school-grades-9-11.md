@@ -1,10 +1,11 @@
 ---
 layout: layouts/blog.njk
-title: Principles for LLM Prompting for High School (Grades 9-11)
+title: Principles for LLM Prompting for High Schoolers (Grades 9-11)
 tags:
   - "#student"
   - "#high-school"
   - AI
+  - prompting
 date: 2024-09-26T11:58:00.000Z
 rating: 5
 summary: Imagine you're stuck on a history homework question. Instead of asking,

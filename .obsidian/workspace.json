@@ -34,9 +34,19 @@
               "icon": "lucide-file",
               "title": "Local"
             }
+          },
+          {
+            "id": "cb9ee7ce7a52afcd",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -109,7 +119,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "src/Local.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +128,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Local"
+              "title": "Backlinks"
             }
           },
           {
@@ -128,12 +137,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "src/Local.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Local"
+              "title": "Outgoing links"
             }
           },
           {
@@ -157,21 +165,19 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/Local.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Local"
+              "title": "Outline"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -183,8 +189,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "70b85a285e93b35d",
+  "active": "cb9ee7ce7a52afcd",
   "lastOpenFiles": [
+    "src/Local.md",
     "src/posts/blog/pt/2024-09-26-principles-of-llm-prompting-for-teachers.md",
     "src/posts/blog/pt/2024-09-26-principles-for-llm-prompting-for-high-school-grades-9-11.md",
     "src/posts/blog/fr/2024-09-26-principles-of-llm-prompting-for-teachers.md",
@@ -214,7 +221,6 @@
     "docs/tutorials/web-search/tavily.md",
     "docs/tutorials/web-search/serpstack.md",
     "docs/tutorials/web-search/serply.md",
-    "docs/tutorials/web-search/kagi.md",
     "docs/tutorials/web-search/_category_.json",
     "docs/tutorials/web-search",
     "docs/tutorials/deployment/index.mdx",

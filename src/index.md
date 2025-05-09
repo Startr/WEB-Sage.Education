@@ -107,7 +107,7 @@ Subtitle: Empowering Teams of Learners
 <div style="--ta:center; --m:auto">
 <a href="#learn-more" class="button white">Learn More</a>
 <a href="/Sign-up-Now" class="button">Sign Up<lighning-bolt></a>
-<a href="/upgrade" style="--size:0.4; --c:blue; --td:underline "><br>login now</a>
+<a href="/AI" style="--size:0.4; --c:blue; --td:underline "><br>login now</a>
 </div>
 
 <video preload="none" src="//cdn.jsdelivr.net/gh/Startr/WEB-Sage.Education@master/src/videos/Sage.mp4"
@@ -434,6 +434,6 @@ See learners' conversations, engagements, and creative artifacts.
 #### Get Started Now
 
 <div>
-<a href="/upgrade" class="button white">Login</a>
+<a href="/AI" class="button white">Login</a>
 <a href="/Sign-up-Now" class="button">Signup<lighning-bolt></a>
 </div>

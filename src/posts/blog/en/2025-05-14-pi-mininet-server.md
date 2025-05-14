@@ -3,8 +3,6 @@ layout: layouts/blog.njk
 title: Pi MiniNet Server
 tags:
   - education
-  - pi
-  - net
 date: 2025-04-25T15:28:00.000Z
 rating: 5
 summary: 🚀 Transform your Raspberry Pi 4 into a powerful self-hosted web server

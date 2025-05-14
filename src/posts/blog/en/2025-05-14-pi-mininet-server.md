@@ -137,8 +137,6 @@ Setting up a Pi as a mini private internet! Let's break this down into steps. We
 
 ### Notes:
 
-- Ensure your Raspberry Pi 4's Wi-Fi interface supports AP mode.
-- For security, consider setting up SSL/TLS encryption for your web server using Let's Encrypt.
 - Make sure to set proper permissions and access controls for the upload directory to prevent unauthorized access.
 
 This setup will allow users to connect to your Raspberry Pi 4 as a Wi-Fi access point and upload files to the server.

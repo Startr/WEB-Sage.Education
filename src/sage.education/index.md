@@ -335,6 +335,6 @@ See learners' conversations, engagements, and creative artifacts.
 ### **Learning better with Sage.Education**{style="--m: 2em auto"}
 #### Get Started Now!
  
-[Signup](https://sage.startr.cloud)  -  [<button class="tag">Login</button>](https://sage.startr.cloud)
+[Signup](/upgrade)  -  [<button class="tag">Login</button>](/upgrade)
 
 	

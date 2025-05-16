@@ -429,6 +429,6 @@ See learners' conversations, engagements, and creative artifacts.
 #### Get Started Now
 
 <div>
-<a href="https://sage.startr.cloud" class="button white">Login</a>
+<a href="/AI" class="button white">Login</a>
 <a href="/Sign-up-Now" class="button">Signup<lighning-bolt></a>
 </div>

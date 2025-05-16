@@ -1,0 +1,232 @@
+{
+  "main": {
+    "id": "a6e279f7ac7d8c89",
+    "type": "split",
+    "children": [
+      {
+        "id": "9c22da4fe9862607",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0fde5a93ff1e4d8f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "src/pricing.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "pricing"
+            }
+          },
+          {
+            "id": "70b85a285e93b35d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "src/Local.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Local"
+            }
+          },
+          {
+            "id": "cb9ee7ce7a52afcd",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "189f30b31c1c8bc5",
+    "type": "split",
+    "children": [
+      {
+        "id": "3457228e8397b44d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b23db66fbac2e84e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "3e0ead760c7a55b5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "f9a30e0633e795ab",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "641eb60485d4a267",
+    "type": "split",
+    "children": [
+      {
+        "id": "4bf3dac5ae8636b6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "574425cdddb21ee4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "a1ef77c628dfa00b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "a95df7017bbe8c6c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "5e3faa8f9a04f51e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "cb9ee7ce7a52afcd",
+  "lastOpenFiles": [
+    "dist/AI/index.html",
+    "dist/AI",
+    "src/AI.html",
+    "src/AI",
+    "src/Local.md",
+    "src/posts/blog/pt/2024-09-26-principles-of-llm-prompting-for-teachers.md",
+    "src/posts/blog/pt/2024-09-26-principles-for-llm-prompting-for-high-school-grades-9-11.md",
+    "src/posts/blog/fr/2024-09-26-principles-of-llm-prompting-for-teachers.md",
+    "src/posts/blog/fr/2024-09-26-principles-for-llm-prompting-for-high-school-grades-9-11.md",
+    "src/posts/blog/de/2024-09-26-principles-of-llm-prompting-for-teachers.md",
+    "src/posts/blog/de/2024-09-26-principles-for-llm-prompting-for-high-school-grades-9-11.md",
+    "docs/tutorials/https-haproxy.md",
+    "docs/tutorials/maintenance/backups.md",
+    "docs/tutorials/maintenance/_category_.json",
+    "docs/tutorials/maintenance",
+    "docs/tutorials/tips/_category_.json",
+    "docs/tutorials/tips/rag-tutorial.md",
+    "docs/tutorials/tips/sqlite-database.md",
+    "docs/tutorials/tips/reduce-ram-usage.md",
+    "docs/tutorials/tips/contributing-tutorial.md",
+    "docs/tutorials/tips",
+    "docs/tutorials/web-search/searxng.md",
+    "docs/tutorials/web-search/exa.md",
+    "docs/tutorials/web-search/serper.md",
+    "docs/tutorials/web-search/jina.md",
+    "docs/tutorials/web-search/bing.md",
+    "docs/tutorials/web-search/searchapi.md",
+    "docs/tutorials/web-search/mojeek.md",
+    "docs/tutorials/web-search/serpapi.md",
+    "docs/tutorials/web-search/brave.md",
+    "docs/tutorials/web-search/google-pse.md",
+    "docs/tutorials/web-search/tavily.md",
+    "docs/tutorials/web-search/serpstack.md",
+    "docs/tutorials/web-search/_category_.json",
+    "docs/tutorials/web-search",
+    "docs/tutorials/deployment/index.mdx",
+    "dist/images/favicon.png"
+  ]
+}

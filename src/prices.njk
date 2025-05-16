@@ -1,12 +1,8 @@
-<html style="--bg:#f8f9fa">
+---
+layout: layouts/base.njk
+---
 
-    <head>
-        <!-- Include Startr Style CSS -->
-        <link rel="stylesheet" href="https://startr.style/style.css" />
-    </head>
-
-    <body style="--size:1em; --bg:#f8f9fa; --c:#333; --ta:center; --p:2rem">
-        <section style="--p:5rem 0;">
+        <section style="--size:1em;  --c:#333; --ta:center; --p:2rem; --ta:center; --ff:Arial, sans-serif;">
             <h1 style="--size-sm:5rem; --weight:bold">
                 {{ pricing.heading }}<br />{{ pricing.subheading }}
             </h1>
@@ -17,8 +13,8 @@
                     <div
                         style="--bg:#fff; --radius:50%; --w:.9rem; --h:.9rem; --pos:absolute; --top:50%; --left:0; --t:translateY(-50%); --tn:left 0.3s;">
                     </div>
-                    <input type="checkbox" id="billing-toggle" aria-live="polite" aria-pressed="false"
-                        onchange="toggleBilling()" style="--w:100%; --op:0; --cur:pointer; --t:translateY(-50%);" />
+                    <input type="checkbox" id="billing-toggle" aria-live="polite" aria-pressed="true"
+                        onchange="toggleBilling()" style="--w:100%; --op:0; --cur:pointer; --t:translateY(-50%);" checked />
                 </div>
                 <label style="--m:0 1rem; --c:#666">{{ pricing.deal_description[1].title }}</label>
             </div>
@@ -110,7 +106,6 @@
 
                 }
             }
+            // Call toggleBilling on initial load to set the state based on the checked attribute
+            document.addEventListener('DOMContentLoaded', toggleBilling);
         </script>
-    </body>
-
-</html>

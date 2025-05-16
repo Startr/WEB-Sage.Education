@@ -51,8 +51,8 @@ https://sage.education/ai/docs
             - [ ] [schools & Districs](https://edpuzzle.com/schools-districts) #todo  mention The Study when we add this page  This is for explaining school offings
             - [ ] [[Open class - log in with a class code]] #todo 
 	    
-            - [ ] [Login]([https://sage.startr.cloud](https://sage.startr.cloud/)) #todo no sub accounts to different schools yet
-            - [ ] [Signup]([https://sage.startr.cloud](https://sage.startr.cloud/)) #todo no sub accounts schools yet
+            - [ ] [Login]([/upgrade](/upgrade/)) #todo no sub accounts to different schools yet
+            - [ ] [Signup]([/upgrade](/upgrade/)) #todo no sub accounts schools yet
     - [ ] Footer
         - [ ] Footer Menu
             

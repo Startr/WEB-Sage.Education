@@ -12,7 +12,9 @@ eleventyNavigation:
   --d:flex;
   --fd:column;
   --ai:center;">
-  <h1><strong>{{ title }}</strong></h1>
+  <h1>
+    <strong>{{ title }}</strong>
+  </h1>
 
   <h2>Latest Posts</h2>
   {% set postslist = collections.posts %}
@@ -20,38 +22,37 @@ eleventyNavigation:
     <ul class="posts-list">
       {%- for post in postslist -%}
         {% if post.data.title and 'GitHub' not in post.data.tags %}
-        <li class="post-item"  class="wow fadeIn" style="
-	--m: 1em auto;
-  --scale-hvr:102%;
-	--bg:white;
-	--p:3em;
-	--br:12px;
-	--shadow:5;
-	outline:#e6e6e6 dashed;
-	outline-offset: -0.6em;
-	--b-width:2px;
-	--w:80%;
-	--maxw:66rem;
-	--ai:center;">
-          <h2 class="post-title">
-            <a href="{{ post.url }}">{{ post.data.title }}</a>
-          </h2>
-          <time class="post-date" datetime="{{ post.date | htmlDateString }}">
-            {{ post.date | readableDate }}
-          </time>
-          {% if post.data.description %}
-            <p class="post-description">{{ post.data.description }}</p>
-          {% elseif post.data.summary %}
-            <p class="post-description">{{ post.data.summary }}</p>
-          {% endif %}
-          {% if post.data.tags %}
-            <div class="post-tags">
-              {% for tag in post.data.tags | filterTagList %}
-                <a href="/tags/{{ tag | slugify }}/" class="post-tag">{{ tag }}</a>
-              {% endfor %}
-            </div>
-          {% endif %}
-        </li>
+          <li class="post-item"  class="wow fadeIn" style="
+                --m: 1em auto;
+                --scale-hvr:102%;
+                --bg:white;
+                --p:3em;
+                --br:12px;
+                --shadow:5;
+                outline:#e6e6e6 dashed;
+                outline-offset: -0.6em;
+                --b-width:2px;
+                --maxw: 80rem;
+                --ai:center;">
+            <h2 class="post-title">
+              <a href="{{ post.url }}">{{ post.data.title }}</a>
+            </h2>
+            <time class="post-date" datetime="{{ post.date | htmlDateString }}">
+              {{ post.date | readableDate }}
+            </time>
+            {% if post.data.description %}
+              <p class="post-description">{{ post.data.description }}</p>
+            {% elseif post.data.summary %}
+              <p class="post-description">{{ post.data.summary }}</p>
+            {% endif %}
+            {% if post.data.tags %}
+              <div class="post-tags">
+                {% for tag in post.data.tags | filterTagList %}
+                  <a href="/tags/{{ tag | slugify }}/" class="post-tag">{{ tag }}</a>
+                {% endfor %}
+              </div>
+            {% endif %}
+          </li>
         {% endif %}
       {%- endfor -%}
     </ul>
@@ -61,41 +62,40 @@ eleventyNavigation:
 
   <h2>Github Posts</h2>
   {% if postslist.length > 0 %}
-    <ul class="posts-list">
+    <ul class="posts-list" style="--d:flex; --fw:wrap; --jc:space-around; --g:0.4rem; --maxw:80rem;">
       {%- for post in postslist -%}
         {% if post.data.title and 'GitHub' in post.data.tags %}
-        <li class="post-item"  class="wow fadeIn" style="
-	--m: 1em auto;
-  --scale-hvr:102%;
-	--bg:white;
-	--p:3em;
-	--br:12px;
-	--shadow:5;
-	outline:#e6e6e6 dashed;
-	outline-offset: -0.6em;
-	--b-width:2px;
-	--w:80%;
-	--maxw:66rem;
-	--ai:center;">
-          <h2 class="post-title">
-            <a href="{{ post.url }}">{{ post.data.title }}</a>
-          </h2>
-          <time class="post-date" datetime="{{ post.date | htmlDateString }}">
-            {{ post.date | readableDate }}
-          </time>
-          {% if post.data.description %}
-            <p class="post-description">{{ post.data.description }}</p>
-          {% elseif post.data.summary %}
-            <p class="post-description">{{ post.data.summary }}</p>
-          {% endif %}
-          {% if post.data.tags %}
-            <div class="post-tags">
-              {% for tag in post.data.tags | filterTagList %}
-                <a href="/tags/{{ tag | slugify }}/" class="post-tag">{{ tag }}</a>
-              {% endfor %}
-            </div>
-          {% endif %}
-        </li>
+          <li class="post-item"  class="wow fadeIn" style="
+                --scale-hvr:102%;
+                --bg:white;
+                --p:3em;
+                --br:12px;
+                --shadow:5;
+                outline:#e6e6e6 dashed;
+                outline-offset: -0.6em;
+                --b-width:2px;
+                --w:40%;
+                --maxw:66rem;
+                --ai:center;">
+            <h2 class="post-title">
+              <a href="{{ post.url }}">{{ post.data.title }}</a>
+            </h2>
+            <time class="post-date" datetime="{{ post.date | htmlDateString }}">
+              {{ post.date | readableDate }}
+            </time>
+            {% if post.data.description %}
+              <p class="post-description">{{ post.data.description }}</p>
+            {% elseif post.data.summary %}
+              <p class="post-description">{{ post.data.summary }}</p>
+            {% endif %}
+            {% if post.data.tags %}
+              <div class="post-tags">
+                {% for tag in post.data.tags | filterTagList %}
+                  <a href="/tags/{{ tag | slugify }}/" class="post-tag">{{ tag }}</a>
+                {% endfor %}
+              </div>
+            {% endif %}
+          </li>
         {% endif %}
       {%- endfor -%}
     </ul>
@@ -109,32 +109,32 @@ eleventyNavigation:
     list-style: none;
     padding: 0;
   }
-  
+
   .post-item {
     margin-bottom: 2rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid #eee;
   }
-  
+
   .post-title {
     margin-bottom: 0.5rem;
   }
-  
+
   .post-date {
     display: block;
     font-size: 0.9rem;
     color: #666;
     margin-bottom: 0.5rem;
   }
-  
+
   .post-description {
     margin-top: 0.5rem;
   }
-  
+
   .post-tags {
     margin-top: 0.5rem;
   }
-  
+
   .post-tag {
     display: inline-block;
     background: #f0f0f0;

@@ -5,8 +5,10 @@ deal: true
 deal_description:
   - title: monthly
     subtitle: stop any time
-  - title: yearly
-    subtitle: enjoy a discount
+  - title: anual
+    subtitle: save 20%
+  - title: lifetime
+    subtitle: save 50%
 offers:
   - price: 11
     public: true

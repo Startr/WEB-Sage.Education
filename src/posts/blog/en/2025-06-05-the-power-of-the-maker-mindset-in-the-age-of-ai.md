@@ -18,6 +18,10 @@ summary: Imagine a classroom where students are not just passive learners but
 eleventyNavigation:
   parent: Blog
 ---
+Imagine a classroom where students are not just passive learners but active creators, using AI as a tool to bring their innovative ideas to life. This is the power of the maker mindset, a way of thinking that emphasizes action, experimentation, and creativity. But what exactly is a mindset, and how does the maker mindset fit into this framework? Let's explore how the maker mindset can empower students to shape their future rather than just prepare for it.
+
+---
+
 A **mindset** is a person's set of beliefs, attitudes, and thought processes that influence their behavior and decision-making. Carol Dweck's theory of mindset centers on the distinction between two types of mindsets: **fixed** and **growth**. A person with a growth mindset believes that abilities and intelligence can be developed, whereas a fixed mindset views them as innate and unchangeable (Blackwell, Trzesniewski, & Dweck, 2007). The **maker mindset** is a type of growth mindset that thrives on creativity, problem-solving, collaboration, experimentation, and a hands-on approach to learning and innovation.
 
 The maker mindset is rooted in the **maker movement**, which encourages individuals to create, tinker, and experiment with physical or digital tools to solve problems or bring ideas to life. Research indicates that adopting a maker mindset can enhance learning outcomes, boost creativity, and improve problem-solving skills by fostering curiosity, resilience, and interdisciplinary thinking (Cohen et al., 2016). For example, in one study, students in maker-centered classrooms reported a 32% increase in self-reported engagement, exhibited a 28% increase in self-efficacy (confidence in problem-solving), and reported a 20% reduction in anxiety related to failure, which was attributed to the iterative, low-stakes nature of maker activities (Martinez & Stager, 2019).
@@ -50,18 +54,18 @@ Critical thinking and the maker mindset are intertwined. As individuals create a
 
 > For example, imagine you're a student with a maker mindset, and you want to create an AI-powered solution to help address Environmental Sustainability. What aspect of environmental sustainability would you like to focus on, and how would you design your solution?
 > 
-> First, identify a Specific Problem. Choose a specific aspect of environmental sustainability that you're passionate about addressing. It could be something like:
-
-* Reducing plastic waste in oceans
-* Improving energy efficiency in homes and buildings
-* Promoting sustainable agriculture practices
-* Helping to preserve and restore natural habitats
+First, identify a Specific Problem. Choose a specific aspect of environmental sustainability that you're passionate about addressing. It could be something like:
+>
+> * Reducing plastic waste in oceans
+> * Improving energy efficiency in homes and buildings
+> * Promoting sustainable agriculture practices
+> * Helping to preserve and restore natural habitats
 
 Next, define your AI's purpose: Consider how you want your AI-powered solution to assist in addressing the problem. What tasks do you want it to perform? What kind of interactions do you want it to have with users? Write a system prompt that defines your AI's purpose, behavior, and limitations. This is like creating a job description for your AI.
 
-For example, if you want to create an AI-powered chatbot that helps people reduce their carbon footprint, your system prompt might look like this:
-
-"My AI chatbot will provide personalized recommendations and tips to help users reduce their daily carbon footprint. It will offer suggestions for reducing energy consumption, using public transportation, and making eco-friendly purchases. The chatbot will respond with encouraging and informative messages and provide links to reputable resources and tools for tracking progress."
+> For example, if you want to create an AI-powered chatbot that helps people reduce their carbon footprint, your system prompt might look like this:
+>
+>"My AI chatbot will provide personalized recommendations and tips to help users reduce their daily carbon footprint. It will offer suggestions for reducing energy consumption, using public transportation, and making eco-friendly purchases. The chatbot will respond with encouraging and informative messages and provide links to reputable resources and tools for tracking progress."
 
 **Step 3:** Design Your Solution. With your system prompt in mind, consider how you would design your AI-powered solution. What features would it have? How would it interact with users? What kind of data would it collect, and how would it use that data to improve its performance?
 

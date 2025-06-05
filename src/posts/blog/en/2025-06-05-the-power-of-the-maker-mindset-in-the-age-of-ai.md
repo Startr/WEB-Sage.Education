@@ -22,19 +22,21 @@ A **mindset** is a person's set of beliefs, attitudes, and thought processes tha
 
 The maker mindset is rooted in the **maker movement**, which encourages individuals to create, tinker, and experiment with physical or digital tools to solve problems or bring ideas to life. Research indicates that adopting a maker mindset can enhance learning outcomes, boost creativity, and improve problem-solving skills by fostering curiosity, resilience, and interdisciplinary thinking (Cohen et al., 2016). For example, in one study, students in maker-centered classrooms reported a 32% increase in self-reported engagement, exhibited a 28% increase in self-efficacy (confidence in problem-solving), and reported a 20% reduction in anxiety related to failure, which was attributed to the iterative, low-stakes nature of maker activities (Martinez & Stager, 2019).
 
-**What Does a Maker Mindset Look Like in the Age of AI?**
+## **What Does a Maker Mindset Look Like in the Age of AI?**
 
 The age of AI presents unprecedented opportunities for creativity and innovation. With access to generative AI, individuals can lower barriers to creation, enabling rapid prototyping of tools, apps, and agents. The maker mindset thrives in this environment, as individuals can use AI platforms like Sage.Education to build their own solutions quickly. For example, a student with a maker mindset might create an AI chatbot to help them practice doing interviews, making adjustments and iterating based on different job types. As they work, they're not just learning about AI; they're also developing their skills. They're developing essential skills like creativity, critical thinking, resilience, and problem-solving. This is what the maker mindset looks like in action: combining curiosity, play, and perseverance to drive innovation. By embracing challenges as opportunities to learn, individuals with a maker mindset can turn setbacks into stepping stones for success.
 
-**What About Critical Thinking in the Age of AI?**
+## **What About Critical Thinking in the Age of AI?**
 
 Critical thinking is also essential in the age of AI, where evaluating information and making informed decisions is crucial. By questioning assumptions, identifying biases, and evaluating evidence, we can gain a more accurate understanding ofthings. The black-box nature of AI and its potential for errors demand rigorous evaluation. Without critical thinking, individuals risk making uninformed decisions, leading to flawed outcomes or unintended consequences. By teaching critical thinking skills, students are better equipped with the tools to navigate a complex, information-saturated world where AI is increasingly present.
 
-**My Take-Away**
+## **My Take-Away**
 
 Critical thinking and the maker mindset are intertwined. As individuals create and innovate, they must also critically evaluate their work, assessing its effectiveness, identifying areas for improvement, and refining their approach. This cycle of creation, evaluation, and refinement is at the heart of the maker mindset. Rather than focusing primarily on critical thinking skills, schools should also encourage and nurture a maker mindset. AI is transforming the way we live and work, but it also requires us to think differently. Critical thinking ensures AI-driven solutions are ethical and reliable, while the maker mindset drives innovation by turning ideas into reality. By combining these two approaches, we can empower the next generation to shape the future rather than just prepare for it. As we embrace the potential of AI, let's also nurture the maker mindset, empowering individuals to create, innovate, and shape the future with purpose and passion.
 
-**Suggested Classroom AI Activity**
+---
+
+## **Suggested Classroom AI Activity**
 
 **Design Your Own AI-Powered Solution:** Imagine you are a student with a maker mindset, and you want to create an AI-powered solution to a real-world problem. What problem would you choose to address, and how would you design your solution?
 
@@ -46,9 +48,9 @@ Critical thinking and the maker mindset are intertwined. As individuals create a
 
 **Step 2:** Define Your AI's Purpose. Think about how you want your AI-powered solution to help solve the problem. What tasks do you want it to perform? What kind of interactions do you want it to have with users? Write a system prompt that defines your AI's purpose, behavior, and limitations. This is like creating a job description for your AI.
 
-For example, imagine you're a student with a maker mindset, and you want to create an AI-powered solution to help address Environmental Sustainability. What aspect of environmental sustainability would you like to focus on, and how would you design your solution?
-
-First, identify a Specific Problem. Choose a specific aspect of environmental sustainability that you're passionate about addressing. It could be something like:
+> For example, imagine you're a student with a maker mindset, and you want to create an AI-powered solution to help address Environmental Sustainability. What aspect of environmental sustainability would you like to focus on, and how would you design your solution?
+> 
+> First, identify a Specific Problem. Choose a specific aspect of environmental sustainability that you're passionate about addressing. It could be something like:
 
 * Reducing plastic waste in oceans
 * Improving energy efficiency in homes and buildings

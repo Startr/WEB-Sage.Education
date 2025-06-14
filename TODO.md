@@ -1,6 +1,16 @@
 # 🚀 Sage.Education Project Optimization TODO
 
 ## 🔴 Critical Infrastructure & Security TODOs
+
+- [ ] **Documentation & Git Workflow Setup**: Document latest changes and setup gitflow
+  - [x] Reorganize project structure (moved `set_our_host.sh` to `tools/`)
+  - [x] Add comprehensive Makefile with project management commands
+  - [x] Update main page messaging and branding
+  - [x] Configure Obsidian workspace settings
+  - [ ] Document all changes in commit messages
+  - [ ] Setup gitflow for proper release management
+  - [ ] Verify build process after reorganization
+
 - [ ] **Security Vulnerability Fix**: Update tar-fs dependency to fix high severity vulnerability
   - [ ] Run `npm audit fix` to address GHSA-8cj5-5rvv-wf4v
   - [ ] Test build process after security updates

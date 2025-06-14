@@ -94,11 +94,12 @@ Subtitle: Empowering Teams of Learners
 
 {style="--maxw:66em; --m:3em auto 3em; --m-md:10em auto 3em; --minh:100vh; --ta:center;"}
 
-# Pull back the curtain on&nbsp;**AI** {style=" --grad-color:black;--size:2.8em; --size-sm:6em; --lh:1em"}
+# We build the best **AI**&nbsp;Maker&nbsp;Spaces {style=" --grad-color:black;--size:2.8em; --size-sm:6em; --lh:1em"}
 
-## Join the best **AI&nbsp;Makerspace** {style="--m:1em auto 0; --size:2em; --grad-color:black;"} 
+## join us and create your own **Sage** Education **AI Mentors** {style="--grad-color:black; --size:2.8em; --size-sm:4em; --lh:1em"}
 
-## for **Educators** and **Learners** of all ages. {style="--m:0 auto 1em; --size:2em; --grad-color:black;"}
+
+## Empower **Educators** and **Learners** of all ages. {style="--m:0 auto 1em; --size:2em; --grad-color:black;"}
 
 {style="--mt:-1em; --mt-sm:1em;--mb:8vh"}
 
@@ -130,11 +131,11 @@ Subtitle: Empowering Teams of Learners
 
 {style="--maxw: 80rem; --m:auto; --ta:center; --minh:100vh;"}
 
-# **Why Choose Sage Education?**{#learn-more}
+# Why Choose Sage Education?{#learn-more style="--size:3em; --mt:6ch"}
 
-'Cause we're the best! We offer a **unique** and **innovative** approach to AI education.{style="--size:1.6em; --m:2em auto"}
+'Cause we're the best! We offer a **unique** and **innovative** approach to AI education.{style="--size:1.6em;"}
 
-We give educators and learners the tools they need to create **cutting-edge** AI solutions. {style="--size:1.6em; --m:2em auto"}
+We give educators and learners the tools they need to create **cutting-edge** AI solutions. {style="--size:1.6em;"}
 
 ## {#learn-even-more}
 

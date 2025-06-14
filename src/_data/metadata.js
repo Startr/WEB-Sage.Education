@@ -5,8 +5,7 @@ module.exports = {
 	name: "Sage Education",
 	description: "Sage Education for all your educational needs",
 	author: {
-		name: "",
-		email: "youremailaddress@example.com",
-		url: "https://example.com/about-me/"
+		name: "Sage Education",
+		url: "https://sage.education/about/"
 	}
 }

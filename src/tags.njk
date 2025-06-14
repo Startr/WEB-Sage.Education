@@ -9,25 +9,14 @@ eleventyComputed:
   title: "Tagged \"{{ tag }}\""
 permalink: /tags/{{ tag }}/
 ---
-<div class="container" style="
-  --m: 1em auto;
-  --d:flex;
-  --fd:column;
-  --ta:center;
-  --ai:center;">
 
-  <h1>
-    <strong>Blog</strong>
+<h1>Tagged "{{ tag }}"</h1>
 
-  </h1>
-  <h2>Tagged "{{ tag }}"</h2>
+{% set postslist = collections.normalizedTagCollections[tag] %}
+{% if postslist.length > 0 %}
+  {% include "postslist.njk" %}
+{% else %}
+  <p>No posts found with this tag.</p>
+{% endif %}
 
-  {% set postslist = collections.normalizedTagCollections[tag] %}
-  {% if postslist.length > 0 %}
-    {% include "postslist.njk" %}
-  {% else %}
-    <p>No posts found with this tag.</p>
-  {% endif %}
-
-  <p>See <a href="/tags/">all tags</a>.</p>
-</div>
+<p>See <a href="/tags/">all tags</a>.</p>

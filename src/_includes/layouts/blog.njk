@@ -39,7 +39,8 @@ layout: layouts/base.njk
 	  --b-width:2px;
 	  --w:40%;
 	  --maxw:44rem;
-	  --ai:center;">
+	  --ai:center;
+	  zoom:1.2;">
 	{%- set previousPost = collections.all | getPreviousCollectionItem(page) %}
 	{%- set nextPost = collections.all | getNextCollectionItem(page) %}
 	{%- if nextPost or previousPost %}

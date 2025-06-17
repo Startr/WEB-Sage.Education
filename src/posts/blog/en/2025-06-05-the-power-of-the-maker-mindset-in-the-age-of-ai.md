@@ -74,3 +74,13 @@ Next, define your AI's purpose: Consider how you want your AI-powered solution t
 * Is the problem you're trying to solve clear and well-defined?
 * Is your system prompt effective in guiding the AI's behavior and interactions?
 * How could you improve the user experience and make your solution more engaging and effective?
+
+
+References
+
+Blackwell, L. S., Trzesniewski, K. H., & Dweck, C. S. (2007). "Implicit theories of intelligence predict achievement across an adolescent transition: A longitudinal study and an intervention." Child Development, 78(1), 246–263.
+
+Cohen, J. J., Jones, W. M. W., Smith, S., & Calandra, B. (2016). Makification: Towards a Framework for Leveraging the Maker Movement in Formal Education. Journal of Educational Multimedia and Hypermedia, 26(3), 129–135.
+
+Martinez, S. L., & Stager, G. S. (2019). Invent to Learn: Making, Tinkering, and Engineering in the Classroom. Constructing Modern Knowledge Press
+

@@ -25,7 +25,7 @@ Today, AI tools like large language models are transforming the educational land
 ### The Calculator Conundrum
 In 1975, the National Advisory Committee on Mathematical Education (NACOME) published a groundbreaking report. They suggested students in eighth grade and above should have access to calculators for all classwork and exams. This recommendation marked a significant shift in the approach to math education. Educators must recognize the potential of technology to enhance the learning experience. In 1980, the National Council of Teachers of Mathematics (NCTM) suggested that "mathematics programs [should] take full advantage of calculators … at all grade levels." This endorsement further reinforced the idea that calculators could be a valuable tool for students of all ages. They argued that calculators would free students from tedious computations, allowing them to focus on higher-order thinking, such as problem-solving. Moreover, students needed to learn how to use these modern devices to find a job in the Information Age. Critics feared that relying on calculators would undermine students' basic arithmetic skills and reduce the emphasis on mathematical proofs. Sound familiar?
 
-### Common Themes, New Twists
+### Common Themes
 Despite the differences between calculators and AI, both debates center on similar themes:
 1. Fear of Skill Erosion: Will new technologies undermine students' ability to think critically and solve problems independently?
 2. Equity Concerns: Will access to advanced technologies create disparities in educational opportunities?

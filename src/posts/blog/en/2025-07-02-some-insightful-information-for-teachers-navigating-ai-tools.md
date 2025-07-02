@@ -100,6 +100,8 @@ Some ways you can reduce hallucinations are by:
 
 \- Cross-referencing important information
 
+---
+
 **Emergent Behavior in AI Models**
 
 What if I told you that AI wasn't just following rules but could surprise us with creative sparks, almost like intuition, and that it wasn't just regurgitating facts but truly thinking?

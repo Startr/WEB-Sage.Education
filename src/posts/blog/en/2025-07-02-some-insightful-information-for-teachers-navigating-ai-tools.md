@@ -24,7 +24,7 @@ The fate of your data with AI tools depends on the tool. When you send informati
 
 Some companies take a different approach. Groq, which hosts open-source AI models, explicitly states that it does not store user data. Their privacy policy is clear: ["We do not retain your data...We do not train on your data."](https://groq.com/privacy-policy/) Groq processes your input through their models but doesn't save it afterward. This transparency is key. If a company isn't upfront, its silence might mean it is storing your data, even using it to improve its underlying AI models. Using open-source models has become a crucial strategy for ensuring data safety.
 
-
+---
 
 **Open Source Models and Local Privacy** 
 
@@ -33,6 +33,8 @@ Some companies take a different approach. Groq, which hosts open-source AI model
 Open-source AI models offer a privacy-first alternative. These models have publicly available code, meaning you can download and run them on your own computer. 
 
 When you run an AI model locally, you create a closed loop. No data leaves your device. No company acts as an intermediary. No data leaks and no third-party servers. Tools like Ollama make running AI models surprisingly accessible. If you have an Apple computer with an M1 or better (M2 etc) or a PC with a dedicated neural processing unit (NPU), you can run these models locally.
+
+--- 
 
 **Challenges of Running AI Models Locally**
 
@@ -46,6 +48,8 @@ Even with apps like Olama and [Sage.is](http://sage.is/) making local hosting si
 
 Think of model parameters like neurons in a brain. A model with 70 billion parameters (like Llama 70B) has more "brain power" than one with 7 billion parameters. Tens to hundreds of millions can handle basic tasks. Billions offer professional-grade performance. More parameters generally mean better performance across diverse tasks. Your laptop might handle a 7-billion-parameter model, but it will run slowly and may not perform as well as the massive models running in data centers.
 
+---
+
 **Specialized Models: Smarter Spending** 
 
 *A school district was spending $200 per month on AI tools to categorize parent communications. Their IT coordinator fine-tuned a small open-source model specifically for their needs. The new system runs locally and performs better at the specific task while costing nothing in ongoing fees.*
@@ -53,6 +57,8 @@ Think of model parameters like neurons in a brain. A model with 70 billion param
 You don't always need a PhD-level AI for simple tasks. Foundation models are large language models that encompass a wide range of knowledge. They are trained on vast amounts of data from the internet and can generate text based on this knowledge. Using a large, general-purpose model for small, specific tasks can be costly and inefficient. Do you really need a model that knows everything about the universe to identify spam emails? Fine-tuning smaller, specialized models for specific tasks often makes more sense than using expensive, general-purpose models.
 
 Fine-tuning a model involves taking your specific data samples, correcting errors, and teaching the base model to understand these nuances. The benefits of fine-tuning include less complex models, requiring less computing power, and ramping up faster. Once fine-tuned, their performance on your specific need is often excellent. Just remember, specialized models require updates over time, especially for tasks like spam detection, where threats constantly evolve. However, for many educational applications, updates every six months will be sufficient.
+
+---
 
 **Mixture of Experts: Faster, Leaner AI**  
 
@@ -64,13 +70,15 @@ New models like Meta's Llama, for example, split work among 160 highly specializ
 
 The only catch is that the ultra-high total parameter counts are still needed physically because the MoE model architecture often requires tens or hundreds of billions of parameters to function in the first place.
 
+---
+
 **AI Can't Browse the Internet (Unless We Help It)**
 
 Unless the underlying model *is* explicitly augmented, large language models fundamentally cannot search the web. Large language models are text-generation machines. Training is conducted on massive, static datasets. Think of freezing moments in the stream of the world's information. When AI appears to search the internet, it's actually using additional tools that search the web and then feed that information into the model's context.
 
 Because AI doesn't search the web but rather makes inferences from its knowledge base, AI can sometimes make things up (we call this "hallucination"). That's why it's critical to fact-check, just like you remind your students to verify their sources.
 
- 
+--- 
 
 **Understanding AI Hallucinations**
 
@@ -79,6 +87,8 @@ Because AI doesn't search the web but rather makes inferences from its knowledge
 AI models generate text based on probability distributions. They predict the next most likely word given its previous output. Odds are calculated across a vast dictionary of words learned during training. Errors can occur, especially with *foundation models*, where limits are less defined. So, if you write "The cat in the...", the model might be 90% likely to choose "hat" but 10% likely to choose other words, such as "house" or "tree."
 
 When AI models generate incorrect or misleading information, we call this phenomenon a "hallucination". This occurs because the models do not have a built-in mechanism to verify the accuracy of their outputs. The model might generate a response that sounds confident but is actually incorrect. This is why it is important to verify the information generated by AI models, especially when using them for educational purposes.
+
+---
 
 **Mitigating “Hallucinations”**
 

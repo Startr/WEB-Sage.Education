@@ -30,7 +30,8 @@ We're influenced by what we hear, especially when it's framed as helpful or insi
 # The Danger of AI-Driven "Inspiration"
 It's easy to start chat conversations or projects outlined with AI, but doing so can derail your original vision. Instead of letting AI spark an idea, try writing down your initial thoughts first. Ask yourself: "If I didn't use AI, what would I want to say? What path would I take?" AI's suggestions often feel intuitive and correct, which makes them dangerous if they misalign with your own goals. Don't let AI steer you away from your authentic voice.
 
-## **Here are some AI Rules When Creating to keep you in the driver's seat:**
+## **AI Rules When Creating**
+Here are three simple rules to keep you in the driver's seat:
 
 **1. Don't start your creative process by brainstorming with AI.** Begin by writing your own ideas before asking AI for help. Big AI likes to steer you toward its "favourite" topics. Remember that while it sounds logical, they may not reflect your voice or your true thoughts.
 

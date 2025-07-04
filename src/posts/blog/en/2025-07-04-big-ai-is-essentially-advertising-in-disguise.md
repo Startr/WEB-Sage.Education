@@ -15,6 +15,8 @@ summary: >-
 eleventyNavigation:
   parent: Blog
 ---
+In what follows, we look at why we need to teach ourselves and young users to stay in control when using AI, and how to avoid letting AI manipulate or distract us.
+
 # The Business of Attention: What AI Companies Want
 
 AI companies operate much like advertisers — they aim to capture your attention and offer what they think you might want or need. They're not necessarily focused on teaching how AI works, keeping AI somewhat of a "magic black box." This illusion of hand waving and unattainable wisdom can lead us down the wrong path if we're not careful. Think about it: if AI sounds like a perfect shortcut, why isn't it the best path for you?

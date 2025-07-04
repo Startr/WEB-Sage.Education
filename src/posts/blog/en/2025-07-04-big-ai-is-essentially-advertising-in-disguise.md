@@ -15,7 +15,7 @@ summary: >-
 eleventyNavigation:
   parent: Blog
 ---
-## The Business of Attention: What AI Companies Want
+# The Business of Attention: What AI Companies Want
 
 AI companies operate much like advertisers — they aim to capture your attention and offer what they think you might want or need. They're not necessarily focused on teaching how AI works, keeping AI somewhat of a "magic black box." This illusion of hand waving and unattainable wisdom can lead us down the wrong path if we're not careful. Think about it: if AI sounds like a perfect shortcut, why isn't it the best path for you?
 
@@ -25,10 +25,10 @@ John B. Watson wrote about how humans are "creatures of suggestion"— easy to g
 
 We're influenced by what we hear, especially when it's framed as helpful or insightful. Similarly, Steve Jobs famously built products by anticipating what people would desire, not just reacting to their expressed needs. He showed them something new, and suddenly they craved it. This is exactly how Big AI companies operate today. In a way, AI is doing the same — showing you ideas and solutions before you even know you need them.
 
-## The Danger of AI-Driven "Inspiration"
+# The Danger of AI-Driven "Inspiration"
 It's easy to start chat conversations or projects outlined with AI, but doing so can derail your original vision. Instead of letting AI spark an idea, try writing down your initial thoughts first. Ask yourself: "If I didn't use AI, what would I want to say? What path would I take?" AI's suggestions often feel intuitive and correct, which makes them dangerous if they misalign with your own goals. Don't let AI steer you away from your authentic voice.
 
-### **Here are some AI Rules When Creating to keep you in the driver's seat:**
+## **Here are some AI Rules When Creating to keep you in the driver's seat:**
 
 **1. Don't start your creative process by brainstorming with AI.** Begin by writing your own ideas before asking AI for help. Big AI likes to steer you toward its "favourite" topics. Remember that while it sounds logical, they may not reflect your voice or your true thoughts.
 
@@ -38,14 +38,14 @@ It's easy to start chat conversations or projects outlined with AI, but doing so
 
 AI is great for tasks that don't require your personal perspective. However, it can be misleading when used for creative or analytical work where nuance or originality is important. Always double-check that the AI's output suggestions match your intentions.
 
-## AI's Hidden Agenda
+# Big AI's Hidden Agenda
 While some AI tools are currently free of ads, their parent companies — like Google and OpenAI — are built on attention economies. Google's Gemini assistant may not have ads now, but its creator, Sundar Pichai, has openly discussed the potential for monetization. OpenAI, too, is building ecosystems designed to encourage heavy, data-rich user engagement—something ads rely on. Be aware that these companies aren't just offering tools; they're cultivating user behaviour.
 
 Some users have already noticed shifts like ChatGPT increasingly suggesting shopping options. It's a subtle form of influence, but it underscores a core truth: AI doesn't exist in a vacuum. Its suggestions are shaped by its design, data, and business goals.
 
 ---
 
-Final Advice:  Use AI, Don't Be Used by It
+# Final Advice:  Use AI, Don't Be Used by It
 Your voice. Your ideas. Your effort. Isn't that what matters? It's fine to have AI help — but never let it take the lead. Teach your teens to write their thoughts first, verify AI's work, and know when it's just a screenful of noise — no difference from an ad because AI companies will always want to "satisfy" you. But, you must first know what you want.
 
 Let's take responsibility for the tools we use so that AI doesn't take control of us.

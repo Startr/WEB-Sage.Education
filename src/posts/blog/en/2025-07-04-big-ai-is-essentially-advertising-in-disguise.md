@@ -1,7 +1,11 @@
 ---
 layout: layouts/blog.njk
 title: Big AI is Essentially Advertising in Disguise
-tags: education
+tags:
+  - advertising
+  - AI rules
+  - AI literacy
+  - education
 date: 2025-07-04T10:05:00.000Z
 rating: 5
 summary: >-

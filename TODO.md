@@ -2,13 +2,16 @@
 
 ## 🔴 Critical Infrastructure & Security TODOs
 
-- [ ] **Documentation & Git Workflow Setup**: Document latest changes and setup gitflow
+- [x] **Documentation & Git Workflow Setup**: Document latest changes and setup gitflow
   - [x] Reorganize project structure (moved `set_our_host.sh` to `tools/`)
   - [x] Add comprehensive Makefile with project management commands
   - [x] Update main page messaging and branding
   - [x] Configure Obsidian workspace settings
-  - [ ] Document all changes in commit messages
-  - [ ] Setup gitflow for proper release management
+  - [x] Document all changes in commit messages
+  - [x] Setup gitflow for proper release management with "v" tag prefix
+  - [x] Enhanced Makefile setup target to configure gitflow automatically
+  - [ ] Commit Makefile enhancements
+  - [ ] Test release process using Makefile conventions
   - [ ] Verify build process after reorganization
 
 - [ ] **Security Vulnerability Fix**: Update tar-fs dependency to fix high severity vulnerability

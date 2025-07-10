@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "21ab417acd48d480",
+        "id": "44338650aa172063",
         "type": "tabs",
         "children": [
           {
-            "id": "de01daa8cf6108d2",
+            "id": "824ec109c07f63ef",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -160,7 +160,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "de01daa8cf6108d2",
+  "active": "824ec109c07f63ef",
   "lastOpenFiles": [
     "dist/posts/blog/pt/2025-05-14-an-ai-edtech-success-story-students-forge-ai-ally-conquer-space-challenge/index.html",
     "dist/posts/blog/fr/2025-06-12-embracing-the-maker-mindset-in-ai-education/index.html",

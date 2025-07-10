@@ -137,4 +137,7 @@ setup:
 		echo "NODE_ENV=development" >> .env; \
 		echo "You can customize the .env file later."; \
 	fi
+	@echo "Setting up Git Flow with version tag prefix 'v'..."
+	@git config gitflow.prefix.versiontag "v"
+	@echo "Git Flow configured to use 'v' prefix for version tags"
 	@echo "Setup complete! Local development environment is ready."

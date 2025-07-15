@@ -139,7 +139,7 @@ We give educators and learners the tools they need to create **cutting-edge** AI
 
 ## {#learn-even-more}
 
-{style="--mt:10em"}
+{style="--mt:10em; zoom: 1.2;"}
 
 ### Other AI Education Platforms
 

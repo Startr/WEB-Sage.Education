@@ -94,11 +94,9 @@ Subtitle: Empowering Teams of Learners
 
 {style="--maxw:66em; --m:3em auto 3em; --m-md:10em auto 3em; --minh:100vh; --ta:center;"}
 
-# Pull back the curtain on&nbsp;**AI** {style=" --grad-color:black;--size:2.8em; --size-sm:6em; --lh:1em"}
+# Join the best **AI&nbsp;Makerspace** {style="--m:1em auto 0; --size:4em; --grad-color:black;"} 
 
-## Join the best **AI&nbsp;Makerspace** {style="--m:1em auto 0; --size:2em; --grad-color:black;"} 
-
-## for **Educators** and **Learners** of all ages. {style="--m:0 auto 1em; --size:2em; --grad-color:black;"}
+## designed for **Educators** and **Learners** of all ages. {style="--m:0 auto 1em; --size:2em; --grad-color:black;"}
 
 {style="--mt:-1em; --mt-sm:1em;--mb:8vh"}
 
@@ -111,18 +109,24 @@ Subtitle: Empowering Teams of Learners
 </div>
 
 <video preload="none" src="//cdn.jsdelivr.net/gh/Startr/WEB-Sage.Education@master/src/videos/Sage.mp4"
-       autoplay="false" poster="/images/IMG_Sage.Map.webp"
+       autoplay="false" poster="/images/Sage.Login.webp"
+       onloadstart="this.playbackRate = 0.6;"
        muted="false" loop="false" style="--w:90%; 
-              --scale-hvr:140%;
+              --scale-hvr:123%;
               --scale-hvr-sm: 100%;
               --br: 12px;
               --m:1em;
               --p:1em;
               --bg:white;
+              --d:block;
+              --d-pt: none;
         box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
         outline: 2px dashed rgb(230, 230, 230);
         outline-offset: -0.6em;">
 </video>
+<img src="/images/Sage.Login.webp" alt="Sage Education Map" style="--scale: 90%; --br: 12px; --m:1em; --p:2em; --pb:0.6em; --bg:white; box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); outline: 2px dashed rgb(230, 230, 230); outline-offset: -0.6em; 
+--d:none; 
+--d-pt:block" />
 
 ## [**Unlock**](/Sign-up-Now) limitless learning with [**Sage Education&nbsp;AI**](/Sign-up-Now).  {style="--size:3em; --grad-color:black;"}
 
@@ -132,9 +136,9 @@ Subtitle: Empowering Teams of Learners
 
 # **Why Choose Sage Education?**{#learn-more}
 
-'Cause we're the best! We offer a **unique** and **innovative** approach to AI education.{style="--size:1.6em; --m:2em auto"}
+We offer a **private**, **secure**, **customizable**, **innovative** approach to AI education.{style="--size:1.6em; --m:2em auto"}
 
-We give educators and learners the tools they need to create **cutting-edge** AI solutions. {style="--size:1.6em; --m:2em auto"}
+We give educators and learners the tools they need to create their own **cutting-edge** AI solutions. {style="--size:1.6em; --m:2em auto"}
 
 ## {#learn-even-more}
 

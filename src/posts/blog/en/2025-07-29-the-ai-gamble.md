@@ -9,12 +9,11 @@ tags:
 date: 2025-07-29T12:27:00.000+00:00
 rating: 5
 summary: >+
-  Like slot machines, "Big" AI hooks users with dopamine-driven
-  chase-the-perfect-output loops. Each prompt is a dice roll – sometimes landing
-  on brilliance, other times on glitchy mediocrity or total nonsense. 
+  
+  "Big AI" works like a casino: it hooks users with dopamine-driven feedback loops, chasing the perfect response. Each prompt feels like rolling the dice. Sometimes you land on brilliance, other times on glitchy mediocrity or outright nonsense.
 
 
-  Corporations are gambling billions on proprietary "black box" systems that hide critical controls while pushing the myth that only expensive tools deliver quality. Yet open-source rivals like Llama and DeepSeek prove comparably capable for pennies.
+  Big tech is gambling billions on proprietary "black box" systems. They are investing billions and hiding how it works while claiming you need expensive tools for good results. Meanwhile, open-source rivals—like Llama and DeepSeek—prove they can match performance for pennies.
 
 eleventyNavigation:
   parent: Blog

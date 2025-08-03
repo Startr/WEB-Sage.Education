@@ -6,8 +6,7 @@ tags:
 date: 2025-08-03T16:04:00.000+00:00
 rating: 5
 summary: >-
-  ![](/uploads/dither_it_img_2218.png)
-
+  
 
   The kids aren’t cheating — they’re adapting. 
 

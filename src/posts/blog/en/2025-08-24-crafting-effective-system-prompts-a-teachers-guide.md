@@ -14,28 +14,39 @@ Like a director's notes hidden from the audience or a character sheet guiding a 
 
 - - -
 
+A strong system prompt combines **role identity**, **context**, and **action-oriented tasks** to produce focused, high-quality outputs.
+
 ### Basic Steps:
 
 **1. DEFINE THE ROLE**
-Who is your AI?
 
-* Establish a clear persona and/or tone
-* Specify the context (audience, specific subject, topics, and grade levels)
+*Who is your AI? Assign a specific identity.*
 
-**2.  SET THE CONTEXT**
-What tasks do you want your AI to do?
+This establishes:  
 
+* Tone and personality  (e.g. friendly tutor, science mentor)
+* Expertise focus (e.g. expert, highly trained)
+* Output style (e.g. mentor, socratic)
 
-* Define the task using clear action verbs like "Explain," "Create," "Provide,"  "Generate"
-* Give instructions by providing concise guidelines of what you want the end product to be. 
+**2. SET THE CONTEXT**
 
+*Who are you making this AI for? Identify the context and environment.*
 
-**3.  SET THE TASKS AS A SEQUENCE OF ACTIONS**
-What tasks do you want your AI to do?
+This establishes:
 
+* Target audience (e.g. grade level, subject, specific needs)  
+* Topic scope and background (e.g. how experienced are students in this topic)
+* Specific environment or situation (e.g. homework help, classroom discussion)
 
-* Define the task using clear action verbs like "Explain," "Create," "Provide,"  "Generate"
-* Give instructions by providing concise guidelines of what you want the end product to be. 
+**3. SET THE TASK UP AS A SEQUENCE OF ACTIONS**
+
+*What tasks do you want your AI to do? State the tasks explicitly.*
+
+This establishes:
+
+* Guidelines with clear action (e.g. explain, create, generate, simplify)
+* Output deliverables (e.g. bullet points, markdown)
+
 - - -
 
 ### **More Detailed Tips:**
@@ -45,6 +56,7 @@ What tasks do you want your AI to do?
 * **Specify an Audience**: Tailoring prompts to your target audience can ensure more relevant outputs. For example, if you're writing a children's story, specify the age range and reading level of the intended audience.
 * **Provide Background Context**: Adding context to your prompts can lead to more relevant results. Explain the scenario or narrative that drives your prompt to help the AI understand the purpose and desired outcome.
 * **Show and Tell**: AI models often respond better when shown specific format requirements. 
-* **Use Separators to Separate Instructions**: Using backticks \`\`\`  \[example text here] \`\`\` as separators can improve the clarity of prompts for AI models, making it easier for them to distinguish between instructions and the data they should process.
+* **Use Separators to Separate Instructions**: Using backticks \
+  \`\`\`  \[example text here] \`\`\` as separators can improve the clarity of prompts for AI models, making it easier for them to distinguish between instructions and the data they should process.
 * **Provide Examples**: If you have a specific format or style in mind, provide examples to illustrate your expectations. Providing examples of the desired output format can significantly improve the AI's performance.
 * **Say Exactly What You Want and Don't Want**: Don't leave your prompts open to interpretation. Be really clear and tell the AI tool exactly what to deliver and what to avoid.

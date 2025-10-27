@@ -63,6 +63,7 @@ This establishes:
 
 - - -
 
-Learning to use Markdown also helps with using large language models. The following websites are useful for learning Markdown:\
+Learning to use Markdown also helps with using large language models. The following websites are useful for learning Markdown:
+
 * https://www.markdownguide.org/basic-syntax/
-* 
+* https://blog.webdevsimplified.com/2023-06/markdown-crash-course/#interactive-markdown-editor

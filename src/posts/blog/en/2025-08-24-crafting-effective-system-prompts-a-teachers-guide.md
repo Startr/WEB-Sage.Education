@@ -60,3 +60,9 @@ This establishes:
   \`\`\`  \[example text here] \`\`\` as separators can improve the clarity of prompts for AI models, making it easier for them to distinguish between instructions and the data they should process.
 * **Provide Examples**: If you have a specific format or style in mind, provide examples to illustrate your expectations. Providing examples of the desired output format can significantly improve the AI's performance.
 * **Say Exactly What You Want and Don't Want**: Don't leave your prompts open to interpretation. Be really clear and tell the AI tool exactly what to deliver and what to avoid.
+
+- - -
+
+Learning to use Markdown also helps with using large language models. The following websites are useful for learning Markdown:\
+* https://www.markdownguide.org/basic-syntax/
+* 

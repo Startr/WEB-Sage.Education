@@ -1,0 +1,41 @@
+{# 
+  Reusable FAQs Component
+  Renders a titled FAQ section from a provided `faqs` array.
+
+  Expected in context:
+  - faqs: Array<{ id, question, answer, todo? }>
+  Optional overrides:
+  - sectionTitle: string (defaults to "I have questions about pricing…")
+  - sectionId: string (defaults to "faqs")
+  - headlineClass/detailsClass: string class lists for wrappers
+  - headlineStyle/detailsStyle: inline style strings (no "style="; just the content)
+  - headlineAttrs/detailsAttrs: raw attribute strings to inject (e.g., data-wow-delay="0.1s")
+#}
+
+{% set _sectionTitle = sectionTitle or "I have questions about pricing…" %}
+{% set _sectionId = sectionId or "faqs" %}
+{% set _headlineClass = headlineClass or "headline space-top--xxx-large" %}
+{% set _detailsClass = detailsClass or "details space-top--medium" %}
+
+<div class="{{ _headlineClass }}"{% if headlineAttrs %} {{ headlineAttrs | safe }}{% endif %}{% if headlineStyle %} style="{{ headlineStyle }}"{% endif %}>
+  <header>
+    <h3 id="{{ _sectionId }}"><a href="#{{ _sectionId }}">{{ _sectionTitle }}</a></h3>
+  </header>
+  </div>
+
+<div class="{{ _detailsClass }}"{% if detailsAttrs %} {{ detailsAttrs | safe }}{% endif %}{% if detailsStyle %} style="{{ detailsStyle }}"{% endif %}>
+  {% for faq in faqs %}
+  <details id="{{ faq.id }}" class="wow animate__animated animate__fadeInUp"
+    data-wow-delay="0.2s">
+    <summary>
+      <p>{{ faq.question | mdInline | safe }}</p>
+    </summary>
+    <article>
+      {{ faq.answer | md | safe }}
+      {% if faq.todo %}
+        {% todo faq.todo %}{% endtodo %}
+      {% endif %}
+    </article>
+  </details>
+  {% endfor %}
+</div>

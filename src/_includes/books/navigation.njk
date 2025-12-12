@@ -1,0 +1,60 @@
+{# Book Navigation Macros #}
+
+{% macro bookNavigation(book, chapters, currentPage) %}
+<nav class="menu" role="dialog" tabindex="0" data-target="sidebar.menu" data-action="click->sidebar#close">
+
+  <button class="grey" aria-label="close menu" data-action="click->sidebar#close">
+    <svg class="icon" viewBox="0 0 40.3 40.3" xmlns="http://www.w3.org/2000/svg"><path d="m39.45 35.89-3.56 3.56a2.28 2.28 0 0 1 -3.56 0l-12.22-12.38-12.22 12.38a2.28 2.28 0 0 1 -3.56 0l-3.4-3.56q-1.86-1.7 0-3.56l12.22-12.22-12.22-12.22q-1.86-1.69 0-3.56l3.4-3.4c1.24-1.24 2.42-1.24 3.56 0l12.22 12.22 12.22-12.22c1.24-1.24 2.42-1.24 3.56 0l3.56 3.4a2.29 2.29 0 0 1 0 3.56l-12.38 12.22 12.38 12.22a2.29 2.29 0 0 1 0 3.56z"/></svg>
+  </button>
+
+  <div class="book-info">
+    <p class="book-info__back"><a href="../"><em>Back to sage.is</em></a></p>
+  <h1 class="book-info__title"><a href="/books/{{ book.slug }}/">{{ book.title }}</a></h1>
+    <p class="book-info__subtitle">{{ book.description or book.subtitle }}</p>
+  </div>
+
+  <div class="toc">
+    <div class="toc__part">
+      <hr>
+      <h2 class="toc__part-title sr-only">Preface</h2>
+      
+      <ul class="toc__chapters">
+        {% for chapter in chapters %}
+        <li class="toc__chapter{% if chapter.url == currentPage.url %} current{% endif %}">
+          <p class="toc__chapter-number">Chapter {{ loop.index }}</p>
+          <h3 class="toc__chapter-title"><a href="{{ chapter.url }}">{{ chapter.data.title }}</a></h3>
+          <ul class="toc__sections">
+            <!-- TODO: Add section navigation if needed -->
+          </ul>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <dl class="glossary hidden" data-target="glossary.source">
+    <!-- Glossary content goes here -->
+  </dl>
+</nav>
+{% endmacro %}
+
+{% macro chapterMeta(chapter, book) %}
+<div class="chapter-meta">
+  <span class="book-title">{{ book.title }}</span>
+  <span class="chapter-number">Chapter {{ chapter.order }}</span>
+  {% if chapter.readingTime %}
+  <span class="reading-time">{{ chapter.readingTime }} min read</span>
+  {% endif %}
+</div>
+{% endmacro %}
+
+{% macro bookBreadcrumbs(book, chapter) %}
+<nav class="breadcrumbs">
+  <ol>
+    <li><a href="/">Home</a></li>
+    <li><a href="/books/">Books</a></li>
+    <li><a href="/books/{{ book.slug }}/">{{ book.title }}</a></li>
+    <li>{{ chapter.title }}</li>
+  </ol>
+</nav>
+{% endmacro %}

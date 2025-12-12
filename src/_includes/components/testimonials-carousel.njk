@@ -1,0 +1,32 @@
+{# 
+  Testimonials Carousel Component
+  Renders a scrollable carousel of customer testimonials
+  
+  Usage: {% include "testimonials-carousel.njk", testimonials: testimonials, limit: 3 %}
+#}
+
+{% set displayTestimonials = testimonials %}
+{% if limit %}
+  {% set displayTestimonials = testimonials | slice(0, limit) %}
+{% endif %}
+
+<div class="testimonials space-top--neutral">
+  <div class="testimonials__container scroll-snap">
+    {% for item in displayTestimonials %}
+    <blockquote class="testimonials__item testimonials__item--blockquote scroll-snap__item">
+      <q>{{ item.quote | replace("==", "<mark class=\"highlight\">") | replace("==", "</mark>") | safe }}</q>
+      <cite>{{ item.cite }}</cite>
+    </blockquote>
+    {% endfor %}
+    <a class="testimonials__item testimonials__item--link scroll-snap__item" href="/customers/" aria-label="Customers">
+      <p>See more customer responses</p>
+    </a>
+  </div>
+  
+  {% if showControls != false %}
+  <div class="testimonials__controls scroll-snap-controls">
+    <button class="testimonials__control testimonials__control--previous scroll-snap-control scroll-snap-control--previous" aria-label="Previous Customer Testimonial" disabled=""></button>
+    <button class="testimonials__control testimonials__control--next scroll-snap-control scroll-snap-control--next" aria-label="Next Customer Testimonial"></button>
+  </div>
+  {% endif %}
+</div>

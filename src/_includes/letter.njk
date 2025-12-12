@@ -1,0 +1,30 @@
+---
+layout: base
+---
+
+<div class="statement statement--full-width statement--align-center">
+  <section>
+    <header>
+      <h6><a href="/newsletter">Newsletter</a> <span>•</span> {{ date | readableDate }}</h6>
+      <h1>{{ title }}</h1>
+    </header>
+  </section>
+</div>
+
+<div class="letter space-bottom--xxx-large space-top--x-large wow animate__animated animate__fadeInDown">
+  <div class="letter__container" style="--minw: 60%;">
+    <div class="letter__article wow animate__animated animate__fadeInUp">
+      
+      {% if intro %}
+        {{ intro | markdown | safe }}
+      {% endif %}
+      
+      {{ content | safe }}
+      
+      {% if author and signatures[author] %}
+        <p class="wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s">Talk to you next time!<br> <em>{{ signatures[author].signature }}</em></p>
+      {% endif %}
+      
+    </div>
+  </div>
+</div>

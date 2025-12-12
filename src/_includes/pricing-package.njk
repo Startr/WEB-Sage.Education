@@ -1,0 +1,60 @@
+{# 
+  Pricing Package Macros
+  Reusable macros for rendering pricing packages
+  
+  Usage: 
+  {% from "pricing-package.njk" import pricingPackage %}
+  {{ pricingPackage(packageData) }}
+#}
+
+{% macro pricingPackage(package) %}
+<div class="pricing__package {{ package.cssClass }} wow animate__animated {{ package.animation }}" 
+  style="--gc: span 8; direction: ltr;" 
+  data-wow-delay="{{ package.delay }}">
+  <header>
+    <h2>
+      <strong>{{ package.brand }}</strong>
+      <span>{{ package.name }}</span>
+    </h2>
+    <h3>{{ package.tagline }}</h3>
+    <ul style="--lis:none">
+      {% for feature in package.features %}
+      <li>
+        {% if feature.html %}
+          {{ feature.content | safe }}
+        {% elif feature.strong %}
+          <strong>{{ feature.text }}</strong>
+        {% else %}
+          <span style="--lh:1.2rem">{{ feature.text }}</span>
+        {% endif %}
+        
+        {% if feature.helper %}
+        <div class="pricing__helper">
+          <button>?</button>
+          <small>{{ feature.helper.text }}</small>
+        </div>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </header>
+  
+  <article style="--ta:center">
+    <h4>{{ package.pricing.display }}</h4>
+    <p>
+      <strong>{{ package.pricing.subtitle }}</strong>
+  {% if package.pricing.highlight %} <br><span class="highlight">{{ package.pricing.highlight }}</span>{% endif %}
+  {% if package.pricing.highlightSuffix %} {{ package.pricing.highlightSuffix }}{% endif %}
+    </p>
+    
+    <a class="pricing-link"
+      style="--m:auto"
+       href="{{ package.cta.url }}" 
+       data-pricing-plan="{{ package.cta.dataPlan }}" 
+       data-controller="signup" 
+       data-action="signup#track">
+      {{ package.cta.text }}
+    </a>
+  </article>
+</div>
+{% endmacro %}

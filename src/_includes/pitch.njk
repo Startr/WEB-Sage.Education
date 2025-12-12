@@ -1,0 +1,252 @@
+<!-- Extends the base layout -->
+{% extends "base.njk" %}
+<!--  -->
+
+{% block nav %}
+
+    <input id="nav-active" type="checkbox">
+
+    <label id="nav-underlay" for="nav-active"></label>
+
+    <nav class="nav" style="zoom: 1.2;     --p: 0.4rem">
+        <div class="nav__container">
+            <div class="nav__logo">
+                <a href="/" class="icon icon--sage" aria-label="Sage">
+                    <img src="/assets/images/general/sage.webp" style="--w:2em; --h:2em; --m:-0.4em 0"
+                    alt="Sage Startr Logo">
+                    <strong>Sage</strong>
+                </a>
+                <div class="nav__phrase">is <span class="highlight"></span>
+                    <strong>Private AI Capital</strong>
+                </div>
+            </div>
+            <div class="nav__links" style="gap:1em">
+                {# Data-driven main navigation #}
+                {% for item in navigation.main %}
+                    {% if item.todo %}
+                        {% set note = item.todo_note or "" %}
+                        {% todo note %}
+                        <a href="{{ item.href }}">{{ item.title }}</a>{% endtodo %}
+                    {% else %}
+                        <a href="{{ item.href }}">{{ item.title }}</a>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <div class="nav__buttons">
+                <a class="nav__button nav__button--sage" href="https://sage.Startr.Cloud/" target="_blank"
+                data-controller="signup" data-action="signup#trackLogin">Sign in</a>
+                <a class="nav__button nav__button--signup" href="/programs#packages" aria-label="Sign up free">
+                    <span style="--d:none; --d-md:inline-block">Apply to&nbsp;</span> Access Sage.AI</a>
+            </div>
+            <label class="nav__toggle" for="nav-active" aria-label="Nav Toggle" tabindex="0"></label>
+        </div>
+        <div class="nav__mobile">
+            {% for item in navigation.main %}
+                {% if item.todo %}
+                    {% set note = item.todo_note or "" %}
+                    {% todo note %}
+                    <a href="{{ item.href }}">{{ item.title }}</a>{% endtodo %}
+                {% else %}
+                    <a href="{{ item.href }}">{{ item.title }}</a>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </nav>
+{% endblock %}
+
+{% block footer %}
+
+    {% include "customer-marquee.njk" %}
+
+    <footer class="footer"  style="--mt:auto">
+        <div class="footer__apps" id="apps" style="--ta:center; --m:auto">
+            <dl class="footer__headline">
+                <dt>Sage’s everywhere</dt>
+                <dd>{% todo "" %}Mac, Windows, iOS, Android, and{% endtodo %} on the web — Sage is ready {% todo "" %}
+                    <a href="/our-apps/">whenever and wherever you
+                    are</a>{% endtodo %}.</dd>
+            </dl>
+            <ul style="--lis:none; --jc:space-around; --d: flex; --ai: center;">
+                <li>
+                    {% todo "PWA guide not ready yet" %}
+                    <a class="button button--icon button--pwa"
+                    href="/our-apps/PWA-MacOS-Windows-Linux"
+                    title="Install Sage on Mac and Windows" id="pwa-guide-link">Desktop apps</a>{% endtodo %}
+                </li>
+                <li>
+                    {% todo "iOS app not ready yet" %}
+                    <a class="button button--icon button--ios"
+                    href="https://apps.apple.com/us/app/sage-ai-management/id284708449#todo"
+                    title="Install Sage on iOS">iOS</a>{% endtodo %}
+                </li>
+                <li>
+                    {% todo "Android app not ready yet" %}
+                    <a class="button button--icon button--android"
+                    href="https://play.google.com/store/apps/details?id=is.sage-ai-management/#todo"
+                    title="Install Sage on Android">Android</a>{% endtodo %}
+                </li>
+                <li>
+                    <a class="button button--icon button--sage" href="https://sage.Startr.Cloud/"
+                    title="Use Sage in your web browser" target="_blank" data-controller="signup"
+                    data-action="signup#trackLogin">Sign in to Sage</a>
+                </li>
+            </ul>
+            <input type="hidden" id="pwa-guide-section-chrome" value="Chrome-1kSs_">
+            <input type="hidden" id="pwa-guide-section-safari" value="Safari-8ZwVX">
+            <input type="hidden" id="pwa-guide-section-edge" value="Edge-Windows-8pMBA">
+        </div>
+
+        <div class="footer__classes data-classes" data-classes-limit="3" style="--gc-lg: 2 / -2; --gc-xl: 3 / -3">
+            <dl class="footer__headline">
+                <dt>Join us for a free live class</dt>
+                <dd>We’ll answer questions about setting up Sage, rolling it out to your team, and anything else you’d like
+                to ask.<br>
+                    <span class="data-classes__link" style="--ft:right">
+                        <a href="/classes/">See all our upcoming classes</a>.</span>
+                </dd>
+            </dl>
+            <div class="data-classes__output" style="
+                --of: scroll;
+            "></div>
+        </div>
+
+        <div class="footer__newsletter" style="
+            --fd:column; 
+            --gc-lg: 2 / -2;
+            --gc-xl: 3 / -3;">
+            <dl class="footer__headline">
+                <dt>Never miss an update</dt>
+                <dd>Join the people who love {% todo "Update newsletter archive content before sharing" %}
+                    <a href="/newsletter/">{% endtodo%} our newsletter{% todo "" %}</a>{% endtodo%}. We’ll share product
+                updates, thoughts, new releases, and other tidbits we think you’ll find interesting.</dd>
+            </dl>
+            <div class="newsletter">
+                <div class="newsletter__container">
+                    <!--<script type="text/javascript" src="//nota.startr.cloud/form/generate.js?id=3"></script>-->
+
+                    <style type="text/css" scoped>
+                        .mauticform-field-hidden {
+                            display: none;
+                        }
+                    </style>
+                    <div id="mauticform_wrapper_sageisamazingsignup" class="mauticform_wrapper">
+                        <form autocomplete="false" role="form" method="post" action="https://nota.startr.cloud/form/submit?formId=3" id="mauticform_sageisamazingsignup" data-mautic-form="sageisamazingsignup" enctype="multipart/form-data">
+                            <div class="mauticform-error" id="mauticform_sageisamazingsignup_error"></div>
+                            <div class="mauticform-message" id="mauticform_sageisamazingsignup_message"></div>
+                            <div class="mauticform-innerform">
+                                <div class="mauticform-page-wrapper mauticform-page-1" data-mautic-form-page="1">
+
+                                    <div id="mauticform_sageisamazingsignup_email" class="mauticform-row mauticform-email mauticform-field-1">
+                                        <label id="mauticform_label_sageisamazingsignup_email" for="mauticform_input_sageisamazingsignup_email" class="mauticform-label">Email</label>
+
+                                        <input type="email" name="mauticform[email]" value="" id="mauticform_input_sageisamazingsignup_email" class="mauticform-input">
+
+                                        <span class="mauticform-errormsg" style="display:none;"></span>
+                                    </div>
+
+                                    <div style="display:none;" id="mauticform_sageisamazingsignup_info" class="mauticform-row mauticform-text mauticform-field-2">
+                                        <label id="mauticform_label_sageisamazingsignup_info" for="mauticform_input_sageisamazingsignup_info" class="mauticform-label">info</label>
+
+                                        <input type="text" name="mauticform[info]" value="" id="mauticform_input_sageisamazingsignup_info" class="mauticform-input">
+
+                                        <span class="mauticform-errormsg" style="display:none;"></span>
+                                    </div>
+
+                                    <div id="mauticform_sageisamazingsignup_submit" class="mauticform-row mauticform-button-wrapper mauticform-field-3">
+                                        <button class="btn btn-default mauticform-button" name="mauticform[submit]" value="1" id="mauticform_input_sageisamazingsignup_submit" type="submit">Submit</button>
+                                    </div>
+                                </div>
+                            </div><input type="hidden" name="mauticform[formId]" id="mauticform_sageisamazingsignup_id" value="3">
+                            <input type="hidden" name="mauticform[return]" id="mauticform_sageisamazingsignup_return" value="">
+                            <input type="hidden" name="mauticform[formName]" id="mauticform_sageisamazingsignup_name" value="sageisamazingsignup">
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__support">
+            <dl class="footer__headline">
+                <dt>We’re here to help with 24/7/365 support</dt>
+                <dd>There are no stupid questions — for pre-sales questions, existing customers who need a hand, or any
+                other
+                inquiries, <a href="/support/">contact us</a> and we’ll get back to you ASAP. {% todo "Need tutorials" %}
+                    <a
+                    href="/about/learning/#TODO">Watch tutorials</a>,{% endtodo %}
+                    {%todo "need the guides" %}
+                    <a href="/help/">read the help guides</a>, or{% endtodo %}
+                    <a
+                    href="/support/">Send us a message</a> to get help.</dd>
+                <dd>
+                    <strong>We’re having a company meet-up this week so replies may be slower.</strong> 
+                    Sorry about the delays!
+                </dd>
+            </dl>
+
+            <div class="footer__startr_space" 
+                style="zoom: 1.2; 
+                    --d:flex; 
+                    --fd: column; 
+                    --jc: center;">
+                <a href="https://startr.space/" target="_blank" 
+                    style="--p:0.2em; 
+                    --p-sm:1.2em; 
+                    --p-md:1.6em;">
+                    <span>If you love <b>Sage</b>, you’ll love 
+                    <strong>Startr.&thinsp;Space</strong> 
+                    — our delightfully fresh take on meetings</span>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer__links">
+            <dl class="footer__headline">
+                <dt>And there’s more&hellip;</dt>
+                <dd>
+                    {% for link in footer_links.more %}
+                        {% if link.todo %}
+                            {% set note = link.todo_note or "" %}
+                            {% todo note %}
+                            <a href="{{ link.href }}">{{ link.title }}</a>{% endtodo %}
+                        {% else %}
+                            <a href="{{ link.href }}">{{ link.title }}</a>
+                        {% endif %}
+                        {% if not loop.last %} •{% endif %}
+                    {% endfor %}
+                </dd>
+            </dl>
+        </div>
+
+        <div class="footer__legal">
+            <p style="--m:0">
+                <a href="/" class="icon icon--sage" aria-label="Sage">
+                    <img src="/assets/images/general/sage.webp" alt="Sage Startr Logo"
+                    style="--w: 2em;  --mb: -0.4em;  --mt: -0.4em; --h: 2em;">
+                    <strong>Sage</strong>
+                </a>
+                <span>is designed, built, and backed by</span>
+                <a href="https://Startr.Cloud/" class="icon icon--Startr" target="_blank" aria-label="Startr">
+
+                    <strong>Startr</strong>
+                </a>
+            </p>
+            <ul style="--lis:none">
+                {% todo "" %}
+                <li>
+                    <a href="https://github.com/Startr/WEB-AI-Sage-WebUI/tags#" target="_blank">Updates</a>
+                </li>
+                {% endtodo %}
+                <li>
+                    <a href="https://status.production.openco.ca" target="_blank">Status</a>
+                </li>
+                <li>
+                    <a href="https://Startr.Cloud/tos/" target="_blank">Policies</a>
+                </li>
+                <li>&copy; 2025 Startr LLC</li>
+            </ul>
+        </div>
+    </footer>
+{% endblock %}

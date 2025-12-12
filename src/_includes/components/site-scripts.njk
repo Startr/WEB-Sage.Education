@@ -1,0 +1,76 @@
+
+    <script src="/assets/js/packages/cookie.js"></script>
+    <script src="/assets/js/application.js" type="module"></script>
+    <script src="/assets/js/script.js" type="module"></script>
+    <script async data-domain="sage.is" src="/assets/js/script.outbound-links.tagged-events.js"></script>
+    <!-- WOW.js for scroll reveal animations (Animate.css v4) -->
+    <script src="/assets/js/packages/wow.min.js"></script>
+    <script>
+      // Respect prefers-reduced-motion; adjust animateClass for Animate.css v4
+      (function () {
+        if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) 
+          return;
+        try {
+          new WOW({
+            animateClass: 'animate__animated', // v4 uses animate__* class names
+          }).init();
+        } catch (e) {
+          // NOOP if WOW isn't available
+        }
+      })();
+    </script>
+
+    <!-- Matomo -->
+    <script type="text/javascript">
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push([
+        "setDocumentTitle", document.domain + "/" + document.title
+      ]);
+      _paq.push(["setCookieDomain", "*.sage.is"]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function () {
+        var u = "https://visitas.startr.cloud/";
+        _paq.push([
+          'setTrackerUrl', u + 'matomo.php'
+        ]);
+        _paq.push(['setSiteId', '8']);
+        var d = document,
+          g = d.createElement('script'),
+          s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.src = u + 'matomo.js';
+        s
+          .parentNode
+          .insertBefore(g, s);
+      })();
+    </script>
+    <noscript>
+      <p><img src="https://visitas.startr.cloud/matomo.php?idsite=8&amp;rec=1" style="border:0;" alt=""/></p>
+    </noscript>
+    <!-- End Matomo Code -->
+
+    <!-- Nota form script -->
+    <script type="text/javascript">
+      /** This section is only needed once per page if manually copying **/
+      if (typeof MauticSDKLoaded == 'undefined') {
+        var MauticSDKLoaded = true;
+        var head = document.getElementsByTagName('head')[0];
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'https://nota.startr.cloud/media/js/mautic-form.js?v09d4302a';
+        script.onload = function () {
+          MauticSDK.onLoad();
+        };
+        head.appendChild(script);
+        var MauticDomain = 'https://nota.startr.cloud';
+        var MauticLang = {
+          'submittingMessage': "Please wait..."
+        }
+      } else if (typeof MauticSDK != 'undefined') {
+        MauticSDK.onLoad();
+      }
+    </script>
+    <!-- End Nota form script -->

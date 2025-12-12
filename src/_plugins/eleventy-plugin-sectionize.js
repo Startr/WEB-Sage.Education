@@ -5,7 +5,7 @@ const fs = require('fs');
 const matter = require('gray-matter');
 
 function configureMarkdown(permalinksEnabled = false) {
-  const md = markdownIt({ html: true }).use(markdownItAttrs);
+  const md = markdownIt({ html: true, breaks: true, linkify: true }).use(markdownItAttrs);
 
   if (permalinksEnabled) {
     md.use(markdownItAnchor, {

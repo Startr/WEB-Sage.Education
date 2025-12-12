@@ -70,13 +70,9 @@
 <style>
   ::selection {
     -webkit-text-fill-color: transparent !important;
-    color: #200;
-    text-shadow: 1px 1px 10px #bb0, 1px 1px 10px #ccc;
-    background: #efef00;
-  }
-
-  ::-moz-selection {
-    -webkit-text-fill-color: transparent !important;
+    color: transparent !important; /* Key fix: use standard property */
+    text-shadow: 0px 0px 0px #200, 1px 1px 10px #bb0, 1px 1px 10px #ccc;
+    background: #efef00 !important;
   }
 
   body {
@@ -85,7 +81,13 @@
     font-size: 1.2rem;
   }
 
+  ul{
+    list-style:none;
+  }
 
+  time{
+    background-color: inherit !important;
+  }
 
   * a {
     scroll-behavior: smooth;

@@ -1,0 +1,227 @@
+{# Load book data with safe fallbacks when front matter is missing #}
+{# Infer book slug from front matter or path segments #}
+{% set inputPath = page.inputPath or '' %}
+{% set frontMatterBook = book %}
+{% set inferredFromWorkspace = ('/features/workspace/' in inputPath) and 'workspace' or null %}
+{% set bookSlug = (frontMatterBook or inferredFromWorkspace or 'unknown') | lower | replace(' ', '-') %}
+{% set bookData = books[bookSlug] %}
+
+{# Derive a display title from front matter or file name #}
+{% set derivedTitle = page.fileSlug | replace('-', ' ') | replace('_', ' ') | replace('%20', ' ') | trim %}
+{% set displayTitle = title or derivedTitle %}
+
+{# Get book index page to load dynamic title and description #}
+{% set bookIndex = null %}
+{% for page in collections.bookIndexes %}
+  {% if page.data.book == bookSlug %}
+    {% set bookIndex = page %}
+  {% endif %}
+{% endfor %}
+
+{% set bookTitle = bookIndex and bookIndex.data and bookIndex.data.title or (books[bookSlug] and books[bookSlug].title) or "Unknown Book" %}
+{% set bookDescription = bookIndex and bookIndex.data and bookIndex.data.description or (books[bookSlug] and books[bookSlug].description) or "Book description" %}
+
+{# Set book metadata for the base template #}
+{% set book = {
+  title: bookTitle,
+  subtitle: bookDescription,
+  description: bookDescription,
+  slug: bookSlug,
+  ogImage: "/assets/images/opengraph/" + bookSlug + ".png",
+  themeColor: "#000000"
+} %}
+
+{# Extend the DRY book base template #}
+{% extends "books/book-base.njk" %}
+
+{% block content %}
+<style type="text/css">
+  :root {
+    --color-text: 29, 45, 53;
+    --color-background: 255, 255, 255;
+    --color-link: 29, 45, 53;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-text: 29, 45, 53;
+      --color-background: 255, 255, 255;
+      --color-link: 29, 45, 53;
+    }
+  }
+
+  .highlight {
+    display: inline-block;
+    background: yellow;
+    /* color: var(--color-black); */
+    font-family: "Sharpie", Sans-Serif;
+    background-clip: initial !important;
+    -webkit-text-fill-color: var(--color-black);
+    font-size: 105%;
+    font-variant-ligatures: none;
+    font-weight: 400;
+    letter-spacing: .04rem;
+    line-height: 1;
+    padding: .15em .35em .25em .35rem;
+    margin-right: .35rem;
+    transform: rotate(-1deg) translate(0.275em, -0.175em);
+  }
+
+  .intro__navigation {
+    margin-top: 2rem;
+    margin-left: calc(100% - 15rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .intro__prev,
+  .intro__next {
+    margin: 0;
+    flex: 1;
+  }
+
+  .intro__prev {
+    text-align: left;
+  }
+
+  .intro__next {
+    text-align: right;
+  }
+
+  .intro__prev a,
+  .intro__next a {
+    display: inline-block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #495057;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+  }
+
+  .intro__prev a:hover,
+  .intro__next a:hover {
+    background: #e9ecef;
+    border-color: #dee2e6;
+    text-decoration: none;
+  }
+
+  @media (max-width: 768px) {
+    .intro__navigation {
+      margin-left: 0;  
+      margin-bottom: 2rem;
+    }
+    
+    .intro__prev,
+    .intro__next {
+      text-align: center;
+    }
+  }
+</style>
+
+<p class="warning" style="font-size: 24px;">
+  <strong>Heads up!</strong> This page uses features your browser doesn't support. Try a modern browser like <a
+    href="https://www.mozilla.org/en-US/firefox/new/" target="_blank" rel="noopener noreferrer">Firefox</a> or <a
+    href="https://www.google.com/chrome/" target="_blank" rel="noopener noreferrer">Chrome</a> for the best
+  experience.
+</p>
+
+<div class="intro">
+  <div class="intro__content intro__content--sticky">
+    <button class="intro__book-title intro__book-title--compact button hidden-print"
+      data-action="click->sidebar#open" aria-label="{{ bookTitle }} Table Of Contents">
+      <svg class="icon" viewBox="0 0 112 80" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="m2.37 13.63a7.71 7.71 0 0 1 -2.37-5.63 7.73 7.73 0 0 1 2.37-5.63 7.71 7.71 0 0 1 5.63-2.37h96a7.73 7.73 0 0 1 5.63 2.37 7.73 7.73 0 0 1 2.37 5.63 7.71 7.71 0 0 1 -2.37 5.63 7.73 7.73 0 0 1 -5.63 2.37h-96a7.71 7.71 0 0 1 -5.63-2.37zm107.26 20.75a8 8 0 0 1 -5.63 13.62h-96a7.71 7.71 0 0 1 -5.63-2.37 7.86 7.86 0 0 1 0-11.25 7.68 7.68 0 0 1 5.63-2.38h96a7.7 7.7 0 0 1 5.63 2.38zm0 32a8 8 0 0 1 -5.63 13.62h-96a7.71 7.71 0 0 1 -5.63-2.37 7.86 7.86 0 0 1 0-11.25 7.68 7.68 0 0 1 5.63-2.38h96a7.7 7.7 0 0 1 5.63 2.38z" />
+      </svg>
+      <span>{{ bookTitle }}</span>
+    </button>
+
+    {# Get chapter number and navigation from collections #}
+    {% set chapterNumber = "" %}
+    {% set chapterCollection = [] %}
+    
+  {% set grouped = collections.booksBySlug %}
+  {% set chapterCollection = grouped and grouped[bookSlug] or [] %}
+  {% if (not chapterCollection or (chapterCollection | length) == 0) and collections[bookSlug] %}
+    {% set chapterCollection = collections[bookSlug] %}
+  {% endif %}
+    
+    {% if chapterCollection %}
+      {% for chapter in chapterCollection %}
+        {% if chapter.fileSlug == page.fileSlug %}
+          {% set chapterNumber = chapter.data.order %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
+    <p class="intro__masthead">Chapter{% if chapterNumber %} {{ chapterNumber }}{% endif %}:</p>
+
+  <h1 class="intro__title"><a href="../{{ page.fileSlug }}/">{{ displayTitle }}</a></h1>
+
+    <ul class="intro__sections">
+    </ul>
+
+    {# Dynamic chapter navigation using collections #}
+    {% if chapterCollection %}
+      {% set currentIndex = -1 %}
+      {% for chapter in chapterCollection %}
+        {% if chapter.fileSlug == page.fileSlug %}
+          {% set currentIndex = loop.index0 %}
+        {% endif %}
+      {% endfor %}
+      
+      {% if currentIndex >= 0 %}
+        {% set nextChapter = chapterCollection[currentIndex + 1] %}
+        {% set prevChapter = chapterCollection[currentIndex - 1] %}
+        
+        <div class="intro__navigation hidden-print">
+          {% if prevChapter %}
+          <p class="intro__prev"><a href="{{ prevChapter.url }}">← Previous: {{ prevChapter.data.title }}</a></p>
+          {% endif %}
+          {% if nextChapter %}
+          <p class="intro__next"><a href="{{ nextChapter.url }}">Next: {{ nextChapter.data.title }} →</a></p>
+          {% endif %}
+        </div>
+      {% endif %}
+    {% endif %}
+  </div>
+</div>
+
+<div class="content wow fadeIn" data-controller="bookmark anchors tweet" data-target="sidebar.content"
+  data-action="click->sidebar#close mouseup->tweet#update input->tweet#update keydown->tweet#update scroll@window->tweet#update"
+  data-bookmark-id="/{{ book }}"
+  style="	
+	--bg:white;
+	--p:4.8em 3em;
+	--br:12px;
+	--shadow:5;
+	outline:#e6e6e6 dashed;
+	outline-offset: -0.6em;
+	--b-width:2px;
+  --minh:calc(100vh - 18em);
+	--ai:center;
+  --ofx:scroll">
+  <template data-target="anchors.iconTemplate"><svg class="icon icon--link" style="zoom:0.6" viewBox="0 0 85.69 85.69"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="m49.71 65.61c.78 0 1.25.14 1.42.42s0 .69-.59 1.25l-11.71 11.72a21.94 21.94 0 0 1 -16.07 6.69 21.94 21.94 0 0 1 -16.07-6.69 22.65 22.65 0 0 1 0-32.14l16.07-16.07a21.38 21.38 0 0 1 5.52-4 21.55 21.55 0 0 1 10.55-2.69h.33a26.68 26.68 0 0 1 8.37 1.67v.17a13.49 13.49 0 0 1 2.85 1.34 22.09 22.09 0 0 1 4.52 3.51 5.69 5.69 0 1 1 -8 8 11.31 11.31 0 0 0 -16.07 0l-16.1 16.11a11.3 11.3 0 0 0 0 16.06 10.92 10.92 0 0 0 8 3.35 10.92 10.92 0 0 0 8-3.35l6.53-6.52c.45-.45 1.62-.39 3.52.16a29.76 29.76 0 0 0 8.93 1.01zm13.22-65.61a21.94 21.94 0 0 1 16.07 6.69 21.94 21.94 0 0 1 6.69 16.07 21.92 21.92 0 0 1 -6.69 16.07l-16.07 16.07a22.23 22.23 0 0 1 -11.72 6.19c-.44.11-1 .22-1.5.33a14.75 14.75 0 0 1 -2.51.17 18.79 18.79 0 0 1 -2.51-.17c-1-.11-1.79-.22-2.35-.33-1-.22-1.67-.39-2-.5a22.66 22.66 0 0 1 -9.54-5.69 5.69 5.69 0 1 1 8-8 11.31 11.31 0 0 0 16.07 0l16.13-16.11a11 11 0 0 0 3.35-8 11 11 0 0 0 -3.35-8 11.3 11.3 0 0 0 -16.06 0l-6.7 6.69c-.45.45-1.62.39-3.51-.16a29.83 29.83 0 0 0 -8.87-1c-.79.11-1.26 0-1.43-.33s0-.78.59-1.34l11.84-11.96a21.92 21.92 0 0 1 16.07-6.69z" />
+    </svg></template>
+  <template data-target="tweet.iconTemplate"><svg class="icon icon--twitter" viewBox="40 20 420 420"
+      xmlns="http://www.w3.org/2000/svg">
+     <path xmlns="http://www.w3.org/2000/svg" d="M394.033.25h76.67L303.202 191.693l197.052 260.511h-154.29L225.118 294.205 86.844 452.204H10.127l179.16-204.77L.254.25H158.46l109.234 144.417zm-26.908 406.063h42.483L135.377 43.73h-45.59z" fill="#000"/> 
+    </svg></template>
+
+  {{ content | safe }}
+
+  {# Include backlinks if available #}
+  {% include "partials/backlinks.njk" %}
+
+
+</div>
+{% endblock %}

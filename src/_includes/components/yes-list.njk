@@ -1,0 +1,25 @@
+{# YES list component: renders a styled UL from data with markdown support #}
+{#
+Expected context:
+- items: Array<{ text: string, todo?: string }>
+Optional context:
+- listClass: string (defaults to "yes space-top--neutral")
+- listAttrs: string (raw attributes)
+- listStyle: string (inline style)
+#}
+
+{% set _listClass = listClass or "yes space-top--neutral" %}
+
+<div class="{{ _listClass }}"{% if listAttrs %} {{ listAttrs | safe }}{% endif %}{% if listStyle %} style="{{ listStyle }}"{% endif %}>
+  <ul style="--list:none; --w:fit-content; --m:auto; --mr: calc(auto - 0.2rem); gap:1.5rem;">
+    {% for item in items %}
+      <li class="wow animate__animated animate__fadeInZoom"
+          data-wow-delay="0.4s">
+        <span>{{ item.text | mdInline | replace('&lt;br&gt;', '<br>') | safe }}</span>
+        {% if item.todo %}
+          {% todo item.todo %}{% endtodo %}
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>

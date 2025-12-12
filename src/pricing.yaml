@@ -1,0 +1,70 @@
+heading: Create in Minutes.
+subheading: Not weeks or months.
+description: Enjoy Sage.is now!
+deal: true
+deal_description:
+  - title: monthly
+    subtitle: stop any time
+  - title: anual
+    subtitle: save 20%
+  - title: lifetime
+    subtitle: save 50%
+offers:
+  - price: 11
+    public: true
+    begins: ""
+    start_date: 2024-12-11T13:10:00.000Z
+    name: Base
+    date: 2024-12-11T13:10:00.000Z
+    currency: USD
+    end_date: 2025-01-11T13:10:00.000Z
+    deal_price: 9
+    ends: ""
+    description: Enjoy our Startr package
+    features:
+      - feature: ✔ secure data
+        description: no shared data with 3rd parties
+        deal: false
+      - feature: ✔ Find emails
+        deal: false
+      - feature: ✔ Verify emails
+        deal: false
+      - feature: ✔ Clean data
+        deal: false
+      - feature: ✔ Filter leads
+        deal: true
+  - price: 23
+    public: true
+    begins: ""
+    start_date: 2024-12-11T13:12:00.000Z
+    name: Pro
+    date: 2024-12-11T13:12:00.000Z
+    currency: USD
+    end_date: 2025-01-11T13:12:00.000Z
+    deal_price: 19
+    ends: ""
+    description: |-
+      300 leads per month!
+      6x our pay by month!
+      Sooo many leads!!!
+    features:
+      - feature: Export leads
+        description: Export leads now
+        deal: true
+  - price: 35
+    public: true
+    begins: ""
+    start_date: 2024-12-11T13:13:00.000Z
+    name: Enterprise
+    date: 2024-12-11T13:13:00.000Z
+    currency: USD
+    end_date: 2025-01-11T13:13:00.000Z
+    deal_price: 29
+    ends: ""
+    description: |-
+      400 leads per month!
+      8x our base pay by month!
+      How many leads? 10x!
+    features:
+      - feature: Find email
+        deal: false

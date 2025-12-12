@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width">
+    {%- set siteUrl = (metadata and metadata.url)or 'https://sage.is' -%}
+    {%- set baseTitle = title or(metadata and metadata.title)or 'Sage' -%}
+    {%- set baseDescription = description or(metadata and metadata.description)or 'Sage puts all the AIs you need to get work done in one place.' -%}
+    {%- set canonicalInput = canonical or page.url -%}
+    {%- if canonicalInput -%}
+      {%- set canonicalUrl = canonicalInput | absoluteUrl(siteUrl) -%}
+    {%- else -%}
+      {%- set canonicalUrl = siteUrl -%}
+    {%- endif -%}
+    {%- set seoDefaults = seo or {} -%}
+    {%- set ogDefaults = seoDefaults.og or {} -%}
+    {%- set twDefaults = seoDefaults.twitter or {} -%}
+    {%- set og_title = (og and(og.title or og['og:title']))or ogDefaults.title or baseTitle -%}
+    {%- set og_description = (og and(og.description or og['og:description']))or ogDefaults.description or baseDescription -%}
+    {%- set og_image_rel = (og and(og.image or og['og:image']))or ogDefaults.image or '/assets/images/opengraph/sage.png' -%}
+    {%- set og_image = og_image_rel | absoluteUrl(siteUrl) -%}
+    {%- set og_type = (og and(og.type or og['og:type']))or ogDefaults.type or 'website' -%}
+    {%- set twitter_title = (twitter and(twitter.title or twitter['twitter:title']))or twDefaults.title or og_title -%}
+    {%- set twitter_description = (twitter and(twitter.description or twitter['twitter:description']))or twDefaults.description or og_description -%}
+    {%- set twitter_image_rel = (twitter and(twitter.image or twitter['twitter:image']))or twDefaults.image or og_image_rel -%}
+    {%- set twitter_image = twitter_image_rel | absoluteUrl(siteUrl) -%}
+    {%- set twitter_card = (twitter and(twitter.card or twitter['twitter:card']))or twDefaults.card or 'summary_large_image' -%}
+    {%- set twitter_creator = (twitter and(twitter.creator or twitter['twitter:creator']))or twDefaults.creator or '@sage' -%}
+    {%- set twitter_site = (twitter and(twitter.site or twitter['twitter:site']))or twDefaults.site or '@sage' -%}
+    {%- set twitter_image_alt = (twitter and(twitter['image:alt'] or twitter.image_alt or twitter['twitter:image:alt']))or twDefaults.image_alt or 'Sage' -%}
+    <title>{{ baseTitle }}</title>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta name="handheldfriendly" content="true">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <meta name="description" content="{{ baseDescription }}">
+    <meta name="robots" content="noodp">
+
+    <meta property="og:site_name" content="{{ metadata and metadata.name or 'Sage' }}">
+    <meta property="og:title" content="{{ og_title }}">
+    <meta property="og:description" content="{{ og_description }}">
+    <meta property="og:image" content="{{ og_image }}">
+    <meta property="og:url" content="{{ canonicalUrl }}">
+    <meta property="og:type" content="{{ og_type }}">
+
+    <meta name="twitter:title" content="{{ twitter_title }}">
+    <meta name="twitter:description" content="{{ twitter_description }}">
+    <meta name="twitter:image" content="{{ twitter_image }}">
+    <meta name="twitter:card" content="{{ twitter_card }}">
+    <meta name="twitter:creator" content="{{ twitter_creator }}">
+    <meta name="twitter:site" content="{{ twitter_site }}">
+    <meta name="twitter:image:alt" content="{{ twitter_image_alt }}">
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "{{ canonicalUrl }}"
+        },
+        "name": "{{ baseTitle | replace('" ', ' \\ "') }}",
+        "headline": "{{ baseTitle | replace('" ', ' \\ "') }}",
+        "description": "{{ baseDescription | replace('" ', ' \\ "') }}",
+        "url": "{{ canonicalUrl }}",
+        "image": "{{ og_image }}"
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Sage",
+        "url": "{{ siteUrl }}"
+      }
+    </script>
+
+    <link rel="canonical" href="{{ canonicalUrl }}">
+
+    {%- include "components/site-icons.njk" -%}
+    {%- include "components/site-styles.njk" -%}
+
+    <script>
+      phrase = [
+        {
+          "phrase": "Private by Design"
+        }, {
+          "phrase": "Powerful by Nature"
+        }, {
+          "phrase": "Effortlessly Smart"
+        }, {
+          "phrase": "Educational and Engaging"
+        }, {
+          "phrase": "refreshingly simple"
+        }, {
+          "phrase": "wonderfully efficient"
+        }, {
+          "phrase": "simply powerful"
+        }, {
+          "phrase": "down-to-earth"
+        }
+      ];
+    </script>
+
+  {%- include "components/site-scripts.njk" -%}
+
+  </head>
+  <body 
+  style="
+     --minh:100vh;
+     background:url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cstyle%20type%3D%22text%2Fcss%22%3E%20path%20%7B%20fill%3A%20none%3B%20stroke%3A%20rgba(235,201,143,0.451)%3B%20stroke-width%3A%201.01px%3B%20%7D%20%3C%2Fstyle%3E%20%3Cpath%20vector-effect%3D%22non-scaling-stroke%22%20d%3D%22M111.2%2C81.7L-33.7%2C226.6c-13.9%2C13.9-36.5%2C13.9-50.5%2C0L-229.1%2C81.7%20c-22.5-22.5-6.6-60.9%2C25.2-60.9H86C117.7%2C20.7%2C133.7%2C59.2%2C111.2%2C81.7z%22%2F%3E%20%3Cpath%20vector-effect%3D%22non-scaling-stroke%22%20d%3D%22M366.8%2C338.3L221.9%2C483.2c-13.9%2C13.9-36.5%2C13.9-50.5%2C0L26.6%2C338.3%20c-22.5-22.5-6.6-60.9%2C25.2-60.9h289.8C373.4%2C277.4%2C389.3%2C315.8%2C366.8%2C338.3z%22%2F%3E%20%3Cpath%20vector-effect%3D%22non-scaling-stroke%22%20d%3D%22M40.6%2C423l-144.9-144.9c-13.9-13.9-13.9-36.5%2C0-50.5L40.6%2C82.8%20c22.5-22.5%2C60.9-6.6%2C60.9%2C25.2v289.8C101.5%2C429.6%2C63.1%2C445.5%2C40.6%2C423z%22%2F%3E%20%3Cpath%20vector-effect%3D%22non-scaling-stroke%22%20d%3D%22M296.3%2C679.7L151.4%2C534.8c-13.9-13.9-13.9-36.5%2C0-50.5l144.9-144.9%20c22.5-22.5%2C60.9-6.6%2C60.9%2C25.2v289.8C357.2%2C686.3%2C318.8%2C702.2%2C296.3%2C679.7z%22%2F%3E%20%3Cpath%20vector-effect%3D%22non-scaling-stroke%22%20d%3D%22M623.5%2C81.7L478.6%2C226.6c-13.9%2C13.9-36.5%2C13.9-50.5%2C0L283.2%2C81.7%20c-22.5-22.5-6.6-60.9%2C25.2-60.9h289.8C630%2C20.7%2C646%2C59.2%2C623.5%2C81.7z%22%2F%3E%20%3Cpath%20vector-effect%3D%22non-scaling-stroke%22%20d%3D%22M296.3%2C166.4L151.4%2C21.5c-13.9-13.9-13.9-36.5%2C0-50.5l144.9-144.9%20c22.5-22.5%2C60.9-6.6%2C60.9%2C25.2v289.8C357.2%2C173%2C318.8%2C188.9%2C296.3%2C166.4z%22%2F%3E%20%3Cpath%20vector-effect%3D%22non-scaling-stroke%22%20d%3D%22M552.9%2C423L408%2C278.2c-13.9-13.9-13.9-36.5%2C0-50.5L552.9%2C82.8%20c22.5-22.5%2C60.9-6.6%2C60.9%2C25.2v289.8C613.8%2C429.6%2C575.4%2C445.5%2C552.9%2C423z%22%2F%3E%3C%2Fsvg%3E');"
+   class="body">
+
+    {% block nav %}
+
+      <input id="nav-active" type="checkbox">
+
+      <label id="nav-underlay" for="nav-active"></label>
+
+    {% endblock %}
+    <!--{% devnote "Environment: " + env %}-->
+    {% block main %}
+      <main class="main" style="zoom:1.2">
+        {{ content | safe }}
+      </main>
+    {% endblock %}
+
+    {% block footer %}
+      <footer class="footer" style="--mt:auto">
+
+        <div class="footer__legal">
+          <p style="--m:0">
+            <a href="/" class="icon icon--sage" aria-label="Sage">
+              <img src="/assets/images/general/sage.webp" alt="Sage Startr Logo" style="--w: 2em;  --mb: -0.4em;  --mt: -0.4em; --h: 2em;">
+              <strong>Sage</strong>
+            </a>
+            <span>is designed, built, and backed by</span>
+            <a href="https://Startr.Cloud/" class="icon icon--Startr" target="_blank" aria-label="Startr">
+
+              <strong>Startr</strong>
+            </a>
+          </p>
+          <ul style="--lis:none">
+            {% todo ""%}
+            <li>
+              <a href="https://github.com/Startr/WEB-AI-Sage-WebUI/tags#" target="_blank">Updates</a>
+            </li>
+            {% endtodo %}
+            <li>
+              <a href="https://status.production.openco.ca" target="_blank">Status</a>
+            </li>
+            <li>
+              <a href="https://Startr.Cloud/tos/" target="_blank">Policies</a>
+            </li>
+            <li>&copy; 2025 Startr LLC</li>
+          </ul>
+        </div>
+      </footer>
+    {% endblock %}
+
+    <dialog class="modal">
+      <div class="modal__backdrop"></div>
+      <div class="modal__container"></div>
+    </dialog>
+
+    <div data-tracking-target="permissionDialog"></div>
+  </body>
+
+</html>

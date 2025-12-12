@@ -1,0 +1,45 @@
+{# 
+  Company Benefits Component
+  Renders the stable company benefits section
+  
+  Usage: {% include "company-benefits.njk", benefits: coreFeatures.company_benefits %}
+#}
+
+<div class="statement statement--gap-large space-top--xxx-large" style="zoom: 1.2; --maxw: 40rem;">
+  <section>
+    <header>
+      <h2>{{ benefits.heading | safe }}</h2>
+    </header>
+    <article>
+      <p>{{ benefits.subtitle | safe }}</p>
+    </article>
+  </section>
+</div>
+
+<div class="headline space-top--neutral">
+  <article>
+    <ul class="checklist" style="--lis:none">
+      {% for benefit in benefits.benefits %}
+      <li>
+        {% if benefit.todo %}
+          {% todo benefit.todo %}
+        {% endif %}
+        
+        {% if benefit.text %}
+          {% if benefit.link %}
+            {{ benefit.text | replace(benefit.link.text, '<a href="' + benefit.link.url + '"' + (' target="' + benefit.link.target + '"' if benefit.link.target else '') + '>' + benefit.link.text + '</a>') | safe }}
+          {% else %}
+            {{ benefit.text }}
+          {% endif %}
+        {% else %}
+          {{ benefit }}
+        {% endif %}
+        
+        {% if benefit.todo %}
+          {% endtodo %}
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </article>
+</div>

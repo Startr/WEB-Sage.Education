@@ -1,0 +1,30 @@
+{# 
+  Integrations Section Component
+  Renders a complete integration category section with title and items
+  
+  Usage: {{ integrationsSection(category) }}
+  
+  Expected category object:
+  {
+    title: "Category Title",
+    items: [{ name, url, logo, description }, ...]
+  }
+#}
+
+{% from "components/integration-link.njk" import integrationLink %}
+
+{% macro integrationsSection(category, anchor) %}
+  <div class="integrations__category" 
+  id="{{ anchor }}">
+    <header>
+      <h2 id="{{ anchor }}">
+        <a href="#{{ anchor }}">{{ category.title }}</a>
+      </h2>
+    </header>
+    <section>
+      {% for integration in category.items %}
+        {{ integrationLink(integration, loop.index) }}
+      {% endfor %}
+    </section>
+  </div>
+{% endmacro %}

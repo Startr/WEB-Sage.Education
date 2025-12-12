@@ -1,0 +1,115 @@
+# Sage Customer Testimonials Data
+# This file contains customer testimonials and quotes for use across the site
+
+# Full testimonials for carousel/detailed display
+testimonials:
+  - quote: "Simply put, we get more work done, quicker, and better. ==Productivity is up. Errors are down. Clients are happier.=="
+    cite: "Patrick Sheffield, Moore Communications Group"
+    company: "Moore Communications Group"
+    name: "Patrick Sheffield"
+    role: null
+    
+  - quote: "Execution of AIs. ==Instead of drowning in an endless chain of emails, there is clear, and easy accountability meaning tasks actually get done!=="
+    cite: "Roxanne Emery, LATE Nation & Gareth Emery"
+    company: "LATE Nation & Gareth Emery"
+    name: "Roxanne Emery"
+    role: null
+    
+  - quote: "I no longer have to wonder whether I've asked for something to be done or whether it has in fact been done. ==Every member of my team is more accountable than we were before Sage.=="
+    cite: "John Drover, Roebothan McKay Marshall"
+    company: "Roebothan McKay Marshall"
+    name: "John Drover"
+    role: null
+    
+  - quote: "==We are consistently meeting deadlines because all the facts, files and comments are in one place.== And everyone is accountable for their contribution to the AI. Very user friendly."
+    cite: "Kim Curry, Kim Curry Design"
+    company: "Kim Curry Design"
+    name: "Kim Curry"
+    role: null
+    
+  - quote: "==We now have vastly improved task assignment, follow-up and accountability as well as greatly enhanced internal communications.== We have stopped using email for internal communications almost entirely."
+    cite: "Waleed Sarwani, Sarwani Systems"
+    company: "Sarwani Systems"
+    name: "Waleed Sarwani"
+    role: null
+    
+  - quote: "For the first time in a long time our team is truly collaborating, and ==everyone is moving in the same direction, with the same goals. It's truly remarkable how quickly things have changed in just a week.=="
+    cite: "Nam Sullivan, WP Site Care"
+    company: "WP Site Care"
+    name: "Nam Sullivan"
+    role: null
+    
+  - quote: "==Having a single location for messages, files, to-dos and timeline has kept everyone on the same page.=="
+    cite: "Kimberly Benefield, Autotrader"
+    company: "Autotrader"
+    name: "Kimberly Benefield"
+    role: null
+    
+  - quote: "==I say things once instead of many times to many people.=="
+    cite: "Greg Stratmann, Etal.wines, Stonehouse Cellars, The Bed and Barrel at Stonehouse Cellars"
+    company: "Etal.wines, Stonehouse Cellars, The Bed and Barrel at Stonehouse Cellars"
+    name: "Greg Stratmann"
+    role: null
+    
+  - quote: "==As the business owner, I feel more connected and aware of what is going on in the office when I'm away.== It's easy to see what needs to need to be done with deadlines and who is responsible for the task."
+    cite: "Cynthia White, Law Offices of Cynthia L. White"
+    company: "Law Offices of Cynthia L. White"
+    name: "Cynthia White"
+    role: null
+    
+  - quote: "Since we've been using Sage, ==our communication is drastically better and deadlines are met without drama.=="
+    cite: "Shannon Kropf, Full Sail University"
+    company: "Full Sail University"
+    name: "Shannon Kropf"
+    role: null
+    
+  - quote: "==We have actually accomplished things that have been waiting forever to get done.=="
+    cite: "Danek Coffey, Coffey LLC"
+    company: "Coffey LLC"
+    name: "Danek Coffey"
+    role: null
+    
+  - quote: "Everyone's on the same page. ==Many of our people are not very organized naturally, so sage is a godsend.=="
+    cite: "Anirvachan Vasan, APEX"
+    company: "APEX"
+    name: "Anirvachan Vasan"
+    role: null
+    
+  - quote: "We definitely have more communication going on and the status of AIs involving multiple people can be seen at all times by everyone. ==Projects are being completed more timely and more effectively with less errors.=="
+    cite: "Seth Alexander, FLIP Burger Boutique"
+    company: "FLIP Burger Boutique"
+    name: "Seth Alexander"
+    role: null
+    
+  - quote: "==Everyone knows what's going on== and we have established a \"base\" of sorts."
+    cite: "Yasmeen A, JMC"
+    company: "JMC"
+    name: "Yasmeen A"
+    role: null
+    
+  - quote: "==We can see exactly what needs to be done and when. We were missing tasks and deadlines before we found Sage.== We're much more efficient now."
+    cite: "Tina Lannin, 121 Captions"
+    company: "121 Captions"
+    name: "Tina Lannin"
+    role: null
+
+# Short customer quotes for marquee display
+marquee_quotes:
+  - "Extremely user friendly"
+  - "Truly amazing!" 
+  - "A godsend for our org"
+  - "Simple, quick, powerful"
+  - "So glad I found Sage"
+  - "The perfect AI solution"
+  - "Really great"
+  - "Outstanding"
+  - "Best app for AI colaboration"
+  - "Awesome service"
+  - "Gets better and better"
+  - "Great AI collaboration tool"
+  - "Great software"
+  - "Gold standard AI app"
+  - "Brilliant solution"
+  - "Clean and easy to use"
+  - "Fantastic app"
+  - "Organized and on point"

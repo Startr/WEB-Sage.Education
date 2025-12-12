@@ -1,0 +1,101 @@
+{# Load book data based on the book front matter field #}
+{% set bookSlug = book %}
+{% set bookData = books[bookSlug] %}
+
+{# Set book metadata for the base template #}
+{% set book = {
+  title: title,
+  subtitle: description,
+  description: description,
+  slug: bookSlug,
+  ogImage: "/assets/images/opengraph/" + bookSlug + ".png",
+  themeColor: "#000000"
+} %}
+
+{# Extend the DRY book base template #}
+{% extends "books/book-base.njk" %}
+{% from "books/components.njk" import bookIntro, contentContainer %}
+
+{% block content %}
+<style type="text/css">
+  :root {
+    --color-text: 29, 45, 53;
+    --color-background: 255, 255, 255;
+    --color-link: 29, 45, 53;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-text: 29, 45, 53;
+      --color-background: 255, 255, 255;
+      --color-link: 29, 45, 53;
+    }
+  }
+
+  .book-overview {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .book-description {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+
+  .chapter-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .chapter-item {
+    margin-bottom: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.2s ease;
+  }
+
+  .chapter-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .chapter-link {
+    display: block;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .chapter-link:hover {
+    text-decoration: none;
+  }
+
+  .chapter-number {
+    display: block;
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 0.5rem;
+  }
+
+  .chapter-title {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+  }
+</style>
+
+<button class="intro__book-title intro__book-title--compact button hidden-print"
+  data-action="click->sidebar#open" aria-label="{{ book.title }} Table Of Contents">
+  <svg class="icon" viewBox="0 0 112 80" xmlns="http://www.w3.org/2000/svg">
+    <path d="m2.37 13.63a7.71 7.71 0 0 1 -2.37-5.63 7.73 7.73 0 0 1 2.37-5.63 7.71 7.71 0 0 1 5.63-2.37h96a7.73 7.73 0 0 1 5.63 2.37 7.73 7.73 0 0 1 2.37 5.63 7.71 7.71 0 0 1 -2.37 5.63 7.73 7.73 0 0 1 -5.63 2.37h-96a7.71 7.71 0 0 1 -5.63-2.37zm107.26 20.75a8 8 0 0 1 -5.63 13.62h-96a7.71 7.71 0 0 1 -5.63-2.37 7.86 7.86 0 0 1 0-11.25 7.68 7.68 0 0 1 5.63-2.38h96a7.7 7.7 0 0 1 5.63 2.38zm0 32a8 8 0 0 1 -5.63 13.62h-96a7.71 7.71 0 0 1 -5.63-2.37 7.86 7.86 0 0 1 0-11.25 7.68 7.68 0 0 1 5.63-2.38h96a7.7 7.7 0 0 1 5.63 2.38z" />
+  </svg>
+  <span>{{ book.title }}</span>
+</button>
+
+{{ bookIntro(book.title, book.description) }}
+
+{{ contentContainer(content, book.slug) }}
+{% endblock %}

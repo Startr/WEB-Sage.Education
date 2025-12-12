@@ -1,0 +1,61 @@
+{# 
+  Reusable Article Section Component
+  Renders a section with one or more headers and article content with paragraphs.
+
+  Expected in context:
+  - section: object with properties for all configuration (PREFERRED METHOD)
+    OR individual variables (legacy support)
+  
+  Section object properties:
+  - section.h1, section.h1Id, section.h1Class, section.h1Style, section.h1Attrs
+  - section.h2, section.h2Id, section.h2Class, section.h2Style, section.h2Attrs
+  - section.h3, section.h3Id, section.h3Class, section.h3Style, section.h3Attrs
+  - section.wrapperElement, section.wrapperClass, section.wrapperStyle, section.wrapperAttrs
+  - section.headerClass, section.headerStyle, section.headerAttrs, section.headerContent
+  - section.articleClass, section.articleStyle, section.articleAttrs
+  - section.content (string)
+  - section.contentDivs (array)
+#}
+
+{% set _wrapperElement = section.wrapperElement or wrapperElement or "section" %}
+{% set _wrapperClass = section.wrapperClass or wrapperClass or "" %}
+{% set _wrapperStyle = section.wrapperStyle or wrapperStyle %}
+{% set _wrapperAttrs = section.wrapperAttrs or wrapperAttrs %}
+
+<{{ _wrapperElement }}{% if _wrapperClass %} class="{{ _wrapperClass }}"{% endif %}{% if _wrapperAttrs %} {{ _wrapperAttrs | safe }}{% endif %}{% if _wrapperStyle %} style="{{ _wrapperStyle }}"{% endif %}>
+  {% if section.h1 or section.h2 or section.h3 or h1 or h2 or h3 %}
+  <header{% if section.headerClass or headerClass %} class="{{ section.headerClass or headerClass }}"{% endif %}{% if section.headerAttrs or headerAttrs %} {{ (section.headerAttrs or headerAttrs) | safe }}{% endif %}{% if section.headerStyle or headerStyle %} style="{{ section.headerStyle or headerStyle }}"{% endif %}>
+    {% if section.h1 or h1 %}
+    <h1{% if section.h1Id or h1Id %} id="{{ section.h1Id or h1Id }}"{% endif %}{% if section.h1Class or h1Class %} class="{{ section.h1Class or h1Class }}"{% endif %}{% if section.h1Attrs or h1Attrs %} {{ (section.h1Attrs or h1Attrs) | safe }}{% endif %}{% if section.h1Style or h1Style %} style="{{ section.h1Style or h1Style }}"{% endif %}>
+      {% if section.h1Id or h1Id %}<a href="#{{ section.h1Id or h1Id }}">{% endif %}{{ (section.h1 or h1) | mdInline | safe }}{% if section.h1Id or h1Id %}</a>{% endif %}
+    </h1>
+    {% endif %}
+    {% if section.h2 or h2 %}
+    <h2{% if section.h2Id or h2Id %} id="{{ section.h2Id or h2Id }}"{% endif %}{% if section.h2Class or h2Class %} class="{{ section.h2Class or h2Class }}"{% endif %}{% if section.h2Attrs or h2Attrs %} {{ (section.h2Attrs or h2Attrs) | safe }}{% endif %}{% if section.h2Style or h2Style %} style="{{ section.h2Style or h2Style }}"{% endif %}>
+      {% if section.h2Id or h2Id %}<a href="#{{ section.h2Id or h2Id }}">{% endif %}{{ (section.h2 or h2) | mdInline | safe }}{% if section.h2Id or h2Id %}</a>{% endif %}
+    </h2>
+    {% endif %}
+    {% if section.h3 or h3 %}
+    <h3{% if section.h3Id or h3Id %} id="{{ section.h3Id or h3Id }}"{% endif %}{% if section.h3Class or h3Class %} class="{{ section.h3Class or h3Class }}"{% endif %}{% if section.h3Attrs or h3Attrs %} {{ (section.h3Attrs or h3Attrs) | safe }}{% endif %}{% if section.h3Style or h3Style %} style="{{ section.h3Style or h3Style }}"{% endif %}>
+      {% if section.h3Id or h3Id %}<a href="#{{ section.h3Id or h3Id }}">{% endif %}{{ (section.h3 or h3) | mdInline | safe }}{% if section.h3Id or h3Id %}</a>{% endif %}
+    </h3>
+    {% endif %}
+    {% if section.headerContent or headerContent %}
+      {{ (section.headerContent or headerContent) | safe }}
+    {% endif %}
+  </header>
+  {% endif %}
+  {% if section.contentDivs or contentDivs or section.content or content %}
+  <article{% if section.articleClass or articleClass %} class="{{ section.articleClass or articleClass }}"{% endif %}{% if section.articleAttrs or articleAttrs %} {{ (section.articleAttrs or articleAttrs) | safe }}{% endif %}{% if section.articleStyle or articleStyle %} style="{{ section.articleStyle or articleStyle }}"{% endif %}>
+    {% if section.contentDivs or contentDivs %}
+      {% for div in (section.contentDivs or contentDivs) %}
+      <div{% if div.class %} class="{{ div.class }}"{% endif %}{% if div.attrs %} {{ div.attrs | safe }}{% endif %}{% if div.style %} style="{{ div.style }}"{% endif %}>
+        {{ div.content | safe }}
+      </div>
+      {% endfor %}
+    {% else %}
+      {{ (section.content or content) | safe }}
+    {% endif %}
+  </article>
+  {% endif %}
+</{{ _wrapperElement }}>

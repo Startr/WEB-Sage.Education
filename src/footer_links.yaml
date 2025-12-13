@@ -1,0 +1,77 @@
+# Footer links for the "And there’s more…" section
+more:
+  - title: "What’s new"
+    href: "https://github.com/Startr/WEB-AI-Sage-WebUI/tags#"
+    todo: true
+    todo_note: ""
+  - title: "Sage lets you Explore Ideas"
+    href: "/paths/#TODO"
+    todo: true
+    todo_note: ""
+  - title: "Books we’re writing, reading, and love"
+    href: "/books/#TODO"
+    todo: true
+    todo_note: ""
+  - title: "Where we came from"
+    href: "/about/"
+    todo: false
+  - title: "How we communicate"
+    href: "/guide-to/how-we-communicate/"
+    todo: false
+  - title: "How we make decisions"
+    href: "/guide-to/how-we-make-decisions/"
+    todo: false
+  - title: "Why we choose profit"
+    href: "/guide-to/why-we-choose-profit/"
+    todo: true
+    todo_note: ""
+  - title: "Group chat problems"
+    href: "/guide-to/group-chat-problems"
+    todo: true
+    todo_note: ""
+  - title: "Seven shipping principles"
+    href: "/guide-to/ship-only-what-is-good/"
+    todo: true
+    todo_note: ""
+  - title: "We stand with the underdogs"
+    href: "/underdogs"
+    todo: true
+    todo_note: ""
+  - title: "Come small, come all"
+    href: "/about/small/"
+    todo: true
+    todo_note: ""
+  - title: "Kill Overkill"
+    href: "/guide-to/killing-overkill/"
+    todo: true
+    todo_note: ""
+  - title: "Leaving the Cloud"
+    href: "/about/leaving-the-cloud-when-you-want/"
+    todo: true
+    todo_note: ""
+  - title: "Night & Day"
+    href: "/before-and-after/"
+    todo: true
+    todo_note: ""
+  - title: "See where AIs really stand"
+    href: "/hill-charts"
+    todo: true
+    todo_note: ""
+  - title: "What changed for the better?"
+    href: "customers/"
+    todo: true
+    todo_note: ""
+  - title: "Integrations"
+    href: "/integrations/"
+    todo: true
+    todo_note: ""
+  - title: "Sage is for everyone"
+    href: "/about/accessibility/"
+    todo: true
+    todo_note: ""
+  - title: "Sage community"
+    href: "/community/"
+    todo: false
+  - title: "Employee handbook"
+    href: "/books/handbook/"
+    todo: false

@@ -2,6 +2,7 @@
 layout: layouts/base.njk
 title: Home
 date: 2024-12-06T08:48:00.000Z
+templateEngineOverride: md
 ---
 <style>
   @scope{

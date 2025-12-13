@@ -1,0 +1,94 @@
+# Home page: Article sections
+sections:
+  - id: wrestling-with-ais
+    wrapperClass: "wow animate__animated animate__fadeInUp"
+    wrapperStyle: "--minw:80%; --m:2rem auto"
+    h1: "Wrestling with AIs?<br> It doesn't need to be this hard."
+    h1Id: "wrestling-with-AIs"
+    h1Class: "wow animate__animated animate__fadeInUp"
+    h1Attrs: 'data-wow-delay="0.1s"'
+    h1Style: "--size: 3rem; --size-sm: 3.6rem; --size-md: 4rem; --mt-md:-4rem; --rotate:1deg; --rotate-hvr:0deg;"
+    contentDivs:
+      - class: "wow animate__animated animate__fadeInUp"
+        attrs: 'data-wow-delay="0.2s"'
+        content: |
+          <p>There are lots of ways to create and manage new AIs. And there's plenty of
+            <strong>software promising to help.</strong>
+          </p>
+          <p>
+            <strong>Unfortunately, most AI tools work great for individuals,</strong> but <strong>terribly for teams, especially ones that want to do new things</strong>
+              either overwhelming, inadequate, bewildering, or chaotic. Right?
+          </p>
+          <p>Sage is different. We're here to help you and your team <strong>get things done</strong> with AI, not just <strong>play around</strong> with it.
+          </p>
+      - class: "wow animate__animated animate__fadeInUp"
+        attrs: 'data-wow-delay="0.3s"'
+        content: |
+          <p>
+            <strong>Sage is your TCS, Technical Capital Solution</strong> The trifecta! 
+          We're <a href="/underdogs">here for startups, small teams and better businesses, institutions, and schools</a>, 
+          not big, sluggish ones. If your team knows it has ideas and needs to implement them fast, we're here to help.</p>
+          <p>So, I invite you watch our the videos below, and <a href="/pricing#packages">apply to be a member of Sage.is</a>. We'd be honored to work with you.<br>
+                Thank you.</p>
+          <dl>
+            <dt>
+              <strong>Izzy Plante</strong>, <a href="mailto:izzy@sage.is">izzy@sage.is</a>
+            </dt>
+            <dd>
+              <em>Co-founder &amp; CEO</em>
+            </dd>
+          </dl>
+
+  - id: features-home
+    wrapperClass: "statement space-top--xxx-large wow animate__animated animate__fadeInUp"
+    wrapperStyle: "--m:auto; --ta:center; --maxw: 60rem;"
+    headerStyle: "--mt:2em; --gc: 12 span"
+    articleStyle: "--gc: 12 span"
+    h2: "Let's walk through it."
+    h2Id: "features"
+    h3: "Present us with your project and we'll help you get it done, <u>fast.</u>"
+    h3Id: "home"
+    content: |
+      <p style="--mb:1em">Here at Sage, we help teams get things done with AI.</p>
+      <p style="--mb:1em">We'll <u>help</u> you organize your work, manage your team,
+      and get things done with our <u>expertise</u>,<br>
+      our <u>capital</u>, and our <u>Sage.is AI Engine</u>. No more chaos, no more confusion.</p>
+      <p>We'll make sure that you are provided with the right tools, support, and <u>technical capital</u> to achieve your goals.</p>
+  - id: yes-intro
+    wrapperStyle: "--m:auto"
+    wrapperClass: "headline space-top--xxx-large wow animate__animated animate__fadeInUp"
+    wrapperAttrs: 'style="zoom: 1.2; --maxw: 40rem;"'
+    h3: 'With Sage the answer is <span class="yes-label">YES!</span>'
+    h3Id: "yes"
+    h3Style: "--ml: -4ch"
+    content: |
+      <p style="--mb:1em">As a Technical Capital Solution, we empower projects to grow quickly, with our decades of hands-on expertise, open-source innovation, and lock-in-free flexibility.</p>
+      <p style="--mb:0.6em">Are your projects fully ready for bold breakthroughs? </p>
+      <h3><b>When working with Sage.is, the answer is absolutely <u>YES!</u></b></h3>
+
+  - id: its-time
+    wrapperElement: "section"
+    wrapperClass: "statement statement--gap-large space-top--xxx-large"
+    wrapperStyle: "zoom: 1.2; --maxw: 40rem; --ta:center"
+    h2: "You wouldn't be here if the<br> way you've been working was working.<br>It's time for Sage."
+    h2Id: "its-time"
+    h2Class: "wow animate__animated animate__fadeIn"
+    headerContent: |
+      <a href="/posts/" 
+        style="
+        --d:block;
+        --m:2rem auto;
+        --bg: var(--color-blue);
+        --c: var(--color-white);
+        --w:fit-content; 
+        --p:0.8em;
+        --br:0.2em;">
+          <span style="--d:none; --d-md:inline-block">Apply to&nbsp;</span> Access Sage.Education</a>
+    content: |
+      <p>Team super busy, but running in circles? <strong>It's time for Sage.</strong> Finding stuff easy to
+      start, but hard to finish? <strong>It's time for Sage.</strong> Things taking longer than they should?
+      <strong>It's time for Sage.</strong> Info increasingly scattered across different apps? <strong>It's
+        time for Sage.</strong> Subscription fees keep adding up? <strong>It's time for Sage.</strong>
+      Growing into dysfunction? <strong>It's time for Sage.</strong> Tired of looking disorganized in front of
+      clients? <strong class="highlight highlight--time">It's time for Sage.</strong>
+      </p>

@@ -1,0 +1,27 @@
+# OSVL Landing Page: Incubation FAQs
+faqs:
+  - id: why-sage
+    question: "Why partner with Sage.is for open-source incubation?"
+    answer: |
+      At Sage.is OSVL, we're all about turning your bold vision into reality through hands-on technical incubation. We embed our open-source experts directly into your team to build, customize, and deploy OSS solutions that scale with you—no vendor lock-in, full ownership of your tech stack, and a collaborative path to launch. Whether you're bootstrapping an AI tool or scaling a dev platform, we make the journey smoother so you can focus on what you do best: innovating.
+  - id: trust
+    question: "How long have you been around? Can we trust you as our incubation partner?"
+    answer: |
+      Sage.is is backed by [Startr](https://Startr.Cloud/) (aka OpenCo), a tech incubator that's been empowering startups since 2007. We launched our OSVL program in 2023, and we've been refining our open-source technical support model ever since, helping teams ship faster and smarter. We're committed to sustainable growth: **profitable for 18 straight years, zero debt, and privately held for the long haul.** Check out our [public employee handbook](/books/handbook/) to see how we foster a culture of trust and collaboration.
+      You can email Izzy Plante, our Co-Founder and CEO, anytime at [izzy@sage.is](mailto:izzy@sage.is). They rely on their personal **Sage AI (Mini Izzy)** for organization, so expect a direct, thoughtful response from them.
+  - id: uptime
+    question: "What about the reliability of your technical support and OSS solutions?"
+    answer: |
+      We back our incubation with rock-solid reliability—our open-source deployments and expert support have maintained over 99.99% uptime across two decades of tech projects. Track real-time performance and support SLAs on our [Status Page](https://status.production.openco.ca), so you know your vision stays on track, even during rapid scaling.
+  - id: commitment
+    question: "What if our partnership doesn't fit after we start?"
+    answer: |
+      We're in this for mutual success, so we design flexible incubation paths. If things aren't clicking, we collaborate on a smooth transition—sharing all OSS code, knowledge, and resources we've built together. No hard exits; just open conversations to ensure you keep momentum toward your goals.
+  - id: questions
+    question: "Can I ask the founders a question directly about incubation?"
+    answer: |
+      **Absolutely.** Reach out to our Co-Founder and CEO Izzy Plante at [izzy@sage.is](mailto:izzy@sage.is), or our Co-Founder and CTO Alexander Somma at [alex@sage.is](mailto:alex@sage.is). They're hands-on with OSVL and love chatting about your vision—they handle their own inboxes (with a little AI help), so you'll get a personal reply.
+  - id: migration
+    question: "Can we transition from proprietary tools to your open-source incubation model?"
+    answer: |
+      Yes, absolutely—we specialize in seamless migrations to OSS stacks. Our team provides guided audits, custom migration plans, and hands-on support to port your workflows, models, and data. Start with a pilot project to test the waters, then scale as your vision takes shape.

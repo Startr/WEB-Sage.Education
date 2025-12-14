@@ -3,7 +3,7 @@ sections:
   - id: wrestling-with-ais
     wrapperClass: "wow animate__animated animate__fadeInUp"
     wrapperStyle: "--minw:80%; --m:2rem auto"
-    h1: "Wrestling with AIs?<br> It doesn't need to be this hard."
+    h1: "Wrestling with AI Education?<br> It don't need to be opaque."
     h1Id: "wrestling-with-AIs"
     h1Class: "wow animate__animated animate__fadeInUp"
     h1Attrs: 'data-wow-delay="0.1s"'
@@ -25,9 +25,13 @@ sections:
         attrs: 'data-wow-delay="0.3s"'
         content: |
           <p>
-            <strong>Sage is your TCS, Technical Capital Solution</strong> The trifecta! 
-          We're <a href="/underdogs">here for startups, small teams and better businesses, institutions, and schools</a>, 
-          not big, sluggish ones. If your team knows it has ideas and needs to implement them fast, we're here to help.</p>
+            <strong>Sage.Education is the best way to build and explore AI</strong> in a
+            <strong>private, secure, and flexible environment</strong> that works for your team
+            and your goals.
+          </p>
+          <p>
+          We're <a href="/underdogs">here for learners, educators, schools, and families</a>,
+          not one-size-fits-all, lock-in-heavy platforms. If your classroom, learning group, or family wants to work with AI in a healthy and transparent way, we're here to help.</p>
           <p>So, I invite you watch our the videos below, and <a href="/pricing#packages">apply to be a member of Sage.is</a>. We'd be honored to work with you.<br>
                 Thank you.</p>
           <dl>
@@ -62,9 +66,9 @@ sections:
     h3Id: "yes"
     h3Style: "--ml: -4ch"
     content: |
-      <p style="--mb:1em">As a Technical Capital Solution, we empower projects to grow quickly, with our decades of hands-on expertise, open-source innovation, and lock-in-free flexibility.</p>
+      <p style="--mb:1em">At Sage.Education, we empower projects to grow quickly, with our decades of hands-on expertise, open-source innovation, and lock-in-free flexibility.</p>
       <p style="--mb:0.6em">Are your projects fully ready for bold breakthroughs? </p>
-      <h3><b>When working with Sage.is, the answer is absolutely <u>YES!</u></b></h3>
+      <h3><b>When working with Sage.Education, the answer is absolutely <u>YES!</u></b></h3>
 
   - id: its-time
     wrapperElement: "section"

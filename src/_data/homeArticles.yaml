@@ -3,7 +3,7 @@ sections:
   - id: wrestling-with-ais
     wrapperClass: "wow animate__animated animate__fadeInUp"
     wrapperStyle: "--minw:80%; --m:2rem auto"
-    h1: "Wrestling with AI Education?<br> It don't need to be opaque."
+    h1: "Wrestling with AI Education?<br> It doesn't need to be that way."
     h1Id: "wrestling-with-AIs"
     h1Class: "wow animate__animated animate__fadeInUp"
     h1Attrs: 'data-wow-delay="0.1s"'
@@ -12,21 +12,24 @@ sections:
       - class: "wow animate__animated animate__fadeInUp"
         attrs: 'data-wow-delay="0.2s"'
         content: |
-          There are many **AI platforms promising to solve** all our problems. Helping teachers **reduce their workload** and promising students **shortcuts to learning.
+          There are many **AI platforms promising to solve** all our problems. Helping teachers **reduce their workload** and promising students **shortcuts to learning.**
 
           Unfortunately, **most AI tools aren’t hitting the mark**. They either **make more work** for us by not doing what we need, or **hurt learning** by making students think they understand, only for them to fall short on the exam.
 
-          **Sage.Education is different**. It’s not made by a corporation whose first priority is to its shareholders. It’s **made by educators** who want to reimagine what education can be when technology **serves human wisdom.
+          **Sage.Education is different**. It's not made by a corporation whose first priority is to its shareholders. It's **made by educators** who want to reimagine what education can be when technology **serves human wisdom.**
 
       - class: "wow animate__animated animate__fadeInUp"
         attrs: 'data-wow-delay="0.3s"'
         content: |
-          **Sage.Education makes learning visible**, so you see the process where the real learning happens. We make every interaction between a student and AI completely transparent. You can see their thought process unfold step-by-step, allowing you to guide their critical thinking rather than just grade their final output. **We believe you should have the freedom to see how your students are working. 
-
-          **Sage.Education fits your classroom**, not the other way around. You can customize everything. Set different AI access to different grades, switch AI models on the fly to compare answers, or build your own chatbots anchored to custom knowledge bases. It works the way you want. **We believe you should have the freedom to change and control your tools.
+          **Sage.Education makes learning visible**, so you see the process where the **real learning** happens. We make every interaction between a student and **AI transparent.** 
           
-          <p>So, I invite you watch our the videos below, and <a href="/pricing#packages">apply to be a member of Sage.is</a>. We'd be honored to work with you.<br>
-                Thank you.</p>
+          We believe you should have the **freedom to see** how your students are working. See learners' **thought process** unfold step-by-step. **Guide critical thinking** rather than just grade final outputs. 
+
+          **Sage.Education fits your classroom**, not the other way around. **Customize everything.** Give different grades different AIs. Switch AI models on the fly to compare how they answer. %%Build your own chatbots anchored to custom knowledge bases.%% **It works the way you want.** 
+          
+          **We believe you should have the freedom to change and control your tools.**
+
+          Thank you.</p>
           <dl>
             <dt>
               <strong>Izzy Plante</strong>, <a href="mailto:izzy@sage.is">izzy@sage.is</a>

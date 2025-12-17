@@ -51,6 +51,10 @@ build/Release
 node_modules/
 jspm_packages/
 
+# Bun lockfile artifacts (this repo uses bun.lock)
+bun.lockb
+bun.lockb.*
+
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
 

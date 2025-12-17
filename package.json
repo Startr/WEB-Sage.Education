@@ -19,7 +19,7 @@
     "audit:check": "bun audit",
     "optimize": "bun run buildfresh:prod && echo 'Build optimized for production'",
     "install:bun": "bun install",
-    "clean": "rm -rf node_modules && rm -f bun.lockb && bun install"
+    "clean": "rm -rf node_modules && rm -f bun.lock bun.lockb && bun install"
   },
   "keywords": [],
   "author": "",

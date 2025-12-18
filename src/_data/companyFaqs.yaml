@@ -38,7 +38,6 @@ faqs:
       Sage.Education provides real-time collaborative AI spaces and step-by-step conversation map overviews, giving educators actionable insight into student-AI interactions. This enables teachers to monitor, guide, and support students' AI use, transforming it from a learning shortcut into a supportive educational tool.
 
       We shift the focus from AI outputs to cognitive processes, helping educators foster healthy, ethical AI literacy that reinforces genuine learning.
-
   - id: is_privacy_compliant
     question: "Is Sage.Education compliant with privacy regulations?"
     answer: |
@@ -47,9 +46,9 @@ faqs:
       - Canada's Personal Information Protection and Electronic Documents Act (PIPEDA)
       - EU's General Data Protection Regulation (GDPR)
       - Family Educational Rights and Privacy Act (FERPA)
-      - Children’s Online Privacy Protection Act (COPPA)
+      - Children's Online Privacy Protection Act (COPPA)
       - California Consumer Privacy Act (CCPA)
-
+      
   - id: means_your_data_is_safe
     question: "Is my data safe and private with Sage.Education?"
     answer: |
@@ -60,14 +59,13 @@ faqs:
       We have a [full security write-up](https://startr.cloud/policies/security/#TODO) available on the Startr site. Startr is the company behind Sage.
 
       We take security very seriously, and we've built Sage to be secure by default. We use the latest security protocols, including **256-bit AES encryption** for all data at rest, and **TLS 1.2** for all data in transit. We also use **OAuth 2.0** for secure authentication. Moreover, for organizations that require it, we can provide **on-premises deployment** options to keep data entirely within your own infrastructure.
-  
+
   - id: is_backed_up_and_secure
     question: " Is Sage.Education's data stored and backed up?"
     answer: |
       When you use Sage.Education there are two ways your data is stored. When you visit the Sage.Education website and sign-up or sign-in, data is stored in our private cloud. This data is securely backed up several times a day, and encrypted copies of those backups are stored both locally and off-site to further reduce points of possible failure. 
 
       When you chose to use our Sage.Education Workshop (the open source Sage.is AI UI platform) your data is backed-up either locally on your computers, if you  running locally. If you decide to have Sage.Education fully managed, then you can choose to have your data stored in multiple redundant data centers in specific geographic regions, or stored securely locally on-site.
- 
   - id: no_advertising_commitment
     question: "Sage.Education *never* shares data with third-parties? *Never?*"
     answer: |
@@ -76,7 +74,7 @@ faqs:
       Sage.Education does not allow third-party tracking, advertisements, marketing, or promotions in our services ever.
 
       Unlike ChatGPT and other AI companies we will never permit contextual ads in Sage.Education services. We believe education should be free from commercial influence and distractions.
-  
+
   - id: lets_you_share
     question: "Does Sage.Education have sharing and team capabilities? ?"
     answer: |
@@ -84,7 +82,7 @@ faqs:
 
       You can also work collaboratively in real-time on Note documents in Sage. When you start a Note, you can select whether the Note's visibility is private or public and choose specific Groups to share it with. Additionally, you can chat with an AI while working collaboratively in Notes.
   
-    - id: new_features
+  - id: new_features
     question: "Are there new Sage.Education features in the works?"
     answer: |
       Yes! The Sage team has many exciting new updates we are working on. Some of these include:
@@ -102,7 +100,6 @@ faqs:
       We update the Sage.Education website on an ongoing basis. 
 
       Our Sage.is AI UI platform (what powers the Sage.Education AI Labs) is updated regularly with feature updates, new models, platform enhancements, security improvements, and performance optimizations.
-
   - id: lets_you_talk_to_our_founders
     question: "Can I ask the founders a question directly?"
     answer: |

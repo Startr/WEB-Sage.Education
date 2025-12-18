@@ -5,7 +5,7 @@ faqs:
     answer: |
       Yes. Sage is open‑source with a permissive license. You can self‑host in your VPC or run on‑prem. We also provide a fully managed option with the same security model and data ownership guarantees.
   - id: secure
-    question: "How secure is Sage?"
+    question: "Is Sage.Education secure?"
     answer: |
       We have a [full security write-up](https://startr.cloud/policies/security/#TODO) available on the Startr site. Startr is the company behind Sage.
 

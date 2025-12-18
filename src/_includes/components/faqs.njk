@@ -23,12 +23,12 @@
   </header>
   </div>
 
-<div class="{{ _detailsClass }}"{% if detailsAttrs %} {{ detailsAttrs | safe }}{% endif %}{% if detailsStyle %} style="{{ detailsStyle }}"{% endif %}>
+<div class="{{ _detailsClass }} yes"{% if detailsAttrs %} {{ detailsAttrs | safe }}{% endif %}{% if detailsStyle %} style="{{ detailsStyle }}"{% endif %}>
   {% for faq in faqs %}
   <details id="{{ faq.id }}" class="wow animate__animated animate__fadeInUp"
     data-wow-delay="0.2s">
     <summary>
-      <p>{{ faq.question | mdInline | safe }}</p>
+      <p>{{ faq.question | mdInline | safe }} </p>
     </summary>
     <article>
       {{ faq.answer | md | safe }}

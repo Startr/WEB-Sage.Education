@@ -24,9 +24,9 @@ sections:
       - class: "wow animate__animated animate__fadeInUp"
         attrs: 'data-wow-delay="0.3s"'
         content: |
-          We believe you should have the **freedom to see** how your students are working. See learners' **thought process** unfold step-by-step. **Guide critical thinking** rather than just grade final outputs. 
+          We believe you should have the **freedom to see** how your students work. See learners' **thoughts** unfold step-by-step. **Guide critical thinking** rather than just grade final outputs. 
 
-          **Sage.Education fits your classroom**, not the other way around. **Customize everything.** Give different grades different AIs. Switch **AI models** on the fly to compare how they answer. Build your own chatbots. **Work the way you want.** 
+          **Sage.Education fits your classroom**, not the other way around. **Customize everything.** Give different groups different AIs. Switch **AI models** on the fly to compare how they answer. Build your own chatbots. **Work the way you want.** 
           
           **We believe you should have the freedom to change and control your tools.**
 
@@ -50,7 +50,7 @@ sections:
     h3: "Here at Sage.Education we focus on <u>AI in Education.</u>"
     h3Id: "home"
     content: |
-      <p style="--mb:1em">You bring curiosity and we'll bring Education AI</p>
+      <p style="--mb:1em">You bring curiosity and we'll ensure AI literacy</p>
        <p style="--mb: 1em">
       Learn to work with AI by
       <u>playing, iterating, and experimenting</u>.<br />
@@ -58,8 +58,7 @@ sections:
       Private, secure, and flexible.
       </p>
       <p>
-      We'll make sure that you have the&nbsp;<u>tools&nbsp;needed</u>&nbsp;to
-      achieve your goals.
+      We'll make sure you have the essential <u>AI Knowledge, Skills, and Attitudes.</u>.
       </p>
   - id: yes-intro
     wrapperStyle: "--m:auto"
@@ -106,7 +105,7 @@ sections:
         <strong>It's time for Sage.</strong>&nbsp;
       </p>
       <p>
-        Frustrated not parents want AI but you can't supervise?
+        Frustrated parents want AI but you can't supervise?
         <strong>It's time for Sage.</strong>&nbsp;
       </p>
       <p>

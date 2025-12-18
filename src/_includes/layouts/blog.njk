@@ -1,52 +1,7 @@
 {% extends "base.njk" %}
 
 {% block nav %}
-    <input id="nav-active" type="checkbox">
-
-    <label id="nav-underlay" for="nav-active"></label>
-
-    <nav class="nav" style="zoom: 1.2;     --p: 0.4rem">
-        <div class="nav__container">
-            <div class="nav__logo">
-                <a href="/" class="icon icon--sage" aria-label="Sage">
-                    <img src="/assets/images/general/sage.webp" style="--w:2em; --h:2em; --m:-0.4em 0"
-                    alt="Sage Startr Logo">
-                    <strong>Sage.Education</strong>
-                </a>
-                <div class="nav__phrase">is <span class="highlight"></span>
-                </div>
-            </div>
-            <div class="nav__links" style="gap:1em">
-                {# Data-driven main navigation #}
-                {% for item in navigation.main %}
-                    {% if item.todo %}
-                        {% set note = item.todo_note or "" %}
-                        {% todo note %}
-                        <a href="{{ item.href }}">{{ item.title }}</a>{% endtodo %}
-                    {% else %}
-                        <a href="{{ item.href }}">{{ item.title }}</a>
-                    {% endif %}
-                {% endfor %}
-            </div>
-            <div class="nav__buttons">
-                <a class="nav__button nav__button--sage" href="https://sage.Startr.Cloud/" target="_blank">Sign in</a>
-                <a class="nav__button nav__button--signup" href="/Sign-up-Now" aria-label="Sign up free">
-                    <span style="--d:none; --d-md:inline-block">Apply to&nbsp;</span> Access Sage.Education</a>
-            </div>
-            <label class="nav__toggle" for="nav-active" aria-label="Nav Toggle" tabindex="0"></label>
-        </div>
-        <div class="nav__mobile">
-            {% for item in navigation.main %}
-                {% if item.todo %}
-                    {% set note = item.todo_note or "" %}
-                    {% todo note %}
-                    <a href="{{ item.href }}">{{ item.title }}</a>{% endtodo %}
-                {% else %}
-                    <a href="{{ item.href }}">{{ item.title }}</a>
-                {% endif %}
-            {% endfor %}
-        </div>
-    </nav>
+    {% include "components/main-nav.njk" %}
 {% endblock %}
 
 {% block main %}

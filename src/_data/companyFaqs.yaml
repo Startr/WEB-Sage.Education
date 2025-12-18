@@ -48,7 +48,6 @@ faqs:
       - Family Educational Rights and Privacy Act (FERPA)
       - Children's Online Privacy Protection Act (COPPA)
       - California Consumer Privacy Act (CCPA)
-      
   - id: means_your_data_is_safe
     question: "Is my data safe and private with Sage.Education?"
     answer: |
@@ -59,7 +58,6 @@ faqs:
       We have a [full security write-up](https://startr.cloud/policies/security/#TODO) available on the Startr site. Startr is the company behind Sage.
 
       We take security very seriously, and we've built Sage to be secure by default. We use the latest security protocols, including **256-bit AES encryption** for all data at rest, and **TLS 1.2** for all data in transit. We also use **OAuth 2.0** for secure authentication. Moreover, for organizations that require it, we can provide **on-premises deployment** options to keep data entirely within your own infrastructure.
-
   - id: is_backed_up_and_secure
     question: " Is Sage.Education's data stored and backed up?"
     answer: |
@@ -74,14 +72,12 @@ faqs:
       Sage.Education does not allow third-party tracking, advertisements, marketing, or promotions in our services ever.
 
       Unlike ChatGPT and other AI companies we will never permit contextual ads in Sage.Education services. We believe education should be free from commercial influence and distractions.
-
   - id: lets_you_share
     question: "Does Sage.Education have sharing and team capabilities? ?"
     answer: |
       Yes, you can share your conversation chats with other Sage users. Click on the three-dot menu near the Controls and your avatar image, select "Share," and then "Copy Link." Send this link to other Sage users for them to read or clone.
 
-      You can also work collaboratively in real-time on Note documents in Sage. When you start a Note, you can select whether the Note's visibility is private or public and choose specific Groups to share it with. Additionally, you can chat with an AI while working collaboratively in Notes.
-  
+      You can also work collaboratively in real-time on Note documents in Sage. When you start a Note, you can select whether the Note's visibility is private or public and choose specific Groups to share it with. Additionally, you can chat with an AI while working collaboratively in Notes. 
   - id: new_features
     question: "Are there new Sage.Education features in the works?"
     answer: |
@@ -104,12 +100,10 @@ faqs:
     question: "Can I ask the founders a question directly?"
     answer: |
       **Absolutely.** Reach out to our Co-Founder and CEO Izzy Plante at [izzy@sage.is](mailto:izzy@sage.is), or our Co-Founder and CTO Alexander Somma at [alex@sage.is](mailto:alex@sage.is). They're hands-on with Sage.Education and love chatting about your vision—they handle their own inboxes (with a little Sage AI help), so you'll get a personal reply.
-  
   - id: is_open_source
     question: "Is Sage.Education open-source? Can we self-host?"
     answer: |
       Yes. Sage.Education is open‑source with a permissive license. You can self‑host in your VPC or run on‑prem. We also provide a fully managed option with the same security model and data ownership guarantees.
-  
   - id: lets_learn_more
     question: "Can I learn more Sage.Education and the Sage.is AI UI platform?"
     answer: |

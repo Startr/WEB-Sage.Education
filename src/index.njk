@@ -153,6 +153,7 @@ because <u>learning shouldn't be passive</u>
   {% set detailsAttrs = "data-wow-delay=\"0.1s\"" %}
   {% include "components/faqs.njk" %}
 
+  {% todo "Add security FAQs" %}
   {% set faqs = securityFaqs.faqs %}
   {% set sectionTitle = "I have questions about security and our data…" %}
   {% set sectionId = "security-faqs" %}
@@ -162,7 +163,9 @@ because <u>learning shouldn't be passive</u>
   {% set detailsStyle = "zoom: 1.2; --maxw: 40rem; " %}
   {% set detailsAttrs = "data-wow-delay=\"0.1s\"" %}
   {% include "components/faqs.njk" %}
+  {% endtodo %}
 
+  {% todo "Add other FAQs" %}
   {% set faqs = otherFaqs.faqs %}
   {% set sectionTitle = "I have other questions…" %}
   {% set sectionId = "other-faqs" %}
@@ -172,3 +175,4 @@ because <u>learning shouldn't be passive</u>
   {% set detailsStyle = "zoom: 1.2; --maxw: 40rem; " %}
   {% set detailsAttrs = "data-wow-delay=\"0.1s\"" %}
   {% include "components/faqs.njk" %}
+  {% endtodo %}

@@ -41,7 +41,7 @@ themeColor: "#ffffff"
 
         <div class="wow animate__animated animate__fadeInUp" data-wow-delay="0.4s" 
           style="--size: 1.2rem; --o:0.9; --maxw: 52rem; --m: 0 auto 2rem; --d:flex;">
-          <a class="button" href="/posts/#packages" aria-label="Sign up free">
+          <a class="button" href="/Sign-up-Now" aria-label="Sign up free">
             <span style="--d:none; --d-md:inline-block">Apply for&nbsp;</span>Sage.Education</a>
           <a style="--d:flex; --fd:column;--m:auto" href="#learn-more">Learn more about Sage.Education</a>
         </div>
@@ -63,20 +63,21 @@ themeColor: "#ffffff"
       <header>
         <h1 class="wow animate__animated animate__fadeIn" data-wow-delay="0.2s" 
           style="--size: 3rem; --size-md:2rem; --size-lg: 4rem; --mt-md:-6rem;">
-            Grow your ideas with Sage.is<br>
+            Your own AI Learning Laboratory 
         </h1>
         <h2>
-          We build <u>Open-source AI solutions</u> that align with your business goals.
+          <u>Empowering educators & students</u><br>
+because <u>learning shouldn't be passive</u>
         </h2>
 
         <p class="wow animate__animated animate__fadeInUp" data-wow-delay="0.4s" 
           style="--size: 1.2rem; --o:0.9; --maxw: 52rem; --m: 0 auto 2rem;">
-          Work with our <u>powerful AI</u> and <u>human experts</u> to develop <u>your bold vision</u>, no matter the challenge.
-          Our experts embed with your team to deploy and customize the <u>Sage.is AI engine.</u>
-
-        </p>
-        <p class="wow animate__animated animate__fadeInUp" data-wow-delay="0.5s" style="--size: 1rem; --o:0.9;">Our open-source tech stack and hands-on approach get you from idea to impact, fast.
-            Hands-on technical support, OSS collaboration, and community-driven tools. No lock-in. Your success, our open ecosystem.
+          We give <u>schools advanced AI</u> tools that work locally on your computers<br>
+<u>no cloud needed</u>, but always available.
+</p>
+        <p class="wow animate__animated animate__fadeInUp" data-wow-delay="0.5s" style="--size: 1rem; --o:0.9;">
+          No more worrying about student privacy, data security, or vendor lock-in.<br>
+          Other AI educators force you into standardized, static, one-size-fits-all solutions.<br>
           </p>
       </header>
     </section>
@@ -126,18 +127,6 @@ themeColor: "#ffffff"
   </div>
 </div>
 {% endtodo %}
-{% prodonly "" %}
-<div class="visual visual--walkthrough space-top--xxx-large wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
-  <div class="visual__column">
-    <button id="walkthrough-columns" style="--p:0; --levitate-hvr:8;">
-      <figure class="visual__figure">
-        <img src="/assets/images/home/sage.webp" width="2400" height="1326" alt="See how Sage works">
-        <span aria-hidden="true">Sage.is what will make you projects succeed.</span>
-      </figure>
-    </button>
-  </div>
-</div>
-{% endprodonly %}
 
 {% set section = homeArticles.sections[1] %}
 {% include "components/article-section.njk" %}
@@ -155,7 +144,7 @@ themeColor: "#ffffff"
   {% include "components/article-section.njk" %}
 
   {% set faqs = companyFaqs.faqs %}
-  {% set sectionTitle = "I have questions about your company…" %}
+  {% set sectionTitle = "I have questions about Sage.Education…" %}
   {% set sectionId = "company-faqs" %}
   {% set headlineClass = "headline space-top--xxx-large" %}
   {% set detailsClass = "details space-top--medium" %}
@@ -164,6 +153,7 @@ themeColor: "#ffffff"
   {% set detailsAttrs = "data-wow-delay=\"0.1s\"" %}
   {% include "components/faqs.njk" %}
 
+  {% todo "Add security FAQs" %}
   {% set faqs = securityFaqs.faqs %}
   {% set sectionTitle = "I have questions about security and our data…" %}
   {% set sectionId = "security-faqs" %}
@@ -173,7 +163,9 @@ themeColor: "#ffffff"
   {% set detailsStyle = "zoom: 1.2; --maxw: 40rem; " %}
   {% set detailsAttrs = "data-wow-delay=\"0.1s\"" %}
   {% include "components/faqs.njk" %}
+  {% endtodo %}
 
+  {% todo "Add other FAQs" %}
   {% set faqs = otherFaqs.faqs %}
   {% set sectionTitle = "I have other questions…" %}
   {% set sectionId = "other-faqs" %}
@@ -183,3 +175,4 @@ themeColor: "#ffffff"
   {% set detailsStyle = "zoom: 1.2; --maxw: 40rem; " %}
   {% set detailsAttrs = "data-wow-delay=\"0.1s\"" %}
   {% include "components/faqs.njk" %}
+  {% endtodo %}

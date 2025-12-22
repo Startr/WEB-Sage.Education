@@ -6046,7 +6046,20 @@ li .dev-only-section {
   margin-right: var(--space-neutral);
 }
 
-.yes ul li:after {
+.yes details article{
+
+  p {
+    line-height: 1em;
+    margin: 1.6rem auto;
+  }
+
+  ul {
+    margin: 1em auto;
+    list-style: none;
+  }
+}
+
+.yes ul li:after, .yes details summary:after {
   background: var(--color-yellow);
   color: var(--color-black);
   content: "YES!";
@@ -6066,11 +6079,11 @@ li .dev-only-section {
   vertical-align: top;
 }
 
-.yes ul li:nth-child(odd):after {
+.yes ul li:nth-child(odd):after, .yes details summary:nth-child(odd):after {
   transform: rotate(-3.5deg) translateY(-0.05em);
 }
 
-.yes ul li:nth-child(even):after {
+.yes ul li:nth-child(even):after, .yes details summary:nth-child(even):after {
   transform: rotate(3.5deg) translateY(0.15em);
 }
 

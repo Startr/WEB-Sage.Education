@@ -50,11 +50,11 @@
     {% if section.contentDivs or contentDivs %}
       {% for div in (section.contentDivs or contentDivs) %}
       <div{% if div.class %} class="{{ div.class }}"{% endif %}{% if div.attrs %} {{ div.attrs | safe }}{% endif %}{% if div.style %} style="{{ div.style }}"{% endif %}>
-        {{ div.content | safe }}
+        {{ div.content | md | safe }}
       </div>
       {% endfor %}
     {% else %}
-      {{ (section.content or content) | safe }}
+      {{ (section.content or content) | md | safe }}
     {% endif %}
   </article>
   {% endif %}

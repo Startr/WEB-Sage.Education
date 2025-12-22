@@ -1,6 +1,11 @@
----
-layout: layouts/base.njk
----
+{% extends "base.njk" %}
+
+{% block nav %}
+    {% include "components/main-nav.njk" %}
+{% endblock %}
+
+{% block main %}
+<main class="main" style="zoom:1.2">
 <section class="wow fadeIn" style="
 	--m: 2em auto;	
 	--bg:white;
@@ -17,7 +22,9 @@ layout: layouts/base.njk
 	<h1>{{ title }}</h1>
 
 	<ul class="post-metadata">
-		<time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+		<time
+			style="--c:black; --bgc:inherit;"
+			datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
 		{%- if page.data.author %}<li>Author: {{ page.data.author }}</li>{%- endif %}
 		{%- for tag in tags | filterTagList %}
 		{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
@@ -53,3 +60,5 @@ layout: layouts/base.njk
 	{%- endif %}
 </section>
 {%- endif %}
+</main>
+{% endblock %}

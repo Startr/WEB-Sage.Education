@@ -17,14 +17,16 @@ const sectionizePlugin = require("./_plugins/eleventy-plugin-sectionize");
 const highlightPlugin = require("./_plugins/eleventy-plugin-highlight");
 
 module.exports = function(eleventyConfig) {
-  const isDev = process.env.NODE_ENV !== "production";
+  // Environment setup
+  const isDev = process.env.NODE_ENV !== 'production';
+  // DRY helpers
   const SKIP_TAGS = new Set(["all", "nav", "post", "posts"]);
   const normalizeTags = (tags) => {
     if (!tags) return [];
     const arr = Array.isArray(tags) ? tags : [tags];
     return arr
-      .map((t) => t && t.toString().toLowerCase())
-      .filter((t) => t && !SKIP_TAGS.has(t));
+      .map(t => t && t.toString().toLowerCase())
+      .filter(t => t && !SKIP_TAGS.has(t));
   };
   const isChapterItem = (item) => {
     const slug = (item.fileSlug || "").toString().toLowerCase();

@@ -3,41 +3,73 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Sage Education</title>
 <!-- Meta description-->
-<meta name="description"
-  content="Unlock limitless learning with Sage.Education AI, the best AI playground for educators and learners of all ages. Harness AI's power to create, innovate, and prepare for change today. Sign up now and discover a unique approach to AI education." />
+<meta
+  name="description"
+  content="Unlock limitless learning with Sage.Education AI, the best AI playground for educators and learners of all ages. Harness AI's power to create, innovate, and prepare for change today. Sign up now and discover a unique approach to AI education."
+/>
 <!-- Favicon-->
 <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
 <link rel="alternate icon" href="/images/favicon.ico" />
 <!-- Social Card-->
 <meta property="og:title" content="Sage Education" />
-<meta property="og:description"
-  content="Unlock limitless learning with Sage.Education AI, the best AI playground for educators and learners of all ages. Harness AI's power to create, innovate, and prepare for change today. Sign up now and discover a unique approach to AI education." />
+<meta
+  property="og:description"
+  content="Unlock limitless learning with Sage.Education AI, the best AI playground for educators and learners of all ages. Harness AI's power to create, innovate, and prepare for change today. Sign up now and discover a unique approach to AI education."
+/>
 <meta property="og:image" content="https://sage.education/videos/Sage.gif" />
 <meta property="og:video" content="https://sage.education/videos/Sage.mp4" />
 <meta property="og:url" content="https://sage.education" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Sage Education" />
-<meta name="twitter:description"
-  content="Unlock limitless learning with Sage.Education AI, the best AI playground for educators and learners of all ages. Harness AI's power to create, innovate, and prepare for change today. Sign up now and discover a unique approach to AI education." />
+<meta
+  name="twitter:description"
+  content="Unlock limitless learning with Sage.Education AI, the best AI playground for educators and learners of all ages. Harness AI's power to create, innovate, and prepare for change today. Sign up now and discover a unique approach to AI education."
+/>
 <meta name="twitter:image" content="https://sage.education/videos/Sage.gif" />
 <!-- Include WOW.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"
   integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+  defer
+></script>
 
 <!-- Smooth Scroll Script -->
 <script>
-  new WOW().init();
+  document.addEventListener("DOMContentLoaded", function () {
+    // Handle anchor links
+    if (window.location.hash) {
+      setTimeout(function () {
+        // Show all elements above current scroll position
+        var scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+        var wowElements = document.querySelectorAll(".wow");
+
+        wowElements.forEach(function (el) {
+          var elementTop = el.getBoundingClientRect().top + scrollTop;
+          if (elementTop < scrollTop) {
+            el.classList.add("animated");
+            el.style.visibility = "visible";
+          }
+        });
+
+        new WOW().init();
+      }, 100);
+    } else {
+      new WOW().init();
+    }
+  });
 
   // Function to enable smooth scroll
   function smoothScrollLinks() {
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
         e.preventDefault();
-        const targetElement = document.querySelector(this.getAttribute('href'));
+        const targetElement = document.querySelector(this.getAttribute("href"));
         if (targetElement) {
           targetElement.scrollIntoView({
-            behavior: 'smooth'
+            behavior: "smooth",
           });
         }
       });
@@ -45,28 +77,37 @@
   }
 
   // Initialize smooth scrolling on first load
-  (document.readyState === "loading") ? document.addEventListener('DOMContentLoaded', smoothScrollLinks) : smoothScrollLinks();
+  document.readyState === "loading"
+    ? document.addEventListener("DOMContentLoaded", smoothScrollLinks)
+    : smoothScrollLinks();
 </script>
 
 <!-- Include Startr Style CSS -->
 
-<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/style.css" />
 <!--<link rel="preload" href="https://startr.style/style.min.css" as="style"
   onload="this.onload=null;this.rel='stylesheet'">
 <noscript>-->
-<link rel="stylesheet" href="https://startr.style/style.min.css">
+<link rel="stylesheet" href="https://startr.style/style.min.css" />
 <!--</noscript>-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
   href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-  rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300..700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300..700&display=swap"
+  rel="stylesheet"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
   integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
 <!-- let's ensure that a view transtion is used on any links between pages-->
-
 
 <style>
   ::selection {
@@ -82,11 +123,11 @@
     font-size: 1.2rem;
   }
 
-  ul{
-    list-style:none;
+  ul {
+    list-style: none;
   }
 
-  time{
+  time {
     background-color: inherit !important;
   }
 
@@ -112,9 +153,13 @@
     --grad: 50deg;
     --grad-color: var(--black);
     --c: #d72263;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     position: relative;
-    background-image: linear-gradient(var(--grad), hsl(235, 100%, 55%) 0%, var(--grad-color) 50%);
+    background-image: linear-gradient(
+      var(--grad),
+      hsl(235, 100%, 55%) 0%,
+      var(--grad-color) 50%
+    );
     background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -127,8 +172,6 @@
     th {
       font-size: 1em;
     }
-
-
   }
 
   code {
@@ -177,15 +220,20 @@
 </style>
 
 <script type="text/javascript">
-  var _paq = window._paq = window._paq || [];
+  var _paq = (window._paq = window._paq || []);
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
   (function () {
     var u = "//visitas.startr.cloud/";
-    _paq.push(['setTrackerUrl', u + 'matomo.php']);
-    _paq.push(['setSiteId', '2']);
-    var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
-    g.type = 'text/javascript'; g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+    _paq.push(["setTrackerUrl", u + "matomo.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d = document,
+      g = d.createElement("script"),
+      s = d.getElementsByTagName("script")[0];
+    g.type = "text/javascript";
+    g.async = true;
+    g.src = u + "matomo.js";
+    s.parentNode.insertBefore(g, s);
   })();
 </script>

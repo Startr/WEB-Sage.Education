@@ -37,30 +37,32 @@
 
 <!-- Smooth Scroll Script -->
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // Handle anchor links
-    if (window.location.hash) {
-      setTimeout(function () {
-        // Show all elements above current scroll position
-        var scrollTop =
-          window.pageYOffset || document.documentElement.scrollTop;
-        var wowElements = document.querySelectorAll(".wow");
 
-        wowElements.forEach(function (el) {
-          var elementTop = el.getBoundingClientRect().top + scrollTop;
-          if (elementTop < scrollTop) {
-            el.classList.add("animated");
-            el.style.visibility = "visible";
-          }
-        });
+  console.log('Script loaded!');
 
-        new WOW().init();
-      }, 100);
-    } else {
+  window.addEventListener("load", function () {
+    setTimeout(function () {
+      var scrollTop = window.pageYOffset;
+      console.log("Current scroll position:", scrollTop);
+
+      var wowElements = document.querySelectorAll(".wow");
+      console.log("Total wow elements:", wowElements.length);
+
+      wowElements.forEach(function (el) {
+        var elementTop = el.offsetTop;
+        console.log("Element at:", elementTop, "Classes:", el.className);
+
+        if (elementTop <= scrollTop + window.innerHeight) {
+          console.log("Removing wow from element at:", elementTop);
+          el.classList.remove("wow");
+          el.style.visibility = "visible";
+          el.style.opacity = "1";
+        }
+      });
+
       new WOW().init();
-    }
+    }, 100);
   });
-
   // Function to enable smooth scroll
   function smoothScrollLinks() {
     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {

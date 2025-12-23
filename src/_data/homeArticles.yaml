@@ -3,7 +3,7 @@ sections:
   - id: wrestling-with-ais
     wrapperClass: "wow animate__animated animate__fadeInUp"
     wrapperStyle: "--minw:80%; --m:2rem auto"
-    h1: "Wrestling with AIs?<br> It doesn't need to be this hard."
+    h1: "Wrestling with AI Education? <br> It doesn't need to be this hard."
     h1Id: "wrestling-with-AIs"
     h1Class: "wow animate__animated animate__fadeInUp"
     h1Attrs: 'data-wow-delay="0.1s"'
@@ -12,24 +12,21 @@ sections:
       - class: "wow animate__animated animate__fadeInUp"
         attrs: 'data-wow-delay="0.2s"'
         content: |
-          <p>There are lots of ways to create and manage new AIs. And there's plenty of
-            <strong>software promising to help.</strong>
-          </p>
-          <p>
-            <strong>Unfortunately, most AI tools work great for individuals,</strong> but <strong>terribly for teams, especially ones that want to do new things</strong>
-              either overwhelming, inadequate, bewildering, or chaotic. Right?
-          </p>
-          <p>Sage is different. We're here to help you and your team <strong>get things done</strong> with AI, not just <strong>play around</strong> with it.
-          </p>
+          There are many **AI platforms promising to solve** all our problems. Helping teachers **reduce their workload** and promising students **shortcuts to learning.**
+
+          Unfortunately, **most AI tools aren’t hitting the mark**. They either **make more work** for us by not doing what we need, or **hurt learning** by making students think they understand, only for them to fall short on the exam.
+
+          **Sage.Education is different**. It's not made by a corporation whose first priority is to its shareholders. It's **made by educators** who want to reimagine what education can be when technology **serves human wisdom.**
+
+          **Sage.Education makes learning visible**, so you see the process where the **real learning** happens. We make every interaction between a student and **AI transparent.**
       - class: "wow animate__animated animate__fadeInUp"
         attrs: 'data-wow-delay="0.3s"'
         content: |
-          <p>
-            <strong>Sage is your TCS, Technical Capital Solution</strong> The trifecta! 
-          We're <a href="/underdogs">here for startups, small teams and better businesses, institutions, and schools</a>, 
-          not big, sluggish ones. If your team knows it has ideas and needs to implement them fast, we're here to help.</p>
-          <p>So, I invite you watch our the videos below, and <a href="/pricing#packages">apply to be a member of Sage.is</a>. We'd be honored to work with you.<br>
-                Thank you.</p>
+          We believe you should have the **freedom to see** how your students work. See learners' **thoughts** unfold step-by-step. **Guide critical thinking** rather than just grade final outputs.
+
+          **Sage.Education fits your classroom**, not the other way around. **Customize everything.** Give different groups different AIs. Switch **AI models** on the fly to compare how they answer. Build your own chatbots.**Work the way you want.**
+
+          **We believe you should have the freedom to change and control your tools.**        
           <dl>
             <dt>
               <strong>Izzy Plante</strong>, <a href="mailto:izzy@sage.is">izzy@sage.is</a>
@@ -46,14 +43,15 @@ sections:
     articleStyle: "--gc: 12 span"
     h2: "Let's walk through it."
     h2Id: "features"
-    h3: "Present us with your project and we'll help you get it done, <u>fast.</u>"
+    h3: "Here at Sage.Education we focus on AI in Education"
     h3Id: "home"
     content: |
-      <p style="--mb:1em">Here at Sage, we help teams get things done with AI.</p>
-      <p style="--mb:1em">We'll <u>help</u> you organize your work, manage your team,
-      and get things done with our <u>expertise</u>,<br>
-      our <u>capital</u>, and our <u>Sage.is AI Engine</u>. No more chaos, no more confusion.</p>
-      <p>We'll make sure that you are provided with the right tools, support, and <u>technical capital</u> to achieve your goals.</p>
+      You bring curiosity and we'll ensure AI literacy
+
+      Learn to work with AI by playing, iterating, and experimenting.  
+      Prepare your students for an AI world. Private, secure, and flexible.
+
+      We'll make sure you have the essential AI Knowledge, Skills, and Attitudes.
   - id: yes-intro
     wrapperStyle: "--m:auto"
     wrapperClass: "headline space-top--xxx-large wow animate__animated animate__fadeInUp"
@@ -62,9 +60,9 @@ sections:
     h3Id: "yes"
     h3Style: "--ml: -4ch"
     content: |
-      <p style="--mb:1em">As a Technical Capital Solution, we empower projects to grow quickly, with our decades of hands-on expertise, open-source innovation, and lock-in-free flexibility.</p>
-      <p style="--mb:0.6em">Are your projects fully ready for bold breakthroughs? </p>
-      <h3><b>When working with Sage.is, the answer is absolutely <u>YES!</u></b></h3>
+      At Sage.Education, we empower learners, with our decades of hands-on education experience and AI expertise, open-source software, and lock-in-free flexibility.
+
+      Are your learners ready for the AI world?
 
   - id: its-time
     wrapperElement: "section"
@@ -85,10 +83,17 @@ sections:
         --br:0.2em;">
           <span style="--d:none; --d-md:inline-block">Apply to&nbsp;</span> Access Sage.Education</a>
     content: |
-      <p>Team super busy, but running in circles? <strong>It's time for Sage.</strong> Finding stuff easy to
-      start, but hard to finish? <strong>It's time for Sage.</strong> Things taking longer than they should?
-      <strong>It's time for Sage.</strong> Info increasingly scattered across different apps? <strong>It's
-        time for Sage.</strong> Subscription fees keep adding up? <strong>It's time for Sage.</strong>
-      Growing into dysfunction? <strong>It's time for Sage.</strong> Tired of looking disorganized in front of
-      clients? <strong class="highlight highlight--time">It's time for Sage.</strong>
-      </p>
+
+      Running in circles? **It's time for Sage.** 
+
+      Finding AI easy to start with, but what's the point? **It's time for Sage.** 
+
+      Frustrated parents want AI but you can't supervise? **It's time for Sage.** 
+
+      More and more students cheating with ChatGPT? **It's time for Sage.** 
+
+      Subscription fees keep adding up? **It's time for Sage.** 
+
+      Growing into AI education dysfunction? **It's time for Sage.** 
+
+      Tired of feeling disorganized and unproductive? **It's time for Sage.**

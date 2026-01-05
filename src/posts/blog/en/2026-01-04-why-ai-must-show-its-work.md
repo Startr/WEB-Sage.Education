@@ -11,20 +11,19 @@ date: 2026-01-04T15:08:00.000-01:00
 rating: 5
 summary: "We need systems that allow educators to see not just what students
   produce, but how they interact with knowledge. We need AI tools that show
-  their work. But current educational AI tools present something different - not
-  just a new method, but a fundamental shift in the relationship between
-  teacher, student, and knowledge. We need to adapt. Let's look at what needs to
-  change. "
+  their work. But current educational AI tools present something different - a
+  fundamental shift in the relationship between teacher, student, and knowledge.
+  We need to adapt and our tools needs to change. "
 eleventyNavigation:
   parent: Blog
 ---
 ### The Invisible Learner
 
-During my violin lessons, my teacher often stood behind me. Her hands corrected my posture; her voice guided my bow arm. She couldn’t see my fingers clearly from there, but she could hear the result: the thin sound, the waver, the sudden clarity when everything aligned. She taught by listening to what the instrument revealed about my process. The angle of attack, pressure on the string, and shifting weight in my fingers were all hidden—audible only in their consequence.
+During my violin lessons, my teacher often stood behind me. Her hands corrected my posture; her voice guided my bow arm. She couldn’t see my fingers clearly from where she stood, but she could hear the result: the thin sound, the wavering harmonics, the sudden clarity when everything aligned. She taught by listening to what the instrument revealed about my process. The angle of attack, pressure on the string, and shifting weight in my fingers were all hidden, audible only in their consequence.
 
 
 
-Now, the scene has changed. Today, I watch students learn with tools that have no sound at all.
+Now, the education scene has changed. Today, I watch students learn with tools that have no sound at all.
 
 
 
@@ -36,7 +35,7 @@ This is the central illusion of our new educational age: that learning can be bo
 
 
 
-As an IB public school educator with 20 years of experience and a curriculum designer, I’ve witnessed tools come and go. Each promised efficiency, personalization, and engagement. But this generation of AI tools presents something different - not just a new method, but a fundamental shift in the relationship between teacher, student, and knowledge. When a student uses an AI tutor, we see only what they produce with it, not how they arrived there. Did they struggle with a concept for thirty minutes before asking for help? Did they blindly accept a generated summary without questioning its gaps? Did they use the tool to avoid the very cognitive struggle that leads to understanding?
+As an IB public school educator with 20 years of experience and a curriculum designer, I’ve witnessed tools come and go. Each promised efficiency, personalization, and engagement. But this generation of AI tools presents something different: not just a new method, but a fundamental shift in the relationship between teacher, student, and knowledge. When a student uses an AI tutor, we see only what they produce with it, not how they arrived there. Did they struggle with a concept for thirty minutes before asking for help? Did they blindly accept a generated summary without questioning its gaps? Did they use the tool to avoid the very cognitive struggle that leads to understanding?
 
 
 
@@ -44,11 +43,11 @@ The danger isn’t that these tools are ineffective. In many ways, they’re rem
 
 
 
-When describing meaningful learning, I often think of Tara Westover’s description of education: “a process of self-discovery, of developing a sense of yourself and what you think.” In her memoir, Educated, she describes the transformative power of gaining knowledge—it happens in the wrestling, in the wrong turns, in the moments of confusion that precede clarity. However, when AI smooths those edges automatically, it doesn’t just accelerate learning; it potentially bypasses the formation of the learner altogether. If educators can’t see those moments of struggle, we lose our ability to intervene meaningfully. We can’t celebrate a breakthrough we didn’t witness, or address a misconception that never surfaced.
+When describing meaningful learning, I often think of Tara Westover’s description of education: “a process of self-discovery, of developing a sense of yourself and what you think.” In her memoir, Educated, she describes the transformative power of gaining knowledge: it happens in the wrestling, in the wrong turns, in the moments of confusion that precede clarity. However, when AI smooths those edges automatically, it doesn’t just accelerate learning; it potentially bypasses the formation of the learner altogether. If educators can’t see those moments of struggle, we lose our ability to intervene meaningfully. We can’t celebrate a breakthrough we didn’t witness, or address a misconception that never surfaced.
 
 
 
-The critique of “designed for the dump” culture applies: systems that conceal critical externalities - in this case, the cognitive process. AI learning tools produce clean outputs, hiding the essential, messy work of understanding and risking cognitive planned obsolescence: learners can perform with AI but lack durable understanding.
+The critique of “designed for the dump” culture applies here: systems that conceal critical externalities, in this case, the cognitive process. AI learning tools produce clean outputs, hiding the essential, messy work of understanding and risking "cognitive planned obsolescence": learners can perform with AI but lack durable understanding.
 
 
 
@@ -90,7 +89,7 @@ Some will say this sounds like surveillance. But it is not. It restores the teac
 
 
 
-The best learning has always been a conversation between student and material, between teacher and learner, between old understanding and new insight. AI tools that hide the learner’s side of this conversation ultimately impoverish education. They create what Youtuber Justin Sung called passengers in their own learning: students carried along by algorithms rather than developing their own navigational skills.
+The best learning has always been a conversation between student and material, between teacher and learner, between old understanding and new insight. AI tools that hide the learner’s side of this conversation ultimately impoverish education. They create what Youtuber Justin Sung calls "passengers in their own learning": students carried along by algorithms rather than developing their own navigational skills.
 
 
 

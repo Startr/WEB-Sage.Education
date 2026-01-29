@@ -7,8 +7,9 @@ tags:
   - ""
 date: 2026-01-05T13:55:00.000-01:00
 rating: 5
-summary: AI in education should avoid giving mere answers and instead foster
-  true understanding by revealing possibilities and paths.
+summary: Educational AI should avoid giving only answers. Instead it should
+  focus on fostering real understanding by showing students different
+  possibilities and paths.
 eleventyNavigation:
   parent: Blog
 ---
@@ -18,7 +19,7 @@ I remember the first time I held a violin. I was seven, and the instrument felt 
 
 Twenty-eight years later, as an educator watching AI enter classrooms, I feel that same mixture of anticipation and unease. The promise of AI is extraordinary: personalized tutors for every student, instant feedback, and knowledge organized and accessible. But I’ve also seen what happens when tools promise understanding without requiring the learner to navigate. I’ve watched bright, curious students interact with AI learning assistants and emerge with polished essays and perfect quiz scores, yet they are unable to explain the concepts behind their answers. They’ve gained the product of learning but missed the process.
 
-This illusion of understanding — the risk of seeming to know without truly learning— is the key challenge educators face as opaque AI tools proliferate in education.
+This illusion of understanding - the risk of seeming to know without truly learning - is the key challenge educators face as opaque AI tools proliferate in education.
 
 ## The Geography We Cannot Feel
 
@@ -34,27 +35,23 @@ The problem deepens when we consider accessibility. The activist Annie Leonard e
 
 In education, we’re creating a similar dynamic. AI tools are often:
 
-* Proprietary and expensive, locking public schools and lower-income districts out
-* Algorithmically opaque, so neither teachers nor students know why an AI suggests certain resources or grades work a certain way
-* Designed for engagement metrics rather than learning outcomes, optimizing for time-on-task rather than understanding
+* **Proprietary and expensive**, locking public schools and lower-income districts out
+* **Algorithmically opaque**, so neither teachers nor students know why an AI suggests certain resources or grades work a certain way
+* **Designed for engagement metrics rather than learning outcomes**, optimizing for time-on-task rather than understanding
 
 OpenAI, Google, and Anthropic are offering US schools free AI, which is great. However, they force the adoption of standardized solutions that don’t meet specific security, privacy, or teaching needs and are potentially creating vendor lock-in.  Once embedded in proprietary ecosystems, schools face limited bargaining power and migration challenges, risking infrastructure costs if vendors change terms or discontinue services.
 
-Just as “Designed for the Dump” describes how extraction, production, and disposal happen “outside of our field of vision,” much AI development occurs in Silicon Valley boardrooms far from the classrooms where these tools are being used. The result are tools that may dazzle but don’t necessarily educate, and that risk widens the very gaps they promise to close.
+Just as in Annie Leonard's “Designed for the Dump” lesson describes how extraction, production, and disposal happen “outside of our field of vision,” much AI development occurs in Silicon Valley boardrooms far from the classrooms where these tools are being used. The result are tools that may dazzle but don’t necessarily educate, and that risk widens the very gaps they promise to close.
 
-\## The Choice Before Us
+## The Choice Before Us
 
 I still teach violin. Last week, a student asked me why we bother learning scales when apps can play any melody perfectly. I took her hand and placed it on my violin as I played a note. “Feel that?” I asked. She nodded. “The vibration, the resonance - that’s yours. No app can give you that. It can only show you what’s possible.”
 
 AI in education should avoid giving mere answers and instead foster true understanding by revealing possibilities and paths. To fulfill its promise, AI’s benefits must empower all students in every classroom.
 
-
-
 - - -
 
-I
-
-sabelle Plante is Co-founder of Sage.Education and CAO of Startr LLC. She writes about the intersection of technology, pedagogy, and equity.
+Isabelle Plante is Co-founder of Sage.Education and CAO of Startr LLC. She writes about the intersection of technology, pedagogy, and equity.
 
 At Sage.Education, we argue that learners must actively build understanding, not passively receive information. Our maker-minded approach to AI in education counters the illusion of understanding by foregrounding agency, transparency, accessibility, and diversity.
 

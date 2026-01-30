@@ -121,7 +121,7 @@ templateEngineOverride: md
         outline-offset: -0.6em;">
 </video>
 
-## [**Unlock**](/Sign-up-Now) limitless learning with [**Sage.Education&nbsp;AI**](/Sign-up-Now).  {style="--size:3em; --grad-color:black;"}
+## [**Unlock**](https://sage.education/Sign-up-Now) limitless learning with [**Sage.Education&nbsp;AI**](https://sage.education/Sign-up-Now).  {style="--size:3em; --grad-color:black;"}
 
 ## Learn to harness **AI**'s power to **create** in new ways & prepare for **change** today  
 

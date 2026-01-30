@@ -27,14 +27,18 @@ sections:
           **Sage.Education fits your classroom**, not the other way around. **Customize everything.** Give different groups different AIs. Switch **AI models** on the fly to compare how they answer. Build your own chatbots.**Work the way you want.**
 
           **We believe you should have the freedom to change and control your tools.**        
-          <dl>
-            <dt>
-              <strong>Izzy Plante</strong>, <a href="mailto:izzy@sage.is">izzy@sage.is</a>
-            </dt>
-            <dd>
-              <em>Co-founder &amp; CEO</em>
-            </dd>
-          </dl>
+          <div style="--d:flex; --ai:center; --jc:flex-end; --gap:0.75em; --mt:1rem; --fw:wrap;">
+            <dl style="--m:0">
+              <dt>
+                <strong>Izzy Plante</strong>, <a href="mailto:izzy@sage.is">izzy@sage.is</a>
+              </dt>
+              <dd>
+                <em>Co-founder &amp; CEO</em>
+              </dd>
+            </dl>
+            <img src="https://sage.is/assets/images/general/ip-avatar.jpg" alt="Izzy Plante"
+              style="--h:3rem; --w:3rem; --d:inline-flex; --br:100%; --p: 0;--m: 0 1em;">
+          </div>
 
   - id: features-home
     wrapperClass: "statement space-top--xxx-large wow animate__animated animate__fadeInUp"
@@ -72,7 +76,7 @@ sections:
     h2Id: "its-time"
     h2Class: "wow animate__animated animate__fadeIn"
     headerContent: |
-      <a href="/posts/" 
+      <a href="https://sage.education/Sign-up-Now" 
         style="
         --d:block;
         --m:2rem auto;

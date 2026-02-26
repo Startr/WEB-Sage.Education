@@ -18,7 +18,7 @@ summary: >-
 eleventyNavigation:
   parent: Blog
 ---
-*Prepared for the \[[2026-02-26|safe-trace-website]] deployment meeting with Amalia. See also: \[[lovable-local-dev-setup|Equipping the Wand: Local Development Setup]].*
+*Prepared for the safe-trace-website deployment meeting with Amalia. See also: [Equipping the Wand: Local Development Setup](https://sage.education/posts/blog/en/2026-02-26-equipping-the-wand-local-development-for-a-lovable-project/) .*
 
 - - -
 

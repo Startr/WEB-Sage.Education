@@ -7,37 +7,38 @@ faqs:
 
       Sage.Education addresses __3 critical gaps__ in AI education adoption and implementation:
 
-        - Sage addresses *Institutional rigidity due to vendor lock-in and compliance risks.*
+        - Sage addresses _institutional rigidity_ due to vendor lock-in and compliance risks.
 
-      Existing AI education platforms force schools into standardized, one-size-fits-all solution that don't accommodate their specific security, privacy, and teaching requirements, while creating vendor lock-in dependency.
+      Existing AI education platforms force schools into static, one-size-fits-all solutions that don't accommodate their specific security, privacy, and teaching requirements, while creating vendor lock-in dependency.
 
-      Standardized AI platforms prioritize commercial scalability over educational needs, perpetual subscription costs and dependency on vendor-controlled creating infrastructure. Schools lose data sovereignty as student information becomes subject to foreign jurisdictions and vendor policies. Once embedded in proprietary ecosystems, schools face constrained negotiations and migration difficulties, risking their entire AI infrastructure when vendors change terms or discontinue services.
+      Big AI platforms prioritize commercial scalability over educational needs, perpetual subscription costs and dependency on vendor-controlled creating infrastructure. Schools lose data sovereignty as student information becomes subject to foreign jurisdictions and vendor policies. Once embedded in proprietary ecosystems, schools face constrained negotiations and migration difficulties, risking their entire AI infrastructure when vendors change terms or discontinue services.
 
-      We strongly believe education should be open, enabling, and collaborative. Sage.Education is licensed under the AGPL-3, making all source code available to users, with the expectation that any derived works will also remain free and open under the same AGPL terms.
+      We strongly believe education should be __open, enabling, and collaborative.__ Sage.Education is licensed under the AGPL-3, making all source code available to users, with the expectation that any derived works will also remain free and open under the same AGPL terms.
 
-      Because we license our AI platform under the AGPL license, if you decide to host your own AI instance on premise, you can decide at any point to manage it yourself without continuing to pay on-going management fees. In fact, if you have the expertise you can access the full code base free of charge!
+      Because we license our AI platform under the AGPL license, if you decide to host your own AI instance on premise, you can decide at any point to manage it yourself without continuing to pay on-going management fees. In fact, if you have the expertise you can always access the full code base free of charge!
 
-      This open approach ensures data privacy compliance while offering security and flexibility tailored to institutional needs.
+      This open approach ensures data privacy & compliance while offering security and flexibility tailored to institutional needs.
 
-        - Sage addresses *Educator disempowerment from limited oversight and inflexible tools.*
+        - Sage addresses _educator disempowerment_ from limited oversight and inflexible tools.
 
-      Existing AI education platforms obscure students’ AI usage from educators. Educators are limited by inflexible AI tools that offer little to no ability to scaffold how students use and engage with AI.
+      Existing AI education platforms obscure students' AI usage from educators. Educators are limited by inflexible AI tools that offer little to no ability to scaffold how students use and engage with AI.
 
-      Without visibility into student AI usage, teachers cannot effectively assess, guide, or provide targeted feedback. The inability to scaffold AI interactions leaves students navigating AI independently, risking over-reliance, over-trusting, and ethical ambiguities around academic integrity.
+      Without visibility into student AI usage, teachers cannot effectively assess, guide, or provide targeted feedback. The inability to scaffold AI interactions leaves students at risk. Neglectful AI use leads to over-reliance, ignorance, and ambiguities around academic ethics and integrity.
 
-      Sage.Education offers granular user group management, allowing educators to assign permission and limit access to specific resources or actions by grade, class, or individual learner. Educators can switch AI models mid-chat, compare outputs side-by-side, build custom models, oversee student usage, and create curated knowledge bases.
+      Sage.Education offers granular __user group management__, allowing educators to assign permission and limit access to specific resources or actions by grade, class, or individual learner. Educators can __use multiple AIs__ in a single chat, compare AI outputs side-by-side, build __custom models & agents__, oversee student usage, and create curated knowledge bases.
 
-      The adjustable framework enables modification of AI complexity levels, access permissions, and feedback mechanisms.
+      Sage.Education's AI platform enables easy and fast modification of AI complexity levels, access permissions, and feedback mechanisms.
 
-        - Sage addresses *Student cognitive dependency caused by learning shortcuts that erode critical thinking.*
+        - Sage.Education addresses _learned helplessness_ caused by shortcuts that erode critical thinking.
 
-      Existing AI education tools promote passive consumption over active learning, replacing effortful cognitive processing with non-editable, ready-made notes and answers.
+      Existing AI education tools promote passive consumption over active learning, replacing effortful cognition with static _non-editable, ready-made notes and answers._
 
-      When students bypass effortful cognitive processes, they sacrifice the transformation of information into lasting understanding. Non-editable AI outputs strip learners of independent thought and iterative synthesis, forcing passive consumption over creative engagement This erodes critical thinking, intellectual resilience, motivation, and long-term retention.
+      When students bypass effortful cognitive processes, they sacrifice the transforming information into lasting understanding. Non-editable AI outputs strip learners of independent thought and iterative synthesis, forcing _passive consumption_ over __creative engagement__. This erodes critical thinking, intellectual resilience, motivation, and long-term retention.
 
-      Sage.Education provides real-time collaborative AI spaces and step-by-step conversation map overviews, giving educators actionable insight into student-AI interactions. This enables teachers to monitor, guide, and support students' AI use, transforming it from a learning shortcut into a supportive educational tool.
+      Sage.Education provides __real-time collaborative AI__ spaces and step-by-step __conversation map overviews__, giving educators actionable insight into student-AI interactions. This enables teachers to __monitor, guide, and support students__' AI use, transforming it from a learning shortcut into a supportive educational tool.
 
-      We shift the focus from AI outputs to cognitive processes, helping educators foster healthy, ethical AI literacy that reinforces genuine learning.
+      We shift the focus from AI outputs to real learning with AI, helping educators foster healthy, ethical AI literacy that reinforces genuine learning.
+      
   - id: is_privacy_compliant
     question: "Is Sage.Education compliant with privacy regulations?"
     answer: |
@@ -51,37 +52,47 @@ faqs:
   - id: means_your_data_is_safe
     question: "Is my data safe and private with Sage.Education?"
     answer: |
-      Yes, you data is safe and private. We protect you both with military grade encryption and no data you enter into Sage.Education is EVER used to train AI models without your consent. All your data will only be used by **your** organization, unless YOU choose to participate in one of our academic research studies.
+      Yes, your data is __safe and private__. We protect you with both _military grade encryption_ and no data you enter into Sage.Education is EVER used to train AI models without your consent. All your data will only be used by your organization, unless YOU choose to participate in one of our academic research studies.
 
       If you choose to participate in one of our academic or research programs, we will de-identify and anonymize all data and ensure that it is only used for the specific purposes of the research you have agreed to participate in.
 
-      We have a [full security write-up](https://startr.cloud/policies/security/#TODO) available on the Startr site. Startr is the company behind Sage.
+      We have a [full security write-up](https://startr.cloud/policies/security/#TODO) available on the Startr site. Startr LLC is the company behind Sage.Education's AI platform.
 
-      We take security very seriously, and we've built Sage to be secure by default. We use the latest security protocols, including **256-bit AES encryption** for all data at rest, and **TLS 1.2** for all data in transit. We also use **OAuth 2.0** for secure authentication. Moreover, for organizations that require it, we can provide **on-premises deployment** options to keep data entirely within your own infrastructure.
+      We take security very seriously, and we've built Sage to be __secure by default__. We use the latest security protocols, including **256-bit AES encryption** for all data at rest, and **TLS 1.2** for all data in transit. We also use **OAuth 2.0** for secure authentication. 
+      
+      Moreover, for organizations that require it, we can provide **on-premises deployment** options to keep data entirely within your own infrastructure.
+
   - id: is_backed_up_and_secure
     question: " Is Sage.Education's data stored and backed up?"
     answer: |
-      When you use Sage.Education there are two ways your data is stored. When you visit the Sage.Education website and sign-up or sign-in, data is stored in our private cloud. This data is securely backed up several times a day, and encrypted copies of those backups are stored both locally and off-site to further reduce points of possible failure. 
+      When you use Sage.Education there are two ways your data is stored. When you visit the Sage.Education website and sign-up or sign-in, data is stored in our private cloud. This data is securely __backed up several times a day__, and encrypted copies of those backups are stored both __locally and off-site__ to further reduce points of possible failure. 
 
-      When you chose to use our Sage.Education Workshop (the open source Sage.is AI UI platform) your data is backed-up either locally on your computers, if you  running locally. If you decide to have Sage.Education fully managed, then you can choose to have your data stored in multiple redundant data centers in specific geographic regions, or stored securely locally on-site.
+      When you chose to use our Sage.Education Workshop (the open source Sage.is AI UI platform) your data is __backed-up either locally__ on your computers, if you are running locally. 
+      
+      If you decide to have Sage.Education fully managed, then you can choose to have your data stored in multiple redundant data centers in specific geographic regions, or stored securely locally on-site.
+
   - id: no_advertising_commitment
     question: "Sage.Education *never* shares data with third-parties? *Never?*"
     answer: |
-      That's right! Sage.Education does not sell or rent data to third parties. 
+      That's right! Sage.Education **does not** _sell or rent data to third parties._ 
 
-      Sage.Education does not allow third-party tracking, advertisements, marketing, or promotions in our services ever.
+      Sage.Education **does not** allow _third-party tracking, advertisements, marketing, or promotions_ in our services ever. 
 
-      Unlike ChatGPT and other AI companies we will never permit contextual ads in Sage.Education services. We believe education should be free from commercial influence and distractions.
+      Unlike ChatGPT and other AI companies we will **never** permit _contextual ads_ in Sage.Education services.
+      
+      **We believe education should be free from commercial influence and distractions.**
   - id: lets_you_share
-    question: "Does Sage.Education have sharing and team capabilities? ?"
+    question: "Does Sage.Education have sharing and team capabilities?"
     answer: |
-      Yes, you can share your conversation chats with other Sage users. Click on the three-dot menu near the Controls and your avatar image, select "Share," and then "Copy Link." Send this link to other Sage users for them to read or clone.
+      Yes, you can **share** your conversation chats with other Sage users. 
+      
+      Click on the three-dot menu near the Controls and your avatar image, select "Share," and then "Copy Link." Send this link to other Sage users for them to read or clone.
 
-      You can also work collaboratively in real-time on Note documents in Sage. When you start a Note, you can select whether the Note's visibility is private or public and choose specific Groups to share it with. Additionally, you can chat with an AI while working collaboratively in Notes. 
+      You can also work **collaboratively** in real-time on Note documents in Sage. When you start a Note, you can select whether the Note's visibility is private or public and choose specific Groups to share it with. Additionally, you can chat with an AI while working collaboratively in Notes. 
   - id: new_features
     question: "Are there new Sage.Education features in the works?"
     answer: |
-      Yes! The Sage team has many exciting new updates we are working on. Some of these include:
+      Yes! The Sage team has many exciting **new updates** we are working on. Some of these include:
 
       - Collaboration Spaces with integrated AI
       - Dragging and dropping of Sage Notes into Sage Spaces
@@ -95,17 +106,17 @@ faqs:
 
       We update the Sage.Education website on an ongoing basis. 
 
-      Our Sage.is AI UI platform (what powers the Sage.Education AI Labs) is updated regularly with feature updates, new models, platform enhancements, security improvements, and performance optimizations.
+      Our Sage.is AI UI platform (what powers the Sage.Education AI Labs) is **updated regularly** with feature updates, new models, platform enhancements, security improvements, and performance optimizations.
   - id: lets_you_talk_to_our_founders
     question: "Can I ask the founders a question directly?"
     answer: |
-      **Absolutely.** Reach out to our Co-Founder and CEO Izzy Plante at [izzy@sage.is](mailto:izzy@sage.is), or our Co-Founder and CTO Alexander Somma at [alex@sage.is](mailto:alex@sage.is). They're hands-on with Sage.Education and love chatting about your vision—they handle their own inboxes (with a little Sage AI help), so you'll get a personal reply.
+      **Absolutely.** Reach out to our Co-Founder and CEO Isabelle Plante at [izzy@sage.is](mailto:izzy@sage.is), or our Co-Founder and CTO Alexander Somma at [alex@sage.is](mailto:alex@sage.is). We're hands-on with Sage.Education and love chatting about your vision. We handle our own inboxes (with a little Sage AI help), so you'll get a personal reply.
   - id: is_open_source
     question: "Is Sage.Education open-source? Can we self-host?"
     answer: |
-      Yes. Sage.Education is open‑source with a permissive license. You can self‑host in your VPC or run on‑prem. We also provide a fully managed option with the same security model and data ownership guarantees.
+      Yes! Sage.Education is **open-source** with a protective license. You can **self-host** in your VPC or run on-prem. We also provide a **fully managed option** with the same security model and data ownership guarantees.
   - id: lets_learn_more
-    question: "Can I learn more Sage.Education and the Sage.is AI UI platform?"
+    question: "Can I learn more Sage.Education and the Sage.is AI-UI platform?"
     answer: |
       You can read more about Sage.Education and Sage.is AI-UI here:
       - [https://docs.sage.education](https://docs.sage.education/) 

@@ -225,9 +225,24 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(devShortcodesMdPlugin);
   eleventyConfig.addPlugin(wikilinksPlugin);
 
+  // Image shortcode: {% img "src" "alt" "--maxw:20ch; --br:8px" %}
+  eleventyConfig.addShortcode("img", function(src, alt = "", style = "") {
+    const baseStyle = "--maxw:40ch; --d:block; --m:auto;";
+    const merged = style ? `${baseStyle} ${style}` : baseStyle;
+    return `<img src="${src}" alt="${alt}" loading="lazy" style="${merged}">`;
+  });
+
   eleventyConfig.addTransform("lazy-load-images", (content, outputPath) => {
     if (outputPath.endsWith(".html")) {
+      // Add lazy loading to images that don't already have it
       let out = content.replace(/<img(?!.*loading=)/g, '<img loading="lazy"');
+      // Add startr.style inline properties to images without a style attribute
+      out = out.replace(/<img(?![^>]*style=)([^>]*>)/g,
+        '<img style="--maxw:40ch; --d:block; --m:auto;"$1');
+      // Merge startr.style defaults into images that already have a style attribute
+      // but don't have --maxw set (avoids overriding shortcode or manual styles)
+      out = out.replace(/<img([^>]*?)style="(?!.*--maxw:)([^"]*)"([^>]*>)/g,
+        '<img$1style="--maxw:40ch; --d:block; --m:auto; $2"$3');
       const todoAnchorRegex = /href="#todo_([a-z0-9_]+)"/gi;
       const seen = new Set();
       let m;

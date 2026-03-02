@@ -1,6 +1,9 @@
 ---
 layout: layouts/blog.njk
 title: "An AI Edtech Success Story: Students Forge AI Ally, Conquer Space Challenge"
+hero: /assets/images/heroes/lego-robotics.jpg
+hero_alt: "Students competing in a LEGO robotics event"
+hero_caption: "Photo: U.S. Navy, Public domain"
 tags:
   - education
 date: 2025-05-14T11:05:00.000Z

@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+code, samp, time {
+    background: inherit !important;
+}
+
 html,
 body,
 dialog,
@@ -211,6 +215,16 @@ table {
   --space-xxx-large: 5rem;
   --transition: 0.1s ease;
   --transition-slow: 0.2s ease;
+
+  /* Tone back inline code */
+  --code: var(--selection);
+
+  /* Editorial typography */
+  --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-display: "Playfair Display", Georgia, serif;
+  --article-width: 80ch;
+  --article-line-height: 1.8;
+  --rule-color: #e2e2e2;
 }
 
 @media (min-width: 64em) {
@@ -1123,6 +1137,7 @@ li .dev-only-section {
   font-size: var(--font-size-x-small);
   font-weight: 600;
   letter-spacing: var(--letter-spacing);
+  line-height: 1.5;
   text-underline-offset: 0.0925rem;
   margin-bottom: -0.325rem;
 }
@@ -6137,7 +6152,8 @@ strong {
   }
 }
 
-code {
+code, samp, time {
+  color: inherit;
   -webkit-text-fill-color: inherit !important;
 }
 
@@ -6149,6 +6165,65 @@ blockquote {
   p {
     margin: auto;
   }
+}
+
+/* ── Editorial global utilities ── */
+
+h1,
+.footer__headline dt,
+.headline h3 {
+  font-family: var(--font-display);
+}
+
+blockquote:not(.blockquotes section blockquote) {
+  border-left: 3px solid currentColor;
+  padding-left: 1.5rem;
+  font-style: italic;
+}
+
+figcaption {
+  font-size: 0.85rem;
+  color: #777;
+  border-top: 1px solid var(--rule-color);
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.drop-cap > p:first-child::first-letter {
+  font-family: var(--font-display);
+  float: left;
+  font-size: 4.5rem;
+  line-height: 0.8;
+  padding-right: 0.12em;
+  font-weight: 700;
+}
+
+.pullquote {
+  border-top: 3px solid currentColor;
+  border-bottom: 3px solid currentColor;
+  padding: 1.2rem 0;
+  margin: 2rem auto;
+  text-align: center;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.35rem;
+  max-width: 36rem;
+}
+
+.byline {
+  text-align: center;
+  font-family: var(--font-family);
+  border-bottom: 1px solid var(--rule-color);
+  padding-bottom: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.note {
+  font-family: var(--font-family);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--rule-color);
+  padding-top: 1.2rem;
+  margin-top: 3rem;
 }
 
 html.is-changing .transition-fade {

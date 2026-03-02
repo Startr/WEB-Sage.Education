@@ -1,6 +1,9 @@
 ---
 layout: layouts/blog.njk
 title: Some insightful information for teachers navigating AI tools
+hero: /assets/images/heroes/classroom.jpg
+hero_alt: "Students learning with technology in a classroom"
+hero_caption: "Photo: Wikimedia Commons, CC BY-SA 4.0"
 tags:
   - education
 date: 2025-07-02T09:29:00.000Z

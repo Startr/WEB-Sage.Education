@@ -1,6 +1,9 @@
 ---
 layout: layouts/blog.njk
 title: Principles of LLM Prompting (for Teachers)
+hero: /assets/images/heroes/typewriter.jpg
+hero_alt: "A vintage typewriter on a desk"
+hero_caption: "Photo: Unsplash via Wikimedia Commons, CC0"
 tags:
   - teachers
   - AI

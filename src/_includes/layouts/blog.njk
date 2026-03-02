@@ -1,64 +1,103 @@
 {% extends "base.njk" %}
 
 {% block nav %}
-    {% include "components/main-nav.njk" %}
+    {% include "components/blog-nav.njk" %}
 {% endblock %}
 
 {% block main %}
-<main class="main" style="zoom:1.2">
-<section class="wow fadeIn" style="
-	--m: 2em auto;	
-	--bg:white;
-	--p:1.8em 3em;
-	--br:12px;
-	--shadow:5;
-	zoom:1.2;	
-	outline:#e6e6e6 dashed;
-	outline-offset: -0.6em;
-	--b-width:2px;
-	--w:80%;
-	--maxw:66rem;
-	--ai:center;">
-	<h1>{{ title }}</h1>
+{%- if hero %}
+{# ── Parallax hero layout ── #}
+<div class="hero-bg">
+  <img src="{{ hero }}" alt="{{ hero_alt or title }}" onload="this.classList.add('loaded')">
+</div>
 
-	<ul class="post-metadata">
-		<time
-			style="--c:black; --bgc:inherit;"
-			datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
-		{%- if page.data.author %}<li>Author: {{ page.data.author }}</li>{%- endif %}
-		{%- for tag in tags | filterTagList %}
-		{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-		<!--<li style="--ml:2rem"><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}
-		</li>-->
-		{%- endfor %}
-	</ul>
+<div class="hero-section">
+  <div class="masthead">
+    <h1><a href="/">Sage.Education</a></h1>
+    <div class="date">{{ page.date | readableDate }}</div>
+  </div>
+  <div class="hero-overlay">
+    {%- set firstTag = tags | filterTagList | first %}
+    {%- if firstTag %}
+    <div class="hero-label">{{ firstTag | upper }}</div>
+    {%- endif %}
+    <h1 class="hero-title">{{ title }}</h1>
+  </div>
+  {%- if hero_caption %}
+  <div class="hero-credit">{{ hero_caption }}</div>
+  {%- endif %}
+</div>
 
-	{{ content | safe }}
-</section>
-{%- if collections.all %}
-<section class="wow fadeIn" style="
-	  --m: 2rem auto;	
-	  --bg:white;
-	  --p:3em;
-	  --br:12px;
-	  --shadow:5;
-	  outline:#e6e6e6 dashed;
-	  outline-offset: -0.6em;
-	  --b-width:2px;
-	  --w:40%;
-	  --maxw:44rem;
-	  --ai:center;
-	  zoom:1.2;">
-	{%- set previousPost = collections.all | getPreviousCollectionItem(page) %}
-	{%- set nextPost = collections.all | getNextCollectionItem(page) %}
-	{%- if nextPost or previousPost %}
-	<ul class="links-nextprev">
-		{%- if previousPost and previousPost.data.title %}<li>Previous: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>
-		{% endif %}
-		{%- if nextPost and nextPost.data.title %}<li>Next: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
-	</ul>
-	{%- endif %}
-</section>
-{%- endif %}
+<div class="article-wrapper">
+  <article class="article-editorial">
+    <div class="byline">
+      <span class="author">{{ author or "Sage.Education" }}</span><br>
+      <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+      {%- for tag in tags | filterTagList %}
+        <span class="post-tag">{{ tag }}</span>
+      {%- endfor %}
+    </div>
+
+    <div class="article-body drop-cap">
+      {{ content | safe }}
+    </div>
+  </article>
+
+  {%- if collections.all %}
+  <nav class="article-nav">
+    {%- set previousPost = collections.all | getPreviousCollectionItem(page) %}
+    {%- set nextPost = collections.all | getNextCollectionItem(page) %}
+    {%- if nextPost or previousPost %}
+    <div class="nav-label">More from Sage.Education</div>
+    <ul>
+      {%- if previousPost and previousPost.data.title %}
+        <li><a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>
+      {% endif %}
+      {%- if nextPost and nextPost.data.title %}
+        <li><a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>
+      {% endif %}
+    </ul>
+    {%- endif %}
+  </nav>
+  {%- endif %}
+</div>
+
+{%- else %}
+{# ── Fallback for posts without hero image ── #}
+<main class="main">
+  <article class="article-editorial">
+    <div class="byline">
+      <span class="author">{{ author or "Sage.Education" }}</span><br>
+      <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+      {%- for tag in tags | filterTagList %}
+        <span class="post-tag">{{ tag }}</span>
+      {%- endfor %}
+    </div>
+
+    <h1>{{ title }}</h1>
+
+    <div class="article-body drop-cap">
+      {{ content | safe }}
+    </div>
+  </article>
+
+  {%- if collections.all %}
+  <nav class="article-nav">
+    {%- set previousPost = collections.all | getPreviousCollectionItem(page) %}
+    {%- set nextPost = collections.all | getNextCollectionItem(page) %}
+    {%- if nextPost or previousPost %}
+    <div class="nav-label">More from Sage.Education</div>
+    <ul>
+      {%- if previousPost and previousPost.data.title %}
+        <li><a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>
+      {% endif %}
+      {%- if nextPost and nextPost.data.title %}
+        <li><a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>
+      {% endif %}
+    </ul>
+    {%- endif %}
+  </nav>
+  {%- endif %}
 </main>
+{%- endif %}
 {% endblock %}

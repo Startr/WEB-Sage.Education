@@ -1,6 +1,9 @@
 ---
 layout: layouts/blog.njk
 title: Finding Our Voice within AI
+hero: /assets/images/heroes/microphone.jpg
+hero_alt: "Neumann U87 condenser microphone in a recording studio"
+hero_caption: "Photo: Wikimedia Commons, CC BY-SA 2.0"
 tags:
   - education
   - AI

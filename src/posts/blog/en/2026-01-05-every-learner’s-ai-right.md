@@ -7,6 +7,9 @@ tags:
   - ""
 date: 2026-01-05T13:55:00.000-01:00
 rating: 5
+hero: /assets/images/heroes/library.jpg
+hero_alt: "Bookshelves at Kawempe Community Library"
+hero_caption: "Photo: Wikimedia Commons, CC BY-SA 4.0"
 summary: Educational AI should avoid giving only answers. Instead it should
   focus on fostering real understanding by showing students different
   possibilities and paths.

@@ -1,6 +1,9 @@
 ---
 layout: layouts/blog.njk
 title: Embracing the Maker Mindset in AI Education
+hero: /assets/images/heroes/library.jpg
+hero_alt: "Bookshelves in a community library"
+hero_caption: "Photo: Wikimedia Commons, CC BY-SA 4.0"
 tags:
   - education
 date: 2025-06-12T10:53:00.000Z

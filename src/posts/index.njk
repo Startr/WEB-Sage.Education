@@ -8,89 +8,25 @@ eleventyNavigation:
 {% extends "base.njk" %}
 
 {% block nav %}
-    <input id="nav-active" type="checkbox">
-
-    <label id="nav-underlay" for="nav-active"></label>
-
-    <nav class="nav" style="zoom: 1.2;     --p: 0.4rem">
-        <div class="nav__container">
-            <div class="nav__logo">
-                <a href="/" class="icon icon--sage" aria-label="Sage">
-                    <img src="/assets/images/general/sage.webp" style="--w:2em; --h:2em; --m:-0.4em 0"
-                    alt="Sage Startr Logo">
-                    <strong>Sage.Education</strong>
-                </a>
-                <div class="nav__phrase">is <span class="highlight"></span>
-                </div>
-            </div>
-            <div class="nav__links" style="gap:1em">
-                {# Data-driven main navigation #}
-                {% for item in navigation.main %}
-                    {% if item.todo %}
-                        {% set note = item.todo_note or "" %}
-                        {% todo note %}
-                        <a href="{{ item.href }}">{{ item.title }}</a>{% endtodo %}
-                    {% else %}
-                        <a href="{{ item.href }}">{{ item.title }}</a>
-                    {% endif %}
-                {% endfor %}
-            </div>
-            <div class="nav__buttons">
-                <a class="nav__button nav__button--sage" href="https://sage.startr.cloud/" target="_blank">Sign in</a>
-                <a class="nav__button nav__button--signup" href="https://sage.education/Sign-up-Now" aria-label="Sign up free">
-                    <span style="--d:none; --d-md:inline-block">Apply to&nbsp;</span> Access Sage.Education</a>
-            </div>
-            <label class="nav__toggle" for="nav-active" aria-label="Nav Toggle" tabindex="0"></label>
-        </div>
-        <div class="nav__mobile">
-            {% for item in navigation.main %}
-                {% if item.todo %}
-                    {% set note = item.todo_note or "" %}
-                    {% todo note %}
-                    <a href="{{ item.href }}">{{ item.title }}</a>{% endtodo %}
-                {% else %}
-                    <a href="{{ item.href }}">{{ item.title }}</a>
-                {% endif %}
-            {% endfor %}
-        </div>
-    </nav>
+    {% include "components/main-nav.njk" %}
 {% endblock %}
 
 {% block main %}
-<main class="main" style="zoom:1.2">
-<div class="container" style="
-  --m: 1em auto;
-  --d:flex;
-  --fd:column;
-  --ai:center;">
-  <h1>
-    <strong>{{ title }}</strong>
-  </h1>
+<main class="main">
+<div class="posts-listing">
+  <h1>{{ title }}</h1>
 
   <h2>Latest Resources</h2>
   {% set postslist = collections.posts %}
   {% if postslist.length > 0 %}
     <ul class="posts-list">
       {%- for post in postslist -%}
-        {% if post.data.title and 'GitHub' not in post.data.tags %}
-          <li class="post-item"  class="wow fadeIn" style="
-                --m: 1em auto;
-                --scale-hvr:102%;
-                --bg:white;
-                --p:3em;
-                --br:12px;
-                --shadow:5;
-                outline:#e6e6e6 dashed;
-                outline-offset: -0.6em;
-                --b-width:2px;
-                --maxw: 80rem;
-                --ai:center;">
-            <h2 class="post-title">
+        {% if post.data.title %}
+          <li class="post-card">
+            <h3 class="post-title">
               <a href="{{ post.url }}">{{ post.data.title }}</a>
-            </h2>
-            <time 
-              style="--c:black; --bgc:inherit;"
-              class="post-date" datetime="{{ post.date | htmlDateString }}">
+            </h3>
+            <time class="post-date" datetime="{{ post.date | htmlDateString }}">
               {{ post.date | readableDate }}
             </time>
             {% if post.data.description %}
@@ -113,93 +49,6 @@ eleventyNavigation:
     <p>No posts found in this section.</p>
   {% endif %}
 
-  <h2>Github Posts</h2>
-  {% if postslist.length > 0 %}
-    <ul class="posts-list" style="--d:flex; --fw:wrap; --jc:space-around; --g:0.4rem; --maxw:80rem;">
-      {%- for post in postslist -%}
-        {% if post.data.title and 'GitHub' in post.data.tags %}
-          <li class="post-item"  class="wow fadeIn" style="
-                --scale-hvr:102%;
-                --bg:white;
-                --p:3em;
-                --br:12px;
-                --shadow:5;
-                outline:#e6e6e6 dashed;
-                outline-offset: -0.6em;
-                --b-width:2px;
-                --w:40%;
-                --maxw:66rem;
-                --ai:center;">
-            <h2 class="post-title">
-              <a href="{{ post.url }}">{{ post.data.title }}</a>
-            </h2>
-            <time 
-              style="--c:black; --bgc:inherit;"
-              class="post-date" datetime="{{ post.date | htmlDateString }}">
-              {{ post.date | readableDate }}
-            </time>
-            {% if post.data.description %}
-              <p class="post-description">{{ post.data.description }}</p>
-            {% elseif post.data.summary %}
-              <p class="post-description">{{ post.data.summary }}</p>
-            {% endif %}
-            {% if post.data.tags %}
-              <div class="post-tags">
-                {% for tag in post.data.tags | filterTagList %}
-                  <a href="/tags/{{ tag | slugify }}/" class="post-tag">{{ tag }}</a>
-                {% endfor %}
-              </div>
-            {% endif %}
-          </li>
-        {% endif %}
-      {%- endfor -%}
-    </ul>
-  {% else %}
-    <p>No Github posts found.</p>
-  {% endif %}
 </div>
-
-<style>
-  .posts-list {
-    list-style: none;
-    padding: 0;
-  }
-
-  .post-item {
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #eee;
-  }
-
-  .post-title {
-    margin-bottom: 0.5rem;
-  }
-
-  .post-date {
-    display: block;
-    font-size: 0.9rem;
-    color: #666;
-    margin-bottom: 0.5rem;
-  }
-
-  .post-description {
-    margin-top: 0.5rem;
-  }
-
-  .post-tags {
-    margin-top: 0.5rem;
-  }
-
-  .post-tag {
-    display: inline-block;
-    background: #f0f0f0;
-    padding: 0.2rem 0.5rem;
-    margin-right: 0.5rem;
-    border-radius: 3px;
-    font-size: 0.8rem;
-    text-decoration: none;
-    color: #666;
-  }
-</style>
 </main>
 {% endblock %}

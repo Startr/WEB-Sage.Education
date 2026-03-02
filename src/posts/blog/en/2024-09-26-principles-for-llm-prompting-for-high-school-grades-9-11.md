@@ -1,6 +1,9 @@
 ---
 layout: layouts/blog.njk
 title: Prompting for High Schoolers (Grades 9-11)
+hero: /assets/images/heroes/typewriter.jpg
+hero_alt: "A vintage typewriter on a desk"
+hero_caption: "Photo: Unsplash via Wikimedia Commons, CC0"
 tags:
   - "#student"
   - "#high-school"

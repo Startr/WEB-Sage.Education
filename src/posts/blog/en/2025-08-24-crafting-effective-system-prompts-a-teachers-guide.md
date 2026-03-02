@@ -1,6 +1,9 @@
 ---
 layout: layouts/blog.njk
 title: "Crafting Effective System Prompts: A Teacher's Guide"
+hero: /assets/images/heroes/typewriter.jpg
+hero_alt: "A vintage typewriter on a desk"
+hero_caption: "Photo: Unsplash via Wikimedia Commons, CC0"
 tags: education
 date: 2025-08-24T07:46:00.000+00:00
 rating: 5

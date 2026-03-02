@@ -1,7 +1,9 @@
 ---
 layout: layouts/blog.njk
-title: Teaching with Large Language Models (LLMs) - Strategies for High School
-  Educators
+title: Teaching with Large Language Models (LLMs) - Strategies for High School Educators
+hero: /assets/images/heroes/classroom.jpg
+hero_alt: "Students learning with technology in a classroom"
+hero_caption: "Photo: Wikimedia Commons, CC BY-SA 4.0"
 tags:
   - education
 date: 2024-10-27T15:10:00.000Z

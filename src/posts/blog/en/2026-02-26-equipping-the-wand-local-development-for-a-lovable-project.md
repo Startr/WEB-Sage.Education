@@ -1,6 +1,9 @@
 ---
 layout: layouts/blog.njk
 title: "Equipping the Wand: Local Development for a Lovable Project"
+hero: /assets/images/heroes/code.jpg
+hero_alt: "HTML and JavaScript code on a dark screen"
+hero_caption: "Photo: Wikimedia Commons, CC BY-SA 4.0"
 tags:
   - education
 date: 2026-02-26T12:08:00.000-01:00

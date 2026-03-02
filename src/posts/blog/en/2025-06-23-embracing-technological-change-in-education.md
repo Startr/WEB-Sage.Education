@@ -1,6 +1,9 @@
 ---
 layout: layouts/blog.njk
 title: Embracing Technological Change in Education
+hero: /assets/images/heroes/classroom.jpg
+hero_alt: "Students learning with technology in a classroom"
+hero_caption: "Photo: Wikimedia Commons, CC BY-SA 4.0"
 tags:
   - calculators AI technology education
 date: 2025-06-23T14:43:00.000Z

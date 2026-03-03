@@ -5,6 +5,9 @@ tags:
   - education
 date: 2025-08-03T16:04:00.000+00:00
 rating: 5
+hero: /assets/images/heroes/classroom.jpg
+hero_alt: "Students learning to code in a classroom setting"
+hero_caption: "Photo: Wikimedia Commons, CC BY-SA 4.0"
 summary: >-
   
 

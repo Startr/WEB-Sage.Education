@@ -1,6 +1,9 @@
 ---
 layout: layouts/blog.njk
 title: Big AI is Essentially Advertising in Disguise
+hero: /assets/images/heroes/ai-abstract.jpg
+hero_alt: "Abstract AI illustration"
+hero_caption: "Image: Public domain via Wikimedia Commons"
 tags:
   - advertising
   - AI rules

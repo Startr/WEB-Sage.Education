@@ -1,6 +1,9 @@
 ---
 layout: layouts/blog.njk
 title: The AI Gamble
+hero: /assets/images/heroes/dice.jpg
+hero_alt: "Colorful dice scattered on a surface"
+hero_caption: "Photo: Wikimedia Commons, CC BY-SA 4.0"
 tags:
   - education
   - AI

@@ -1,6 +1,9 @@
 ---
 layout: layouts/blog.njk
 title: The Power of the Maker Mindset in the Age of AI
+hero: /assets/images/heroes/library.jpg
+hero_alt: "Bookshelves in a community library"
+hero_caption: "Photo: Wikimedia Commons, CC BY-SA 4.0"
 tags:
   - education
   - AI

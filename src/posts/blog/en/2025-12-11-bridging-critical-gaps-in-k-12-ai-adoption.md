@@ -1,6 +1,9 @@
 ---
 layout: layouts/blog.njk
 title: Bridging Critical Gaps in K-12 AI Adoption
+hero: /assets/images/heroes/classroom.jpg
+hero_alt: "Students learning with technology in a classroom"
+hero_caption: "Photo: Wikimedia Commons, CC BY-SA 4.0"
 tags:
   - education
   - AI

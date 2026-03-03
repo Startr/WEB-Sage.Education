@@ -1,5 +1,9 @@
 ---
+layout: layouts/blog.njk
 title: "Be Nice to AI: It Might Just Make You Smarter"
+hero: /assets/images/heroes/classroom.jpg
+hero_alt: "Students learning with technology in a classroom"
+hero_caption: "Photo: Wikimedia Commons, CC BY-SA 4.0"
 tags:
   - student
   - AI

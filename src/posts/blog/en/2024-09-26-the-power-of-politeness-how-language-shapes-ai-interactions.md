@@ -1,6 +1,9 @@
 ---
 layout: layouts/blog.njk
 title: How Language Shapes AI Interactions
+hero: /assets/images/heroes/typewriter.jpg
+hero_alt: "A vintage typewriter on a desk"
+hero_caption: "Photo: Unsplash via Wikimedia Commons, CC0"
 tags:
   - teachers
   - education

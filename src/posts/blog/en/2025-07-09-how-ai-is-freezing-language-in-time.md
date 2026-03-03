@@ -1,6 +1,9 @@
 ---
 layout: layouts/blog.njk
 title: How AI is Freezing Language in Time
+hero: /assets/images/heroes/ai-abstract.jpg
+hero_alt: "Abstract AI illustration"
+hero_caption: "Image: Public domain via Wikimedia Commons"
 tags:
   - education
   - language

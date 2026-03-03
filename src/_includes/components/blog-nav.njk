@@ -1,0 +1,49 @@
+{# Slideout sidebar for blog article pages — CSS-only checkbox hack
+   Merges site-wide navigation with article sidebar #}
+<div id="nav-toggle">
+  <input type="checkbox" id="blog-nav-check" aria-label="Toggle navigation"/>
+  <span></span><span></span><span></span>
+  <label id="nav-scrim" for="blog-nav-check"></label>
+  <div id="nav-panel">
+    <div class="panel-masthead">
+      <a href="/" class="panel-logo">
+        <img src="/assets/images/general/sage.webp" alt="Sage">
+        Sage.Education
+      </a>
+    </div>
+
+    {# ── Site navigation ── #}
+    <nav class="panel-site-nav">
+      {% for item in navigation.main %}
+        {% if not item.todo %}
+        <a href="{{ item.href }}">{{ item.title }}</a>
+        {% endif %}
+      {% endfor %}
+      <div class="panel-cta">
+        <a href="https://sage.startr.cloud/" class="panel-signin" target="_blank" style="--d:flex;--jc:center;--ai:center;">Sign in</a>
+        <a href="https://sage.education/Sign-up-Now" class="panel-signup" target="_blank">Access Sage</a>
+      </div>
+    </nav>
+
+    {# ── Article list ── #}
+    <div class="panel-articles-label">Articles</div>
+    <ul>
+      {%- for post in collections.posts | reverse %}
+        {%- if post.data.title %}
+        <li{% if post.url == page.url %} class="is-current"{% endif %}>
+          {%- set postTags = post.data.tags | filterTagList %}
+          {%- if postTags.length %}
+          <panel-section>{{ postTags | first | upper }}</panel-section>
+          {%- endif %}
+          {%- if post.url == page.url %}
+          <current-article>{{ post.data.title }}</current-article>
+          {%- else %}
+          <a href="{{ post.url }}" class="panel-link">{{ post.data.title }}</a>
+          {%- endif %}
+        </li>
+        {%- endif %}
+      {%- endfor %}
+    </ul>
+    <a href="/posts/" class="panel-home">&larr; All Articles</a>
+  </div>
+</div>

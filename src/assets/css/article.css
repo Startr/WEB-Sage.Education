@@ -435,6 +435,24 @@
   transform: rotate(-0.6deg);
 }
 
+.masthead .masthead-actions {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 3;
+  gap: 0.45rem;
+}
+
+.masthead .masthead-actions .nav__button {
+  line-height: 1.9rem;
+  font-size: 0.7rem;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.masthead .masthead-actions .nav__button--signup {
+  background: var(--color-blue);
+}
+
 /* ════════════════════════════════════════
    PARALLAX HERO
    ════════════════════════════════════════ */
@@ -798,6 +816,7 @@ body:has(.hero-bg) .modal {
 
 .article-editorial code {
   font-size: 0.9em;
+  color: inherit;
 }
 
 /* Lists */
@@ -906,6 +925,17 @@ body:has(.hero-bg) .modal {
     font-size: 1.2rem;
   }
 
+  .masthead .masthead-actions {
+    position: static;
+    justify-content: center;
+    margin-top: 0.55rem;
+    flex-wrap: wrap;
+  }
+
+  .masthead .masthead-actions .nav__button {
+    line-height: 2rem;
+  }
+
   #nav-toggle {
     top: 0.8rem;
     left: 0.8rem;
@@ -966,6 +996,42 @@ body:has(.hero-bg) .modal {
 .posts-list {
   list-style: none;
   padding: 0;
+}
+
+.posts-search-tools {
+  display: grid;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.posts-search-label {
+  font-family: var(--font-family);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #666;
+}
+
+.posts-search-input {
+  width: 100%;
+  border: 1px solid var(--rule-color, #d9d9d9);
+  border-radius: 0;
+  padding: 0.55rem 0.7rem;
+  font-family: var(--font-family);
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  background: #fff;
+  color: #222;
+}
+
+.posts-search-input::placeholder {
+  color: #9a9a9a;
+}
+
+.posts-search-input:focus {
+  border-color: #111;
+  outline: none;
 }
 
 .post-card {

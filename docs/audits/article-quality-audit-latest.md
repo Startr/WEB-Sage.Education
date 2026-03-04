@@ -1,26 +1,26 @@
 # Article Quality Audit
 
-Generated: `2026-03-04T11:19:49+00:00`
+Generated: `2026-03-04T12:54:59+00:00`
 
 ## Summary
 
 - Articles audited: **27**
-- Average score: **73.9**
-- Range: **60 - 93**
-- Grade distribution: **A: 1, A-: 2, B: 10, B+: 2, B-: 5, C: 2, C+: 5**
+- Average score: **74.9**
+- Range: **60 - 96**
+- Grade distribution: **A: 1, A+: 1, A-: 2, B: 10, B+: 2, B-: 4, C: 2, C+: 5**
 
 ## Category Breakdown
 
 | Category | Pass | Info | Warn |
 |---|---:|---:|---:|
 | Em-Dash Density | 24 | 0 | 3 |
-| Image Assets | 26 | 0 | 1 |
-| Named Sources | 0 | 0 | 27 |
-| Opener Variety | 12 | 0 | 15 |
+| Image Assets | 27 | 0 | 0 |
+| Named Sources | 1 | 0 | 26 |
+| Opener Variety | 13 | 0 | 14 |
 | Paragraph Variation | 7 | 2 | 18 |
 | Passive Voice | 27 | 0 | 0 |
 | Product Pitch | 27 | 0 | 0 |
-| Rhetorical Restraint | 10 | 12 | 5 |
+| Rhetorical Restraint | 10 | 13 | 4 |
 | Sentence Variation | 21 | 5 | 1 |
 | Show vs. Tell | 25 | 2 | 0 |
 | Specificity | 7 | 7 | 13 |
@@ -35,11 +35,11 @@ Generated: `2026-03-04T11:19:49+00:00`
 
 ## Highest 5
 
+- `2025-02-21-intro-to-snap-procedural-music-creation-curriculum.md`: **96** (A+)
 - `2025-06-12-embracing-the-maker-mindset-in-ai-education.md`: **93** (A)
 - `2025-07-17-kids-and-ai-what-the-turing-lego-study-means-for-your-home-and-classroom.md`: **85** (A-)
 - `2026-01-05-every-learner’s-ai-right.md`: **85** (A-)
 - `2025-06-23-embracing-technological-change-in-education.md`: **82** (B+)
-- `2026-01-04-why-ai-must-show-its-work.md`: **82** (B+)
 
 ## All Articles
 
@@ -54,7 +54,6 @@ Generated: `2026-03-04T11:19:49+00:00`
 | `2026-02-26-the-muggle-proof-guide-to-hosting-lovable-on-cloudflare-pages.md` | 67 | C+ | 2307 |
 | `2024-09-26-be-nice-to-ai-it-might-just-make-you-smarter.md` | 71 | B- | 487 |
 | `2024-09-26-the-power-of-politeness-how-language-shapes-ai-interactions.md` | 71 | B- | 190 |
-| `2025-02-21-intro-to-snap-procedural-music-creation-curriculum.md` | 71 | B- | 4297 |
 | `2025-08-24-crafting-effective-system-prompts-a-teachers-guide.md` | 71 | B- | 468 |
 | `2025-12-11-bridging-critical-gaps-in-k-12-ai-adoption.md` | 71 | B- | 1486 |
 | `2024-09-26-principles-of-llm-prompting-for-teachers.md` | 75 | B | 1033 |
@@ -72,3 +71,4 @@ Generated: `2026-03-04T11:19:49+00:00`
 | `2025-07-17-kids-and-ai-what-the-turing-lego-study-means-for-your-home-and-classroom.md` | 85 | A- | 452 |
 | `2026-01-05-every-learner’s-ai-right.md` | 85 | A- | 986 |
 | `2025-06-12-embracing-the-maker-mindset-in-ai-education.md` | 93 | A | 1346 |
+| `2025-02-21-intro-to-snap-procedural-music-creation-curriculum.md` | 96 | A+ | 2784 |

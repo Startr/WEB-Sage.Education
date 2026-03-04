@@ -1,4 +1,6 @@
 const { DateTime } = require("luxon");
+const { spawnSync } = require("child_process");
+const path = require("path");
 const markdownItAnchor = require("markdown-it-anchor");
 const yaml = require("js-yaml");
 
@@ -17,6 +19,28 @@ const sectionizePlugin = require("./_plugins/eleventy-plugin-sectionize");
 const highlightPlugin = require("./_plugins/eleventy-plugin-highlight");
 
 module.exports = function(eleventyConfig) {
+  eleventyConfig.on("eleventy.before", () => {
+    if (process.env.SKIP_ARTICLE_AUDIT === "1") return;
+
+    const repoRoot = path.resolve(__dirname, "..");
+    const runner = path.join(repoRoot, "tools", "run-article-audit.py");
+    const pythonBin = process.env.PYTHON_BIN || "python3";
+
+    const result = spawnSync(pythonBin, [runner], {
+      cwd: repoRoot,
+      stdio: "inherit",
+    });
+
+    if (result.error) {
+      console.warn(`[audit] Unable to run article audit: ${result.error.message}`);
+      return;
+    }
+
+    if (result.status !== 0) {
+      console.warn(`[audit] Article audit exited with status ${result.status}`);
+    }
+  });
+
   // Environment setup
   const isDev = process.env.NODE_ENV !== 'production';
   // DRY helpers

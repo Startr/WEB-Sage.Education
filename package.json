@@ -17,6 +17,8 @@
     "format": "echo 'Prettier not configured yet'",
     "audit:fix": "bun audit --fix",
     "audit:check": "bun audit",
+    "audit:articles": "python3 tools/run-article-audit.py",
+    "build:noaudit": "cd src && SKIP_ARTICLE_AUDIT=1 NODE_ENV=production bunx @11ty/eleventy --output=../dist",
     "optimize": "bun run buildfresh:prod && echo 'Build optimized for production'",
     "install:bun": "bun install",
     "clean": "rm -rf node_modules && rm -f bun.lock bun.lockb && bun install"

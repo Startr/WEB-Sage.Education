@@ -138,3 +138,8 @@ out
 .yarn/install-state.gz
 .pnp.*
 src/sage.education/Screenshot 2024-08-23 at 11.02.10 AM.png
+
+# Local article-quality audit artifacts (synced outside git)
+docs/audits/*
+!docs/audits/
+!docs/audits/article-quality-audit-latest.md

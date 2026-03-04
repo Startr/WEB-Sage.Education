@@ -17,6 +17,11 @@
     <h1><a href="/"><img src="/assets/images/general/sage.webp" alt="Sage" class="masthead-logo">Sage.Education</a></h1>
     <div class="masthead-phrase"><span class="highlight">Resources</span></div>
     <div class="date">{{ page.date | readableDate }}</div>
+    <div class="masthead-actions nav__buttons">
+      <a class="nav__button nav__button--sage" href="https://sage.startr.cloud/" target="_blank">Sign in</a>
+      <a class="nav__button nav__button--signup" href="https://sage.education/Sign-up-Now" aria-label="Sign up free">
+        <span style="--d:none; --d-md:inline-block">Apply to&nbsp;</span> Access <span style="--d:none; --d-md:inline-block">Sage.Education</span></a>
+    </div>
   </div>
   <div class="hero-overlay">
     {%- set firstTag = tags | filterTagList | first %}

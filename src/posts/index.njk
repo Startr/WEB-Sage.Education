@@ -17,6 +17,22 @@ eleventyNavigation:
   <h1>{{ title }}</h1>
 
   <h2>Latest Resources</h2>
+  <div class="posts-search-tools">
+    <label for="posts-search" class="posts-search-label">Search articles</label>
+    <input
+      id="posts-search"
+      class="posts-search-input"
+      type="search"
+      placeholder="Search articles"
+      aria-label="Search articles"
+      autocomplete="off"
+      _="on keyup
+          if the event's key is 'Escape'
+            set my value to ''
+          end
+          show <li.post-card/> in .posts-list when its textContent.toLowerCase() contains my value.toLowerCase()"
+    >
+  </div>
   {% set postslist = collections.posts %}
   {% if postslist.length > 0 %}
     <ul class="posts-list">

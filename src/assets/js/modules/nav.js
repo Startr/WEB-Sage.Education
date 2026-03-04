@@ -1,14 +1,16 @@
 function ready() {
 
-  const navPhrase = document.querySelector('.nav__phrase');
+  const phraseTargets = document.querySelectorAll('.site-phrase .highlight');
 
-  if(navPhrase) {
+  if(phraseTargets.length) {
 
     let randomPhrase = 'Private by Design';
 
     if(window.phrase.length) randomPhrase = window.phrase[Math.floor(Math.random() * window.phrase.length)].phrase;
 
-    navPhrase.querySelector('span').textContent = randomPhrase;
+    phraseTargets.forEach((target) => {
+      target.textContent = randomPhrase;
+    });
 
     if(document.body.classList.contains('has-nav-phrase')) document.body.classList.remove('has-nav-phrase');
 

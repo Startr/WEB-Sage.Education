@@ -29,7 +29,9 @@ eleventyNavigation:
             <time class="post-date" datetime="{{ post.date | htmlDateString }}">
               {{ post.date | readableDate }}
             </time>
-            {% if post.data.description %}
+            {% if post.data.subheadline %}
+              <p class="post-description">{{ post.data.subheadline }}</p>
+            {% elseif post.data.description %}
               <p class="post-description">{{ post.data.description }}</p>
             {% elseif post.data.summary %}
               <p class="post-description">{{ post.data.summary }}</p>

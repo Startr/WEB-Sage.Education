@@ -15,6 +15,7 @@
 <div class="hero-section">
   <div class="masthead">
     <h1><a href="/"><img src="/assets/images/general/sage.webp" alt="Sage" class="masthead-logo">Sage.Education</a></h1>
+    <div class="masthead-phrase"><span class="highlight">Resources</span></div>
     <div class="date">{{ page.date | readableDate }}</div>
   </div>
   <div class="hero-overlay">
@@ -55,10 +56,22 @@
     <div class="nav-label">More from Sage.Education</div>
     <ul>
       {%- if previousPost and previousPost.data.title %}
-        <li><a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>
+        {%- set previousDeck = previousPost.data.subheadline or previousPost.data.description or previousPost.data.summary %}
+        <li>
+          <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>
+          {%- if previousDeck %}
+          <p class="article-nav-summary">{{ previousDeck }}</p>
+          {%- endif %}
+        </li>
       {% endif %}
       {%- if nextPost and nextPost.data.title %}
-        <li><a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>
+        {%- set nextDeck = nextPost.data.subheadline or nextPost.data.description or nextPost.data.summary %}
+        <li>
+          <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+          {%- if nextDeck %}
+          <p class="article-nav-summary">{{ nextDeck }}</p>
+          {%- endif %}
+        </li>
       {% endif %}
     </ul>
     {%- endif %}
@@ -96,10 +109,22 @@
     <div class="nav-label">More from Sage.Education</div>
     <ul>
       {%- if previousPost and previousPost.data.title %}
-        <li><a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>
+        {%- set previousDeck = previousPost.data.subheadline or previousPost.data.description or previousPost.data.summary %}
+        <li>
+          <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>
+          {%- if previousDeck %}
+          <p class="article-nav-summary">{{ previousDeck }}</p>
+          {%- endif %}
+        </li>
       {% endif %}
       {%- if nextPost and nextPost.data.title %}
-        <li><a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>
+        {%- set nextDeck = nextPost.data.subheadline or nextPost.data.description or nextPost.data.summary %}
+        <li>
+          <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+          {%- if nextDeck %}
+          <p class="article-nav-summary">{{ nextDeck }}</p>
+          {%- endif %}
+        </li>
       {% endif %}
     </ul>
     {%- endif %}

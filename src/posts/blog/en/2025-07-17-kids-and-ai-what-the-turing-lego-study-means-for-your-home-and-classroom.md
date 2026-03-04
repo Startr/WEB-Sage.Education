@@ -1,6 +1,7 @@
 ---
 layout: layouts/blog.njk
 title: "Kids and AI: What the Turing-Lego study means for your home and classroom"
+subheadline: "In clear language, AI and their perceptions of it. The Alan Turing Institute and Lego investigated this and suggest we better consider children’s particular needs and rights when..."
 hero: /assets/images/heroes/lego-robotics.jpg
 hero_alt: "Students competing in a LEGO robotics event"
 hero_caption: "Photo: U.S. Navy, Public domain"

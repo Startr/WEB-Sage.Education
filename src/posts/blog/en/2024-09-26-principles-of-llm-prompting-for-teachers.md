@@ -1,6 +1,7 @@
 ---
 layout: layouts/blog.njk
 title: Principles of LLM Prompting (for Teachers)
+subheadline: "At classroom level, language models to create lesson plans, quizzes, and content tailored to your students. From being polite to breaking tasks into steps, these simple techniques..."
 hero: /assets/images/heroes/typewriter.jpg
 hero_alt: "A vintage typewriter on a desk"
 hero_caption: "Photo: Unsplash via Wikimedia Commons, CC0"

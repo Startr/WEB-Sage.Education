@@ -5,6 +5,7 @@
 {% endblock %}
 
 {% block main %}
+{%- set deck = subheadline or description %}
 {%- if hero %}
 {# ── Parallax hero layout ── #}
 <div class="hero-bg">
@@ -22,6 +23,9 @@
     <div class="hero-label">{{ firstTag | upper }}</div>
     {%- endif %}
     <h1 class="hero-title">{{ title }}</h1>
+    {%- if deck %}
+    <p class="hero-subheadline">{{ deck }}</p>
+    {%- endif %}
   </div>
   {%- if hero_caption %}
   <div class="hero-credit">{{ hero_caption }}</div>
@@ -75,6 +79,9 @@
     </div>
 
     <h1>{{ title }}</h1>
+    {%- if deck %}
+    <p class="article-subheadline">{{ deck }}</p>
+    {%- endif %}
 
     <div class="article-body drop-cap">
       {{ content | safe }}

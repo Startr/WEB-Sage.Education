@@ -14,11 +14,13 @@
 
     {# ── Site navigation ── #}
     <nav class="panel-site-nav">
+      <div style="--d:flex;--jc:space-evenly;--ai:center; --fd:reverse;">
       {% for item in navigation.main %}
         {% if not item.todo %}
         <a href="{{ item.href }}">{{ item.title }}</a>
         {% endif %}
       {% endfor %}
+      </div>
       <div class="panel-cta">
         <a href="https://sage.startr.cloud/" class="panel-signin" target="_blank" style="--d:flex;--jc:center;--ai:center;">Sign in</a>
         <a href="https://sage.education/Sign-up-Now" class="panel-signup" target="_blank">Access Sage</a>

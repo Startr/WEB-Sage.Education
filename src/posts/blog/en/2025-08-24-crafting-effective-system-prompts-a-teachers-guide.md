@@ -1,6 +1,7 @@
 ---
 layout: layouts/blog.njk
 title: "Crafting Effective System Prompts: A Teacher's Guide"
+subheadline: "Crafting Effective System Prompts: A Teacher's Guide explores what this shift means for classrooms, creators, and curious minds."
 hero: /assets/images/heroes/typewriter.jpg
 hero_alt: "A vintage typewriter on a desk"
 hero_caption: "Photo: Unsplash via Wikimedia Commons, CC0"

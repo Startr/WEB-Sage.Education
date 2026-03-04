@@ -1,6 +1,7 @@
 ---
 layout: layouts/blog.njk
 title: Pi MiniNet Server
+subheadline: "From the front lines, and Wi-Fi access point! 🌐✨ Set up Nginx for serving files and hostapd for creating a secure Wi-Fi hotspot. Perfect for DIY enthusiasts and makers! 💻📡"
 hero: /assets/images/heroes/raspberry-pi.jpg
 hero_alt: "Raspberry Pi 4 Model B circuit board"
 hero_caption: "Photo: Wikimedia Commons, CC BY-SA 4.0"

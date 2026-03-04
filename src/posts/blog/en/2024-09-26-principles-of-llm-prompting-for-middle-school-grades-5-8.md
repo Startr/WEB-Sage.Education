@@ -1,6 +1,7 @@
 ---
 layout: layouts/blog.njk
 title: Prompting for Middle Schoolers (Grades 5-8)
+subheadline: "In practical terms, Ready to boost your learning? Dive in and discover how good questions lead to great answers! This guide breaks down how large language models work and shows..."
 hero: /assets/images/heroes/typewriter.jpg
 hero_alt: "A vintage typewriter on a desk"
 hero_caption: "Photo: Unsplash via Wikimedia Commons, CC0"

@@ -489,6 +489,18 @@
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
 
+.hero-overlay .hero-subheadline {
+  max-width: 60rem;
+  margin: 0.75rem auto 0;
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  line-height: 1.45;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
 /* Photo credit in corner */
 .hero-credit {
   position: absolute;
@@ -548,6 +560,16 @@ body:has(.hero-bg) .modal {
   letter-spacing: -0.02em;
   color: #1a1a1a;
   -webkit-text-fill-color: #1a1a1a;
+}
+
+.article-editorial .article-subheadline {
+  max-width: 56rem;
+  margin: -0.8rem auto 2rem;
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #444;
 }
 
 .article-editorial h2 {
@@ -778,6 +800,12 @@ body:has(.hero-bg) .modal {
     font-size: 2.2rem;
   }
 
+  .hero-overlay .hero-subheadline {
+    font-size: 1.05rem;
+    line-height: 1.45;
+    margin-top: 0.65rem;
+  }
+
   .hero-overlay {
     padding: 2rem 1.25rem 2rem;
   }
@@ -802,6 +830,12 @@ body:has(.hero-bg) .modal {
 
   .article-editorial h1 {
     font-size: 2rem;
+  }
+
+  .article-editorial .article-subheadline {
+    font-size: 1.02rem;
+    line-height: 1.45;
+    margin: -0.3rem auto 1.5rem;
   }
 
   .article-editorial .drop-cap > p:first-child::first-letter {

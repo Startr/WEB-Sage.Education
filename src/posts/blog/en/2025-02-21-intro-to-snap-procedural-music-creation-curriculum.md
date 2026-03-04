@@ -1,6 +1,7 @@
 ---
 layout: layouts/blog.njk
 title: Intro to Snap! Procedural Music Creation Curriculum
+subheadline: "From the front lines, curriculum. Learn to make music by coding with Snap! as your tool. Start with simple sounds and build up to creating complex generative music. You'll be..."
 hero: /assets/images/heroes/microphone.jpg
 hero_alt: "Neumann U87 condenser microphone in a recording studio"
 hero_caption: "Photo: Wikimedia Commons, CC BY-SA 2.0"

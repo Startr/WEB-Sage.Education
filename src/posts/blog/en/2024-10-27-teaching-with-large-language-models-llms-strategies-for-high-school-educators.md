@@ -1,6 +1,7 @@
 ---
 layout: layouts/blog.njk
 title: Teaching with Large Language Models (LLMs) - Strategies for High School Educators
+subheadline: "From the front lines, In this article, we'll provide practical steps for high school teachers to effectively implement LLM-based teaching strategies that cultivate critical..."
 hero: /assets/images/heroes/classroom.jpg
 hero_alt: "Students learning with technology in a classroom"
 hero_caption: "Photo: Wikimedia Commons, CC BY-SA 4.0"

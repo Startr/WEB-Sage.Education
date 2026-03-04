@@ -1,6 +1,7 @@
 ---
 layout: layouts/blog.njk
 title: The Power of the Maker Mindset in the Age of AI
+subheadline: "At classroom level, active creators, using AI as a tool to bring their innovative ideas to life. This is the power of the maker mindset, a way of thinking that emphasizes action,..."
 hero: /assets/images/heroes/library.jpg
 hero_alt: "Bookshelves in a community library"
 hero_caption: "Photo: Wikimedia Commons, CC BY-SA 4.0"

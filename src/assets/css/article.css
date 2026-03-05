@@ -441,11 +441,12 @@
   right: 1rem;
   z-index: 3;
   gap: 0.45rem;
+  zoom: 1.2;
 }
 
 .masthead .masthead-actions .nav__button {
-  line-height: 1.9rem;
-  font-size: 0.7rem;
+  line-height: 2.2rem;
+  font-size: var(--font-size-xxxx-small);
   background: rgba(255, 255, 255, 0.92);
 }
 
@@ -933,7 +934,7 @@ body:has(.hero-bg) .modal {
   }
 
   .masthead .masthead-actions .nav__button {
-    line-height: 2rem;
+    line-height: 2.2rem;
   }
 
   #nav-toggle {

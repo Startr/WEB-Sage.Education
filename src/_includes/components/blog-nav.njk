@@ -8,28 +8,47 @@
     <div class="panel-masthead">
       <a href="/" class="panel-logo">
         <img src="/assets/images/general/sage.webp" alt="Sage">
-        Sage.Education
+        <strong>Sage.Education</strong>
       </a>
+      <div class="panel-phrase site-phrase">is <span class="highlight"></span></div>
     </div>
 
     {# ── Site navigation ── #}
     <nav class="panel-site-nav">
+      <div class="panel-site-links">
       {% for item in navigation.main %}
         {% if not item.todo %}
         <a href="{{ item.href }}">{{ item.title }}</a>
         {% endif %}
       {% endfor %}
+      </div>
       <div class="panel-cta">
-        <a href="https://sage.startr.cloud/" class="panel-signin" target="_blank">Sign in</a>
+        <a href="https://sage.startr.cloud/" class="panel-signin" target="_blank" style="--d:flex;--jc:center;--ai:center;">Sign in</a>
         <a href="https://sage.education/Sign-up-Now" class="panel-signup" target="_blank">Access Sage</a>
       </div>
     </nav>
 
     {# ── Article list ── #}
-    <div class="panel-articles-label">Articles</div>
-    <ul>
+    <div class="panel-articles-tools">
+      <div class="panel-articles-label">Articles</div>
+      <input
+        id="blog-nav-search"
+        class="panel-article-search"
+        type="search"
+        placeholder="Search articles"
+        aria-label="Search articles"
+        autocomplete="off"
+        _="on keyup
+            if the event's key is 'Escape'
+              set my value to ''
+            end
+            show <li/> in #blog-nav-article-list when its textContent.toLowerCase() contains my value.toLowerCase()"
+      >
+    </div>
+    <ul id="blog-nav-article-list">
       {%- for post in collections.posts | reverse %}
         {%- if post.data.title %}
+        {%- set postDeck = post.data.subheadline or post.data.description or post.data.summary %}
         <li{% if post.url == page.url %} class="is-current"{% endif %}>
           {%- set postTags = post.data.tags | filterTagList %}
           {%- if postTags.length %}
@@ -37,8 +56,14 @@
           {%- endif %}
           {%- if post.url == page.url %}
           <current-article>{{ post.data.title }}</current-article>
+          {%- if postDeck %}
+          <p class="panel-summary">{{ postDeck }}</p>
+          {%- endif %}
           {%- else %}
           <a href="{{ post.url }}" class="panel-link">{{ post.data.title }}</a>
+          {%- if postDeck %}
+          <p class="panel-summary">{{ postDeck }}</p>
+          {%- endif %}
           {%- endif %}
         </li>
         {%- endif %}

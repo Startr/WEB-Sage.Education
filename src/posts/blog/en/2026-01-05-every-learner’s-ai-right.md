@@ -1,6 +1,7 @@
 ---
 layout: layouts/blog.njk
 title: Every Learner’s AI Right
+subheadline: "In clear language, focus on fostering real understanding by showing students different possibilities and paths."
 tags:
   - education
   - AI

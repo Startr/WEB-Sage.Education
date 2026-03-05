@@ -1,6 +1,7 @@
 ---
 layout: layouts/blog.njk
 title: The Muggle-Proof Guide to Hosting Lovable on Cloudflare Pages
+subheadline: "From the front lines, You can think of Lovable as the Room of Requirement: you describe what you need, and a fully furnished Vite + React application materialises before your..."
 hero: /assets/images/heroes/code.jpg
 hero_alt: "HTML and JavaScript code on a dark screen"
 hero_caption: "Photo: Wikimedia Commons, CC BY-SA 4.0"

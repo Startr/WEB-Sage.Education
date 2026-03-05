@@ -1,6 +1,7 @@
 ---
 layout: layouts/blog.njk
 title: " Look Beyond Cookie-Cutter AI Education Tools"
+subheadline: "In clear language, solutions that do not empower educators to create and solve problems on their own. Instead, they lead to an overly trusting dependence on algorithms, stifling..."
 hero: /assets/images/heroes/classroom.jpg
 hero_alt: "Students learning with technology in a classroom"
 hero_caption: "Photo: Wikimedia Commons, CC BY-SA 4.0"

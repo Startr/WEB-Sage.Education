@@ -1,4 +1,6 @@
 const { DateTime } = require("luxon");
+const { spawnSync } = require("child_process");
+const path = require("path");
 const markdownItAnchor = require("markdown-it-anchor");
 const yaml = require("js-yaml");
 
@@ -17,6 +19,28 @@ const sectionizePlugin = require("./_plugins/eleventy-plugin-sectionize");
 const highlightPlugin = require("./_plugins/eleventy-plugin-highlight");
 
 module.exports = function(eleventyConfig) {
+  eleventyConfig.on("eleventy.before", () => {
+    if (process.env.SKIP_ARTICLE_AUDIT === "1") return;
+
+    const repoRoot = path.resolve(__dirname, "..");
+    const runner = path.join(repoRoot, "tools", "run-article-audit.py");
+    const pythonBin = process.env.PYTHON_BIN || "python3";
+
+    const result = spawnSync(pythonBin, [runner], {
+      cwd: repoRoot,
+      stdio: "inherit",
+    });
+
+    if (result.error) {
+      console.warn(`[audit] Unable to run article audit: ${result.error.message}`);
+      return;
+    }
+
+    if (result.status !== 0) {
+      console.warn(`[audit] Article audit exited with status ${result.status}`);
+    }
+  });
+
   // Environment setup
   const isDev = process.env.NODE_ENV !== 'production';
   // DRY helpers
@@ -225,9 +249,40 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(devShortcodesMdPlugin);
   eleventyConfig.addPlugin(wikilinksPlugin);
 
+    // Image shortcode: {% img "src" "alt" "--maxw:20ch; --br:8px" %}
+  eleventyConfig.addShortcode("img", function(src, alt = "", style = "") {
+    const baseStyle = "--maxw:40ch; --d:block; --m:auto;";
+    const merged = style ? `${baseStyle} ${style}` : baseStyle;
+    return `<img src="${src}" alt="${alt}" loading="lazy" style="${merged}">`;
+  });
+
+
   eleventyConfig.addTransform("lazy-load-images", (content, outputPath) => {
     if (outputPath.endsWith(".html")) {
-      let out = content.replace(/<img(?!.*loading=)/g, '<img loading="lazy"');
+      const isPostPage = /(^|\/)posts\//i.test(outputPath);
+      const postDefaultStyle = "--br: 1rem; --shadow: 6;";
+      let out = content.replace(/<img\b[^>]*>/gi, (imgTag) => {
+        let next = imgTag;
+
+        if (!/\sloading\s*=\s*["']/i.test(next)) {
+          next = next.replace(/<img\b/i, '<img loading="lazy"');
+        }
+
+        if (!isPostPage) return next;
+
+        if (/\sstyle\s*=\s*["']/i.test(next)) {
+          next = next.replace(/style\s*=\s*(["'])(.*?)\1/i, (match, quote, styleValue) => {
+            let mergedStyle = styleValue;
+            if (!/--br\s*:/i.test(mergedStyle)) mergedStyle = `${mergedStyle} --br: 1rem;`;
+            if (!/--shadow\s*:/i.test(mergedStyle)) mergedStyle = `${mergedStyle} --shadow: 6;`;
+            return `style=${quote}${mergedStyle.trim()}${quote}`;
+          });
+        } else {
+          next = next.replace(/<img\b/i, `<img style="${postDefaultStyle}"`);
+        }
+
+        return next;
+      });
       const todoAnchorRegex = /href="#todo_([a-z0-9_]+)"/gi;
       const seen = new Set();
       let m;

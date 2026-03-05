@@ -1,6 +1,7 @@
 ---
 layout: layouts/blog.njk
 title: Embracing Technological Change in Education
+subheadline: "Beyond the hype, ups and downs of technological advancements in the classroom for decades. Do you remember the calculator debates of the 1970s and 1980s? The concerns about skill..."
 hero: /assets/images/heroes/classroom.jpg
 hero_alt: "Students learning with technology in a classroom"
 hero_caption: "Photo: Wikimedia Commons, CC BY-SA 4.0"

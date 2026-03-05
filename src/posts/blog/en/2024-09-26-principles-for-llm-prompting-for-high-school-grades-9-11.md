@@ -1,6 +1,7 @@
 ---
 layout: layouts/blog.njk
 title: Prompting for High Schoolers (Grades 9-11)
+subheadline: "In practical terms, Tell me about World War II,\" you ask, \"What were the causes of World War II?\" Suddenly, the AI gives you clear, detailed answers that help you ace your..."
 hero: /assets/images/heroes/typewriter.jpg
 hero_alt: "A vintage typewriter on a desk"
 hero_caption: "Photo: Unsplash via Wikimedia Commons, CC0"

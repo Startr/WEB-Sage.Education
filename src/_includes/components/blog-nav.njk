@@ -13,22 +13,7 @@
       <div class="panel-phrase site-phrase">is <span class="highlight"></span></div>
     </div>
 
-    {# ── Site navigation ── #}
-    <nav class="panel-site-nav">
-      <div class="panel-site-links">
-      {% for item in navigation.main %}
-        {% if not item.todo %}
-        <a href="{{ item.href }}">{{ item.title }}</a>
-        {% endif %}
-      {% endfor %}
-      </div>
-      <div class="panel-cta">
-        <a href="https://sage.startr.cloud/" class="panel-signin" target="_blank" style="--d:flex;--jc:center;--ai:center;">Sign in</a>
-        <a href="https://sage.education/Sign-up-Now" class="panel-signup" target="_blank">Access Sage</a>
-      </div>
-    </nav>
-
-    {# ── Article list ── #}
+    {# ── Search ── #}
     <div class="panel-articles-tools">
       <div class="panel-articles-label">Articles</div>
       <input
@@ -45,6 +30,21 @@
             show <li/> in #blog-nav-article-list when its textContent.toLowerCase() contains my value.toLowerCase()"
       >
     </div>
+
+    {# ── Site navigation ── #}
+    <nav class="panel-site-nav">
+      <div class="panel-site-links">
+      {% for item in navigation.main %}
+        {% if not item.todo %}
+        <a href="{{ item.href }}">{{ item.title }}</a>
+        {% endif %}
+      {% endfor %}
+      </div>
+      <div class="panel-cta">
+        <a href="https://sage.startr.cloud/" class="panel-signin" target="_blank" style="--d:flex;--jc:center;--ai:center;">Sign in</a>
+        <a href="https://sage.education/Sign-up-Now" class="panel-signup" target="_blank">Access Sage</a>
+      </div>
+    </nav>
     <ul id="blog-nav-article-list">
       {%- for post in collections.posts | reverse %}
         {%- if post.data.title %}

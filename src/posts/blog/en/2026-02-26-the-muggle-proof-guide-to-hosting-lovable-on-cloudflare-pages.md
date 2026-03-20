@@ -1,13 +1,10 @@
 ---
+hero_caption: "Photo: Wikimedia Commons, CC BY-SA 4.0"
+hero_alt: HTML and JavaScript code on a dark screen
 layout: layouts/blog.njk
 title: The Muggle-Proof Guide to Hosting Lovable on Cloudflare Pages
-subheadline: "From the front lines, You can think of Lovable as the Room of Requirement: you describe what you need, and a fully furnished Vite + React application materialises before your..."
-hero: /assets/images/heroes/code.jpg
-hero_alt: "HTML and JavaScript code on a dark screen"
-hero_caption: "Photo: Wikimedia Commons, CC BY-SA 4.0"
 tags: education
 date: 2026-02-26T12:10:00.000-01:00
-rating: 5
 summary: >-
   You can think of Lovable as the Room of Requirement: you describe what you
   need, and a fully furnished Vite + React application materialises before your
@@ -19,13 +16,17 @@ summary: >-
 
 
   This guide walks through the entire pipeline, from Lovable's enchanted quill pushing code to GitHub, to Cloudflare Pages serving it worldwide, so that even a Muggle with a terminal could get it live.
+subheadline: "From the front lines, You can think of Lovable as the Room of
+  Requirement: you describe what you need, and a fully furnished Vite + React
+  application materialises before your..."
+rating: 5
 eleventyNavigation:
   parent: Blog
+hero: /assets/images/heroes/code.jpg
 ---
 *See also: [Equipping the Wand: Local Development Setup](https://sage.education/posts/blog/en/2026-02-26-equipping-the-wand-local-development-for-a-lovable-project/) .*
 
 - - -
-
 
 ![A fairy-tale castle perched above the clouds — your application, hosted for the world to see.](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Neuschwanstein_Castle_2024.jpg/400px-Neuschwanstein_Castle_2024.jpg)
 
@@ -37,13 +38,15 @@ This guide walks through the entire pipeline, from Lovable's enchanted quill pus
 
 Here's the thing about proper spells: they are *precise and deterministic*. Say "Lumos" and you get light. Every time. No ambiguity, no hallucination, no "I interpreted your request creatively." The commands in this guide — `bun run build`, `git push`, `npx wrangler pages deploy` — behave the same way. They are incantations with exact outcomes. Lovable, by contrast, is more like talking to a portrait on the wall: it understands you *mostly*, it's remarkably helpful, but it has its own interpretation of things, and occasionally it rearranges the furniture when you only asked it to open the window. That's the nature of AI — agents, LLMs, Lovable included. This guide is about the parts of the pipeline where magic is *reliable*.
 
----
+- - -
 
 ## I. The Enchanted Quill: How Lovable Syncs to GitHub
 
-Lovable's built-in GitHub integration is a **two-way sync** (a Protean Charm, of sorts). Every time you save in the Lovable editor, the changes are automatically pushed to your repo's `main` branch. Edit the code directly on GitHub or from a local IDE, and Lovable picks those changes back up, like Hermione's enchanted coins updating in real time across the DA.
+Lovable's built-in GitHub integration is a **two-way sync** (a Protean Charm, of sorts). Every time you save in the Lovable editor, the changes are automatically pushed to your repo's `main` branch. Edit and commit the code directly on GitHub or from a local IDE, and Lovable picks those changes back up, like Hermione's enchanted coins updating in real time across the DA.
 
-What lands in the repo is a standard **Vite + React + TypeScript** project:
+To link your Lovable code to your GitHub account, open your project, locate the GitHub icon (top right of the page with a cat silhouette) and follow the instructions to "Connect GitHub". You will need to log into your Github account and then choose which Loveable Repository you want to connect to Github. Once connected, in Loveable, click on the GitHub icon again and select: </> Edit in VS Code to deal with the next steps. 
+
+What lands in the GitHub repo is a standard **Vite + React + TypeScript** project:
 
 ```
 src/               # application source code
@@ -57,20 +60,24 @@ tailwind.config.ts # Tailwind CSS config
 
 > **Note:** Sync has a short delay. If it seems stuck, making a trivial edit (adding a comment, say) will nudge the quill into action.
 
----
+
+
+- - -
 
 ## II. The Sorting Hat: Cloudflare Pages Build Settings
 
 ![The Sorting Hat ceremony — get the configuration right and everything flows to the correct house.](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Creative-Tail-Halloween-witch-hat.svg/400px-Creative-Tail-Halloween-witch-hat.svg.png)
 
+Next step involves hooking up your GitHub build to be a static site. We will use Cloudflare. Setup and log into your (free) Cloudflare account. We'll use this to connect your GitHub repo to the web.
+
 When Cloudflare Pages receives your code, it needs to know how to build it. Think of this as the Sorting Hat ceremony — except unlike Lovable's AI, the Sorting Hat doesn't improvise. It doesn't decide your React app would look better in Svelte. You give it four exact values, and it performs the same build, on every push, forever. That predictability is the point. Get the configuration right and everything flows to the correct house. Get it wrong and you're stuck in limbo with a blank screen.
 
-| Setting | Value |
-|---|---|
-| **Framework preset** | None (or Vite) |
-| **Build command** | `bun install && bun run build` |
-| **Build output directory** | `dist` |
-| **Root directory** | `/` (default) |
+| Setting                    | Value                          |
+| -------------------------- | ------------------------------ |
+| **Framework preset**       | None (or Vite)                 |
+| **Build command**          | `bun install && bun run build` |
+| **Build output directory** | `dist`                         |
+| **Root directory**         | `/` (default)                  |
 
 Cloudflare Pages v3 ships with **Bun pre-installed** (v1.2.15), so there's no reason to use npm on the build server. `bun install` is ~10x faster, and `bun run build` invokes Vite identically. The build command handles both dependency installation and the production build in one shot — a single incantation, cleanly chained.
 
@@ -100,20 +107,20 @@ git push
 This is the Hermione approach: remove the ambiguity *before* it causes a problem. With no lockfile in the repo, Cloudflare skips auto-detection entirely and just runs your build command — which is exactly what you want.
 
 > **Note for Lovable:** Lovable may regenerate `package-lock.json` on its next commit. If it does, tell it explicitly: *"Do not commit package-lock.json."* You may also need to re-add it to `.gitignore` if Lovable overwrites that file. 
-> 
+>
 > This is one of those cases where a deterministic tool (Git) has to babysit a non-deterministic one (the AI).
 
 ### Environment Variables
 
 Set these in the Pages dashboard under **Settings > Environment Variables**:
 
-| Variable | Value | Why |
-|---|---|---|
+| Variable | Value                     | Why                                                                                                                                                              |
+| -------- | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `VITE_*` | any app-specific env vars | Vite operates like the Fidelius Charm for env vars — only those prefixed with `VITE_` are exposed to the client. Everything else stays secret-kept on the server |
 
 > **Tip:** Since Bun ships with Cloudflare Pages v3, you generally don't need to set `NODE_VERSION`. But if you hit compatibility issues, you can add a `.nvmrc` file to the repo root — a spell Hermione would definitely appreciate for its tidiness.
 
----
+- - -
 
 ## III. The Step-by-Step Ritual
 
@@ -136,19 +143,21 @@ That's it. The Floo connection is established.
 
 Once connected, **every push from Lovable to GitHub automatically triggers a Cloudflare Pages build**. No manual intervention required. This includes:
 
-- **Production deploys** from `main`
-- **Preview deploys** from other branches — like testing a spell in a practice room before performing it in the Great Hall
+* **Production deploys** from `main`
+* **Preview deploys** from other branches — like testing a spell in a practice room before performing it in the Great Hall
 
 Lovable saves > GitHub receives the push > Cloudflare builds and deploys. The whole chain fires automatically, like a line of dominoes charmed to fall in sequence. Every step is deterministic. Git doesn't "decide" whether to push. Cloudflare doesn't "feel like" building today. The pipeline does exactly what it was told, every single time — which is precisely why it's trustworthy in ways that an LLM-powered tool cannot be on its own.
 
 ### 3. Custom Domain (Claiming Your Address on the Map)
 
 **For an apex domain** (e.g. `safetrace.com`):
+
 1. The domain must be added as a Cloudflare zone — nameservers pointed to Cloudflare's, like registering your fireplace with the Ministry
 2. Pages dashboard > Custom domains > Set up a domain
 3. Cloudflare auto-creates the CNAME record
 
 **For a subdomain** (e.g. `app.safetrace.com`):
+
 1. Does NOT need to be a Cloudflare zone
 2. Add a CNAME record: `app` > `safe-trace-website.pages.dev`
 3. **Critical:** You must ALSO register it through the Pages dashboard first, or you'll trigger a 522 error — the web equivalent of running into the wall between Platforms 9 and 10 because you forgot to believe
@@ -169,7 +178,7 @@ The fix is a `public/_redirects` file in your repo:
 
 This tells Cloudflare: "No matter what path they request, serve `index.html` and let React Router handle the rest." Like repairing the Vanishing Cabinet — both ends of the connection now work properly.
 
----
+- - -
 
 ## IV. Will This Break the Lovable Sync? (No.)
 
@@ -177,18 +186,18 @@ This was the lingering concern: if Cloudflare Pages is connected to the same Git
 
 **The short answer is no.** Here's why:
 
-- **Cloudflare Pages is strictly read-only.** It reads your repo to build. It never writes a single commit, file, or branch. It's a spectator in the stands at a Quidditch match, not a player on the pitch.
-- **`npx wrangler pages deploy dist` bypasses GitHub entirely.** It uploads built assets directly to Cloudflare's edge. It doesn't know or care that GitHub exists.
-- **Multiple GitHub Apps coexist peacefully.** Lovable's App and Cloudflare's App each receive their own independent webhook deliveries. They don't cross streams. Lovable's own docs explicitly endorse deploying to Cloudflare Pages.
+* **Cloudflare Pages is strictly read-only.** It reads your repo to build. It never writes a single commit, file, or branch. It's a spectator in the stands at a Quidditch match, not a player on the pitch.
+* **`npx wrangler pages deploy dist` bypasses GitHub entirely.** It uploads built assets directly to Cloudflare's edge. It doesn't know or care that GitHub exists.
+* **Multiple GitHub Apps coexist peacefully.** Lovable's App and Cloudflare's App each receive their own independent webhook deliveries. They don't cross streams. Lovable's own docs explicitly endorse deploying to Cloudflare Pages.
 
 ### The Two Real Risks (and How Hermione Would Handle Them)
 
-| Risk | Severity | The Hermione Approach |
-|---|---|---|
-| **Lovable's AI modifying Cloudflare config files** | Low | If you add `_redirects`, `wrangler.toml`, or `_headers` to the repo, Lovable's AI *could* modify or delete them during a prompt — it doesn't know they're important. This is the classic AI problem: an LLM optimises for what it *thinks* you want, not what you *actually* need left alone. A `git push` would never delete your `_redirects` file on a whim. Lovable might. Tell it explicitly: "Do not touch `_redirects` or `_headers`." Hermione would write it on a label and stick it to the file. |
-| **Merge conflicts from simultaneous editing** | Medium | If someone is editing in Lovable while another person pushes commits from a local IDE at the same time, you can get merge conflicts. Lovable-generated code is verbose and machine-structured — untangling conflicts in it is like deciphering a tome written in Ancient Runes. **The rule:** don't edit in two places at once. Take turns. Hermione used a Time-Turner to be in two places at once, and even she found it unsustainable. |
+| Risk                                               | Severity | The Hermione Approach                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| -------------------------------------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Lovable's AI modifying Cloudflare config files** | Low      | If you add `_redirects`, `wrangler.toml`, or `_headers` to the repo, Lovable's AI *could* modify or delete them during a prompt — it doesn't know they're important. This is the classic AI problem: an LLM optimises for what it *thinks* you want, not what you *actually* need left alone. A `git push` would never delete your `_redirects` file on a whim. Lovable might. Tell it explicitly: "Do not touch `_redirects` or `_headers`." Hermione would write it on a label and stick it to the file. |
+| **Merge conflicts from simultaneous editing**      | Medium   | If someone is editing in Lovable while another person pushes commits from a local IDE at the same time, you can get merge conflicts. Lovable-generated code is verbose and machine-structured — untangling conflicts in it is like deciphering a tome written in Ancient Runes. **The rule:** don't edit in two places at once. Take turns. Hermione used a Time-Turner to be in two places at once, and even she found it unsustainable.                                                                  |
 
----
+- - -
 
 ## V. The Direct Deploy: npx + Wrangler (Apparition)
 
@@ -208,12 +217,12 @@ On first run, `npx wrangler` will prompt for Cloudflare authentication. After th
 
 ### Useful Flags
 
-| Flag | Purpose |
-|---|---|
+| Flag                    | Purpose                                                          |
+| ----------------------- | ---------------------------------------------------------------- |
 | `--project-name=<name>` | Target a specific Pages project (creates it if it doesn't exist) |
-| `--branch=main` | Tag as a production deploy |
-| `--branch=preview` | Tag as a preview deploy |
-| `--commit-hash=<sha>` | Attach a git commit reference for traceability |
+| `--branch=main`         | Tag as a production deploy                                       |
+| `--branch=preview`      | Tag as a preview deploy                                          |
+| `--commit-hash=<sha>`   | Attach a git commit reference for traceability                   |
 
 ### Force a Rebuild (Without Building Locally)
 
@@ -226,7 +235,7 @@ git commit --allow-empty -m "trigger rebuild" && git push
 
 Or from the **Cloudflare dashboard** > Deployments > **Retry deployment** on the latest build.
 
----
+- - -
 
 ## VI. The Troubleshooting Compendium
 
@@ -234,54 +243,54 @@ Or from the **Cloudflare dashboard** > Deployments > **Retry deployment** on the
 
 Like the Monster Book of Monsters, these issues bite — but they're manageable once you know how to stroke the spine.
 
-| Issue | Cause | Fix |
-|---|---|---|
-| **Build fails immediately with dependency errors** | Lockfile still in the repo — Cloudflare auto-detects npm and runs `npm ci` before your bun build command | Remove `package-lock.json` and `bun.lock`/`bun.lockb` from the repo, add them to `.gitignore` (see The Lockfile Trap) |
-| **Lovable re-commits `package-lock.json`** | Lovable's AI doesn't know you removed it on purpose | Tell Lovable explicitly not to commit lockfiles; re-add to `.gitignore` if overwritten |
-| **Build fails with ERESOLVE** | Peer dependency conflicts (if using npm fallback) | Switch to bun build command: `bun install && bun run build` — bun is more lenient with peer deps |
-| **Module not found** | Case-sensitive file paths on Linux | Fix import casing — macOS is case-insensitive like a forgiving professor, Cloudflare's Ubuntu is case-sensitive like Snape |
-| **404 on page refresh** | Missing SPA redirect | Add `public/_redirects` file (see Section IV) |
-| **Custom domain 522 error** | CNAME added without using Pages dashboard first | Register the domain through Pages dashboard, then configure DNS |
-| **Env vars not accessible in client** | Missing `VITE_` prefix | Vite only exposes `VITE_*` vars — the Fidelius Charm at work |
-| **20-minute build timeout** | Too many dependencies | Move linting and type-checking to GitHub Actions; trim the dependency tree |
+| Issue                                              | Cause                                                                                                    | Fix                                                                                                                        |
+| -------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| **Build fails immediately with dependency errors** | Lockfile still in the repo — Cloudflare auto-detects npm and runs `npm ci` before your bun build command | Remove `package-lock.json` and `bun.lock`/`bun.lockb` from the repo, add them to `.gitignore` (see The Lockfile Trap)      |
+| **Lovable re-commits `package-lock.json`**         | Lovable's AI doesn't know you removed it on purpose                                                      | Tell Lovable explicitly not to commit lockfiles; re-add to `.gitignore` if overwritten                                     |
+| **Build fails with ERESOLVE**                      | Peer dependency conflicts (if using npm fallback)                                                        | Switch to bun build command: `bun install && bun run build` — bun is more lenient with peer deps                           |
+| **Module not found**                               | Case-sensitive file paths on Linux                                                                       | Fix import casing — macOS is case-insensitive like a forgiving professor, Cloudflare's Ubuntu is case-sensitive like Snape |
+| **404 on page refresh**                            | Missing SPA redirect                                                                                     | Add `public/_redirects` file (see Section IV)                                                                              |
+| **Custom domain 522 error**                        | CNAME added without using Pages dashboard first                                                          | Register the domain through Pages dashboard, then configure DNS                                                            |
+| **Env vars not accessible in client**              | Missing `VITE_` prefix                                                                                   | Vite only exposes `VITE_*` vars — the Fidelius Charm at work                                                               |
+| **20-minute build timeout**                        | Too many dependencies                                                                                    | Move linting and type-checking to GitHub Actions; trim the dependency tree                                                 |
 
----
+- - -
 
 ## VII. Pre-Meeting Checklist
 
-- [ ] Remove `package-lock.json` and any bun lockfiles from the repo, add to `.gitignore`
-- [ ] Clone `safe-trace-website` locally
-- [ ] Run `bun install && bun run build` — verify it produces a clean `dist/` folder
-- [ ] Check `vite.config.ts` for a `base` property (should be `/` for Pages, not a subpath)
-- [ ] Add `public/_redirects` with `/* /index.html 200` for SPA routing
-- [ ] Identify any `.env` vars the app requires — set as `VITE_*` in the Pages dashboard
-- [ ] Connect repo in Cloudflare Pages with build command `bun install && bun run build`, output `dist`
-- [ ] Optionally test direct deploy: `bunx wrangler pages deploy dist --project-name=safe-trace-website`
+* Remove `package-lock.json` and any bun lockfiles from the repo, add to `.gitignore`
+* Clone `safe-trace-website` locally
+* Run `bun install && bun run build` — verify it produces a clean `dist/` folder
+* Check `vite.config.ts` for a `base` property (should be `/` for Pages, not a subpath)
+* Add `public/_redirects` with `/* /index.html 200` for SPA routing
+* Identify any `.env` vars the app requires — set as `VITE_*` in the Pages dashboard
+* Connect repo in Cloudflare Pages with build command `bun install && bun run build`, output `dist`
+* Optionally test direct deploy: `bunx wrangler pages deploy dist --project-name=safe-trace-website`
 
----
+- - -
 
 ## References
 
-- [Cloudflare Pages Build Configuration](https://developers.cloudflare.com/pages/configuration/build-configuration/)
-- [Cloudflare Pages Build Image](https://developers.cloudflare.com/pages/configuration/build-image/)
-- [Cloudflare Pages Custom Domains](https://developers.cloudflare.com/pages/configuration/custom-domains/)
-- [Cloudflare Pages Known Issues](https://developers.cloudflare.com/pages/platform/known-issues/)
-- [Cloudflare Pages GitHub Integration](https://developers.cloudflare.com/pages/configuration/git-integration/github-integration/)
-- [Lovable Git Integration Docs](https://docs.lovable.dev/integrations/git-integration)
-- [Deploy Lovable to Cloudflare (Vibe Coding With Fred)](https://vibecodingwithfred.com/blog/lovable-to-cloudflare/)
-- [Cloudflare Pages Build Failures Guide](https://eastondev.com/blog/en/posts/dev/20251201-cloudflare-pages-build-failures-guide/)
+* [Cloudflare Pages Build Configuration](https://developers.cloudflare.com/pages/configuration/build-configuration/)
+* [Cloudflare Pages Build Image](https://developers.cloudflare.com/pages/configuration/build-image/)
+* [Cloudflare Pages Custom Domains](https://developers.cloudflare.com/pages/configuration/custom-domains/)
+* [Cloudflare Pages Known Issues](https://developers.cloudflare.com/pages/platform/known-issues/)
+* [Cloudflare Pages GitHub Integration](https://developers.cloudflare.com/pages/configuration/git-integration/github-integration/)
+* [Lovable Git Integration Docs](https://docs.lovable.dev/integrations/git-integration)
+* [Deploy Lovable to Cloudflare (Vibe Coding With Fred)](https://vibecodingwithfred.com/blog/lovable-to-cloudflare/)
+* [Cloudflare Pages Build Failures Guide](https://eastondev.com/blog/en/posts/dev/20251201-cloudflare-pages-build-failures-guide/)
 
 ## Illustrations
 
 The artwork in this guide is sourced from Wikimedia Commons under free licenses. The fantasy-themed illustrations were chosen to match the Harry Potter metaphors woven throughout.
 
-- **Castle** (hero image) — *Neuschwanstein Castle, 2024.* CC0 / Public Domain. [Source.](https://commons.wikimedia.org/wiki/File:Neuschwanstein_Castle_2024.jpg)
-- **Witch hat** (build config) — *Creative Tail Halloween Witch Hat.* CC BY 4.0, Creative Tail. [Source.](https://commons.wikimedia.org/wiki/File:Creative-Tail-Halloween-witch-hat.svg)
-- **Fireplace** (Floo Network) — *An Old Fire-Place* (1882) by Charles Frederic Ulrich. Public Domain. [Source.](https://commons.wikimedia.org/wiki/File:Charles_Frederic_Ulrich_-_An_old_fire-place_(1882).jpg)
-- **Treasure map** (Marauder's Map) — CC0 / Public Domain, hextrust. [Source.](https://commons.wikimedia.org/wiki/File:Treasure_map.svg)
-- **Coat of arms** (SSL) — *Coat of Arms of the Worshipful Company of Security Professionals.* CC BY-SA 4.0. [Source.](https://commons.wikimedia.org/wiki/File:Coat_of_Arms_of_the_Worshipful_Company_of_Security_Professionals.svg)
-- **Fantasy book** (troubleshooting) — *Quaternius 3D Card Kit, Fantasy Book.* CC0, Quaternius. [Source.](https://commons.wikimedia.org/wiki/File:Quaternius_-_3D_Card_Kit_-_Fantasy_-_27_Book.png)
+* **Castle** (hero image) — *Neuschwanstein Castle, 2024.* CC0 / Public Domain. [Source.](https://commons.wikimedia.org/wiki/File:Neuschwanstein_Castle_2024.jpg)
+* **Witch hat** (build config) — *Creative Tail Halloween Witch Hat.* CC BY 4.0, Creative Tail. [Source.](https://commons.wikimedia.org/wiki/File:Creative-Tail-Halloween-witch-hat.svg)
+* **Fireplace** (Floo Network) — *An Old Fire-Place* (1882) by Charles Frederic Ulrich. Public Domain. [Source.](https://commons.wikimedia.org/wiki/File:Charles_Frederic_Ulrich_-_An_old_fire-place_(1882).jpg)
+* **Treasure map** (Marauder's Map) — CC0 / Public Domain, hextrust. [Source.](https://commons.wikimedia.org/wiki/File:Treasure_map.svg)
+* **Coat of arms** (SSL) — *Coat of Arms of the Worshipful Company of Security Professionals.* CC BY-SA 4.0. [Source.](https://commons.wikimedia.org/wiki/File:Coat_of_Arms_of_the_Worshipful_Company_of_Security_Professionals.svg)
+* **Fantasy book** (troubleshooting) — *Quaternius 3D Card Kit, Fantasy Book.* CC0, Quaternius. [Source.](https://commons.wikimedia.org/wiki/File:Quaternius_-_3D_Card_Kit_-_Fantasy_-_27_Book.png)
 
----
+- - -
 
 Created: by Alexander Somma & Isabelle Plante with the research help of our Sage.Education AI 2026-02-26

@@ -66,7 +66,13 @@ tailwind.config.ts # Tailwind CSS config
 
 ![The Sorting Hat ceremony — get the configuration right and everything flows to the correct house.](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Creative-Tail-Halloween-witch-hat.svg/400px-Creative-Tail-Halloween-witch-hat.svg.png)
 
-Next step involves hooking up your GitHub build to be a static site. We will use Cloudflare. Setup your (free) Cloudflare account, and when prompted, log into your GitHub account to connect them. We'll use this to connect your GitHub repo to the web. You will also need your domain address. If you haven't already bought one, make an account on Godaddy and find a web address domain name you like (that is not too expensive). If you have already purchased your domain, click on the human icon (top right corner near the cart) and click on "My Products" to copy your domain name to your clipboard. In Cloudflare, select the "+ Add" and "connect a domain". Paste your domain name in the "example.com" box and select "Import DNS records automatically**".** 
+Next step involves hooking up your GitHub build to be a static site. We will use Cloudflare. Setup your (free) Cloudflare account, and when prompted, log into your GitHub account to connect them. We'll use this to connect your GitHub repo to the web. You will also need your domain address. If you haven't already bought one, make an account on Godaddy and find a web address domain name you like (that is not too expensive). If you have already purchased your domain, click on the human icon (top right corner near the cart) and click on "My Products" to copy your domain name to your clipboard. 
+
+In Cloudflare, select the "+ Add" and "connect a domain". Paste your domain name in the "example.com" box. When setting up a fresh Cloudflare instance, it's going to prompt you for how to deal with the DNS entries that you have if your domain name already had other things, that's a great idea to import the old entries, but you can also just set it up fresh with nothing if you if it's a new domain name it's really up to you. For this tutorial, we will keep it simple and select "Import DNS records automatically" and "Continue". 
+
+
+
+The benefit of importing is not losing any domain name settings, but if it's a new domain name, there's nothing there to lose.
 
 When Cloudflare Pages receives your code, it needs to know how to build it. Think of this as the Sorting Hat ceremony — except unlike Lovable's AI, the Sorting Hat doesn't improvise. It doesn't decide your React app would look better in Svelte. You give it four exact values, and it performs the same build, on every push, forever. That predictability is the point. Get the configuration right and everything flows to the correct house. Get it wrong and you're stuck in limbo with a blank screen.
 

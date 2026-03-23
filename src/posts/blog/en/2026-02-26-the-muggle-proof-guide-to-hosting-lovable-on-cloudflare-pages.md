@@ -44,7 +44,7 @@ Here's the thing about proper spells: they are *precise and deterministic*. Say 
 
 Lovable's built-in GitHub integration is a **two-way sync** (a Protean Charm, of sorts). Every time you save in the Lovable editor, the changes are automatically pushed to your repo's `main` branch. Edit and commit the code directly on GitHub or from a local IDE, and Lovable picks those changes back up, like Hermione's enchanted coins updating in real time across the DA.
 
-To link your Lovable code to your GitHub account, open your project, locate the GitHub icon (top right of the page with a cat silhouette) and follow the instructions to "Connect GitHub". You will need to log into your Github account and then choose which Loveable Repository you want to connect to Github. Once connected, in Loveable, click on the GitHub icon again and select: </> Edit in VS Code to deal with the next steps. 
+To link your Lovable code to your GitHub account, open your Loveable project, locate the GitHub icon (top right of the page) and follow the instructions to "Connect GitHub". You will need to log into your Github account and then choose which Loveable Repository you want to connect to Github. When asked, select "Confirm transfer 2-way". Once connected, in Loveable, click on the GitHub icon again and select: </> Edit in VS Code to deal with the next steps. 
 
 What lands in the GitHub repo is a standard **Vite + React + TypeScript** project:
 
@@ -60,15 +60,13 @@ tailwind.config.ts # Tailwind CSS config
 
 > **Note:** Sync has a short delay. If it seems stuck, making a trivial edit (adding a comment, say) will nudge the quill into action.
 
-
-
 - - -
 
 ## II. The Sorting Hat: Cloudflare Pages Build Settings
 
 ![The Sorting Hat ceremony — get the configuration right and everything flows to the correct house.](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Creative-Tail-Halloween-witch-hat.svg/400px-Creative-Tail-Halloween-witch-hat.svg.png)
 
-Next step involves hooking up your GitHub build to be a static site. We will use Cloudflare. Setup and log into your (free) Cloudflare account. We'll use this to connect your GitHub repo to the web.
+Next step involves hooking up your GitHub build to be a static site. We will use Cloudflare. Setup your (free) Cloudflare account, and when prompted, log into your GitHub account to connect them. We'll use this to connect your GitHub repo to the web. You will also need your domain address. If you haven't already bought one, make an account on Godaddy and find a web address domain name you like (that is not too expensive). If you have already purchased your domain, click on the human icon (top right corner near the cart) and click on "My Products" to copy your domain name to your clipboard. In Cloudflare, select the "+ Add" and "connect a domain". Paste your domain name in the "example.com" box and select "Import DNS records automatically**".** 
 
 When Cloudflare Pages receives your code, it needs to know how to build it. Think of this as the Sorting Hat ceremony — except unlike Lovable's AI, the Sorting Hat doesn't improvise. It doesn't decide your React app would look better in Svelte. You give it four exact values, and it performs the same build, on every push, forever. That predictability is the point. Get the configuration right and everything flows to the correct house. Get it wrong and you're stuck in limbo with a blank screen.
 

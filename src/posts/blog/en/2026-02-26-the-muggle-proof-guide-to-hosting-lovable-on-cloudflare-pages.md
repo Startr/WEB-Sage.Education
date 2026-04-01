@@ -1,7 +1,6 @@
 ---
 hero_caption: "Photo: Wikimedia Commons, CC BY-SA 4.0"
 hero_alt: HTML and JavaScript code on a dark screen
-layout: layouts/blog.njk
 title: The Muggle-Proof Guide to Hosting Lovable on Cloudflare Pages
 tags: education
 date: 2026-02-26T12:10:00.000-01:00

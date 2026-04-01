@@ -1,5 +1,4 @@
 ---
-layout: layouts/blog.njk
 title: Embracing the Maker Mindset in AI Education
 subheadline: "At classroom level, secondary school students for a chat about how they use it. She unpacks what these students think constitutes the responsible use of AI – and discovers that..."
 hero: /assets/images/heroes/library.jpg

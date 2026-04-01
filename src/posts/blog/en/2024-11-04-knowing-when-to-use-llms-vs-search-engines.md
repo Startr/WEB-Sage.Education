@@ -1,5 +1,4 @@
 ---
-layout: layouts/blog.njk
 title: Knowing When To Use AIs Versus Search Engines
 subheadline: "At classroom level, know how to use each tool effectively."
 hero: /assets/images/heroes/classroom.jpg

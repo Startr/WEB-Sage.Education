@@ -1,5 +1,4 @@
 ---
-layout: layouts/blog.njk
 title: An IB Teacher’s Response to “What’s Really Going On With AI In Schools?”
 subheadline: "In clear language, The kids aren’t cheating — they’re adapting. Our job? Ensure they adapt as creators, not passengers. William’s vision is our blueprint: Let AI unlock genius,..."
 tags:

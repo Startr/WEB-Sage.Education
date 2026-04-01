@@ -1,5 +1,4 @@
 ---
-layout: layouts/blog.njk
 title: Why AI Must Show Its Work
 subheadline: "In practical terms, produce, but how they interact with knowledge. We need AI tools that show their work. But current educational AI tools present something different - a..."
 hero: /assets/images/heroes/ai-abstract.jpg

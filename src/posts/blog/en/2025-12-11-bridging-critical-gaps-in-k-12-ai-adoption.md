@@ -1,5 +1,4 @@
 ---
-layout: layouts/blog.njk
 title: Bridging Critical Gaps in K-12 AI Adoption
 subheadline: "From the front lines, The rapid integration of artificial intelligence in educational settings has created unprecedented challenges for schools, educators, and students. It has..."
 hero: /assets/images/heroes/classroom.jpg

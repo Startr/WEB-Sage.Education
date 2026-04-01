@@ -1,5 +1,4 @@
 ---
-layout: layouts/blog.njk
 title: How Language Shapes AI Interactions
 subheadline: "From the front lines, kindness... it can also improve the quality of the responses. In education, modeling respect and empathy in interactions with AI leads to clearer..."
 hero: /assets/images/heroes/typewriter.jpg

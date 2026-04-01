@@ -1,5 +1,4 @@
 ---
-layout: layouts/blog.njk
 title: "An AI Edtech Success Story: Students Forge AI Ally, Conquer Space Challenge"
 subheadline: "Beyond the hype, European Space Agency AstroPi Challenge were running out of time to submit their work. They needed additional help to learn Python. With their mentor and..."
 hero: /assets/images/heroes/lego-robotics.jpg

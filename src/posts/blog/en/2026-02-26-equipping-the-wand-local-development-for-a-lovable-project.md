@@ -1,5 +1,4 @@
 ---
-layout: layouts/blog.njk
 title: "Equipping the Wand: Local Development for a Lovable Project"
 subheadline: "In practical terms, Before Hermione ever set foot in Hogwarts, she read every textbook on the syllabus, memorized the core spells, and packed her trunk with exactly the right..."
 hero: /assets/images/heroes/code.jpg

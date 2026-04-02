@@ -9,7 +9,7 @@ date: 2026-03-27T12:00:00.000-01:00
 rating: 5
 hero: /assets/images/heroes/empty-workshop.jpg
 hero_alt: "A wooden kitchen table dusted with flour, a rolling pin resting beside a bowl of dough, morning light from a window catching the particles suspended in the air"
-hero_caption: "Photo: Wikimedia Commons. Public domain."
+hero_caption: "Photo: Alexander Somma."
 summary: >-
   We removed shop class, home economics, and hands-on making from schools over thirty years and created a generation of consumers, not creators. Now AI is repeating the same pattern at industrial speed: offering finished outputs instead of the friction of building. The maker-minded alternative exists. It looks like giving people tools, not answers.
 eleventyNavigation:

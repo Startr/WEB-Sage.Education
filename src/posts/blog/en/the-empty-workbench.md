@@ -7,7 +7,7 @@ tags:
   - maker-culture
 date: 2026-03-27T12:00:00.000-01:00
 rating: 5
-hero: /assets/images/heroes/hero-empty-workbench.jpg
+hero: /assets/images/heroes/empty-workshop.jpg
 hero_alt: "A wooden kitchen table dusted with flour, a rolling pin resting beside a bowl of dough, morning light from a window catching the particles suspended in the air"
 hero_caption: "Photo: Wikimedia Commons. Public domain."
 summary: >-

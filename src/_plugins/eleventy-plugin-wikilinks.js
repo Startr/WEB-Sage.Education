@@ -2,6 +2,8 @@
 // Usage: eleventyConfig.addPlugin(wikilinksPlugin);
 
 const { linkMapCache, slugify } = require("../_data/wikilinks");
+const fs = require("fs");
+const path = require("path");
 
 module.exports = function(eleventyConfig) {
   // Amend existing markdown-it instance so it composes with other plugins.
@@ -74,7 +76,24 @@ module.exports = function(eleventyConfig) {
             const rawPath = (m[1] || '').trim();
             const altRaw = (m[3] || '').trim();
             const hasLeadingSlash = rawPath.startsWith('/');
-            const src = hasLeadingSlash ? rawPath : `/${rawPath}`;
+            const hasSlash = rawPath.includes('/');
+            let src;
+            if (hasLeadingSlash) {
+              src = rawPath;
+            } else if (!hasSlash && state.env && state.env.page && state.env.page.inputPath) {
+              // Bare filename — check for sibling attachments/ directory
+              const srcDir = path.dirname(state.env.page.inputPath);
+              const attachPath = path.join(srcDir, 'attachments', rawPath);
+              if (fs.existsSync(attachPath)) {
+                // Convert ./resources/attachments/file.jpg → /resources/attachments/file.jpg
+                const relDir = srcDir.replace(/^\.?\/?/, '');
+                src = `/${relDir}/attachments/${rawPath}`;
+              } else {
+                src = `/${rawPath}`;
+              }
+            } else {
+              src = `/${rawPath}`;
+            }
             const ext = rawPath.split('.').pop().toLowerCase();
 
             if (imageExtensions.has(ext)) {
@@ -84,7 +103,7 @@ module.exports = function(eleventyConfig) {
                 .replace(/\.[^.]+$/, '')
                 .replace(/[._-]+/g, ' ')
                 .trim();
-              const html = `<img src="${src}" alt="${alt}">`;
+              const html = `<img src="${src}" alt="${alt}" style="--br: 1rem; --shadow: 8;">`;
               const htmlToken = new state.Token('html_inline', '', 0);
               htmlToken.content = html;
               newTokens.push(htmlToken);

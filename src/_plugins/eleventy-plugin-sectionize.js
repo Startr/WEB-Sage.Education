@@ -1,12 +1,28 @@
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const markdownItAttrs = require("markdown-it-attrs");
+const markdownItFootnote = require("markdown-it-footnote");
 const fs = require('fs');
 const matter = require('gray-matter');
 
 function configureMarkdown(permalinksEnabled = false) {
-  const md = markdownIt({ html: true, breaks: true, linkify: true }).use(markdownItAttrs);
+  // Create a markdown-it instance with HTML enabled
+  const md = markdownIt({
+    html: true,
+    breaks: true,
+    linkify: true
+  }).use(markdownItAttrs).use(markdownItFootnote);
 
+  // Add inline style to all markdown images
+  const defaultImageRender = md.renderer.rules.image || function(tokens, idx, options, env, self) {
+    return self.renderToken(tokens, idx, options);
+  };
+  md.renderer.rules.image = function(tokens, idx, options, env, self) {
+    tokens[idx].attrSet('style', '--br: 1rem; --shadow: 8;');
+    return defaultImageRender(tokens, idx, options, env, self);
+  };
+
+  // Add the anchor plugin if permalinks are enabled
   if (permalinksEnabled) {
     md.use(markdownItAnchor, {
       permalink: true,
@@ -17,55 +33,68 @@ function configureMarkdown(permalinksEnabled = false) {
     });
   }
 
+  // Create a function to wrap sections
   function wrapSections(tokens) {
     let result = [];
     let stack = [];
     let lastLevel = 0;
     let sectionAttrs = '';
     let pendingSectionAttrs = '';
+    let hasOpenedFirstSection = false;
 
     tokens.forEach((token, index) => {
+      // Handle attribute blocks for sections
       if (token.type === 'inline' && token.content.startsWith('{') && token.content.endsWith('}')) {
-        // This token is an attribute block, extract and store the attributes
         pendingSectionAttrs = token.content.slice(1, -1);
-        // Skip adding this token to the result as it's not a part of the actual content
-        return;
+        return; // Skip this token
       }
 
+      // When we encounter a heading, start a new section
       if (token.type === 'heading_open') {
         let level = parseInt(token.tag.slice(1));
 
+        // Close any open sections that should be closed
         while (stack.length && lastLevel >= level) {
           result.push(stack.pop());
           lastLevel--;
         }
 
-        // Use pendingSectionAttrs if available, otherwise use sectionAttrs
+        // Use pending attributes if available
         sectionAttrs = pendingSectionAttrs || sectionAttrs;
         result.push({ type: 'html_block', content: `<section ${sectionAttrs}>` });
         stack.push({ type: 'html_block', content: '</section>' });
         lastLevel = level;
-        sectionAttrs = ''; // Reset attributes after using them
+        hasOpenedFirstSection = true;
+        sectionAttrs = ''; // Reset attributes
         pendingSectionAttrs = ''; // Reset pending attributes
       }
 
-      // Check if the current token is an empty paragraph and skip it if true
+      // Skip empty paragraphs or paragraphs with just attribute blocks
       if (token.type === 'paragraph_open') {
         const nextToken = tokens[index + 1];
         const closingToken = tokens[index + 2];
         if (
-          nextToken.type === 'inline' &&
-          (nextToken.content.trim() === '' || nextToken.content.startsWith('{') && nextToken.content.endsWith('}')) &&
-          closingToken.type === 'paragraph_close'
+          nextToken && nextToken.type === 'inline' &&
+          (nextToken.content.trim() === '' ||
+           (nextToken.content.startsWith('{') && nextToken.content.endsWith('}'))) &&
+          closingToken && closingToken.type === 'paragraph_close'
         ) {
-          // Skip the paragraph_open, inline (empty or attributes only), and paragraph_close tokens
-          return;
+          return; // Skip these tokens
         }
       }
 
+      // If we haven't opened a section yet and we have content, wrap it in a section
+      if (!hasOpenedFirstSection && (token.type === 'paragraph_open' || token.type === 'list_item_open' || token.type === 'blockquote_open')) {
+        result.push({ type: 'html_block', content: '<section>' });
+        stack.push({ type: 'html_block', content: '</section>' });
+        hasOpenedFirstSection = true;
+      }
+
+      // Add the current token to the result
       result.push(token);
     });
 
+    // Close any open sections
     while (stack.length) {
       result.push(stack.pop());
     }
@@ -73,6 +102,7 @@ function configureMarkdown(permalinksEnabled = false) {
     return result;
   }
 
+  // Add the section wrapper as a core rule
   md.core.ruler.push('wrap_sections', state => {
     state.tokens = wrapSections(state.tokens);
   });
@@ -80,21 +110,30 @@ function configureMarkdown(permalinksEnabled = false) {
   return md;
 }
 
+// The plugin's main export function
 module.exports = function(eleventyConfig) {
+  // Add a markdown filter for manual markdown processing with permalinks support
   eleventyConfig.addFilter("markdown", function(content, outputPath) {
     if (!outputPath || !outputPath.endsWith(".html")) {
       return content;
     }
 
-    const inputPath = this.page.inputPath;
-    const fileContent = fs.readFileSync(inputPath, 'utf8');
-    const data = matter(fileContent).data;
-    const permalinksEnabled = data.permalinks === true;
+    try {
+      const inputPath = this.page.inputPath;
+      const fileContent = fs.readFileSync(inputPath, 'utf8');
+      const data = matter(fileContent).data;
+      const permalinksEnabled = data.permalinks === true;
 
-    const md = configureMarkdown(permalinksEnabled);
-    return md.render(content);
+      const md = configureMarkdown(permalinksEnabled);
+      return md.render(content);
+    } catch (error) {
+      console.error("Error in markdown filter:", error);
+      return content;
+    }
   });
 
-  // Set the default Markdown library without permalinks
-  eleventyConfig.setLibrary("md", configureMarkdown(false));
+  // Set the default Markdown library with sectionization enabled
+  // This is what processes .md files directly
+  const md = configureMarkdown(false);
+  eleventyConfig.setLibrary("md", md);
 };

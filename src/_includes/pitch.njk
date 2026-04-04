@@ -38,9 +38,9 @@
                     title="Install Sage on Android">Android</a>{% endtodo %}
                 </li>
                 <li>
-                     <a class="button button--icon button--sage" href="https://sage.startr.cloud/"
+                    <a class="button button--icon button--sage" href="{{ site.signInUrl }}"
                     title="Use Sage in your web browser" target="_blank" data-controller="signup"
-                    data-action="signup#trackLogin">Sign in to Sage</a>
+                    data-action="signup#trackLogin">Sign in to {{ site.brandName }}</a>
                 </li>
             </ul>
             <input type="hidden" id="pwa-guide-section-chrome" value="Chrome-1kSs_">
@@ -188,16 +188,18 @@
             <ul style="--lis:none">
                 {% todo "" %}
                 <li>
-                    <a href="https://github.com/Startr/WEB-AI-Sage-WebUI/tags#" target="_blank">Updates</a>
+                    <a href="{{ site.githubUpdatesUrl }}" target="_blank">Updates</a>
                 </li>
                 {% endtodo %}
                 <li>
                     <a href="https://status.production.openco.ca" target="_blank">Status</a>
                 </li>
+                {% for link in site.footerLegalLinks %}
                 <li>
-                    <a href="https://Startr.Cloud/tos/" target="_blank">Policies</a>
+                    <a href="{{ link.href }}" target="_blank">{{ link.title }}</a>
                 </li>
-                <li>&copy; 2025 Startr LLC</li>
+                {% endfor %}
+                <li>&copy; {{ site.copyrightYear }} Startr LLC</li>
             </ul>
         </div>
     </footer>

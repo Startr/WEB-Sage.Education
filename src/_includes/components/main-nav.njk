@@ -3,14 +3,15 @@
     <label id="nav-underlay" for="nav-active"></label>
 
     <nav class="nav" style="zoom: 1.2;     --p: 0.4rem">
-        <div class="nav__container" style="--p:0em; --p-md:0.4em;">
+        <div class="nav__container">
             <div class="nav__logo">
-                <a href="/" class="icon icon--sage" aria-label="Sage">
+                <a href="/" class="icon icon--sage" aria-label="{{ site.brandName }}">
                     <img src="/assets/images/general/sage.webp" style="--w:2em; --h:2em; --m:-0.4em 0"
                     alt="Sage Startr Logo">
-                    <strong>Sage.Education</strong>
+                    <strong>{{ site.brandName }}</strong>
                 </a>
-                <div class="nav__phrase site-phrase">is <span class="highlight"></span>
+                <div class="nav__phrase">is <span class="highlight"></span>
+                    {% if site.tagline %}<strong>{{ site.tagline }}</strong>{% endif %}
                 </div>
             </div>
             <div class="nav__links" style="gap:1em">
@@ -26,9 +27,10 @@
                 {% endfor %}
             </div>
             <div class="nav__buttons">
-                <a class="nav__button nav__button--sage" href="https://sage.startr.cloud/" target="_blank">Sign in</a>
-                <a class="nav__button nav__button--signup" href="https://sage.education/Sign-up-Now" aria-label="Sign up free">
-                    <span style="--d:none; --d-md:inline-block">Apply to&nbsp;</span> Access <span style="--d:none; --d-md:inline-block">Sage.Education</span></a>
+                <a class="nav__button nav__button--sage" href="{{ site.signInUrl }}" target="_blank"
+                data-controller="signup" data-action="signup#trackLogin">Sign in</a>
+                <a class="nav__button nav__button--signup" href="{{ site.signupUrl }}" aria-label="Sign up free">
+                    <span style="--d:none; --d-md:inline-block">Apply to&nbsp;</span> {{ site.signupButtonText }}</a>
             </div>
             <label class="nav__toggle" for="nav-active" aria-label="Nav Toggle" tabindex="0"></label>
         </div>

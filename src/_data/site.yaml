@@ -1,4 +1,4 @@
-title: Sage.Edcuation
+title: Sage.Education
 description: Sage Education is an innovative platform dedicated to empowering
   educators and learners to effectively harness artificial intelligence (AI) in
   educational settings. It offers a comprehensive suite of tools and resources
@@ -14,3 +14,35 @@ address:
   city: PRAIA DO ALMOXARIFE
   zip: 9900-451
   country: Portugal
+
+# ── Brand identity ──
+brandName: "Sage.Education"
+tagline: ""
+copyrightYear: 2026
+phrases:
+  - "Private by Design"
+  - "Powerful by Nature"
+  - "Effortlessly Smart"
+  - "Educational and Engaging"
+  - "refreshingly simple"
+  - "wonderfully efficient"
+  - "simply powerful"
+  - "down-to-earth"
+
+# ── URLs ──
+signInUrl: "https://sage.startr.cloud/"
+signupUrl: "/Sign-up-Now"
+signupButtonText: "Access Sage.Education"
+githubUpdatesUrl: "https://github.com/Startr/WEB-AI-Sage-WebUI/tags#"
+
+# ── Footer legal links ──
+footerLegalLinks:
+  - title: "Policies"
+    href: "https://Startr.Cloud/tos/"
+
+# ── Feature flags ──
+googleFontsUrl: "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap"
+includeArticleCss: true
+resetHeadings: false
+bodyDataController: null
+enableHyperscript: true

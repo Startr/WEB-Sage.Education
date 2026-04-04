@@ -13,6 +13,29 @@
       <div class="panel-phrase site-phrase">is <span class="highlight"></span></div>
     </div>
 
+    {# ── Search ── #}
+    <div class="panel-articles-tools">
+      <div class="panel-articles-label">Articles</div>
+      <input
+        id="blog-nav-search"
+        class="panel-article-search"
+        type="search"
+        placeholder="Search articles"
+        aria-label="Search articles"
+        autocomplete="off"
+        _="-- Filter articles by search text
+            on keyup
+              -- Clear input on Escape
+              if the event's key is 'Escape'
+                set my value to ''
+              end
+              -- Show articles whose text matches, hide the rest
+              show <li/> in #blog-nav-article-list
+                when its textContent.toLowerCase()
+                  contains my value.toLowerCase()"
+      >
+    </div>
+
     {# ── Site navigation ── #}
     <nav class="panel-site-nav">
       <div class="panel-site-links">
@@ -27,24 +50,6 @@
         <a href="https://sage.education/Sign-up-Now" class="panel-signup" target="_blank">Access Sage</a>
       </div>
     </nav>
-
-    {# ── Article list ── #}
-    <div class="panel-articles-tools">
-      <div class="panel-articles-label">Articles</div>
-      <input
-        id="blog-nav-search"
-        class="panel-article-search"
-        type="search"
-        placeholder="Search articles"
-        aria-label="Search articles"
-        autocomplete="off"
-        _="on keyup
-            if the event's key is 'Escape'
-              set my value to ''
-            end
-            show <li/> in #blog-nav-article-list when its textContent.toLowerCase() contains my value.toLowerCase()"
-      >
-    </div>
     <ul id="blog-nav-article-list">
       {%- for post in collections.posts | reverse %}
         {%- if post.data.title %}

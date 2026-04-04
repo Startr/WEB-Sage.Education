@@ -26,15 +26,22 @@ eleventyNavigation:
       placeholder="Search articles"
       aria-label="Search articles"
       autocomplete="off"
-      _="on keyup
-          if the event's key is 'Escape'
-            set my value to ''
-          end
-          show <li.post-card/> in .posts-list when its textContent.toLowerCase() contains my value.toLowerCase()"
+      _="-- Filter article cards by search text
+          on keyup
+            -- Clear input on Escape
+            if the event's key is 'Escape'
+              set my value to ''
+            end
+            -- Show cards whose text matches, hide the rest
+            show <.post-card/> in #posts-search-scope
+              when its textContent.toLowerCase()
+                contains my value.toLowerCase()"
     >
   </div>
   {% set postslist = collections.posts %}
   {% if postslist.length > 0 %}
+    {# ── Search scope: wraps all cards so search filters everything ── #}
+    <div id="posts-search-scope">
     <ul class="posts-list">
       {%- for post in postslist -%}
         {% if post.data.title %}
@@ -63,6 +70,7 @@ eleventyNavigation:
         {% endif %}
       {%- endfor -%}
     </ul>
+    </div>{# /posts-search-scope #}
   {% else %}
     <p>No posts found in this section.</p>
   {% endif %}

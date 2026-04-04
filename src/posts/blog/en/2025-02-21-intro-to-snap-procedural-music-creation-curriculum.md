@@ -1,5 +1,4 @@
 ---
-layout: layouts/blog.njk
 title: "Intro to Snap! Procedural Music Creation Curriculum"
 subheadline: "From simple sounds to generative albums: a hands-on course in algorithmic composition using block-based code"
 hero: /assets/images/heroes/microphone.jpg

@@ -1,5 +1,4 @@
 ---
-layout: layouts/blog.njk
 title: Big AI is Essentially Advertising in Disguise
 subheadline: "From the front lines, Here's a lesson we should teach our teens — and ourselves, too: *AI is highly persuasive, even when it’s wrong — and especially when it’s flattering or..."
 hero: /assets/images/heroes/ai-abstract.jpg

@@ -36,6 +36,24 @@
       >
     </div>
 
+    {# ── Search ── #}
+    <div class="panel-articles-tools">
+      <div class="panel-articles-label">Articles</div>
+      <input
+        id="blog-nav-search"
+        class="panel-article-search"
+        type="search"
+        placeholder="Search articles"
+        aria-label="Search articles"
+        autocomplete="off"
+        _="on keyup
+            if the event's key is 'Escape'
+              set my value to ''
+            end
+            show <li/> in #blog-nav-article-list when its textContent.toLowerCase() contains my value.toLowerCase()"
+      >
+    </div>
+
     {# ── Site navigation ── #}
     <nav class="panel-site-nav">
       <div class="panel-site-links">

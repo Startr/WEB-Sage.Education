@@ -1,5 +1,4 @@
 ---
-layout: layouts/blog.njk
 title: The AI Gamble
 subheadline: Big AI sells certainty but runs on chance, locking users into expensive black boxes while open models prove transparent alternatives can deliver.
 hero: /assets/images/heroes/dice.jpg

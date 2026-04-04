@@ -1,5 +1,4 @@
 ---
-layout: layouts/blog.njk
 title: How AI is Freezing Language in Time
 subheadline: "From the front lines, writing assistance. AI systems are reshaping our fundamental patterns of communication, creating an anchor point that will influence how we speak and write..."
 hero: /assets/images/heroes/ai-abstract.jpg

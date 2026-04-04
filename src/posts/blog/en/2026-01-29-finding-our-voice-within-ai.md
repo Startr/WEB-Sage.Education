@@ -1,5 +1,4 @@
 ---
-layout: layouts/blog.njk
 title: Finding Our Voice within AI
 subheadline: "Beyond the hype, As an educator who has spent decades in classrooms and now builds educational technology, I find myself at a crossroads that feels both daunting and exhilarating...."
 hero: /assets/images/heroes/microphone.jpg

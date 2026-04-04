@@ -1,5 +1,4 @@
 ---
-layout: layouts/blog.njk
 title: Some insightful information for teachers navigating AI tools
 subheadline: "From the front lines, Imagine having a superpower that saves you hours of grading time, only to have it taken away due to concerns about student data privacy. For many educators,..."
 hero: /assets/images/heroes/classroom.jpg

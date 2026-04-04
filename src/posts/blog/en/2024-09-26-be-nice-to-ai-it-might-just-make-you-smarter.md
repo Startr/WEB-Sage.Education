@@ -1,5 +1,4 @@
 ---
-layout: layouts/blog.njk
 title: "Be Nice to AI: It Might Just Make You Smarter"
 subheadline: "Beyond the hype, Polite talk with AI chatbots like ChatGPT leads to better answers. For example, saying \"Could you please explain photosynthesis?\" gets clearer responses than..."
 hero: /assets/images/heroes/classroom.jpg

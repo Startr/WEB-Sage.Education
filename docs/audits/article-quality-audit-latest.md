@@ -1,11 +1,11 @@
 # Article Quality Audit
 
-Generated: `2026-04-02T11:28:51+00:00`
+Generated: `2026-04-04T13:17:31+00:00`
 
 ## Summary
 
 - Articles audited: **29**
-- Average score: **75.9**
+- Average score: **76.1**
 - Range: **60 - 96**
 - Grade distribution: **A: 1, A+: 2, A-: 3, B: 10, B+: 2, B-: 4, C: 2, C+: 5**
 
@@ -14,7 +14,7 @@ Generated: `2026-04-02T11:28:51+00:00`
 | Category | Pass | Info | Warn |
 |---|---:|---:|---:|
 | Em-Dash Density | 26 | 0 | 3 |
-| Image Assets | 28 | 1 | 0 |
+| Image Assets | 29 | 0 | 0 |
 | Named Sources | 2 | 1 | 26 |
 | Opener Variety | 14 | 0 | 15 |
 | Paragraph Variation | 9 | 2 | 18 |
@@ -38,8 +38,8 @@ Generated: `2026-04-02T11:28:51+00:00`
 - `2025-02-21-intro-to-snap-procedural-music-creation-curriculum.md`: **96** (A+)
 - `the-walled-garden.md`: **96** (A+)
 - `2025-06-12-embracing-the-maker-mindset-in-ai-education.md`: **93** (A)
+- `from-scratch.md`: **89** (A-)
 - `2025-07-17-kids-and-ai-what-the-turing-lego-study-means-for-your-home-and-classroom.md`: **85** (A-)
-- `2026-01-05-every-learner’s-ai-right.md`: **85** (A-)
 
 ## All Articles
 
@@ -70,7 +70,7 @@ Generated: `2026-04-02T11:28:51+00:00`
 | `2026-01-04-why-ai-must-show-its-work.md` | 82 | B+ | 973 |
 | `2025-07-17-kids-and-ai-what-the-turing-lego-study-means-for-your-home-and-classroom.md` | 85 | A- | 452 |
 | `2026-01-05-every-learner’s-ai-right.md` | 85 | A- | 986 |
-| `the-empty-workbench.md` | 85 | A- | 3876 |
+| `from-scratch.md` | 89 | A- | 3876 |
 | `2025-06-12-embracing-the-maker-mindset-in-ai-education.md` | 93 | A | 1346 |
 | `2025-02-21-intro-to-snap-procedural-music-creation-curriculum.md` | 96 | A+ | 2784 |
 | `the-walled-garden.md` | 96 | A+ | 2732 |

@@ -5,9 +5,12 @@
     "": {
       "name": "Sage.Education",
       "dependencies": {
+        "gray-matter": "^4.0.3",
         "js-yaml": "^4.1.0",
         "jsdom": "^25.0.1",
+        "markdown-it": "^14.1.1",
         "markdown-it-attrs": "^4.1.6",
+        "markdown-it-footnote": "^4.0.0",
       },
       "devDependencies": {
         "@11ty/eleventy": "^3.0.0",
@@ -335,6 +338,8 @@
     "markdown-it-anchor": ["markdown-it-anchor@8.6.7", "", { "peerDependencies": { "@types/markdown-it": "*", "markdown-it": "*" } }, ""],
 
     "markdown-it-attrs": ["markdown-it-attrs@4.3.1", "", { "peerDependencies": { "markdown-it": ">= 9.0.0" } }, ""],
+
+    "markdown-it-footnote": ["markdown-it-footnote@4.0.0", "", {}, "sha512-WYJ7urf+khJYl3DqofQpYfEYkZKbmXmwxQV8c8mO/hGIhgZ1wOe7R4HLFNwqx7TjILbnC98fuyeSsin19JdFcQ=="],
 
     "math-intrinsics": ["math-intrinsics@1.1.0", "", {}, ""],
 

@@ -9,7 +9,6 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginBundle = require("@11ty/eleventy-plugin-bundle");
 const pluginNavigation = require("@11ty/eleventy-navigation");
-const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 const wikilinksPlugin = require("./_plugins/eleventy-plugin-wikilinks");
 const devShortcodesMdPlugin = require("./_plugins/eleventy-plugin-devshortcodes-md");
 const { computeBacklinks } = require("./_data/wikilinks");
@@ -18,7 +17,8 @@ const { computeBacklinks } = require("./_data/wikilinks");
 const sectionizePlugin = require("./_plugins/eleventy-plugin-sectionize");
 const highlightPlugin = require("./_plugins/eleventy-plugin-highlight");
 
-module.exports = function(eleventyConfig) {
+module.exports = async function(eleventyConfig) {
+  const { EleventyHtmlBasePlugin } = await import("@11ty/eleventy");
   eleventyConfig.on("eleventy.before", () => {
     if (process.env.SKIP_ARTICLE_AUDIT === "1") return;
 

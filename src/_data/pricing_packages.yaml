@@ -45,7 +45,7 @@ packages:
     order: 2
     cta:
       text: Apply to try it free for 30 Days
-      url: https://sage.education/Sign-up-Now?plan=per_user_v3
+      url: https://sage.education/Sign-up-Now?plan=per_user_v2
       dataPlan: Plus
     cssClass: pricing__package--plus
     gridColumn: null
@@ -72,7 +72,7 @@ packages:
         helper:
           text: You'll love them if you're part of a bigger team.
         html: true
-        content: Purchase our upcomming <a
+        content: Purchase our upcoming <a
           href="https://startr.cloud/docs/#TODO/article/897-timesheet"
           target="_blank">TimeFlow</a> and <a
           href="https://startr.cloud/docs/#TODO/article/687-admin-pro-pack"

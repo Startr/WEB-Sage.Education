@@ -79,7 +79,7 @@ apps:
       - name: "Zoho Flow"
         url: "https://zoho.com/flow/apps/sage-3/integrations/?utm_source=sage3&utm_medium=sage3&utm_campaign=sage3_extras"
         logo: "/assets/images/extras/zoho-flow.png"
-        description: "Stay productive by connecting your Sage 3 with 650+ apps like Jarvis Cloud, ChatGPT, Zendesk and more."
+        description: "Stay productive by connecting your Sage.is with 650+ apps like Jarvis Cloud, ChatGPT, Zendesk and more."
 
 tracking:
   title: "Time Tracking, Invoicing, and Accounting"
@@ -306,7 +306,7 @@ development:
       - name: "Usersnap Classic"
         url: "https://usersnap.com/integrations/sage"
         logo: "/assets/images/extras/usersnap.png"
-        description: "Get feedback and bug reports sent to your Sage 3 AIs."
+        description: "Get feedback and bug reports sent to your Sage.is AIs."
       
       - name: "Ybug"
         url: "https://ybug.io/integrations/sage"
@@ -413,7 +413,7 @@ dev_tools:
       - name: "OAuth.io"
         url: "https://oauth.io/"
         logo: "/assets/images/extras/oauthio.png"
-        description: "OAuth that just works! Ease the OAuth integration of Sage API v3 and interact with its API in your web and mobile applications."
+        description: "OAuth that just works! Ease the OAuth integration of Sage.is API v2 and interact with its API in your web and mobile applications."
       
       - name: "Truto"
         url: "https://truto.one/integrations/detail/sage"

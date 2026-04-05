@@ -20,14 +20,13 @@ core_features:
       replaces: "Trello"
       todo: "Remove kanban-style Card Tables mentions (feature not ready)"
       
-    - name: "Campfires & Pings"
+    - name: "Spaces"
       description: " for group chat and direct messaging"
-      replaces: "ChatGPT, Teams, etc"
-      todo: "Fix chat messaging text: Replace 'ChatGPT, Teams' with 'Slack, Teams' and mention 'RoundTable'"
+      replaces: "Slack, Teams, etc"
       
-    - name: "Scheduling"
-      description: " for deadlines, milestones, and events"
-      works_with: "Google, Apple, and Outlook"
+    - name: "Working Spaces"
+      description: " for collaboration and video (Sage + Startr.Spaces)"
+      replaces: "Zoom, Google Meet, etc"
       
     - name: "Docs & Files"
       description: " for storing assets"
@@ -40,7 +39,7 @@ core_features:
 # Company stability benefits
 company_benefits:
   heading: "A stable, well-run company is part of the deal, too."
-  subtitle: "We've been running an upstanding, trustworthy, sustainable business for more than two decades. You can't build reliable software unless you build a reliable company."
+  subtitle: "We've been running an upstanding, trustworthy, sustainable business for almost two decades. You can't build reliable software unless you build a reliable company."
   
   benefits:
     - "18 profitable, financially responsible years in business"

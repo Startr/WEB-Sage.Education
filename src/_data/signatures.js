@@ -9,11 +9,11 @@ module.exports = {
       title: "Co-founder & CEO"
     }
   },
-  "andrea": {
+  "alex-somma": {
     name: "Alex Somma",
-    title: "People Ops",
-    company: "Startr", 
-    signature: "— Alex, People Ops at Startr"
+    title: "Co-founder & CTO",
+    company: "Startr",
+    signature: "— Alex Somma, Co-founder & CTO at Startr"
   },
   "kimberly": {
     name: "Kimberly",

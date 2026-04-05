@@ -52,7 +52,7 @@
       </div>
     </nav>
     <ul id="blog-nav-article-list">
-      {%- for post in collections.posts | reverse %}
+      {%- for post in collections.posts %}
         {%- if post.data.title %}
         {%- set postDeck = post.data.subheadline or post.data.description or post.data.summary %}
         <li{% if post.url == page.url %} class="is-current"{% endif %}>

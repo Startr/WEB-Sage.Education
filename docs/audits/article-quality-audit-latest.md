@@ -1,29 +1,29 @@
 # Article Quality Audit
 
-Generated: `2026-04-04T13:17:31+00:00`
+Generated: `2026-04-05T11:05:28+00:00`
 
 ## Summary
 
-- Articles audited: **29**
-- Average score: **76.1**
+- Articles audited: **30**
+- Average score: **76.5**
 - Range: **60 - 96**
-- Grade distribution: **A: 1, A+: 2, A-: 3, B: 10, B+: 2, B-: 4, C: 2, C+: 5**
+- Grade distribution: **A: 1, A+: 2, A-: 4, B: 10, B+: 2, B-: 4, C: 2, C+: 5**
 
 ## Category Breakdown
 
 | Category | Pass | Info | Warn |
 |---|---:|---:|---:|
-| Em-Dash Density | 26 | 0 | 3 |
-| Image Assets | 29 | 0 | 0 |
-| Named Sources | 2 | 1 | 26 |
-| Opener Variety | 14 | 0 | 15 |
-| Paragraph Variation | 9 | 2 | 18 |
-| Passive Voice | 29 | 0 | 0 |
-| Product Pitch | 29 | 0 | 0 |
-| Rhetorical Restraint | 11 | 14 | 4 |
-| Sentence Variation | 23 | 5 | 1 |
-| Show vs. Tell | 27 | 2 | 0 |
-| Specificity | 9 | 7 | 13 |
+| Em-Dash Density | 27 | 0 | 3 |
+| Image Assets | 30 | 0 | 0 |
+| Named Sources | 2 | 1 | 27 |
+| Opener Variety | 15 | 0 | 15 |
+| Paragraph Variation | 10 | 2 | 18 |
+| Passive Voice | 30 | 0 | 0 |
+| Product Pitch | 29 | 1 | 0 |
+| Rhetorical Restraint | 12 | 14 | 4 |
+| Sentence Variation | 24 | 5 | 1 |
+| Show vs. Tell | 28 | 2 | 0 |
+| Specificity | 10 | 7 | 13 |
 
 ## Lowest 5
 
@@ -39,7 +39,7 @@ Generated: `2026-04-04T13:17:31+00:00`
 - `the-walled-garden.md`: **96** (A+)
 - `2025-06-12-embracing-the-maker-mindset-in-ai-education.md`: **93** (A)
 - `from-scratch.md`: **89** (A-)
-- `2025-07-17-kids-and-ai-what-the-turing-lego-study-means-for-your-home-and-classroom.md`: **85** (A-)
+- `the-invisible-instructional-designer.md`: **89** (A-)
 
 ## All Articles
 
@@ -71,6 +71,7 @@ Generated: `2026-04-04T13:17:31+00:00`
 | `2025-07-17-kids-and-ai-what-the-turing-lego-study-means-for-your-home-and-classroom.md` | 85 | A- | 452 |
 | `2026-01-05-every-learner’s-ai-right.md` | 85 | A- | 986 |
 | `from-scratch.md` | 89 | A- | 3876 |
+| `the-invisible-instructional-designer.md` | 89 | A- | 2636 |
 | `2025-06-12-embracing-the-maker-mindset-in-ai-education.md` | 93 | A | 1346 |
 | `2025-02-21-intro-to-snap-procedural-music-creation-curriculum.md` | 96 | A+ | 2784 |
 | `the-walled-garden.md` | 96 | A+ | 2732 |

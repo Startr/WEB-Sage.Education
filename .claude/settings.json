@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /Users/somma/Documents/Projects/GitHub/WEB-Sage.Education log --format=\"%H %ai %s\" -- \"src/posts/blog/en/the-invisible-instructional-designer.md\")"
+    ]
+  }
+}

@@ -5,7 +5,7 @@ tags:
   - AI
   - agentic-AI
   - open-source
-date: 2026-03-11T12:00:00.000-01:00
+date: 2026-04-05T12:00:00.000-04:00
 rating: 5
 hero: /assets/images/heroes/painting-lacemaker.jpg
 hero_alt: "A woman bent over her work, every thread deliberate, every stitch placed with practiced precision – the craft that cannot be rushed"

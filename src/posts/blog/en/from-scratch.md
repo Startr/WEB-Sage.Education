@@ -1,9 +1,5 @@
 ---
-hero_caption: "Photo: Alexander Somma."
-hero_alt: A wooden kitchen table dusted with flour, a rolling pin resting beside
-  a bowl of dough, morning light from a window catching the particles suspended
-  in the air
-title: From Scratch
+title: "From Scratch"
 tags:
   - technology
   - AI
@@ -11,22 +7,22 @@ tags:
   - maker-culture
 date: 2026-03-27T12:00:00.000-01:00
 rating: 5
-summary: "We removed shop class, home economics, and hands-on making from
-  schools over thirty years and created a generation of consumers, not creators.
-  Now AI is repeating the same pattern at industrial speed: offering finished
-  outputs instead of the friction of building. The maker-minded alternative
-  exists. It looks like giving people tools, not answers."
+hero: /assets/images/heroes/empty-workshop.jpg
+hero_alt: "A wooden kitchen table dusted with flour, a rolling pin resting beside a bowl of dough, morning light from a window catching the particles suspended in the air"
+hero_caption: "Photo: Alexander Somma."
+summary: >-
+  We removed shop class, home economics, and hands-on making from schools over thirty years and created a generation of consumers, not creators. Now AI is repeating the same pattern at industrial speed: offering finished outputs instead of the friction of building. The maker-minded alternative exists. It looks like giving people tools, not answers.
 eleventyNavigation:
   parent: Blog
-hero: /assets/images/heroes/empty-workshop.jpg
 ---
-One afternoon in my kitchen, I made cookies from scratch with my son. Not slice-and-bake, not the kind that arrive in a tube with a peel-back label and pre-scored rounds. From scratch. Flour, butter, sugar, eggs, vanilla, a pinch of salt. The recipe was grandmother's, handwritten on an index card that had survived three moves and then copied to my iPad for my international travel.
+
+One afternoon, in my kitchen, I made cookies from scratch with my son. Not slice-and-bake, not the kind that arrive in a tube with a peel-back label and pre-scored rounds. From scratch. Flour, butter, sugar, eggs, vanilla, a pinch of salt. The recipe was grandmother's, handwritten on an index card that had survived three moves and then copied to my iPad for my international travel.
 
 My son is fourteen. He has been baking with me since he was small enough to need a stool to reach the counter. He knows the recipe. He still over-measured the flour on the first scoop. He cracked an egg one-handed, a trick he has been perfecting for years, and got shell in the bowl. He asked why we could not just buy cookies at the shop down the road.
 
 I did not have a good answer. Not immediately. The store cookies are fine. They are engineered to be fine. They arrive in a sealed package, consistent in size and flavour, optimized for shelf life and manufactured by a process no one in the store can describe. They cost two euros and require no cleanup.
 
-But standing in that kitchen, fishing eggshells out of batter with a teenager who had flour on his nose, I understood something I had been circling for months. 
+But standing in that kitchen, fishing eggshell out of batter with a teenager who had flour on his nose, I understood something I had been circling for months. 
 
 The cookie was not the point. The process was the point. The mess was the point. The failure with the eggshell and the correction that followed and the moment he realized the dough tasted different from anything in a package — that was the point. He was not learning to bake. He was learning that he could make something from raw materials with his own hands, and that the result, imperfect and lopsided and slightly too brown on the bottom, was his.
 
@@ -34,7 +30,7 @@ Nobody teaches this anymore. Not because the knowledge is lost but because the s
 
 ## THE DISAPPEARED CLASSROOM
 
-!\[[photo-manual-training-1922.jpg]]
+![[photo-manual-training-1922.jpg]]
 *Technical illustration from "Manual Training for the Rural Schools" by Louis Michael Roehl (1922). Woodworking projects designed to be built by students with hand tools. The drawings assume the student will hold the chisel. Public domain, via Wikimedia Commons*
 
 In 1982, the majority of American high schools offered woodworking, metalworking, auto shop, and home economics. Students learned to use a lathe, wire a circuit, change a tire, hem a skirt, and bake a loaf of bread. The classes were not prestigious. Guidance counselors steered college-bound students away from them. But they existed, and they taught something no lecture could: that raw materials become finished goods through skill, patience, and tolerance for failure.
@@ -53,7 +49,7 @@ What replaced the workbench was not nothing. It was test preparation. More math 
 
 ## THE PRE-MADE GENERATION
 
-!\[[photo-supermarket-aisle.jpg]]
+![[photo-supermarket-aisle.jpg]]
 *A supermarket aisle. Every product sealed, labelled, and optimized for shelf life. No evidence of how any of it was made. Photo: Nilo Velez, CC0*
 
 The consequences are not abstract. They are measurable, and they extend beyond the workshop.
@@ -64,7 +60,7 @@ Michael Pollan, a journalism professor at the University of California, Berkeley
 
 A 2017 survey by the International Food Information Council Foundation found that only 10 percent of millennials reported frequently baking from scratch.[^8] Their grandparents baked daily. The knowledge did not vanish. It was not passed down, because the systems that facilitated the transfer (home economics classes, multi-generational communities, the economic necessity of making rather than buying) were dismantled one by one, each removal justified by efficiency, each efficiency creating an economic dependency.
 
-The pattern is not limited to food. Kyle Wiens, the CEO and co-founder of iFixit, has spent fifteen years documenting the shift from repair to replacement. When Apple paid a $113 million settlement in 2020 over ***deliberately slowing older iPhones***[^9], the scandal was not that a company had designed its product to degrade. The scandal wass that millions of consumers had replaced their phones rather than questioning why they slowed down. They did not think to fix. They had never been taught that fixing was an option.
+The pattern is not limited to food. Kyle Wiens, the CEO and co-founder of iFixit, has spent fifteen years documenting the shift from repair to replacement. When Apple paid a $113 million settlement in 2020 over ***deliberately slowing older iPhones***[^9], the scandal is not that a company had designed its product to degrade. The scandal is that millions of consumers had replaced their phones rather than questioning why they slowed down. They did not think to fix. They had never been taught that fixing was an option.
 
 The European Environmental Bureau estimated in 2019 that extending the lifespan of all smartphones, washing machines, laptops, and vacuum cleaners in the EU by one year would save nearly four million tonnes of CO2 annually by 2030.[^10] The environmental cost of the replacement mindset is calculable. The cognitive cost is harder to measure but no less real: a generation that encounters a broken thing and reaches for a credit card instead of a screwdriver. Not because they are lazy. Because no one ever put a screwdriver in their hand and showed them what it was for.
 
@@ -72,7 +68,7 @@ The European Environmental Bureau estimated in 2019 that extending the lifespan 
 
 ## THE VENDING MACHINE IN THE CLASSROOM
 
-!\[[photo-automat-1906.jpg]]
+![[photo-automat-1906.jpg]]
 *A Horn & Hardart Automat, circa 1906. Insert a coin, open a glass door, remove a finished meal. No kitchen visible. No cook to speak to. The original vending machine. Photo: Library Company of Philadelphia. Public domain, via Wikimedia Commons*
 
 In November 2022, OpenAI released ChatGPT. Within two months, it had 100 million users. Within a year, a survey by the Pew Research Center found that one in four American teenagers had used it for schoolwork.[^11] Among college students, the figure was higher. Stanford University's Digital Education initiative reported that over 60 percent of college students used AI tools for coursework within the first year of ChatGPT's release.[^12]
@@ -97,7 +93,7 @@ Three percent. Ninety-seven percent of screen time is spent consuming what someo
 
 ## THE WORKBENCH THAT SCALES
 
-!\[[photo-maker-faire.jpg]]
+![[photo-maker-faire.jpg]]
 *Maker Faire 2017. Hands on materials, tools within reach, something being built that did not exist an hour ago. Photo: fabola, CC BY-SA 2.0, via Flickr*
 
 Mitch Resnick, a professor at the MIT Media Lab and the creator of Scratch, has spent two decades arguing that digital tools should be instruments of creation, not consumption. In his 2017 book *Lifelong Kindergarten*[^19], he warned that most children's technology use is "TV-like" — passive, receptive, spectatorial. The alternative, Resnick argued, is to build tools that put the learner in the position of the maker: not receiving finished products but constructing them, debugging them, iterating on them, and sharing them with others who are doing the same.
@@ -110,13 +106,12 @@ Kylie Peppler, a professor at the University of California, Irvine, published re
 
 This is the architectural question that AI in education has not yet answered. Not whether AI can produce an essay, a lesson plan, a piece of code, a set of flashcards. It can. The question is whether the tool positions the human as the maker or the consumer. Whether it hands over raw materials and says "build" or hands over a finished product and says "approve."
 
-[Sage.is](https://sage.is/) was designed as a workbench, not a vending machine. Open-source (AGPL-3 licensed), self-hostable, model-agnostic. The architecture does not dispense answers. It provides a Workshop where people build their own agents, their own tools, their own knowledge bases. It provides Spaces for human-to-human collaboration, human-to-AI collaboration, and even AI-to-AI collaboration, in a shared environment where the process is visible and the product belongs to the people who made it.
+[Sage.is AI-UI](https://sage.is/) was designed as a workbench, not a vending machine. Open-source (AGPL-3 licensed), self-hostable, model-agnostic. The architecture does not dispense answers. It provides a Workshop where people build their own agents, their own tools, their own knowledge bases. It provides Spaces for human-to-human collaboration, human-to-AI collaboration, and even AI-to-AI collaboration, in a shared environment where the process is visible and the product belongs to the people who made it.
 
-The distinction is not superficial. A vending machine and a workshop both contain useful things. The difference is what the student learns from them. The vending machine teaches you to insert coins. The workshop teaches you to use tools. The vending machine produces dependency. The workshop produces capability. 
+The distinction is not superficial. A vending machine and a workshop both contain useful things. The difference is what the person who uses them learns. The vending machine teaches you to insert coins. The workshop teaches you to use tools. The vending machine produces dependency. The workshop produces capability. 
 
-> The understanding that you can make something from raw materials, that the lopsided and imperfect thing you built with your own hands is yours in a way that no purchased product can be.
->
-> * Isabelle Plante
+>The understanding that you can make something from raw materials, that the lopsided and imperfect thing you built with your own hands is yours in a way that no purchased product can be.
+>- Isabelle Plante
 
 Gary Stager, a collaborator of Seymour Papert at the MIT Media Lab and co-author of *Invent to Learn*[^23], has argued that constructionism (the principle that learning is most effective when learners construct tangible objects) applies directly to AI. The question is not whether students should use AI. The question is whether they use it the way a woodworker uses a lathe (a tool that extends capability while requiring skill) or the way a customer uses a catalogue (a menu of finished products that requires only selection).
 
@@ -124,7 +119,7 @@ The Sage.is AI platform Spaces are the modern shop class. Not a room full of ide
 
 ## THE RECIPE
 
-!\[[Ninja Cookies.jpeg]]
+![[Ninja Cookies.jpeg]]
 *Dough, Shaped and baked. Our hands know what the recipe card cannot teach. Photo: Izzy Plante, CC BY 2.0*
 
 The cookies came out of the oven slightly lopsided. The edges were uneven. One side of the tray had browned faster because the oven in that kitchen runs hot on the left, a fact you can only learn by burning something. My son picked up the first one before it had cooled, broke it in half, and ate it standing at the counter.
@@ -195,6 +190,6 @@ The empty workshop is not waiting for better tools. It is waiting for someone to
 
 [^23]: Sylvia Libow Martinez and Gary Stager, *Invent to Learn: Making, Tinkering, and Engineering in the Classroom*, 2nd ed. (Torrance, CA: Constructing Modern Knowledge Press, 2019). [ISBN 978-0-9891511-8-0](https://en.wikipedia.org/wiki/Special:BookSources/978-0-9891511-8-0)
 
-- - -
+---
 
 *The views expressed are those of the editorial board and do not necessarily reflect the positions of any institution mentioned. Sage.is AI-UI is a product of Startr LLC. Full disclosure and transparency is a feature, not a bug.*

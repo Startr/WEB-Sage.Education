@@ -150,3 +150,4 @@ That is the wall.
 [^8]: University of Missouri, "Show-Me AI" initiative launch, September 2025. Chris Kwak, CIO, oversaw deployment on university-owned infrastructure.
 [^9]: Shida Li, co-founder of Obsidian, interview, November 2022. "We want your notes to outlive Obsidian."
 [^10]: Leonie Haimson, executive director of Class Size Matters and co-chair of the Parent Coalition for Student Privacy. FTC complaints filed 2015 and 2021. Quoted in *The Washington Post*, January 2025.
+[^11]: See also in this series: ["From Scratch"](/posts/blog/en/from-scratch/) examines how AI repeats the same pattern documented here — replacing the process of making with the consumption of pre-made outputs, from shop class to the AI vending machine. ["The Invisible Instructional Designer"](/posts/blog/en/the-invisible-instructional-designer/) explores how agentic AI tools can amplify teacher judgment rather than lock it into a platform's ecosystem.

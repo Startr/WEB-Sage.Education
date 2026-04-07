@@ -107,7 +107,7 @@ Now try the alternative. Export an Obsidian vault. You get a folder of Markdown 
 
 Export a conversation from an open-source AI platform like Sage.is AI-UI. You get structured data: the full exchange, with timestamps, model attribution, and context. Import it elsewhere. Pipe it through a script. Feed it to a different model. The conversation is not locked to the platform that hosted it, because the platform was built on AGPL-3, self-hostable, and designed for exactly the institutions that Google's free tier is designed to capture.
 
-The export test is not a technical detail. It is a philosophical position. Tools that make leaving easy are tools that believe their value comes from what they do. Tools that make leaving hard are tools that believe their value comes from what they hold.
+The export test is not a technical detail. It is a philosophical position. Tools that make leaving easy are tools that believe their value comes from what they do. Tools that make leaving hard are tools that believe their value comes from what they hold.[^11]
 
 ![[painting-panopticon.jpg]]
 *Jeremy Bentham, "Panopticon" (1791). University College London. The architecture where every occupant is visible from the centre, and no occupant can see the watcher. Public domain.*

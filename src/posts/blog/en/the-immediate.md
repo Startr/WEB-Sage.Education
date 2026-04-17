@@ -1,5 +1,5 @@
 ---
-title: "The Immediate"
+title: "The Stress Test"
 tags:
   - education
   - AI
@@ -16,7 +16,7 @@ eleventyNavigation:
   parent: Blog
 ---
 
-# The Immediate
+# The Stress Test
 
 In the spring of 2025, Brittany Carr submitted an essay at Liberty University. She had written it herself – longhand first, then typed. The university's AI detection software flagged it. She failed the assignment. She submitted a second essay. Flagged again. A third. Flagged again. Three failures in a row, each for work she had produced without AI assistance.[^1]
 

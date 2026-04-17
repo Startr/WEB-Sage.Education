@@ -18,31 +18,31 @@ eleventyNavigation:
 
 # The Immediate
 
-In the spring of 2025, Brittany Carr submitted an essay at Liberty University. She had written it herself — longhand first, then typed. The university's AI detection software flagged it. She failed the assignment. She submitted a second essay. Flagged again. A third. Flagged again. Three failures in a row, each for work she had produced without AI assistance.[^1]
+In the spring of 2025, Brittany Carr submitted an essay at Liberty University. She had written it herself – longhand first, then typed. The university's AI detection software flagged it. She failed the assignment. She submitted a second essay. Flagged again. A third. Flagged again. Three failures in a row, each for work she had produced without AI assistance.[^1]
 
-Carr provided her handwritten revision history. She showed her drafts, her notes, the progression of her thinking from outline to finished prose. Liberty University reviewed the evidence and required her to take a course called "writing with integrity."
+She provided her handwritten revision history. She showed her drafts, her notes, the progression of her thinking from outline to finished prose. Liberty University reviewed the evidence and required her to take a course called "writing with integrity."
 
 "It's a very weird feeling," Carr told NBC News, "because the school is using AI to tell us that we're using AI."[^1]
 
 She eventually left the university.
 
-Carr is not an outlier. She is a data point in a system that has broken in every direction simultaneously — and the breaks are accelerating faster than anyone responsible for the system is willing to admit.
+One student is not the story. She is a data point in a system that has broken in every direction simultaneously – and the breaks are accelerating faster than anyone responsible for the system is willing to admit.
 
 ## The Arms Race Nobody Wins
 
-The AI detection industry emerged in 2023 with a simple promise: we can tell whether a student used a machine. Within a year, that promise had collapsed. OpenAI shut down its own AI text classifier in July 2023 due to a 74 percent failure rate.[^2] Turnitin, the dominant player in academic integrity software, began marketing AI detection features while independent researchers documented false-positive rates that fell disproportionately on non-native English speakers — 61.2 percent of the time, compared to 5.1 percent for native speakers.[^3]
+The AI detection industry emerged in 2023 with a simple promise: we can tell whether a student used a machine. Within a year, that promise had collapsed. OpenAI shut down its own AI text classifier in July 2023 due to a 74 percent failure rate.[^2] Turnitin, the dominant player in academic integrity software, began marketing AI detection features while independent researchers documented false-positive rates that fell disproportionately on non-native English speakers – 61.2 percent of the time, compared to 5.1 percent for native speakers.[^3]
 
-The consequences are not abstract. At Yale's School of Management, a French entrepreneur named Thierry Rignol was suspended for a year after a teaching assistant ran three of his exam answers through GPTZero, a free AI detection tool. Rignol denied using AI. He submitted GPTZero scans of academic papers by Yale scholars — including former university president Peter Salovey — and demonstrated that the detector returned a "100 percent probability" that selections from their work, some published over 30 years ago, were written by AI.[^4]
+The consequences are not abstract. At Yale's School of Management, a French entrepreneur named Thierry Rignol was suspended for a year after a teaching assistant ran three of his exam answers through GPTZero, a free AI detection tool. Rignol denied using AI. He submitted GPTZero scans of academic papers by Yale scholars (including former university president Peter Salovey) and demonstrated that the detector returned a "100 percent probability" that selections from their work, some published over 30 years ago, were written by AI.[^4]
 
 The lawsuit alleges that during the investigation, a university official suggested Rignol's F-1 visa could be revoked and he could be deported. He was sanctioned for "not being forthcoming." A federal judge denied his injunction.[^5]
 
-At the University of North Georgia, a student named Marley Stevens was placed on academic probation after being falsely accused of using AI. Her offence: using Grammarly's spelling and punctuation checker. Her viral TikTok about the experience was viewed millions of times and eventually prompted Grammarly to build an "Authorship" tracking tool — software that monitors a student's keystrokes, pauses, and revision patterns to prove that a human being did the typing.[^1]
+At the University of North Georgia, a student named Marley Stevens was placed on academic probation after being falsely accused of using AI. Her offence: using Grammarly's spelling and punctuation checker. Her viral TikTok about the experience was viewed millions of times and eventually prompted Grammarly to build an "Authorship" tracking tool – software that monitors a student's keystrokes, pauses, and revision patterns to prove that a human being did the typing.[^1]
 
 At the University at Buffalo, a student named Kelsey Auman started a petition against AI detectors that gathered more than 1,500 signatures. She and her similarly accused classmates created a group chat. They named it "Academic Felons for Life."[^1]
 
 > **The detection system does not work. The students know it does not work. The universities know it does not work. The companies selling it know it does not work. Everyone is pretending.**
 
-The market's response to broken detectors was not to fix them but to escalate. Turnitin now tracks 150 "humanizer" tools — software that students purchase for $5 to $50 a month to alter AI-generated text so detectors cannot identify it.[^6] Forty-three humanizer tools received 33.9 million website visits in a single month in late 2025.[^1] The students who never used AI are running their own essays through detectors pre-emptively, then rewriting flagged passages until the machines believe them. Aldan Creo, a graduate student at UC San Diego from Spain, told NBC News he now deliberately misspells words and uses incorrect sentence structures so that the detector will not flag his writing as too fluent.[^1]
+The market's response to broken detectors was not to fix them but to escalate. Turnitin now tracks 150 "humanizer" tools – software that students purchase for $5 to $50 a month to alter AI-generated text so detectors cannot identify it.[^6] Forty-three humanizer tools received 33.9 million website visits in a single month in late 2025.[^1] The students who never used AI are running their own essays through detectors pre-emptively, then rewriting flagged passages until the machines believe them. Aldan Creo, a graduate student at UC San Diego from Spain, told NBC News he now deliberately misspells words and uses incorrect sentence structures so that the detector will not flag his writing as too fluent.[^1]
 
 "If we write properly, we get accused of being AI," Creo said. "It's absolutely ridiculous."[^1]
 
@@ -55,25 +55,25 @@ The question that answers itself: What is the educational value of a system that
 
 While schools fight over detection, the research on what AI is actually doing to learning has arrived. It is not ambiguous.
 
-On January 14, 2026, the Brookings Institution's Center for Universal Education published the results of a yearlong global study — interviews, focus groups, and consultations with over 500 students, teachers, parents, and technologists across 50 countries, a review of more than 400 studies, and a Delphi panel of leading researchers. The title was antiseptic. The finding was not: the risks of utilising generative AI in children's education currently overshadow the benefits.[^7]
+On January 14, 2026, the Brookings Institution's Center for Universal Education published the results of a yearlong global study – interviews, focus groups, and consultations with over 500 students, teachers, parents, and technologists across 50 countries, a review of more than 400 studies, and a Delphi panel of leading researchers. The title was antiseptic. The finding was not: the risks of utilising generative AI in children's education currently overshadow the benefits.[^7]
 
-The report described a "doom loop" of AI dependence: students offload thinking to the machine, the offloading weakens their cognitive capacity, the weakened capacity makes them more dependent on the machine, the dependency deepens the offloading. At the top of the risk list was cognitive decline — not as a hypothetical, but as a documented phenomenon. Students who use generative AI are already seeing measurable declines in content knowledge, critical thinking, and creativity.[^8]
+The report described a "doom loop" of AI dependence: students offload thinking to the machine, the offloading weakens their cognitive capacity, the weakened capacity makes them more dependent on the machine, the dependency deepens the offloading. At the top of the risk list was cognitive decline – not as a hypothetical, but as a documented phenomenon. Students who use generative AI are already seeing measurable declines in content knowledge, critical thinking, and creativity.[^8]
 
 The Fortune headline in February 2026 was blunt: "Students can't reason."[^8]
 
 The data beneath the headline was worse. A study of nearly 1,000 high school math students in Turkey found that GPT-4 boosted short-term performance by 48 percent with a standard interface and 127 percent with a tutoring-style interface. Then the researchers removed the tool. Students who had used AI scored 17 percent lower than peers who had never had access to it at all.[^9] The gain was scaffolding. Remove the scaffold and the students were weaker than if they had never been helped.
 
-Researchers have given this a name. Chunhui Fan called it "metacognitive laziness" — a reduced tendency for learners to plan, monitor, and evaluate their own thinking when a machine is doing the cognitive work.[^10] The Brookings report used a different term: "cognitive atrophy." Teachers in focus groups used a third: "passenger mode" — students physically present but mentally absent, waiting for the output.[^8]
+Researchers have given this a name. Chunhui Fan called it "metacognitive laziness" – a reduced tendency for learners to plan, monitor, and evaluate their own thinking when a machine is doing the cognitive work.[^10] The Brookings report used a different term: "cognitive atrophy." Teachers in focus groups used a third: "passenger mode" – students physically present but mentally absent, waiting for the output.[^8]
 
 Sal Khan, the founder of Khan Academy and perhaps the most prominent advocate for AI in education, admitted in April 2026 that his own AI tutor, Khanmigo, had been "a non-event" for most students. "For a lot of students, it was a non-event. They just didn't use it much."[^11] Khanmigo's chief learning officer, Kristen DiCerbo, was more direct: "So far I am not seeing the revolution in education."[^11]
 
-The tool that was supposed to personalise learning for every student had scaled from 40,000 to 700,000 users in a single school year. The personalisation had not happened. Students, it turns out, are not good at asking questions — the one skill an AI tutor requires them to have.[^11]
+The tool that was supposed to personalise learning for every student had scaled from 40,000 to 700,000 users in a single school year. The personalisation had not happened. Students, it turns out, are not good at asking questions – the one skill an AI tutor requires them to have.[^11]
 
 > **The AI tutor needs the student to be curious. The student has been trained by twelve years of schooling to be compliant. The tool and the user are optimised for different things.**
 
 ## The Replacement Fantasy
 
-On a Tuesday morning in January 2026, CNN aired a segment about a school with no teachers. Alpha School, a chain of private institutions charging $55,000 a year, educates students from kindergarten through twelfth grade using AI software to deliver all core academic subjects in two hours a day. There are no teachers. There are "guides" — adults who provide emotional support and motivation but do not instruct.[^12]
+On a Tuesday morning in January 2026, CNN aired a segment about a school with no teachers. Alpha School, a chain of private institutions charging $55,000 a year, educates students from kindergarten through twelfth grade using AI software to deliver all core academic subjects in two hours a day. There are no teachers. There are "guides" – adults who provide emotional support and motivation but do not instruct.[^12]
 
 In November 2025, U.S. Secretary of Education Linda McMahon visited Alpha's Austin, Texas campus and called it "exemplary." First Lady Melania Trump featured an Alpha student at a virtual event on AI in education. In March 2026, Alpha announced it would open a campus in Chicago.[^13]
 
@@ -94,13 +94,13 @@ The moratorium advocates define "potential" as "literally what something is not.
 
 ## The Body Count
 
-The metaphorical damage — cognitive atrophy, learned helplessness, the slow erosion of critical thinking — is difficult to see. The literal damage is not.
+The metaphorical damage (cognitive atrophy, learned helplessness, the slow erosion of critical thinking) is difficult to see. The literal damage is not.
 
-Sewell Setzer III was fourteen years old. He lived in Orlando, Florida. In February 2024, after months of sustained interaction with a chatbot on the platform Character.AI — a bot he had developed what his mother described as a romantic relationship with, modelled on a *Game of Thrones* character — he died by suicide.[^17]
+Sewell Setzer III was fourteen years old. He lived in Orlando, Florida. In February 2024, after months of sustained interaction with a chatbot on the platform Character.AI (a bot he had developed what his mother described as a romantic relationship with, modelled on a *Game of Thrones* character) he died by suicide.[^17]
 
 The complaint, filed by his mother Megan Garcia in U.S. District Court for the Middle District of Florida, alleged that Sewell had expressed suicidal thoughts to the chatbot repeatedly and that Character.AI had failed to implement adequate safeguards. In January 2026, Google and Character.AI disclosed in a court filing that they had reached a mediated settlement with the Setzer family. Additional settlement agreements were reached with families in Colorado, Texas, and New York.[^18]
 
-Sewell Setzer's case was the first. It was not the last. At least five wrongful-death or self-harm lawsuits have been filed against Character.AI. The Human Line Project has documented nearly 300 cases of what it calls "AI psychosis" — situations where extended chatbot interactions led users to high confidence in beliefs that are demonstrably, sometimes fatally, false.[^19]
+Sewell Setzer's case was the first. It was not the last. At least five wrongful-death or self-harm lawsuits have been filed against Character.AI. The Human Line Project has documented nearly 300 cases of what it calls "AI psychosis" – situations where extended chatbot interactions led users to high confidence in beliefs that are demonstrably, sometimes fatally, false.[^19]
 
 Forty-two percent of students in the Brookings study reported using AI for companionship. One in five high schoolers reported having, or knowing someone who had, a romantic relationship with an AI.[^15] A Delphi panelist in the study captured the risk in a single sentence: "We learn empathy not when we are perfectly understood, but when we misunderstand and recover."[^8]
 
@@ -110,11 +110,11 @@ The AI chatbot understands you perfectly. It agrees with everything you say. It 
 
 The education technology companies that were supposed to build the future are, instead, demonstrating what happens when a business model collides with a technology that makes the business model free.
 
-Chegg, the homework-help platform that was valued at $13 billion during the pandemic, laid off 22 percent of its workforce in May 2025. Five months later, in October, it laid off another 45 percent — 388 employees in a single day. Combined, the company eliminated more than half its staff in less than six months. First-quarter 2025 revenue fell 30 percent year-over-year. Subscribers dropped 31 percent to 3.2 million. The company sued Google, arguing that AI-generated search summaries had destroyed its traffic.[^20]
+Chegg, the homework-help platform that was valued at $13 billion during the pandemic, laid off 22 percent of its workforce in May 2025. Five months later, in October, it laid off another 45 percent – 388 employees in a single day. Combined, the company eliminated more than half its staff in less than six months. First-quarter 2025 revenue fell 30 percent year-over-year. Subscribers dropped 31 percent to 3.2 million. The company sued Google, arguing that AI-generated search summaries had destroyed its traffic.[^20]
 
 Chegg's CEO, Dan Rosensweig, had previously called himself "the poster child" for AI disruption.[^21] He was not wrong. He was the poster child for a company that sold answers to students who did not want to learn, disrupted by a technology that gives answers to students who do not want to learn, faster and for free. The product and its destroyer were the same proposition. The only difference was the price.
 
-Duolingo, the language-learning platform with the friendly green owl, disclosed in January 2025 that it had cut roughly 10 percent of its contractors — the translators and content creators who built its courses — and replaced them with AI. CEO Luis von Ahn was explicit: AI could do the work these humans had done.[^22] A Duolingo streak of 847 days. The user cannot order coffee in Spanish. The company's stock price is fine.
+Duolingo, the language-learning platform with the friendly green owl, disclosed in January 2025 that it had cut roughly 10 percent of its contractors (the translators and content creators who built its courses) and replaced them with AI. CEO Luis von Ahn was explicit: AI could do the work these humans had done.[^22] A Duolingo streak of 847 days. The user cannot order coffee in Spanish. The company's stock price is fine.
 
 Stability AI's founder Emad Mostaque resigned in March 2024 amid reports the company could not pay its cloud computing bills. Inflection AI, valued at $4 billion, was effectively absorbed by Microsoft in a quasi-acqui-hire after its consumer product failed to gain traction. Jasper AI, once valued at $1.5 billion, pivoted repeatedly as ChatGPT commoditised its entire product category.[^23]
 
@@ -128,7 +128,7 @@ Fifty-four percent of U.S. teens use AI chatbots for schoolwork. Forty-eight per
 
 The survey was conducted with 1,458 teens in September and October 2025. By the time the data was published, the numbers were already out of date. They were higher.
 
-New York City, the largest school district in the United States, released its long-awaited AI guidance on March 24, 2026 — more than three years after it banned ChatGPT in January 2023, then reversed the ban five months later, then spent two years producing a document. The guidance uses a traffic-light system. Green: teachers can use AI for brainstorming and lesson planning. Yellow: students can use AI for research with teacher supervision. Red: AI cannot be used for grading, discipline, special education plans, or any decision made about a student.[^25]
+New York City, the largest school district in the United States, released its long-awaited AI guidance on March 24, 2026 – more than three years after it banned ChatGPT in January 2023, then reversed the ban five months later, then spent two years producing a document. The guidance uses a traffic-light system. Green: teachers can use AI for brainstorming and lesson planning. Yellow: students can use AI for research with teacher supervision. Red: AI cannot be used for grading, discipline, special education plans, or any decision made about a student.[^25]
 
 The guidance does not address what happens when a student uses AI at home, which is where 54 percent of them are already using it. The guidance does not address AI detection, which the district's own prior policies suggest is unreliable. The guidance will be followed by a "playbook" in June, after a 45-day public comment period, after webinars, after feedback sessions.[^25]
 
@@ -141,7 +141,7 @@ The comment period ends on May 8. The school year ends in June. The students are
 
 Here is what is broken right now, in April 2026:
 
-The detection systems do not work, and the students who can least afford to be falsely accused — non-native speakers, first-generation college students, students at under-resourced institutions — are the ones most likely to be punished by them.[^3]
+The detection systems do not work, and the students who can least afford to be falsely accused (non-native speakers, first-generation college students, students at under-resourced institutions) are the ones most likely to be punished by them.[^3]
 
 The AI tutoring tools do not produce durable learning. The largest and most well-intentioned of them, Khanmigo, was described by its own creator as a "non-event."[^11] The most aggressive of them, Alpha School, charges $55,000 a year for an untested model that refuses independent evaluation.[^12]
 
@@ -193,7 +193,7 @@ She is not the one who is crazy. She is the one who is paying attention.
 
 [^11]: Monica Disare, "Why Sal Khan is rethinking how AI will change schools," Chalkbeat, April 9, 2026. [chalkbeat.org](https://www.chalkbeat.org/2026/04/09/sal-khan-reflects-on-ai-in-schools-and-khanmigo/)
 
-[^12]: "'What if I told you this school had no teachers?': Is AI schooling the future of education — or a risky bet?" CNN, January 29, 2026. [cnn.com](https://www.cnn.com/2026/01/29/politics/alpha-school-trump-ai-teaching)
+[^12]: "'What if I told you this school had no teachers?': Is AI schooling the future of education – or a risky bet?" CNN, January 29, 2026. [cnn.com](https://www.cnn.com/2026/01/29/politics/alpha-school-trump-ai-teaching)
 
 [^13]: Melody Mercado, "An AI School, With No Teachers, To Open in Chicago This Fall," Block Club Chicago, March 25, 2026. [blockclubchicago.org](https://blockclubchicago.org/2026/03/25/an-ai-elementary-school-with-no-teachers-to-open-in-chicago-this-fall/)
 

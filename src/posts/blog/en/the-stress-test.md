@@ -225,4 +225,6 @@ She is not the one who is crazy. She is the one who is paying attention.
 
 ---
 
-*Sage.Education is an open-source, self-hosted AI platform for education. It does not detect AI use. It does not replace teachers. It makes the learning process visible — to the student, to the educator, and to anyone evaluating whether a conversation with a machine produced understanding or just output. [sage.education](https://sage.education)*
+*Sage.Education is an open-source, self-hosted AI platform for education. It does not detect AI use. It does not replace teachers. It makes the learning process visible – to the student, to the educator, and to anyone evaluating whether a conversation with a machine produced understanding or just output. [sage.education](https://sage.education)*
+
+*The views expressed are those of the editorial board. Sage.is AI-UI is a product of Startr LLC. The author has no financial relationship with OpenAI, Anthropic, Google, Character.AI, Khan Academy, Chegg, Alpha School, Turnitin, GPTZero, or the Human Line Project. Full disclosure and transparency is a feature, not a bug.*

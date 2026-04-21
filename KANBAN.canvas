@@ -1,0 +1,1466 @@
+{
+  "edges": [],
+  "nodes": [
+    {
+      "color": "4",
+      "height": 340,
+      "id": "col-backlog",
+      "label": "Backlog",
+      "type": "group",
+      "width": 300,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 161,
+          "tags": [],
+          "text": "Implement Core Web Vitals monitoring"
+        },
+        {
+          "checked": false,
+          "line_num": 162,
+          "tags": [],
+          "text": "Add build time tracking"
+        },
+        {
+          "checked": false,
+          "line_num": 163,
+          "tags": [],
+          "text": "Create performance dashboard"
+        },
+        {
+          "checked": false,
+          "line_num": 164,
+          "tags": [],
+          "text": "Set up automated performance reports"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "3f9417917115cdb5",
+      "line_num": 160,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Performance Monitoring: Add performance tracking**\n- [ ] Implement Core Web Vitals monitoring\n- [ ] Add build time tracking\n- [ ] Create performance dashboard\n- [ ] Set up automated performance reports\n\n`TODO.md:L160`",
+      "type": "text",
+      "width": 280,
+      "x": 10,
+      "y": 60
+    },
+    {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 169,
+          "tags": [],
+          "text": "Implement service worker"
+        },
+        {
+          "checked": false,
+          "line_num": 170,
+          "tags": [],
+          "text": "Add offline functionality"
+        },
+        {
+          "checked": false,
+          "line_num": 171,
+          "tags": [],
+          "text": "Create app manifest"
+        },
+        {
+          "checked": false,
+          "line_num": 172,
+          "tags": [],
+          "text": "Add push notifications support"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "5e721b5a9d50a44f",
+      "line_num": 168,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Progressive Web App: Add PWA features**\n- [ ] Implement service worker\n- [ ] Add offline functionality\n- [ ] Create app manifest\n- [ ] Add push notifications support\n\n`TODO.md:L168`",
+      "type": "text",
+      "width": 280,
+      "x": 10,
+      "y": 150
+    },
+    {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 177,
+          "tags": [],
+          "text": "Configure GitHub Actions for optimization"
+        },
+        {
+          "checked": false,
+          "line_num": 178,
+          "tags": [],
+          "text": "Add automated dependency updates"
+        },
+        {
+          "checked": false,
+          "line_num": 179,
+          "tags": [],
+          "text": "Implement automated testing"
+        },
+        {
+          "checked": false,
+          "line_num": 180,
+          "tags": [],
+          "text": "Set up performance regression testing"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "daf737b52be0cadd",
+      "line_num": 176,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Automated Optimization: Set up automated optimization**\n- [ ] Configure GitHub Actions for optimization\n- [ ] Add automated dependency updates\n- [ ] Implement automated testing\n- [ ] Set up performance regression testing\n\n`TODO.md:L176`",
+      "type": "text",
+      "width": 280,
+      "x": 10,
+      "y": 240
+    },
+    {
+      "height": 4570,
+      "id": "col-todo",
+      "label": "TODO",
+      "type": "group",
+      "width": 300,
+      "x": 350,
+      "y": 0
+    },
+    {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 95,
+          "tags": [],
+          "text": "Audit unused dependencies"
+        },
+        {
+          "checked": false,
+          "line_num": 96,
+          "tags": [],
+          "text": "Update outdated packages (check for compatibility)"
+        },
+        {
+          "checked": false,
+          "line_num": 97,
+          "tags": [],
+          "text": "Consider switching to pnpm for better performance"
+        },
+        {
+          "checked": false,
+          "line_num": 98,
+          "tags": [],
+          "text": "Add bundle analyzer to track build size"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "ef6e30c7464f74e3",
+      "line_num": 94,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Package.json Optimization: Review and optimize dependencies**\n- [ ] Audit unused dependencies\n- [ ] Update outdated packages (check for compatibility)\n- [ ] Consider switching to pnpm for better performance\n- [ ] Add bundle analyzer to track build size\n\n`TODO.md:L94`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 60
+    },
+    {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 103,
+          "tags": [],
+          "text": "Enable incremental builds"
+        },
+        {
+          "checked": false,
+          "line_num": 104,
+          "tags": [],
+          "text": "Optimize image processing pipeline"
+        },
+        {
+          "checked": false,
+          "line_num": 105,
+          "tags": [],
+          "text": "Review markdown processing performance"
+        },
+        {
+          "checked": false,
+          "line_num": 106,
+          "tags": [],
+          "text": "Implement build caching strategies"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "6afb7b6f6e858e9f",
+      "line_num": 102,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Eleventy Performance Tuning: Optimize 11ty build process**\n- [ ] Enable incremental builds\n- [ ] Optimize image processing pipeline\n- [ ] Review markdown processing performance\n- [ ] Implement build caching strategies\n\n`TODO.md:L102`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 150
+    },
+    {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 111,
+          "tags": [],
+          "text": "Implement WebP conversion for all images"
+        },
+        {
+          "checked": false,
+          "line_num": 112,
+          "tags": [],
+          "text": "Add responsive image generation"
+        },
+        {
+          "checked": false,
+          "line_num": 113,
+          "tags": [],
+          "text": "Optimize existing images in `/src/images/`"
+        },
+        {
+          "checked": false,
+          "line_num": 114,
+          "tags": [],
+          "text": "Consider lazy loading implementation"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "d407178b9776d009",
+      "line_num": 110,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Image Optimization Pipeline: Enhance image handling**\n- [ ] Implement WebP conversion for all images\n- [ ] Add responsive image generation\n- [ ] Optimize existing images in `/src/images/`\n- [ ] Consider lazy loading implementation\n\n`TODO.md:L110`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 240
+    },
+    {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 119,
+          "tags": [],
+          "text": "Add comprehensive project overview"
+        },
+        {
+          "checked": false,
+          "line_num": 120,
+          "tags": [],
+          "text": "Include setup instructions"
+        },
+        {
+          "checked": false,
+          "line_num": 121,
+          "tags": [],
+          "text": "Add performance benchmarks"
+        },
+        {
+          "checked": false,
+          "line_num": 122,
+          "tags": [],
+          "text": "Document optimization features"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "6ad29fca556ec10a",
+      "line_num": 118,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**README Enhancement: Improve project documentation**\n- [ ] Add comprehensive project overview\n- [ ] Include setup instructions\n- [ ] Add performance benchmarks\n- [ ] Document optimization features\n\n`TODO.md:L118`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 330
+    },
+    {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 127,
+          "tags": [],
+          "text": "Audit unused CSS"
+        },
+        {
+          "checked": false,
+          "line_num": 128,
+          "tags": [],
+          "text": "Implement CSS minification"
+        },
+        {
+          "checked": false,
+          "line_num": 129,
+          "tags": [],
+          "text": "Consider CSS-in-JS for critical path"
+        },
+        {
+          "checked": false,
+          "line_num": 130,
+          "tags": [],
+          "text": "Add CSS bundling optimization"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "8e74d2bf5bafb3ba",
+      "line_num": 126,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**CSS Performance: Optimize stylesheets**\n- [ ] Audit unused CSS\n- [ ] Implement CSS minification\n- [ ] Consider CSS-in-JS for critical path\n- [ ] Add CSS bundling optimization\n\n`TODO.md:L126`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 420
+    },
+    {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 135,
+          "tags": [],
+          "text": "Add ESLint configuration"
+        },
+        {
+          "checked": false,
+          "line_num": 136,
+          "tags": [],
+          "text": "Implement Prettier for code formatting"
+        },
+        {
+          "checked": false,
+          "line_num": 137,
+          "tags": [],
+          "text": "Add pre-commit hooks"
+        },
+        {
+          "checked": false,
+          "line_num": 138,
+          "tags": [],
+          "text": "Create development docker setup"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "ff75f0bdcaf5efd9",
+      "line_num": 134,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Development Tools: Enhance developer experience**\n- [ ] Add ESLint configuration\n- [ ] Implement Prettier for code formatting\n- [ ] Add pre-commit hooks\n- [ ] Create development docker setup\n\n`TODO.md:L134`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 510
+    },
+    {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 143,
+          "tags": [],
+          "text": "Add optimization guidelines"
+        },
+        {
+          "checked": false,
+          "line_num": 144,
+          "tags": [],
+          "text": "Document performance best practices"
+        },
+        {
+          "checked": false,
+          "line_num": 145,
+          "tags": [],
+          "text": "Create troubleshooting guide"
+        },
+        {
+          "checked": false,
+          "line_num": 146,
+          "tags": [],
+          "text": "Add contributor guidelines"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "8bbc96e554eb8277",
+      "line_num": 142,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Development Workflow Documentation: Update process docs**\n- [ ] Add optimization guidelines\n- [ ] Document performance best practices\n- [ ] Create troubleshooting guide\n- [ ] Add contributor guidelines\n\n`TODO.md:L142`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 600
+    },
+    {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 151,
+          "tags": [],
+          "text": "Migrate any existing inline comment TODOs in source to `TODO:` / `FIXME:` / `BUG:` tags"
+        },
+        {
+          "checked": false,
+          "line_num": 152,
+          "tags": [],
+          "text": "Review `.todoscope-exclude.csv` \u2014 confirm excluded paths are accurate for this 11ty site"
+        },
+        {
+          "checked": false,
+          "line_num": 153,
+          "tags": [],
+          "text": "Run TodoScope scanner and verify kanban board columns match expectations"
+        },
+        {
+          "checked": false,
+          "line_num": 154,
+          "tags": [],
+          "text": "Adjust this file's section headers if any cards land in unexpected columns"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "8ec9d64bbd51a0fe",
+      "line_num": 150,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**TodoScope Convention Sync: Finish aligning this repo to TodoScope conventions**\n- [ ] Migrate any existing inline comment TODOs in source to `TODO:` / `FIXME:` / `BUG:` tags\n- [ ] Review `.todoscope-exclude.csv` \u2014 confirm excluded paths are accurate for this 11ty site\n- [ ] Run TodoScope scanner and verify kanban board columns match expectations\n- [ ] Adjust this file's section headers if any cards land in unexpected columns\n\n`TODO.md:L150`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 690
+    },
+    {
+      "file_path": "docs/intro.mdx",
+      "height": 80,
+      "id": "dc33ef3f741235d2",
+      "line_num": 25,
+      "source": "inline",
+      "tags": [],
+      "text": "{/* TODO Sponsohip either signup for coffee etc or setup with github or patrion or setup our own [![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/tjbck) */}\n`docs/intro.mdx:25`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 780
+    },
+    {
+      "file_path": "docs/DEVELOPMENT_WORKFLOW.md",
+      "height": 80,
+      "id": "e218669f9e41b2b0",
+      "line_num": 127,
+      "source": "inline",
+      "tags": [],
+      "text": "### TODO Management\n`docs/DEVELOPMENT_WORKFLOW.md:127`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 870
+    },
+    {
+      "file_path": "src/_includes/books/navigation.njk",
+      "height": 80,
+      "id": "46c391e9928c0c4f",
+      "line_num": 27,
+      "source": "inline",
+      "tags": [],
+      "text": "<!-- TODO: Add section navigation if needed -->\n`src/_includes/books/navigation.njk:27`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 960
+    },
+    {
+      "file_path": "src/sage.education/Site/Sage Privacy & Security.md",
+      "height": 80,
+      "id": "510e184f4f0c8460",
+      "line_num": 26,
+      "source": "inline",
+      "tags": [],
+      "text": "- [ ] #TODO Revise and review exposing sage.education\u2019s own privacy policy\n`src/sage.education/Site/Sage Privacy & Security.md:26`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 1050
+    },
+    {
+      "file_path": "src/sage.education/Site/Sage Privacy & Security.md",
+      "height": 80,
+      "id": "7f52289d76c56dad",
+      "line_num": 28,
+      "source": "inline",
+      "tags": [],
+      "text": "This [Policy](https://startr.cloud/privacy/) applies to all products and services offered by Sage.Education, Inc. (hereinafter referred to as \u201cSage.Education,\u201d \u201cwe,\u201d \u201cus,\" \u201cour,\u201d also including our subsidiaries or affiliates). We have done our best to write it in simple, clear terms, and we encourage you to read it carefully, together with any other privacy notice we may provide on specific occasions when we are collecting or processing personal information about you, so that you are aware of how and why we are using such information. This Privacy Policy shall be supplemented by the\u00a0[Data Processing Addendum](https://libs.edpuzzle.com/legal-docs/Edpuzzle_DPA%202024_July%20(SCC).pdf).pdf) #todo \u00a0where any of the following rules applies to your use of the Service: (A) the Regulation 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC, (\u201cGDPR\u201d); (B) the United Kingdom's European Union (Withdrawal) Act of 2018, which saves the GDPR into United Kingdom law (\u201cUK GDPR\u201d), or (C) the Swiss Federal Data Protection Act (\u201cSwiss DPA\u201d).If you have any questions, we are here to help. To learn more about how we protect your privacy, send us an email at privacy@Sage.Education.com #todo. BY USING THE SERVICE, YOU ACKNOWLEDGE THAT YOU ACCEPT AND AGREE TO THIS PRIVACY POLICY.Personal information is any information you provide to us that personally identifies you, like your name or email address, or any other information which we could reasonably link to your identity. We will only collect, use, and share your personal information in accordance with this Privacy Policy. This Policy applies whether you use Sage.Education through Sage.Education.com #todo  (the \u201cSage.Education Website\u201d), our on-site applications #todo , your school's Learning Management Systems (LMS) with which Sage.Education has been integrated (e.g., Google Classroom, Canvas, Moodle, Schoology, etc.) or any of our other products or services that link to this Privacy Policy (collectively, the \u201cService\u201d). In addition, this Privacy Policy also covers Sage.Education's treatment of any personal information about our users that our partners or other services might share with us.This Policy does not apply to websites, services or practices of companies that Sage.Education does not own or control, such as third-party services you might access through links or other features (e.g., social media buttons; third-party integrations) on the Service. These other services have their own privacy policies, and we encourage you to review them before providing them with personal information. At the end of this Privacy Policy under section\u00a0[Which are Sage.Education's Third-Party Service Providers?](https://Sage.Education.com/privacy#security-measures)\u00a0you will find a list with our third-party service providers and a link to their privacy policies, as well as an overview to how, why and under which conditions they might process your personal information.Additionally, in our commitment to protecting children's privacy, Sage.Education participates in the FTC-approved iKeepSafe \u201cSafe Harbor\u201d program. Sage.Education has been granted the iKeepSafe FERPA, COPPA and CSPC seals signifying that our website and apps have been reviewed and approved for having policies and practices surrounding the collection, use, maintenance and disclosure of personal information from children consistent with the iKeepSafe FERPA, COPPA and CSPC programs guidelines.Sage.Education is also a signatory of the Student Privacy Pledge, agreeing to a set of principles intended to safeguard student privacy, including responsible stewardship, protection, and transparent handling of student personal information. Read more about the Student Privacy Pledge\u00a0[here](https://studentprivacypledge.org/privacy-pledge-2-0/).\n`src/sage.education/Site/Sage Privacy & Security.md:28`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 1140
+    },
+    {
+      "file_path": "src/sage.education/Site/For Teachers.md",
+      "height": 80,
+      "id": "3e82a354e60af67b",
+      "line_num": 8,
+      "source": "inline",
+      "tags": [],
+      "text": "Sage.Education is an easy-to-use AI platform where you can interact with Sage Chatbots and create. With just one click, you can create lessons, including formative assessment! Another click and you can adapt that lesson by prompting your own questions. #todo\n`src/sage.education/Site/For Teachers.md:8`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 1230
+    },
+    {
+      "file_path": "src/sage.education/Site/For Teachers.md",
+      "height": 80,
+      "id": "67a28d34a63a153d",
+      "line_num": 15,
+      "source": "inline",
+      "tags": [],
+      "text": "### How Sage.Education Works #todo\n`src/sage.education/Site/For Teachers.md:15`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 1320
+    },
+    {
+      "file_path": "src/sage.education/Site/For Teachers.md",
+      "height": 80,
+      "id": "0e7bfa8130efbeb7",
+      "line_num": 27,
+      "source": "inline",
+      "tags": [],
+      "text": "### Obtaining Parental Consent (templates inlcuded) #todo\n`src/sage.education/Site/For Teachers.md:27`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 1410
+    },
+    {
+      "file_path": "src/sage.education/Site/For Teachers.md",
+      "height": 80,
+      "id": "fa04a1c879ad2eaf",
+      "line_num": 82,
+      "source": "inline",
+      "tags": [],
+      "text": "### Email Verification (?) #todo\n`src/sage.education/Site/For Teachers.md:82`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 1500
+    },
+    {
+      "file_path": "src/sage.education/Site/For Teachers.md",
+      "height": 80,
+      "id": "b8c9bec312e14678",
+      "line_num": 137,
+      "source": "inline",
+      "tags": [],
+      "text": "### How to Create an Account #todo\n`src/sage.education/Site/For Teachers.md:137`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 1590
+    },
+    {
+      "file_path": "src/sage.education/Site/For Teachers.md",
+      "height": 80,
+      "id": "20078ac043c47985",
+      "line_num": 193,
+      "source": "inline",
+      "tags": [],
+      "text": "### Generate A Lesson Plan #todo\n`src/sage.education/Site/For Teachers.md:193`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 1680
+    },
+    {
+      "file_path": "src/sage.education/Site/For Teachers.md",
+      "height": 80,
+      "id": "f968e7ea41027fc5",
+      "line_num": 198,
+      "source": "inline",
+      "tags": [],
+      "text": "### Change My Password #todo\n`src/sage.education/Site/For Teachers.md:198`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 1770
+    },
+    {
+      "file_path": "src/sage.education/Site/For Teachers.md",
+      "height": 80,
+      "id": "840dcb3758017d1c",
+      "line_num": 200,
+      "source": "inline",
+      "tags": [],
+      "text": "### Delete an Output #todo\n`src/sage.education/Site/For Teachers.md:200`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 1860
+    },
+    {
+      "file_path": "src/sage.education/Site/Pages and breakdown.md",
+      "height": 80,
+      "id": "8279bc569b8ec0d9",
+      "line_num": 40,
+      "source": "inline",
+      "tags": [],
+      "text": "- [x] Subtitle: Making AI Education adaptable and safe #TODO\n`src/sage.education/Site/Pages and breakdown.md:40`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 1950
+    },
+    {
+      "file_path": "src/sage.education/Site/Pages and breakdown.md",
+      "height": 80,
+      "id": "d99003ad556e3685",
+      "line_num": 44,
+      "source": "inline",
+      "tags": [],
+      "text": "- [ ] Logo #TODO\n`src/sage.education/Site/Pages and breakdown.md:44`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 2040
+    },
+    {
+      "file_path": "src/sage.education/Site/Pages and breakdown.md",
+      "height": 80,
+      "id": "96acd2cebf883911",
+      "line_num": 45,
+      "source": "inline",
+      "tags": [],
+      "text": "- [ ] Logotype #todo\n`src/sage.education/Site/Pages and breakdown.md:45`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 2130
+    },
+    {
+      "file_path": "src/sage.education/Site/Pages and breakdown.md",
+      "height": 80,
+      "id": "7307f95da873c67d",
+      "line_num": 47,
+      "source": "inline",
+      "tags": [],
+      "text": "- [ ] #todo decide on folder structure\n`src/sage.education/Site/Pages and breakdown.md:47`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 2220
+    },
+    {
+      "file_path": "src/sage.education/Site/Pages and breakdown.md",
+      "height": 80,
+      "id": "e05269f9e5c000e3",
+      "line_num": 49,
+      "source": "inline",
+      "tags": [],
+      "text": "- [ ] [[Licensing and Pricing]] #todo\n`src/sage.education/Site/Pages and breakdown.md:49`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 2310
+    },
+    {
+      "file_path": "src/sage.education/Site/Pages and breakdown.md",
+      "height": 80,
+      "id": "da5a5df6bdb32229",
+      "line_num": 51,
+      "source": "inline",
+      "tags": [],
+      "text": "- [ ] [schools & Districs](https://edpuzzle.com/schools-districts) #todo  mention The Study when we add this page  This is for explaining school offings\n`src/sage.education/Site/Pages and breakdown.md:51`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 2400
+    },
+    {
+      "file_path": "src/sage.education/Site/Pages and breakdown.md",
+      "height": 80,
+      "id": "c771ac4cfd1f5191",
+      "line_num": 52,
+      "source": "inline",
+      "tags": [],
+      "text": "- [ ] [[Open class - log in with a class code]] #todo\n`src/sage.education/Site/Pages and breakdown.md:52`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 2490
+    },
+    {
+      "file_path": "src/sage.education/Site/Pages and breakdown.md",
+      "height": 80,
+      "id": "f3409fea22fd157e",
+      "line_num": 54,
+      "source": "inline",
+      "tags": [],
+      "text": "- [ ] [Login]([/upgrade](/upgrade/)) #todo no sub accounts to different schools yet\n`src/sage.education/Site/Pages and breakdown.md:54`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 2580
+    },
+    {
+      "file_path": "src/sage.education/Site/Pages and breakdown.md",
+      "height": 80,
+      "id": "24acf240bf0ba32b",
+      "line_num": 55,
+      "source": "inline",
+      "tags": [],
+      "text": "- [ ] [Signup]([/upgrade](/upgrade/)) #todo no sub accounts schools yet\n`src/sage.education/Site/Pages and breakdown.md:55`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 2670
+    },
+    {
+      "file_path": "src/sage.education/Site/Pages and breakdown.md",
+      "height": 80,
+      "id": "1736968731b90365",
+      "line_num": 71,
+      "source": "inline",
+      "tags": [],
+      "text": "- [Twitter](https://twitter.com/edpuzzle) #todo\n`src/sage.education/Site/Pages and breakdown.md:71`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 2760
+    },
+    {
+      "file_path": "src/sage.education/Site/Pages and breakdown.md",
+      "height": 80,
+      "id": "4661f6317aa24ef0",
+      "line_num": 72,
+      "source": "inline",
+      "tags": [],
+      "text": "- [Facebook](https://www.facebook.com/edpuzzle) #todo\n`src/sage.education/Site/Pages and breakdown.md:72`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 2850
+    },
+    {
+      "file_path": "src/sage.education/Site/Pages and breakdown.md",
+      "height": 80,
+      "id": "e3b02571281aff56",
+      "line_num": 73,
+      "source": "inline",
+      "tags": [],
+      "text": "- [Instagram](https://www.instagram.com/edpuzzle/) #todo\n`src/sage.education/Site/Pages and breakdown.md:73`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 2940
+    },
+    {
+      "file_path": "src/sage.education/Site/Pages and breakdown.md",
+      "height": 80,
+      "id": "8d31012aee871dec",
+      "line_num": 74,
+      "source": "inline",
+      "tags": [],
+      "text": "- [LinkedIn](https://www.linkedin.com/company/edpuzzle-inc-/) #todo\n`src/sage.education/Site/Pages and breakdown.md:74`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 3030
+    },
+    {
+      "file_path": "src/sage.education/Site/Want to Work?.md",
+      "height": 80,
+      "id": "afd0fd06914bf130",
+      "line_num": 5,
+      "source": "inline",
+      "tags": [],
+      "text": "We are a diverse group of technologists, educators, and parents, all united by a passion to improve the lives of students and educators. Our aim is simple: #todo\n`src/sage.education/Site/Want to Work?.md:5`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 3120
+    },
+    {
+      "file_path": "src/sage.education/Site/Licensing and Pricing.md",
+      "height": 80,
+      "id": "13875faa75f7448c",
+      "line_num": 3,
+      "source": "inline",
+      "tags": [],
+      "text": "- [ ] What services does Sage.Education provide? #todo\n`src/sage.education/Site/Licensing and Pricing.md:3`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 3210
+    },
+    {
+      "file_path": "src/sage.education/Site/Licensing and Pricing.md",
+      "height": 80,
+      "id": "a2695e6d61fec30f",
+      "line_num": 13,
+      "source": "inline",
+      "tags": [],
+      "text": "- [ ] AI Slides and Image Generation for education (integrated with Google Slides and powered by Adobe) #TODO\n`src/sage.education/Site/Licensing and Pricing.md:13`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 3300
+    },
+    {
+      "file_path": "src/sage.education/Site/Licensing and Pricing.md",
+      "height": 80,
+      "id": "871321cfc5c06129",
+      "line_num": 18,
+      "source": "inline",
+      "tags": [],
+      "text": "- [ ] Unlimited AI Slides generation #TODO\n`src/sage.education/Site/Licensing and Pricing.md:18`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 3390
+    },
+    {
+      "file_path": "src/sage.education/Site/Press and Media.md",
+      "height": 80,
+      "id": "33ebf91f3690bce6",
+      "line_num": 2,
+      "source": "inline",
+      "tags": [],
+      "text": "- [ ] #todo Put together EPK Electronic Press Kit of assets and blurbs for company)\n`src/sage.education/Site/Press and Media.md:2`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 3480
+    },
+    {
+      "file_path": "src/sage.education/Site/Press and Media.md",
+      "height": 80,
+      "id": "316086e0f1f58acf",
+      "line_num": 3,
+      "source": "inline",
+      "tags": [],
+      "text": "- [ ] #todo List off Press Releses and news\n`src/sage.education/Site/Press and Media.md:3`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 3570
+    },
+    {
+      "file_path": "src/sage.education/Site/Press and Media.md",
+      "height": 80,
+      "id": "10c62a148d39088e",
+      "line_num": 4,
+      "source": "inline",
+      "tags": [],
+      "text": "- [ ] #todo Latest News: (link to Press and media center): The Study\u2019s Press Conference (end of October 2024)\n`src/sage.education/Site/Press and Media.md:4`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 3660
+    },
+    {
+      "file_path": "src/_data/companyFaqs.yaml",
+      "height": 80,
+      "id": "e8dd820d8a3f4a4e",
+      "line_num": 123,
+      "source": "inline",
+      "tags": [],
+      "text": "- https://github.com/Sage-is/AI-UI#todo\n`src/_data/companyFaqs.yaml:123`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 3750
+    },
+    {
+      "file_path": "src/_data/books.yaml",
+      "height": 80,
+      "id": "85228ff4375f1471",
+      "line_num": 44,
+      "source": "inline",
+      "tags": [],
+      "text": "href: /books/make-something/make-something-with-ai.pdf#TODO\n`src/_data/books.yaml:44`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 3840
+    },
+    {
+      "file_path": "src/_data/books.yaml",
+      "height": 80,
+      "id": "e6638c65d0c0d22d",
+      "line_num": 46,
+      "source": "inline",
+      "tags": [],
+      "text": "href: https://www.amazon.com/make-something-with-ai#TODO\n`src/_data/books.yaml:46`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 3930
+    },
+    {
+      "file_path": "src/_data/books.yaml",
+      "height": 80,
+      "id": "3a1f467c7a16097a",
+      "line_num": 49,
+      "source": "inline",
+      "tags": [],
+      "text": "href: https://books.apple.com/make-something-with-ai#TODO\n`src/_data/books.yaml:49`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 4020
+    },
+    {
+      "file_path": "src/_data/books.yaml",
+      "height": 80,
+      "id": "efbe68a75835b133",
+      "line_num": 52,
+      "source": "inline",
+      "tags": [],
+      "text": "href: https://www.barnesandnoble.com/make-something-with-ai#TODO\n`src/_data/books.yaml:52`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 4110
+    },
+    {
+      "file_path": "src/_data/pricingFaqs.yaml",
+      "height": 80,
+      "id": "5f42e953714c5abe",
+      "line_num": 48,
+      "source": "inline",
+      "tags": [],
+      "text": "question: \"#TODO How do upgrades work? What's included with TimeFlow or the Admin Pro Pack?\"\n`src/_data/pricingFaqs.yaml:48`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 4200
+    },
+    {
+      "file_path": "src/assets/css/style.css",
+      "height": 80,
+      "id": "b0d2c4571ace3f1b",
+      "line_num": 450,
+      "source": "inline",
+      "tags": [],
+      "text": "/* TODO Move dev-only-section to startr.style.css */\n`src/assets/css/style.css:450`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 4290
+    },
+    {
+      "file_path": "src/assets/js/modules/classes.js",
+      "height": 80,
+      "id": "28c67dc6b860143d",
+      "line_num": 29,
+      "source": "inline",
+      "tags": [],
+      "text": "// #TODO make this LIVE\n`src/assets/js/modules/classes.js:29`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 4380
+    },
+    {
+      "file_path": "src/assets/js/controllers/signup_iframe_controller.js",
+      "height": 80,
+      "id": "821f06ac65355e3e",
+      "line_num": 14,
+      "source": "inline",
+      "tags": [],
+      "text": "const url = new URL(this.element.dataset.sourceValue) // TODO upgrade Stimulus to use the Values API\n`src/assets/js/controllers/signup_iframe_controller.js:14`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 4470
+    },
+    {
+      "color": "5",
+      "height": 970,
+      "id": "col-in_progress",
+      "label": "In Progress",
+      "type": "group",
+      "width": 300,
+      "x": 700,
+      "y": 0
+    },
+    {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 24,
+          "tags": [],
+          "text": "Run `npm audit fix` to address GHSA-8cj5-5rvv-wf4v"
+        },
+        {
+          "checked": false,
+          "line_num": 25,
+          "tags": [],
+          "text": "Test build process after security updates"
+        },
+        {
+          "checked": false,
+          "line_num": 26,
+          "tags": [],
+          "text": "Document updated dependency versions"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "dcbca48f59db6aff",
+      "line_num": 23,
+      "source": "todo_md",
+      "tags": [
+        "#critical"
+      ],
+      "text": "**Security Vulnerability Fix: Update tar-fs dependency to fix high severity vulnerability**\n- [ ] Run `npm audit fix` to address GHSA-8cj5-5rvv-wf4v\n- [ ] Test build process after security updates\n- [ ] Document updated dependency versions\n\n`#critical`\n`TODO.md:L23`",
+      "type": "text",
+      "width": 280,
+      "x": 710,
+      "y": 60
+    },
+    {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 31,
+          "tags": [],
+          "text": "Inspect mobile CSS for logo container sizing and positioning"
+        },
+        {
+          "checked": false,
+          "line_num": 32,
+          "tags": [],
+          "text": "Adjust logo dimensions and layout to prevent squishing"
+        },
+        {
+          "checked": false,
+          "line_num": 33,
+          "tags": [],
+          "text": "Ensure logo name is not covered by Sign in and Access Sage.Education buttons"
+        },
+        {
+          "checked": false,
+          "line_num": 34,
+          "tags": [],
+          "text": "Test logo display across different mobile screen sizes"
+        },
+        {
+          "checked": false,
+          "line_num": 35,
+          "tags": [],
+          "text": "Document responsive logo design updates"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "87e9d2360dfbf4d2",
+      "line_num": 30,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Mobile Landing Page Logo Fix: Fix squished Startr logo and ensure name visibility on mobile**\n- [ ] Inspect mobile CSS for logo container sizing and positioning\n- [ ] Adjust logo dimensions and layout to prevent squishing\n- [ ] Ensure logo name is not covered by Sign in and Access Sage.Education buttons\n- [ ] Test logo display across different mobile screen sizes\n- [ ] Document responsive logo design updates\n\n`TODO.md:L30`",
+      "type": "text",
+      "width": 280,
+      "x": 710,
+      "y": 150
+    },
+    {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 37,
+          "tags": [],
+          "text": "Check button CSS and text wrapping on mobile views"
+        },
+        {
+          "checked": false,
+          "line_num": 38,
+          "tags": [],
+          "text": "Adjust button styling to ensure full text visibility"
+        },
+        {
+          "checked": false,
+          "line_num": 39,
+          "tags": [],
+          "text": "Verify button functionality and accessibility on mobile"
+        },
+        {
+          "checked": false,
+          "line_num": 40,
+          "tags": [],
+          "text": "Update mobile UI guidelines for button text handling"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "1494b6acf18ad409",
+      "line_num": 36,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Mobile Button Text Fix: Fix cut off Sage.Education button text under subheading**\n- [ ] Check button CSS and text wrapping on mobile views\n- [ ] Adjust button styling to ensure full text visibility\n- [ ] Verify button functionality and accessibility on mobile\n- [ ] Update mobile UI guidelines for button text handling\n\n`TODO.md:L36`",
+      "type": "text",
+      "width": 280,
+      "x": 710,
+      "y": 240
+    },
+    {
+      "children": [
+        {
+          "checked": true,
+          "line_num": 45,
+          "tags": [],
+          "text": "Confirm photo asset, sizing, and alt text requirements"
+        },
+        {
+          "checked": true,
+          "line_num": 46,
+          "tags": [],
+          "text": "Update layout/styling so the image aligns with the signature on desktop and mobile"
+        },
+        {
+          "checked": true,
+          "line_num": 47,
+          "tags": [],
+          "text": "Use https://sage.is/assets/images/general/ip-avatar.jpg with inline Startr utilities (`--h:3rem; --w:3rem; --d:inline-flex; --br:100%`)"
+        },
+        {
+          "checked": true,
+          "line_num": 48,
+          "tags": [],
+          "text": "Verify responsiveness and spacing with adjacent copy"
+        },
+        {
+          "checked": false,
+          "line_num": 49,
+          "tags": [],
+          "text": "Document asset usage and placement guidelines"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "476f73759c8e209e",
+      "line_num": 44,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Izzy Signature Photo Placement: Add Izzy photo to the right of her signature under messages**\n- [x] Confirm photo asset, sizing, and alt text requirements\n- [x] Update layout/styling so the image aligns with the signature on desktop and mobile\n- [x] Use https://sage.is/assets/images/general/ip-avatar.jpg with inline Startr utilities (`--h:3rem; --w:3rem; --d:inline-flex; --br:100%`)\n- [x] Verify responsiveness and spacing with adjacent copy\n- [ ] Document asset usage and placement guidelines\n\n`TODO.md:L44`",
+      "type": "text",
+      "width": 280,
+      "x": 710,
+      "y": 330
+    },
+    {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 51,
+          "tags": [],
+          "text": "Identify the component/template controlling the CTA link"
+        },
+        {
+          "checked": false,
+          "line_num": 52,
+          "tags": [],
+          "text": "Update destination to the sign-up flow at https://sage.startr.cloud/ instead of resources"
+        },
+        {
+          "checked": false,
+          "line_num": 53,
+          "tags": [],
+          "text": "Test navigation (mobile/desktop + keyboard) to confirm correct target"
+        },
+        {
+          "checked": false,
+          "line_num": 54,
+          "tags": [],
+          "text": "Note CTA destinations in documentation or component notes"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "84c70ce0271a8ea7",
+      "line_num": 50,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Access Button Link Fix: Correct post-checkbox Access Sage.Education button to point to sign-up**\n- [ ] Identify the component/template controlling the CTA link\n- [ ] Update destination to the sign-up flow at https://sage.startr.cloud/ instead of resources\n- [ ] Test navigation (mobile/desktop + keyboard) to confirm correct target\n- [ ] Note CTA destinations in documentation or component notes\n\n`TODO.md:L50`",
+      "type": "text",
+      "width": 280,
+      "x": 710,
+      "y": 420
+    },
+    {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 59,
+          "tags": [],
+          "text": "Audit all Signup buttons and ensure they point to https://sage.startr.cloud/"
+        },
+        {
+          "checked": false,
+          "line_num": 60,
+          "tags": [],
+          "text": "Audit all Access Sage.Education buttons and ensure they point to https://sage.education/Sign-up-Now"
+        },
+        {
+          "checked": false,
+          "line_num": 61,
+          "tags": [],
+          "text": "Verify analytics/tracking requirements for each CTA"
+        },
+        {
+          "checked": false,
+          "line_num": 62,
+          "tags": [],
+          "text": "Document canonical URLs for future reference"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "410aed88f0eaf77e",
+      "line_num": 58,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Signup vs Access CTA URLs: Standardize CTA links across the site**\n- [ ] Audit all Signup buttons and ensure they point to https://sage.startr.cloud/\n- [ ] Audit all Access Sage.Education buttons and ensure they point to https://sage.education/Sign-up-Now\n- [ ] Verify analytics/tracking requirements for each CTA\n- [ ] Document canonical URLs for future reference\n\n`TODO.md:L58`",
+      "type": "text",
+      "width": 280,
+      "x": 710,
+      "y": 510
+    },
+    {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 67,
+          "tags": [],
+          "text": "Define event data needed (title, start/end, location, description)"
+        },
+        {
+          "checked": false,
+          "line_num": 68,
+          "tags": [],
+          "text": "Generate ICS files/links per class and ensure location populates"
+        },
+        {
+          "checked": false,
+          "line_num": 69,
+          "tags": [],
+          "text": "Integrate ICS download access into live class cards or detail views"
+        },
+        {
+          "checked": false,
+          "line_num": 70,
+          "tags": [],
+          "text": "Document ICS generation flow and dependencies (startr.space vs local)"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "c4559d415dd0681d",
+      "line_num": 66,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**ICS Delivery With Location: Provide downloadable calendar invites for live classes with location included**\n- [ ] Define event data needed (title, start/end, location, description)\n- [ ] Generate ICS files/links per class and ensure location populates\n- [ ] Integrate ICS download access into live class cards or detail views\n- [ ] Document ICS generation flow and dependencies (startr.space vs local)\n\n`TODO.md:L66`",
+      "type": "text",
+      "width": 280,
+      "x": 710,
+      "y": 600
+    },
+    {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 72,
+          "tags": [],
+          "text": "Compare options: inline ICS vs dedicated event page"
+        },
+        {
+          "checked": false,
+          "line_num": 73,
+          "tags": [],
+          "text": "Prototype or outline event page structure including links + ICS access"
+        },
+        {
+          "checked": false,
+          "line_num": 74,
+          "tags": [],
+          "text": "Review implications of hosting on startr.space vs Sage.Education"
+        },
+        {
+          "checked": false,
+          "line_num": 75,
+          "tags": [],
+          "text": "Capture decision and next steps in documentation"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "f386e4ce71a9547f",
+      "line_num": 71,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Event Detail Page Exploration: Evaluate richer event detail pages linking to Startr.Space resources**\n- [ ] Compare options: inline ICS vs dedicated event page\n- [ ] Prototype or outline event page structure including links + ICS access\n- [ ] Review implications of hosting on startr.space vs Sage.Education\n- [ ] Capture decision and next steps in documentation\n\n`TODO.md:L71`",
+      "type": "text",
+      "width": 280,
+      "x": 710,
+      "y": 690
+    },
+    {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 80,
+          "tags": [],
+          "text": "Locate inclusion logic for GitHub posts block"
+        },
+        {
+          "checked": false,
+          "line_num": 81,
+          "tags": [],
+          "text": "Remove or feature-flag the block to prevent build/render failures"
+        },
+        {
+          "checked": false,
+          "line_num": 82,
+          "tags": [],
+          "text": "Smoke test affected pages to confirm proper rendering"
+        },
+        {
+          "checked": false,
+          "line_num": 83,
+          "tags": [],
+          "text": "Update documentation on supported post sources"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "d8ab4b26df04384a",
+      "line_num": 79,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Remove GitHub Posts Section: Eliminate /posts/ GitHub feed to restore rendering stability**\n- [ ] Locate inclusion logic for GitHub posts block\n- [ ] Remove or feature-flag the block to prevent build/render failures\n- [ ] Smoke test affected pages to confirm proper rendering\n- [ ] Update documentation on supported post sources\n\n`TODO.md:L79`",
+      "type": "text",
+      "width": 280,
+      "x": 710,
+      "y": 780
+    },
+    {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 85,
+          "tags": [],
+          "text": "Audit current fonts, widths, and spacing for posts vs tag pages vs articles"
+        },
+        {
+          "checked": false,
+          "line_num": 86,
+          "tags": [],
+          "text": "Consolidate styles so sections share consistent typography and responsive widths"
+        },
+        {
+          "checked": false,
+          "line_num": 87,
+          "tags": [],
+          "text": "Test sample pages for consistency and readability"
+        },
+        {
+          "checked": false,
+          "line_num": 88,
+          "tags": [],
+          "text": "Document styling standards for posts and sub-sections"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "567114ef9a7ce0b7",
+      "line_num": 84,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Unify Post & Tag Styling: Align typography/layout across posts, tag pages, and articles**\n- [ ] Audit current fonts, widths, and spacing for posts vs tag pages vs articles\n- [ ] Consolidate styles so sections share consistent typography and responsive widths\n- [ ] Test sample pages for consistency and readability\n- [ ] Document styling standards for posts and sub-sections\n\n`TODO.md:L84`",
+      "type": "text",
+      "width": 280,
+      "x": 710,
+      "y": 870
+    },
+    {
+      "color": "1",
+      "height": 200,
+      "id": "col-bugs",
+      "label": "Bugs",
+      "type": "group",
+      "width": 300,
+      "x": 1050,
+      "y": 0
+    },
+    {
+      "color": "6",
+      "height": 340,
+      "id": "col-done",
+      "label": "Done",
+      "type": "group",
+      "width": 300,
+      "x": 1400,
+      "y": 0
+    },
+    {
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "6fba5af1466309ef",
+      "line_num": 188,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Project Scan: Completed comprehensive project analysis**\n`TODO.md:L188`",
+      "type": "text",
+      "width": 280,
+      "x": 1410,
+      "y": 60
+    },
+    {
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "b4ab49255740f314",
+      "line_num": 189,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Optimization Plan: Created detailed optimization roadmap**\n`TODO.md:L189`",
+      "type": "text",
+      "width": 280,
+      "x": 1410,
+      "y": 150
+    },
+    {
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "5955ca1e094cb3a5",
+      "line_num": 190,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Convention Instructions Colorization: Enhanced visual appearance of CONVENTION.instructions.md**\n`TODO.md:L190`",
+      "type": "text",
+      "width": 280,
+      "x": 1410,
+      "y": 240
+    }
+  ]
+}

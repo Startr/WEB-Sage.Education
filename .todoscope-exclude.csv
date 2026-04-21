@@ -1,0 +1,11 @@
+path,reason
+node_modules,dependency cache
+.venv,python virtual environment
+dist,generated/scratch output
+_site,eleventy build output
+.git,git metadata
+.obsidian,obsidian vault config
+.cache,eleventy and tooling caches
+__pycache__,python bytecode cache
+bun.lock,generated lockfile
+package-lock.json,generated lockfile

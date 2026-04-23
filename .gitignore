@@ -1,3 +1,6 @@
+# Syncthing conflict files
+*.sync-conflict-*
+
 #Apple Finder files
 .DS_Store
 

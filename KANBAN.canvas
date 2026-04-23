@@ -3,7 +3,7 @@
   "nodes": [
     {
       "color": "4",
-      "height": 340,
+      "height": 1060,
       "id": "col-backlog",
       "label": "Backlog",
       "type": "group",
@@ -15,36 +15,36 @@
       "children": [
         {
           "checked": false,
-          "line_num": 161,
+          "line_num": 103,
           "tags": [],
-          "text": "Implement Core Web Vitals monitoring"
+          "text": "Compare options: inline ICS vs dedicated event page"
         },
         {
           "checked": false,
-          "line_num": 162,
+          "line_num": 104,
           "tags": [],
-          "text": "Add build time tracking"
+          "text": "Prototype or outline event page structure including links + ICS access"
         },
         {
           "checked": false,
-          "line_num": 163,
+          "line_num": 105,
           "tags": [],
-          "text": "Create performance dashboard"
+          "text": "Review implications of hosting on startr.space vs Sage.Education"
         },
         {
           "checked": false,
-          "line_num": 164,
+          "line_num": 106,
           "tags": [],
-          "text": "Set up automated performance reports"
+          "text": "Capture decision and next steps in documentation"
         }
       ],
       "file_path": "TODO.md",
       "height": 80,
-      "id": "3f9417917115cdb5",
-      "line_num": 160,
+      "id": "6581e20ab0ed693f",
+      "line_num": 102,
       "source": "todo_md",
       "tags": [],
-      "text": "**Performance Monitoring: Add performance tracking**\n- [ ] Implement Core Web Vitals monitoring\n- [ ] Add build time tracking\n- [ ] Create performance dashboard\n- [ ] Set up automated performance reports\n\n`TODO.md:L160`",
+      "text": "**Event Detail Page Exploration: Evaluate richer event detail pages linking to Startr.Space resources**\n- [ ] Compare options: inline ICS vs dedicated event page\n- [ ] Prototype or outline event page structure including links + ICS access\n- [ ] Review implications of hosting on startr.space vs Sage.Education\n- [ ] Capture decision and next steps in documentation\n\n`TODO.md:L102`",
       "type": "text",
       "width": 280,
       "x": 10,
@@ -54,36 +54,36 @@
       "children": [
         {
           "checked": false,
-          "line_num": 169,
+          "line_num": 111,
           "tags": [],
-          "text": "Implement service worker"
+          "text": "Audit unused dependencies"
         },
         {
           "checked": false,
-          "line_num": 170,
+          "line_num": 112,
           "tags": [],
-          "text": "Add offline functionality"
+          "text": "Update outdated packages (check for compatibility)"
         },
         {
           "checked": false,
-          "line_num": 171,
+          "line_num": 113,
           "tags": [],
-          "text": "Create app manifest"
+          "text": "Consider switching to pnpm for better performance"
         },
         {
           "checked": false,
-          "line_num": 172,
+          "line_num": 114,
           "tags": [],
-          "text": "Add push notifications support"
+          "text": "Add bundle analyzer to track build size"
         }
       ],
       "file_path": "TODO.md",
       "height": 80,
-      "id": "5e721b5a9d50a44f",
-      "line_num": 168,
+      "id": "31f3c015e3321028",
+      "line_num": 110,
       "source": "todo_md",
       "tags": [],
-      "text": "**Progressive Web App: Add PWA features**\n- [ ] Implement service worker\n- [ ] Add offline functionality\n- [ ] Create app manifest\n- [ ] Add push notifications support\n\n`TODO.md:L168`",
+      "text": "**Package.json Optimization: Review and optimize dependencies**\n- [ ] Audit unused dependencies\n- [ ] Update outdated packages (check for compatibility)\n- [ ] Consider switching to pnpm for better performance\n- [ ] Add bundle analyzer to track build size\n\n`TODO.md:L110`",
       "type": "text",
       "width": 280,
       "x": 10,
@@ -93,43 +93,355 @@
       "children": [
         {
           "checked": false,
-          "line_num": 177,
+          "line_num": 119,
           "tags": [],
-          "text": "Configure GitHub Actions for optimization"
+          "text": "Enable incremental builds"
         },
         {
           "checked": false,
-          "line_num": 178,
+          "line_num": 120,
           "tags": [],
-          "text": "Add automated dependency updates"
+          "text": "Optimize image processing pipeline"
         },
         {
           "checked": false,
-          "line_num": 179,
+          "line_num": 121,
           "tags": [],
-          "text": "Implement automated testing"
+          "text": "Review markdown processing performance"
         },
         {
           "checked": false,
-          "line_num": 180,
+          "line_num": 122,
           "tags": [],
-          "text": "Set up performance regression testing"
+          "text": "Implement build caching strategies"
         }
       ],
       "file_path": "TODO.md",
       "height": 80,
-      "id": "daf737b52be0cadd",
-      "line_num": 176,
+      "id": "8cf317be07519479",
+      "line_num": 118,
       "source": "todo_md",
       "tags": [],
-      "text": "**Automated Optimization: Set up automated optimization**\n- [ ] Configure GitHub Actions for optimization\n- [ ] Add automated dependency updates\n- [ ] Implement automated testing\n- [ ] Set up performance regression testing\n\n`TODO.md:L176`",
+      "text": "**Eleventy Performance Tuning: Optimize 11ty build process**\n- [ ] Enable incremental builds\n- [ ] Optimize image processing pipeline\n- [ ] Review markdown processing performance\n- [ ] Implement build caching strategies\n\n`TODO.md:L118`",
       "type": "text",
       "width": 280,
       "x": 10,
       "y": 240
     },
     {
-      "height": 4570,
+      "children": [
+        {
+          "checked": false,
+          "line_num": 127,
+          "tags": [],
+          "text": "Implement WebP conversion for all images"
+        },
+        {
+          "checked": false,
+          "line_num": 128,
+          "tags": [],
+          "text": "Add responsive image generation"
+        },
+        {
+          "checked": false,
+          "line_num": 129,
+          "tags": [],
+          "text": "Optimize existing images in `/src/images/`"
+        },
+        {
+          "checked": false,
+          "line_num": 130,
+          "tags": [],
+          "text": "Consider lazy loading implementation"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "7ba3ce46a0894972",
+      "line_num": 126,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Image Optimization Pipeline: Enhance image handling**\n- [ ] Implement WebP conversion for all images\n- [ ] Add responsive image generation\n- [ ] Optimize existing images in `/src/images/`\n- [ ] Consider lazy loading implementation\n\n`TODO.md:L126`",
+      "type": "text",
+      "width": 280,
+      "x": 10,
+      "y": 330
+    },
+    {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 135,
+          "tags": [],
+          "text": "Add comprehensive project overview"
+        },
+        {
+          "checked": false,
+          "line_num": 136,
+          "tags": [],
+          "text": "Include setup instructions"
+        },
+        {
+          "checked": false,
+          "line_num": 137,
+          "tags": [],
+          "text": "Add performance benchmarks"
+        },
+        {
+          "checked": false,
+          "line_num": 138,
+          "tags": [],
+          "text": "Document optimization features"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "6699e5c2f923cd21",
+      "line_num": 134,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**README Enhancement: Improve project documentation**\n- [ ] Add comprehensive project overview\n- [ ] Include setup instructions\n- [ ] Add performance benchmarks\n- [ ] Document optimization features\n\n`TODO.md:L134`",
+      "type": "text",
+      "width": 280,
+      "x": 10,
+      "y": 420
+    },
+    {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 143,
+          "tags": [],
+          "text": "Audit unused CSS"
+        },
+        {
+          "checked": false,
+          "line_num": 144,
+          "tags": [],
+          "text": "Implement CSS minification"
+        },
+        {
+          "checked": false,
+          "line_num": 145,
+          "tags": [],
+          "text": "Consider CSS-in-JS for critical path"
+        },
+        {
+          "checked": false,
+          "line_num": 146,
+          "tags": [],
+          "text": "Add CSS bundling optimization"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "13b2e2d6438b8d25",
+      "line_num": 142,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**CSS Performance: Optimize stylesheets**\n- [ ] Audit unused CSS\n- [ ] Implement CSS minification\n- [ ] Consider CSS-in-JS for critical path\n- [ ] Add CSS bundling optimization\n\n`TODO.md:L142`",
+      "type": "text",
+      "width": 280,
+      "x": 10,
+      "y": 510
+    },
+    {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 151,
+          "tags": [],
+          "text": "Add ESLint configuration"
+        },
+        {
+          "checked": false,
+          "line_num": 152,
+          "tags": [],
+          "text": "Implement Prettier for code formatting"
+        },
+        {
+          "checked": false,
+          "line_num": 153,
+          "tags": [],
+          "text": "Add pre-commit hooks"
+        },
+        {
+          "checked": false,
+          "line_num": 154,
+          "tags": [],
+          "text": "Create development docker setup"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "db947e0d94a6ed5b",
+      "line_num": 150,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Development Tools: Enhance developer experience**\n- [ ] Add ESLint configuration\n- [ ] Implement Prettier for code formatting\n- [ ] Add pre-commit hooks\n- [ ] Create development docker setup\n\n`TODO.md:L150`",
+      "type": "text",
+      "width": 280,
+      "x": 10,
+      "y": 600
+    },
+    {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 159,
+          "tags": [],
+          "text": "Add optimization guidelines"
+        },
+        {
+          "checked": false,
+          "line_num": 160,
+          "tags": [],
+          "text": "Document performance best practices"
+        },
+        {
+          "checked": false,
+          "line_num": 161,
+          "tags": [],
+          "text": "Create troubleshooting guide"
+        },
+        {
+          "checked": false,
+          "line_num": 162,
+          "tags": [],
+          "text": "Add contributor guidelines"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "a3da06ff232a69ff",
+      "line_num": 158,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Development Workflow Documentation: Update process docs**\n- [ ] Add optimization guidelines\n- [ ] Document performance best practices\n- [ ] Create troubleshooting guide\n- [ ] Add contributor guidelines\n\n`TODO.md:L158`",
+      "type": "text",
+      "width": 280,
+      "x": 10,
+      "y": 690
+    },
+    {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 167,
+          "tags": [],
+          "text": "Implement Core Web Vitals monitoring"
+        },
+        {
+          "checked": false,
+          "line_num": 168,
+          "tags": [],
+          "text": "Add build time tracking"
+        },
+        {
+          "checked": false,
+          "line_num": 169,
+          "tags": [],
+          "text": "Create performance dashboard"
+        },
+        {
+          "checked": false,
+          "line_num": 170,
+          "tags": [],
+          "text": "Set up automated performance reports"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "7f8ac75a9181ddd0",
+      "line_num": 166,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Performance Monitoring: Add performance tracking**\n- [ ] Implement Core Web Vitals monitoring\n- [ ] Add build time tracking\n- [ ] Create performance dashboard\n- [ ] Set up automated performance reports\n\n`TODO.md:L166`",
+      "type": "text",
+      "width": 280,
+      "x": 10,
+      "y": 780
+    },
+    {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 175,
+          "tags": [],
+          "text": "Implement service worker"
+        },
+        {
+          "checked": false,
+          "line_num": 176,
+          "tags": [],
+          "text": "Add offline functionality"
+        },
+        {
+          "checked": false,
+          "line_num": 177,
+          "tags": [],
+          "text": "Create app manifest"
+        },
+        {
+          "checked": false,
+          "line_num": 178,
+          "tags": [],
+          "text": "Add push notifications support"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "46f3b8238973b6a7",
+      "line_num": 174,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Progressive Web App: Add PWA features**\n- [ ] Implement service worker\n- [ ] Add offline functionality\n- [ ] Create app manifest\n- [ ] Add push notifications support\n\n`TODO.md:L174`",
+      "type": "text",
+      "width": 280,
+      "x": 10,
+      "y": 870
+    },
+    {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 183,
+          "tags": [],
+          "text": "Configure GitHub Actions for optimization"
+        },
+        {
+          "checked": false,
+          "line_num": 184,
+          "tags": [],
+          "text": "Add automated dependency updates"
+        },
+        {
+          "checked": false,
+          "line_num": 185,
+          "tags": [],
+          "text": "Implement automated testing"
+        },
+        {
+          "checked": false,
+          "line_num": 186,
+          "tags": [],
+          "text": "Set up performance regression testing"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "2e0f16859bd2faac",
+      "line_num": 182,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Automated Optimization: Set up automated optimization**\n- [ ] Configure GitHub Actions for optimization\n- [ ] Add automated dependency updates\n- [ ] Implement automated testing\n- [ ] Set up performance regression testing\n\n`TODO.md:L182`",
+      "type": "text",
+      "width": 280,
+      "x": 10,
+      "y": 960
+    },
+    {
+      "height": 5470,
       "id": "col-todo",
       "label": "TODO",
       "type": "group",
@@ -141,36 +453,36 @@
       "children": [
         {
           "checked": false,
-          "line_num": 95,
+          "line_num": 77,
           "tags": [],
-          "text": "Audit unused dependencies"
+          "text": "Define event data needed (title, start/end, location, description)"
         },
         {
           "checked": false,
-          "line_num": 96,
+          "line_num": 78,
           "tags": [],
-          "text": "Update outdated packages (check for compatibility)"
+          "text": "Generate ICS files/links per class and ensure location populates"
         },
         {
           "checked": false,
-          "line_num": 97,
+          "line_num": 79,
           "tags": [],
-          "text": "Consider switching to pnpm for better performance"
+          "text": "Integrate ICS download access into live class cards or detail views"
         },
         {
           "checked": false,
-          "line_num": 98,
+          "line_num": 80,
           "tags": [],
-          "text": "Add bundle analyzer to track build size"
+          "text": "Document ICS generation flow and dependencies (startr.space vs local)"
         }
       ],
       "file_path": "TODO.md",
       "height": 80,
-      "id": "ef6e30c7464f74e3",
-      "line_num": 94,
+      "id": "33915df1d2206baf",
+      "line_num": 76,
       "source": "todo_md",
       "tags": [],
-      "text": "**Package.json Optimization: Review and optimize dependencies**\n- [ ] Audit unused dependencies\n- [ ] Update outdated packages (check for compatibility)\n- [ ] Consider switching to pnpm for better performance\n- [ ] Add bundle analyzer to track build size\n\n`TODO.md:L94`",
+      "text": "**ICS Delivery With Location: Provide downloadable calendar invites for live classes with location included**\n- [ ] Define event data needed (title, start/end, location, description)\n- [ ] Generate ICS files/links per class and ensure location populates\n- [ ] Integrate ICS download access into live class cards or detail views\n- [ ] Document ICS generation flow and dependencies (startr.space vs local)\n\n`TODO.md:L76`",
       "type": "text",
       "width": 280,
       "x": 360,
@@ -180,36 +492,36 @@
       "children": [
         {
           "checked": false,
-          "line_num": 103,
+          "line_num": 85,
           "tags": [],
-          "text": "Enable incremental builds"
+          "text": "Audit current fonts, widths, and spacing for posts vs tag pages vs articles"
         },
         {
           "checked": false,
-          "line_num": 104,
+          "line_num": 86,
           "tags": [],
-          "text": "Optimize image processing pipeline"
+          "text": "Consolidate styles so sections share consistent typography and responsive widths"
         },
         {
           "checked": false,
-          "line_num": 105,
+          "line_num": 87,
           "tags": [],
-          "text": "Review markdown processing performance"
+          "text": "Test sample pages for consistency and readability"
         },
         {
           "checked": false,
-          "line_num": 106,
+          "line_num": 88,
           "tags": [],
-          "text": "Implement build caching strategies"
+          "text": "Document styling standards for posts and sub-sections"
         }
       ],
       "file_path": "TODO.md",
       "height": 80,
-      "id": "6afb7b6f6e858e9f",
-      "line_num": 102,
+      "id": "567114ef9a7ce0b7",
+      "line_num": 84,
       "source": "todo_md",
       "tags": [],
-      "text": "**Eleventy Performance Tuning: Optimize 11ty build process**\n- [ ] Enable incremental builds\n- [ ] Optimize image processing pipeline\n- [ ] Review markdown processing performance\n- [ ] Implement build caching strategies\n\n`TODO.md:L102`",
+      "text": "**Unify Post & Tag Styling: Align typography/layout across posts, tag pages, and articles**\n- [ ] Audit current fonts, widths, and spacing for posts vs tag pages vs articles\n- [ ] Consolidate styles so sections share consistent typography and responsive widths\n- [ ] Test sample pages for consistency and readability\n- [ ] Document styling standards for posts and sub-sections\n\n`TODO.md:L84`",
       "type": "text",
       "width": 280,
       "x": 360,
@@ -219,235 +531,40 @@
       "children": [
         {
           "checked": false,
-          "line_num": 111,
-          "tags": [],
-          "text": "Implement WebP conversion for all images"
-        },
-        {
-          "checked": false,
-          "line_num": 112,
-          "tags": [],
-          "text": "Add responsive image generation"
-        },
-        {
-          "checked": false,
-          "line_num": 113,
-          "tags": [],
-          "text": "Optimize existing images in `/src/images/`"
-        },
-        {
-          "checked": false,
-          "line_num": 114,
-          "tags": [],
-          "text": "Consider lazy loading implementation"
-        }
-      ],
-      "file_path": "TODO.md",
-      "height": 80,
-      "id": "d407178b9776d009",
-      "line_num": 110,
-      "source": "todo_md",
-      "tags": [],
-      "text": "**Image Optimization Pipeline: Enhance image handling**\n- [ ] Implement WebP conversion for all images\n- [ ] Add responsive image generation\n- [ ] Optimize existing images in `/src/images/`\n- [ ] Consider lazy loading implementation\n\n`TODO.md:L110`",
-      "type": "text",
-      "width": 280,
-      "x": 360,
-      "y": 240
-    },
-    {
-      "children": [
-        {
-          "checked": false,
-          "line_num": 119,
-          "tags": [],
-          "text": "Add comprehensive project overview"
-        },
-        {
-          "checked": false,
-          "line_num": 120,
-          "tags": [],
-          "text": "Include setup instructions"
-        },
-        {
-          "checked": false,
-          "line_num": 121,
-          "tags": [],
-          "text": "Add performance benchmarks"
-        },
-        {
-          "checked": false,
-          "line_num": 122,
-          "tags": [],
-          "text": "Document optimization features"
-        }
-      ],
-      "file_path": "TODO.md",
-      "height": 80,
-      "id": "6ad29fca556ec10a",
-      "line_num": 118,
-      "source": "todo_md",
-      "tags": [],
-      "text": "**README Enhancement: Improve project documentation**\n- [ ] Add comprehensive project overview\n- [ ] Include setup instructions\n- [ ] Add performance benchmarks\n- [ ] Document optimization features\n\n`TODO.md:L118`",
-      "type": "text",
-      "width": 280,
-      "x": 360,
-      "y": 330
-    },
-    {
-      "children": [
-        {
-          "checked": false,
-          "line_num": 127,
-          "tags": [],
-          "text": "Audit unused CSS"
-        },
-        {
-          "checked": false,
-          "line_num": 128,
-          "tags": [],
-          "text": "Implement CSS minification"
-        },
-        {
-          "checked": false,
-          "line_num": 129,
-          "tags": [],
-          "text": "Consider CSS-in-JS for critical path"
-        },
-        {
-          "checked": false,
-          "line_num": 130,
-          "tags": [],
-          "text": "Add CSS bundling optimization"
-        }
-      ],
-      "file_path": "TODO.md",
-      "height": 80,
-      "id": "8e74d2bf5bafb3ba",
-      "line_num": 126,
-      "source": "todo_md",
-      "tags": [],
-      "text": "**CSS Performance: Optimize stylesheets**\n- [ ] Audit unused CSS\n- [ ] Implement CSS minification\n- [ ] Consider CSS-in-JS for critical path\n- [ ] Add CSS bundling optimization\n\n`TODO.md:L126`",
-      "type": "text",
-      "width": 280,
-      "x": 360,
-      "y": 420
-    },
-    {
-      "children": [
-        {
-          "checked": false,
-          "line_num": 135,
-          "tags": [],
-          "text": "Add ESLint configuration"
-        },
-        {
-          "checked": false,
-          "line_num": 136,
-          "tags": [],
-          "text": "Implement Prettier for code formatting"
-        },
-        {
-          "checked": false,
-          "line_num": 137,
-          "tags": [],
-          "text": "Add pre-commit hooks"
-        },
-        {
-          "checked": false,
-          "line_num": 138,
-          "tags": [],
-          "text": "Create development docker setup"
-        }
-      ],
-      "file_path": "TODO.md",
-      "height": 80,
-      "id": "ff75f0bdcaf5efd9",
-      "line_num": 134,
-      "source": "todo_md",
-      "tags": [],
-      "text": "**Development Tools: Enhance developer experience**\n- [ ] Add ESLint configuration\n- [ ] Implement Prettier for code formatting\n- [ ] Add pre-commit hooks\n- [ ] Create development docker setup\n\n`TODO.md:L134`",
-      "type": "text",
-      "width": 280,
-      "x": 360,
-      "y": 510
-    },
-    {
-      "children": [
-        {
-          "checked": false,
-          "line_num": 143,
-          "tags": [],
-          "text": "Add optimization guidelines"
-        },
-        {
-          "checked": false,
-          "line_num": 144,
-          "tags": [],
-          "text": "Document performance best practices"
-        },
-        {
-          "checked": false,
-          "line_num": 145,
-          "tags": [],
-          "text": "Create troubleshooting guide"
-        },
-        {
-          "checked": false,
-          "line_num": 146,
-          "tags": [],
-          "text": "Add contributor guidelines"
-        }
-      ],
-      "file_path": "TODO.md",
-      "height": 80,
-      "id": "8bbc96e554eb8277",
-      "line_num": 142,
-      "source": "todo_md",
-      "tags": [],
-      "text": "**Development Workflow Documentation: Update process docs**\n- [ ] Add optimization guidelines\n- [ ] Document performance best practices\n- [ ] Create troubleshooting guide\n- [ ] Add contributor guidelines\n\n`TODO.md:L142`",
-      "type": "text",
-      "width": 280,
-      "x": 360,
-      "y": 600
-    },
-    {
-      "children": [
-        {
-          "checked": false,
-          "line_num": 151,
+          "line_num": 93,
           "tags": [],
           "text": "Migrate any existing inline comment TODOs in source to `TODO:` / `FIXME:` / `BUG:` tags"
         },
         {
           "checked": false,
-          "line_num": 152,
+          "line_num": 94,
           "tags": [],
           "text": "Review `.todoscope-exclude.csv` \u2014 confirm excluded paths are accurate for this 11ty site"
         },
         {
           "checked": false,
-          "line_num": 153,
+          "line_num": 95,
           "tags": [],
           "text": "Run TodoScope scanner and verify kanban board columns match expectations"
         },
         {
           "checked": false,
-          "line_num": 154,
+          "line_num": 96,
           "tags": [],
           "text": "Adjust this file's section headers if any cards land in unexpected columns"
         }
       ],
       "file_path": "TODO.md",
       "height": 80,
-      "id": "8ec9d64bbd51a0fe",
-      "line_num": 150,
+      "id": "357f9a4286f6bb16",
+      "line_num": 92,
       "source": "todo_md",
       "tags": [],
-      "text": "**TodoScope Convention Sync: Finish aligning this repo to TodoScope conventions**\n- [ ] Migrate any existing inline comment TODOs in source to `TODO:` / `FIXME:` / `BUG:` tags\n- [ ] Review `.todoscope-exclude.csv` \u2014 confirm excluded paths are accurate for this 11ty site\n- [ ] Run TodoScope scanner and verify kanban board columns match expectations\n- [ ] Adjust this file's section headers if any cards land in unexpected columns\n\n`TODO.md:L150`",
+      "text": "**TodoScope Convention Sync: Finish aligning this repo to TodoScope conventions**\n- [ ] Migrate any existing inline comment TODOs in source to `TODO:` / `FIXME:` / `BUG:` tags\n- [ ] Review `.todoscope-exclude.csv` \u2014 confirm excluded paths are accurate for this 11ty site\n- [ ] Run TodoScope scanner and verify kanban board columns match expectations\n- [ ] Adjust this file's section headers if any cards land in unexpected columns\n\n`TODO.md:L92`",
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 690
+      "y": 240
     },
     {
       "file_path": "docs/intro.mdx",
@@ -460,7 +577,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 780
+      "y": 330
     },
     {
       "file_path": "docs/DEVELOPMENT_WORKFLOW.md",
@@ -473,7 +590,20 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 870
+      "y": 420
+    },
+    {
+      "file_path": "src/eleventy.config.sync-conflict-20260421-105518-352WJGE.js",
+      "height": 80,
+      "id": "aeb280d6bff9eb5d",
+      "line_num": 115,
+      "source": "inline",
+      "tags": [],
+      "text": "// TODO: Configure proper Nunjucks processing\n`src/eleventy.config.sync-conflict-20260421-105518-352WJGE.js:115`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 510
     },
     {
       "file_path": "src/_includes/books/navigation.njk",
@@ -486,7 +616,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 960
+      "y": 600
     },
     {
       "file_path": "src/sage.education/Site/Sage Privacy & Security.md",
@@ -499,7 +629,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 1050
+      "y": 690
     },
     {
       "file_path": "src/sage.education/Site/Sage Privacy & Security.md",
@@ -512,7 +642,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 1140
+      "y": 780
     },
     {
       "file_path": "src/sage.education/Site/For Teachers.md",
@@ -525,7 +655,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 1230
+      "y": 870
     },
     {
       "file_path": "src/sage.education/Site/For Teachers.md",
@@ -538,7 +668,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 1320
+      "y": 960
     },
     {
       "file_path": "src/sage.education/Site/For Teachers.md",
@@ -551,7 +681,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 1410
+      "y": 1050
     },
     {
       "file_path": "src/sage.education/Site/For Teachers.md",
@@ -564,7 +694,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 1500
+      "y": 1140
     },
     {
       "file_path": "src/sage.education/Site/For Teachers.md",
@@ -577,7 +707,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 1590
+      "y": 1230
     },
     {
       "file_path": "src/sage.education/Site/For Teachers.md",
@@ -590,7 +720,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 1680
+      "y": 1320
     },
     {
       "file_path": "src/sage.education/Site/For Teachers.md",
@@ -603,7 +733,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 1770
+      "y": 1410
     },
     {
       "file_path": "src/sage.education/Site/For Teachers.md",
@@ -616,7 +746,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 1860
+      "y": 1500
     },
     {
       "file_path": "src/sage.education/Site/Pages and breakdown.md",
@@ -629,7 +759,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 1950
+      "y": 1590
     },
     {
       "file_path": "src/sage.education/Site/Pages and breakdown.md",
@@ -642,7 +772,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 2040
+      "y": 1680
     },
     {
       "file_path": "src/sage.education/Site/Pages and breakdown.md",
@@ -655,7 +785,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 2130
+      "y": 1770
     },
     {
       "file_path": "src/sage.education/Site/Pages and breakdown.md",
@@ -668,7 +798,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 2220
+      "y": 1860
     },
     {
       "file_path": "src/sage.education/Site/Pages and breakdown.md",
@@ -681,7 +811,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 2310
+      "y": 1950
     },
     {
       "file_path": "src/sage.education/Site/Pages and breakdown.md",
@@ -694,7 +824,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 2400
+      "y": 2040
     },
     {
       "file_path": "src/sage.education/Site/Pages and breakdown.md",
@@ -707,7 +837,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 2490
+      "y": 2130
     },
     {
       "file_path": "src/sage.education/Site/Pages and breakdown.md",
@@ -720,7 +850,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 2580
+      "y": 2220
     },
     {
       "file_path": "src/sage.education/Site/Pages and breakdown.md",
@@ -733,7 +863,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 2670
+      "y": 2310
     },
     {
       "file_path": "src/sage.education/Site/Pages and breakdown.md",
@@ -746,7 +876,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 2760
+      "y": 2400
     },
     {
       "file_path": "src/sage.education/Site/Pages and breakdown.md",
@@ -759,7 +889,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 2850
+      "y": 2490
     },
     {
       "file_path": "src/sage.education/Site/Pages and breakdown.md",
@@ -772,7 +902,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 2940
+      "y": 2580
     },
     {
       "file_path": "src/sage.education/Site/Pages and breakdown.md",
@@ -785,7 +915,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 3030
+      "y": 2670
     },
     {
       "file_path": "src/sage.education/Site/Want to Work?.md",
@@ -798,7 +928,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 3120
+      "y": 2760
     },
     {
       "file_path": "src/sage.education/Site/Licensing and Pricing.md",
@@ -811,7 +941,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 3210
+      "y": 2850
     },
     {
       "file_path": "src/sage.education/Site/Licensing and Pricing.md",
@@ -824,7 +954,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 3300
+      "y": 2940
     },
     {
       "file_path": "src/sage.education/Site/Licensing and Pricing.md",
@@ -837,7 +967,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 3390
+      "y": 3030
     },
     {
       "file_path": "src/sage.education/Site/Press and Media.md",
@@ -850,7 +980,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 3480
+      "y": 3120
     },
     {
       "file_path": "src/sage.education/Site/Press and Media.md",
@@ -863,7 +993,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 3570
+      "y": 3210
     },
     {
       "file_path": "src/sage.education/Site/Press and Media.md",
@@ -876,7 +1006,189 @@
       "type": "text",
       "width": 280,
       "x": 360,
+      "y": 3300
+    },
+    {
+      "file_path": "src/sage.education/Site/Pages and breakdown.sync-conflict-20260421-105318-352WJGE.md",
+      "height": 80,
+      "id": "2743bb4ba5aa2670",
+      "line_num": 40,
+      "source": "inline",
+      "tags": [],
+      "text": "- [x] Subtitle: Making AI Education adaptable and safe #TODO\n`src/sage.education/Site/Pages and breakdown.sync-conflict-20260421-105318-352WJGE.md:40`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 3390
+    },
+    {
+      "file_path": "src/sage.education/Site/Pages and breakdown.sync-conflict-20260421-105318-352WJGE.md",
+      "height": 80,
+      "id": "3eae6eedb880b426",
+      "line_num": 44,
+      "source": "inline",
+      "tags": [],
+      "text": "- [ ] Logo #TODO\n`src/sage.education/Site/Pages and breakdown.sync-conflict-20260421-105318-352WJGE.md:44`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 3480
+    },
+    {
+      "file_path": "src/sage.education/Site/Pages and breakdown.sync-conflict-20260421-105318-352WJGE.md",
+      "height": 80,
+      "id": "01a0dd8054e14613",
+      "line_num": 45,
+      "source": "inline",
+      "tags": [],
+      "text": "- [ ] Logotype #todo\n`src/sage.education/Site/Pages and breakdown.sync-conflict-20260421-105318-352WJGE.md:45`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 3570
+    },
+    {
+      "file_path": "src/sage.education/Site/Pages and breakdown.sync-conflict-20260421-105318-352WJGE.md",
+      "height": 80,
+      "id": "0fd6e97449ed290d",
+      "line_num": 47,
+      "source": "inline",
+      "tags": [],
+      "text": "- [ ] #todo decide on folder structure\n`src/sage.education/Site/Pages and breakdown.sync-conflict-20260421-105318-352WJGE.md:47`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
       "y": 3660
+    },
+    {
+      "file_path": "src/sage.education/Site/Pages and breakdown.sync-conflict-20260421-105318-352WJGE.md",
+      "height": 80,
+      "id": "0ff2e841dd7ed47d",
+      "line_num": 49,
+      "source": "inline",
+      "tags": [],
+      "text": "- [ ] [[Licensing and Pricing]] #todo\n`src/sage.education/Site/Pages and breakdown.sync-conflict-20260421-105318-352WJGE.md:49`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 3750
+    },
+    {
+      "file_path": "src/sage.education/Site/Pages and breakdown.sync-conflict-20260421-105318-352WJGE.md",
+      "height": 80,
+      "id": "71f45e8547559033",
+      "line_num": 51,
+      "source": "inline",
+      "tags": [],
+      "text": "- [ ] [schools & Districs](https://edpuzzle.com/schools-districts) #todo  mention The Study when we add this page  This is for explaining school offings\n`src/sage.education/Site/Pages and breakdown.sync-conflict-20260421-105318-352WJGE.md:51`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 3840
+    },
+    {
+      "file_path": "src/sage.education/Site/Pages and breakdown.sync-conflict-20260421-105318-352WJGE.md",
+      "height": 80,
+      "id": "e1de9c793093a8e9",
+      "line_num": 52,
+      "source": "inline",
+      "tags": [],
+      "text": "- [ ] [[Open class - log in with a class code]] #todo\n`src/sage.education/Site/Pages and breakdown.sync-conflict-20260421-105318-352WJGE.md:52`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 3930
+    },
+    {
+      "file_path": "src/sage.education/Site/Pages and breakdown.sync-conflict-20260421-105318-352WJGE.md",
+      "height": 80,
+      "id": "376a6597f41f802e",
+      "line_num": 54,
+      "source": "inline",
+      "tags": [],
+      "text": "- [ ] [Login]([https://sage.startr.cloud](https://sage.startr.cloud/)) #todo no sub accounts to different schools yet\n`src/sage.education/Site/Pages and breakdown.sync-conflict-20260421-105318-352WJGE.md:54`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 4020
+    },
+    {
+      "file_path": "src/sage.education/Site/Pages and breakdown.sync-conflict-20260421-105318-352WJGE.md",
+      "height": 80,
+      "id": "7a9dfabe0c7768fb",
+      "line_num": 55,
+      "source": "inline",
+      "tags": [],
+      "text": "- [ ] [Signup]([https://sage.startr.cloud](https://sage.startr.cloud/)) #todo no sub accounts schools yet\n`src/sage.education/Site/Pages and breakdown.sync-conflict-20260421-105318-352WJGE.md:55`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 4110
+    },
+    {
+      "file_path": "src/sage.education/Site/Pages and breakdown.sync-conflict-20260421-105318-352WJGE.md",
+      "height": 80,
+      "id": "47203a1ffb733319",
+      "line_num": 71,
+      "source": "inline",
+      "tags": [],
+      "text": "- [Twitter](https://twitter.com/edpuzzle) #todo\n`src/sage.education/Site/Pages and breakdown.sync-conflict-20260421-105318-352WJGE.md:71`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 4200
+    },
+    {
+      "file_path": "src/sage.education/Site/Pages and breakdown.sync-conflict-20260421-105318-352WJGE.md",
+      "height": 80,
+      "id": "6faa67e670d5f556",
+      "line_num": 72,
+      "source": "inline",
+      "tags": [],
+      "text": "- [Facebook](https://www.facebook.com/edpuzzle) #todo\n`src/sage.education/Site/Pages and breakdown.sync-conflict-20260421-105318-352WJGE.md:72`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 4290
+    },
+    {
+      "file_path": "src/sage.education/Site/Pages and breakdown.sync-conflict-20260421-105318-352WJGE.md",
+      "height": 80,
+      "id": "1af823213659c422",
+      "line_num": 73,
+      "source": "inline",
+      "tags": [],
+      "text": "- [Instagram](https://www.instagram.com/edpuzzle/) #todo\n`src/sage.education/Site/Pages and breakdown.sync-conflict-20260421-105318-352WJGE.md:73`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 4380
+    },
+    {
+      "file_path": "src/sage.education/Site/Pages and breakdown.sync-conflict-20260421-105318-352WJGE.md",
+      "height": 80,
+      "id": "0add518064cde28b",
+      "line_num": 74,
+      "source": "inline",
+      "tags": [],
+      "text": "- [LinkedIn](https://www.linkedin.com/company/edpuzzle-inc-/) #todo\n`src/sage.education/Site/Pages and breakdown.sync-conflict-20260421-105318-352WJGE.md:74`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 4470
+    },
+    {
+      "file_path": "src/posts/blog/en/2025-02-21-intro-to-snap-procedural-music-creation-curriculum.sync-conflict-20260421-105757-352WJGE.md",
+      "height": 80,
+      "id": "006f96419e4c3b61",
+      "line_num": 251,
+      "source": "inline",
+      "tags": [],
+      "text": "- #todo add proper image!\n`src/posts/blog/en/2025-02-21-intro-to-snap-procedural-music-creation-curriculum.sync-conflict-20260421-105757-352WJGE.md:251`",
+      "type": "text",
+      "width": 280,
+      "x": 360,
+      "y": 4560
     },
     {
       "file_path": "src/_data/companyFaqs.yaml",
@@ -889,7 +1201,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 3750
+      "y": 4650
     },
     {
       "file_path": "src/_data/books.yaml",
@@ -902,7 +1214,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 3840
+      "y": 4740
     },
     {
       "file_path": "src/_data/books.yaml",
@@ -915,7 +1227,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 3930
+      "y": 4830
     },
     {
       "file_path": "src/_data/books.yaml",
@@ -928,7 +1240,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 4020
+      "y": 4920
     },
     {
       "file_path": "src/_data/books.yaml",
@@ -941,7 +1253,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 4110
+      "y": 5010
     },
     {
       "file_path": "src/_data/pricingFaqs.yaml",
@@ -954,7 +1266,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 4200
+      "y": 5100
     },
     {
       "file_path": "src/assets/css/style.css",
@@ -967,7 +1279,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 4290
+      "y": 5190
     },
     {
       "file_path": "src/assets/js/modules/classes.js",
@@ -980,7 +1292,7 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 4380
+      "y": 5280
     },
     {
       "file_path": "src/assets/js/controllers/signup_iframe_controller.js",
@@ -993,11 +1305,11 @@
       "type": "text",
       "width": 280,
       "x": 360,
-      "y": 4470
+      "y": 5370
     },
     {
       "color": "5",
-      "height": 970,
+      "height": 700,
       "id": "col-in_progress",
       "label": "In Progress",
       "type": "group",
@@ -1253,155 +1565,38 @@
           "checked": false,
           "line_num": 67,
           "tags": [],
-          "text": "Define event data needed (title, start/end, location, description)"
+          "text": "Locate inclusion logic for GitHub posts block"
         },
         {
           "checked": false,
           "line_num": 68,
           "tags": [],
-          "text": "Generate ICS files/links per class and ensure location populates"
+          "text": "Remove or feature-flag the block to prevent build/render failures"
         },
         {
           "checked": false,
           "line_num": 69,
           "tags": [],
-          "text": "Integrate ICS download access into live class cards or detail views"
-        },
-        {
-          "checked": false,
-          "line_num": 70,
-          "tags": [],
-          "text": "Document ICS generation flow and dependencies (startr.space vs local)"
-        }
-      ],
-      "file_path": "TODO.md",
-      "height": 80,
-      "id": "c4559d415dd0681d",
-      "line_num": 66,
-      "source": "todo_md",
-      "tags": [],
-      "text": "**ICS Delivery With Location: Provide downloadable calendar invites for live classes with location included**\n- [ ] Define event data needed (title, start/end, location, description)\n- [ ] Generate ICS files/links per class and ensure location populates\n- [ ] Integrate ICS download access into live class cards or detail views\n- [ ] Document ICS generation flow and dependencies (startr.space vs local)\n\n`TODO.md:L66`",
-      "type": "text",
-      "width": 280,
-      "x": 710,
-      "y": 600
-    },
-    {
-      "children": [
-        {
-          "checked": false,
-          "line_num": 72,
-          "tags": [],
-          "text": "Compare options: inline ICS vs dedicated event page"
-        },
-        {
-          "checked": false,
-          "line_num": 73,
-          "tags": [],
-          "text": "Prototype or outline event page structure including links + ICS access"
-        },
-        {
-          "checked": false,
-          "line_num": 74,
-          "tags": [],
-          "text": "Review implications of hosting on startr.space vs Sage.Education"
-        },
-        {
-          "checked": false,
-          "line_num": 75,
-          "tags": [],
-          "text": "Capture decision and next steps in documentation"
-        }
-      ],
-      "file_path": "TODO.md",
-      "height": 80,
-      "id": "f386e4ce71a9547f",
-      "line_num": 71,
-      "source": "todo_md",
-      "tags": [],
-      "text": "**Event Detail Page Exploration: Evaluate richer event detail pages linking to Startr.Space resources**\n- [ ] Compare options: inline ICS vs dedicated event page\n- [ ] Prototype or outline event page structure including links + ICS access\n- [ ] Review implications of hosting on startr.space vs Sage.Education\n- [ ] Capture decision and next steps in documentation\n\n`TODO.md:L71`",
-      "type": "text",
-      "width": 280,
-      "x": 710,
-      "y": 690
-    },
-    {
-      "children": [
-        {
-          "checked": false,
-          "line_num": 80,
-          "tags": [],
-          "text": "Locate inclusion logic for GitHub posts block"
-        },
-        {
-          "checked": false,
-          "line_num": 81,
-          "tags": [],
-          "text": "Remove or feature-flag the block to prevent build/render failures"
-        },
-        {
-          "checked": false,
-          "line_num": 82,
-          "tags": [],
           "text": "Smoke test affected pages to confirm proper rendering"
         },
         {
           "checked": false,
-          "line_num": 83,
+          "line_num": 70,
           "tags": [],
           "text": "Update documentation on supported post sources"
         }
       ],
       "file_path": "TODO.md",
       "height": 80,
-      "id": "d8ab4b26df04384a",
-      "line_num": 79,
+      "id": "d753fffc9f1b477b",
+      "line_num": 66,
       "source": "todo_md",
       "tags": [],
-      "text": "**Remove GitHub Posts Section: Eliminate /posts/ GitHub feed to restore rendering stability**\n- [ ] Locate inclusion logic for GitHub posts block\n- [ ] Remove or feature-flag the block to prevent build/render failures\n- [ ] Smoke test affected pages to confirm proper rendering\n- [ ] Update documentation on supported post sources\n\n`TODO.md:L79`",
+      "text": "**Remove GitHub Posts Section: Eliminate /posts/ GitHub feed to restore rendering stability**\n- [ ] Locate inclusion logic for GitHub posts block\n- [ ] Remove or feature-flag the block to prevent build/render failures\n- [ ] Smoke test affected pages to confirm proper rendering\n- [ ] Update documentation on supported post sources\n\n`TODO.md:L66`",
       "type": "text",
       "width": 280,
       "x": 710,
-      "y": 780
-    },
-    {
-      "children": [
-        {
-          "checked": false,
-          "line_num": 85,
-          "tags": [],
-          "text": "Audit current fonts, widths, and spacing for posts vs tag pages vs articles"
-        },
-        {
-          "checked": false,
-          "line_num": 86,
-          "tags": [],
-          "text": "Consolidate styles so sections share consistent typography and responsive widths"
-        },
-        {
-          "checked": false,
-          "line_num": 87,
-          "tags": [],
-          "text": "Test sample pages for consistency and readability"
-        },
-        {
-          "checked": false,
-          "line_num": 88,
-          "tags": [],
-          "text": "Document styling standards for posts and sub-sections"
-        }
-      ],
-      "file_path": "TODO.md",
-      "height": 80,
-      "id": "567114ef9a7ce0b7",
-      "line_num": 84,
-      "source": "todo_md",
-      "tags": [],
-      "text": "**Unify Post & Tag Styling: Align typography/layout across posts, tag pages, and articles**\n- [ ] Audit current fonts, widths, and spacing for posts vs tag pages vs articles\n- [ ] Consolidate styles so sections share consistent typography and responsive widths\n- [ ] Test sample pages for consistency and readability\n- [ ] Document styling standards for posts and sub-sections\n\n`TODO.md:L84`",
-      "type": "text",
-      "width": 280,
-      "x": 710,
-      "y": 870
+      "y": 600
     },
     {
       "color": "1",
@@ -1426,11 +1621,11 @@
     {
       "file_path": "TODO.md",
       "height": 80,
-      "id": "6fba5af1466309ef",
-      "line_num": 188,
+      "id": "7b0881d4c7e0af9a",
+      "line_num": 194,
       "source": "todo_md",
       "tags": [],
-      "text": "**Project Scan: Completed comprehensive project analysis**\n`TODO.md:L188`",
+      "text": "**Project Scan: Completed comprehensive project analysis**\n`TODO.md:L194`",
       "type": "text",
       "width": 280,
       "x": 1410,
@@ -1439,11 +1634,11 @@
     {
       "file_path": "TODO.md",
       "height": 80,
-      "id": "b4ab49255740f314",
-      "line_num": 189,
+      "id": "d4d8a7c48d7e3619",
+      "line_num": 195,
       "source": "todo_md",
       "tags": [],
-      "text": "**Optimization Plan: Created detailed optimization roadmap**\n`TODO.md:L189`",
+      "text": "**Optimization Plan: Created detailed optimization roadmap**\n`TODO.md:L195`",
       "type": "text",
       "width": 280,
       "x": 1410,
@@ -1452,11 +1647,11 @@
     {
       "file_path": "TODO.md",
       "height": 80,
-      "id": "5955ca1e094cb3a5",
-      "line_num": 190,
+      "id": "d3b5715695587d0a",
+      "line_num": 196,
       "source": "todo_md",
       "tags": [],
-      "text": "**Convention Instructions Colorization: Enhanced visual appearance of CONVENTION.instructions.md**\n`TODO.md:L190`",
+      "text": "**Convention Instructions Colorization: Enhanced visual appearance of CONVENTION.instructions.md**\n`TODO.md:L196`",
       "type": "text",
       "width": 280,
       "x": 1410,

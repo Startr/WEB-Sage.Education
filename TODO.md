@@ -61,6 +61,16 @@
   - [ ] Verify analytics/tracking requirements for each CTA
   - [ ] Document canonical URLs for future reference
 
+### Posts & Content Stability
+
+- [ ] **Remove GitHub Posts Section**: Eliminate /posts/ GitHub feed to restore rendering stability
+  - [ ] Locate inclusion logic for GitHub posts block
+  - [ ] Remove or feature-flag the block to prevent build/render failures
+  - [ ] Smoke test affected pages to confirm proper rendering
+  - [ ] Update documentation on supported post sources
+
+## TODO
+
 ### Live Classes
 
 - [ ] **ICS Delivery With Location**: Provide downloadable calendar invites for live classes with location included
@@ -68,26 +78,32 @@
   - [ ] Generate ICS files/links per class and ensure location populates
   - [ ] Integrate ICS download access into live class cards or detail views
   - [ ] Document ICS generation flow and dependencies (startr.space vs local)
-- [ ] **Event Detail Page Exploration**: Evaluate richer event detail pages linking to Startr.Space resources
-  - [ ] Compare options: inline ICS vs dedicated event page
-  - [ ] Prototype or outline event page structure including links + ICS access
-  - [ ] Review implications of hosting on startr.space vs Sage.Education
-  - [ ] Capture decision and next steps in documentation
 
 ### Posts & Content Styling
 
-- [ ] **Remove GitHub Posts Section**: Eliminate /posts/ GitHub feed to restore rendering stability
-  - [ ] Locate inclusion logic for GitHub posts block
-  - [ ] Remove or feature-flag the block to prevent build/render failures
-  - [ ] Smoke test affected pages to confirm proper rendering
-  - [ ] Update documentation on supported post sources
 - [ ] **Unify Post & Tag Styling**: Align typography/layout across posts, tag pages, and articles
   - [ ] Audit current fonts, widths, and spacing for posts vs tag pages vs articles
   - [ ] Consolidate styles so sections share consistent typography and responsive widths
   - [ ] Test sample pages for consistency and readability
   - [ ] Document styling standards for posts and sub-sections
 
-## TODO
+### TodoScope Alignment
+
+- [ ] **TodoScope Convention Sync**: Finish aligning this repo to TodoScope conventions
+  - [ ] Migrate any existing inline comment TODOs in source to `TODO:` / `FIXME:` / `BUG:` tags
+  - [ ] Review `.todoscope-exclude.csv` — confirm excluded paths are accurate for this 11ty site
+  - [ ] Run TodoScope scanner and verify kanban board columns match expectations
+  - [ ] Adjust this file's section headers if any cards land in unexpected columns
+
+## Backlog
+
+### Live Classes — Exploration
+
+- [ ] **Event Detail Page Exploration**: Evaluate richer event detail pages linking to Startr.Space resources
+  - [ ] Compare options: inline ICS vs dedicated event page
+  - [ ] Prototype or outline event page structure including links + ICS access
+  - [ ] Review implications of hosting on startr.space vs Sage.Education
+  - [ ] Capture decision and next steps in documentation
 
 ### Build & Dependencies
 
@@ -144,16 +160,6 @@
   - [ ] Document performance best practices
   - [ ] Create troubleshooting guide
   - [ ] Add contributor guidelines
-
-### TodoScope Alignment
-
-- [ ] **TodoScope Convention Sync**: Finish aligning this repo to TodoScope conventions
-  - [ ] Migrate any existing inline comment TODOs in source to `TODO:` / `FIXME:` / `BUG:` tags
-  - [ ] Review `.todoscope-exclude.csv` — confirm excluded paths are accurate for this 11ty site
-  - [ ] Run TodoScope scanner and verify kanban board columns match expectations
-  - [ ] Adjust this file's section headers if any cards land in unexpected columns
-
-## Backlog
 
 ### Analytics & Monitoring
 

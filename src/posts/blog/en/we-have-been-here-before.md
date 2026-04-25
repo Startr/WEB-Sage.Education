@@ -37,7 +37,7 @@ None of them seemed to notice that they were having a debate that started in the
 
 ## The Pattern
 
-!\[[painting-childrens-games.jpg]]
+![[painting-childrens-games.jpg]]
 *Pieter Bruegel the Elder, "Children's Games" (1560). Kunsthistorisches Museum, Vienna. Dozens of games played at once, none of them new — the same ones their parents played. Public domain.*
 
 Newton Minow was the newly appointed chairman of the Federal Communications Commission. He spoke to the National Association of Broadcasters in 1961 and called American television "a vast wasteland."[^3] Parents' groups had been warning for years that the glowing box in the living room would destroy children's ability to pay attention, replace reading and outdoor play, and show young minds things they were not ready to see. The debate split into two camps: ban it entirely (the "TV-free household" movement) or use it carefully (watching together, educational shows, PBS). Over the decades that followed, society built rating systems, parental controls, advertising regulations, and the V-chip. The answer, when it finally came, was not a ban. It was guided use. What mattered was the content and the context, not the device itself.
@@ -54,7 +54,7 @@ That is the part that matters for the AI debate, because the same pattern is rep
 
 ## Three Problems Wearing One Mask
 
-!\[[painting-air-pump.jpg]]
+![[painting-air-pump.jpg]]
 *Joseph Wright of Derby, "An Experiment on a Bird in the Air Pump" (1768). National Gallery, London. Adults and children gathered around a scientific demonstration — some fascinated, some distressed. The tension between progress and protection. Public domain.*
 
 The public debate about children and technology treats smartphones, social media, and AI as if they are the same problem. They are not. They are three separate problems that overlap just enough to be confused. AI sits right in the middle of all three.
@@ -101,7 +101,7 @@ If your government cannot ban AI and will not teach it, who fills the gap?
 
 ## The LOTTERY MAchine and the Workshop
 
-!\[[painting-moneylender.jpg]]
+![[painting-moneylender.jpg]]
 *Quentin Massys, "The Moneylender and His Wife" (1514). Musée du Louvre, Paris. Attentive, careful work — the tools are visible, the process is transparent, the hands are the worker's own. Public domain.*
 
 I am an educator and co-founder of **Sage.Education**. I like to use a comparison that makes the choice clear for every parent, teacher, and school leader: Commercial AI works like a "slot machine." Users push buttons and hope for good results. The instructions that control the AI are hidden. The settings are locked. The AI is a sealed box built to create dependency, not understanding.[^25]

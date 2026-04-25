@@ -124,7 +124,7 @@ For the schools already running it, the results speak for themselves.
 
 ## The Students Who Built Their Own AI
 
-!\[[painting-las-meninas.jpg]]
+![[painting-las-meninas.jpg]]
 *Diego Velázquez, "Las Meninas" (1656). Museo del Prado, Madrid. The painter paints himself into the picture. The subject becomes the creator. Public domain.*
 
 In 2024, a group of Canadian middle school students signed up for the European Space Agency's Astro Pi Challenge. It is a competition where student write Python code to run on Raspberry Pi computers aboard the International Space Station.[^28] Their mentor could only meet for thirty minutes at a time, with long gaps between sessions. Only one student had ever written Python before.

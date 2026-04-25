@@ -1,5 +1,10 @@
 ---
-title: "We've Been Here Before"
+hero_caption: Caspar David Friedrich, 'Wanderer above the Sea of Fog' (1818).
+  Hamburger Kunsthalle. Public domain.
+hero_alt: Caspar David Friedrich, Wanderer above the Sea of Fog (1818) — a
+  solitary figure stands at a precipice, gazing into a landscape they cannot
+  fully see
+title: We've Been Here Before
 tags:
   - education
   - AI
@@ -7,16 +12,16 @@ tags:
   - parenting
 date: 2026-04-22T12:00:00.000-01:00
 rating: 5
-hero: /assets/images/heroes/hero-wanderer.jpg
-hero_alt: "Caspar David Friedrich, Wanderer above the Sea of Fog (1818) — a solitary figure stands at a precipice, gazing into a landscape they cannot fully see"
-hero_caption: "Caspar David Friedrich, 'Wanderer above the Sea of Fog' (1818). Hamburger Kunsthalle. Public domain."
-summary: >-
-  Every generation panics about a new technology and its children. Television, video games, smartphones – the debate always splits the same way, and the answer always lands in the same place. AI is following the identical pattern, with one difference: this time, you cannot turn it off. And two superpowers are making opposite bets on what to do about it.
+summary: "Every generation panics about a new technology and its children.
+  Television, video games, smartphones – the debate always splits the same way,
+  and the answer always lands in the same place. AI is following the identical
+  pattern, with one difference: this time, you cannot turn it off. And two
+  superpowers are making opposite bets on what to do about it."
 eleventyNavigation:
   parent: Blog
+hero: /assets/images/heroes/hero-wanderer.jpg
 ---
-
-On a Tuesday evening back in December 2024, a mother posted on the *r/antiai SubReddit*.[^1] She said she had caught her nine-year-old daughter using Google's AI chatbot. The girl had been using it, off and on, for about a week. She asked it how to get along better with her little sisters. She used it to look at her swim times after a meet. She brainstormed fan fiction ideas for her favorite book series.
+On a Monday evening in early April 2026, a mother posted on the *r/antiai SubReddit*.[^1] She said she had caught her nine-year-old daughter using Google's AI chatbot. The girl had been using it, off and on, for about a week. She asked it how to get along better with her little sisters. She used it to look at her swim times after a meet. She brainstormed fan fiction ideas for her favorite book series.
 
 The mother sat the girl down for a long talk. She explained the costs of running AI data centers. She described how chatbots are built to agree with you, to flatter you, to make you feel heard in ways that are designed rather than real. She told her daughter that relying on AI would wear away her creativity. "She's not in trouble," the mother wrote, "but she's aware we are not to use that again because we don't want her to lose her creativity."
 
@@ -32,7 +37,7 @@ None of them seemed to notice that they were having a debate that started in the
 
 ## The Pattern
 
-![[painting-childrens-games.jpg]]
+!\[[painting-childrens-games.jpg]]
 *Pieter Bruegel the Elder, "Children's Games" (1560). Kunsthistorisches Museum, Vienna. Dozens of games played at once, none of them new — the same ones their parents played. Public domain.*
 
 Newton Minow was the newly appointed chairman of the Federal Communications Commission. He spoke to the National Association of Broadcasters in 1961 and called American television "a vast wasteland."[^3] Parents' groups had been warning for years that the glowing box in the living room would destroy children's ability to pay attention, replace reading and outdoor play, and show young minds things they were not ready to see. The debate split into two camps: ban it entirely (the "TV-free household" movement) or use it carefully (watching together, educational shows, PBS). Over the decades that followed, society built rating systems, parental controls, advertising regulations, and the V-chip. The answer, when it finally came, was not a ban. It was guided use. What mattered was the content and the context, not the device itself.
@@ -49,7 +54,7 @@ That is the part that matters for the AI debate, because the same pattern is rep
 
 ## Three Problems Wearing One Mask
 
-![[painting-air-pump.jpg]]
+!\[[painting-air-pump.jpg]]
 *Joseph Wright of Derby, "An Experiment on a Bird in the Air Pump" (1768). National Gallery, London. Adults and children gathered around a scientific demonstration — some fascinated, some distressed. The tension between progress and protection. Public domain.*
 
 The public debate about children and technology treats smartphones, social media, and AI as if they are the same problem. They are not. They are three separate problems that overlap just enough to be confused. AI sits right in the middle of all three.
@@ -65,7 +70,8 @@ The fix for the first problem is: take away the device. The fix for the second i
 None of these fixes work for AI. You cannot take it away, because it lives inside the search bar of every browser on every device. You cannot just put an age limit on it, because it is not one app with a login page. And you cannot go back to paper, because AI is now built into Google Classroom, Microsoft Office, and the digital tools that replaced the textbooks. There is no single switch to flip. AI is in the device, the platform, and the learning tools all at once.
 
 > **You could take away the phone. You could age-gate the platform. You could send kids back to textbooks. But AI is woven into the infrastructure at every level. The off switch does not exist, because there is no single thing to switch off.**
->  - Alexander Somma
+>
+> * Alexander Somma
 
 ## Bans That Do Not Hold
 
@@ -95,7 +101,7 @@ If your government cannot ban AI and will not teach it, who fills the gap?
 
 ## The LOTTERY MAchine and the Workshop
 
-![[painting-moneylender.jpg]]
+!\[[painting-moneylender.jpg]]
 *Quentin Massys, "The Moneylender and His Wife" (1514). Musée du Louvre, Paris. Attentive, careful work — the tools are visible, the process is transparent, the hands are the worker's own. Public domain.*
 
 I am an educator and co-founder of **Sage.Education**. I like to use a comparison that makes the choice clear for every parent, teacher, and school leader: Commercial AI works like a "slot machine." Users push buttons and hope for good results. The instructions that control the AI are hidden. The settings are locked. The AI is a sealed box built to create dependency, not understanding.[^25]
@@ -118,7 +124,7 @@ For the schools already running it, the results speak for themselves.
 
 ## The Students Who Built Their Own AI
 
-![[painting-las-meninas.jpg]]
+!\[[painting-las-meninas.jpg]]
 *Diego Velázquez, "Las Meninas" (1656). Museo del Prado, Madrid. The painter paints himself into the picture. The subject becomes the creator. Public domain.*
 
 In 2024, a group of Canadian middle school students signed up for the European Space Agency's Astro Pi Challenge. It is a competition where student write Python code to run on Raspberry Pi computers aboard the International Space Station.[^28] Their mentor could only meet for thirty minutes at a time, with long gaps between sessions. Only one student had ever written Python before.
@@ -139,8 +145,9 @@ The difference between this and commercial AI is obvious. On ChatGPT, the same s
 
 They learned about AI by building the AI themselves.
 
->True education isn't about distributing pre-packaged tools but cultivating conditions for growth, where learners become architects of technology, not its end users.[^29]
-> - Isabelle Plante
+> True education isn't about distributing pre-packaged tools but cultivating conditions for growth, where learners become architects of technology, not its end users.[^29]
+>
+> * Isabelle Plante
 
 ## The Girl and Her Swim Meet
 
@@ -158,12 +165,11 @@ The smartphone mistake was waiting ten years for someone else to build the guard
 
 Do not make the same mistake twice.
 
----
-
+- - -
 
 ## Footnotes
 
-[^1]: Reddit user post, r/antiai, "I caught my child using AI," December 2024. Post subsequently removed. Archived via screenshot.
+[^1]: Reddit user post, r/antiai, "I caught my child using AI," April 2026. Post subsequently removed. Archived via screenshot. [reddit.com/r/antiai/comments/1sqam1e/i_caught_my_child_using_ai/](https://www.reddit.com/r/antiai/comments/1sqam1e/i_caught_my_child_using_ai/)
 
 [^2]: Justine Moore (@venturetwins), X post amplifying the Reddit screenshot, December 2024. [x.com/venturetwins/status/2046071130797285668](https://x.com/venturetwins/status/2046071130797285668).
 
@@ -211,7 +217,7 @@ Do not make the same mistake twice.
 
 [^24]: Caixin Global, "China Unveils National 'AI+Education' Plan to Transform Classrooms by 2030," April 16, 2026. [caixinglobal.com](https://www.caixinglobal.com/2026-04-16/china-unveils-national-aieducation-plan-to-transform-classrooms-by-2030-102434567.html).
 
-[^25]: Isabelle Plante, educator and co-founder of Sage Education. The "microwave mentality" concept is from her Glow 2025 presentation. [youtu.be/otCAoljOh_w](https://youtu.be/otCAoljOh_w).
+[^25]: Isabelle Plante, educator and co-founder of Sage Education. The "slotmachine mentality" concept is from her Glow 2025 presentation. [youtu.be/otCAoljOh_w](https://youtu.be/otCAoljOh_w).
 
 [^26]: OpenAI, "Updating Our Model Spec with Teen Protections," 2025. [openai.com](https://openai.com/index/updating-model-spec-with-teen-protections/). OpenAI also published a Teen Safety Blueprint in November 2025.
 
@@ -221,6 +227,6 @@ Do not make the same mistake twice.
 
 [^29]: Plante, Glow 2025 presentation. The presentation includes a live comparison of the Sage.is AI-UI approach with ChatGPT's closed architecture, and demonstrations of students building custom AI agents. [youtu.be/otCAoljOh_w](https://youtu.be/otCAoljOh_w).
 
----
+- - -
 
 *Sage.Education and Sage.is are products of Startr LLC. The authors are co-founders. Full disclosure: this article advocates for open-source, local AI as an alternative to commercial platforms. We built one. We believe transparency about that fact is more honest than pretending otherwise.*

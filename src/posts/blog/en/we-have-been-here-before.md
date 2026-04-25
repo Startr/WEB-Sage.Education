@@ -71,7 +71,7 @@ None of these fixes work for AI. You cannot take it away, because it lives insid
 
 > **You could take away the phone. You could age-gate the platform. You could send kids back to textbooks. But AI is woven into the infrastructure at every level. The off switch does not exist, because there is no single thing to switch off.**
 >
-> * Alexander Somma
+> - Alexander Somma
 
 ## Bans That Do Not Hold
 
@@ -147,7 +147,7 @@ They learned about AI by building the AI themselves.
 
 > True education isn't about distributing pre-packaged tools but cultivating conditions for growth, where learners become architects of technology, not its end users.[^29]
 >
-> * Isabelle Plante
+> - Isabelle Plante
 
 ## The Girl and Her Swim Meet
 

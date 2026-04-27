@@ -1,29 +1,29 @@
 # Article Quality Audit
 
-Generated: `2026-04-05T14:01:18+00:00`
+Generated: `2026-04-27T16:21:43+00:00`
 
 ## Summary
 
-- Articles audited: **30**
-- Average score: **76.5**
+- Articles audited: **33**
+- Average score: **78.0**
 - Range: **60 - 96**
-- Grade distribution: **A: 1, A+: 2, A-: 4, B: 10, B+: 2, B-: 4, C: 2, C+: 5**
+- Grade distribution: **A: 4, A+: 2, A-: 4, B: 10, B+: 2, B-: 4, C: 2, C+: 5**
 
 ## Category Breakdown
 
 | Category | Pass | Info | Warn |
 |---|---:|---:|---:|
-| Em-Dash Density | 27 | 0 | 3 |
-| Image Assets | 30 | 0 | 0 |
-| Named Sources | 2 | 1 | 27 |
-| Opener Variety | 15 | 0 | 15 |
-| Paragraph Variation | 10 | 2 | 18 |
-| Passive Voice | 30 | 0 | 0 |
-| Product Pitch | 29 | 1 | 0 |
-| Rhetorical Restraint | 12 | 14 | 4 |
-| Sentence Variation | 24 | 5 | 1 |
-| Show vs. Tell | 28 | 2 | 0 |
-| Specificity | 10 | 7 | 13 |
+| Em-Dash Density | 30 | 0 | 3 |
+| Image Assets | 33 | 0 | 0 |
+| Named Sources | 3 | 1 | 29 |
+| Opener Variety | 18 | 0 | 15 |
+| Paragraph Variation | 13 | 2 | 18 |
+| Passive Voice | 33 | 0 | 0 |
+| Product Pitch | 32 | 1 | 0 |
+| Rhetorical Restraint | 14 | 15 | 4 |
+| Sentence Variation | 27 | 5 | 1 |
+| Show vs. Tell | 30 | 3 | 0 |
+| Specificity | 13 | 7 | 13 |
 
 ## Lowest 5
 
@@ -38,8 +38,8 @@ Generated: `2026-04-05T14:01:18+00:00`
 - `2025-02-21-intro-to-snap-procedural-music-creation-curriculum.md`: **96** (A+)
 - `the-walled-garden.md`: **96** (A+)
 - `2025-06-12-embracing-the-maker-mindset-in-ai-education.md`: **93** (A)
-- `from-scratch.md`: **89** (A-)
-- `the-invisible-instructional-designer.md`: **89** (A-)
+- `behind-the-curtain.md`: **93** (A)
+- `confabulation-nation.md`: **93** (A)
 
 ## All Articles
 
@@ -73,5 +73,8 @@ Generated: `2026-04-05T14:01:18+00:00`
 | `from-scratch.md` | 89 | A- | 3876 |
 | `the-invisible-instructional-designer.md` | 89 | A- | 2636 |
 | `2025-06-12-embracing-the-maker-mindset-in-ai-education.md` | 93 | A | 1346 |
+| `behind-the-curtain.md` | 93 | A | 2812 |
+| `confabulation-nation.md` | 93 | A | 4026 |
+| `we-have-been-here-before.md` | 93 | A | 4127 |
 | `2025-02-21-intro-to-snap-procedural-music-creation-curriculum.md` | 96 | A+ | 2784 |
-| `the-walled-garden.md` | 96 | A+ | 2732 |
+| `the-walled-garden.md` | 96 | A+ | 2790 |

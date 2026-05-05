@@ -69,6 +69,11 @@
   - [ ] Smoke test affected pages to confirm proper rendering
   - [ ] Update documentation on supported post sources
 
+### Communication & Outreach
+
+- [ ] **CAIO Dinner — Doorway Sentence Rehearsal**: Test "Schools own their own AIs with Sage.Education; we can't lock you out, the keys are yours, in the license, not the marketing." with 4 cold listeners by 2026-05-17. Bring surviving version + redacted conversation map to dinner. #communication
+- [ ] **Ship `/own-your-ai` One-Pager Before CAIO Dinner**: Review, tighten, and publish the draft landing page at [src/own-your-ai.md](src/own-your-ai.md) so `sage.education/own-your-ai` is live before 2026-05-17. Decisions locked in panel-push 2026-05-05: H1 "Own Your AI" / H2 "Keys to Empower" (for principal/CAIO) / sub "Freedom to Build" (for teachers + board reading over the shoulder). Procurement section names Flipgrid, Finale, Thinglink as anti-stories. Body cites AGPL-v3 plain-language clauses. Audit copy, confirm layout renders, link to the page from homepage CTA, then push. #critical #communication
+
 ## TODO
 
 ### Live Classes

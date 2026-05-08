@@ -39,10 +39,14 @@
             "id": "cb9ee7ce7a52afcd",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "TODO.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "TODO"
             }
           }
         ],
@@ -119,6 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "TODO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for TODO"
             }
           },
           {
@@ -181,6 +186,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -191,6 +197,8 @@
   },
   "active": "cb9ee7ce7a52afcd",
   "lastOpenFiles": [
+    "README.md",
+    "KANBAN.canvas",
     "dist/AI/index.html",
     "dist/AI",
     "src/AI.html",
@@ -226,7 +234,6 @@
     "docs/tutorials/web-search/serpstack.md",
     "docs/tutorials/web-search/_category_.json",
     "docs/tutorials/web-search",
-    "docs/tutorials/deployment/index.mdx",
     "dist/images/favicon.png"
   ]
 }

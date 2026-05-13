@@ -1,29 +1,29 @@
 # Article Quality Audit
 
-Generated: `2026-05-05T15:19:37+00:00`
+Generated: `2026-05-13T13:51:55+00:00`
 
 ## Summary
 
-- Articles audited: **33**
-- Average score: **78.0**
+- Articles audited: **36**
+- Average score: **78.6**
 - Range: **60 - 96**
-- Grade distribution: **A: 4, A+: 2, A-: 4, B: 10, B+: 2, B-: 4, C: 2, C+: 5**
+- Grade distribution: **A: 4, A+: 2, A-: 7, B: 10, B+: 2, B-: 4, C: 2, C+: 5**
 
 ## Category Breakdown
 
 | Category | Pass | Info | Warn |
 |---|---:|---:|---:|
-| Em-Dash Density | 30 | 0 | 3 |
-| Image Assets | 33 | 0 | 0 |
-| Named Sources | 3 | 1 | 29 |
-| Opener Variety | 18 | 0 | 15 |
-| Paragraph Variation | 13 | 2 | 18 |
-| Passive Voice | 33 | 0 | 0 |
-| Product Pitch | 32 | 1 | 0 |
-| Rhetorical Restraint | 14 | 15 | 4 |
-| Sentence Variation | 27 | 5 | 1 |
-| Show vs. Tell | 30 | 3 | 0 |
-| Specificity | 13 | 7 | 13 |
+| Em-Dash Density | 33 | 0 | 3 |
+| Image Assets | 33 | 0 | 3 |
+| Named Sources | 3 | 1 | 32 |
+| Opener Variety | 21 | 0 | 15 |
+| Paragraph Variation | 16 | 2 | 18 |
+| Passive Voice | 36 | 0 | 0 |
+| Product Pitch | 35 | 1 | 0 |
+| Rhetorical Restraint | 17 | 15 | 4 |
+| Sentence Variation | 30 | 5 | 1 |
+| Show vs. Tell | 33 | 3 | 0 |
+| Specificity | 16 | 7 | 13 |
 
 ## Lowest 5
 
@@ -70,6 +70,9 @@ Generated: `2026-05-05T15:19:37+00:00`
 | `2026-01-04-why-ai-must-show-its-work.md` | 82 | B+ | 973 |
 | `2025-07-17-kids-and-ai-what-the-turing-lego-study-means-for-your-home-and-classroom.md` | 85 | A- | 452 |
 | `2026-01-05-every-learner’s-ai-right.md` | 85 | A- | 986 |
+| `the-consent-that-was-never-given.md` | 85 | A- | 1653 |
+| `the-next-guest.md` | 85 | A- | 1936 |
+| `the-uninvited-guest-pt1.md` | 85 | A- | 1753 |
 | `from-scratch.md` | 89 | A- | 3876 |
 | `the-invisible-instructional-designer.md` | 89 | A- | 2636 |
 | `2025-06-12-embracing-the-maker-mindset-in-ai-education.md` | 93 | A | 1346 |

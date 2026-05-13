@@ -1,7 +1,14 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git -C /Users/somma/Documents/Projects/GitHub/WEB-Sage.Education log --format=\"%H %ai %s\" -- \"src/posts/blog/en/the-invisible-instructional-designer.md\")"
+      "Bash(git -C /Users/somma/Documents/Projects/GitHub/WEB-Sage.Education log --format=\"%H %ai %s\" -- \"src/posts/blog/en/the-invisible-instructional-designer.md\")",
+      "Bash(node -e \"const c = { _hooks: {}, on\\(e,f\\){\\(this._hooks[e]||\\(this._hooks[e]=[]\\)\\).push\\(f\\)}, amendLibrary\\(\\){}, addPlugin\\(p\\){p\\(this\\)} }; require\\('./src/_plugins/eleventy-plugin-wikilinks.js'\\)\\(c\\); const t0=Date.now\\(\\); c._hooks['eleventy.before'].forEach\\(f=>f\\(\\)\\); console.log\\('index built in', Date.now\\(\\)-t0, 'ms'\\);\")",
+      "Bash(xargs -n1 basename)",
+      "Bash(node -e \"const c={_hooks:{},on\\(e,f\\){\\(this._hooks[e]||\\(this._hooks[e]=[]\\)\\).push\\(f\\)},amendLibrary\\(\\){},addPlugin\\(p\\){p\\(this\\)}};require\\('./src/_plugins/eleventy-plugin-wikilinks.js'\\)\\(c\\);const t0=Date.now\\(\\);c._hooks['eleventy.before'].forEach\\(f=>f\\(\\)\\);console.log\\('--- index built in', Date.now\\(\\)-t0, 'ms ---'\\);\")",
+      "Bash(grep -E \"\\\\.\\(css|scss|js\\)$\")"
+    ],
+    "additionalDirectories": [
+      "/Users/somma/Documents/Projects/GitHub/WEB-Sage.is/src/_plugins"
     ]
   }
 }

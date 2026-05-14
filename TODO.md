@@ -92,6 +92,27 @@
   - [ ] Test sample pages for consistency and readability
   - [ ] Document styling standards for posts and sub-sections
 
+### Blog Template Parity with Sage.is
+
+Plan: [yes-fix-both-and-fluffy-badger.md](https://claude.is/plans/yes-fix-both-and-fluffy-badger.md) (local: `~/.claude/plans/yes-fix-both-and-fluffy-badger.md`)
+
+- [ ] **Tier A: Prev/Next + Stray-File Cleanup** — Bring blog post nav and `_data/` directory into a clean state #frontend
+  - [ ] Replace `collections.all` → `collections.posts` in [src/_includes/layouts/blog.njk](src/_includes/layouts/blog.njk) (2 spots — hero branch + fallback)
+  - [ ] Add empty-collection warning to `addCollection("posts", …)` in [src/eleventy.config.js:120](src/eleventy.config.js#L120)
+  - [ ] Wrap prev/next nav in `{% if collections.posts.length %}` for empty-site safety
+  - [ ] Emit HTML-comment poka-yoke: `<!-- prev/next from collections.posts (N items) -->`
+  - [ ] `git rm` five `* copy.*` Finder duplicates in [src/_data/](src/_data/) and [src/_plugins/](src/_plugins/) (separate atomic commit, post-build verified)
+  - [ ] Verify in `_site/` that prev/next stays inside the posts collection
+- [ ] **Tier B: Related Articles + Featured Hero Card (startr.style inline)** — Port Sage.is's reader-discovery niceties via inline startr.style utilities; no `article.css` edits #frontend
+  - [ ] Insert smart related-articles block (shared-tag pass + random fallback) into both branches of [src/_includes/layouts/blog.njk](src/_includes/layouts/blog.njk), styled inline
+  - [ ] Universal-tag blocklist set to `["education", "ai", "technology"]`; revisit after seeing live output
+  - [ ] HTML-comment poka-yoke: emit `<!-- related: matched-by-tag=N, fallback-used=… -->` for human View-Source forensics
+  - [ ] Extract featured card from `postslist | first` in [src/posts/index.njk](src/posts/index.njk); iterate the rest with `slice(1)`; style inline (uses `--levitate`, `--br`, `--p`, etc.)
+  - [ ] HTML-comment poka-yoke on featured card: `<!-- featured = X, list iterates from index 1 of N -->`
+  - [ ] HTML-comment poka-yoke when newest post is missing `hero:` frontmatter
+  - [ ] (Optional) Add `getImageIndex()` accessor to `eleventy-plugin-wikilinks.js` and validate `hero:` paths at build time, mirroring the wikilinks image-existence pattern
+  - [ ] Visually QA at desktop and ≤50em mobile
+
 ### TodoScope Alignment
 
 - [ ] **TodoScope Convention Sync**: Finish aligning this repo to TodoScope conventions

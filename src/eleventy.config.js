@@ -118,7 +118,9 @@ module.exports = async function(eleventyConfig) {
   });
 
   eleventyConfig.addCollection("posts", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("posts/**/*.md").sort((a, b) => b.date - a.date);
+    const items = collectionApi.getFilteredByGlob("posts/**/*.md").sort((a, b) => b.date - a.date);
+    if (items.length === 0) console.warn('[posts] collection is empty — check posts/**/*.md glob');
+    return items;
   });
 
   const books = [

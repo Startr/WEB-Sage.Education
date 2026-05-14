@@ -42,8 +42,41 @@ eleventyNavigation:
   {% if postslist.length > 0 %}
     {# ── Search scope: wraps all cards so search filters everything ── #}
     <div id="posts-search-scope">
+    {# ── Featured (newest) article ── #}
+    {%- set featured = postslist | first %}
+    {%- if featured and featured.data.title %}
+    <!-- featured = {{ featured.url }}, list iterates from index 1 of {{ postslist.length }} -->
+    {%- if not featured.data.hero %}<!-- featured: no hero set on {{ featured.url }} — consider adding `hero:` frontmatter -->{%- endif %}
+    <div class="post-card post-card--featured" style="--p:2.4rem 2.6rem; --p-md:1.5rem 1.4rem; --mb:1.6rem; --levitate:8; --br:8px">
+      {%- if featured.data.hero %}
+      <img src="{{ featured.data.hero }}" alt="{{ featured.data.hero_alt or featured.data.title }}" class="post-card__hero" loading="lazy" style="--w:100%; --br:4px; --mb:1.2rem; aspect-ratio:16/9; object-fit:cover">
+      {%- endif %}
+      <h3 class="post-title" style="--size:1.8rem; --size-md:1.4rem; --mb:0.5rem">
+        <a href="{{ featured.url }}" style="--c:inherit; --td:none">{{ featured.data.title }}</a>
+      </h3>
+      <time class="post-date" datetime="{{ featured.date | htmlDateString }}" style="--c:#888; --size:0.85rem">
+        {{ featured.date | readableDate }}
+      </time>
+      {% if featured.data.subheadline %}
+        <p class="post-description" style="--c:#444; --size:1.05rem; --lh:1.6; --mt:0.6rem">{{ featured.data.subheadline }}</p>
+      {% elseif featured.data.description %}
+        <p class="post-description" style="--c:#444; --size:1.05rem; --lh:1.6; --mt:0.6rem">{{ featured.data.description }}</p>
+      {% elseif featured.data.summary %}
+        <p class="post-description" style="--c:#444; --size:1.05rem; --lh:1.6; --mt:0.6rem">{{ featured.data.summary }}</p>
+      {% endif %}
+      {% if featured.data.tags %}
+        <div class="post-tags" style="--mt:0.8rem">
+          {% for tag in featured.data.tags | filterTagList %}
+            <a href="/tags/{{ tag | slugify }}/" class="post-tag">{{ tag }}</a>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+    {%- endif %}
+
+    {# ── Remaining articles ── #}
     <ul class="posts-list">
-      {%- for post in postslist -%}
+      {%- for post in postslist | slice(1) -%}
         {% if post.data.title %}
           <li class="post-card">
             <h3 class="post-title">

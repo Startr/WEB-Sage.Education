@@ -53,11 +53,66 @@
     </div>
   </article>
 
-  {%- if collections.all %}
+  {%- if collections.posts.length %}
+  <!-- prev/next from collections.posts ({{ collections.posts.length }} items) -->
+
+  {# Prev/next computed once — used both as exclusions for related list and for the nav itself #}
+  {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+  {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
+
+  {# Related articles by shared non-universal tags, with random fallback when no tag match #}
+  {%- set currentTags = tags | filterTagList %}
+  {%- set relatedPosts = [] %}
+  {%- for post in collections.posts %}
+    {%- if post.url != page.url and post.data.title
+        and (not previousPost or post.url != previousPost.url)
+        and (not nextPost or post.url != nextPost.url) %}
+      {%- set postTags = post.data.tags | filterTagList %}
+      {%- set shared = 0 %}
+      {%- for t in currentTags %}
+        {%- if t != "education" and t != "ai" and t != "technology" and t in postTags %}
+          {%- set shared = shared + 1 %}
+        {%- endif %}
+      {%- endfor %}
+      {%- if shared > 0 %}
+        {%- set relatedPosts = (relatedPosts.push(post), relatedPosts) %}
+      {%- endif %}
+    {%- endif %}
+  {%- endfor %}
+  {%- set matchedByTag = relatedPosts.length %}
+  {%- set fallbackUsed = false %}
+  {%- if relatedPosts.length == 0 %}
+    {%- set fallbackUsed = true %}
+    {%- for post in collections.posts %}
+      {%- if post.url != page.url and post.data.title and relatedPosts.length < 2
+          and (not previousPost or post.url != previousPost.url)
+          and (not nextPost or post.url != nextPost.url) %}
+        {%- set relatedPosts = (relatedPosts.push(post), relatedPosts) %}
+      {%- endif %}
+    {%- endfor %}
+  {%- endif %}
+  {%- if relatedPosts.length < 3 %}{%- set slicedTo = relatedPosts.length %}{%- else %}{%- set slicedTo = 3 %}{%- endif %}
+
+  {%- if collections.posts.length > 1 and relatedPosts.length > 0 %}
+  <!-- related: matched-by-tag={{ matchedByTag }}, fallback-used={{ fallbackUsed }}, sliced-to={{ slicedTo }} -->
+  <section class="article-related" style="--mt:3rem; --pt:2rem; padding-top:2rem; border-top:1px solid var(--rule-color,#e2e2e2)">
+    <div class="article-related__label" style="--c:#777; --size:0.75rem; letter-spacing:0.1em; text-transform:uppercase">Related reading</div>
+    <ul style="--lis:none; --p:0; --m:1rem 0 0">
+      {%- for post in relatedPosts | slice(0, 3) %}
+      <li style="--p:1rem 0; border-bottom:1px solid var(--rule-color,#eee)">
+        <a href="{{ post.url }}" class="plausible-event-name=RelatedClick" style="--c:#222; --td:none; font-weight:600">{{ post.data.title }}</a>
+        {%- set relDeck = post.data.subheadline or post.data.description or post.data.summary %}
+        {%- if relDeck %}
+        <p class="article-related__summary" style="--c:#666; --size:0.95rem; --lh:1.5; --mt:0.3rem">{{ relDeck }}</p>
+        {%- endif %}
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
+
+  {%- if nextPost or previousPost %}
   <nav class="article-nav">
-    {%- set previousPost = collections.all | getPreviousCollectionItem(page) %}
-    {%- set nextPost = collections.all | getNextCollectionItem(page) %}
-    {%- if nextPost or previousPost %}
     <div class="nav-label">More from Sage.Education</div>
     <ul>
       {%- if previousPost and previousPost.data.title %}
@@ -79,8 +134,8 @@
         </li>
       {% endif %}
     </ul>
-    {%- endif %}
   </nav>
+  {%- endif %}
   {%- endif %}
 </div>
 
@@ -106,11 +161,66 @@
     </div>
   </article>
 
-  {%- if collections.all %}
+  {%- if collections.posts.length %}
+  <!-- prev/next from collections.posts ({{ collections.posts.length }} items) -->
+
+  {# Prev/next computed once — used both as exclusions for related list and for the nav itself #}
+  {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+  {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
+
+  {# Related articles by shared non-universal tags, with random fallback when no tag match #}
+  {%- set currentTags = tags | filterTagList %}
+  {%- set relatedPosts = [] %}
+  {%- for post in collections.posts %}
+    {%- if post.url != page.url and post.data.title
+        and (not previousPost or post.url != previousPost.url)
+        and (not nextPost or post.url != nextPost.url) %}
+      {%- set postTags = post.data.tags | filterTagList %}
+      {%- set shared = 0 %}
+      {%- for t in currentTags %}
+        {%- if t != "education" and t != "ai" and t != "technology" and t in postTags %}
+          {%- set shared = shared + 1 %}
+        {%- endif %}
+      {%- endfor %}
+      {%- if shared > 0 %}
+        {%- set relatedPosts = (relatedPosts.push(post), relatedPosts) %}
+      {%- endif %}
+    {%- endif %}
+  {%- endfor %}
+  {%- set matchedByTag = relatedPosts.length %}
+  {%- set fallbackUsed = false %}
+  {%- if relatedPosts.length == 0 %}
+    {%- set fallbackUsed = true %}
+    {%- for post in collections.posts %}
+      {%- if post.url != page.url and post.data.title and relatedPosts.length < 2
+          and (not previousPost or post.url != previousPost.url)
+          and (not nextPost or post.url != nextPost.url) %}
+        {%- set relatedPosts = (relatedPosts.push(post), relatedPosts) %}
+      {%- endif %}
+    {%- endfor %}
+  {%- endif %}
+  {%- if relatedPosts.length < 3 %}{%- set slicedTo = relatedPosts.length %}{%- else %}{%- set slicedTo = 3 %}{%- endif %}
+
+  {%- if collections.posts.length > 1 and relatedPosts.length > 0 %}
+  <!-- related: matched-by-tag={{ matchedByTag }}, fallback-used={{ fallbackUsed }}, sliced-to={{ slicedTo }} -->
+  <section class="article-related" style="--mt:3rem; --pt:2rem; padding-top:2rem; border-top:1px solid var(--rule-color,#e2e2e2)">
+    <div class="article-related__label" style="--c:#777; --size:0.75rem; letter-spacing:0.1em; text-transform:uppercase">Related reading</div>
+    <ul style="--lis:none; --p:0; --m:1rem 0 0">
+      {%- for post in relatedPosts | slice(0, 3) %}
+      <li style="--p:1rem 0; border-bottom:1px solid var(--rule-color,#eee)">
+        <a href="{{ post.url }}" class="plausible-event-name=RelatedClick" style="--c:#222; --td:none; font-weight:600">{{ post.data.title }}</a>
+        {%- set relDeck = post.data.subheadline or post.data.description or post.data.summary %}
+        {%- if relDeck %}
+        <p class="article-related__summary" style="--c:#666; --size:0.95rem; --lh:1.5; --mt:0.3rem">{{ relDeck }}</p>
+        {%- endif %}
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
+
+  {%- if nextPost or previousPost %}
   <nav class="article-nav">
-    {%- set previousPost = collections.all | getPreviousCollectionItem(page) %}
-    {%- set nextPost = collections.all | getNextCollectionItem(page) %}
-    {%- if nextPost or previousPost %}
     <div class="nav-label">More from Sage.Education</div>
     <ul>
       {%- if previousPost and previousPost.data.title %}
@@ -132,8 +242,8 @@
         </li>
       {% endif %}
     </ul>
-    {%- endif %}
   </nav>
+  {%- endif %}
   {%- endif %}
 </main>
 {%- endif %}

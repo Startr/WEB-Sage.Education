@@ -44,7 +44,7 @@ module.exports = async function(eleventyConfig) {
   // Environment setup
   const isDev = process.env.NODE_ENV !== 'production';
   // DRY helpers
-  const SKIP_TAGS = new Set(["all", "nav", "post", "posts"]);
+  const SKIP_TAGS = new Set(["all", "nav", "post", "posts", "resource", "resources"]);
   const normalizeTags = (tags) => {
     if (!tags) return [];
     const arr = Array.isArray(tags) ? tags : [tags];
@@ -117,9 +117,11 @@ module.exports = async function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("MMMM dd, yyyy");
   });
 
-  eleventyConfig.addCollection("posts", function(collectionApi) {
-    const items = collectionApi.getFilteredByGlob("posts/**/*.md").sort((a, b) => b.date - a.date);
-    if (items.length === 0) console.warn('[posts] collection is empty — check posts/**/*.md glob');
+  eleventyConfig.addCollection("resources", function(collectionApi) {
+    // Only English builds (de/fr/pt set eleventyExcludeFromCollections), so
+    // collisions on page.fileSlug aren't possible here today.
+    const items = collectionApi.getFilteredByGlob("resources/**/*.md").sort((a, b) => b.date - a.date);
+    if (items.length === 0) console.warn('[resources] collection is empty — check resources/**/*.md glob');
     return items;
   });
 
@@ -261,7 +263,7 @@ module.exports = async function(eleventyConfig) {
 
   eleventyConfig.addTransform("lazy-load-images", (content, outputPath) => {
     if (outputPath.endsWith(".html")) {
-      const isPostPage = /(^|\/)posts\//i.test(outputPath);
+      const isPostPage = /(^|\/)resources\//i.test(outputPath);
       const postDefaultStyle = "--br: 1rem; --shadow: 6;";
       let out = content.replace(/<img\b[^>]*>/gi, (imgTag) => {
         let next = imgTag;

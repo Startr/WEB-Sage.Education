@@ -19,7 +19,7 @@ summary: >-
 eleventyNavigation:
   parent: Blog
 ---
-*A companion guide to [The Muggle-Proof Guide to Hosting Lovable on Cloudflare Pages](https://sage.education/posts/blog/en/2026-02-26-the-muggle-proof-guide-to-hosting-lovable-on-cloudflare-pages/).*
+*A companion guide to [The Muggle-Proof Guide to Hosting Lovable on Cloudflare Pages](https://sage.education/resources/the-muggle-proof-guide-to-hosting-lovable-on-cloudflare-pages/).*
 
 - - -
 

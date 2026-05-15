@@ -26,19 +26,42 @@ eleventyNavigation:
       placeholder="Search articles"
       aria-label="Search articles"
       autocomplete="off"
-      _="-- Filter article cards by search text
+      _="-- Filter article cards by search text + sync to URL fragment
+          init
+            -- Deep-link READ: pull #on_<term> out of the URL fragment and pre-filter.
+            -- Fragment (not query) keeps deep links static-site friendly and avoids
+            -- collisions with other query params. Example: /posts#on_search%20term
+            set hash to window.location.hash
+            if hash.startsWith('#on_')
+              set term to decodeURIComponent(hash.substring(4))
+              if term
+                set my value to term
+                show <.post-card/> in #posts-search-scope
+                  when its textContent.toLowerCase()
+                    contains my value.toLowerCase()
+              end
+            end
           on keyup
-            -- Clear input on Escape
+            -- Clear input on Escape, then fall through to filter + URL sync.
             if the event's key is 'Escape'
               set my value to ''
             end
-            -- Show cards whose text matches, hide the rest
+            -- Show cards whose text matches, hide the rest.
             show <.post-card/> in #posts-search-scope
               when its textContent.toLowerCase()
-                contains my value.toLowerCase()"
+                contains my value.toLowerCase()
+            -- Deep-link WRITE: keep the URL fragment in sync so the current search
+            -- is always shareable. replaceState (not pushState) so we don't pollute
+            -- browser history with one entry per keystroke.
+            if my value is not ''
+              call history.replaceState(null, '', '#on_' + encodeURIComponent(my value))
+            else
+              -- Strip the fragment entirely so the URL doesn't dangle on a bare '#'.
+              call history.replaceState(null, '', window.location.pathname + window.location.search)
+            end"
     >
   </div>
-  {% set postslist = collections.posts %}
+  {% set postslist = collections.resources %}
   {% if postslist.length > 0 %}
     {# ── Search scope: wraps all cards so search filters everything ── #}
     <div id="posts-search-scope">
@@ -48,15 +71,17 @@ eleventyNavigation:
     <!-- featured = {{ featured.url }}, list iterates from index 1 of {{ postslist.length }} -->
     {%- if not featured.data.hero %}<!-- featured: no hero set on {{ featured.url }} — consider adding `hero:` frontmatter -->{%- endif %}
     <div class="post-card post-card--featured" style="--p:2.4rem 2.6rem; --p-md:1.5rem 1.4rem; --mb:1.6rem; --levitate:8; --br:8px">
-      {%- if featured.data.hero %}
+      {%- if featured.data.hero %}<a href="{{ featured.url }}">
       <img src="{{ featured.data.hero }}" alt="{{ featured.data.hero_alt or featured.data.title }}" class="post-card__hero" loading="lazy" style="--w:100%; --br:4px; --mb:1.2rem; aspect-ratio:16/9; object-fit:cover">
+      </a>
       {%- endif %}
       <h3 class="post-title" style="--size:1.8rem; --size-md:1.4rem; --mb:0.5rem">
-        <a href="{{ featured.url }}" style="--c:inherit; --td:none">{{ featured.data.title }}</a>
+        <a href="{{ featured.url }}">{{ featured.data.title }}</a>
       </h3>
       <time class="post-date" datetime="{{ featured.date | htmlDateString }}" style="--c:#888; --size:0.85rem">
         {{ featured.date | readableDate }}
       </time>
+      <a href="{{ featured.url }}">
       {% if featured.data.subheadline %}
         <p class="post-description" style="--c:#444; --size:1.05rem; --lh:1.6; --mt:0.6rem">{{ featured.data.subheadline }}</p>
       {% elseif featured.data.description %}
@@ -64,6 +89,7 @@ eleventyNavigation:
       {% elseif featured.data.summary %}
         <p class="post-description" style="--c:#444; --size:1.05rem; --lh:1.6; --mt:0.6rem">{{ featured.data.summary }}</p>
       {% endif %}
+      </a>
       {% if featured.data.tags %}
         <div class="post-tags" style="--mt:0.8rem">
           {% for tag in featured.data.tags | filterTagList %}
@@ -85,6 +111,7 @@ eleventyNavigation:
             <time class="post-date" datetime="{{ post.date | htmlDateString }}">
               {{ post.date | readableDate }}
             </time>
+            <a href="{{ post.url }}" style="--weight:500; --c:inherit; --td:none">
             {% if post.data.subheadline %}
               <p class="post-description">{{ post.data.subheadline }}</p>
             {% elseif post.data.description %}
@@ -92,6 +119,7 @@ eleventyNavigation:
             {% elseif post.data.summary %}
               <p class="post-description">{{ post.data.summary }}</p>
             {% endif %}
+            </a>
             {% if post.data.tags %}
               <div class="post-tags">
                 {% for tag in post.data.tags | filterTagList %}

@@ -396,13 +396,13 @@ Track and review progress and decision-making with branching conversation views
 }
 </style>
 
-#### <a href="/posts/blog/en/2024-09-26-principles-of-llm-prompting-for-teachers/">Principles of LLM Prompting for Teachers<br><button class="tag">Read More</button></a>
+#### <a href="/resources/principles-of-llm-prompting-for-teachers/">Principles of LLM Prompting for Teachers<br><button class="tag">Read More</button></a>
 
-####  <a href="/posts/blog/en/2024-09-26-be-nice-to-ai-it-might-just-make-you-smarter/">Be nice to AI, it might make you smarter<br><button class="tag">Read More</button></a>
+####  <a href="/resources/be-nice-to-ai-it-might-just-make-you-smarter/">Be nice to AI, it might make you smarter<br><button class="tag">Read More</button></a>
 
-#### <a href="/posts/blog/en/2024-10-27-teaching-with-large-language-models-llms-strategies-for-high-school-educators/">Instructional Strategies and Prompting<br><button class="tag">Read More</button></a>
+#### <a href="/resources/teaching-with-large-language-models-llms-strategies-for-high-school-educators/">Instructional Strategies and Prompting<br><button class="tag">Read More</button></a>
 
-#### <a href="/posts/blog/en/2024-11-04-knowing-when-to-use-llms-vs-search-engines/">When to use LLMs vs Search Engines<br><button class="tag">Read More</button></a>
+#### <a href="/resources/knowing-when-to-use-llms-vs-search-engines/">When to use LLMs vs Search Engines<br><button class="tag">Read More</button></a>
 
 {style="--d: flex;"}
 

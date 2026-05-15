@@ -223,7 +223,7 @@ Do not make the same mistake twice.
 
 [^27]: Sage.is (AI-UI) is an open-source AI platform built by Startr LLC. AGPL-3 licensed. [sage.is](https://sage.is). The educational community site is [sage.education](https://sage.education).
 
-[^28]: Sage Education, "An AI Edtech Success Story: Students Forge AI Ally, Conquer Space Challenge," May 14, 2025. [sage.education](https://sage.education/posts/blog/en/2025-05-14-an-ai-edtech-success-story-students-forge-ai-ally-conquer-space-challenge/).
+[^28]: Sage Education, "An AI Edtech Success Story: Students Forge AI Ally, Conquer Space Challenge," May 14, 2025. [sage.education](https://sage.education/resources/an-ai-edtech-success-story-students-forge-ai-ally-conquer-space-challenge/).
 
 [^29]: Plante, Glow 2025 presentation. The presentation includes a live comparison of the Sage.is AI-UI approach with ChatGPT's closed architecture, and demonstrations of students building custom AI agents. [youtu.be/otCAoljOh_w](https://youtu.be/otCAoljOh_w).
 

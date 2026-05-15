@@ -153,7 +153,7 @@ The monitoring does not start with ChatGPT. It starts with the device.
 
 GoGuardian[^36] watches 27 million students across more than 10,000 schools. It scans their keystrokes, their searches, their private messages. It outed an LGBTQ+ student in Minneapolis after flagging the words "gay" and "lesbian."[^37] Gaggle[^38] monitors 6 million students in 1,500 districts. A parent in Lawrence, Kansas, sued for the right to opt out. The principal, deputy superintendent, and school board president all said opt-out was "not possible."[^39]
 
-Google Chrome installed a 4 GB AI model on 38 million classroom Chromebooks without asking anyone – a story documented in this series in ["The Uninvited Guest."](/posts/blog/en/the-uninvited-guest/)[^40]
+Google Chrome installed a 4 GB AI model on 38 million classroom Chromebooks without asking anyone – a story documented in this series in ["The Uninvited Guest."](/resources/the-uninvited-guest/)[^40]
 
 And now Trusted Contact monitors the conversations students have when they turn to AI because they are afraid to talk to a human.
 
@@ -240,7 +240,7 @@ In 1984, the proles never organized. The sovereign schools did. They built their
 [^37]: In 2021, an LGBTQ+ student at Roosevelt High School in Minneapolis was outed to their parents after GoGuardian's partner tool Gaggle flagged keywords including "gay" and "lesbian." The school did not talk to the student first. [EFF](https://www.eff.org/deeplinks/2023/10/how-goguardian-invades-student-privacy). [CDT](https://cdt.org/insights/the-chilling-effect-of-student-monitoring-disproportionate-impacts-and-mental-health-risks/).
 [^38]: **Gaggle** is a monitoring tool that tracks approximately 6 million students in 1,500 school districts. It scans messages, documents, and online activity for content matching its algorithmic criteria.
 [^39]: Lawrence, Kansas, 2025. A parent attempted to opt their son out of Gaggle surveillance. The school refused. The parent sued. [Lawrence KS Times](https://lawrencekstimes.com/2025/11/19/gaggle-amended-lawsuit/).
-[^40]: See ["The Uninvited Guest"](/posts/blog/en/the-uninvited-guest/) in this series for the full account of how Google Chrome silently installed a 4 GB AI model on every device running the browser, including 38 million classroom Chromebooks, between April 20 and 29, 2026.
+[^40]: See ["The Uninvited Guest"](/resources/the-uninvited-guest/) in this series for the full account of how Google Chrome silently installed a 4 GB AI model on every device running the browser, including 38 million classroom Chromebooks, between April 20 and 29, 2026.
 [^41]: RAND Corporation, 2023. Found "scant evidence" that student monitoring tools reduce suicide rates or prevent school violence. [CDT report on school monitoring](https://cdt.org/insights/report-off-task-edtech-threats-to-student-privacy-and-equity-in-the-age-of-ai/).
 [^42]: George Orwell, *Nineteen Eighty-Four* (1949), Part 1, Chapter 7.
 [^43]: University of Missouri, "Show-Me AI" initiative, launched September 2025. Chris Kwak, Chief Information Officer, oversaw deployment on university-owned infrastructure.

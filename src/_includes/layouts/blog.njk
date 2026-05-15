@@ -53,17 +53,17 @@
     </div>
   </article>
 
-  {%- if collections.posts.length %}
-  <!-- prev/next from collections.posts ({{ collections.posts.length }} items) -->
+  {%- if collections.resources.length %}
+  <!-- prev/next from collections.resources ({{ collections.resources.length }} items) -->
 
   {# Prev/next computed once — used both as exclusions for related list and for the nav itself #}
-  {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
-  {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
+  {%- set previousPost = collections.resources | getPreviousCollectionItem(page) %}
+  {%- set nextPost = collections.resources | getNextCollectionItem(page) %}
 
   {# Related articles by shared non-universal tags, with random fallback when no tag match #}
   {%- set currentTags = tags | filterTagList %}
   {%- set relatedPosts = [] %}
-  {%- for post in collections.posts %}
+  {%- for post in collections.resources %}
     {%- if post.url != page.url and post.data.title
         and (not previousPost or post.url != previousPost.url)
         and (not nextPost or post.url != nextPost.url) %}
@@ -83,7 +83,7 @@
   {%- set fallbackUsed = false %}
   {%- if relatedPosts.length == 0 %}
     {%- set fallbackUsed = true %}
-    {%- for post in collections.posts %}
+    {%- for post in collections.resources %}
       {%- if post.url != page.url and post.data.title and relatedPosts.length < 2
           and (not previousPost or post.url != previousPost.url)
           and (not nextPost or post.url != nextPost.url) %}
@@ -93,7 +93,7 @@
   {%- endif %}
   {%- if relatedPosts.length < 3 %}{%- set slicedTo = relatedPosts.length %}{%- else %}{%- set slicedTo = 3 %}{%- endif %}
 
-  {%- if collections.posts.length > 1 and relatedPosts.length > 0 %}
+  {%- if collections.resources.length > 1 and relatedPosts.length > 0 %}
   <!-- related: matched-by-tag={{ matchedByTag }}, fallback-used={{ fallbackUsed }}, sliced-to={{ slicedTo }} -->
   <section class="article-related" style="--mt:3rem; --pt:2rem; padding-top:2rem; border-top:1px solid var(--rule-color,#e2e2e2)">
     <div class="article-related__label" style="--c:#777; --size:0.75rem; letter-spacing:0.1em; text-transform:uppercase">Related reading</div>
@@ -161,17 +161,17 @@
     </div>
   </article>
 
-  {%- if collections.posts.length %}
-  <!-- prev/next from collections.posts ({{ collections.posts.length }} items) -->
+  {%- if collections.resources.length %}
+  <!-- prev/next from collections.resources ({{ collections.resources.length }} items) -->
 
   {# Prev/next computed once — used both as exclusions for related list and for the nav itself #}
-  {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
-  {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
+  {%- set previousPost = collections.resources | getPreviousCollectionItem(page) %}
+  {%- set nextPost = collections.resources | getNextCollectionItem(page) %}
 
   {# Related articles by shared non-universal tags, with random fallback when no tag match #}
   {%- set currentTags = tags | filterTagList %}
   {%- set relatedPosts = [] %}
-  {%- for post in collections.posts %}
+  {%- for post in collections.resources %}
     {%- if post.url != page.url and post.data.title
         and (not previousPost or post.url != previousPost.url)
         and (not nextPost or post.url != nextPost.url) %}
@@ -191,7 +191,7 @@
   {%- set fallbackUsed = false %}
   {%- if relatedPosts.length == 0 %}
     {%- set fallbackUsed = true %}
-    {%- for post in collections.posts %}
+    {%- for post in collections.resources %}
       {%- if post.url != page.url and post.data.title and relatedPosts.length < 2
           and (not previousPost or post.url != previousPost.url)
           and (not nextPost or post.url != nextPost.url) %}
@@ -201,7 +201,7 @@
   {%- endif %}
   {%- if relatedPosts.length < 3 %}{%- set slicedTo = relatedPosts.length %}{%- else %}{%- set slicedTo = 3 %}{%- endif %}
 
-  {%- if collections.posts.length > 1 and relatedPosts.length > 0 %}
+  {%- if collections.resources.length > 1 and relatedPosts.length > 0 %}
   <!-- related: matched-by-tag={{ matchedByTag }}, fallback-used={{ fallbackUsed }}, sliced-to={{ slicedTo }} -->
   <section class="article-related" style="--mt:3rem; --pt:2rem; padding-top:2rem; border-top:1px solid var(--rule-color,#e2e2e2)">
     <div class="article-related__label" style="--c:#777; --size:0.75rem; letter-spacing:0.1em; text-transform:uppercase">Related reading</div>

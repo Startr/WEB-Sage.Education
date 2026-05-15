@@ -18,7 +18,7 @@ eleventyNavigation:
 
 # Consent Was Never Given
 
-*Part 2 of 3. Follows ["The Uninvited Guest."](/posts/blog/en/the-uninvited-guest/)*
+*Part 2 of 3. Follows ["The Uninvited Guest."](/resources/the-uninvited-guest/)*
 
 You might have heard this all before.  One Tuesday last August, in a cafeteria outside Charlotte, North Carolina, a mother of two signed eleven forms in nine minutes. One was an emergency contact card. One was a lunch application. One was an acceptable-use policy that authorized the school district to provide students with access to "digital learning tools." The form named no platforms. It described no data practices. It mentioned no AI. The mother does not remember signing it, because there was nothing to remember. Her seven-year-old was asking for the third time whether they could go see the classroom.[^1]
 
@@ -42,7 +42,7 @@ Leonie Haimson, executive director of Class Size Matters and co-chair of the Par
 
 ## From Software to Soil
 
-In ["The Walled Garden,"](/posts/blog/en/the-walled-garden/) published in March 2026, this series documented Google's education lock-in at the software layer. NotebookLM generates mind maps that cannot be edited, in formats that cannot be exported, outside of downloading as an image. Gemini sits inside Docs, Sheets, Slides, and Classroom. The bundling pattern follows three stages: offer a free tool that solves a real problem, integrate it with everything else, then embed AI that makes the data maximally useful inside the ecosystem and minimally portable outside it.
+In ["The Walled Garden,"](/resources/the-walled-garden/) published in March 2026, this series documented Google's education lock-in at the software layer. NotebookLM generates mind maps that cannot be edited, in formats that cannot be exported, outside of downloading as an image. Gemini sits inside Docs, Sheets, Slides, and Classroom. The bundling pattern follows three stages: offer a free tool that solves a real problem, integrate it with everything else, then embed AI that makes the data maximally useful inside the ecosystem and minimally portable outside it.
 
 The walled garden was software. The devices were vessels. Neutral hardware that ran whatever Google's services required, but that did not themselves carry AI capabilities the school had not chosen.
 
@@ -70,11 +70,11 @@ Schools absorbed the cost directly. A district managing 5,000 Chromebooks consum
 
 The mother in Charlotte does not know any of this. She signed a form in a cafeteria. The form said "digital learning tools." The tools now include a 4 GB large language model that arrived on her daughter's Chromebook without notification, without consent, and without a line item in the district's bandwidth budget. The form is still in a filing cabinet somewhere. The AI is on the device.
 
-The question of what happens next, when any website can trigger the same download, is the subject of [Part 3: "The Next Guest."](/posts/blog/en/the-next-guest/)
+The question of what happens next, when any website can trigger the same download, is the subject of [Part 3: "The Next Guest."](/resources/the-next-guest/)
 
 ---
 
-*This article is Part 2 of  ["The Uninvited Guest"](/posts/blog/en/the-uninvited-guest/)* *series. The views expressed are those of the editorial board and do not necessarily reflect the positions of any institution mentioned.*
+*This article is Part 2 of  ["The Uninvited Guest"](/resources/the-uninvited-guest/)* *series. The views expressed are those of the editorial board and do not necessarily reflect the positions of any institution mentioned.*
 
 ---
 

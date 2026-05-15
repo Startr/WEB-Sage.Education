@@ -19,7 +19,7 @@ eleventyNavigation:
 
 # The Warning That Was Ignored
 
-*Part 1 of 3. Based on ["The Arsonist's Smoke Detector."](/posts/blog/en/the-arsonists-smoke-detector/)*
+*Part 1 of 3. Based on ["The Arsonist's Smoke Detector."](/resources/the-arsonists-smoke-detector/)*
 
 In June 2025, a computer program noticed something wrong.
 
@@ -61,13 +61,13 @@ When a company builds a tool that millions of people talk to every day, and that
 
 At Tumbler Ridge, the answer was: nothing. The warning system worked. The humans who reviewed it gave the right advice. The people who made the final decision chose silence. Six people died.
 
-Three months after the shooting, OpenAI launched a new feature that monitors your ChatGPT conversations and can tell someone if it thinks you are in danger. That feature is the subject of [Part 2: "When the Chat Window Watches Back."](/posts/blog/en/when-the-chat-window-watches-back/)
+Three months after the shooting, OpenAI launched a new feature that monitors your ChatGPT conversations and can tell someone if it thinks you are in danger. That feature is the subject of [Part 2: "When the Chat Window Watches Back."](/resources/when-the-chat-window-watches-back/)
 
 The same company that chose not to call police about a mass shooting now wants to read your private thoughts and decide who else should know.
 
 ---
 
-*This is Part 1 of a 3-part series based on ["The Arsonist's Smoke Detector."](/posts/blog/en/the-arsonists-smoke-detector/) The views expressed are those of the editorial board. Full disclosure and transparency is a feature, not a bug.*
+*This is Part 1 of a 3-part series based on ["The Arsonist's Smoke Detector."](/resources/the-arsonists-smoke-detector/) The views expressed are those of the editorial board. Full disclosure and transparency is a feature, not a bug.*
 
 ---
 

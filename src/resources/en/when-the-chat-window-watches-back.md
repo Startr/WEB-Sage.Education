@@ -19,7 +19,7 @@ eleventyNavigation:
 
 # When the Chat Window Watches Back
 
-*Part 2 of 3. Follows ["The Warning That Was Ignored."](/posts/blog/en/the-warning-that-was-ignored/)*
+*Part 2 of 3. Follows ["The Warning That Was Ignored."](/resources/the-warning-that-was-ignored/)*
 
 Many people talk to AI chatbots about things they would never say to a person. They share fears, ask about their health, and describe feelings they are ashamed of. Nearly half of people who use chatbots for mental health say they choose AI because they are afraid of being judged by people.[^1]
 
@@ -89,15 +89,15 @@ The difference between surveillance and visibility is not what someone can see. 
 
 ## What Comes Next
 
-As we showed in [Part 1](/posts/blog/en/the-warning-that-was-ignored/), OpenAI's monitoring system found a real threat eight months before the Tumbler Ridge shooting. The company chose not to act. Now the same company monitors millions of private conversations and calls it care.
+As we showed in [Part 1](/resources/the-warning-that-was-ignored/), OpenAI's monitoring system found a real threat eight months before the Tumbler Ridge shooting. The company chose not to act. Now the same company monitors millions of private conversations and calls it care.
 
 The question is not whether monitoring technology works. It clearly does. The question is who controls it, who makes the rules, and whose interests the rules serve.
 
-Canada's Senate is debating that question right now. That is the subject of [Part 3: "Who Decides?"](/posts/blog/en/who-decides/)
+Canada's Senate is debating that question right now. That is the subject of [Part 3: "Who Decides?"](/resources/who-decides/)
 
 ---
 
-*This is Part 2 of a 3-part series based on ["The Arsonist's Smoke Detector."](/posts/blog/en/the-arsonists-smoke-detector/) The views expressed are those of the editorial board. Full disclosure and transparency is a feature, not a bug.*
+*This is Part 2 of a 3-part series based on ["The Arsonist's Smoke Detector."](/resources/the-arsonists-smoke-detector/) The views expressed are those of the editorial board. Full disclosure and transparency is a feature, not a bug.*
 
 ---
 

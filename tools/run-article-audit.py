@@ -104,7 +104,7 @@ def build_markdown(rows: list[dict], generated_at: str) -> str:
 def main() -> int:
     repo_root = Path(__file__).resolve().parents[1]
     audit_script = repo_root / "tools" / "article-quality-audit.py"
-    article_glob_root = repo_root / "src" / "posts" / "blog" / "en"
+    article_glob_root = repo_root / "src" / "resources" / "en"
 
     if not audit_script.exists():
         print(f"[audit] Missing script: {audit_script}", file=sys.stderr)
@@ -112,7 +112,7 @@ def main() -> int:
 
     articles = sorted(str(p) for p in article_glob_root.glob("*.md"))
     if not articles:
-        print("[audit] No article files found in src/posts/blog/en")
+        print("[audit] No article files found in src/resources/en")
         return 0
 
     out_dir = repo_root / "docs" / "audits"

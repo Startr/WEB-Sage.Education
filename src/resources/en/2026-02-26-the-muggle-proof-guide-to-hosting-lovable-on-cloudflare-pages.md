@@ -23,7 +23,7 @@ eleventyNavigation:
   parent: Blog
 hero: /assets/images/heroes/code.jpg
 ---
-*See also: [Equipping the Wand: Local Development Setup](https://sage.education/posts/blog/en/2026-02-26-equipping-the-wand-local-development-for-a-lovable-project/) .*
+*See also: [Equipping the Wand: Local Development Setup](https://sage.education/resources/equipping-the-wand-local-development-for-a-lovable-project/) .*
 
 - - -
 

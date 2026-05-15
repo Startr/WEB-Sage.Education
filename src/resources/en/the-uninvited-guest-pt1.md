@@ -18,7 +18,7 @@ eleventyNavigation:
 
 # The Uninvited Guest
 
-*Part 1 of 3. A companion to ["The Walled Garden."](/posts/blog/en/the-walled-garden/)*
+*Part 1 of 3. A companion to ["The Walled Garden."](/resources/the-walled-garden/)*
 
 On May 5, 2026, Alexander Hanff opened the file browser on his Mac and looked at what Chrome had been doing while he was not watching. Hanff is a computer scientist and privacy researcher who writes under the name "That Privacy Guy." He has spent two decades studying how software moves data around without asking. He knows where and what to look for.
 
@@ -66,11 +66,11 @@ ConductAtlas, a compliance research firm, analyzed Chrome's Terms of Service in 
 
 Hanff knew Chrome would re-download the file overnight. He published the filesystem logs, the legal analysis, and the regulatory implications. Then he closed his laptop and left the uninvited guest sitting on his hard drive, because the architecture gave him no other option.
 
-In Lower Merion, on 38 million Chromebooks worldwide, the guest had already made itself at home. The question of who consented is the subject of [Part 2: "The Consent That Was Never Given."](/posts/blog/en/the-consent-that-was-never-given/)
+In Lower Merion, on 38 million Chromebooks worldwide, the guest had already made itself at home. The question of who consented is the subject of [Part 2: "The Consent That Was Never Given."](/resources/the-consent-that-was-never-given/)
 
 ---
 
-*This article is Part 1 of "The Uninvited Guest" series, a companion to ["The Walled Garden,"](/posts/blog/en/the-walled-garden/) published March 2026. The views expressed are those of the editorial board and do not necessarily reflect the positions of any institution mentioned. 
+*This article is Part 1 of "The Uninvited Guest" series, a companion to ["The Walled Garden,"](/resources/the-walled-garden/) published March 2026. The views expressed are those of the editorial board and do not necessarily reflect the positions of any institution mentioned. 
 
 ---
 

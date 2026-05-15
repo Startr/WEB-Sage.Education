@@ -19,7 +19,7 @@ eleventyNavigation:
 
 # Who Decides?
 
-*Part 3 of 3. Follows ["When the Chat Window Watches Back."](/posts/blog/en/when-the-chat-window-watches-back/)*
+*Part 3 of 3. Follows ["When the Chat Window Watches Back."](/resources/when-the-chat-window-watches-back/)*
 
 On May 6, 2026, three things happened in Canada.
 
@@ -49,7 +49,7 @@ Not a ban. Accountability. But there is a gap in his argument.
 
 But a professor named Jean-Christophe Bélisle-Pipon, who teaches health ethics at Simon Fraser University, sees a problem with both the ban and the transparency approach.[^7]
 
-When there are no laws, companies write their own rules. And their rules tend to serve the company, not the users. After the Tumbler Ridge school shooting (described in [Part 1](/posts/blog/en/the-warning-that-was-ignored/)), OpenAI promised to start reporting dangerous users directly to Canada's national police, the RCMP. That sounds responsible. But think about what it means: a private company now decides which of your private conversations get sent to the police. No court ordered it. No elected official wrote the rules. No independent person reviews the decisions.[^8]
+When there are no laws, companies write their own rules. And their rules tend to serve the company, not the users. After the Tumbler Ridge school shooting (described in [Part 1](/resources/the-warning-that-was-ignored/)), OpenAI promised to start reporting dangerous users directly to Canada's national police, the RCMP. That sounds responsible. But think about what it means: a private company now decides which of your private conversations get sent to the police. No court ordered it. No elected official wrote the rules. No independent person reviews the decisions.[^8]
 
 Bélisle-Pipon wrote: "It is not regulation of AI. It is regulation of the people who use AI."[^8]
 
@@ -59,7 +59,7 @@ The ban debate asks whether kids should use chatbots. The deeper question is who
 
 The monitoring does not start with ChatGPT. It starts much earlier.
 
-**First, the device.** Many schools give students Chromebooks – laptop computers made by Google. Google recently installed a 4 GB AI program on all of these devices without asking.[^9] No principal was told. No parent was asked. That story is told in ["The Uninvited Guest"](/posts/blog/en/the-uninvited-guest/) series.
+**First, the device.** Many schools give students Chromebooks – laptop computers made by Google. Google recently installed a 4 GB AI program on all of these devices without asking.[^9] No principal was told. No parent was asked. That story is told in ["The Uninvited Guest"](/resources/the-uninvited-guest/) series.
 
 **Then, the monitoring software.** A program called GoGuardian[^10] watches 27 million students in more than 10,000 schools. It reads their searches, their messages, and their keystrokes. In Minneapolis, it outed an LGBTQ+ student to their parents by flagging the words "gay" and "lesbian."[^11] Another program, Gaggle,[^12] watches 6 million students. When a parent in Kansas tried to opt out, the school said it was not possible. The parent had to sue.[^13]
 
@@ -113,7 +113,7 @@ Some schools have already answered that question. They built their own rooms. Th
 
 ---
 
-*This is Part 3 of a 3-part series based on ["The Arsonist's Smoke Detector."](/posts/blog/en/the-arsonists-smoke-detector/) The views expressed are those of the editorial board. Full disclosure and transparency is a feature, not a bug.*
+*This is Part 3 of a 3-part series based on ["The Arsonist's Smoke Detector."](/resources/the-arsonists-smoke-detector/) The views expressed are those of the editorial board. Full disclosure and transparency is a feature, not a bug.*
 
 ---
 
@@ -125,7 +125,7 @@ Some schools have already answered that question. They built their own rooms. Th
 [^6]: Michael Geist is a professor of law at the University of Ottawa. He testified before the Senate on May 6, 2026. He argues bans push kids to offshore services with no safety features. [michaelgeist.ca](https://www.michaelgeist.ca/2026/05/why-social-media-and-ai-chatbot-bans-for-kids-are-bad-policy-making-the-case-at-the-senate-social-affairs-science-and-tech-committee/).
 [^7]: Jean-Christophe Bélisle-Pipon is an assistant professor of health ethics at Simon Fraser University. [The Conversation](https://theconversation.com/openais-safety-pledges-in-the-wake-of-tumbler-ridge-arent-ai-regulation-theyre-surveillance-278364).
 [^8]: Bélisle-Pipon, "OpenAI's safety pledges in the wake of Tumbler Ridge aren't AI regulation – they're surveillance." The Conversation, March 18, 2026.
-[^9]: See ["The Uninvited Guest"](/posts/blog/en/the-uninvited-guest/) in this series. Google Chrome installed a 4 GB AI model on every device running the browser, including 38 million classroom Chromebooks, without notification or consent.
+[^9]: See ["The Uninvited Guest"](/resources/the-uninvited-guest/) in this series. Google Chrome installed a 4 GB AI model on every device running the browser, including 38 million classroom Chromebooks, without notification or consent.
 [^10]: **GoGuardian** is monitoring software used in more than 10,000 schools. It watches about 27 million students by scanning their keystrokes, web searches, and messages on school devices.
 [^11]: In 2021, an LGBTQ+ student in Minneapolis was outed after Gaggle flagged the words "gay" and "lesbian." The school did not talk to the student first. [EFF](https://www.eff.org/deeplinks/2023/10/how-goguardian-invades-student-privacy).
 [^12]: **Gaggle** is monitoring software that watches about 6 million students in 1,500 school districts. It scans messages and online activity.

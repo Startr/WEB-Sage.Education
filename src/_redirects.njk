@@ -1,0 +1,21 @@
+---
+permalink: /_redirects
+eleventyExcludeFromCollections: true
+---
+# Auto-generated. Source of truth: src/_redirects.njk.
+# CF Pages reads /_redirects natively and serves real 301s.
+# Do not hand-edit the build output (dist/_redirects) — change the template.
+#
+# Format: <from>  <to>  <status>
+# Order matters: first match wins, so per-post mappings precede catch-alls.
+
+# ── Per-post redirects (one per English resource) ─────────────────────
+{% for post in collections.resources -%}
+{{ post.data.legacyEnPath }}  {{ post.url }}  301
+{% endfor %}
+# ── Listing page ───────────────────────────────────────────────────────
+/posts/  /resources/  301
+
+# ── Catch-all for stray non-English URLs and anything else under /posts/
+/posts/blog/*  /resources/  301
+/posts/*  /resources/  301

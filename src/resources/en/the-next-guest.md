@@ -18,7 +18,7 @@ eleventyNavigation:
 
 # The Next Guest
 
-*Part 3 of 3. Follows ["The Consent That Was Never Given."](/posts/blog/en/the-consent-that-was-never-given/)*
+*Part 3 of 3. Follows ["The Consent That Was Never Given."](/resources/the-consent-that-was-never-given/)*
 
 On a Tuesday morning in a fourth-grade classroom somewhere in the United States, a student opens a Chromebook and navigates to a website the teacher assigned for a math exercise. The website is legitimate. The teacher vetted it. The district approved it. The website calls a single JavaScript[^1] function: `LanguageModel.create()`. Chrome begins downloading gigabytes of AI model weights to the student's device.
 
@@ -34,7 +34,7 @@ Chrome 148, scheduled for Q2 2026, enables the Prompt API by default.[^3] This J
 
 The download is between 2.7 and 4.0 GB. The API documentation instructs developers to "check for user activation" and "inform the user," but these are guidelines, not enforced constraints. No separate consent dialog is required beyond the browser's existing permissions model.[^5]
 
-["The Walled Garden"](/posts/blog/en/the-walled-garden/) documented how Google controls the software layer of education technology. ["The Uninvited Guest"](/posts/blog/en/the-uninvited-guest/) documented how Google modified the hardware layer without consent. The Prompt API completes the circuit: it allows any third party's website to trigger AI installations on school devices, through Google's infrastructure, using Google's model, governed by Google's terms.
+["The Walled Garden"](/resources/the-walled-garden/) documented how Google controls the software layer of education technology. ["The Uninvited Guest"](/resources/the-uninvited-guest/) documented how Google modified the hardware layer without consent. The Prompt API completes the circuit: it allows any third party's website to trigger AI installations on school devices, through Google's infrastructure, using Google's model, governed by Google's terms.
 
 > **First, Google embedded AI in search and its apps. Then it installed AI on its devices. Now it lets any website install AI through its browser. The surface area expands. The consent remains the same: none.**
 
@@ -88,7 +88,7 @@ Somewhere on a Tuesday morning, in a fourth-grade classroom, a student is openin
 
 ---
 
-*This article is Part 3 of  ["The Uninvited Guest"](/posts/blog/en/the-uninvited-guest/) series, and a companion to ["The Walled Garden,"](/posts/blog/en/the-walled-garden/) published March 2026. The views expressed are those of the editorial board. Full disclosure and transparency is a feature, not a bug.*
+*This article is Part 3 of  ["The Uninvited Guest"](/resources/the-uninvited-guest/) series, and a companion to ["The Walled Garden,"](/resources/the-walled-garden/) published March 2026. The views expressed are those of the editorial board. Full disclosure and transparency is a feature, not a bug.*
 
 ---
 
@@ -96,7 +96,7 @@ Somewhere on a Tuesday morning, in a fourth-grade classroom, a student is openin
 
 [^1]: **JavaScript** is the programming language that powers interactive features on nearly every website. When a website runs JavaScript code in your browser, that code executes on your device. The Prompt API allows JavaScript to trigger AI model downloads and run AI inference locally, meaning a website's code can now install and operate a 4 GB AI model on a visitor's machine.
 
-[^2]: For the full account of how Google Chrome silently installed Gemini Nano on every device running the browser between April 20 and 29, 2026, see Part 1: ["The Uninvited Guest."](/posts/blog/en/the-uninvited-guest/)
+[^2]: For the full account of how Google Chrome silently installed Gemini Nano on every device running the browser between April 20 and 29, 2026, see Part 1: ["The Uninvited Guest."](/resources/the-uninvited-guest/)
 
 [^3]: Chrome 148 beta release notes. Prompt API enabled by default; adds `temperature` and `topK` sampling parameters for on-device inference. [Chrome for Developers](https://developer.chrome.com/blog/chrome-148-beta).
 

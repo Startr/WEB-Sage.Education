@@ -4,19 +4,27 @@ pagination:
   size: 1
   alias: tag
   addAllPagesToCollections: true
-layout: layouts/base.njk
+layout: false
 eleventyComputed:
-  title: "Tagged \"{{ tag }}\""
+  title: 'Tagged "{{ tag }}"'
 permalink: /tags/{{ tag }}/
 ---
+{% extends "base.njk" %}
 
-<h1>Tagged "{{ tag }}"</h1>
+{% block nav %}
+    {% include "components/main-nav.njk" %}
+{% endblock %}
 
-{% set postslist = collections.normalizedTagCollections[tag] %}
-{% if postslist.length > 0 %}
-  {% include "postslist.njk" %}
-{% else %}
-  <p>No posts found with this tag.</p>
-{% endif %}
+{% block main %}
+<main class="main">
+<div class="posts-listing">
+  <h1>{{ title }}</h1>
+  <h2>Articles tagged "{{ tag }}"</h2>
 
-<p>See <a href="/tags/">all tags</a>.</p>
+  {% set postslist = collections.normalizedTagCollections[tag] %}
+  {% include "components/post-cards.njk" %}
+
+  <p style="--mt:2rem"><a href="/tags/">&larr; All tags</a></p>
+</div>
+</main>
+{% endblock %}

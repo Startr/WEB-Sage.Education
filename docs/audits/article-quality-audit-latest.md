@@ -1,29 +1,29 @@
 # Article Quality Audit
 
-Generated: `2026-05-15T22:26:58+00:00`
+Generated: `2026-05-16T07:16:14+00:00`
 
 ## Summary
 
-- Articles audited: **40**
-- Average score: **78.8**
+- Articles audited: **41**
+- Average score: **78.7**
 - Range: **60 - 96**
-- Grade distribution: **A: 4, A+: 2, A-: 8, B: 12, B+: 3, B-: 4, C: 2, C+: 5**
+- Grade distribution: **A: 4, A+: 2, A-: 8, B: 13, B+: 3, B-: 4, C: 2, C+: 5**
 
 ## Category Breakdown
 
 | Category | Pass | Info | Warn |
 |---|---:|---:|---:|
-| Em-Dash Density | 37 | 0 | 3 |
-| Image Assets | 33 | 0 | 7 |
-| Named Sources | 3 | 3 | 34 |
-| Opener Variety | 23 | 0 | 17 |
-| Paragraph Variation | 19 | 2 | 19 |
-| Passive Voice | 40 | 0 | 0 |
-| Product Pitch | 38 | 2 | 0 |
-| Rhetorical Restraint | 21 | 15 | 4 |
-| Sentence Variation | 34 | 5 | 1 |
-| Show vs. Tell | 37 | 3 | 0 |
-| Specificity | 20 | 7 | 13 |
+| Em-Dash Density | 38 | 0 | 3 |
+| Image Assets | 33 | 0 | 8 |
+| Named Sources | 3 | 4 | 34 |
+| Opener Variety | 23 | 0 | 18 |
+| Paragraph Variation | 20 | 2 | 19 |
+| Passive Voice | 41 | 0 | 0 |
+| Product Pitch | 38 | 3 | 0 |
+| Rhetorical Restraint | 22 | 15 | 4 |
+| Sentence Variation | 35 | 5 | 1 |
+| Show vs. Tell | 37 | 4 | 0 |
+| Specificity | 21 | 7 | 13 |
 
 ## Lowest 5
 
@@ -63,6 +63,7 @@ Generated: `2026-05-15T22:26:58+00:00`
 | `2025-06-05-the-power-of-the-maker-mindset-in-the-age-of-ai.md` | 75 | B | 1241 |
 | `2025-07-09-how-ai-is-freezing-language-in-time.md` | 75 | B | 594 |
 | `2025-07-29-the-ai-gamble.md` | 75 | B | 889 |
+| `the-slop-problem.md` | 75 | B | 2612 |
 | `2025-04-09-the-need-for-a-better-ai-education-platform.md` | 78 | B | 615 |
 | `2025-08-03-an-ib-teacher’s-response-to-“what’s-really-going-on-with-ai-in-schools-”.md` | 78 | B | 709 |
 | `2026-01-29-finding-our-voice-within-ai.md` | 78 | B | 1084 |

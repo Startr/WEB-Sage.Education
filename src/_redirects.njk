@@ -1,7 +1,14 @@
 ---
 permalink: /_redirects
 eleventyExcludeFromCollections: true
+layout: false
 ---
+{# POKA-YOKE: this template MUST live at src/_redirects.njk, NOT inside
+   src/resources/. The src/resources/resources.11tydata.js cascade sets
+   layout: "layouts/blog.njk", and the blog layout reads `title`/`page.date`
+   under Nunjucks throwOnUndefined:true — those are undefined here and the
+   build crashes. `layout: false` above is belt-and-suspenders for the same
+   reason. #}
 # Auto-generated. Source of truth: src/_redirects.njk.
 # CF Pages reads /_redirects natively and serves real 301s.
 # Do not hand-edit the build output (dist/_redirects) — change the template.

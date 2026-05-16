@@ -43,7 +43,7 @@ https://sage.education/ai/docs
         - [ ] Nav
             - [ ] Logo #TODO
             - [ ] Logotype #todo 
-            - [ ] [Resourses - and sub](https://sage.education/posts/blog/2024-09-26-principles-of-llm-prompting-for-teachers/) And many more 
+            - [ ] [Resourses - and sub](https://sage.education/resources/principles-of-llm-prompting-for-teachers/) And many more 
 	            - [ ] #todo decide on folder structure
 	            (ex. for Students, for Teachers, for Parents)
 	        - [ ] [[Licensing and Pricing]] #todo

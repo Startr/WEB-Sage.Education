@@ -1,6 +1,17 @@
 ---
 title: Resources
 description: Latest articles and posts
+# POKA-YOKE: opt out of the resources/ cascade (resources.11tydata.js sets
+# layout: layouts/blog.njk). This template already extends base.njk on its
+# own, so without this override the page renders TWICE — full <html>/<head>/
+# <body> nested inside the blog layout's <html>/<head>/<body>.
+layout: false
+# This listing page is not a resource — keep it out of collections.resources
+# so it doesn't appear in prev/next nav or the search results within itself.
+eleventyExcludeFromCollections: true
+# Override the inherited tags: ["resources"] so this page doesn't show up on
+# /tags/resources/. The listing page isn't an article.
+tags: []
 eleventyNavigation:
   key: Resources
   order: 3

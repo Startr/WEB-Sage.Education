@@ -41,6 +41,36 @@ module.exports = async function(eleventyConfig) {
     }
   });
 
+  // POKA-YOKE: after each build, scan rendered HTML for the dead /posts/blog/
+  // URL shape. Any hit means a new post body, partial, or data file leaked
+  // an old-shape link past the migration — fix the source, don't rely on
+  // the _redirects 301 hop. Skip _redirects itself (it intentionally maps
+  // the old shape) and only scan .html files.
+  eleventyConfig.on("eleventy.after", ({ dir }) => {
+    const fs = require("fs");
+    const distDir = path.resolve(__dirname, dir.output || "../dist");
+    if (!fs.existsSync(distDir)) return;
+    const walk = (d, hits) => {
+      for (const entry of fs.readdirSync(d, { withFileTypes: true })) {
+        const full = path.join(d, entry.name);
+        if (entry.isDirectory()) walk(full, hits);
+        else if (entry.isFile() && entry.name.endsWith(".html")) {
+          const text = fs.readFileSync(full, "utf8");
+          if (text.includes('"/posts/blog/') || text.includes("'/posts/blog/")) {
+            hits.push(full);
+          }
+        }
+      }
+    };
+    const hits = [];
+    walk(distDir, hits);
+    if (hits.length) {
+      console.warn(`[poka-yoke] /posts/blog/ URL shape found in ${hits.length} built HTML file(s) — likely a regression from the /resources/ migration. Files:`);
+      for (const f of hits) console.warn(`  ${path.relative(distDir, f)}`);
+      console.warn("[poka-yoke] Fix at source: rewrite the link to /resources/SLUG/. The _redirects file will still catch external traffic, but in-tree links should not need a 301 hop.");
+    }
+  });
+
   // Environment setup
   const isDev = process.env.NODE_ENV !== 'production';
   // DRY helpers

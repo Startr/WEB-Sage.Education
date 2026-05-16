@@ -10,5 +10,5 @@ main:
     todo: true
     todo_note: ""
   - title: Resources
-    href: /posts/
+    href: /resources/
     todo: false

@@ -7,7 +7,11 @@ pagination:
 layout: false
 eleventyComputed:
   title: 'Tagged "{{ tag }}"'
-permalink: /tags/{{ tag }}/
+# Slugify the permalink so URLs match the tag-chip links elsewhere on the
+# site (post-cards.njk and tags-list.njk both link via `tag | slugify`).
+# Without this, a tag like "ai rules" produces `/tags/ai rules/` while the
+# chips point to `/tags/ai-rules/` — 404.
+permalink: /tags/{{ tag | slugify }}/
 ---
 {% extends "base.njk" %}
 

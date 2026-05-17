@@ -75,12 +75,28 @@ module.exports = async function(eleventyConfig) {
   const isDev = process.env.NODE_ENV !== 'production';
   // DRY helpers
   const SKIP_TAGS = new Set(["all", "nav", "post", "posts", "resource", "resources"]);
+  // Single source of truth for tag slugs. Used by the `slugify` filter AND
+  // by normalizeTags below, so the values feeding `collections.tagList`,
+  // `collections.normalizedTagCollections`, the tag-chip links, and the
+  // tag-page permalink all collapse to the same string. Pre-fix: chips used
+  // slugify, the permalink didn't — so tags like "ai rules" or "growth
+  // mindset" rendered chip links to /tags/ai-rules/ but the page lived at
+  // /tags/ai rules/. 404.
+  const slugifyTag = (tag) => tag
+    .toString()
+    .toLowerCase()
+    .replace(/\s+/g, "-")
+    .replace(/[^\w-]+/g, "");
   const normalizeTags = (tags) => {
     if (!tags) return [];
     const arr = Array.isArray(tags) ? tags : [tags];
-    return arr
-      .map(t => t && t.toString().toLowerCase())
+    const slugged = arr
+      .map(t => t && slugifyTag(t))
       .filter(t => t && !SKIP_TAGS.has(t));
+    // De-dupe: post.data.tags may contain casing variants ("AI" and "ai")
+    // that collapse to the same slug; collapse them here too so the chip
+    // doesn't repeat.
+    return [...new Set(slugged)];
   };
   const isChapterItem = (item) => {
     const slug = (item.fileSlug || "").toString().toLowerCase();
@@ -211,13 +227,7 @@ module.exports = async function(eleventyConfig) {
 
   eleventyConfig.addFilter("filterTagList", (tags) => normalizeTags(tags));
 
-  eleventyConfig.addFilter("slugify", (tag) => {
-    return tag
-      .toString()
-      .toLowerCase()
-      .replace(/\s+/g, "-")
-      .replace(/[^\w-]+/g, "");
-  });
+  eleventyConfig.addFilter("slugify", slugifyTag);
 
   const sharedMarkdown = require("markdown-it")({ html: true, breaks: true, linkify: true });
   eleventyConfig.addFilter("markdown", function(content) {

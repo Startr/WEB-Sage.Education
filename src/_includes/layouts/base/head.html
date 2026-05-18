@@ -1,32 +1,136 @@
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Sage Education</title>
-<!-- Meta description-->
-<meta
-  name="description"
-  content="Unlock limitless learning with Sage.Education AI, the best AI playground for educators and learners of all ages. Harness AI's power to create, innovate, and prepare for change today. Sign up now and discover a unique approach to AI education."
-/>
-<!-- Favicon-->
+
+{#- ── Cascade: page → frontmatter → seo.js defaults → metadata.js → hard fallback ── -#}
+{%- set siteUrl = (metadata and metadata.url) or 'https://sage.education' -%}
+{%- set baseTitle = title or (metadata and metadata.title) or 'Sage Education' -%}
+{%- set baseDescription = description or (metadata and metadata.description) or 'Unlock limitless learning with Sage.Education AI.' -%}
+{%- set canonicalInput = canonical or page.url -%}
+{%- if canonicalInput -%}
+  {%- set canonicalUrl = canonicalInput | absoluteUrl(siteUrl) -%}
+{%- else -%}
+  {%- set canonicalUrl = siteUrl -%}
+{%- endif -%}
+{%- set seoDefaults = seo or {} -%}
+{%- set ogDefaults = seoDefaults.og or {} -%}
+{%- set twDefaults = seoDefaults.twitter or {} -%}
+{%- set og_title = (og and (og.title or og['og:title'])) or ogDefaults.title or baseTitle -%}
+{%- set og_description = (og and (og.description or og['og:description'])) or ogDefaults.description or baseDescription -%}
+{%- set og_image_rel = (og and (og.image or og['og:image'])) or ogDefaults.image or '/videos/Sage.gif' -%}
+{%- set og_image = og_image_rel | absoluteUrl(siteUrl) -%}
+{%- set og_image_alt = (og and (og['image:alt'] or og.image_alt)) or hero_alt or baseTitle -%}
+{%- set og_type = (og and (og.type or og['og:type'])) or ogDefaults.type or 'website' -%}
+{%- set twitter_title = (twitter and (twitter.title or twitter['twitter:title'])) or twDefaults.title or og_title -%}
+{%- set twitter_description = (twitter and (twitter.description or twitter['twitter:description'])) or twDefaults.description or og_description -%}
+{%- set twitter_image_rel = (twitter and (twitter.image or twitter['twitter:image'])) or twDefaults.image or og_image_rel -%}
+{%- set twitter_image = twitter_image_rel | absoluteUrl(siteUrl) -%}
+{%- set twitter_card = (twitter and (twitter.card or twitter['twitter:card'])) or twDefaults.card or 'summary_large_image' -%}
+{%- set twitter_creator = (twitter and (twitter.creator or twitter['twitter:creator'])) or twDefaults.creator or '@sage' -%}
+{%- set twitter_site = (twitter and (twitter.site or twitter['twitter:site'])) or twDefaults.site or '@sage' -%}
+{%- set twitter_image_alt = (twitter and (twitter['image:alt'] or twitter.image_alt or twitter['twitter:image:alt'])) or twDefaults.image_alt or og_image_alt -%}
+
+<title>{{ baseTitle }}</title>
+<meta name="description" content="{{ baseDescription }}" />
+<meta name="robots" content="noodp" />
+
+<!-- Favicon -->
 <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
 <link rel="alternate icon" href="/images/favicon.ico" />
-<!-- Social Card-->
-<meta property="og:title" content="Sage Education" />
-<meta
-  property="og:description"
-  content="Unlock limitless learning with Sage.Education AI, the best AI playground for educators and learners of all ages. Harness AI's power to create, innovate, and prepare for change today. Sign up now and discover a unique approach to AI education."
-/>
-<meta property="og:image" content="https://sage.education/videos/Sage.gif" />
-<meta property="og:video" content="https://sage.education/videos/Sage.mp4" />
-<meta property="og:url" content="https://sage.education" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Sage Education" />
-<meta
-  name="twitter:description"
-  content="Unlock limitless learning with Sage.Education AI, the best AI playground for educators and learners of all ages. Harness AI's power to create, innovate, and prepare for change today. Sign up now and discover a unique approach to AI education."
-/>
-<meta name="twitter:image" content="https://sage.education/videos/Sage.gif" />
-<!-- Include WOW.js -->
+
+<!-- Canonical -->
+<link rel="canonical" href="{{ canonicalUrl }}" />
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="{{ (metadata and metadata.name) or 'Sage Education' }}" />
+<meta property="og:title" content="{{ og_title }}" />
+<meta property="og:description" content="{{ og_description }}" />
+<meta property="og:image" content="{{ og_image }}" />
+<meta property="og:image:alt" content="{{ og_image_alt }}" />
+<meta property="og:url" content="{{ canonicalUrl }}" />
+<meta property="og:type" content="{{ og_type }}" />
+
+{#- ── Article-specific OG (only when og_type === "article") ── -#}
+{%- if og_type == "article" %}
+{%- set firstTag = tags | filterTagList | first %}
+<meta property="article:published_time" content="{{ page.date | htmlDateString }}" />
+{%- if dateModified %}
+<meta property="article:modified_time" content="{{ dateModified | htmlDateString }}" />
+{%- endif %}
+<meta property="article:author" content="{{ author or (metadata and metadata.author and metadata.author.name) or 'Sage Education' }}" />
+{%- if firstTag %}
+<meta property="article:section" content="{{ firstTag }}" />
+{%- endif %}
+{%- for tag in tags | filterTagList %}
+<meta property="article:tag" content="{{ tag }}" />
+{%- endfor %}
+{%- endif %}
+
+<!-- Twitter card -->
+<meta name="twitter:card" content="{{ twitter_card }}" />
+<meta name="twitter:title" content="{{ twitter_title }}" />
+<meta name="twitter:description" content="{{ twitter_description }}" />
+<meta name="twitter:image" content="{{ twitter_image }}" />
+<meta name="twitter:image:alt" content="{{ twitter_image_alt }}" />
+<meta name="twitter:creator" content="{{ twitter_creator }}" />
+<meta name="twitter:site" content="{{ twitter_site }}" />
+
+<!-- JSON-LD: WebPage + WebSite (every page) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ canonicalUrl }}" },
+  "name": {{ baseTitle | dump | safe }},
+  "headline": {{ baseTitle | dump | safe }},
+  "description": {{ baseDescription | dump | safe }},
+  "url": "{{ canonicalUrl }}",
+  "image": "{{ og_image }}"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ (metadata and metadata.name) or 'Sage Education' }}",
+  "url": "{{ siteUrl }}"
+}
+</script>
+
+{#- ── JSON-LD: Article schema (only when og_type === "article") ── -#}
+{%- if og_type == "article" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ canonicalUrl }}" },
+  "headline": {{ baseTitle | dump | safe }},
+  "description": {{ baseDescription | dump | safe }},
+  "image": "{{ og_image }}",
+  "datePublished": "{{ page.date | htmlDateString }}",
+  {%- if dateModified %}
+  "dateModified": "{{ dateModified | htmlDateString }}",
+  {%- else %}
+  "dateModified": "{{ page.date | htmlDateString }}",
+  {%- endif %}
+  "author": {
+    "@type": "Person",
+    "name": {{ (author or (metadata and metadata.author and metadata.author.name) or 'Sage Education') | dump | safe }}
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ (metadata and metadata.name) or 'Sage Education' }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ '/assets/images/general/sage.webp' | absoluteUrl(siteUrl) }}"
+    }
+  },
+  "url": "{{ canonicalUrl }}"
+}
+</script>
+{%- endif %}
+
+<!-- WOW.js -->
 <script
   src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"
   integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg=="
@@ -35,9 +139,8 @@
   defer
 ></script>
 
-<!-- Smooth Scroll Script -->
+<!-- Smooth Scroll + WOW init -->
 <script>
-
   console.log('Script loaded!');
 
   window.addEventListener("load", function () {
@@ -63,35 +166,27 @@
       new WOW().init();
     }, 100);
   });
-  // Function to enable smooth scroll
+
   function smoothScrollLinks() {
     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       anchor.addEventListener("click", function (e) {
         e.preventDefault();
         const targetElement = document.querySelector(this.getAttribute("href"));
         if (targetElement) {
-          targetElement.scrollIntoView({
-            behavior: "smooth",
-          });
+          targetElement.scrollIntoView({ behavior: "smooth" });
         }
       });
     });
   }
 
-  // Initialize smooth scrolling on first load
   document.readyState === "loading"
     ? document.addEventListener("DOMContentLoaded", smoothScrollLinks)
     : smoothScrollLinks();
 </script>
 
-<!-- Include Startr Style CSS -->
-
+<!-- Startr.Style CSS -->
 <link rel="stylesheet" href="/assets/css/style.css" />
-<!--<link rel="preload" href="https://startr.style/style.min.css" as="style"
-  onload="this.onload=null;this.rel='stylesheet'">
-<noscript>-->
 <link rel="stylesheet" href="https://startr.style/style.min.css" />
-<!--</noscript>-->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
@@ -109,12 +204,14 @@
   crossorigin="anonymous"
   referrerpolicy="no-referrer"
 />
-<!-- let's ensure that a view transtion is used on any links between pages-->
+
+<!-- RSS feed discovery -->
+<link rel="alternate" type="application/rss+xml" title="{{ (metadata and metadata.name) or 'Sage Education' }}" href="{{ '/feed.xml' | absoluteUrl(siteUrl) }}" />
 
 <style>
   ::selection {
     -webkit-text-fill-color: transparent !important;
-    color: transparent !important; /* Key fix: use standard property */
+    color: transparent !important;
     text-shadow: 0px 0px 0px #200, 1px 1px 10px #bb0, 1px 1px 10px #ccc;
     background: #efef00 !important;
   }
@@ -211,13 +308,23 @@
   }
 
   @keyframes fade {
-    from {
-      opacity: 1;
-    }
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
 
-    to {
-      opacity: 0;
-    }
+  /* Skip-to-content link: off-screen until focused. */
+  .skip-link {
+    position: absolute;
+    top: -9999px;
+    left: 0;
+    z-index: 9999;
+    padding: 0.5rem 1rem;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+  }
+  .skip-link:focus {
+    top: 0;
   }
 </style>
 

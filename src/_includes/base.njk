@@ -27,6 +27,7 @@
     {%- set twitter_creator = (twitter and(twitter.creator or twitter['twitter:creator']))or twDefaults.creator or '@sage' -%}
     {%- set twitter_site = (twitter and(twitter.site or twitter['twitter:site']))or twDefaults.site or '@sage' -%}
     {%- set twitter_image_alt = (twitter and(twitter['image:alt'] or twitter.image_alt or twitter['twitter:image:alt']))or twDefaults.image_alt or 'Sage' -%}
+    {%- set og_image_alt = (og and(og['image:alt'] or og.image_alt))or hero_alt or twitter_image_alt -%}
     <title>{{ baseTitle }}</title>
     <meta charset="utf-8">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
@@ -39,8 +40,24 @@
     <meta property="og:title" content="{{ og_title }}">
     <meta property="og:description" content="{{ og_description }}">
     <meta property="og:image" content="{{ og_image }}">
+    <meta property="og:image:alt" content="{{ og_image_alt }}">
     <meta property="og:url" content="{{ canonicalUrl }}">
     <meta property="og:type" content="{{ og_type }}">
+
+    {%- if og_type == "article" %}
+    {%- set firstTag = tags | filterTagList | first %}
+    <meta property="article:published_time" content="{{ page.date | htmlDateString }}">
+    {%- if dateModified %}
+    <meta property="article:modified_time" content="{{ dateModified | htmlDateString }}">
+    {%- endif %}
+    <meta property="article:author" content="{{ author or (metadata and metadata.author and metadata.author.name) or 'Sage Education' }}">
+    {%- if firstTag %}
+    <meta property="article:section" content="{{ firstTag }}">
+    {%- endif %}
+    {%- for tag in tags | filterTagList %}
+    <meta property="article:tag" content="{{ tag }}">
+    {%- endfor %}
+    {%- endif %}
 
     <meta name="twitter:title" content="{{ twitter_title }}">
     <meta name="twitter:description" content="{{ twitter_description }}">
@@ -70,12 +87,45 @@
       {
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "name": "Sage",
+        "name": "{{ metadata and metadata.name or 'Sage Education' }}",
         "url": "{{ siteUrl }}"
       }
     </script>
 
+    {%- if og_type == "article" %}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ canonicalUrl }}" },
+        "headline": {{ baseTitle | dump | safe }},
+        "description": {{ baseDescription | dump | safe }},
+        "image": "{{ og_image }}",
+        "datePublished": "{{ page.date | htmlDateString }}",
+        {%- if dateModified %}
+        "dateModified": "{{ dateModified | htmlDateString }}",
+        {%- else %}
+        "dateModified": "{{ page.date | htmlDateString }}",
+        {%- endif %}
+        "author": {
+          "@type": "Person",
+          "name": {{ (author or (metadata and metadata.author and metadata.author.name) or 'Sage Education') | dump | safe }}
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "{{ (metadata and metadata.name) or 'Sage Education' }}",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "{{ '/assets/images/general/sage.webp' | absoluteUrl(siteUrl) }}"
+          }
+        },
+        "url": "{{ canonicalUrl }}"
+      }
+    </script>
+    {%- endif %}
+
     <link rel="canonical" href="{{ canonicalUrl }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ metadata and metadata.name or 'Sage Education' }}" href="{{ '/feed.xml' | absoluteUrl(siteUrl) }}">
 
     {%- include "components/site-icons.njk" -%}
     {%- include "components/site-styles.njk" -%}
@@ -100,6 +150,9 @@
      background:url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cstyle%20type%3D%22text%2Fcss%22%3E%20path%20%7B%20fill%3A%20none%3B%20stroke%3A%20rgba(235,201,143,0.451)%3B%20stroke-width%3A%201.01px%3B%20%7D%20%3C%2Fstyle%3E%20%3Cpath%20vector-effect%3D%22non-scaling-stroke%22%20d%3D%22M111.2%2C81.7L-33.7%2C226.6c-13.9%2C13.9-36.5%2C13.9-50.5%2C0L-229.1%2C81.7%20c-22.5-22.5-6.6-60.9%2C25.2-60.9H86C117.7%2C20.7%2C133.7%2C59.2%2C111.2%2C81.7z%22%2F%3E%20%3Cpath%20vector-effect%3D%22non-scaling-stroke%22%20d%3D%22M366.8%2C338.3L221.9%2C483.2c-13.9%2C13.9-36.5%2C13.9-50.5%2C0L26.6%2C338.3%20c-22.5-22.5-6.6-60.9%2C25.2-60.9h289.8C373.4%2C277.4%2C389.3%2C315.8%2C366.8%2C338.3z%22%2F%3E%20%3Cpath%20vector-effect%3D%22non-scaling-stroke%22%20d%3D%22M40.6%2C423l-144.9-144.9c-13.9-13.9-13.9-36.5%2C0-50.5L40.6%2C82.8%20c22.5-22.5%2C60.9-6.6%2C60.9%2C25.2v289.8C101.5%2C429.6%2C63.1%2C445.5%2C40.6%2C423z%22%2F%3E%20%3Cpath%20vector-effect%3D%22non-scaling-stroke%22%20d%3D%22M296.3%2C679.7L151.4%2C534.8c-13.9-13.9-13.9-36.5%2C0-50.5l144.9-144.9%20c22.5-22.5%2C60.9-6.6%2C60.9%2C25.2v289.8C357.2%2C686.3%2C318.8%2C702.2%2C296.3%2C679.7z%22%2F%3E%20%3Cpath%20vector-effect%3D%22non-scaling-stroke%22%20d%3D%22M623.5%2C81.7L478.6%2C226.6c-13.9%2C13.9-36.5%2C13.9-50.5%2C0L283.2%2C81.7%20c-22.5-22.5-6.6-60.9%2C25.2-60.9h289.8C630%2C20.7%2C646%2C59.2%2C623.5%2C81.7z%22%2F%3E%20%3Cpath%20vector-effect%3D%22non-scaling-stroke%22%20d%3D%22M296.3%2C166.4L151.4%2C21.5c-13.9-13.9-13.9-36.5%2C0-50.5l144.9-144.9%20c22.5-22.5%2C60.9-6.6%2C60.9%2C25.2v289.8C357.2%2C173%2C318.8%2C188.9%2C296.3%2C166.4z%22%2F%3E%20%3Cpath%20vector-effect%3D%22non-scaling-stroke%22%20d%3D%22M552.9%2C423L408%2C278.2c-13.9-13.9-13.9-36.5%2C0-50.5L552.9%2C82.8%20c22.5-22.5%2C60.9-6.6%2C60.9%2C25.2v289.8C613.8%2C429.6%2C575.4%2C445.5%2C552.9%2C423z%22%2F%3E%3C%2Fsvg%3E');"
    class="body">
 
+    <style>.skip-link{position:absolute;top:-9999px;left:0;z-index:9999;padding:0.5rem 1rem;background:#000;color:#fff;text-decoration:none}.skip-link:focus{top:0}</style>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
     {% block nav %}
 
       <input id="nav-active" type="checkbox">
@@ -109,7 +162,7 @@
     {% endblock %}
     {# devnote: Environment: {{ env }} #}
     {% block main %}
-      <main class="main" style="zoom:1.2">
+      <main class="main" id="main" style="zoom:1.2">
         {{ content | safe }}
       </main>
     {% endblock %}

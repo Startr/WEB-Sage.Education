@@ -1,0 +1,40 @@
+---
+permalink: /feed.xml
+eleventyExcludeFromCollections: true
+layout: false
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ metadata.name }}</title>
+  <subtitle>{{ metadata.description }}</subtitle>
+  <link href="{{ '/feed.xml' | absoluteUrl(metadata.url) }}" rel="self" type="application/atom+xml"/>
+  <link href="{{ metadata.url }}/"/>
+  <updated>{{ collections.resources | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <id>{{ metadata.url }}/</id>
+  <author>
+    <name>{{ metadata.author.name }}</name>
+    {%- if metadata.author.email %}
+    <email>{{ metadata.author.email }}</email>
+    {%- endif %}
+    {%- if metadata.author.url %}
+    <uri>{{ metadata.author.url }}</uri>
+    {%- endif %}
+  </author>
+  {%- for post in collections.resources | slice(0, 20) %}
+  {%- set absolutePostUrl = post.url | absoluteUrl(metadata.url) %}
+  <entry>
+    <title>{{ post.data.title }}</title>
+    <link href="{{ absolutePostUrl }}"/>
+    <updated>{{ (post.data.dateModified or post.date) | dateToRfc3339 }}</updated>
+    <published>{{ post.date | dateToRfc3339 }}</published>
+    <id>{{ absolutePostUrl }}</id>
+    <author>
+      <name>{{ post.data.author or metadata.author.name }}</name>
+    </author>
+    {%- if post.data.description %}
+    <summary>{{ post.data.description }}</summary>
+    {%- endif %}
+    <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | safe }}</content>
+  </entry>
+  {%- endfor %}
+</feed>

@@ -17,6 +17,8 @@ eleventyNavigation:
 author: Isabelle Plante
 ---
 
+*This is Part 2 of a two-part series. In [Part 1: How AI Learns to Sound Like It Cares](/resources/how-ai-learns-to-sound-like-it-cares/), we explained the three layers of engineering that make chatbots sound kind: the performance, the detection engine, and the marketing. This article looks at what happens when people start believing it.*
+
 Imagine you have a friend who is always available. Three in the morning, during lunch, in the middle of the night when you cannot sleep. This friend never gets tired. Never gets annoyed. Never tells you to stop talking. No matter what you say, they respond with patience. They remember what you told them yesterday. They ask follow-up questions. They never judge.
 
 Now imagine that friend is not a person.

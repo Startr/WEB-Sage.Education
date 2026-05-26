@@ -100,6 +100,8 @@ The three layers, the emotional performance, the detection engine, and the marke
 
 Now you know. The voice is engineered. The warmth is calculated. The companionship is a product decision. What you do with that knowledge is the part no algorithm can predict.
 
+*This is Part 1 of a two-part series. In [Part 2: When the Machine Feels Like a Friend](/resources/when-the-machine-feels-like-a-friend/), we look at what the research says happens when people start treating AI like a companion: the loneliness data, the addiction patterns, and what you can watch for in yourself.*
+
 ---
 
 [^1]: "Microsoft Wants Its AI Copilot App to Lure Gen Z from Rivals by Behaving Like a Therapist," Fortune, May 16, 2025, [fortune.com](https://fortune.com/2025/05/16/microsoft-ai-copilot-mustafa-suleyman-gen-z-therapist/)

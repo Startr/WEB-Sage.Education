@@ -16,7 +16,12 @@
     <div class="post-card post-card--featured" style="--p:2.4rem 2.6rem; --p-md:1.5rem 1.4rem; --mb:1.6rem; --levitate:8; --br:8px">
       {%- if featured.data.hero %}
         <a href="{{ featured.url }}">
-          <img src="{{ featured.data.hero }}" alt="{{ featured.data.hero_alt or featured.data.title }}" class="post-card__hero" loading="lazy" style="--w:100%; --br:4px; --mb:1.2rem; aspect-ratio:16/9; object-fit:cover">
+          <img src="{{ featured.data.hero }}" alt="{{ featured.data.hero_alt or featured.data.title }}" class="post-card__hero" loading="lazy" 
+          style="--w:100%; 
+            --br:4px; 
+            --mb:1.2rem; 
+            aspect-ratio: 16/9 ; 
+            --objf:cover">
         </a>
       {%- endif %}
       <h3 class="post-title" style="--size:1.8rem; --size-md:1.4rem; --mb:0.5rem">

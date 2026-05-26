@@ -7,8 +7,8 @@ tags:
 date: 2026-05-26T12:00:00.000-01:00
 rating: 5
 hero: /assets/images/heroes/hero-how-ai-sounds-like-it-cares.jpg
-hero_alt: A sculptor leans toward a marble statue, his hand reaching out as though the stone might reach back
-hero_caption: "Jean-Leon Gerome, 'Pygmalion and Galatea' (c. 1890). Metropolitan Museum of Art, New York. Public domain."
+hero_alt: A young man leans against a sphinx with a woman's face and a leopard's body, their cheeks touching in an embrace that is tender and unsettling in equal measure
+hero_caption: "Fernand Khnopff, 'The Caresses (The Sphinx)' (1896). Royal Museums of Fine Arts of Belgium, Brussels. Public domain."
 summary: >-
   When you tell an AI chatbot you are having a bad day, it says the right thing. It sounds kind. It sounds like it understands. But it does not understand anything. It is running a pattern. This article explains the three layers that make AI sound like it cares, why the performance is so convincing, and why knowing how it works matters more than you think.
 eleventyNavigation:

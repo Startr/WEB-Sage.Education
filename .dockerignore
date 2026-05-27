@@ -1,0 +1,24 @@
+# Hidden-artifact allowlist: deny dotfiles and dotfolders everywhere in the
+# build context unless they are intentionally needed inside the image.
+.*
+
+# Build & runtime junk
+node_modules/
+dist
+out
+*.log
+*.tgz
+*.tsbuildinfo
+*.sync-conflict-*
+bun.lockb
+bun.lockb.*
+
+# Local-only project artifacts
+docs/audits/
+src/sage.education/Screenshot 2024-08-23 at 11.02.10 AM.png
+
+# Repo metadata (not needed inside the image)
+README.md
+LICENSE
+Dockerfile
+Makefile

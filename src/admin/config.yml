@@ -50,7 +50,7 @@ collections:
           - { label: "Front Page", name: "front_page", widget: "relation", collection: "pages", value_field: "title", search_fields: ["title"], i18n: true }
           - { label: "Posts Page", name: "posts_page", widget: "relation", collection: "pages", value_field: "title", search_fields: ["title"], i18n: true }
           - { label: "Posts Per Page", name: "posts_per_page", widget: "number", i18n: true }
-          - { label: "Default Layout", name: "default_layout", widget: "hidden", default: "layouts/blog.njk", i18n: true }
+          - { label: "Default Layout", name: "default_layout", widget: "hidden", default: "resource", i18n: true }
           - { label: "Default Tags", name: "default_tags", widget: "list", default: "education", i18n: true }
           # Syndication feeds
           - { label: "Posts per feed", name: "posts_per_feed", widget: "number", default: 10, i18n: true }
@@ -120,7 +120,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md. Eleventy's page.fileSlug strips the date prefix at URL time.
     i18n: true
     fields: # The fields for each document, usually in front matter
-      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/blog.njk" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "resource" }
       - { label: "Title", name: "title", widget: "string", i18n: true}
       - { label: "Tags", name: "tags", widget: "list", default: "education" }
       - { label: "Publish Date", name: "date", widget: "datetime",i18n: duplicate }

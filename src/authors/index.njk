@@ -1,0 +1,43 @@
+---
+layout: about
+pagination:
+  data: authors
+  size: 1
+  alias: slug
+permalink: "/authors/{{ slug }}/"
+eleventyComputed:
+  title: "{{ authors[slug].name }}"
+---
+
+{%- set profile = authors[slug] -%}
+{%- set authoredArticles = collections.resources | byAuthor(slug, profile.name) -%}
+
+{% if profile.avatar %}
+<img src="{{ profile.avatar }}" alt="{{ profile.name }}" class="author__avatar">
+{% endif %}
+
+{% if profile.bio %}
+{{ profile.bio | md | safe }}
+{% else %}
+<p><em>Bio coming soon.</em></p>
+{% endif %}
+
+{% if profile.links %}
+<h2>Find {{ profile.name }} elsewhere</h2>
+<ul>
+{%- for label, href in profile.links -%}
+  {%- if href %}<li><a href="{{ href }}">{{ label }}</a></li>{% endif -%}
+{%- endfor -%}
+</ul>
+{% endif %}
+
+<h2>Articles by {{ profile.name }}</h2>
+{% if authoredArticles.length %}
+<ul>
+{%- for post in authoredArticles -%}
+  <li><a href="{{ post.url }}">{{ post.data.title }}</a> — <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time></li>
+{%- endfor -%}
+</ul>
+{% else %}
+<p><em>No articles yet.</em></p>
+{% endif %}

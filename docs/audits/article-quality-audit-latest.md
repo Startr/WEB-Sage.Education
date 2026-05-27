@@ -1,29 +1,29 @@
 # Article Quality Audit
 
-Generated: `2026-05-16T07:36:04+00:00`
+Generated: `2026-05-27T07:51:46+00:00`
 
 ## Summary
 
-- Articles audited: **41**
-- Average score: **78.7**
+- Articles audited: **43**
+- Average score: **79.0**
 - Range: **60 - 96**
-- Grade distribution: **A: 4, A+: 2, A-: 8, B: 13, B+: 3, B-: 4, C: 2, C+: 5**
+- Grade distribution: **A: 4, A+: 2, A-: 10, B: 13, B+: 3, B-: 4, C: 2, C+: 5**
 
 ## Category Breakdown
 
 | Category | Pass | Info | Warn |
 |---|---:|---:|---:|
-| Em-Dash Density | 38 | 0 | 3 |
-| Image Assets | 33 | 0 | 8 |
-| Named Sources | 3 | 4 | 34 |
-| Opener Variety | 23 | 0 | 18 |
-| Paragraph Variation | 20 | 2 | 19 |
-| Passive Voice | 41 | 0 | 0 |
-| Product Pitch | 38 | 3 | 0 |
-| Rhetorical Restraint | 22 | 15 | 4 |
-| Sentence Variation | 35 | 5 | 1 |
-| Show vs. Tell | 37 | 4 | 0 |
-| Specificity | 21 | 7 | 13 |
+| Em-Dash Density | 40 | 0 | 3 |
+| Image Assets | 33 | 1 | 9 |
+| Named Sources | 3 | 4 | 36 |
+| Opener Variety | 25 | 0 | 18 |
+| Paragraph Variation | 21 | 2 | 20 |
+| Passive Voice | 43 | 0 | 0 |
+| Product Pitch | 41 | 2 | 0 |
+| Rhetorical Restraint | 23 | 16 | 4 |
+| Sentence Variation | 37 | 5 | 1 |
+| Show vs. Tell | 40 | 3 | 0 |
+| Specificity | 23 | 7 | 13 |
 
 ## Lowest 5
 
@@ -63,7 +63,7 @@ Generated: `2026-05-16T07:36:04+00:00`
 | `2025-06-05-the-power-of-the-maker-mindset-in-the-age-of-ai.md` | 75 | B | 1241 |
 | `2025-07-09-how-ai-is-freezing-language-in-time.md` | 75 | B | 594 |
 | `2025-07-29-the-ai-gamble.md` | 75 | B | 889 |
-| `the-slop-problem.md` | 75 | B | 2612 |
+| `when-the-machine-feels-like-a-friend.md` | 75 | B | 1993 |
 | `2025-04-09-the-need-for-a-better-ai-education-platform.md` | 78 | B | 615 |
 | `2025-08-03-an-ib-teacher’s-response-to-“what’s-really-going-on-with-ai-in-schools-”.md` | 78 | B | 709 |
 | `2026-01-29-finding-our-voice-within-ai.md` | 78 | B | 1084 |
@@ -74,7 +74,9 @@ Generated: `2026-05-16T07:36:04+00:00`
 | `who-decides.md` | 82 | B+ | 1778 |
 | `2025-07-17-kids-and-ai-what-the-turing-lego-study-means-for-your-home-and-classroom.md` | 85 | A- | 452 |
 | `2026-01-05-every-learner’s-ai-right.md` | 85 | A- | 986 |
+| `how-ai-learns-to-sound-like-it-cares.md` | 85 | A- | 1919 |
 | `the-consent-that-was-never-given.md` | 85 | A- | 1653 |
+| `the-dialogue-is-the-work.md` | 85 | A- | 3069 |
 | `the-next-guest.md` | 85 | A- | 1936 |
 | `the-uninvited-guest-pt1.md` | 85 | A- | 1753 |
 | `the-warning-that-was-ignored.md` | 85 | A- | 948 |

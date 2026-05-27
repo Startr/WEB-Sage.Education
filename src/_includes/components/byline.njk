@@ -1,0 +1,20 @@
+{# Resolve an author value into a byline span.
+   - slug present in `authors` data → link to internal bio page
+   - full-name string that matches a `name` field in `authors` → link too
+     (`authorSlug` filter handles the reverse lookup; backward compat for
+     existing resources that use plain-name strings)
+   - any other string → render verbatim (no profile link)
+   - missing → fall back to site.author
+#}
+{% macro byline(author, authors, site) %}
+  {%- if author -%}
+    {%- set slug = author | authorSlug(authors) -%}
+    {%- if slug -%}
+      <a href="/authors/{{ slug }}/">{{ authors[slug].name }}</a>
+    {%- else -%}
+      {{ author }}
+    {%- endif -%}
+  {%- else -%}
+    {{ site.author }}
+  {%- endif -%}
+{% endmacro %}

@@ -5,7 +5,7 @@ layout: false
 ---
 {# POKA-YOKE: this template MUST live at src/_redirects.njk, NOT inside
    src/resources/. The src/resources/resources.11tydata.js cascade sets
-   layout: "layouts/blog.njk", and the blog layout reads `title`/`page.date`
+   layout: "resource", and the resource layout reads `title`/`page.date`
    under Nunjucks throwOnUndefined:true — those are undefined here and the
    build crashes. `layout: false` above is belt-and-suspenders for the same
    reason. #}

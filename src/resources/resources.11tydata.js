@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-  layout: "layouts/blog.njk",
+  layout: "resource",
   tags: ["resources"],
   eleventyComputed: {
     description: (data) =>

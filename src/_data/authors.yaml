@@ -1,0 +1,40 @@
+# Author profiles, keyed by kebab-case slug.
+# Looked up from frontmatter `author: <slug>`.
+#
+# - If the frontmatter value matches a slug here, byline renders
+#   <a href="/authors/<slug>/">name</a> — always linking to the internal bio page.
+# - If it doesn't match (plain string like "Alexander Somma"), byline renders verbatim.
+# - If frontmatter `author` is missing, byline falls back to site.author.
+#
+# Fields the bio page renders when present: `name` (required), `bio` (markdown),
+# `avatar` (image path), `links: { GitHub, Mastodon, ... }`. External profile
+# URLs live in `links` and render on the bio page only, never the byline.
+#
+# This file is the sage.education equivalent of authors.yaml in the sage.is
+# repo. Same Alexander/Isabelle entries (same humans), but the sage-team entry
+# uses the Sage.Education brand.
+
+alexander-somma:
+  name: "Alexander Somma"
+
+isabelle-plante:
+  name: "Isabelle Plante"
+
+sage-team:
+  name: "Sage.Education Team"
+  avatar: "/assets/images/general/sage.webp"
+  bio: |
+    **Sage.Education Team** is the collective name we use for the people
+    building Sage.Education and the open-source curricula, tools, and content
+    that power it. When an article is signed by the team rather than one of us
+    individually, it means the work came out of the shared rhythm — usually a
+    conversation between [Isabelle](/authors/isabelle-plante/) and
+    [Alexander](/authors/alexander-somma/), pulled together by whoever had the
+    keyboard. We also maintain [Sage.is](https://sage.is) and its open-source
+    AI-UI; if you're curious about the engine behind these classrooms, that's
+    where it lives.
+  links:
+    GitHub: "https://github.com/Sage-is"
+    # Mastodon: ""
+    # Bluesky: ""
+    # LinkedIn: ""

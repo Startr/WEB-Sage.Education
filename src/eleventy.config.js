@@ -163,6 +163,28 @@ module.exports = async function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("MMMM dd, yyyy");
   });
 
+  // Author filter for the /authors/<slug>/ profile pages. Matches BOTH the
+  // kebab-case slug (new pattern) and the full-name string (legacy pattern
+  // used in older resources). Newest first.
+  eleventyConfig.addFilter("byAuthor", (collection, slug, name) =>
+    collection
+      .filter(p => p.data.author === slug || p.data.author === name)
+      .sort((a, b) => b.date - a.date)
+  );
+
+  // Resolve an `author` frontmatter value (slug OR full name) to a slug key
+  // in authors.yaml so the byline macro can render a profile link for both.
+  // Returns null if the value matches neither — caller renders the value as
+  // a plain string in that case.
+  eleventyConfig.addFilter("authorSlug", (author, authors) => {
+    if (!author || !authors) return null;
+    if (authors[author]) return author;
+    for (const [slug, profile] of Object.entries(authors)) {
+      if (profile && profile.name === author) return slug;
+    }
+    return null;
+  });
+
   eleventyConfig.addCollection("resources", function(collectionApi) {
     // Only English builds (de/fr/pt set eleventyExcludeFromCollections), so
     // collisions on page.fileSlug aren't possible here today.

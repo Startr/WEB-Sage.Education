@@ -1,6 +1,11 @@
 {% extends "base.njk" %}
 {% from "components/byline.njk" import byline %}
 
+{% block head %}
+<link rel="stylesheet" href="/assets/css/glossary.css">
+<script src="/assets/js/packages/popper.js"></script>
+{% endblock %}
+
 {% block nav %}
     {% include "components/blog-nav.njk" %}
 {% endblock %}
@@ -49,7 +54,7 @@
       {%- endfor %}
     </div>
 
-    <div class="article-body drop-cap">
+    <div class="article-body drop-cap" data-controller="footnote-preview">
       {{ content | safe }}
     </div>
   </article>
@@ -74,7 +79,7 @@
     <p class="article-subheadline">{{ deck }}</p>
     {%- endif %}
 
-    <div class="article-body drop-cap">
+    <div class="article-body drop-cap" data-controller="footnote-preview">
       {{ content | safe }}
     </div>
   </article>

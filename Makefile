@@ -227,3 +227,39 @@ uninstall_hooks:
 # ---------------------------------------------------------------------------
 release:
 	@scripts/release.sh
+
+# ── Cross-repo hardlink sync ──
+# Manifest of hardlinked files: .shared-files (repo-root-relative paths, # for comments).
+# WEB-Sage.is is the canonical home. Run `make sync-shared` here to (re)establish
+# hardlinks; run `make verify-shared` before build/commit to detect inode drift.
+
+SHARED_SRC_REPO := $(realpath ../WEB-Sage.is)
+
+sync-shared:
+	@if [ "$(realpath .)" = "$(SHARED_SRC_REPO)" ]; then \
+	  echo "canonical repo — sync-shared is a no-op (siblings hardlink into here)"; \
+	  exit 0; \
+	fi
+	@# Bootstrap the manifest itself if missing locally.
+	@if [ ! -f .shared-files ]; then ln -f "$(SHARED_SRC_REPO)/.shared-files" .shared-files && echo "bootstrapped .shared-files"; fi
+	@grep -vE '^[[:space:]]*(#|$$)' .shared-files | while IFS= read -r f; do \
+	  src="$(SHARED_SRC_REPO)/$$f"; dst="$$f"; \
+	  if [ ! -f "$$src" ]; then echo "MISSING SOURCE: $$src"; exit 1; fi; \
+	  mkdir -p "$$(dirname "$$dst")"; \
+	  ln -f "$$src" "$$dst" && echo "linked $$f"; \
+	done
+
+verify-shared:
+	@if [ ! -f .shared-files ]; then echo "MISSING .shared-files (run 'make sync-shared')"; exit 1; fi
+	@rm -f .verify-shared.fail
+	@grep -vE '^[[:space:]]*(#|$$)' .shared-files | while IFS= read -r f; do \
+	  a=$$(stat -f "%i" "$(SHARED_SRC_REPO)/$$f" 2>/dev/null); \
+	  b=$$(stat -f "%i" "$$f" 2>/dev/null); \
+	  if [ -z "$$a" ]; then echo "MISSING canonical: $$f"; touch .verify-shared.fail; \
+	  elif [ -z "$$b" ]; then echo "MISSING local: $$f"; touch .verify-shared.fail; \
+	  elif [ "$$a" != "$$b" ] && [ "$(realpath .)" != "$(SHARED_SRC_REPO)" ]; then \
+	    echo "DIVERGED: $$f (canonical=$$a local=$$b)"; touch .verify-shared.fail; \
+	  fi; \
+	done
+	@if [ -f .verify-shared.fail ]; then rm -f .verify-shared.fail; exit 1; fi
+	@echo "all shared files in sync"

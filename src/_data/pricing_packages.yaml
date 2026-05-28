@@ -1,38 +1,4 @@
 packages:
-  free:
-    delay: 0.1s
-    animation: animate__fadeIn
-    pricing:
-      display: Free forever
-      subtitle: Run one AI at a time.
-    brand: Sage
-    name: Free
-    tagline: Run one AI at a time.
-    order: 1
-    cta:
-      text: Apply for Free Access
-      url: https://sage.education/Sign-up-Now
-      dataPlan: Free
-    cssClass: pricing__package--free
-    gridColumn: null
-    description: Completely free
-    features:
-      - text: Completely free
-        strong: false
-        helper:
-          text: Apply now and we'll interview you
-      - text: One AI only
-        strong: true
-        helper:
-          text: You're always free to edit and back them up.
-      - text: 1 GB storage space
-        strong: true
-        helper:
-          text: Perfect for getting started with AI creation.
-      - text: We're always here for you.
-        strong: false
-        helper:
-          text: Become part of our community and get help when you need it.
   plus:
     delay: 0.2s
     animation: animate__fadeIn

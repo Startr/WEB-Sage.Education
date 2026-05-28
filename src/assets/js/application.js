@@ -13,3 +13,6 @@ application.register('tracking', TrackingController);
 
 import EngagedSessionController from './controllers/engaged_session_controller.js';
 application.register('engagement', EngagedSessionController);
+
+import FootnotePreviewController from './controllers/footnote_preview_controller.js';
+application.register('footnote-preview', FootnotePreviewController);

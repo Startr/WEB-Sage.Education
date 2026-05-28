@@ -8,7 +8,7 @@
     "start": "cd src && bunx @11ty/eleventy --serve --output=../dist",
     "dev": "cd src && bunx @11ty/eleventy --serve --watch --output=../dist",
     "admin": "./set_our_host.sh && bunx decap-server --host $(ipconfig getifaddr $(route get default | grep interface | awk '{print $2}')) --port 8081 --cors & cd src && bunx @11ty/eleventy --serve --output=../dist",
-    "prebuild": "bun run verify:authors",
+    "prebuild": "make verify-shared && node scripts/check-yaml.mjs && bun run verify:authors",
     "build": "cd src && NODE_ENV=production bunx @11ty/eleventy --output=../dist",
     "verify:authors": "bash tools/check-authors.sh",
     "build:prod": "bun run build",

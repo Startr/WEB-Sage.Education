@@ -1,0 +1,59 @@
+{# Reusable client-side search filter (hyperscript) for any DOM scope of cards.
+
+   Filters elements matching `itemSelector` within `#{scopeId}` based on the
+   input's text content; also keeps the URL fragment in sync (`#on_<term>`)
+   so deep links pre-populate the filter on page load.
+
+   Usage:
+     {% from "components/filter-search.njk" import filterSearch %}
+     {{ filterSearch(
+          inputId='posts-search',
+          scopeId='posts-search-scope',
+          itemSelector='.post-card',
+          placeholder='Search articles',
+          label='Search articles'
+        ) }}
+#}
+
+{% macro filterSearch(inputId, scopeId, itemSelector, placeholder, label,
+                      inputClass='posts-search-input',
+                      labelClass='posts-search-label') %}
+<label for="{{ inputId }}" class="{{ labelClass }}">{{ label }}</label>
+<input
+  id="{{ inputId }}"
+  class="{{ inputClass }}"
+  type="search"
+  placeholder="{{ placeholder }}"
+  aria-label="{{ label }}"
+  autocomplete="off"
+  _="-- Filter cards by search text + sync to URL fragment
+      init
+        -- Deep-link READ: pull #on_<term> out of the URL fragment and pre-filter.
+        -- Fragment (not query) keeps deep links static-site friendly.
+        set hash to window.location.hash
+        if hash.startsWith('#on_')
+          set term to decodeURIComponent(hash.substring(4))
+          if term
+            set my value to term
+            show <{{ itemSelector }}/> in #{{ scopeId }}
+              when its textContent.toLowerCase()
+                contains my value.toLowerCase()
+          end
+        end
+      on keyup
+        -- Clear input on Escape, then fall through to filter + URL sync.
+        if the event's key is 'Escape'
+          set my value to ''
+        end
+        show <{{ itemSelector }}/> in #{{ scopeId }}
+          when its textContent.toLowerCase()
+            contains my value.toLowerCase()
+        -- Deep-link WRITE: replaceState (not pushState) so we don't pollute
+        -- browser history with one entry per keystroke.
+        if my value is not ''
+          call history.replaceState(null, '', '#on_' + encodeURIComponent(my value))
+        else
+          call history.replaceState(null, '', window.location.pathname + window.location.search)
+        end"
+>
+{% endmacro %}

@@ -17,6 +17,7 @@ eleventyNavigation:
   order: 3
 ---
 {% extends "base.njk" %}
+{% from "components/filter-search.njk" import filterSearch %}
 
 {% block nav %}
     {% include "components/main-nav.njk" %}
@@ -27,50 +28,19 @@ eleventyNavigation:
 <div class="posts-listing">
   <h1>{{ title }}</h1>
 
+  <p class="posts-page-actions">
+    <a href="/resources/glossary/" class="posts-glossary-link">Browse the glossary &rarr;</a>
+  </p>
+
   <h2>Latest Resources</h2>
   <div class="posts-search-tools">
-    <label for="posts-search" class="posts-search-label">Search articles</label>
-    <input
-      id="posts-search"
-      class="posts-search-input"
-      type="search"
-      placeholder="Search articles"
-      aria-label="Search articles"
-      autocomplete="off"
-      _="-- Filter article cards by search text + sync to URL fragment
-          init
-            -- Deep-link READ: pull #on_<term> out of the URL fragment and pre-filter.
-            -- Fragment (not query) keeps deep links static-site friendly and avoids
-            -- collisions with other query params. Example: /posts#on_search%20term
-            set hash to window.location.hash
-            if hash.startsWith('#on_')
-              set term to decodeURIComponent(hash.substring(4))
-              if term
-                set my value to term
-                show <.post-card/> in #posts-search-scope
-                  when its textContent.toLowerCase()
-                    contains my value.toLowerCase()
-              end
-            end
-          on keyup
-            -- Clear input on Escape, then fall through to filter + URL sync.
-            if the event's key is 'Escape'
-              set my value to ''
-            end
-            -- Show cards whose text matches, hide the rest.
-            show <.post-card/> in #posts-search-scope
-              when its textContent.toLowerCase()
-                contains my value.toLowerCase()
-            -- Deep-link WRITE: keep the URL fragment in sync so the current search
-            -- is always shareable. replaceState (not pushState) so we don't pollute
-            -- browser history with one entry per keystroke.
-            if my value is not ''
-              call history.replaceState(null, '', '#on_' + encodeURIComponent(my value))
-            else
-              -- Strip the fragment entirely so the URL doesn't dangle on a bare '#'.
-              call history.replaceState(null, '', window.location.pathname + window.location.search)
-            end"
-    >
+    {{ filterSearch(
+      inputId='posts-search',
+      scopeId='posts-search-scope',
+      itemSelector='.post-card',
+      placeholder='Search articles',
+      label='Search articles'
+    ) }}
   </div>
   {% set postslist = collections.resources %}
   {# Search scope wraps the cards so #posts-search hyperscript can filter them. #}

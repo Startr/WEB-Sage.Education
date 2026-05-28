@@ -1,0 +1,229 @@
+/* Glossary page + footnote-preview popover. Shared across Sage sites.
+   Vanilla CSS, framework-agnostic. Loaded from /assets/css/glossary.css. */
+
+/* ── Glossary page ─────────────────────────────────────────────── */
+
+.glossary-page {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+  line-height: 1.6;
+}
+
+.glossary-page h1 {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  margin: 0 0 0.5rem;
+}
+
+.glossary-intro {
+  color: #555;
+  max-width: 42rem;
+  margin: 0 0 1.5rem;
+}
+
+.glossary-search-tools {
+  margin: 1.5rem 0 1rem;
+}
+
+.glossary-search-label {
+  display: block;
+  font-size: 0.875rem;
+  color: #555;
+  margin-bottom: 0.25rem;
+}
+
+.glossary-search-input {
+  width: 100%;
+  max-width: 32rem;
+  padding: 0.625rem 0.875rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  background: white;
+}
+
+.glossary-search-input:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 1px;
+}
+
+.glossary-letter-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  margin: 1.5rem 0 2.5rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.glossary-letter-nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2rem;
+  height: 2rem;
+  padding: 0 0.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.375rem;
+  background: #fafafa;
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.glossary-letter-nav a:hover,
+.glossary-letter-nav a:focus {
+  background: #efefef;
+  border-color: #bbb;
+}
+
+.glossary-entries {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.glossary-letter-group {
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 2px solid #eee;
+}
+
+.glossary-letter-group:first-child {
+  margin-top: 0;
+  border-top: 0;
+}
+
+.glossary-letter-heading {
+  font-size: 1.75rem;
+  margin: 0 0 1rem;
+  color: #999;
+  font-weight: 700;
+}
+
+.glossary-entry {
+  padding: 1rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  scroll-margin-top: 4rem;
+}
+
+.glossary-entry:last-child {
+  border-bottom: 0;
+}
+
+.glossary-entry:target {
+  background: #fffae6;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border-radius: 0.25rem;
+}
+
+.glossary-term {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.glossary-definition {
+  color: #222;
+}
+
+.glossary-definition p {
+  margin: 0 0 0.5rem;
+}
+
+.glossary-definition p:last-child {
+  margin-bottom: 0;
+}
+
+.glossary-definition a {
+  color: #2563eb;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.glossary-sources {
+  margin: 0.75rem 0 0;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.glossary-sources-label {
+  font-weight: 600;
+  margin-right: 0.25rem;
+}
+
+.glossary-sources a {
+  color: #555;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.glossary-sources a:hover {
+  color: #2563eb;
+}
+
+.glossary-sources-sep {
+  color: #aaa;
+}
+
+.glossary-empty {
+  padding: 2rem;
+  text-align: center;
+  color: #666;
+  background: #fafafa;
+  border-radius: 0.5rem;
+}
+
+.glossary-empty code {
+  font-size: 0.875rem;
+  background: #fff;
+  padding: 0.125rem 0.375rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.25rem;
+}
+
+/* ── Footnote-preview popover (Obsidian-style) ─────────────────── */
+
+.footnote-preview {
+  position: absolute;
+  z-index: 1000;
+  max-width: 22rem;
+  padding: 0.75rem 1rem;
+  background: white;
+  color: #222;
+  border: 1px solid #d0d0d0;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  pointer-events: none;
+}
+
+.footnote-preview p {
+  margin: 0 0 0.5rem;
+}
+
+.footnote-preview p:last-child {
+  margin-bottom: 0;
+}
+
+.footnote-preview a {
+  color: #2563eb;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.footnote-preview .footnote-backref {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .footnote-preview {
+    background: #1f1f1f;
+    color: #eaeaea;
+    border-color: #3a3a3a;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+  }
+  .footnote-preview a { color: #93c5fd; }
+}

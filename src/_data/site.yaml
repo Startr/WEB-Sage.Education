@@ -35,8 +35,59 @@ signupUrl: "/Sign-up-Now"
 signupButtonText: "Access Sage.Education"
 githubUpdatesUrl: "https://github.com/Startr/WEB-AI-Sage-WebUI/tags#"
 
+# ── Legal entity + addresses + representatives ──
+# Single source of truth for facts the privacy policy (and any future
+# legal pages) must keep consistent. Update once here; the policy reads
+# from this via {{ site.legal.* }}.
+legal:
+  entity: "Startr LLC"
+  jurisdiction: "Wyoming limited liability company"
+  euRepresentative: "M.A. Luigi Somma"
+  addresses:
+    us:
+      label: "United States (principal address)"
+      lines:
+        - "Startr LLC, a Wyoming limited liability company"
+        - "1309 Coffeen Avenue STE 4572"
+        - "Sheridan, Wyoming 82801"
+    eu:
+      label: "European contact (operational; EU GDPR Art. 27 representative)"
+      lines:
+        - "M.A. Luigi Somma"
+        - "Startr LLC"
+        - "Lomba Dos Frades, No. 44"
+        - "Praia do Almoxarife, 9900-451"
+        - "Portugal"
+  # ── Sub-processors (third parties that receive data) ──
+  subProcessors:
+    - name: "Cloudflare Pages"
+      domain: "cloudflare.com"
+      role: "static hosting + CDN"
+      region: "global edge"
+      policyUrl: "https://www.cloudflare.com/privacypolicy/"
+      description: "Cloudflare Pages serves the static pages and images that make up the site. Cloudflare's global edge caches the public HTML, CSS, and JavaScript."
+    - name: "Resend"
+      domain: "resend.com"
+      role: "transactional email"
+      region: "US/EU"
+      policyUrl: "https://resend.com/legal/privacy-policy"
+      description: "Resend sends transactional emails (sign-up confirmations and reply notifications). Resend processes the recipient address and message body to deliver the email."
+  # ── Self-hosted services (we run them; no third party gets data) ──
+  selfHostedServices:
+    - "Matomo (analytics) at `visitas.startr.cloud`"
+    - "Mautic (newsletter, sign-up, and inquiry forms) at `nota.startr.cloud`"
+    - "All fonts (Playfair Display, Source Serif 4, and any others used) are served from sage.education itself, never from a font CDN."
+  # ── Hosting regions (where the self-hosted infrastructure runs) ──
+  hostingRegions:
+    - "United States (New Jersey)"
+    - "Canada"
+    - "Portugal"
+    - "Germany"
+
 # ── Footer legal links ──
 footerLegalLinks:
+  - title: "Privacy"
+    href: "/privacy/"
   - title: "Policies"
     href: "https://Startr.Cloud/tos/"
 

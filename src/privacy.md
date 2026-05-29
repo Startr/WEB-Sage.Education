@@ -127,7 +127,16 @@ If we ever learn that we collected personal data from a child through the sage.e
 - **[PIPEDA](https://laws-lois.justice.gc.ca/eng/acts/p-8.6/)** and applicable provincial student-privacy law for institutions in Canada.
 - **State student-privacy law** (such as California's SOPIPA, New York's Education Law § 2-d, Colorado's SDPA, and similar statutes) for US deployments in jurisdictions that have them. We follow the rules that apply to where the school operates.
 
-We've signed the [Student Privacy Pledge](https://studentprivacypledge.org/privacy-pledge-2-0/) for the institutional Sage AI-UI service. The pledge commits us not to sell student data, not to use it for targeted advertising, not to build a non-educational profile from it, and to keep handling it under terms the institution sets.
+The Student Privacy Pledge, hosted at studentprivacypledge.org for a decade, was [retired by the Future of Privacy Forum on April 25, 2025](https://fpf.org/student-privacy-pledge/) "in response to the changing technological and policy landscape regarding education technology." FPF's reason: "more than 40 states have passed student privacy laws that apply to edtech providers" whether they signed the Pledge or not. We follow those laws (see section 9), and we hold ourselves to the Pledge's substance for institutional Sage deployments:
+
+- We don't sell student personal information.
+- We don't use student data to train general-purpose models or for any non-educational purpose.
+- We don't show students targeted advertising, and we don't operate an advertising business.
+- We don't build a behavioural profile of a student except as the institution authorises for educational purposes.
+- We don't retain student personal information longer than the institution's contract allows.
+- We pass these same commitments through to any sub-processor that handles student data on our behalf.
+
+For institutions that want a current signed framework, we can execute the [Student Data Privacy Consortium's National Data Protection Agreement](https://privacy.a4l.org/national-dpa/) as part of any engagement that requires it.
 
 ## 9. Your rights
 

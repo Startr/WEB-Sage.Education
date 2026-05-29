@@ -123,6 +123,23 @@ Plan: [yes-fix-both-and-fluffy-badger.md](https://claude.is/plans/yes-fix-both-a
 
 ## Backlog
 
+### Infrastructure & Sovereignty
+
+- [ ] **In-house Updates Feed (Gitea-backed)**: Move the release/changelog feed off GitHub onto a self-hosted Gitea instance with a branded `/updates/` page on each marketing site
+  - [ ] Pick the Gitea host (likely a subdomain under `startr.cloud`)
+  - [ ] Decide URL convention: `https://sage.education/updates/` and `https://sage.is/updates/`
+  - [ ] Choose source-of-truth pattern: Gitea-tagged releases, hand-curated markdown, or a hybrid (auto-generated changelog + curated narrative entries)
+  - [ ] Add RSS/Atom feed so subscribers and the privacy-policy material-change notice can point at a stable feed
+  - [ ] Rename `site.githubUpdatesUrl` → `site.updatesUrl` in both `_data/site.yaml` files; keep the value pointed at GitHub until the in-house page is live
+  - [ ] Once live, update the privacy §11 references that read `{{ site.githubUpdatesUrl }}` on sage.education and sage.is
+  - [ ] Migrate the existing GitHub tag history as the historical changelog at launch
+    <!-- inline: src/_data/site.yaml src/privacy.md -->
+
+- [ ] **ffpf.org Parallel Project (privacy + anti-poverty)**: Use our control of `ffpf.org` to stand up a parallel initiative focused on privacy and fighting poverty through avoidance of coercive practices
+  - [ ] Capture the core thesis (privacy as a poverty-fighting lever; anti-coercion principles)
+  - [ ] Decide whether it sits alongside Sage.Education / Sage.is or stays an independent brand
+  - [ ] Identify the first audience the project would serve
+
 ### Live Classes — Exploration
 
 - [ ] **Event Detail Page Exploration**: Evaluate richer event detail pages linking to Startr.Space resources

@@ -227,7 +227,7 @@ If you spot a security issue, write to [izzy@sage.education](mailto:izzy@sage.ed
 
 ## 11. Changes to this policy
 
-When we change this policy, we update the **Last updated** date at the top. If a change materially expands what we collect or who we share it with, we email newsletter subscribers and post the change in the project's [updates feed]({{ site.githubUpdatesUrl }}). The current version of this policy lives at [sage.education/privacy](https://sage.education/privacy).
+When we change this policy, we update the **Last updated** date at the top. If a change materially expands what we collect or who we share it with, we email newsletter subscribers and post the change in our [updates feed]({{ site.updatesUrl }}) (also available as an [Atom feed]({{ site.updatesFeedUrl }})). The current version of this policy lives at [sage.education/privacy](https://sage.education/privacy).
 
 ## 12. Contact
 

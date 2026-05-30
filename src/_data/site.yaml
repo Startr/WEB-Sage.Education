@@ -33,6 +33,9 @@ phrases:
 signInUrl: "https://sage.startr.cloud/"
 signupUrl: "/Sign-up-Now"
 signupButtonText: "Access Sage.Education"
+updatesUrl: "/updates/"
+updatesFeedUrl: "/updates.xml"
+# Legacy: kept for any consumer not yet migrated to updatesUrl.
 githubUpdatesUrl: "https://github.com/Startr/WEB-AI-Sage-WebUI/tags#"
 
 # ── Legal entity + addresses + representatives ──

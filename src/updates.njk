@@ -1,0 +1,45 @@
+---
+layout: about
+permalink: /updates/
+title: "Updates"
+description: >-
+  What we've shipped, in reverse chronological order. This page reads from
+  the project's own git history, so what you see here is what's actually
+  tagged.
+canonical: updates/
+date: 2026-05-29
+---
+
+{% if updates and updates.length > 0 %}
+
+{% for entry in updates %}
+<article id="{{ entry.tag }}" style="--mb:3rem;">
+  <header>
+    <h2 style="--mb:0.25rem;">
+      <a href="#{{ entry.tag }}" style="--td:none;">{{ entry.tag }}</a>
+    </h2>
+    {% if entry.title and entry.title != entry.tag %}
+    <p style="--mt:0; --mb:0.5rem; --fw:500;">{{ entry.title }}</p>
+    {% endif %}
+    <p style="--mt:0; --opacity:0.6; --fs:0.875rem;">
+      <time datetime="{{ entry.date | htmlDateString }}">{{ entry.date | readableDate }}</time>
+      &middot; <code>{{ entry.commit }}</code>
+    </p>
+  </header>
+  {% if entry.body %}
+  <div>
+    {{ entry.body | md | safe }}
+  </div>
+  {% endif %}
+</article>
+{% endfor %}
+
+<p style="--mt:4rem; --opacity:0.6; --fs:0.875rem;">
+  Subscribe to the <a href="/updates.xml">Atom feed</a> to follow along.
+</p>
+
+{% else %}
+
+<p>No releases tagged yet. When we ship a new version, it'll show up here.</p>
+
+{% endif %}

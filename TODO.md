@@ -125,15 +125,15 @@ Plan: [yes-fix-both-and-fluffy-badger.md](https://claude.is/plans/yes-fix-both-a
 
 ### Infrastructure & Sovereignty
 
-- [ ] **In-house Updates Feed (Gitea-backed)**: Move the release/changelog feed off GitHub onto a self-hosted Gitea instance with a branded `/updates/` page on each marketing site
-  - [ ] Pick the Gitea host (likely a subdomain under `startr.cloud`)
-  - [ ] Decide URL convention: `https://sage.education/updates/` and `https://sage.is/updates/`
-  - [ ] Choose source-of-truth pattern: Gitea-tagged releases, hand-curated markdown, or a hybrid (auto-generated changelog + curated narrative entries)
-  - [ ] Add RSS/Atom feed so subscribers and the privacy-policy material-change notice can point at a stable feed
-  - [ ] Rename `site.githubUpdatesUrl` → `site.updatesUrl` in both `_data/site.yaml` files; keep the value pointed at GitHub until the in-house page is live
-  - [ ] Once live, update the privacy §11 references that read `{{ site.githubUpdatesUrl }}` on sage.education and sage.is
-  - [ ] Migrate the existing GitHub tag history as the historical changelog at launch
-    <!-- inline: src/_data/site.yaml src/privacy.md -->
+- [ ] **In-house Updates Feed**: Branded `/updates/` page on each marketing site, sourced from the repo's own git tags (host-agnostic: GitHub, Gitea, or no remote at all)
+  - [x] Decide URL convention: `https://sage.education/updates/` and `https://sage.is/updates/`
+  - [x] Pick source-of-truth pattern: read local git tags at build time (host-agnostic; works whether the remote is GitHub, Gitea, or a tarball with no remote)
+  - [x] Add Atom feed at `/updates.xml` so subscribers and the privacy material-change notice can point at a stable, RSS-readable URL
+  - [x] Add `site.updatesUrl` and `site.updatesFeedUrl` to `_data/site.yaml` on sage.education; flip privacy §11 to use them
+  - [ ] Mirror everything to sage.is (`src/_data/updates.js`, `src/updates.njk`, `src/updates.xml.njk`, `site.yaml` keys, privacy §11 reference)
+  - [ ] Once both sites are live, remove the deprecated `site.githubUpdatesUrl` keys
+  - [ ] (Optional) Stand up Gitea later — no code change needed since the data source is local git
+    <!-- inline: src/_data/updates.js src/updates.njk src/updates.xml.njk src/_data/site.yaml src/privacy.md -->
 
 - [ ] **ffpf.org Parallel Project (privacy + anti-poverty)**: Use our control of `ffpf.org` to stand up a parallel initiative focused on privacy and fighting poverty through avoidance of coercive practices
   - [ ] Capture the core thesis (privacy as a poverty-fighting lever; anti-coercion principles)

@@ -11,10 +11,14 @@
             "id": "ae4b3576cc37dfb9",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "src/privacy.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "privacy"
             }
           }
         ]
@@ -74,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "641eb60485d4a267",
@@ -90,6 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "src/privacy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for privacy"
             }
           },
           {
@@ -136,15 +142,17 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "src/privacy.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of privacy"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -163,14 +171,31 @@
   },
   "active": "ae4b3576cc37dfb9",
   "lastOpenFiles": [
+    "dist/assets/images/heroes/painting-young-girl-reading-fragonard.jpg",
+    "dist/assets/images/heroes/painting-young-student-chardin.jpg",
+    "dist/assets/images/heroes/painting-scholar-rembrandt.jpg",
+    "dist/assets/images/heroes/painting-schulexamen-anker.jpg",
+    "dist/assets/images/heroes/painting-dorfschule-anker.jpg",
+    "dist/assets/images/heroes/painting-geographer-vermeer.jpg",
+    "src/assets/images/heroes/painting-young-student-chardin.jpg",
+    "src/assets/images/heroes/painting-young-girl-reading-fragonard.jpg",
+    "src/assets/images/heroes/painting-schulexamen-anker.jpg",
+    "src/assets/images/heroes/painting-scholar-rembrandt.jpg",
+    "src/assets/images/heroes/painting-geographer-vermeer.jpg",
+    "dist/privacy/index.html",
+    "dist/privacy",
+    "dist/updates/index.html",
+    "dist/updates",
+    "dist/updates.xml",
+    "src/updates.xml.njk",
+    "src/updates.njk",
+    "src/_data/updates.js",
     "src/pricing.md",
     "TODO.md",
     "README.md",
     "KANBAN.canvas",
     "dist/AI/index.html",
     "dist/AI",
-    "src/AI.html",
-    "src/AI",
     "src/Local.md",
     "src/posts/blog/pt/2024-09-26-principles-of-llm-prompting-for-teachers.md",
     "src/posts/blog/pt/2024-09-26-principles-for-llm-prompting-for-high-school-grades-9-11.md",
@@ -180,14 +205,10 @@
     "src/posts/blog/de/2024-09-26-principles-for-llm-prompting-for-high-school-grades-9-11.md",
     "docs/tutorials/https-haproxy.md",
     "docs/tutorials/maintenance/backups.md",
-    "docs/tutorials/maintenance/_category_.json",
-    "docs/tutorials/maintenance",
-    "docs/tutorials/tips/_category_.json",
     "docs/tutorials/tips/rag-tutorial.md",
     "docs/tutorials/tips/sqlite-database.md",
     "docs/tutorials/tips/reduce-ram-usage.md",
     "docs/tutorials/tips/contributing-tutorial.md",
-    "docs/tutorials/tips",
     "docs/tutorials/web-search/searxng.md",
     "docs/tutorials/web-search/exa.md",
     "docs/tutorials/web-search/serper.md",
@@ -196,10 +217,6 @@
     "docs/tutorials/web-search/searchapi.md",
     "docs/tutorials/web-search/mojeek.md",
     "docs/tutorials/web-search/serpapi.md",
-    "docs/tutorials/web-search/brave.md",
-    "docs/tutorials/web-search/google-pse.md",
-    "docs/tutorials/web-search/_category_.json",
-    "docs/tutorials/web-search",
-    "dist/images/favicon.png"
+    "docs/tutorials/web-search/brave.md"
   ]
 }

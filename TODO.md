@@ -130,8 +130,8 @@ Plan: [yes-fix-both-and-fluffy-badger.md](https://claude.is/plans/yes-fix-both-a
   - [x] Pick source-of-truth pattern: read local git tags at build time (host-agnostic; works whether the remote is GitHub, Gitea, or a tarball with no remote)
   - [x] Add Atom feed at `/updates.xml` so subscribers and the privacy material-change notice can point at a stable, RSS-readable URL
   - [x] Add `site.updatesUrl` and `site.updatesFeedUrl` to `_data/site.yaml` on sage.education; flip privacy §11 to use them
-  - [ ] Mirror everything to sage.is (`src/_data/updates.js`, `src/updates.njk`, `src/updates.xml.njk`, `site.yaml` keys, privacy §11 reference)
-  - [ ] Once both sites are live, remove the deprecated `site.githubUpdatesUrl` keys
+  - [x] Mirror everything to sage.is (`src/_data/updates.js`, `src/updates.njk`, `src/updates.xml.njk`, `site.yaml` keys, privacy §11 reference)
+  - [ ] Once both sites are confirmed live (post-deploy), remove the deprecated `site.githubUpdatesUrl` keys from both `site.yaml` files
   - [ ] (Optional) Stand up Gitea later — no code change needed since the data source is local git
     <!-- inline: src/_data/updates.js src/updates.njk src/updates.xml.njk src/_data/site.yaml src/privacy.md -->
 

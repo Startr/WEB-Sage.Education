@@ -76,8 +76,6 @@ Ms. Liogas's advice to anyone who wants to start is simple. "Your *'why'* is rea
 
 Rosie runs on [Sage.is AI UI](https://github.com/Sage-is/AI-UI), the platform that powers [Sage.Education](https://sage.education) and [Sage.is](https://sage.is), a Canadian AI platform that lets schools and small businesses run their own AI on their own hardware. The Study already believed in ownership, transparency, and student freedom. Sage.is AI UI was the platform that matched those values.
 
----
-
 ## Footnotes
 
 [^1]: Canadian federal Liberals voted at their April 2026 policy convention to back a minimum age of 16 for social media accounts and AI chatbots. Culture Minister Marc Miller said the government was "seriously" considering a ban or moratorium. [Bloomberg](https://www.bloomberg.com/news/articles/2026-04-15/canada-is-mulling-age-restrictions-on-ai-chatbots-and-social-media)

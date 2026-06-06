@@ -1,16 +1,15 @@
 ---
-title: "Whose AI, On Whose Terms"
+title: Whose AI, On Whose Terms
 tags:
   - education
   - AI
   - technology
-date: 2026-05-16T12:00:00.000-01:00
+date: 2026-06-05T12:00:00.000-01:00
 rating: 5
 hero: /assets/images/heroes/hero-dont-panic-web.jpg
-hero_alt: "The Milky Way over the valley of Marukha River, Arkhyz, Russia"
+hero_alt: The Milky Way over the valley of Marukha River, Arkhyz, Russia
 hero_caption: "Credit: Alexander Kurilov, CC BY 4.0, via Wikimedia Commons"
-summary: >-
-  Canada is moving to ban AI for anyone under sixteen. The evidence says bans don't work. Here is what does – a playbook for any school, board, or parent who wants to start building with AI instead of hiding from it.
+summary: Canada is moving to ban AI for anyone under sixteen. The evidence says bans don't work. Here is what does – a playbook for any school, board, or parent who wants to start building with AI instead of hiding from it.
 eleventyNavigation:
   parent: Blog
 ---

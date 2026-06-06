@@ -4,7 +4,7 @@ tags:
   - education
   - AI
   - technology
-date: 2026-05-15T12:00:00.000-01:00
+date: 2026-06-05T12:00:00.000-01:00
 rating: 5
 hero: /assets/images/heroes/hero-dont-panic-web.jpg
 hero_alt: The Milky Way over the valley of Marukha River, Arkhyz, Russia

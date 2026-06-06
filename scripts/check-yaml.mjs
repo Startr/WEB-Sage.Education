@@ -4,12 +4,15 @@
 // prints a clean diagnostic pointing at the actual broken line and exits 1.
 // Faster (and clearer) than letting Eleventy crash with a deep stack.
 
-import { readFileSync, globSync } from 'node:fs';
-import { resolve } from 'node:path';
+import { readFileSync, readdirSync } from 'node:fs';
+import { resolve, join } from 'node:path';
 import { load } from 'js-yaml';
 
-const patterns = ['src/_data/**/*.yaml', 'src/_data/**/*.yml'];
-const files = patterns.flatMap(p => globSync(p)).sort();
+const dataDir = 'src/_data';
+const files = readdirSync(dataDir, { recursive: true })
+  .filter(f => f.endsWith('.yaml') || f.endsWith('.yml'))
+  .map(f => join(dataDir, f))
+  .sort();
 
 if (files.length === 0) {
   console.log('[check-yaml] no YAML files under src/_data/, skipping');

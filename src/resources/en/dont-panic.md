@@ -108,11 +108,6 @@ The shift has been clear. "We've left the age of information and are entering th
 
 ## 42
 
-```
-brew outdated 
-```
-*"Don't Panic" – the cover of The Hitchhiker's Guide to the Galaxy. CC0, via Wikimedia Commons*
-
 There is a number on The Study's IT director's project site – 42. It comes from *The Hitchhiker's Guide to the Galaxy*: 42 is the answer to life, the universe, and everything. The joke is that no one ever figured out the question.
 
 The Information Age was the same. A century spent gathering answers – the tools, the models, the systems. We have them now. The question is what we will imagine with them.

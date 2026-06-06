@@ -5,9 +5,9 @@ tags:
   - AI
 date: 2026-05-30T12:00:00.000-01:00
 rating: 5
-hero: /assets/images/heroes/hero-new-scoreboard.jpg
-hero_alt: "A child's hand reaching toward a butterfly in a sunlit garden, curiosity in motion"
-hero_caption: "Photo: Wikimedia Commons"
+hero: /assets/images/heroes/hero-new-scoreboard-web.jpg
+hero_alt: "Three tabby cats investigating a caged mouse with intense focus, curiosity in every posture"
+hero_caption: "Horatio Henry Couldery, 'Curiosity.' Public domain, via Wikimedia Commons"
 summary: >-
   Curiosity can be measured. Schools that measure it outperform schools that don't. Singapore abolished mid-year exams and topped the world in creative thinking. The instruments exist. The infrastructure exists. The only thing missing is a tool that lets educators see the learning process – because with AI, that process has gone invisible.
 eleventyNavigation:

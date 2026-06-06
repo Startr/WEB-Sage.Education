@@ -5,9 +5,9 @@ tags:
   - AI
 date: 2026-05-30T12:00:00.000-01:00
 rating: 5
-hero: /assets/images/heroes/hero-wrong-scoreboard.jpg
-hero_alt: "An empty classroom with rows of desks and a chalkboard, late afternoon light falling across unmarked papers"
-hero_caption: "Photo: Wikimedia Commons"
+hero: /assets/images/heroes/hero-wrong-scoreboard-web.jpg
+hero_alt: "Children gathered around a chalkboard in a rural school, some thinking, some watching, one boy staring directly at the viewer"
+hero_caption: "Nikolay Bogdanov-Belsky, 'Mental Arithmetic in the Public School of S.A. Rachinsky' (1895). Tretyakov Gallery. Public domain, via Wikimedia Commons"
 summary: >-
   A professor stopped grading her students. They worked harder. They took risks. They read her feedback for the first time in thirty years. Then the semester ended, and the system demanded a grade anyway. The scoreboard was always wrong. AI just proved it.
 eleventyNavigation:

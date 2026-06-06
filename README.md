@@ -2,7 +2,7 @@
 
 > **🌟 Mission**: Empowering education through innovative AI technology and collaborative learning experiences.
 
-## 🚀 Live Site
+## Live Site
 **Production**: [https://sage.education](https://sage.education)
 
 ## 📋 Project Overview
@@ -117,7 +117,8 @@ AUDIT_WRITE_RAW=1 AUDIT_WRITE_DATED=1 npm run audit:articles
 
 ## 🤝 Contributing
 
-We follow the **Plan-Document-Execute-Verify** development cycle. See our [Convention Instructions](CONVENTION.instructions.md) for detailed guidelines.
+We follow the **Plan-Document-Execute-Verify** development cycle. 
+See our [Convention Instructions](CONVENTION.instructions.md) for detailed guidelines.
 
 ## 📈 Optimization Priorities
 

@@ -52,7 +52,10 @@ function firstLetter(term) {
 
 module.exports = function () {
   const cwd = process.cwd();
-  const files = fs.globSync(config.glob, { cwd });
+  const dir = path.join(cwd, "resources/en");
+  const files = fs.readdirSync(dir)
+    .filter(f => f.endsWith(".md"))
+    .map(f => path.join("resources/en", f));
   const entries = new Map();
 
   for (const rel of files) {

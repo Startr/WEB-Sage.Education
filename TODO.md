@@ -18,6 +18,22 @@
 
 ## In Progress
 
+### Time-Delayed Membership Gate (MVP)
+
+Free-membership signup gate that runs Medium-style after the article body. Content stays free; the gate is a soft registration wall, not a paywall. PocketBase backend (`pb_hooks/gate_unlock.pb.js`, `pb_migrations/003_subscribers.js` in WEB-DB-sage-pb) already shipped. This card tracks the Sage.Education consumer-side wiring (promoted from Phase 4 to MVP — ships parallel with Sage.is).
+
+Plan: [`~/.claude/plans/are-you-able-to-twinkly-pike.md`](~/.claude/plans/are-you-able-to-twinkly-pike.md) (refined). Original: [`~/.claude/plans/a-growing-number-of-jiggly-cherny.md`](~/.claude/plans/a-growing-number-of-jiggly-cherny.md).
+
+- [ ] **Framework component in Startr.Style** (shared precondition with Sage.is — only build once).
+- [ ] **Per-site config**: create `src/_data/signup-gate.yaml` with `brand: "Sage.Education"`, `unlockEndpoint: https://pb.sage.education/api/sage/gate-unlock`, `thresholdsBySection` keyed by URL-prefix per locale (`"/en/resources/": 60`, `"/pt/resources/": never` while translation is in flight, etc.), real `audienceLabel` and `socialProof`.
+- [ ] **Vendor the component**: copy `signup-gate.njk` from Startr.Style into `src/_includes/`.
+- [ ] **Add `buildDate` global** in `src/eleventy.config.js`.
+- [ ] **Extend `src/resources/resources.11tydata.js`** with `contentType` + `gateEligible` `eleventyComputed` fields — preserve the existing `legacyEnPath` computed field.
+- [ ] **Wrap content** in `src/_includes/resource.njk`: add `gated-content` class; include `signup-gate.njk`.
+- [ ] **JSON-LD upgrade** in `src/_includes/base.njk`: same paywall structured-data treatment.
+- [ ] **Per-locale gate copy** deferred to Phase 2 — Phase 1 ships English component copy across all locales. Flag the constraint when translation contributors land on `/pt/`, `/de/`, `/fr/` pages.
+- [ ] **Daily-rebuild cron + heartbeat** (cross-cutting; coordinated with sage.is and pb.sage.is).
+
 ### Critical Infrastructure & Security
 
 - [ ] **Security Vulnerability Fix**: Update tar-fs dependency to fix high severity vulnerability #critical

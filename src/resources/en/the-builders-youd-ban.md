@@ -1,18 +1,17 @@
 ---
-title: "The Builders You'd Ban"
+title: The Builders You'd Ban
 tags:
   - technology
   - education
   - AI
   - policy
   - children
-date: 2026-05-09T13:00:00.000-01:00
+date: 2026-06-04T13:00:00.000-01:00
 rating: 5
 hero: /assets/images/heroes/hero-uninvited-guest-classroom.jpg
-hero_alt: "Students working at laptops in a classroom"
+hero_alt: Students working at laptops in a classroom
 hero_caption: "Photo: Christ School. CC BY-SA 4.0, via Wikimedia Commons."
-summary: >-
-  Canada is debating whether to ban AI chatbots for anyone under 16. But some of the people who would be banned are already building AI companies, raising millions in funding, and creating tools that solve real problems. A ban treats them as children to be protected. The market treats them as founders to be funded. Canadian law already recognizes that young people can make mature decisions. A binary age gate ignores that.
+summary: Canada is debating whether to ban AI chatbots for anyone under 16. But some of the people who would be banned are already building AI companies, raising millions in funding, and creating tools that solve real problems. A ban treats them as children to be protected. The market treats them as founders to be funded. Canadian law already recognizes that young people can make mature decisions. A binary age gate ignores that.
 eleventyNavigation:
   parent: Blog
 ---

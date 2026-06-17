@@ -1,16 +1,15 @@
 ---
-title: "What Is Slop?"
+title: What Is Slop?
 tags:
   - education
   - AI
   - writing
-date: 2026-05-16T12:00:00.000-01:00
+date: 2026-06-01T12:00:00.000-01:00
 rating: 5
 hero: /assets/images/heroes/hero-slop-problem.jpg
-hero_alt: "A silhouetted figure stands before a massive video wall displaying a forest split between cool blue and burning orange, the grid lines of the screens visible"
+hero_alt: A silhouetted figure stands before a massive video wall displaying a forest split between cool blue and burning orange, the grid lines of the screens visible
 hero_caption: "Alexander Somma, 'In the Shadow of Media: Reflections on Nature and Tech.' Used with permission."
-summary: >-
-  Merriam-Webster named 'slop' its 2025 Word of the Year. It means AI-generated content that nobody asked for and nobody wants to read. Here is what it is, why it is everywhere, and why it matters.
+summary: Merriam-Webster named 'slop' its 2025 Word of the Year. It means AI-generated content that nobody asked for and nobody wants to read. Here is what it is, why it is everywhere, and why it matters.
 eleventyNavigation:
   parent: Blog
 ---

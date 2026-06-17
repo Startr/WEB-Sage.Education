@@ -1,0 +1,89 @@
+# Sage.Education per-site signup-gate config.
+#
+# Framework canonical template lives at:
+#   ~/Documents/Projects/GitHub/WEB-Startr.Style/src/_data/signup-gate.yaml
+# Integration guide:
+#   ~/Documents/Projects/GitHub/WEB-Startr.Style/docs/signup-gate.md
+#
+# Plan: ~/.claude/plans/are-you-able-to-twinkly-pike.md
+#
+# Phase 1 = email-only. Per-locale gate copy deferred to Phase 2 — English
+# copy ships across all locales in P1. The cascade gates per-locale via the
+# URL prefix in thresholdsBySection (Sage.Education resources are
+# URL-prefixed by locale: /en/, /pt/, /de/, /fr/).
+
+brand: "Sage.Education"
+unlockEndpoint: "https://pb.sage.education/api/sage/gate-unlock"
+
+cookieName: sage_gate
+presenceCookie: sage_gate_present
+
+defaultThresholdDays: 60
+
+thresholdsByContentType:
+  blog: 60
+  case-study: 90
+  pdf: 0
+  newsletter: never
+  curriculum: never
+  framework-docs: never
+
+# Section thresholds — longest URL-prefix match wins.
+#
+# Current Sage.Education routing renders ALL article URLs as
+# `/resources/<slug>/` with no locale prefix (the EN file wins; pt/de/fr
+# get deduped to the same slug). So `/resources/: 60` is what actually
+# fires today and gates every published article uniformly.
+#
+# The per-locale entries below are RESERVED for when i18n routing matures
+# and URLs become locale-prefixed (e.g. `/en/resources/`, `/pt/resources/`).
+# They're dormant but harmless — left in place so the per-locale gating
+# switch flips on automatically the moment URLs include the locale.
+thresholdsBySection:
+  /resources/: 60          # ← current canonical entry (active today)
+  /en/resources/: 60       # dormant until URL routing changes
+  /pt/resources/: never    # dormant; "never" while translation is in flight
+  /de/resources/: never    # dormant
+  /fr/resources/: never    # dormant
+  /glossary/: never
+  /privacy: never
+  /pricing: never
+
+copy:
+  heading: "Keep reading — free with a Sage.Education membership"
+  body: "Sage.Education content is always free. A free membership unlocks the full resource library and keeps you in the loop on new pieces for students, parents, educators, and administrators."
+  submitLabel: "Unlock this article"
+  fineprint: "Free membership. We use your email only to send updates. Unsubscribe any time."
+  emailLabel: "Email address"
+  emailPlaceholder: "you@school.edu"
+  existingMemberPrompt: "Already a member?"
+  existingMemberLinkLabel: "Sign in"
+  errorGeneric: "Something went wrong. Please try again in a moment."
+  errorBadEmail: "Please enter a valid email address."
+
+socialProof:
+  audienceLabel: "Join educators, parents, and students shaping AI in school"
+  rating:
+    stars: 5
+    label: "from members using Sage.Education"
+  # Phase 2 — drop in a real teacher/admin quote
+  testimonial:
+    quote: ""
+    author: ""
+
+availableOn: []
+
+whatsIncluded:
+  heading: "What's included in a Sage.Education membership?"
+  items:
+    - title: "Full library access"
+      body: "Read every published resource for students, parents, educators, and administrators — the moment it ships."
+    - title: "Member-only updates"
+      body: "Short, infrequent emails when new lessons and resources land. No volume, no churn."
+    - title: "Curriculum & tools first"
+      body: "Early access to lesson packs, curriculum drafts, and member-only configurator presets."
+
+providers: []
+
+existingMemberLink:
+  href: ""

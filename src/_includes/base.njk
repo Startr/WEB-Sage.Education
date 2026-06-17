@@ -96,7 +96,7 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "BlogPosting",
+        "@type": "{{ articleType or 'Article' }}",
         "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ canonicalUrl }}" },
         "headline": {{ baseTitle | dump | safe }},
         "description": {{ baseDescription | dump | safe }},
@@ -120,6 +120,14 @@
           }
         },
         "url": "{{ canonicalUrl }}"
+        {%- if gateEligible %},
+        "isAccessibleForFree": false,
+        "hasPart": {
+          "@type": "WebPageElement",
+          "isAccessibleForFree": false,
+          "cssSelector": ".gated-content"
+        }
+        {%- endif %}
       }
     </script>
     {%- endif %}

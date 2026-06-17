@@ -110,6 +110,12 @@ module.exports = async function(eleventyConfig) {
   eleventyConfig.addGlobalData("isDev", isDev);
   eleventyConfig.addGlobalData("env", process.env.NODE_ENV || "development");
 
+  // buildDate — stable per-build timestamp consulted by the signup-gate
+  // cascade in _data/signup_gate.yaml via resources/resources.11tydata.js's
+  // `gateEligible` computed field. Daily rebuild cron picks up
+  // threshold-crossing articles. Used by the gate, not directly by templates.
+  eleventyConfig.addGlobalData("buildDate", () => new Date().toISOString());
+
   eleventyConfig.addPairedShortcode("devonly", function(content) {
     return isDev ? content : "";
   });

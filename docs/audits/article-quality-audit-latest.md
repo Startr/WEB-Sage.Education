@@ -1,29 +1,29 @@
 # Article Quality Audit
 
-Generated: `2026-05-31T20:01:54+00:00`
+Generated: `2026-06-17T10:25:57+00:00`
 
 ## Summary
 
-- Articles audited: **43**
-- Average score: **79.0**
+- Articles audited: **49**
+- Average score: **78.9**
 - Range: **60 - 96**
-- Grade distribution: **A: 4, A+: 2, A-: 10, B: 13, B+: 3, B-: 4, C: 2, C+: 5**
+- Grade distribution: **A: 4, A+: 2, A-: 12, B: 16, B+: 3, B-: 4, C: 2, C+: 6**
 
 ## Category Breakdown
 
 | Category | Pass | Info | Warn |
 |---|---:|---:|---:|
-| Em-Dash Density | 40 | 0 | 3 |
-| Image Assets | 33 | 1 | 9 |
-| Named Sources | 3 | 4 | 36 |
-| Opener Variety | 25 | 0 | 18 |
-| Paragraph Variation | 21 | 2 | 20 |
-| Passive Voice | 43 | 0 | 0 |
-| Product Pitch | 41 | 2 | 0 |
-| Rhetorical Restraint | 23 | 16 | 4 |
-| Sentence Variation | 37 | 5 | 1 |
-| Show vs. Tell | 40 | 3 | 0 |
-| Specificity | 23 | 7 | 13 |
+| Em-Dash Density | 45 | 1 | 3 |
+| Image Assets | 34 | 1 | 14 |
+| Named Sources | 3 | 6 | 40 |
+| Opener Variety | 27 | 0 | 22 |
+| Paragraph Variation | 26 | 2 | 21 |
+| Passive Voice | 49 | 0 | 0 |
+| Product Pitch | 47 | 2 | 0 |
+| Rhetorical Restraint | 28 | 16 | 5 |
+| Sentence Variation | 43 | 5 | 1 |
+| Show vs. Tell | 44 | 5 | 0 |
+| Specificity | 29 | 7 | 13 |
 
 ## Lowest 5
 
@@ -52,6 +52,7 @@ Generated: `2026-05-31T20:01:54+00:00`
 | `2024-10-27-teaching-with-large-language-models-llms-strategies-for-high-school-educators.md` | 67 | C+ | 3562 |
 | `2025-07-02-some-insightful-information-for-teachers-navigating-ai-tools.md` | 67 | C+ | 1567 |
 | `2026-02-26-the-muggle-proof-guide-to-hosting-lovable-on-cloudflare-pages.md` | 67 | C+ | 2618 |
+| `what-is-slop.md` | 67 | C+ | 1212 |
 | `2024-09-26-be-nice-to-ai-it-might-just-make-you-smarter.md` | 71 | B- | 487 |
 | `2024-09-26-the-power-of-politeness-how-language-shapes-ai-interactions.md` | 71 | B- | 190 |
 | `2025-08-24-crafting-effective-system-prompts-a-teachers-guide.md` | 71 | B- | 468 |
@@ -67,7 +68,10 @@ Generated: `2026-05-31T20:01:54+00:00`
 | `2025-04-09-the-need-for-a-better-ai-education-platform.md` | 78 | B | 615 |
 | `2025-08-03-an-ib-teacher’s-response-to-“what’s-really-going-on-with-ai-in-schools-”.md` | 78 | B | 709 |
 | `2026-01-29-finding-our-voice-within-ai.md` | 78 | B | 1084 |
+| `dont-panic.md` | 78 | B | 2436 |
 | `the-arsonists-smoke-detector.md` | 78 | B | 4284 |
+| `the-new-scoreboard.md` | 78 | B | 2670 |
+| `the-wrong-scoreboard.md` | 78 | B | 3152 |
 | `when-the-chat-window-watches-back.md` | 78 | B | 1300 |
 | `2025-06-23-embracing-technological-change-in-education.md` | 82 | B+ | 385 |
 | `2026-01-04-why-ai-must-show-its-work.md` | 82 | B+ | 973 |
@@ -75,11 +79,13 @@ Generated: `2026-05-31T20:01:54+00:00`
 | `2025-07-17-kids-and-ai-what-the-turing-lego-study-means-for-your-home-and-classroom.md` | 85 | A- | 452 |
 | `2026-01-05-every-learner’s-ai-right.md` | 85 | A- | 986 |
 | `how-ai-learns-to-sound-like-it-cares.md` | 85 | A- | 1919 |
+| `the-builders-youd-ban.md` | 85 | A- | 2226 |
 | `the-consent-that-was-never-given.md` | 85 | A- | 1653 |
 | `the-dialogue-is-the-work.md` | 85 | A- | 3069 |
 | `the-next-guest.md` | 85 | A- | 1936 |
 | `the-uninvited-guest-pt1.md` | 85 | A- | 1753 |
 | `the-warning-that-was-ignored.md` | 85 | A- | 948 |
+| `whose-ai-on-whose-terms.md` | 85 | A- | 1457 |
 | `from-scratch.md` | 89 | A- | 3876 |
 | `the-invisible-instructional-designer.md` | 89 | A- | 2636 |
 | `2025-06-12-embracing-the-maker-mindset-in-ai-education.md` | 93 | A | 1346 |

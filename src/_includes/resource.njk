@@ -54,9 +54,11 @@
       {%- endfor %}
     </div>
 
-    <div class="article-body drop-cap" data-controller="footnote-preview">
+    <div class="article-body gated-content drop-cap" data-controller="footnote-preview">
       {{ content | safe }}
+      {% include "signup-gate.njk" %}
     </div>
+    {% include "whats-included.njk" %}
   </article>
 
   {% include "components/article-footer.njk" %}
@@ -79,9 +81,11 @@
     <p class="article-subheadline">{{ deck }}</p>
     {%- endif %}
 
-    <div class="article-body drop-cap" data-controller="footnote-preview">
+    <div class="article-body gated-content drop-cap" data-controller="footnote-preview">
       {{ content | safe }}
+      {% include "signup-gate.njk" %}
     </div>
+    {% include "whats-included.njk" %}
   </article>
 
   {% include "components/article-footer.njk" %}

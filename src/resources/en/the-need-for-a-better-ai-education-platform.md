@@ -5,7 +5,7 @@ hero: /assets/images/heroes/classroom.jpg
 hero_alt: Students learning with technology in a classroom
 hero_caption: "Photo: Wikimedia Commons, CC BY-SA 4.0"
 tags: education
-date: 2026-06-09T16:55:00.000Z
+date: 2025-04-16T16:55:00.000Z
 rating: 5
 summary: I believe that many AI EdTech platforms are providing superficial solutions that do not empower educators to create and solve problems on their own. Instead, they lead to an overly trusting dependence on algorithms, stifling human creativity and control.
 eleventyNavigation:

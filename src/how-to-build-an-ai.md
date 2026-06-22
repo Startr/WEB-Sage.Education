@@ -19,68 +19,40 @@ robots: "noindex, nofollow"
   .checklist input[type="checkbox"] { flex: none; margin-top: 0.3em; width: 1.05em; height: 1.05em; }
   /* This page uses real checkboxes, so hide the global .checklist checkmark-icon ::before. */
   .checklist li::before { background: none; }
+  /* Premiere video: a 16:9 responsive iframe inside a gradient frame (startr.style has no aspect token). */
+  .premiere-frame iframe { width: 100%; aspect-ratio: 16 / 9; display: block; border: 0; border-radius: 11px; }
 }
 </style>
 
 Hi, and welcome. If you're curious how an AI actually gets built, and whether *you* could build one, this is a good place to start. This is a short, friendly warm-up you can do at your own pace. You don't need any coding experience, and you don't need to finish all of it. Think of it as a gentle on-ramp, not a test.
 
-<!-- PREMIERE PLACEHOLDER (set 2026-06-22). When the premiere leg is ready, replace the
-     frame <div> below (the whole div, SVG included) with this — startr.style inline props
-     only, no new CSS:
-       <div style="--maxw:820px; --m:2rem auto; --br:14px; --of:hidden; --shadow:14;">
-         <iframe width="1280" height="720" style="--w:100%; --br:14px; --d:block;"
-           src="https://www.youtube.com/embed/VIDEO_ID"
-           title="How to Build an AI — premiere" loading="lazy"
-           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-           allowfullscreen></iframe>
-       </div>
-     NOTE: startr.style has no aspect-ratio token. The 1280×720 width/height attributes
-     give the iframe a 16:9 intrinsic ratio that --w:100% scales down cleanly in modern
-     browsers. (Upstream-fix candidate: add an --ar token to startr.style.) -->
-<div style="--maxw:820px; --m:2rem auto; --br:14px; --of:hidden; --shadow:14;">
-  <svg viewBox="0 0 1600 900" style="--w:100%; --d:block; --h:" role="img"
-       aria-labelledby="premiere-title premiere-desc"
-       xmlns="http://www.w3.org/2000/svg">
-    <title id="premiere-title">Premiering today at 8:00 PM Eastern</title>
-    <desc id="premiere-desc">A short film on building your own AI, premiering today at 8 PM ET.</desc>
-    <defs>
-      <linearGradient id="premiereBg" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stop-color="#2563EB"/>
-        <stop offset="0.55" stop-color="#3b2fe8"/>
-        <stop offset="1" stop-color="#5522FA"/>
-      </linearGradient>
-      <radialGradient id="premiereGlow" cx="0.5" cy="0.36" r="0.5">
-        <stop offset="0" stop-color="#ffffff" stop-opacity="0.22"/>
-        <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
-      </radialGradient>
-    </defs>
-    <rect width="1600" height="900" fill="url(#premiereBg)"/>
-    <rect width="1600" height="900" fill="url(#premiereGlow)"/>
-    <!-- soft decorative orbits for depth -->
-    <circle cx="1330" cy="190" r="240" fill="none" stroke="#ffffff" stroke-opacity="0.10" stroke-width="2"/>
-    <circle cx="250" cy="780" r="300" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="2"/>
-    <circle cx="1410" cy="760" r="8" fill="#ffffff" fill-opacity="0.5"/>
-    <circle cx="190" cy="180" r="6" fill="#ffffff" fill-opacity="0.4"/>
-    <!-- play button -->
-    <circle cx="800" cy="320" r="86" fill="#ffffff" fill-opacity="0.16"/>
-    <circle cx="800" cy="320" r="62" fill="#ffffff"/>
-    <path d="M782 290 L824 320 L782 350 Z" fill="#5522FA"/>
-    <!-- premiere pill -->
-    <rect x="650" y="448" width="300" height="50" rx="25" fill="#ffffff" fill-opacity="0.16"/>
-    <text x="800" y="481" text-anchor="middle" font-family="Poppins, sans-serif"
-          font-size="24" font-weight="600" letter-spacing="3" fill="#ffffff">PREMIERE</text>
-    <text x="800" y="600" text-anchor="middle" font-family="Poppins, sans-serif"
-          font-size="92" font-weight="700" fill="#ffffff">Premiering today</text>
-    <text x="800" y="678" text-anchor="middle" font-family="Poppins, sans-serif"
-          font-size="46" font-weight="600" fill="#ffffff" fill-opacity="0.95">8:00 PM Eastern (ET)</text>
-    <text x="800" y="742" text-anchor="middle" font-family="Poppins, sans-serif"
-          font-size="32" font-weight="400" fill="#ffffff" fill-opacity="0.85">A short film on building your own AI</text>
-    <text x="800" y="852" text-anchor="middle" font-family="Poppins, sans-serif"
-          font-size="26" font-weight="600" letter-spacing="1" fill="#ffffff" fill-opacity="0.8">Sage.Education</text>
-  </svg>
+<!-- PREMIERE (live 2026-06-22). Real YouTube embed in an on-brand gradient frame.
+     The original "premiering today" placeholder SVG lives in git history if ever needed.
+     To change the film, swap the embed id (6wkKpRsQfiU) below. -->
+<div class="premiere-frame" style="--maxw:820px; --m:2rem auto; --br:14px; --of:hidden; --shadow:14; --bg:linear-gradient(135deg, #2563EB, #5522FA); --p:4px;">
+  <iframe src="https://www.youtube.com/embed/6wkKpRsQfiU"
+    title="How to Build an AI — premiere" loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-We're premiering a short film on this page **today at 8:00 PM Eastern**. Watch it live if you can, or come back any time after. It stays up.
+▶ Press play for our short film on building your own AI. Stick around to the end, that's where the code starts talking back.
+
+<details style="--maxw:820px; --m:-0.5rem auto 1.5rem; --c:#5522FA;">
+  <summary style="--cur:pointer; --weight:600;">psst — want to make <em>your</em> computer talk back?</summary>
+
+Open a fresh [Colab notebook](https://colab.research.google.com) and run these six lines. It'll greet you, out loud:
+
+```python
+!pip -q install gTTS
+from gtts import gTTS
+from IPython.display import Audio
+name = input("What's your name? ")
+gTTS(f"Hello {name}, welcome to the Sage team!").save("hi.mp3")
+Audio("hi.mp3", autoplay=True)
+```
+
+</details>
 
 ---
 
@@ -138,7 +110,15 @@ That's it. You just wrote and ran code. Genuinely, that's the skill, and everyth
 
 ### Step 3 — (Optional stretch) Change something and run it again
 
-Open our tiny `Startr` notebook here: [Startr notebook](https://colab.research.google.com/drive/1B0fn69htLTIJW226HyLGW9dncCHyT095?usp=sharing). Try changing a word or a number in a cell, then run it again and see what changes. Being able to read a short piece of code and change small parts of it is exactly the level that lets you start building. If this feels like a lot, leave it. You'll get there.
+Open our tiny "Startr" notebook here: [Startr notebook](https://colab.research.google.com/drive/1B0fn69htLTIJW226HyLGW9dncCHyT095?usp=sharing). Try changing a word or a number in a cell, then run it again and see what changes. Being able to read a short piece of code and change small parts of it is exactly the level that lets you start building. If this feels like a lot, leave it. You'll get there.
+
+### Step 4 — Make one of your own, and say hello
+
+Now the fun part: start a fresh notebook and make it say hello to the rest of the team. One line is plenty (`print("Hi, I'm Alex!")`), or get as creative as you like. This is your first real thing, made by you.
+
+When you're happy with it, share it with us: in Colab, click **Share** (top right), set it to anyone with the link, and send us that link. We love seeing these.
+
+Want yours shown here as an example for the next person starting out? Just tell us. As long as your consent and release form are sorted, we may feature a few standout first notebooks on this page to help others find their footing.
 
 ---
 
@@ -150,6 +130,7 @@ A quick self-check (no pressure):
   <li><input type="checkbox"> I've spent a little time getting a feel for Python (Step 1).</li>
   <li><input type="checkbox"> I've opened a notebook and run one line of code.</li>
   <li><input type="checkbox"> I can read a short piece of code and change small parts of it.</li>
+  <li><input type="checkbox"> I've made my own notebook that says hello, and shared it with the team.</li>
   <li><input type="checkbox"> I know I can ask for help anytime, about anything.</li>
 </ul>
 

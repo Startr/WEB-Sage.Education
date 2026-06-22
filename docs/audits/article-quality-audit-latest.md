@@ -1,6 +1,6 @@
 # Article Quality Audit
 
-Generated: `2026-06-17T10:25:57+00:00`
+Generated: `2026-06-22T09:30:20+00:00`
 
 ## Summary
 
@@ -65,11 +65,11 @@ Generated: `2026-06-17T10:25:57+00:00`
 | `2025-07-09-how-ai-is-freezing-language-in-time.md` | 75 | B | 594 |
 | `2025-07-29-the-ai-gamble.md` | 75 | B | 889 |
 | `when-the-machine-feels-like-a-friend.md` | 75 | B | 1993 |
-| `2025-04-09-the-need-for-a-better-ai-education-platform.md` | 78 | B | 615 |
 | `2025-08-03-an-ib-teacher’s-response-to-“what’s-really-going-on-with-ai-in-schools-”.md` | 78 | B | 709 |
 | `2026-01-29-finding-our-voice-within-ai.md` | 78 | B | 1084 |
 | `dont-panic.md` | 78 | B | 2436 |
 | `the-arsonists-smoke-detector.md` | 78 | B | 4284 |
+| `the-need-for-a-better-ai-education-platform.md` | 78 | B | 614 |
 | `the-new-scoreboard.md` | 78 | B | 2670 |
 | `the-wrong-scoreboard.md` | 78 | B | 3152 |
 | `when-the-chat-window-watches-back.md` | 78 | B | 1300 |

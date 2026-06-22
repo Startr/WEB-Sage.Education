@@ -34,7 +34,7 @@
     <meta name="handheldfriendly" content="true">
     <meta name="viewport" content="initial-scale=1, width=device-width">
     <meta name="description" content="{{ baseDescription }}">
-    <meta name="robots" content="noodp">
+    <meta name="robots" content="{{ robots or 'noodp' }}">
 
     <meta property="og:site_name" content="{{ metadata and metadata.name or 'Sage' }}">
     <meta property="og:title" content="{{ og_title }}">

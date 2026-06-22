@@ -15,8 +15,11 @@
 brand: "Sage.Education"
 unlockEndpoint: "https://pb.sage.education/api/sage/gate-unlock"
 
-cookieName: sage_gate
-presenceCookie: sage_gate_present
+# Membership state lives in localStorage (vendor-agnostic, no cross-origin
+# cookies). The key holds a JSON blob: { token, email, unlocked_at }.
+# Trade-off: XSS-readable. Acceptable here because the gate guards content,
+# not payments or auth state. See plan §"Vendor-agnostic CORS escape".
+storageKey: sage_gate_member
 
 defaultThresholdDays: 60
 

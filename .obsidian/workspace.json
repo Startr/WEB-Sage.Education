@@ -168,8 +168,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ae4b3576cc37dfb9",
+  "active": "b23db66fbac2e84e",
   "lastOpenFiles": [
+    "src/how-to-build-an-ai.md",
+    "src/assets/images/heroes/Searxng.png",
+    "src/assets/images/heroes/ai-overview-error-scale.png",
+    "src/assets/images/heroes/GoogleSearch2011.png",
+    "src/assets/images/heroes/hero-magic-lantern.jpg",
+    "src/assets/images/heroes/search-comparison-2011-2026.png",
+    "src/assets/images/heroes/hero-ai-overviews.jpg",
+    "src/resources/en/the-need-for-a-better-ai-education-platform.md",
+    "src/assets/images/heroes/searxng-RaspberryPi.png",
+    "src/assets/images/heroes/eu-ai-act-timeline.png",
+    "src/assets/images/heroes/painting-fighting-temeraire.jpg",
+    "src/assets/images/heroes/painting-young-draughtsman.jpg",
     "dist/assets/js/packages/wow.min.js",
     "dist/assets/js/packages/validate.js",
     "dist/assets/js/packages/stimulus.js",
@@ -180,17 +192,6 @@
     "dist/assets/js/modules/signups.js",
     "dist/assets/js/modules/scrollSnap.js",
     "dist/assets/js/modules/pwaGuideLink.js",
-    "dist/assets/js/modules/paths.js",
-    "dist/resources/en/attachments/typewriter-keys.jpg",
-    "dist/resources/en/attachments/sculptor-hands.jpg",
-    "dist/resources/en/attachments/road-median-route66.jpg",
-    "dist/resources/en/attachments/portrait-hinton.jpg",
-    "dist/resources/en/attachments/photo-manual-training-1922.jpg",
-    "dist/resources/en/attachments/portrait-karpathy.jpg",
-    "dist/resources/en/attachments/photo-levitt-carburettor.jpg",
-    "dist/resources/en/attachments/theater-orchestra.jpg",
-    "dist/resources/en/attachments/server-rack.jpg",
-    "dist/resources/en/attachments/protest-crowd.jpg",
     "src/resources/en/whose-ai-on-whose-terms.md",
     "src/resources/en/what-is-slop.md",
     "src/resources/en/the-wrong-scoreboard.md",
@@ -215,7 +216,6 @@
     "docs/tutorials/tips/reduce-ram-usage.md",
     "docs/tutorials/tips/contributing-tutorial.md",
     "docs/tutorials/web-search/searxng.md",
-    "docs/tutorials/web-search/exa.md",
-    "docs/tutorials/web-search/serper.md"
+    "docs/tutorials/web-search/exa.md"
   ]
 }

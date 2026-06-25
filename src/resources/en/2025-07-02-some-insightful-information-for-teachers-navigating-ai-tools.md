@@ -7,6 +7,7 @@ hero_caption: "Photo: Wikimedia Commons, CC BY-SA 4.0"
 tags:
   - education
 date: 2025-07-02T09:29:00.000Z
+gated: false  # Linked from the Bialik staff workshop handout — keep open.
 rating: 5
 summary: >-
   Imagine having a superpower that saves you hours of grading time, only to have

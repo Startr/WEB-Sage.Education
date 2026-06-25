@@ -6,6 +6,7 @@ tags:
   - privacy
   - mental-health
 date: 2026-04-10T12:00:00.000-01:00
+gated: false  # Linked from the Bialik staff workshop handout — keep open.
 rating: 5
 hero: /assets/images/heroes/painting-narcissus.jpg
 hero_alt: A young man gazes at his own reflection in a pool of water, mesmerised by an image that is beautiful, compelling, and not real

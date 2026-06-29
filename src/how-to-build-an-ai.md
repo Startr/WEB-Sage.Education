@@ -21,7 +21,7 @@ robots: "noindex, nofollow"
   .checklist li::before { background: none; }
   /* Premiere video: a 16:9 responsive iframe inside a gradient frame (startr.style has no aspect token).
      Also covers the "coming soon" placeholder card (inline svg) that stands in before the embed exists. */
-  .premiere-frame iframe, .premiere-frame svg, .premiere-frame img { width: 100%; aspect-ratio: 16 / 9; display: block; border: 0; border-radius: 11px; }
+  .premiere-frame iframe, .premiere-frame svg, .premiere-frame img { width: 100%; height: 100%; aspect-ratio: 16 / 9; display: block; border: 0; border-radius: 11px; }
 }
 </style>
 

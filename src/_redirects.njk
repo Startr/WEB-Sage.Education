@@ -20,6 +20,9 @@ layout: false
 {% for post in collections.resources -%}
 {{ post.data.legacyEnPath }}  {{ post.url }}  301
 {% endfor %}
+# ── Static page redirects ──────────────────────────────────────────────
+/how-to-build  /how-to-build-an-ai/  301
+
 # ── Listing page ───────────────────────────────────────────────────────
 /posts/  /resources/  301
 

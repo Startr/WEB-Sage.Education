@@ -19,12 +19,59 @@ robots: "noindex, nofollow"
   .checklist input[type="checkbox"] { flex: none; margin-top: 0.3em; width: 1.05em; height: 1.05em; }
   /* This page uses real checkboxes, so hide the global .checklist checkmark-icon ::before. */
   .checklist li::before { background: none; }
-  /* Premiere video: a 16:9 responsive iframe inside a gradient frame (startr.style has no aspect token). */
-  .premiere-frame iframe { width: 100%; aspect-ratio: 16 / 9; display: block; border: 0; border-radius: 11px; }
+  /* Premiere video: a 16:9 responsive iframe inside a gradient frame (startr.style has no aspect token).
+     Also covers the "coming soon" placeholder card (inline svg) that stands in before the embed exists. */
+  .premiere-frame iframe, .premiere-frame svg, .premiere-frame img { width: 100%; aspect-ratio: 16 / 9; display: block; border: 0; border-radius: 11px; }
 }
 </style>
 
 Hi, and welcome. If you're curious how an AI actually gets built, and whether *you* could build one, this is a good place to start. This is a short, friendly warm-up you can do at your own pace. You don't need any coding experience, and you don't need to finish all of it. Think of it as a gentle on-ramp, not a test.
+
+<!-- WEEK 2 PREMIERE — "coming soon" placeholder card. No premiere link yet; the film airs 8 PM ET.
+     SWAP when the YouTube link arrives:
+       1. Archive the whole <div class="premiere-frame"> … </div> card below by wrapping it in a
+          Nunjucks comment {# … #} (11ty strips it from the build but it stays in this source file).
+          KEEP it — we reuse this card for each week's premiere; just bump "WEEK 2 · PREMIERE" and the
+          airtime for the next one.
+       2. Drop the iframe embed in its place (copy the Week 1 frame lower on this page, change the id).
+     The .premiere-frame styles already cover both the svg card and the iframe. -->
+<div class="premiere-frame" style="--maxw:820px; --m:2rem auto; --br:14px; --of:hidden; --shadow:14; --bg:linear-gradient(135deg, #2563EB, #5522FA); --p:4px;">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Week 2 premiere — premieres tonight at 8 PM ET, coming soon">
+    <defs>
+      <linearGradient id="p2bg" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#2563EB"/>
+        <stop offset="0.55" stop-color="#3b2fe8"/>
+        <stop offset="1" stop-color="#5522FA"/>
+      </linearGradient>
+      <radialGradient id="p2glow" cx="0.5" cy="0.36" r="0.55">
+        <stop offset="0" stop-color="#ffffff" stop-opacity="0.20"/>
+        <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <rect width="1600" height="900" fill="url(#p2bg)"/>
+    <rect width="1600" height="900" fill="url(#p2glow)"/>
+    <circle cx="1330" cy="180" r="240" fill="none" stroke="#ffffff" stroke-opacity="0.10" stroke-width="2"/>
+    <circle cx="250" cy="780" r="300" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="2"/>
+    <text x="800" y="330" text-anchor="middle" font-family="Poppins, sans-serif" font-size="30" font-weight="600" letter-spacing="6" fill="#ffffff" fill-opacity="0.85">WEEK 2 · PREMIERE</text>
+    <text x="800" y="472" text-anchor="middle" font-family="Poppins, sans-serif" font-size="96" font-weight="700" fill="#ffffff">Premieres tonight</text>
+    <text x="800" y="558" text-anchor="middle" font-family="Poppins, sans-serif" font-size="48" font-weight="400" fill="#ffffff" fill-opacity="0.92">8 PM ET</text>
+    <rect x="650" y="606" width="300" height="58" rx="29" fill="#ffffff" fill-opacity="0.14"/>
+    <text x="800" y="644" text-anchor="middle" font-family="Poppins, sans-serif" font-size="24" font-weight="600" letter-spacing="3" fill="#ffffff" fill-opacity="0.9">COMING SOON</text>
+    <text x="800" y="824" text-anchor="middle" font-family="Poppins, sans-serif" font-size="26" font-weight="600" letter-spacing="1" fill="#ffffff" fill-opacity="0.85">Sage.Education<tspan font-size="14" dy="-10">™</tspan></text>
+  </svg>
+</div>
+
+Our next short film premieres **tonight at 8 PM ET**, right here. It's about the one idea that turns a general AI into *yours*: how you tell it to behave.
+
+## Tell an AI how to behave
+
+One of the first things that makes an AI genuinely useful is giving it its instructions. You tell an assistant who it is and how you want it to behave, and the rule we care about most is **coach me, don't do it for me.** A good assistant doesn't hand you a finished plan; it helps you make your own.
+
+You can try this yourself right now. Open our little notebook and run it top to bottom. It downloads a small open AI onto your own computer (or runs in Colab, your choice; no account or key needed beyond the one-time download) and lets you chat with it. Change its instructions, the **system prompt**, and watch how differently it answers.
+
+[▶ Open the notebook in Colab](https://colab.research.google.com/drive/1gI_dkRjHms5bVNMZ_1AobQQc5X2HpoIE?usp=sharing)
+
+---
 
 <!-- PREMIERE (live 2026-06-22). Real YouTube embed in an on-brand gradient frame.
      The original "premiering today" placeholder SVG lives in git history if ever needed.

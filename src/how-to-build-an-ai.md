@@ -27,16 +27,22 @@ robots: "noindex, nofollow"
 
 Hi, and welcome. If you're curious how an AI actually gets built, and whether *you* could build one, this is a good place to start. This is a short, friendly warm-up you can do at your own pace. You don't need any coding experience, and you don't need to finish all of it. Think of it as a gentle on-ramp, not a test.
 
-<!-- WEEK 2 PREMIERE — "coming soon" placeholder card. No premiere link yet; the film airs 8 PM ET.
-     SWAP when the YouTube link arrives:
-       1. Archive the whole <div class="premiere-frame"> … </div> card below by wrapping it in a
-          Nunjucks comment {# … #} (11ty strips it from the build but it stays in this source file).
-          KEEP it — we reuse this card for each week's premiere; just bump "WEEK 2 · PREMIERE" and the
-          airtime for the next one.
-       2. Drop the iframe embed in its place (copy the Week 1 frame lower on this page, change the id).
-     The .premiere-frame styles already cover both the svg card and the iframe. -->
+<!-- WEEK 2 PREMIERE — live YouTube embed in an on-brand gradient frame. Premiered 2026-06-29, 8 PM ET.
+     The "coming soon" placeholder card is archived just below in a Nunjucks {# … #} comment — KEEP it.
+     Reuse it for each week's premiere: move it back out of the comment, bump "WEEK 2 · PREMIERE" and
+     the airtime, and it stands in until that week's embed exists. To change the film, swap the embed
+     id (k9p2IAhDSQs) below. -->
 <div class="premiere-frame" style="--maxw:820px; --m:2rem auto; --br:14px; --of:hidden; --shadow:14; --bg:linear-gradient(135deg, #2563EB, #5522FA); --p:4px;">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Week 2 premiere — premieres tonight at 8 PM ET, coming soon">
+  <iframe src="https://www.youtube.com/embed/k9p2IAhDSQs"
+    title="How to Build an AI — Week 2 premiere" loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+{# ARCHIVED — Week 2 "coming soon" placeholder card. Kept for reuse on future premieres:
+   move this <div> back out of the comment, then bump "WEEK N · PREMIERE" and the airtime.
+<div class="premiere-frame" style="--maxw:820px; --m:2rem auto; --br:14px; --of:hidden; --shadow:14; --bg:linear-gradient(135deg, #2563EB, #5522FA); --p:4px;">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Premiere coming soon, 8 PM ET">
     <defs>
       <linearGradient id="p2bg" x1="0" y1="0" x2="1" y2="1">
         <stop offset="0" stop-color="#2563EB"/>
@@ -60,6 +66,7 @@ Hi, and welcome. If you're curious how an AI actually gets built, and whether *y
     <text x="800" y="824" text-anchor="middle" font-family="Poppins, sans-serif" font-size="26" font-weight="600" letter-spacing="1" fill="#ffffff" fill-opacity="0.85">Sage.Education<tspan font-size="14" dy="-10">™</tspan></text>
   </svg>
 </div>
+#}
 
 Our next short film premieres **tonight at 8 PM ET**, right here. It's about the one idea that turns a general AI into *yours*: how you tell it to behave.
 

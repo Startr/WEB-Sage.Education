@@ -1,29 +1,29 @@
 # Article Quality Audit
 
-Generated: `2026-06-27T12:21:56+00:00`
+Generated: `2026-06-29T20:52:52+00:00`
 
 ## Summary
 
-- Articles audited: **50**
+- Articles audited: **53**
 - Average score: **78.9**
 - Range: **60 - 96**
-- Grade distribution: **A: 4, A+: 2, A-: 12, B: 17, B+: 3, B-: 4, C: 2, C+: 6**
+- Grade distribution: **A: 4, A+: 2, A-: 12, B: 18, B+: 5, B-: 4, C: 2, C+: 6**
 
 ## Category Breakdown
 
 | Category | Pass | Info | Warn |
 |---|---:|---:|---:|
-| Em-Dash Density | 45 | 1 | 4 |
-| Image Assets | 35 | 1 | 14 |
-| Named Sources | 3 | 6 | 41 |
-| Opener Variety | 28 | 0 | 22 |
-| Paragraph Variation | 26 | 2 | 22 |
-| Passive Voice | 50 | 0 | 0 |
-| Product Pitch | 48 | 2 | 0 |
-| Rhetorical Restraint | 29 | 16 | 5 |
-| Sentence Variation | 44 | 5 | 1 |
-| Show vs. Tell | 45 | 5 | 0 |
-| Specificity | 29 | 8 | 13 |
+| Em-Dash Density | 48 | 1 | 4 |
+| Image Assets | 35 | 1 | 17 |
+| Named Sources | 4 | 6 | 43 |
+| Opener Variety | 29 | 0 | 24 |
+| Paragraph Variation | 29 | 2 | 22 |
+| Passive Voice | 53 | 0 | 0 |
+| Product Pitch | 49 | 4 | 0 |
+| Rhetorical Restraint | 31 | 17 | 5 |
+| Sentence Variation | 47 | 5 | 1 |
+| Show vs. Tell | 48 | 5 | 0 |
+| Specificity | 32 | 8 | 13 |
 
 ## Lowest 5
 
@@ -65,6 +65,7 @@ Generated: `2026-06-27T12:21:56+00:00`
 | `2025-07-09-how-ai-is-freezing-language-in-time.md` | 75 | B | 594 |
 | `2025-07-29-the-ai-gamble.md` | 75 | B | 889 |
 | `bialik-staff-workshop.md` | 75 | B | 352 |
+| `the-search-engine-your-school-doesnt-know-exists.md` | 75 | B | 2330 |
 | `when-the-machine-feels-like-a-friend.md` | 75 | B | 1993 |
 | `2025-08-03-an-ib-teacher’s-response-to-“what’s-really-going-on-with-ai-in-schools-”.md` | 78 | B | 709 |
 | `2026-01-29-finding-our-voice-within-ai.md` | 78 | B | 1084 |
@@ -76,7 +77,9 @@ Generated: `2026-06-27T12:21:56+00:00`
 | `when-the-chat-window-watches-back.md` | 78 | B | 1300 |
 | `2025-06-23-embracing-technological-change-in-education.md` | 82 | B+ | 385 |
 | `2026-01-04-why-ai-must-show-its-work.md` | 82 | B+ | 973 |
+| `googles-ai-is-lying-to-your-kids.md` | 82 | B+ | 2476 |
 | `who-decides.md` | 82 | B+ | 1778 |
+| `your-browser-is-the-first-surveillance-camera.md` | 82 | B+ | 2127 |
 | `2025-07-17-kids-and-ai-what-the-turing-lego-study-means-for-your-home-and-classroom.md` | 85 | A- | 452 |
 | `2026-01-05-every-learner’s-ai-right.md` | 85 | A- | 986 |
 | `how-ai-learns-to-sound-like-it-cares.md` | 85 | A- | 1919 |

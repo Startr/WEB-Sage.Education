@@ -170,6 +170,16 @@
   },
   "active": "b23db66fbac2e84e",
   "lastOpenFiles": [
+    "src/assets/images/heroes/hero-private-search.jpg",
+    "src/resources/en/googles-ai-is-lying-to-your-kids.md",
+    "src/assets/images/heroes/hero-browser-surveillance.jpg",
+    "src/resources/en/the-search-engine-your-school-doesnt-know-exists.md",
+    "src/assets/images/heroes/searxng-engine.jpg",
+    "src/assets/images/heroes/private-search-landscape.jpg",
+    "src/assets/images/heroes/browser-fingerprint-diagram.jpg",
+    "src/assets/images/heroes/school-board-meeting.jpg",
+    "src/assets/images/heroes/chromebook-classroom.jpg",
+    "src/resources/en/your-browser-is-the-first-surveillance-camera.md",
     "src/assets/pdf/bialik-staff-handout.pdf",
     "src/resources/en/bialik-staff-workshop.md",
     "src/assets/pdf",
@@ -178,12 +188,6 @@
     "Screenshot 2026-06-22 at 9.46.01 AM.png",
     "Screenshot 2026-06-22 at 10.01.36 AM.png",
     "src/how-to-build-an-ai.md",
-    "src/assets/images/heroes/Searxng.png",
-    "src/assets/images/heroes/ai-overview-error-scale.png",
-    "src/assets/images/heroes/GoogleSearch2011.png",
-    "src/assets/images/heroes/hero-magic-lantern.jpg",
-    "src/assets/images/heroes/search-comparison-2011-2026.png",
-    "src/assets/images/heroes/hero-ai-overviews.jpg",
     "src/resources/en/the-need-for-a-better-ai-education-platform.md",
     "dist/assets/js/packages/wow.min.js",
     "dist/assets/js/packages/validate.js",
@@ -193,7 +197,6 @@
     "dist/assets/js/modules/video.js",
     "dist/assets/js/modules/target.js",
     "dist/assets/js/modules/signups.js",
-    "dist/assets/js/modules/scrollSnap.js",
     "src/resources/en/whose-ai-on-whose-terms.md",
     "src/resources/en/what-is-slop.md",
     "src/resources/en/the-wrong-scoreboard.md",
@@ -213,9 +216,6 @@
     "src/posts/blog/de/2024-09-26-principles-for-llm-prompting-for-high-school-grades-9-11.md",
     "docs/tutorials/https-haproxy.md",
     "docs/tutorials/maintenance/backups.md",
-    "docs/tutorials/tips/rag-tutorial.md",
-    "docs/tutorials/tips/sqlite-database.md",
-    "docs/tutorials/tips/reduce-ram-usage.md",
-    "docs/tutorials/tips/contributing-tutorial.md"
+    "docs/tutorials/tips/rag-tutorial.md"
   ]
 }

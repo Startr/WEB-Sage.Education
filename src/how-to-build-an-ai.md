@@ -27,6 +27,33 @@ robots: "noindex, nofollow"
 
 Hi, and welcome. If you're curious how an AI actually gets built, and whether *you* could build one, this is a good place to start. This is a short, friendly warm-up you can do at your own pace. You don't need any coding experience, and you don't need to finish all of it. Think of it as a gentle on-ramp, not a test.
 
+<!-- WEEK 3 PREMIERE — live YouTube embed in an on-brand gradient frame. Premieres 2026-07-06, 8 PM ET.
+     A scheduled-premiere embed shows YouTube's own countdown until air, then plays live — no manual
+     swap needed tonight. The reusable "coming soon" placeholder card is archived in a Nunjucks {# … #}
+     comment further down (in the Week 2 block below); move it up here and bump "WEEK N · PREMIERE" +
+     airtime if a future week's link isn't ready in time. To change the film, swap the embed id
+     (FnYqoYq4mNs) below. -->
+<div class="premiere-frame" style="--maxw:820px; --m:2rem auto; --br:14px; --of:hidden; --shadow:14; --bg:linear-gradient(135deg, #2563EB, #5522FA); --p:4px;">
+  <iframe src="https://www.youtube.com/embed/FnYqoYq4mNs"
+    title="How to Build an AI — Week 3 premiere" loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+This week's film premieres **tonight at 8 PM ET**, right here. It's the leap from *telling* an AI how to behave to *teaching* it — training a small model that's genuinely your own.
+
+## Build your own model
+
+So far you've told an AI how to behave with words. This week you change the model itself. It's called **fine-tuning**, and it's simpler than it sounds: you show a general model a few dozen short examples of the behaviour you want, and it picks up the pattern on its own. We've prepared a starter set of about two dozen examples of a good planning coach, the kind that asks you a question instead of handing over a finished plan, and you'll add two dozen or more of your own before training a small model on the whole set.
+
+Best of all, you can watch it happen. Open our Week 3 notebook and run it top to bottom. There's a cell built for writing in your own examples; the training then runs on its own for twenty to thirty minutes (a good moment to step away); and the last cell asks the same planning question to the plain model and to the one *you* tuned, so you can see how differently they answer. Nothing to install, and you can't really break it. If something looks off, run it again from the top.
+
+[▶ Open the Week 3 notebook in Colab](https://colab.research.google.com/drive/10t6B9HPnv13iYEthzCzZNEpsFpPmQV44?usp=sharing)
+
+*It's also a chapter of the [full summer notebook](https://colab.research.google.com/drive/14FK9IpWdEFuxsh9MPg7-I4pAPBWjwelQ?usp=sharing) you build up over the program.*
+
+---
+
 <!-- WEEK 2 PREMIERE — live YouTube embed in an on-brand gradient frame. Premiered 2026-06-29, 8 PM ET.
      The "coming soon" placeholder card is archived just below in a Nunjucks {# … #} comment — KEEP it.
      Reuse it for each week's premiere: move it back out of the comment, bump "WEEK 2 · PREMIERE" and
@@ -68,7 +95,7 @@ Hi, and welcome. If you're curious how an AI actually gets built, and whether *y
 </div>
 #}
 
-Our next short film premieres **tonight at 8 PM ET**, right here. It's about the one idea that turns a general AI into *yours*: how you tell it to behave.
+Last week's film is about the one idea that turns a general AI into *yours*: how you tell it to behave.
 
 ## Tell an AI how to behave
 

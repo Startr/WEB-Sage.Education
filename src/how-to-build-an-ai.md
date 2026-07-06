@@ -46,7 +46,7 @@ This week's film premieres **tonight at 8 PM ET**, right here. It's about teachi
 
 Changing the model itself is called **fine-tuning**, and it's simpler than it sounds: you show a general model a few dozen short examples of the behaviour you want, and it picks up the pattern on its own. We've prepared a starter set of about two dozen examples of a good planning coach, the kind that asks you a question instead of handing over a finished plan, and you'll add two dozen or more of your own before training a small model on the whole set.
 
-Best of all, you can watch it happen. Open our Week 3 notebook and run it top to bottom. There's a cell built for writing in your own examples; the training then runs on its own for twenty to thirty minutes (a good moment to step away); and the last cell asks the same planning question to the plain model and to the one *you* tuned, so you can see how differently they answer. Nothing to install, and you can't really break it. If something looks off, run it again from the top.
+You can watch it happen. Open our Week 3 notebook and run it top to bottom. Early on there's a cell for writing in your own examples. The training then runs on its own for twenty to thirty minutes, a good moment to grab a snack. The last cell asks the same planning question to the plain model and to the one *you* tuned, so you can see how differently they answer. Nothing to install, and you can't really break it. If something looks off, run it again from the top.
 
 [▶ Open the Week 3 notebook in Colab](https://colab.research.google.com/drive/10t6B9HPnv13iYEthzCzZNEpsFpPmQV44?usp=sharing)
 

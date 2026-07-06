@@ -1,5 +1,4 @@
 ---
-layout: layouts/blog.njk
 title: "Who (or What) Is Reading Your Résumé?"
 tags:
   - technology
@@ -9,7 +8,7 @@ date: 2026-07-01T12:00:00.000-01:00
 rating: 5
 hero: /assets/images/heroes/hero-reading-resume.jpg
 hero_alt: A coal miner in breathing gear holds a small caged canary in his gloved hand, reading it for danger
-hero_caption: A miner reads his canary for danger he cannot see. Today, a filter reads you. Photo: George McCaa, U.S. Bureau of Mines, 1928. Public domain.
+hero_caption: "A miner reads his canary for danger he cannot see. Today, a filter reads you. Photo: George McCaa, U.S. Bureau of Mines, 1928. Public domain."
 summary: My nephews sent out more than 200 job applications and heard nothing back. No human ever read them. Here is what is really happening when you apply for a job, and four simple things you can do about it.
 eleventyNavigation:
   parent: Blog

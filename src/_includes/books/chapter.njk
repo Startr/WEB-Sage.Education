@@ -27,6 +27,7 @@
   subtitle: bookDescription,
   description: bookDescription,
   slug: bookSlug,
+  url: (bookIndex and bookIndex.url) or ("/books/" + bookSlug + "/"),
   ogImage: "/assets/images/opengraph/" + bookSlug + ".png",
   themeColor: "#000000"
 } %}
@@ -139,7 +140,7 @@
         <path
           d="m2.37 13.63a7.71 7.71 0 0 1 -2.37-5.63 7.73 7.73 0 0 1 2.37-5.63 7.71 7.71 0 0 1 5.63-2.37h96a7.73 7.73 0 0 1 5.63 2.37 7.73 7.73 0 0 1 2.37 5.63 7.71 7.71 0 0 1 -2.37 5.63 7.73 7.73 0 0 1 -5.63 2.37h-96a7.71 7.71 0 0 1 -5.63-2.37zm107.26 20.75a8 8 0 0 1 -5.63 13.62h-96a7.71 7.71 0 0 1 -5.63-2.37 7.86 7.86 0 0 1 0-11.25 7.68 7.68 0 0 1 5.63-2.38h96a7.7 7.7 0 0 1 5.63 2.38zm0 32a8 8 0 0 1 -5.63 13.62h-96a7.71 7.71 0 0 1 -5.63-2.37 7.86 7.86 0 0 1 0-11.25 7.68 7.68 0 0 1 5.63-2.38h96a7.7 7.7 0 0 1 5.63 2.38z" />
       </svg>
-      <span>{{ bookTitle }}</span>
+      <span>{{ bookTitle }} Table Of Contents</span>
     </button>
 
     {# Get chapter number and navigation from collections #}
@@ -195,7 +196,7 @@
 
 <div class="content wow fadeIn" data-controller="bookmark anchors tweet" data-target="sidebar.content"
   data-action="click->sidebar#close mouseup->tweet#update input->tweet#update keydown->tweet#update scroll@window->tweet#update"
-  data-bookmark-id="/{{ book }}"
+  data-bookmark-id="/{{ book.slug }}"
   style="	
 	--bg:white;
 	--p:4.8em 3em;

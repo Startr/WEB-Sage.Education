@@ -11,6 +11,7 @@
   <title>{{ title or book.title or site.title }}</title>
   
   <meta name="description" content="{{ description or book.description or site.description }}">
+  <meta name="robots" content="{{ robots or 'noodp' }}">
   <meta name="theme-color" content="{{ book.themeColor or '#ffffff' }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
@@ -40,15 +41,40 @@
   
   <!-- Book Styles -->
   <link rel="stylesheet" href="/assets/css/web-book.css" type="text/css">
-  <link rel="stylesheet" href="https://use.typekit.net/xig7qap.css">
   <link rel="stylesheet" href="https://startr.style/style.css">
+  <style>
+    /* Self-hosted Source Serif 4 — replaces the former Typekit ff-meta-serif-web-pro load */
+    @font-face {
+      font-display: swap;
+      font-family: "Source Serif 4";
+      font-style: normal;
+      font-weight: 400;
+      src: url(/assets/fonts/source-serif-4-v14-latin-regular.woff2) format("woff2"),
+           url(/assets/fonts/source-serif-4-v14-latin-regular.woff) format("woff");
+    }
+    @font-face {
+      font-display: swap;
+      font-family: "Source Serif 4";
+      font-style: normal;
+      font-weight: 600;
+      src: url(/assets/fonts/source-serif-4-v14-latin-600.woff2) format("woff2"),
+           url(/assets/fonts/source-serif-4-v14-latin-600.woff) format("woff");
+    }
+    @font-face {
+      font-display: swap;
+      font-family: "Source Serif 4";
+      font-style: normal;
+      font-weight: 700;
+      src: url(/assets/fonts/source-serif-4-v14-latin-700.woff2) format("woff2"),
+           url(/assets/fonts/source-serif-4-v14-latin-700.woff) format("woff");
+    }
+  </style>
   
   <!-- Book Scripts -->
   <script src="/assets/js/packages/popper.js"></script>
   <script src="/assets/js/web-book.js" type="module"></script>
   
   <!-- Analytics -->
-  {%todo "Consider moving analytics to a separate include file for better organization." %}
 </head>
 
 <body 

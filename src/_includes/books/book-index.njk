@@ -8,6 +8,7 @@
   subtitle: description,
   description: description,
   slug: bookSlug,
+  url: page.url,
   ogImage: "/assets/images/opengraph/" + bookSlug + ".png",
   themeColor: "#000000"
 } %}
@@ -92,7 +93,7 @@
   <svg class="icon" viewBox="0 0 112 80" xmlns="http://www.w3.org/2000/svg">
     <path d="m2.37 13.63a7.71 7.71 0 0 1 -2.37-5.63 7.73 7.73 0 0 1 2.37-5.63 7.71 7.71 0 0 1 5.63-2.37h96a7.73 7.73 0 0 1 5.63 2.37 7.73 7.73 0 0 1 2.37 5.63 7.71 7.71 0 0 1 -2.37 5.63 7.73 7.73 0 0 1 -5.63 2.37h-96a7.71 7.71 0 0 1 -5.63-2.37zm107.26 20.75a8 8 0 0 1 -5.63 13.62h-96a7.71 7.71 0 0 1 -5.63-2.37 7.86 7.86 0 0 1 0-11.25 7.68 7.68 0 0 1 5.63-2.38h96a7.7 7.7 0 0 1 5.63 2.38zm0 32a8 8 0 0 1 -5.63 13.62h-96a7.71 7.71 0 0 1 -5.63-2.37 7.86 7.86 0 0 1 0-11.25 7.68 7.68 0 0 1 5.63-2.38h96a7.7 7.7 0 0 1 5.63 2.38z" />
   </svg>
-  <span>{{ book.title }}</span>
+  <span>{{ book.title }} Table Of Contents</span>
 </button>
 
 {{ bookIntro(book.title, book.description) }}

@@ -765,3 +765,12 @@ figcaption {
     font-size: var(--type-small);
     font-style: italic
 }
+/* ── How to Build an AI guide widgets (migrated from the old single page) ── */
+/* 16:9 responsive media inside the gradient premiere frame */
+.premiere-frame iframe, .premiere-frame svg, .premiere-frame img {
+  width: 100%; height: 100%; aspect-ratio: 16 / 9; display: block; border: 0; border-radius: 11px;
+}
+/* Self-check list with real checkboxes */
+.checklist { list-style: none; padding-left: 0; }
+.checklist li { display: flex; align-items: flex-start; gap: 0.55rem; margin: 0.4rem 0; }
+.checklist input[type="checkbox"] { flex: none; margin-top: 0.3em; width: 1.05em; height: 1.05em; }

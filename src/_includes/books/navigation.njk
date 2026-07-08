@@ -8,8 +8,8 @@
   </button>
 
   <div class="book-info">
-    <p class="book-info__back"><a href="../"><em>Back to sage.is</em></a></p>
-  <h1 class="book-info__title"><a href="/books/{{ book.slug }}/">{{ book.title }}</a></h1>
+    <p class="book-info__back"><a href="/"><em>Back to Sage.Education</em></a></p>
+  <h1 class="book-info__title"><a href="{{ book.url or ('/books/' + book.slug + '/') }}">{{ book.title }}</a></h1>
     <p class="book-info__subtitle">{{ book.description or book.subtitle }}</p>
   </div>
 

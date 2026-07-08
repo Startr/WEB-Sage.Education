@@ -205,6 +205,9 @@ module.exports = async function(eleventyConfig) {
     { name: "gettingreal", glob: "books/gettingreal/*.md" },
     { name: "make-something", glob: "books/make-something/*.md" },
     { name: "workspace", glob: "features/workspace/*.md" },
+    // "How to Build an AI" — the summer-program guide book, mounted at its
+    // original URL (/how-to-build-an-ai/) rather than under /books/.
+    { name: "how-to-build-an-ai", glob: "how-to-build-an-ai/*.md" },
   ];
 
   for (const book of books) {
@@ -231,6 +234,7 @@ module.exports = async function(eleventyConfig) {
     return collectionApi.getFilteredByGlob([
       "books/*/index.njk",
       "features/workspace/index.njk",
+      "how-to-build-an-ai/index.njk",
     ]);
   });
 
@@ -383,7 +387,7 @@ module.exports = async function(eleventyConfig) {
   eleventyConfig.addCollection("booksBySlug", function(collectionApi) {
     const grouped = {};
     const all = collectionApi
-      .getFilteredByGlob("books/**/*.md")
+      .getFilteredByGlob(["books/**/*.md", "how-to-build-an-ai/*.md"])
       .filter(isChapterItem)
       .sort(sortByOrder);
     for (const item of all) {

@@ -1,0 +1,47 @@
+---
+title: How to Build an AI
+description: Start here. A friendly, no-experience-needed guide that takes you from "what is code?" to building your very own AI, at your own pace.
+layout: books/book-index.njk
+permalink: /how-to-build-an-ai/
+---
+
+{# ── WEEKLY RITUAL ────────────────────────────────────────────────────────
+   Each Monday: (1) swap the featured premiere below to the new week's embed
+   id, (2) add the new week's chapter as a .md file in this directory with
+   the next `order:` number. The TOC below builds itself from the chapter
+   collection — no edits needed there. To change the film, swap the embed id
+   (FnYqoYq4mNs) below. ── #}
+<div class="premiere-frame" style="--maxw:820px; --m:2rem auto; --br:14px; --of:hidden; --shadow:14; --bg:linear-gradient(135deg, #2563EB, #5522FA); --p:4px;">
+  <iframe src="https://www.youtube.com/embed/FnYqoYq4mNs"
+    title="How to Build an AI — Week 3 premiere" loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<p>This week's film: teaching a model to coach the way you would, by training one of your own. It pairs with the <a href="/how-to-build-an-ai/build-your-own-model/">Build your own model</a> chapter below.</p>
+
+<p>Hi, and welcome. If you're curious how an AI actually gets built, and whether <em>you</em> could build one, this is a good place to start. This guide grows a chapter at a time, and you can read it at your own pace. You don't need any coding experience, and you don't need to finish all of it. Think of it as a gentle on-ramp, not a test.</p>
+
+<ul class="chapter-list">
+  {%- for chapter in collections["how-to-build-an-ai"] %}
+  <li class="chapter-item">
+    <a class="chapter-link" href="{{ chapter.url }}">
+      <span class="chapter-number">Chapter {{ loop.index }}</span>
+      <span class="chapter-title">{{ chapter.data.title }}</span>
+      {%- if chapter.data.description %}
+      <span class="chapter-desc">{{ chapter.data.description }}</span>
+      {%- endif %}
+    </a>
+  </li>
+  {%- endfor %}
+</ul>
+
+<p><em>New chapters land here each Monday through the summer, right after that week's film.</em></p>
+
+<h2>Stuck on anything? That's normal, just ask</h2>
+
+<p>No question is too small or too basic. If a word didn't make sense, a button wasn't where we said, or you're not sure whether you can use Google, reach out through our <a href="/support/">support page</a> and we'll help. We'd much rather hear from you early than have you worry on your own.</p>
+
+<p>See you soon.</p>
+
+<p>— The Sage.Education™ team</p>

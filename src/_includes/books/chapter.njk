@@ -27,6 +27,7 @@
   subtitle: bookDescription,
   description: bookDescription,
   slug: bookSlug,
+  url: (bookIndex and bookIndex.url) or ("/books/" + bookSlug + "/"),
   ogImage: "/assets/images/opengraph/" + bookSlug + ".png",
   themeColor: "#000000"
 } %}
@@ -195,7 +196,7 @@
 
 <div class="content wow fadeIn" data-controller="bookmark anchors tweet" data-target="sidebar.content"
   data-action="click->sidebar#close mouseup->tweet#update input->tweet#update keydown->tweet#update scroll@window->tweet#update"
-  data-bookmark-id="/{{ book }}"
+  data-bookmark-id="/{{ book.slug }}"
   style="	
 	--bg:white;
 	--p:4.8em 3em;

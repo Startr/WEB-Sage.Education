@@ -196,6 +196,18 @@ Plan: [yes-fix-both-and-fluffy-badger.md](https://claude.is/plans/yes-fix-both-a
   - [ ] Add performance benchmarks
   - [ ] Document optimization features
 
+### How to Build an AI book
+
+- [ ] **Markdown task-list checklists**: drop the verbose HTML checklist in favour of clean markdown `- [ ]`, rendered by a plugin. #book #cleanup
+  - [ ] Add a markdown-it task-list plugin (or a small custom rule) in `src/eleventy.config.js` so `- [ ]` renders as real checkboxes
+  - [ ] Confirm the `.checklist` CSS still applies (or adjust the selector)
+  - [ ] Migrate `your-first-notebook.md`'s `<ul class="checklist"><li><input type="checkbox">` to markdown `- [ ]`
+  - [ ] Land before the book chapters deploy — expanded chapters already emit markdown `- [ ]`
+- [ ] **Reusable premiere-frame include**: the video block (coming-soon SVG card / live iframe) is copy-pasted into every chapter; make it one include that takes variables. #book #dry
+  - [ ] Add a `premiere` shortcode in `src/eleventy.config.js` — coming-soon card when no embed id, live iframe when given one; args for week, airtime, embed id, publication date
+  - [ ] Migrate the chapters + `index.njk` featured video to the shortcode
+  - [ ] Update `scripts/expand-chapter.py`'s frame sentinel to target the shortcode call instead of the inline `<div>`
+
 ### UI/UX
 
 - [ ] **CSS Performance**: Optimize stylesheets

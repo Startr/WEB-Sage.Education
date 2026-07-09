@@ -1,0 +1,27 @@
+---
+permalink: /updates.xml
+eleventyExcludeFromCollections: true
+title: "Sage.Education — Updates"
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ title }}</title>
+  <subtitle>What we've shipped on sage.education</subtitle>
+  <link href="{{ metadata.url }}/updates.xml" rel="self"/>
+  <link href="{{ metadata.url }}/updates/"/>
+  <updated>{% if updates and updates.length > 0 %}{{ updates[0].date | dateToRfc3339 }}{% else %}{{ page.date | dateToRfc3339 }}{% endif %}</updated>
+  <id>{{ metadata.url }}/updates/</id>
+  <author>
+    <name>{{ site.author }}</name>
+    <email>{{ site.contact.email }}</email>
+  </author>
+  {% for entry in updates %}
+  <entry>
+    <title>{{ entry.tag }}{% if entry.title and entry.title != entry.tag %} — {{ entry.title }}{% endif %}</title>
+    <link href="{{ metadata.url }}/updates/#{{ entry.tag }}"/>
+    <updated>{{ entry.date | dateToRfc3339 }}</updated>
+    <id>urn:sage.education:update:{{ entry.tag }}</id>
+    <content type="html"><![CDATA[{% if entry.body %}{{ entry.body | md | safe }}{% else %}<p>Tagged release {{ entry.tag }} (commit {{ entry.commit }}).</p>{% endif %}]]></content>
+  </entry>
+  {% endfor %}
+</feed>

@@ -1,0 +1,49 @@
+{#
+  Reusable iframe-based embed for external Nota forms.
+  Preferred usage (repo pattern):
+    {% set iframeId = "4" %}
+    {% set iframeDomId = "support-form" %}
+    {% set iframeTitle = "Contact form" %}
+    {% include "components/iframe-form.njk" %}
+
+  Also supported (if your Nunjucks supports include params):
+    {% include "components/iframe-form.njk", id: "4", domId: "support-form", title: "Contact form" %}
+
+  Variables consumed (either direct or via prefixed fallbacks):
+    - id | iframeId
+    - domId | iframeDomId
+    - title | iframeTitle
+#}
+{% set _id = id or iframeId %}
+{% set _domId = domId or iframeDomId %}
+{% set _title = title or iframeTitle or 'Contact form' %}
+
+<div class="iframe-form" id="{{ _domId }}-wrap" style="--m:auto;">
+  <iframe
+    id="{{ _domId }}"
+    title="{{ _title }}"
+    src="/embeds/nota-form/?id={{ _id }}"
+    loading="lazy"
+    scrolling="no"
+    style="width:100%;border:0;display:block;min-height:220px;"
+    sandbox="allow-scripts allow-forms allow-same-origin"
+  ></iframe>
+</div>
+<script>
+(function(){
+  var id = {{ _id | dump }};
+  var domId = {{ _domId | dump }};
+  var iframe = document.getElementById(domId);
+  if (!iframe) return;
+  function onMessage(e) {
+    try {
+      var d = e.data || {};
+      if (d && d.type === 'iframe-form:resize' && String(d.id) === String(id)) {
+        var h = Math.max(220, parseInt(d.height, 10) || 0);
+        iframe.style.height = h + 'px';
+      }
+    } catch(_) {}
+  }
+  window.addEventListener('message', onMessage, false);
+})();
+</script>

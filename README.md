@@ -2,7 +2,7 @@
 
 > **🌟 Mission**: Empowering education through innovative AI technology and collaborative learning experiences.
 
-## 🚀 Live Site
+## Live Site
 **Production**: [https://sage.education](https://sage.education)
 
 ## 📋 Project Overview
@@ -44,8 +44,8 @@ npm run build        # Production build
 ### 🔥 Performance Benefits with Bun
 - **🚀 154% faster builds** (0.50s vs 1.27s)
 - **⚡ 3000%+ faster installs** (0.067s vs 2-5s)
-- **📉 Lower memory usage**
-- **🛡️ Enhanced security**
+- ** Lower memory usage**
+- ** Enhanced security**
 
 # Build for production
 npm run build
@@ -73,6 +73,30 @@ npm run build
 - `npm run build` - Production build
 - `npm run admin` - CMS admin interface
 - `npm run buildfresh` - Clean build from scratch
+- `npm run audit:articles` - Run article quality audit now
+- `npm run build:noaudit` - Production build without running article audit
+
+### Article Quality Audit
+- Audit runs automatically before Eleventy starts/builds (`start`, `dev`, `build`, `buildfresh`, `admin`) unless skipped.
+- Default output is Markdown only: `docs/audits/article-quality-audit-latest.md`.
+- Only `docs/audits/article-quality-audit-latest.md` is kept in git. Other audit files are local-only.
+
+Manual run:
+```bash
+npm run audit:articles
+```
+
+Skip automatic audit for one build:
+```bash
+SKIP_ARTICLE_AUDIT=1 npm run build
+```
+
+Optional raw or dated outputs (local-only):
+```bash
+AUDIT_WRITE_RAW=1 npm run audit:articles
+AUDIT_WRITE_DATED=1 npm run audit:articles
+AUDIT_WRITE_RAW=1 AUDIT_WRITE_DATED=1 npm run audit:articles
+```
 
 ### Project Structure
 ```
@@ -93,7 +117,8 @@ npm run build
 
 ## 🤝 Contributing
 
-We follow the **Plan-Document-Execute-Verify** development cycle. See our [Convention Instructions](CONVENTION.instructions.md) for detailed guidelines.
+We follow the **Plan-Document-Execute-Verify** development cycle. 
+See our [Convention Instructions](CONVENTION.instructions.md) for detailed guidelines.
 
 ## 📈 Optimization Priorities
 

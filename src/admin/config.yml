@@ -50,7 +50,7 @@ collections:
           - { label: "Front Page", name: "front_page", widget: "relation", collection: "pages", value_field: "title", search_fields: ["title"], i18n: true }
           - { label: "Posts Page", name: "posts_page", widget: "relation", collection: "pages", value_field: "title", search_fields: ["title"], i18n: true }
           - { label: "Posts Per Page", name: "posts_per_page", widget: "number", i18n: true }
-          - { label: "Default Layout", name: "default_layout", widget: "hidden", default: "layouts/blog.njk", i18n: true }
+          - { label: "Default Layout", name: "default_layout", widget: "hidden", default: "resource", i18n: true }
           - { label: "Default Tags", name: "default_tags", widget: "list", default: "education", i18n: true }
           # Syndication feeds
           - { label: "Posts per feed", name: "posts_per_feed", widget: "number", default: 10, i18n: true }
@@ -113,14 +113,14 @@ collections:
           - { label: "Parent", name: "parent", widget: "string", hint: "Parent navigation item (if this is a child page)", required: false }
           - { label: "Order", name: "order", widget: "number", hint: "Order in the navigation menu", required: false, value_type: "int" }
       - { label: "Body", name: "body", widget: "markdown", i18n: true }
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
-    folder: "src/posts/blog" # The path to the folder where the documents are stored  
+  - name: "resources" # Used in routes, e.g., /admin/collections/resources
+    label: "Resources" # Used in the UI
+    folder: "src/resources" # Moved from src/posts/blog during the /resources/ migration. Decap's multiple_folders i18n strategy still writes to {folder}/{locale}/{slug}.md
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md. Eleventy's page.fileSlug strips the date prefix at URL time.
     i18n: true
     fields: # The fields for each document, usually in front matter
-      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/blog.njk" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "resource" }
       - { label: "Title", name: "title", widget: "string", i18n: true}
       - { label: "Tags", name: "tags", widget: "list", default: "education" }
       - { label: "Publish Date", name: "date", widget: "datetime",i18n: duplicate }
@@ -133,6 +133,6 @@ collections:
         i18n: true
         fields:
           - { label: "Navigation Title", name: "key", widget: "string", hint: "The title shown in the navigation menu", required: false }
-          - { label: "Parent", name: "parent", widget: "string", default: "Blog", hint: "Parent navigation item (leave as 'Blog' for most posts)", required: false }
+          - { label: "Parent", name: "parent", widget: "string", default: "Resources", hint: "Parent navigation item (leave as 'Resources' for most posts)", required: false }
           - { label: "Order", name: "order", widget: "number", hint: "Posts are sorted by date automatically. Only use this if you need custom sorting.", required: false, value_type: "int" }
       - { label: "Body", name: "body", widget: "markdown", i18n: true }

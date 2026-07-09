@@ -1,0 +1,22 @@
+{# 
+  Customer Marquee Component
+  Renders a scrolling marquee of customer quotes
+  
+  Usage: {% include "customer-marquee.njk" %}
+  Uses testimonials.marquee_quotes from site data
+#}
+
+<div class="marquee marquee--left space-bottom--xxx-large space-top--xx-large">
+  <a href="/customers/" aria-hidden="true" tabindex="-1" style="--rotate: 4deg; --rotate-hvr: 1deg;">
+    <ul style="--lis:none">
+      {% for quote in testimonials.marquee_quotes %}
+      <li>"{{ quote }}"</li>
+      {% endfor %}
+      
+      {# Repeat quotes for seamless scroll #}
+      {% for quote in testimonials.marquee_quotes %}
+      <li>"{{ quote }}"</li>
+      {% endfor %}
+    </ul>
+  </a>
+</div>

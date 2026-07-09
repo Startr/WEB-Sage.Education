@@ -1,0 +1,23 @@
+
+    {% if site.googleFontsUrl %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="{{ site.googleFontsUrl }}">
+    {% endif %}
+    <link rel="stylesheet" href="/assets/css/animate.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://startr.style/style.css" type="text/css">
+    {% if site.includeArticleCss %}
+    <link rel="stylesheet" href="/assets/css/article.css" type="text/css">
+    {% endif %}
+    <style>
+        /* reset some elements */
+        {% if site.resetHeadings %}
+        body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption {
+        {% else %}
+        body, ul, ol, li, figure, figcaption {
+        {% endif %}
+            margin: 0;
+            padding: 0;
+        }
+    </style>

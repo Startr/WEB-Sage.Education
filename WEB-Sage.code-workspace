@@ -1,0 +1,16 @@
+{
+    "folders": [
+        {
+            "name": "WEB-Sage.is",
+            "path": "../WEB-Sage.is"
+        },
+        {
+            "name": "WEB-Sage.Education",
+            "path": "."
+        },
+        {
+            "name": "WEB-Sage.Education-docs",
+            "path": "../WEB-Sage.Education-docs"
+        }
+    ]
+}

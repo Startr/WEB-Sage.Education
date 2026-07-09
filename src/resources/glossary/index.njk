@@ -1,0 +1,88 @@
+---
+title: Glossary
+description: Definitions collected from across the resource articles.
+permalink: /resources/glossary/
+layout: false
+tags: []
+eleventyExcludeFromCollections: true
+---
+{% extends "base.njk" %}
+{% from "components/filter-search.njk" import filterSearch %}
+
+{% block head %}
+  <link rel="stylesheet" href="/assets/css/glossary.css">
+  <script src="https://unpkg.com/hyperscript.org@0.9.12"></script>
+{% endblock %}
+
+{% block nav %}
+  {% include "components/main-nav.njk" %}
+{% endblock %}
+
+{% block main %}
+<main class="main">
+  <div class="glossary-page">
+    <header class="glossary-header">
+      <h1>Glossary</h1>
+      <p class="glossary-intro">
+        Specialized terms defined in our resource articles. Each entry links back
+        to the article(s) where the term is explained in context.
+      </p>
+
+      <div class="glossary-search-tools">
+        {{ filterSearch(
+          inputId='glossary-search',
+          scopeId='glossary-search-scope',
+          itemSelector='.glossary-entry',
+          placeholder='Search terms and definitions',
+          label='Search the glossary',
+          inputClass='glossary-search-input',
+          labelClass='glossary-search-label'
+        ) }}
+      </div>
+
+      {%- set letters = [] %}
+      {%- for entry in glossary %}
+        {%- if entry.letter not in letters %}
+          {%- set letters = (letters.push(entry.letter), letters) %}
+        {%- endif %}
+      {%- endfor %}
+
+      {%- if letters.length > 0 %}
+        <nav class="glossary-letter-nav" aria-label="Jump to letter">
+          {%- for letter in letters %}
+            <a href="#letter-{{ letter }}">{{ letter | upper }}</a>
+          {%- endfor %}
+        </nav>
+      {%- endif %}
+    </header>
+
+    {%- if glossary.length > 0 %}
+      <div id="glossary-search-scope" class="glossary-entries">
+        {%- set currentLetter = "" %}
+        {%- for entry in glossary %}
+          {%- if entry.letter != currentLetter %}
+            {%- if currentLetter != "" %}</section>{%- endif %}
+            <section class="glossary-letter-group" id="letter-{{ entry.letter }}">
+              <h2 class="glossary-letter-heading">{{ entry.letter | upper }}</h2>
+            {%- set currentLetter = entry.letter %}
+          {%- endif %}
+
+          <article class="glossary-entry" id="def-{{ entry.slug }}">
+            <h3 class="glossary-term">{{ entry.displayTerm }}</h3>
+            <div class="glossary-definition">{{ entry.definition | md | safe }}</div>
+            <p class="glossary-sources">
+              <span class="glossary-sources-label">Defined in:</span>
+              {%- for src in entry.sources %}
+                <a href="{{ src.url }}#{{ src.footnoteId }}">{{ src.title }}</a>{% if not loop.last %}<span class="glossary-sources-sep"> · </span>{% endif %}
+              {%- endfor %}
+            </p>
+          </article>
+        {%- endfor %}
+        {%- if currentLetter != "" %}</section>{%- endif %}
+      </div>
+    {%- else %}
+      <p class="glossary-empty">No definitions found yet. Add one by writing a footnote whose first content is a bolded term: <code>[^1]: **Term** definition…</code></p>
+    {%- endif %}
+  </div>
+</main>
+{% endblock %}

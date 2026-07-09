@@ -1,0 +1,91 @@
+{# Everything that appears after the article body on a resource page:
+   prev/next-from-collection lookups, related-articles list (tag-matched
+   with random fallback), and the prev/next nav.
+
+   Used by both the hero and no-hero branches of resource.njk so the
+   80+ lines below aren't duplicated in the layout. #}
+
+{%- if collections.resources.length %}
+<!-- prev/next from collections.resources ({{ collections.resources.length }} items) -->
+
+{# Prev/next computed once — used both as exclusions for related list and for the nav itself #}
+{%- set previousPost = collections.resources | getPreviousCollectionItem(page) %}
+{%- set nextPost = collections.resources | getNextCollectionItem(page) %}
+
+{# Related articles by shared non-universal tags, with random fallback when no tag match #}
+{%- set currentTags = tags | filterTagList %}
+{%- set relatedPosts = [] %}
+{%- for post in collections.resources %}
+  {%- if post.url != page.url and post.data.title
+      and (not previousPost or post.url != previousPost.url)
+      and (not nextPost or post.url != nextPost.url) %}
+    {%- set postTags = post.data.tags | filterTagList %}
+    {%- set shared = 0 %}
+    {%- for t in currentTags %}
+      {%- if t != "education" and t != "ai" and t != "technology" and t in postTags %}
+        {%- set shared = shared + 1 %}
+      {%- endif %}
+    {%- endfor %}
+    {%- if shared > 0 %}
+      {%- set relatedPosts = (relatedPosts.push(post), relatedPosts) %}
+    {%- endif %}
+  {%- endif %}
+{%- endfor %}
+{%- set matchedByTag = relatedPosts.length %}
+{%- set fallbackUsed = false %}
+{%- if relatedPosts.length == 0 %}
+  {%- set fallbackUsed = true %}
+  {%- for post in collections.resources %}
+    {%- if post.url != page.url and post.data.title and relatedPosts.length < 2
+        and (not previousPost or post.url != previousPost.url)
+        and (not nextPost or post.url != nextPost.url) %}
+      {%- set relatedPosts = (relatedPosts.push(post), relatedPosts) %}
+    {%- endif %}
+  {%- endfor %}
+{%- endif %}
+{%- if relatedPosts.length < 3 %}{%- set slicedTo = relatedPosts.length %}{%- else %}{%- set slicedTo = 3 %}{%- endif %}
+
+{%- if collections.resources.length > 1 and relatedPosts.length > 0 %}
+<!-- related: matched-by-tag={{ matchedByTag }}, fallback-used={{ fallbackUsed }}, sliced-to={{ slicedTo }} -->
+<section class="article-related" style="--mt:3rem; --pt:2rem; padding-top:2rem; border-top:1px solid var(--rule-color,#e2e2e2)">
+  <div class="article-related__label" style="--c:#777; --size:0.75rem; letter-spacing:0.1em; text-transform:uppercase">Related reading</div>
+  <ul style="--lis:none; --p:0; --m:1rem 0 0">
+    {%- for post in relatedPosts | slice(0, 3) %}
+    <li style="--p:1rem 0; border-bottom:1px solid var(--rule-color,#eee)">
+      <a href="{{ post.url }}" class="plausible-event-name=RelatedClick" style="--c:#222; --td:none; font-weight:600">{{ post.data.title }}</a>
+      {%- set relDeck = post.data.subheadline or post.data.description or post.data.summary %}
+      {%- if relDeck %}
+      <p class="article-related__summary" style="--c:#666; --size:0.95rem; --lh:1.5; --mt:0.3rem">{{ relDeck }}</p>
+      {%- endif %}
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+{%- endif %}
+
+{%- if nextPost or previousPost %}
+<nav class="article-nav">
+  <div class="nav-label">More from Sage.Education</div>
+  <ul>
+    {%- if previousPost and previousPost.data.title %}
+      {%- set previousDeck = previousPost.data.subheadline or previousPost.data.description or previousPost.data.summary %}
+      <li>
+        <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>
+        {%- if previousDeck %}
+        <p class="article-nav-summary">{{ previousDeck }}</p>
+        {%- endif %}
+      </li>
+    {% endif %}
+    {%- if nextPost and nextPost.data.title %}
+      {%- set nextDeck = nextPost.data.subheadline or nextPost.data.description or nextPost.data.summary %}
+      <li>
+        <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+        {%- if nextDeck %}
+        <p class="article-nav-summary">{{ nextDeck }}</p>
+        {%- endif %}
+      </li>
+    {% endif %}
+  </ul>
+</nav>
+{%- endif %}
+{%- endif %}

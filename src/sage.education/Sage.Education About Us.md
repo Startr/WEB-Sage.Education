@@ -8,7 +8,7 @@ Empowering academic success through innovation, our mission is to revolutionize 
 
 #### **Vision**
 
-* Empower creativity and imagination in the K-11 school environment through secure and trusted AI assistants.
+* Empower creativity and imagination in the K-12 school environment through secure and trusted AI assistants.
 * Foster a culture of openness, transparency, and user control in education technology.
 * Create a better future for AI in education, where students can learn and create without being influenced by corporate agendas or data-mining practices.
 
@@ -29,7 +29,7 @@ It all began with two visionaries and their shared passion for innovation and ed
 
 Isabelle's journey started in 1985, when she witnessed her father, Andre Plante, a pioneer in computer science, bring computer programming and chatbots into their home. This early exposure ignited a lifelong passion for innovation and education, which Isabelle nurtured through 20 years of teaching music and interdisciplinary projects through the International Baccalaureate program. Her love for education and creative expression continued to evolve as she blended AI with art, pioneering a groundbreaking curriculum that prepared students for a rapidly changing world.
 
-Meanwhile, Alex's personal journey was shaped by his experience with dysgraphia and his discovery of computers as a means of self-expression. As a programmer and creator, Alex made his mark at Etsy, and later as a co-founder of Robot-in-a-Can where he worked to harness technology for positive change. However, it was his experience as a father that sparked a new vision – to create AI assistants that would ignite imagination while upholding the values of openness and user control.
+Meanwhile, Alex's personal journey was shaped by his experience with dysgraphia and his discovery of computers as a means of self-expression. As a programmer and creator, Alex created Startr.Style and contributed to the beginnings of Etsy, and later as a co-founder of Robot-in-a-Can where he worked to harness technology for positive change. However, it was his experience as a father that sparked a new vision – to create AI assistants that would ignite imagination while upholding the values of openness and user control.
 
 When Isabelle and Alex came together, they shared a common goal: to create an AI educational platform that would empower teachers and students, safeguard their data, and promote creativity. Their collaboration brought together Isabelle's extensive background in music education and curriculum development with Alex's expertise in software development, machine learning engineering, and community leadership.
 
@@ -52,4 +52,4 @@ Have Questions or Don't See the Perfect Role?
 
 We're always looking for talented individuals who share our passion for education.
 
-Send us your resume at [jobs@Sage.Educationteaching.com](mailto:jobs@Sage.Education.com), and let's explore how you can make a difference with us.
+Send us your resume at [jobs@sage.education](mailto:jobs@sage.education), and let's explore how you can make a difference with us.

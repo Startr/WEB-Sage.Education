@@ -1,0 +1,40 @@
+{# Reusable book UI components (macros) #}
+
+{% macro bookIntro(title, description) %}
+<div class="intro">
+  <div class="intro__content intro__content--sticky">
+    <h1 class="intro__title">{{ title }}</h1>
+    <p class="intro__description">{{ description }}</p>
+  </div>
+</div>
+{% endmacro %}
+
+{% macro chapterNavigation(prevChapter, nextChapter) %}
+<div class="intro__navigation hidden-print">
+  {% if prevChapter %}
+    <p class="intro__prev"><a href="{{ prevChapter.url }}">← Previous: {{ prevChapter.data.title }}</a></p>
+  {% endif %}
+  {% if nextChapter %}
+    <p class="intro__next"><a href="{{ nextChapter.url }}">Next: {{ nextChapter.data.title }} →</a></p>
+  {% endif %}
+</div>
+{% endmacro %}
+
+{% macro contentContainer(rawContent, bookSlug) %}
+<div class="content wow fadeIn" data-controller="bookmark anchors tweet" data-target="sidebar.content"
+  data-action="click->sidebar#close mouseup->tweet#update input->tweet#update keydown->tweet#update scroll@window->tweet#update"
+  data-bookmark-id="/{{ bookSlug }}"
+  style="
+	--bg:white;
+	--p:4.8em 3em;
+	--br:12px;
+	--shadow:5;
+	outline:#e6e6e6 dashed;
+	outline-offset: -0.6em;
+	--b-width:2px;
+  --minh:calc(100vh - 18em);
+	--ai:center;
+  --ofx:scroll">
+  {{ rawContent | safe }}
+</div>
+{% endmacro %}

@@ -8,8 +8,10 @@
     "start": "cd src && bunx @11ty/eleventy --serve --output=../dist",
     "dev": "cd src && bunx @11ty/eleventy --serve --watch --output=../dist",
     "admin": "./set_our_host.sh && bunx decap-server --host $(ipconfig getifaddr $(route get default | grep interface | awk '{print $2}')) --port 8081 --cors & cd src && bunx @11ty/eleventy --serve --output=../dist",
-    "build": "cd src && bunx @11ty/eleventy --output=../dist",
-    "build:prod": "NODE_ENV=production bun run build",
+    "prebuild": "[ -n \"$CF_PAGES\" ] || make verify-shared && node scripts/check-yaml.mjs && node scripts/check-frontmatter.mjs && bun run verify:authors",
+    "build": "cd src && NODE_ENV=production bunx @11ty/eleventy --output=../dist",
+    "verify:authors": "bash tools/check-authors.sh",
+    "build:prod": "bun run build",
     "buildfresh": "rm -rf dist && mkdir dist && cd src && bunx @11ty/eleventy --output=../dist",
     "buildfresh:prod": "NODE_ENV=production bun run buildfresh",
     "srvsrc": "cd src && python -m http.server 8000 && cd ..",
@@ -17,15 +19,17 @@
     "format": "echo 'Prettier not configured yet'",
     "audit:fix": "bun audit --fix",
     "audit:check": "bun audit",
+    "audit:articles": "python3 tools/run-article-audit.py",
+    "build:noaudit": "cd src && SKIP_ARTICLE_AUDIT=1 NODE_ENV=production bunx @11ty/eleventy --output=../dist",
     "optimize": "bun run buildfresh:prod && echo 'Build optimized for production'",
     "install:bun": "bun install",
-    "clean": "rm -rf node_modules && rm -f bun.lockb && bun install"
+    "clean": "rm -rf node_modules && rm -f bun.lock bun.lockb && bun install"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-img": "^3.1.1",
     "@11ty/eleventy-navigation": "^0.3.5",
     "@11ty/eleventy-plugin-bundle": "^1.0.4",
@@ -35,8 +39,11 @@
     "markdown-it-anchor": "^8.6.7"
   },
   "dependencies": {
+    "gray-matter": "^4.0.3",
     "js-yaml": "^4.1.0",
     "jsdom": "^25.0.1",
-    "markdown-it-attrs": "^4.1.6"
+    "markdown-it": "^14.1.1",
+    "markdown-it-attrs": "^4.1.6",
+    "markdown-it-footnote": "^4.0.0"
   }
 }

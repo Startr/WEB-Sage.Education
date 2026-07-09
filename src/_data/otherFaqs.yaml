@@ -1,0 +1,60 @@
+faqs:
+  - id: pricing-value
+    question: Is Sage for teams?
+    answer: >
+      Yes. Open‑source plus onboarding means you avoid lock‑in and surprise bills. 
+      Many teams replace multiple tools with Sage’s agents, chat, tasks, docs, and 
+      files in one place — lowering total cost of ownership.
+  - id: api
+    question: Does Sage have an API? Can we integrate with Sage?
+    answer: >
+      **Yes,** [Sage has a full-featured API (docs are hosted on
+      GitHub)](https://startr.cloud/sage-API/#TD). Companies have written custom
+      integrations, and [our Integrations page](/integrations/) links up
+      third-party solutions for invoicing, accounting, time tracking, reporting,
+      planning, asset management, contracts, proposals, and more.
+  - id: customer-support
+    question: What if we need more help?
+    answer: >
+      Our partner support is considered to be among the best of the best (by
+      us). Everyone who works on our team are expert specialists who
+      know Sage inside and out, many having been with us for years and years,
+      some over a decade. Further, we occasionally cycle every employee through
+      support — including our CEO — so everyone has a chance to directly
+      interact with customers.
+
+      You can [ask support a question](/support/), or [watch tutorials](/learn/#TODO), 
+      or [review the help guides](https://startr.cloud/docs/#TODO/), 
+      or [attend a live walkthrough class and Q&A](/classes/).
+  - id: languages
+    question: Is Sage available in languages other than English?
+    answer: >
+      Currently offer Sage’s interface in hundreds of languages, although we
+      have people in over 160 countries writing and sharing in their own native
+      languages using Sage.
+  - id: other-products
+    question: If we go with Sage, will we still need stuff like ChatGPT? Perplexity?
+      Dropbox?
+    answer: >
+      **Nope,** Sage.is AI engine replaces a whole set of separate products. 
+      Sage has chat built in (no more Slack, Teams). Sage has
+      exceptional task management in the form of to-dos and RoundTable
+      discussions (no more Jira, Asana, Trello, etc). And you can store and
+      share all the files you need with your Sage.is AIs (no more Dropbox).
+  - id: who-uses-sage
+    question: What kind of companies, in which industries, use Sage?
+    answer: >
+      Sage is used by top notch teams, schools, designers, client services
+      firms, consultants, software developers, freelancers, PR agencies,
+      contractors, religious institutions, schools, non-profits, first
+      responders, and many others who value organized, efficient work.
+
+      Our partners are primarily small or medium-sized organization with a 
+      few hundred members, but Sage is also used by teams inside many of 
+      the world’s largest companies.
+  - id: developer-experience
+    question: What’s the developer experience like?
+    answer: >
+      We onboard developers in minutes, not days. 
+      Straightforward. Clean REST APIs and SDKs, webhooks, and CLIs. 
+      Run locally, in your VPC, or on‑prem with the same APIs. No black boxes.

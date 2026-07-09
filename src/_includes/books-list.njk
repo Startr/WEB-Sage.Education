@@ -1,0 +1,59 @@
+{#
+  books-list.njk
+  Reusable macro to render the Books listing page.
+
+  Usage:
+    {% from "books-list.njk" import booksList %}
+  Example (all books): {{ booksList(booksData) }}
+  Example (filtered by category): {{ booksList(booksData, "writing") }}
+
+  Data shape (array of books):
+    [
+      {
+        id: "shapeup",
+        slug: "startr-here",
+        title: "Startr Here",
+        image: "/assets/images/books/startr-here.webp",
+        imageAlt: "Startr Here",
+        description: "…",
+        category: "writing" | "reading" | "love",
+        links: [
+          { label: "Buy the print edition", href: "https://…", external: true },
+          { label: "Read it online", href: "/books/startr-here/" },
+          { label: "Download a PDF", href: "startr-here/#todo.pdf" }
+        ]
+      },
+      …
+    ]
+#}
+
+{% macro booksList(items = [], category = null) %}
+  <div class="books space-top--x-large">
+    {% for b in items %}
+      {% if not category or b.category == category %}
+      <section id="{{ b.id }}">
+        <figure style="--m: 0 auto">
+          <a href="#{{ b.id }}">
+            <img src="{{ b.image }}" alt="{{ b.imageAlt or b.title }}">
+          </a>
+        </figure>
+        <article>
+          <h2 style="--m: 0 auto; --m-lg:0; --size: 2rem">
+            <a href="#{{ b.id }}">{{ b.title }}</a>
+          </h2>
+          <p>{{ b.description | safe }}</p>
+          {% if b.links and(b.links | length) %}
+            <ul style="--lis:none">
+              {% for link in b.links %}
+                <li>
+                  <a href="{{ link.href }}"{% if link.external %} target="_blank" rel="noopener"{% endif %}>{{ link.label }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </article>
+      </section>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endmacro %}

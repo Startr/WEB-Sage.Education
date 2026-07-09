@@ -1,0 +1,92 @@
+# Pricing FAQs Data
+# Frequently asked questions about Sage pricing
+
+faqs:
+  - id: "package-changes"
+    question: "Can we upgrade, downgrade, switch packages, or cancel whenever we want?"
+    answer: |
+      **Yes, you can upgrade** from Free to Plus or from Plus to Pro Unlimited whenever you'd like.
+      
+      **Yes, you can downgrade** from Pro Unlimited to Plus or Free as long as your usage fits on the lower package. For example, if you still had five AIs, you couldn't downgrade to the Free package which only allows one AI. You'd have to delete four of those AIs before downgrading.
+      
+      **Yes, you can cancel any time**, no questions asked, no forms to fill out, no person to talk to. If you cancel an annual package, the difference will be prorated back to your credit card.
+
+  - id: "discounts"
+    question: "Do you offer non-profit or educational discounts?"
+    answer: |
+      **Absolutely.** Sage is 10% off for registered 501(c)(3) non-profits, and 100% free for K-12, homeschoolers, or Universities as long as it's used for class work only.
+      
+      **For non-profits:** [Email us](mailto:nonprofits@sage.is) a copy of your 501(c)(3) paperwork right after you sign up. We'll apply the discount once we verify your status.
+      
+      **For teachers and homeschool parents:** Right after you sign up, [email us](mailto:teachers@sage.is) from your school account with the name of your school, the class you teach, and proof you're a teacher. We'll apply the discount after we verify everything.
+      
+      **For students:** Right after you sign up, [email us](mailto:students@sage.is) from your school account with the name of your school, what you're studying, and when you expect to graduate. We'll apply the discount after we verify everything.
+      
+      **Note:** We can only discount one account. If you need to support multiple groups, one account will give you everything you need to support them. If you've been paying for Sage, we can't refund or discount payments made before your discount started. We reserve the right to end the discount program due to chronic abuse of the free accounts or other circumstances. If we do, anyone who is already participating will continue to have their discounts applied. We just won't offer up new free or discounted accounts.
+
+  - id: "users"
+    question: "Could we really add 1000 users and still just pay $699/month total on Pro Unlimited?"
+    answer: |
+      **Yes.** Sage is one of the few products in the entire industry with an all-inclusive, unlimited users package for one fixed, capped price.
+
+  - id: "clients"
+    question: "If we have clients, or work with contractors, do we have to pay for them too?"
+    answer: |
+      **No.** Clients and contractors can be added to your account for free. On the Plus package, we only bill you $15/user/month for employees or full users, not clients or temporary contractors.
+
+  - id: "credit-card"
+    question: "Do I need a credit card to try Sage?"
+    answer: |
+      **Nope.** We don't require a credit card on the Free account, or for any of the free trials. If you choose a pay package with a free trial, you'll be asked to enter your credit card at the end of your trial if you want to continue. It's entirely up to you.
+
+  - id: "free-trial"
+    question: "Will I automatically be charged when my 30 or 60-day free trial is up?"
+    answer: |
+      **No.** We don't ask for a credit card to try Sage, so we couldn't charge you even if we wanted to. If you want to continue once your trial is up, then you'd enter your credit card. You're in complete control.
+
+  - id: "upgrades"
+    question: "#TODO How do upgrades work? What's included with TimeFlow or the Admin Pro Pack?"
+    answer: |
+      While TimeFlow and Admin Pro Pack are included on the Pro Unlimited package, customers on the Plus package can optionally upgrade to either or both whenever they'd like.
+      
+      **TimeFlow** allows you to track time spent on tasks, writing, meetings, or other pieces of work within a Sage AI. You can then run reports to aggregate time spent across AIs, or per-person, to help with resource allocation, planning, or even client billing. You can also export the data to bring into an accounting or billing system of your choice. The TimeFlow upgrade is $50/month flat no matter how many people you have on your account. [this video shows you how it works](https://www.youtube.com/watch?v=AdazpMjeteA#todo).
+      
+      **Admin Pro Pack** gives account owners and admins greater control over access and permissions and allows them to:
+      
+      - Change who can send Pings (per company)
+      - Change who can edit AI details  
+      - Change who can edit people on a AI
+      - Change who can move, archive, and delete content
+      - Change who can turn on public links
+      - Limit editing and deleting comments & chat lines to 15 minutes after posting
+      - Require two-factor authentication
+      - Change chat history settings
+      - Set Out of Office for others
+      
+      The Admin Pro Pack upgrade is $50/month flat no matter how many people you have on your account. You can [learn more about Admin Pro Pack here](https://startr.cloud/docs/#TODO/article/687-admin-pro-pack).
+    todo: "Fix broken documentation links"
+
+  - id: "storage"
+    question: "Can we buy more storage if we need it? How much is it?"
+    answer: |
+      **Yes.** You can add an additional 1 terabyte (that's 1000 gigabytes) of storage for $50/month flat. The storage can be used by all users across your entire account.
+
+  - id: "free-package"
+    question: "On the free one AI package, can I delete the AI and start another one?"
+    answer: |
+      **Yes.** You can only run one AI at time on the Free package, but if you are done with an AI, or just want to get rid of the one you're currently running, you can export it locally (so you have a backup) and then delete it and free up the slot to start a new one. You can't, however, keep more than one around in your free account. So in order to start a new one, you must delete the current one.
+
+  - id: "open-source"
+    question: "How does the self-hosted Open Source package work?"
+    answer: |
+      **Our Open Source package gives you the complete Sage codebase to run on your own servers.** Here's what you need to know:
+      
+      - Complete source code for self-deployment on your own infrastructure
+      - Install on your own Linux, Windows, or macOS servers
+      - Compatible with most major cloud providers (AWS, Azure, Google Cloud, etc.)
+      - Docker containers available for easy deployment
+      - Scale to your own specifications based on your hardware
+      
+      To qualify, your project must use an OSI-approved open source license and maintain a public repository. The Sage Open Source edition is licensed under AGPL-3.0, which requires derivative works to also be open source, and you must include a visible "Powered by Sage" attribution with a link in your user interface and in documentation.
+      
+      **Note:** While we offer community support through our forums, self-hosted deployments don't include dedicated support services. For production environments requiring SLAs or technical assistance, please consider our [Enterprise package.](#enterprise)

@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "44338650aa172063",
+        "id": "686853263e07d0f5",
         "type": "tabs",
         "children": [
           {
-            "id": "824ec109c07f63ef",
+            "id": "ae4b3576cc37dfb9",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "src/privacy.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "privacy"
             }
           }
         ]
@@ -74,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 203.5
+    "width": 300
   },
   "right": {
     "id": "641eb60485d4a267",
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "src/privacy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for privacy"
             }
           },
           {
@@ -136,15 +141,17 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "src/privacy.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of privacy"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -152,6 +159,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -160,45 +168,54 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "824ec109c07f63ef",
+  "active": "b23db66fbac2e84e",
   "lastOpenFiles": [
-    "dist/posts/blog/pt/2025-05-14-an-ai-edtech-success-story-students-forge-ai-ally-conquer-space-challenge/index.html",
-    "dist/posts/blog/fr/2025-06-12-embracing-the-maker-mindset-in-ai-education/index.html",
-    "dist/posts/blog/fr/2025-05-14-an-ai-edtech-success-story-students-forge-ai-ally-conquer-space-challenge/index.html",
-    "dist/posts/blog/fr/2025-05-14-pi-mininet-server/index.html",
-    "dist/posts/blog/fr/2025-06-05-the-power-of-the-maker-mindset-in-the-age-of-ai/index.html",
-    "dist/posts/blog/de/2025-06-05-the-power-of-the-maker-mindset-in-the-age-of-ai/index.html",
-    "dist/posts/blog/de/2025-06-12-embracing-the-maker-mindset-in-ai-education/index.html",
-    "dist/posts/blog/de/2025-05-14-an-ai-edtech-success-story-students-forge-ai-ally-conquer-space-challenge/index.html",
-    "dist/posts/blog/de/2025-05-14-pi-mininet-server/index.html",
-    "dist/posts/blog/en/2025-06-05-the-power-of-the-maker-mindset-in-the-age-of-ai/index.html",
-    "dist/posts/blog/en/2025-06-05-the-power-of-the-maker-mindset-in-the-age-of-ai",
-    "static/uploads/apa_astropi-ai.png",
-    "src/posts/blog/pt/2025-06-12-embracing-the-maker-mindset-in-ai-education.md",
-    "src/posts/blog/pt/2025-06-05-the-power-of-the-maker-mindset-in-the-age-of-ai.md",
-    "src/posts/blog/pt/2025-05-14-pi-mininet-server.md",
-    "src/posts/blog/pt/2025-05-14-an-ai-edtech-success-story-students-forge-ai-ally-conquer-space-challenge.md",
-    "src/posts/blog/fr/2025-06-12-embracing-the-maker-mindset-in-ai-education.md",
-    "src/posts/blog/fr/2025-06-05-the-power-of-the-maker-mindset-in-the-age-of-ai.md",
-    "src/posts/blog/fr/2025-05-14-pi-mininet-server.md",
-    "src/posts/blog/fr/2025-05-14-an-ai-edtech-success-story-students-forge-ai-ally-conquer-space-challenge.md",
-    "src/posts/blog/en/2025-06-12-embracing-the-maker-mindset-in-ai-education.md",
-    "src/posts/blog/en/2025-06-05-the-power-of-the-maker-mindset-in-the-age-of-ai.md",
-    "src/posts/blog/en/2025-05-14-pi-mininet-server.md",
-    "src/posts/blog/en/2025-05-14-an-ai-edtech-success-story-students-forge-ai-ally-conquer-space-challenge.md",
-    "src/posts/blog/de/2025-06-12-embracing-the-maker-mindset-in-ai-education.md",
-    "src/posts/blog/de/2025-06-05-the-power-of-the-maker-mindset-in-the-age-of-ai.md",
-    "src/posts/blog/de/2025-05-14-pi-mininet-server.md",
-    "src/posts/blog/de/2025-05-14-an-ai-edtech-success-story-students-forge-ai-ally-conquer-space-challenge.md",
-    "docs/DEVELOPMENT_WORKFLOW.md",
-    "TODO.md",
-    "OPTIMIZATION_SUMMARY.md",
-    "OPTIMIZATION_ROADMAP.md",
-    "BUN_MIGRATION_RESULTS.md",
-    "CONVENTION.instructions.md",
-    "README.md",
+    "src/assets/images/heroes/hero-private-search.jpg",
+    "src/resources/en/googles-ai-is-lying-to-your-kids.md",
+    "src/assets/images/heroes/hero-browser-surveillance.jpg",
+    "src/resources/en/the-search-engine-your-school-doesnt-know-exists.md",
+    "src/assets/images/heroes/searxng-engine.jpg",
+    "src/assets/images/heroes/private-search-landscape.jpg",
+    "src/assets/images/heroes/browser-fingerprint-diagram.jpg",
+    "src/assets/images/heroes/school-board-meeting.jpg",
+    "src/assets/images/heroes/chromebook-classroom.jpg",
+    "src/resources/en/your-browser-is-the-first-surveillance-camera.md",
+    "src/assets/pdf/bialik-staff-handout.pdf",
+    "src/resources/en/bialik-staff-workshop.md",
+    "src/assets/pdf",
+    "src/assets/images/heroes/GoogleSearch2026.png",
+    "src/assets/images/heroes/searxng-RaspberryPi 1.png",
+    "Screenshot 2026-06-22 at 9.46.01 AM.png",
+    "Screenshot 2026-06-22 at 10.01.36 AM.png",
+    "src/how-to-build-an-ai.md",
+    "src/resources/en/the-need-for-a-better-ai-education-platform.md",
+    "dist/assets/js/packages/wow.min.js",
+    "dist/assets/js/packages/validate.js",
+    "dist/assets/js/packages/stimulus.js",
+    "dist/assets/js/packages/popper.js",
+    "dist/assets/js/packages/cookie.js",
+    "dist/assets/js/modules/video.js",
+    "dist/assets/js/modules/target.js",
+    "dist/assets/js/modules/signups.js",
+    "src/resources/en/whose-ai-on-whose-terms.md",
+    "src/resources/en/what-is-slop.md",
+    "src/resources/en/the-wrong-scoreboard.md",
+    "src/resources/en/the-new-scoreboard.md",
+    "src/resources/en/the-builders-youd-ban.md",
+    "src/resources/en/dont-panic.md",
     "src/pricing.md",
+    "TODO.md",
+    "README.md",
+    "KANBAN.canvas",
     "src/Local.md",
-    "dist/images/favicon.png"
+    "src/posts/blog/pt/2024-09-26-principles-of-llm-prompting-for-teachers.md",
+    "src/posts/blog/pt/2024-09-26-principles-for-llm-prompting-for-high-school-grades-9-11.md",
+    "src/posts/blog/fr/2024-09-26-principles-of-llm-prompting-for-teachers.md",
+    "src/posts/blog/fr/2024-09-26-principles-for-llm-prompting-for-high-school-grades-9-11.md",
+    "src/posts/blog/de/2024-09-26-principles-of-llm-prompting-for-teachers.md",
+    "src/posts/blog/de/2024-09-26-principles-for-llm-prompting-for-high-school-grades-9-11.md",
+    "docs/tutorials/https-haproxy.md",
+    "docs/tutorials/maintenance/backups.md",
+    "docs/tutorials/tips/rag-tutorial.md"
   ]
 }

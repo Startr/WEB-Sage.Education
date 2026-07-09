@@ -100,27 +100,33 @@ deploy:
 		npx caprover deploy; \
 	fi
 
-minor_release:
+require_gitflow_next:
+	@if ! git flow version 2>/dev/null | grep -q 'git-flow-next'; then \
+		echo "Error: git-flow-next required (Go rewrite). Install: brew install git-flow-next"; \
+		exit 1; \
+	fi
+
+minor_release: require_gitflow_next
 	# Start a minor release with incremented minor version
 	git flow release start $$(git tag --sort=-v:refname | sed 's/^v//' | head -n 1 | awk -F'.' '{print $$1"."$$2+1".0"}') && echo "or use 'make release_finish' to finish the release"
 
-patch_release:
+patch_release: require_gitflow_next
 	# Start a patch release with incremented patch version
 	git flow release start $$(git tag --sort=-v:refname | sed 's/^v//' | head -n 1 | awk -F'.' '{print $$1"."$$2"."$$3+1}') && echo "or use 'make release_finish' to finish the release"
 
-major_release:
+major_release: require_gitflow_next
 	# Start a major release with incremented major version
 	git flow release start $$(git tag --sort=-v:refname | sed 's/^v//' | head -n 1 | awk -F'.' '{print $$1+1".0.0"}') && echo "or use 'make release_finish' to finish the release"
 
-hotfix:
+hotfix: require_gitflow_next
 	# Start a hotfix with incremented n.n.n.n version (incrementing the fourth number)
 	git flow hotfix start $$(git tag --sort=-v:refname | sed 's/^v//' | head -n 1 | awk -F'.' '{print $$1"."$$2"."$$3"."$$4+1}') && echo "or use 'make hotfix_finish' to finish the hotfix"
 
-release_finish:
-	git flow release finish "$$(git branch --show-current | sed 's/release\///')" && git push origin develop && git push origin master && git push --tags && git checkout develop
+release_finish: require_gitflow_next
+	git flow release finish && git push origin develop && git push origin master && git push --tags && git checkout develop
 
-hotfix_finish:
-	git flow hotfix finish "$$(git branch --show-current | sed 's/hotfix\///')" && git push origin develop && git push origin master && git push --tags && git checkout master
+hotfix_finish: require_gitflow_next
+	git flow hotfix finish && git push origin develop && git push origin master && git push --tags && git checkout master
 
 things_clean:
 	git clean --exclude=!.env -Xdf
@@ -137,7 +143,123 @@ setup:
 		echo "NODE_ENV=development" >> .env; \
 		echo "You can customize the .env file later."; \
 	fi
-	@echo "Setting up Git Flow with version tag prefix 'v'..."
-	@git config gitflow.prefix.versiontag "v"
-	@echo "Git Flow configured to use 'v' prefix for version tags"
 	@echo "Setup complete! Local development environment is ready."
+
+cep_fix_links:
+	@echo "Fixing CEP hard links after git operations..."
+	@if [ ! -d src/cep ]; then \
+		echo "Creating CEP directory..."; \
+		mkdir -p src/cep; \
+	fi
+	@echo "Recreating hard links for CEP files..."
+	@if [ -f src/cep/CONVENTION.instructions.md ]; then \
+		rm src/cep/CONVENTION.instructions.md; \
+	fi
+	@if [ -f src/cep/DEVELOPMENT_WORKFLOW.md ]; then \
+		rm src/cep/DEVELOPMENT_WORKFLOW.md; \
+	fi
+	@ln CONVENTION.instructions.md src/cep/CONVENTION.instructions.md
+	@ln docs/DEVELOPMENT_WORKFLOW.md src/cep/DEVELOPMENT_WORKFLOW.md
+	@echo "CEP hard links recreated successfully!"
+	@echo "Verifying links..."
+	@ls -li CONVENTION.instructions.md src/cep/CONVENTION.instructions.md | awk '{print "CONVENTION inode: " $$1}'
+	@ls -li docs/DEVELOPMENT_WORKFLOW.md src/cep/DEVELOPMENT_WORKFLOW.md | awk '{print "WORKFLOW inode: " $$1}'
+
+cep_status:
+	@echo "=== CEP Hard Links Status ==="
+	@if [ -f src/cep/CONVENTION.instructions.md ]; then \
+		echo "CONVENTION.instructions.md:"; \
+		ls -li CONVENTION.instructions.md src/cep/CONVENTION.instructions.md; \
+		if [ "$$(stat -f '%i' CONVENTION.instructions.md 2>/dev/null)" = "$$(stat -f '%i' src/cep/CONVENTION.instructions.md 2>/dev/null)" ]; then \
+			echo "✅ Hard link is working"; \
+		else \
+			echo "❌ Hard link is broken"; \
+		fi; \
+	else \
+		echo "❌ CEP CONVENTION.instructions.md not found"; \
+	fi
+	@echo ""
+	@if [ -f src/cep/DEVELOPMENT_WORKFLOW.md ]; then \
+		echo "DEVELOPMENT_WORKFLOW.md:"; \
+		ls -li docs/DEVELOPMENT_WORKFLOW.md src/cep/DEVELOPMENT_WORKFLOW.md; \
+		if [ "$$(stat -f '%i' docs/DEVELOPMENT_WORKFLOW.md 2>/dev/null)" = "$$(stat -f '%i' src/cep/DEVELOPMENT_WORKFLOW.md 2>/dev/null)" ]; then \
+			echo "✅ Hard link is working"; \
+		else \
+			echo "❌ Hard link is broken"; \
+		fi; \
+	else \
+		echo "❌ CEP DEVELOPMENT_WORKFLOW.md not found"; \
+	fi
+
+install_hooks:
+	@echo "Installing git hooks..."
+	@if [ ! -d scripts/hooks ]; then \
+		echo "❌ scripts/hooks directory not found"; \
+		exit 1; \
+	fi
+	@for hook in scripts/hooks/*; do \
+		if [ -f "$$hook" ]; then \
+			hook_name=$$(basename "$$hook"); \
+			echo "Installing $$hook_name hook..."; \
+			cp "$$hook" ".git/hooks/$$hook_name"; \
+			chmod +x ".git/hooks/$$hook_name"; \
+			echo "✅ $$hook_name hook installed"; \
+		fi; \
+	done
+	@echo "🎉 All hooks installed successfully!"
+
+uninstall_hooks:
+	@echo "Uninstalling project-specific git hooks..."
+	@for hook in scripts/hooks/*; do \
+		if [ -f "$$hook" ]; then \
+			hook_name=$$(basename "$$hook"); \
+			if [ -f ".git/hooks/$$hook_name" ]; then \
+				echo "Removing $$hook_name hook..."; \
+				rm ".git/hooks/$$hook_name"; \
+				echo "✅ $$hook_name hook removed"; \
+			fi; \
+		fi; \
+	done
+	@echo "🎉 All project hooks uninstalled!"
+
+# ---------------------------------------------------------------------------
+# Interactive release (full flow via ~/bin/git-release)
+# ---------------------------------------------------------------------------
+release:
+	@scripts/release.sh
+
+# ── Cross-repo hardlink sync ──
+# Manifest of hardlinked files: .shared-files (repo-root-relative paths, # for comments).
+# WEB-Sage.is is the canonical home. Run `make sync-shared` here to (re)establish
+# hardlinks; run `make verify-shared` before build/commit to detect inode drift.
+
+SHARED_SRC_REPO := $(realpath ../WEB-Sage.is)
+
+sync-shared:
+	@if [ "$(realpath .)" = "$(SHARED_SRC_REPO)" ]; then \
+	  echo "canonical repo — sync-shared is a no-op (siblings hardlink into here)"; \
+	  exit 0; \
+	fi
+	@# Bootstrap the manifest itself if missing locally.
+	@if [ ! -f .shared-files ]; then ln -f "$(SHARED_SRC_REPO)/.shared-files" .shared-files && echo "bootstrapped .shared-files"; fi
+	@grep -vE '^[[:space:]]*(#|$$)' .shared-files | while IFS= read -r f; do \
+	  src="$(SHARED_SRC_REPO)/$$f"; dst="$$f"; \
+	  if [ ! -f "$$src" ]; then echo "MISSING SOURCE: $$src"; exit 1; fi; \
+	  mkdir -p "$$(dirname "$$dst")"; \
+	  ln -f "$$src" "$$dst" && echo "linked $$f"; \
+	done
+
+verify-shared:
+	@if [ ! -f .shared-files ]; then echo "MISSING .shared-files (run 'make sync-shared')"; exit 1; fi
+	@rm -f .verify-shared.fail
+	@grep -vE '^[[:space:]]*(#|$$)' .shared-files | while IFS= read -r f; do \
+	  a=$$(stat -f "%i" "$(SHARED_SRC_REPO)/$$f" 2>/dev/null); \
+	  b=$$(stat -f "%i" "$$f" 2>/dev/null); \
+	  if [ -z "$$a" ]; then echo "MISSING canonical: $$f"; touch .verify-shared.fail; \
+	  elif [ -z "$$b" ]; then echo "MISSING local: $$f"; touch .verify-shared.fail; \
+	  elif [ "$$a" != "$$b" ] && [ "$(realpath .)" != "$(SHARED_SRC_REPO)" ]; then \
+	    echo "DIVERGED: $$f (canonical=$$a local=$$b)"; touch .verify-shared.fail; \
+	  fi; \
+	done
+	@if [ -f .verify-shared.fail ]; then rm -f .verify-shared.fail; exit 1; fi
+	@echo "all shared files in sync"

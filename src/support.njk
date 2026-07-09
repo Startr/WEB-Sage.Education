@@ -1,0 +1,131 @@
+---
+layout: base
+permalink: null
+eleventyComputed: {}
+title: "Sage.Education: Get help from the Sage.Education support team"
+description: >-
+  There are no stupid questions. For pre-sales questions, existing customers who need a hand, or
+  other inquiries, contact us and we’ll get back to you within an hour.
+og:
+  site_name: Sage.Education
+  title: Get help from the Sage.Education support team
+  description: >-
+    There are no stupid questions. For pre-sales questions, existing customers who need a hand, or
+    other inquiries, contact us and we’ll get back to you within an hour.
+  image: /assets/images/opengraph/support.png
+  url: support/
+  type: website
+twitter:
+  title: Get help from the Sage.Education support team
+  description: >-
+    There are no stupid questions. For pre-sales questions, existing customers who need a hand, or
+    other inquiries, contact us and we’ll get back to you within an hour.
+  image: /assets/images/opengraph/support.png
+  card: summary_large_image
+  creator: "@sage"
+  site: "@sage"
+  image_alt: Sage.Education
+canonical: support/
+robots: noodp
+themeColor: "#ffffff"
+---
+<!-- Add Page Wrapper -->
+<div style="--m:auto;">
+  <div class="statement">
+    <section>
+      <header>
+        <h1>Friendly folks, standing by</h1>
+      </header>
+      <article>
+        <p>
+          <strong>There are no stupid questions.</strong> For pre-sales questions, existing customers who need a hand, or other inquiries, contact us and <strong>we’ll get back to you within an hour.</strong>
+        </p>
+      </article>
+    </section>
+  </div>
+
+  <div class="statement space-top--neutral">
+    <section>
+      <article>
+        <p>
+          <strong class="highlight">We’re having a company meet-up this week so replies may be slower.</strong><br>
+        </p>
+      </article>
+    </section>
+  </div>
+
+
+  <div class="support space-top--x-large">
+    <div class="support__form" style="--minw:30rem; --m:auto;">
+      <script type="text/javascript" src="//nota.startr.cloud/form/generate.js?id=4"></script>
+      <!-- a small script that rewrites the form wrapping any text "Required" with a strong tag -->
+      <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+          // Get the form area first to scope all operations
+          var formArea = document.querySelector('.support__form');
+          if (!formArea) return;
+          
+          // Handle existing strong tags with "Required" text within support__form only
+          var requiredLabels = formArea.querySelectorAll('label strong');
+          requiredLabels.forEach(function(label) {
+            if (label.textContent.trim() === 'Required') {
+              label.innerHTML = '<strong>Required</strong><br>';
+            }
+          });
+          
+          // Handle any text nodes that contain "Required" from the nota script
+          function processTextNodes(element) {
+            var walker = document.createTreeWalker(
+              element,
+              NodeFilter.SHOW_TEXT,
+              null,
+              false
+            );
+            
+            var textNodes = [];
+            var node;
+            while (node = walker.nextNode()) {
+              if (node.textContent.includes('Required')) {
+                textNodes.push(node);
+              }
+            }
+            
+            textNodes.forEach(function(textNode) {
+              var text = textNode.textContent;
+              if (text.trim() === 'Required' || text.includes('Required')) {
+                var newHTML = text.replace(/Required/g, '<strong>Required</strong><br>');
+                var tempDiv = document.createElement('div');
+                tempDiv.innerHTML = newHTML;
+                while (tempDiv.firstChild) {
+                  textNode.parentNode.insertBefore(tempDiv.firstChild, textNode);
+                }
+                textNode.parentNode.removeChild(textNode);
+              }
+            });
+          }
+          
+          // Process the entire form area
+          processTextNodes(formArea);
+          
+          // Use MutationObserver to catch dynamically added content from nota script
+          var observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+              mutation.addedNodes.forEach(function(node) {
+                if (node.nodeType === Node.ELEMENT_NODE) {
+                  processTextNodes(node);
+                }
+              });
+            });
+          });
+          
+          observer.observe(formArea, { childList: true, subtree: true });
+        });
+      </script>
+    </div>
+
+  </div>
+
+
+</div>
+
+{% include "customer-marquee.njk" %}

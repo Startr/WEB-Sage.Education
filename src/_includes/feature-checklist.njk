@@ -1,0 +1,45 @@
+{# 
+  Feature Checklist Component
+  Renders core features with replacements/integrations
+  
+  Usage: {% include "feature-checklist.njk", features: coreFeatures %}
+#}
+
+<div class="statement space-top--x-large">
+  <section>
+    <header>
+      <h2>{{ features.heading }}</h2>
+    </header>
+    <article>
+      <p>{{ features.subtitle | safe }}</p>
+    </article>
+  </section>
+</div>
+
+<div class="headline space-top--neutral">
+  <article>
+    <ul class="checklist" style="--list:none">
+      {% for feature in features.features %}
+      <li>
+        {% if feature.todo %}
+          {% todo feature.todo %}
+        {% endif %}
+        
+        <strong>{{ feature.name }}</strong>{{ feature.description }}
+        
+        {% if feature.replaces %}
+          <mark class="highlight">replaces {{ feature.replaces }}</mark>
+        {% endif %}
+        
+        {% if feature.works_with %}
+          <mark class="highlight">works with {{ feature.works_with }}</mark>
+        {% endif %}
+        
+        {% if feature.todo %}
+          {% endtodo %}
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </article>
+</div>

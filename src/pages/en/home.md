@@ -2,6 +2,7 @@
 layout: layouts/base.njk
 title: Home
 date: 2024-12-06T08:48:00.000Z
+templateEngineOverride: md
 ---
 <style>
   @scope{
@@ -120,7 +121,7 @@ date: 2024-12-06T08:48:00.000Z
         outline-offset: -0.6em;">
 </video>
 
-## [**Unlock**](/Sign-up-Now) limitless learning with [**Sage.Education&nbsp;AI**](/Sign-up-Now).  {style="--size:3em; --grad-color:black;"}
+## [**Unlock**](https://sage.education/Sign-up-Now) limitless learning with [**Sage.Education&nbsp;AI**](https://sage.education/Sign-up-Now).  {style="--size:3em; --grad-color:black;"}
 
 ## Learn to harness **AI**'s power to **create** in new ways & prepare for **change** today  
 
@@ -395,13 +396,13 @@ Track and review progress and decision-making with branching conversation views
 }
 </style>
 
-#### <a href="/posts/blog/en/2024-09-26-principles-of-llm-prompting-for-teachers/">Principles of LLM Prompting for Teachers<br><button class="tag">Read More</button></a>
+#### <a href="/resources/principles-of-llm-prompting-for-teachers/">Principles of LLM Prompting for Teachers<br><button class="tag">Read More</button></a>
 
-####  <a href="/posts/blog/en/2024-09-26-be-nice-to-ai-it-might-just-make-you-smarter/">Be nice to AI, it might make you smarter<br><button class="tag">Read More</button></a>
+####  <a href="/resources/be-nice-to-ai-it-might-just-make-you-smarter/">Be nice to AI, it might make you smarter<br><button class="tag">Read More</button></a>
 
-#### <a href="/posts/blog/en/2024-10-27-teaching-with-large-language-models-llms-strategies-for-high-school-educators/">Instructional Strategies and Prompting<br><button class="tag">Read More</button></a>
+#### <a href="/resources/teaching-with-large-language-models-llms-strategies-for-high-school-educators/">Instructional Strategies and Prompting<br><button class="tag">Read More</button></a>
 
-#### <a href="/posts/blog/en/2024-11-04-knowing-when-to-use-llms-vs-search-engines/">When to use LLMs vs Search Engines<br><button class="tag">Read More</button></a>
+#### <a href="/resources/knowing-when-to-use-llms-vs-search-engines/">When to use LLMs vs Search Engines<br><button class="tag">Read More</button></a>
 
 {style="--d: flex;"}
 

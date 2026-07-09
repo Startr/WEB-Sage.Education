@@ -1,0 +1,76 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="#f5f5f5"/>
+
+  <!-- Divider -->
+  <line x1="600" y1="0" x2="600" y2="700" stroke="#dddddd" stroke-width="2"/>
+
+  <!-- LEFT SIDE -->
+
+  <!-- Circles decoration -->
+  <circle cx="120" cy="120" r="18" fill="#7c5a97"/>
+  <circle cx="100" cy="300" r="28" fill="#9a6a96"/>
+  <circle cx="200" cy="420" r="50" fill="#6f5a9c"/>
+
+  <!-- Image placeholder -->
+  <circle cx="320" cy="200" r="140" fill="#ddd"/>
+  <text x="260" y="205" font-size="14" fill="#777">Image</text>
+
+  <!-- Title -->
+  <text x="80" y="400" font-size="36" font-family="Arial" font-weight="bold" fill="#000">
+    THE COMPANY
+  </text>
+
+  <!-- Paragraph -->
+  <text x="80" y="440" font-size="16" font-family="Arial" fill="#333">
+    <tspan x="80" dy="0">ABC DOC is a platform that connects people with</tspan>
+    <tspan x="80" dy="22">life coaches and therapists. We want to help you</tspan>
+    <tspan x="80" dy="22">achieve your goals, whether it's starting a business</tspan>
+    <tspan x="80" dy="22">or getting over an addiction.</tspan>
+  </text>
+
+  <!-- RIGHT SIDE -->
+
+  <!-- Decorative circles -->
+  <circle cx="720" cy="140" r="60" fill="#7c5a97"/>
+  <circle cx="800" cy="110" r="40" fill="#9a6a96"/>
+
+  <!-- Logo placeholder -->
+  <text x="880" y="120" font-size="28" font-family="Arial" fill="#000">
+    ABS DOC
+  </text>
+
+  <!-- Title -->
+  <text x="700" y="300" font-size="56" font-family="Arial" font-weight="bold" fill="#000">
+    Sage.Education
+  </text>
+
+  <!-- Subtitle -->
+  <text x="700" y="350" font-size="20" font-family="Arial" fill="#333">
+    Reach Your Goals. Build Relationships.
+  </text>
+  <text x="700" y="380" font-size="20" font-family="Arial" fill="#333">
+    Feel Better About Yourself.
+  </text>
+
+  <!-- Contact -->
+  <text x="700" y="450" font-size="16" font-family="Arial" fill="#333">
+    www.abcdoc.com
+  </text>
+  <text x="700" y="480" font-size="16" font-family="Arial" fill="#333">
+    info.abcdoc@gmail.com
+  </text>
+  <text x="700" y="510" font-size="16" font-family="Arial" fill="#333">
+    378–980–0664
+  </text>
+
+  <!-- Bottom image -->
+  <circle cx="950" cy="550" r="120" fill="#ddd"/>
+  <text x="900" y="555" font-size="14" fill="#777">Image</text>
+
+  <!-- Bottom decoration -->
+  <circle cx="860" cy="620" r="30" fill="#4a56a6"/>
+  <circle cx="1050" cy="520" r="40" fill="#6a2ca0"/>
+
+</svg>

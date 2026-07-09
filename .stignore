@@ -1,0 +1,4 @@
+// Syncthing: ignore build artifacts that should never sync between machines
+node_modules
+dist
+.cache

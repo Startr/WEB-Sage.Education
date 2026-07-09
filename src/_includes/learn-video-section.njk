@@ -1,0 +1,63 @@
+{# 
+  Reusable Learn Video Section Component
+  Renders a video section with scroll-snap container from provided video data.
+
+  Expected in context:
+  - section: Object with { title, description, videos[] }
+  - sectionIndex: number (for spacing between sections)
+  Optional overrides:
+  - headingTag: string (defaults to "h1")
+  - containerClass: string class for main container
+  - sectionClass: string class for section wrapper
+  - spaceClass: string class for spacing
+#}
+
+{% set _headingTag = headingTag or "h1" %}
+{% set _containerClass = containerClass or "statement statement--full-width" %}
+{% set _sectionClass = sectionClass or "learn space-top--neutral" %}
+{% set _spaceClass = spaceClass or "space-top--xx-large" %}
+
+{# Add spacing for sections after the first one #}
+{% if sectionIndex and sectionIndex > 0 %}
+    {% set _containerClass = _containerClass + " " + _spaceClass %}
+{% endif %}
+
+<div class="{{ _containerClass }}">
+    <section>
+        <header>
+            <{{ _headingTag }}>{{ section.title }}</{{ _headingTag }}>
+        </header>
+        <article>
+            <p>{{ section.description }}</p>
+        </article>
+    </section>
+</div>
+
+<div class="{{ _sectionClass }}">
+    <div class="learn__container scroll-snap">
+        {% for video in section.videos %}
+            <button class="learn__item scroll-snap__item modal-trigger" 
+            id="{{ video.id }}" 
+            data-type="video" 
+            data-event="{{ video.event }}" 
+            data-src="{{ video.src }}" 
+            data-poster="{{ video.poster }}"
+            {% if video.tracks %}data-track-json="[{% for track in video.tracks %}
+                {&quot;label&quot;:&quot;{{ track.label }}&quot;,&quot;lang&quot;:&quot;{{ track.lang }}&quot;,&quot;src&quot;:&quot;{{ track.src }}&quot;}{% if not loop.last %},{% endif %}
+                {% endfor %}]"
+            {% endif %}>
+                <figure>
+                    <img src="{{ video.thumbnail }}" alt="{{ video.title }}">
+                </figure>
+                <dl>
+                    <dt>{{ video.title }}</dt>
+                    <dd>{{ video.description }}</dd>
+                </dl>
+            </button>
+        {% endfor %}
+    </div>
+    <div class="learn__controls scroll-snap-controls">
+        <button class="learn__control learn__control--previous scroll-snap-control scroll-snap-control--previous" aria-label="Previous Video" disabled=""></button>
+        <button class="learn__control learn__control--next scroll-snap-control scroll-snap-control--next" aria-label="Next Video"></button>
+    </div>
+</div>

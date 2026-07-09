@@ -1,0 +1,31 @@
+---
+permalink: /_redirects
+eleventyExcludeFromCollections: true
+layout: false
+---
+{# POKA-YOKE: this template MUST live at src/_redirects.njk, NOT inside
+   src/resources/. The src/resources/resources.11tydata.js cascade sets
+   layout: "resource", and the resource layout reads `title`/`page.date`
+   under Nunjucks throwOnUndefined:true — those are undefined here and the
+   build crashes. `layout: false` above is belt-and-suspenders for the same
+   reason. #}
+# Auto-generated. Source of truth: src/_redirects.njk.
+# CF Pages reads /_redirects natively and serves real 301s.
+# Do not hand-edit the build output (dist/_redirects) — change the template.
+#
+# Format: <from>  <to>  <status>
+# Order matters: first match wins, so per-post mappings precede catch-alls.
+
+# ── Per-post redirects (one per English resource) ─────────────────────
+{% for post in collections.resources -%}
+{{ post.data.legacyEnPath }}  {{ post.url }}  301
+{% endfor %}
+# ── Static page redirects ──────────────────────────────────────────────
+/how-to-build  /how-to-build-an-ai/  301
+
+# ── Listing page ───────────────────────────────────────────────────────
+/posts/  /resources/  301
+
+# ── Catch-all for stray non-English URLs and anything else under /posts/
+/posts/blog/*  /resources/  301
+/posts/*  /resources/  301

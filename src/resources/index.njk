@@ -1,0 +1,53 @@
+---
+title: Resources
+description: Latest articles and posts
+# POKA-YOKE: opt out of the resources/ cascade (resources.11tydata.js sets
+# layout: resource). This template already extends base.njk on its own, so
+# without this override the page renders TWICE — full <html>/<head>/<body>
+# nested inside the resource layout's <html>/<head>/<body>.
+layout: false
+# This listing page is not a resource — keep it out of collections.resources
+# so it doesn't appear in prev/next nav or the search results within itself.
+eleventyExcludeFromCollections: true
+# Override the inherited tags: ["resources"] so this page doesn't show up on
+# /tags/resources/. The listing page isn't an article.
+tags: []
+eleventyNavigation:
+  key: Resources
+  order: 3
+---
+{% extends "base.njk" %}
+{% from "components/filter-search.njk" import filterSearch %}
+
+{% block nav %}
+    {% include "components/main-nav.njk" %}
+{% endblock %}
+
+{% block main %}
+<main class="main">
+<div class="posts-listing">
+  <h1>{{ title }}</h1>
+
+  <p class="posts-page-actions">
+    <a href="/resources/glossary/" class="posts-glossary-link">Browse the glossary &rarr;</a>
+  </p>
+
+  <h2>Latest Resources</h2>
+  <div class="posts-search-tools">
+    {{ filterSearch(
+      inputId='posts-search',
+      scopeId='posts-search-scope',
+      itemSelector='.post-card',
+      placeholder='Search articles',
+      label='Search articles'
+    ) }}
+  </div>
+  {% set postslist = collections.resources %}
+  {# Search scope wraps the cards so #posts-search hyperscript can filter them. #}
+  <div id="posts-search-scope">
+    {% include "components/post-cards.njk" %}
+  </div>
+
+</div>
+</main>
+{% endblock %}

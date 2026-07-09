@@ -1,15 +1,35 @@
 ---
-layout: layouts/base.njk
 permalink: /tags/
 title: Tags
 ---
+{% extends "base.njk" %}
 
-<h1>Tags</h1>
+{% block nav %}
+    {% include "components/main-nav.njk" %}
+{% endblock %}
 
-{% set taglist = collections.tagList %}
-<ul>
-{% for tag in taglist | sort %}
-  {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-  <li><a href="{{ tagUrl }}">{{ tag }}</a></li>
-{% endfor %}
-</ul>
+{% block main %}
+<main class="main">
+<div class="posts-listing">
+  <h1>{{ title }}</h1>
+  <h2>Browse by topic</h2>
+
+  {% set taglist = collections.tagList %}
+  {% if taglist.length > 0 %}
+    {# Render every tag as a post-tag chip — same CSS class used at the bottom
+       of each card on /resources/, so the visual language matches. Each chip
+       shows the tag name and the count of articles carrying it. #}
+    <div class="post-tags" style="--d:flex; --fw:wrap; --gap:0.5rem; --mt:1rem">
+      {%- for tag in taglist | sort -%}
+        {%- set tagged = collections.normalizedTagCollections[tag] -%}
+        <a href="/tags/{{ tag | slugify }}/" class="post-tag">{{ tag }}{% if tagged %} <span style="--c:#888">({{ tagged.length }})</span>{% endif %}</a>
+      {%- endfor -%}
+    </div>
+  {% else %}
+    <p>No tags yet.</p>
+  {% endif %}
+
+  <p style="--mt:2rem"><a href="/resources/">&larr; All resources</a></p>
+</div>
+</main>
+{% endblock %}

@@ -1,0 +1,30 @@
+{# 
+  Integration Link Macro
+  Renders a single integration link with standardized structure
+  
+  Usage: {{ integrationLink(integration) }}
+  
+  Expected integration object:
+  {
+    name: "Integration Name",
+    url: "https://example.com",
+    logo: "/path/to/logo.png",
+    description: "Integration description"
+  }
+#}
+
+{% macro integrationLink(integration, index) %}
+<a class="integrations__integration wow animate__animated animate__fadeIn" 
+  data-wow-delay="{% if index > 1 %}{{ (index - 1) * 0.6 }}{% endif %}"
+  href="{{ integration.url }}">
+  <header>
+    <figure>
+      <img src="{{ integration.logo }}" alt="{{ integration.name }}">
+    </figure>
+    <h3>{{ integration.name }}</h3>
+  </header>
+  <article>
+    <p>{{ integration.description }}</p>
+  </article>
+</a>
+{% endmacro %}

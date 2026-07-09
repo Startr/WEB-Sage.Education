@@ -1,0 +1,16 @@
+{
+  "name": "Sage.Education",
+  "short_name": "Sage",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "description": "Sage Education is an innovative platform dedicated to empowering educators and learners to effectively harness artificial intelligence (AI) in educational settings.",
+  "icons": [
+    {
+      "src": "/images/sage.education_logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

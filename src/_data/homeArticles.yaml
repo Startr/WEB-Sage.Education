@@ -1,0 +1,103 @@
+# Home page: Article sections
+sections:
+  - id: wrestling-with-ais
+    wrapperClass: "wow animate__animated animate__fadeInUp"
+    wrapperStyle: "--minw:80%; --m:2rem auto"
+    h1: "Wrestling with AI Education? <br> It doesn't need to be this hard."
+    h1Id: "wrestling-with-AIs"
+    h1Class: "wow animate__animated animate__fadeInUp"
+    h1Attrs: 'data-wow-delay="0.1s"'
+    h1Style: "--size: 3rem; --size-sm: 3.6rem; --size-md: 4rem; --mt-md:-4rem; --rotate:1deg; --rotate-hvr:0deg;"
+    contentDivs:
+      - class: "wow animate__animated animate__fadeInUp"
+        attrs: 'data-wow-delay="0.2s"'
+        content: |
+          There are many **AI platforms promising to solve** all our problems. Helping teachers **reduce their workload** and promising students **shortcuts to learning.**
+
+          Unfortunately, **most AI tools aren’t hitting the mark**. They either **make more work** for us by not doing what we need, or **hurt learning** by making students think they understand, only for them to fall short on the exam.
+
+          **Sage.Education is different**. It's not made by a corporation whose first priority is to its shareholders. It's **made by educators** who want to reimagine what education can be when technology **serves human wisdom.**
+
+          **Sage.Education makes learning visible**, so you see the process where the **real learning** happens. We make every interaction between a student and **AI transparent.**
+      - class: "wow animate__animated animate__fadeInUp"
+        attrs: 'data-wow-delay="0.3s"'
+        content: |
+          We believe you should have the **freedom to see** how your students work. See learners' **thoughts** unfold step-by-step. **Guide critical thinking** rather than just grade final outputs.
+
+          **Sage.Education fits your classroom**, not the other way around. **Customize everything.** Give different groups different AIs. Switch **AI models** on the fly to compare how they answer. Build your own chatbots.**Work the way you want.**
+
+          **We believe you should have the freedom to change and control your tools.**        
+          <div style="--d:flex; --ai:center; --jc:flex-end; --gap:0.75em; --mt:1rem; --fw:wrap;">
+            <dl style="--m:0">
+              <dt>
+                <strong>Izzy Plante</strong>, <a href="mailto:izzy@sage.is">izzy@sage.is</a>
+              </dt>
+              <dd>
+                <em>Co-founder &amp; CEO</em>
+              </dd>
+            </dl>
+            <img src="https://sage.is/assets/images/general/ip-avatar.jpg" alt="Izzy Plante"
+              style="--h:3rem; --w:3rem; --d:inline-flex; --br:100%; --p: 0;--m: 0 1em;">
+          </div>
+
+  - id: features-home
+    wrapperClass: "statement space-top--xxx-large wow animate__animated animate__fadeInUp"
+    wrapperStyle: "--m:auto; --ta:center; --maxw: 60rem;"
+    headerStyle: "--mt:2em; --gc: 12 span"
+    articleStyle: "--gc: 12 span"
+    h2: "Let's walk through it."
+    h2Id: "features"
+    h3: "Here at Sage.Education we focus on AI in Education"
+    h3Id: "home"
+    content: |
+      You bring curiosity and we'll ensure AI literacy
+
+      Learn to work with AI by playing, iterating, and experimenting.  
+      Prepare your students for an AI world. Private, secure, and flexible.
+
+      We'll make sure you have the essential AI Knowledge, Skills, and Attitudes.
+  - id: yes-intro
+    wrapperStyle: "--m:auto"
+    wrapperClass: "headline space-top--xxx-large wow animate__animated animate__fadeInUp"
+    wrapperAttrs: 'style="zoom: 1.2; --maxw: 40rem;"'
+    h3: 'With Sage the answer is <span class="yes-label">YES!</span>'
+    h3Id: "yes"
+    h3Style: "--ml: -4ch"
+    content: |
+      At Sage.Education, we empower learners, with our decades of hands-on education experience and AI expertise, open-source software, and lock-in-free flexibility.
+
+      Are your learners ready for the AI world?
+
+  - id: its-time
+    wrapperElement: "section"
+    wrapperClass: "statement statement--gap-large space-top--xxx-large"
+    wrapperStyle: "zoom: 1.2; --maxw: 40rem; --ta:center"
+    h2: "You wouldn't be here if the<br> way you've been working was working.<br>It's time for Sage."
+    h2Id: "its-time"
+    h2Class: "wow animate__animated animate__fadeIn"
+    headerContent: |
+      <a href="https://sage.education/Sign-up-Now" 
+        style="
+        --d:block;
+        --m:2rem auto;
+        --bg: var(--color-blue);
+        --c: var(--color-white);
+        --w:fit-content; 
+        --p:0.8em;
+        --br:0.2em;">
+          <span style="--d:none; --d-md:inline-block">Apply to&nbsp;</span> Access Sage.Education</a>
+    content: |
+
+      Running in circles? **It's time for Sage.** 
+
+      Finding AI easy to start with, but what's the point? **It's time for Sage.** 
+
+      Frustrated parents want AI but you can't supervise? **It's time for Sage.** 
+
+      More and more students cheating with ChatGPT? **It's time for Sage.** 
+
+      Subscription fees keep adding up? **It's time for Sage.** 
+
+      Growing into AI education dysfunction? **It's time for Sage.** 
+
+      Tired of feeling disorganized and unproductive? **It's time for Sage.**

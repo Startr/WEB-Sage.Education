@@ -1,0 +1,9 @@
+admin/
+
+# Non-English resources are CMS-created stubs (Decap multiple_folders i18n
+# strategy). They live in source for editors to translate later but are
+# excluded from the build today. To bring a language online, remove its
+# line here and give it a permalink in src/resources/<lang>/<lang>.11tydata.js.
+resources/de/
+resources/fr/
+resources/pt/

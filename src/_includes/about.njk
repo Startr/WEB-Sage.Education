@@ -1,0 +1,33 @@
+---
+layout: base
+---
+
+<div class="statement statement--align-center">
+  <section>
+    <header>
+      <h1>{{ title }}</h1>
+    </header>
+    <article>
+      <p>{{ description | safe }}</p>
+    </article>
+  </section>
+</div>
+
+<div class="letter space-bottom--xxx-large space-top--x-large">
+  <div class="letter__container" style="--minw: 60%;">
+    <div class="letter__article">
+      
+      {{ content | safe }}
+      
+      {% if author and signatures[author] and signatures[author].aboutSignature %}
+        <div class="letter__signature">
+          <dl>
+            <dt>{{ signatures[author].aboutSignature.name }}</dt>
+            <dd>{{ signatures[author].aboutSignature.title }}</dd>
+          </dl>
+        </div>
+      {% endif %}
+      
+    </div>
+  </div>
+</div>

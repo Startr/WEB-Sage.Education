@@ -1,7 +1,7 @@
 ---
 title: Tell an AI how to behave
 description: Give an AI its instructions in plain words, and meet the rule we care about most.
-order: 3
+order: 2
 ---
 
 So far you've run your first code. This chapter is about the one idea that turns a general AI into *yours*: how you tell it to behave.

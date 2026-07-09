@@ -1,7 +1,8 @@
 ---
 title: Start here
 description: Get your account access sorted and meet the handful of words you'll hear all summer.
-order: 1
+order: 0
+part: "intro"
 ---
 
 Hi, and welcome. Before you build anything, two small things set you up for everything that follows: a way to run code in your browser, and a feel for the words you'll hear along the way. That's this whole chapter. No code yet, no pressure.

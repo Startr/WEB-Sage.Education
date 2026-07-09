@@ -1,7 +1,7 @@
 ---
 title: Build your own model
 description: Fine-tune a small model on your own examples and watch it pick up your coaching style.
-order: 4
+order: 3
 ---
 
 So far you've told an AI how to behave with words. This chapter goes one step further: you change the model itself, and by the end you'll have a small AI that *you* taught to be a planning coach.

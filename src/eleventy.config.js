@@ -105,7 +105,7 @@ module.exports = async function(eleventyConfig) {
     if (/\/index\.md$/.test(path)) return false;
     return true;
   };
-  const sortByOrder = (a, b) => (a.data.order || 999) - (b.data.order || 999);
+  const sortByOrder = (a, b) => (a.data.order ?? 999) - (b.data.order ?? 999);
 
   eleventyConfig.addGlobalData("isDev", isDev);
   eleventyConfig.addGlobalData("env", process.env.NODE_ENV || "development");

@@ -21,7 +21,7 @@
       <ul class="toc__chapters">
         {% for chapter in chapters %}
         <li class="toc__chapter{% if chapter.url == currentPage.url %} current{% endif %}">
-          <p class="toc__chapter-number">Chapter {{ loop.index }}</p>
+          <p class="toc__chapter-number">{% if chapter.data.part == "intro" or chapter.data.order == 0 %}Introduction{% else %}Chapter {{ chapter.data.order }}{% endif %}</p>
           <h3 class="toc__chapter-title"><a href="{{ chapter.url }}">{{ chapter.data.title }}</a></h3>
           <ul class="toc__sections">
             <!-- TODO: Add section navigation if needed -->

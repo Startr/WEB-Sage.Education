@@ -1,7 +1,7 @@
 ---
 title: Your first notebook
 description: Meet Python, run your very first line of code, and make a notebook that says hello.
-order: 2
+order: 1
 ---
 
 This is where you run code for the first time. If you've sorted your account access (that's the [Start here](/how-to-build-an-ai/start-here/) chapter), you have everything you need.

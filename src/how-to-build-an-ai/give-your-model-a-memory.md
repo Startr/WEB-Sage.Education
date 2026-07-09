@@ -4,10 +4,7 @@ description: Give your planning model a small knowledge base to look things up i
 order: 5
 ---
 
-<!-- WEEK 4 PREMIERE — premieres Mon Jul 13, 8 PM ET. Placeholder "coming soon" card below;
-     swap the whole <div class="premiere-frame"> for the live iframe embed once the film is up
-     (see any earlier chapter for the iframe shape). To change the card, bump "WEEK 4 · PREMIERE"
-     + the airtime. NOTE THIS SHOULD ACTUALLY BE AN EMBED FROM Another location so we don't have to repeat it on all potential pagpes that will use it. It could even take in varables to keep things clean and allow for other publication dates.-->
+<!-- Week 4 premiere card — placeholder until the film is up (premieres Mon Jul 13, 8 PM ET). Swap this whole block for the live embed then. -->
 <div class="premiere-frame" style="--maxw:820px; --m:2rem auto; --br:14px; --of:hidden; --shadow:14; --bg:linear-gradient(135deg, #2563EB, #5522FA); --p:4px;">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Premiere coming soon, Monday 8 PM ET">
     <defs>

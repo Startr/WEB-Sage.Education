@@ -6,9 +6,11 @@ order: 4
 
 Last week you trained your own AI model. This week you give it something to remember.
 
-<!-- WEEK 4 FILM — premieres Tuesday, July 14, 8:00 PM Montreal time. Placeholder card below until the premiere id exists; then replace the <svg>…</svg> with the standard <iframe src="https://www.youtube.com/embed/<ID>"> (keep the .premiere-frame div). -->
+<!-- WEEK 4 FILM — premieres Tuesday, July 14, 8:00 PM Montreal time. Placeholder card below until the premiere id exists; then replace the <svg>…</svg> with the standard 
+
+<iframe src="https://www.youtube.com/embed/Uxxgpt0n_Sc"> (keep the .premiere-frame div). -->
 <div class="premiere-frame" style="--maxw:820px; --m:2rem auto; --br:14px; --of:hidden; --shadow:14; --bg:linear-gradient(135deg, #2563EB, #5522FA); --p:4px;">
-  <svg viewBox="0 0 1600 900" role="img" aria-label="Week 4 film premieres Tuesday, July 14 at 8:00 PM Montreal time" xmlns="http://www.w3.org/2000/svg">
+  <!-- <svg viewBox="0 0 1600 900" role="img" aria-label="Week 4 film premieres Tuesday, July 14 at 8:00 PM Montreal time" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <linearGradient id="premgrad4" x1="0" y1="0" x2="1" y2="1">
         <stop offset="0" stop-color="#2563EB"/>
@@ -21,7 +23,7 @@ Last week you trained your own AI model. This week you give it something to reme
     <text x="800" y="522" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="44" letter-spacing="10" fill="#FFFFFF" fill-opacity="0.85">WEEK 4 · PREMIERE</text>
     <text x="800" y="612" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="74" font-weight="700" fill="#FFFFFF">Premieres Tuesday, July 14</text>
     <text x="800" y="694" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="50" fill="#FFFFFF" fill-opacity="0.92">8:00 PM Montreal time</text>
-  </svg>
+  </svg> -->
 </div>
 
 This week's film: your model gets a memory it can quote from, so its advice points at a real note instead of a guess. It pairs with the task below.

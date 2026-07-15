@@ -6,24 +6,12 @@ order: 4
 
 Last week you trained your own AI model. This week you give it something to remember.
 
-<!-- WEEK 4 FILM — premieres Tuesday, July 14, 8:00 PM Montreal time. Placeholder card below until the premiere id exists; then replace the <svg>…</svg> with the standard 
-
-<iframe src="https://www.youtube.com/embed/Uxxgpt0n_Sc"> (keep the .premiere-frame div). -->
+<!-- WEEK 4 FILM (premiered 2026-07-14). To change the film, swap the embed id (Uxxgpt0n_Sc) below. -->
 <div class="premiere-frame" style="--maxw:820px; --m:2rem auto; --br:14px; --of:hidden; --shadow:14; --bg:linear-gradient(135deg, #2563EB, #5522FA); --p:4px;">
-  <!-- <svg viewBox="0 0 1600 900" role="img" aria-label="Week 4 film premieres Tuesday, July 14 at 8:00 PM Montreal time" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <linearGradient id="premgrad4" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stop-color="#2563EB"/>
-        <stop offset="1" stop-color="#5522FA"/>
-      </linearGradient>
-    </defs>
-    <rect width="1600" height="900" fill="url(#premgrad4)"/>
-    <circle cx="800" cy="322" r="94" fill="#FFFFFF" fill-opacity="0.16"/>
-    <path d="M772 278 L840 322 L772 366 Z" fill="#FFFFFF"/>
-    <text x="800" y="522" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="44" letter-spacing="10" fill="#FFFFFF" fill-opacity="0.85">WEEK 4 · PREMIERE</text>
-    <text x="800" y="612" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="74" font-weight="700" fill="#FFFFFF">Premieres Tuesday, July 14</text>
-    <text x="800" y="694" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="50" fill="#FFFFFF" fill-opacity="0.92">8:00 PM Montreal time</text>
-  </svg> -->
+  <iframe src="https://www.youtube.com/embed/Uxxgpt0n_Sc"
+    title="How to Build an AI — Week 4 film" loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 This week's film: your model gets a memory it can quote from, so its advice points at a real note instead of a guess. It pairs with the task below.

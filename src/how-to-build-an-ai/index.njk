@@ -6,18 +6,14 @@ permalink: /how-to-build-an-ai/
 ---
 
 {# ── WEEKLY RITUAL ────────────────────────────────────────────────────────
-   Each TUESDAY (premiere day moved from Monday, 2026-07): (1) swap the featured
-   premiere below to the new week's embed id — or a placeholder card while the id
-   is pending, (2) add the new week's chapter as a .md file in this directory with
+   Each TUESDAY: (1) swap the featured premiere below to the new week's embed
+   id, (2) add the new week's chapter as a .md file in this directory with
    the next `order:` number. The TOC below builds itself from the chapter
-   collection — no edits needed there.
-   Currently a WEEK 4 placeholder card (premieres Tue Jul 14, 8:00 PM Montreal).
-   When the premiere id exists, replace the <svg>…</svg> below with the standard
-   <iframe src="https://www.youtube.com/embed/<ID>"> and keep this div. ── #}
+   collection — no edits needed there. To change the film, swap the embed id
+   (Uxxgpt0n_Sc) below. ── #}
 <div class="premiere-frame" style="--maxw:820px; --m:2rem auto; --br:14px; --of:hidden; --shadow:14; --bg:linear-gradient(135deg, #2563EB, #5522FA); --p:4px;">
-  <iframe src="https://www.youtube.com/embed/Uxxgpt0n_Sc"> (keep the .premiere-frame div). -->
-<div class="premiere-frame" style="--maxw:820px; --m:2rem auto; --br:14px; --of:hidden; --shadow:14; --bg:linear-gradient(135deg, #2563EB, #5522FA); --p:4px;">  <iframe src="https://www.youtube.com/embed/Uxxgpt0n_Sc"
-    title="How to Build an AI — Week 4" loading="lazy"
+  <iframe src="https://www.youtube.com/embed/Uxxgpt0n_Sc"
+    title="How to Build an AI — Week 4 film" loading="lazy"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
@@ -30,7 +26,7 @@ permalink: /how-to-build-an-ai/
   {%- for chapter in collections["how-to-build-an-ai"] %}
   <li class="chapter-item">
     <a class="chapter-link" href="{{ chapter.url }}">
-      <span class="chapter-number">Chapter {{ loop.index - 1| default("Introduction") }}</span>
+      <span class="chapter-number">{% if chapter.data.part == "intro" or chapter.data.order == 0 %}Introduction{% else %}Chapter {{ chapter.data.order }}{% endif %}</span>
       <span class="chapter-title">{{ chapter.data.title }}</span>
       {%- if chapter.data.description %}
       <span class="chapter-desc">{{ chapter.data.description }}</span>

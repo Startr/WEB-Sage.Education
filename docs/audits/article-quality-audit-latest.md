@@ -1,6 +1,6 @@
 # Article Quality Audit
 
-Generated: `2026-07-14T16:23:05+00:00`
+Generated: `2026-07-20T15:35:24+00:00`
 
 ## Summary
 

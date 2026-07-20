@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="This week's film is coming soon">
+  <defs>
+    <linearGradient id="vcs-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2563EB"/>
+      <stop offset="0.55" stop-color="#3b2fe8"/>
+      <stop offset="1" stop-color="#5522FA"/>
+    </linearGradient>
+    <radialGradient id="vcs-glow" cx="0.5" cy="0.4" r="0.62">
+      <stop offset="0" stop-color="#8b6bff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#5522FA" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#vcs-bg)"/>
+  <rect width="1280" height="720" fill="url(#vcs-glow)"/>
+  <circle cx="640" cy="292" r="82" fill="#ffffff" fill-opacity="0.15"/>
+  <circle cx="640" cy="292" r="82" fill="none" stroke="#ffffff" stroke-opacity="0.5" stroke-width="2"/>
+  <path d="M615 251 L615 333 L686 292 Z" fill="#ffffff"/>
+  <text x="640" y="470" text-anchor="middle" fill="#ffffff" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="76" font-weight="700" letter-spacing="-1.5">Coming soon</text>
+  <text x="640" y="520" text-anchor="middle" fill="#ffffff" fill-opacity="0.82" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="30" font-weight="500">This week&#8217;s film lands right here</text>
+  <text x="640" y="642" text-anchor="middle" fill="#ffffff" fill-opacity="0.72" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="600" letter-spacing="0.5">How to Build an AI &#183; Sage.Education&#8482;</text>
+</svg>

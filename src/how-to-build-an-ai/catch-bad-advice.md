@@ -8,15 +8,14 @@ Last week your model got a meter that flags anything out of place. A note that d
 
 Actually, no. And that's this week's whole point. Take this one: "Book every hour, skip lunch, push straight through." Your meter stays flat. Every word is ordinary. It reads perfectly fine, and it's still bad advice.
 
-<!-- WEEK 5 FILM — the film isn't published yet, so this shows a "coming soon" poster.
-     When the film is live: replace this whole block with the YouTube embed (copy the
-     premiere-frame <iframe> pattern from index.njk) and swap the featured premiere in
-     index.njk to match. -->
-<div class="premiere-frame" style="--maxw:820px; --m:2rem auto; --br:14px; --of:hidden; --shadow:14;">
-  <img src="/assets/images/general/video-coming-soon.svg" alt="This week's film is coming soon" loading="lazy" style="--w:100%; --d:block;">
+<div class="premiere-frame" style="--maxw:820px; --m:2rem auto; --br:14px; --of:hidden; --shadow:14; --bg:linear-gradient(135deg, #2563EB, #5522FA); --p:4px;">
+  <iframe src="https://www.youtube.com/embed/MMQYKeIHjLs"
+    title="How to Build an AI — Week 5 film" loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-When it drops, this week's film shows the filter in action: a plan that reads perfectly fine, and the one trap that makes it risky. Stick around to the end. That's where you see it get caught.
+This week's film shows the filter in action: a plan that reads perfectly fine, and the one trap that makes it risky. Stick around to the end. That's where you see it get caught.
 
 Here's the puzzle. That meter watches for **weirdness**. A sentence that doesn't fit gets flagged. But "skip lunch and push through" is a perfectly ordinary sentence. It reads fine. It's still bad planning advice.
 

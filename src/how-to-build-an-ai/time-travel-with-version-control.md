@@ -8,6 +8,15 @@ This is the second half of Week 5. Earlier this week you built a pitfall filter,
 
 No. There's a tool that saves a copy every time you want, right where things are, and lets you jump back to any of them. It's called **version control**, and the most popular one for code and text is **Git**. Think of it as time travel for your work. Every save is a point you can return to, and you can try a risky change on a side timeline without touching the version that already works.
 
+<div class="premiere-frame" style="--maxw:820px; --m:2rem auto; --br:14px; --of:hidden; --shadow:14; --bg:linear-gradient(135deg, #2563EB, #5522FA); --p:4px;">
+  <iframe src="https://www.youtube.com/embed/ZoAMHMXiPvw"
+    title="How to Build an AI — Time travel with version control" loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+Watch the walkthrough above, then try it yourself with the steps below.
+
 Four plain words carry the whole idea:
 
 - A **commit** is a save point, with a short label so future you knows what changed.

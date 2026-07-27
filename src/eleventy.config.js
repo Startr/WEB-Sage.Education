@@ -92,6 +92,38 @@ module.exports = async function(eleventyConfig) {
     }
   });
 
+  // Print the LAN URLs, not just localhost, when the dev server starts.
+  //
+  // The server already binds every interface — @11ty/eleventy-dev-server calls
+  // `server.listen({ port })` with no host, which in Node means 0.0.0.0/::. So
+  // sharing a dev build with the team has always worked; the banner just never
+  // said what URL to send them, because `showAllHosts` defaults to false and the
+  // startup line reads `http://localhost:8080/`. That reads exactly like
+  // "localhost only" and sends you looking for a bind setting that doesn't exist.
+  //
+  // NOTE: if a teammate still can't connect after this, it is not Eleventy and
+  // it is not the runtime. Measured on the dev Mac 2026-07-27: the socket binds
+  // dual-stack (`netstat -an -p tcp | grep LISTEN` shows `tcp46 *.8080`), and
+  // yet every IPv4 path fails while IPv6 loopback serves 200. It reproduces
+  // identically under node, under `bunx --bun`, and under a plain
+  // `python3 -m http.server --bind 0.0.0.0` — so it is machine-wide, not
+  // per-app and not per-runtime.
+  //
+  // The cause is the macOS Application Firewall with **stealth mode on**:
+  //   /usr/libexec/ApplicationFirewall/socketfilterfw --getglobalstate
+  //   /usr/libexec/ApplicationFirewall/socketfilterfw --getstealthmode
+  // Stealth mode *drops* inbound packets rather than refusing them, which is
+  // why 127.0.0.1 times out instead of erroring instantly — that timeout-vs-
+  // refused distinction is the fastest way to tell this apart from "nothing is
+  // listening". Changing it needs the admin account.
+  //
+  // Don't try to fix this in Eleventy config. There is no host/bind option that
+  // helps: eleventy-dev-server calls `server.listen({ port })` with no host, and
+  // the bind is already correct.
+  eleventyConfig.setServerOptions({
+    showAllHosts: true,
+  });
+
   // Environment setup
   const isDev = process.env.NODE_ENV !== 'production';
   // DRY helpers

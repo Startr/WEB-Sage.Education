@@ -211,7 +211,6 @@ figcaption {
 .wb {
     width: 100%;
     margin: 0 auto;
-    padding: 1.5em;
     display: grid;
     grid-template-areas: "header" "sidebar" "content" "footer";
     grid-template-columns: auto
@@ -286,6 +285,7 @@ figcaption {
 }
 
 .intro {
+    margin: 2rem;
     grid-area: sidebar
 }
 

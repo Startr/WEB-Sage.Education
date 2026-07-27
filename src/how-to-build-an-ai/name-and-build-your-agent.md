@@ -4,6 +4,8 @@ description: A model answers questions. An agent has a job, a name, and rules ab
 order: 7
 ---
 
+{% filmFrame "", "Name and build your agent" %}
+
 By now you've built a model, given it a memory, and taught it to catch bad advice. So the next
 step is a smarter brain, right?
 
@@ -15,8 +17,6 @@ about your life — your Thursday test, your Saturday shift, the fact that you d
 ten.
 
 Nothing was wrong with the brain. What was missing was a **job**.
-
-{% filmFrame "", "Name and build your agent" %}
 
 ## A model, and an agent
 

@@ -6,19 +6,20 @@ permalink: /how-to-build-an-ai/
 ---
 
 {# ── WEEKLY RITUAL ────────────────────────────────────────────────────────
-   Each TUESDAY: (1) swap the featured premiere below to the new week's embed
-   id, (2) add the new week's chapter as a .md file in this directory with
-   the next `order:` number. The TOC below builds itself from the chapter
-   collection — no edits needed there. To change the film, swap the embed id
-   (MMQYKeIHjLs) below. ── #}
-<div class="premiere-frame" style="--maxw:820px; --m:2rem auto; --br:14px; --of:hidden; --shadow:14; --bg:linear-gradient(135deg, #2563EB, #5522FA); --p:4px;">
-  <iframe src="https://www.youtube.com/embed/MMQYKeIHjLs"
-    title="How to Build an AI — Week 5 film" loading="lazy"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
+   Each TUESDAY: (1) point the featured film below at the new week's chapter,
+   (2) add that chapter as a .md file in this directory with the next `order:`
+   number. The TOC below builds itself from the chapter collection — no edits
+   needed there.
 
-<p>This week's film: some bad advice looks perfectly normal, so last week's meter reads right past it. Watch the filter catch it and hand it to a person. It pairs with the <a href="/how-to-build-an-ai/catch-bad-advice/">Catch bad advice</a> chapter below.</p>
+   The film goes through `filmFrame`, never a hand-written iframe. Pass the
+   YouTube id once it exists; pass "" until then and it renders a coming-soon
+   card instead of a dead grey box. That is what makes it safe to feature a
+   chapter the moment it is written, rather than waiting on the shoot — which
+   is exactly the case right now. Swap "" for the id when the film premieres,
+   and change nothing else. ── #}
+{% filmFrame "", "Name and build your agent" %}
+
+<p>This week's chapter: <a href="/how-to-build-an-ai/name-and-build-your-agent/">Name and build your agent</a>. A model answers questions; an agent has a job, a name, and rules about how it works with you. You write one short profile in plain English and the thing you built starts asking before it answers. <strong>The film is still being made</strong> — the written chapter is complete and stands on its own, so start there and the video will appear here when it's ready.</p>
 
 <p>Hi, and welcome. If you're curious how an AI actually gets built, and whether <em>you</em> could build one, this is a good place to start. This guide grows a chapter at a time, and you can read it at your own pace. You don't need any coding experience, and you don't need to finish all of it. Think of it as a gentle on-ramp, not a test.</p>
 

@@ -120,8 +120,17 @@ Editing the profile takes a few minutes. Talking to your agent is instant.
 
 ## Handing it in
 
-Your profile goes into **your own repository** — the one you made from our starter template — and you
-send us the link. That's the hand-in.
+Handing in this chapter's work is **three things**. None of them takes long, and you're done when all
+three have arrived:
+
+1. **The link.** Your profile goes into **your own repository** — the one you made from our starter
+   template — and you send us the link.
+2. **A short transcript.** A few lines of your agent actually helping you with something real. Not a
+   polished demo; the messy one is more useful to us.
+3. **Why you chose the name.** One sentence. These are genuinely our favourite replies to read.
+
+The file being committed is the first of the three, not the finish line. Two and three are where you
+tell us what happened, and they're the part we write back about.
 
 [Get your work from Colab into the project](/how-to-build-an-ai/git-from-colab/) walks you through
 both ways of getting the file there: all in your browser, or without leaving Colab. You only need one.

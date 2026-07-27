@@ -64,8 +64,11 @@ come back to this exact version any time.
 
 Click the file, and copy the URL out of the address bar. **That link is what you send us.**
 
-The file being saved isn't the hand-in. The link arriving is. Before you send it, do the check in
+The file being saved isn't what reaches us. The link arriving is. Before you send it, do the check in
 the next section — it takes ten seconds and it catches the one thing that goes wrong silently.
+
+The link is one of the three things the hand-in asks for; the other two don't involve Git at all. See
+[Name and build your agent](/how-to-build-an-ai/name-and-build-your-agent/).
 
 ## Route 2 — without leaving Colab
 
@@ -168,7 +171,10 @@ Both land in exactly the same place. Pick whichever sounds less scary — you're
 
 ## Optional — offering your work to the project
 
-Everything above puts your file in **your** repository, and that's the whole hand-in. You're done.
+Everything above gets your file into **your** repository and the link into our hands. That's the
+first of the three things the hand-in asks for — the other two are the short transcript and the line
+about why you chose the name, both listed in [Name and build your
+agent](/how-to-build-an-ai/name-and-build-your-agent/). No more Git needed for either.
 
 If you'd also like your work to go into *our* project, that's a different move called a **pull
 request**, and it needs one extra thing: a line called a **sign-off**.

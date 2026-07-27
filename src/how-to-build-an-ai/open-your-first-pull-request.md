@@ -11,10 +11,13 @@ contributor.
 This is **optional**. Your certificate doesn't depend on it. But if you'd like to try, here's every
 step, and you don't have to do it alone — tell us you're going for it and we'll pair up with you.
 
-**This isn't how you hand your work in.** Handing in means committing your file to your own
-repository and sending us the link, which is covered in [Get your work from Colab into the
-project](/how-to-build-an-ai/git-from-colab/). A pull request is a step past that — offering your work
-to the shared project — and it needs one extra thing, the sign-off, which is explained below.
+**This isn't how you hand your work in.** Handing in is three things — the link to your own
+repository, a short transcript, and why you chose the name — all listed in [Name and build your
+agent](/how-to-build-an-ai/name-and-build-your-agent/), with the file-moving part
+covered in [Get your work from Colab into the
+project](/how-to-build-an-ai/git-from-colab/). A pull request is a step past all of that — offering
+your work to the shared project — and it needs one extra thing, the sign-off, which is explained
+below.
 
 You already know most of this. In [Time travel with version
 control](/how-to-build-an-ai/time-travel-with-version-control/) you made save points, looked back

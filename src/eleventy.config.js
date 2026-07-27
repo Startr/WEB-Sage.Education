@@ -50,24 +50,45 @@ module.exports = async function(eleventyConfig) {
     const fs = require("fs");
     const distDir = path.resolve(__dirname, dir.output || "../dist");
     if (!fs.existsSync(distDir)) return;
-    const walk = (d, hits) => {
+    // Second check, same walk: a raw PLACEHOLDER token that reached a built page.
+    // This is a lint, not a gate. Publishing a chapter before its film is shot is
+    // normal and good, and the `filmFrame` shortcode makes it safe — it renders a
+    // coming-soon card for any non-id. A raw token surviving to HTML therefore means
+    // someone hand-wrote an iframe instead of using the shortcode, which is worth
+    // saying out loud but must never block a build.
+    const PLACEHOLDER_RE = /PLACEHOLDER[A-Z0-9_]*/;
+    const walk = (d, hits, placeholders) => {
       for (const entry of fs.readdirSync(d, { withFileTypes: true })) {
         const full = path.join(d, entry.name);
-        if (entry.isDirectory()) walk(full, hits);
+        if (entry.isDirectory()) walk(full, hits, placeholders);
         else if (entry.isFile() && entry.name.endsWith(".html")) {
           const text = fs.readFileSync(full, "utf8");
           if (text.includes('"/posts/blog/') || text.includes("'/posts/blog/")) {
             hits.push(full);
           }
+          const m = text.match(PLACEHOLDER_RE);
+          if (m) placeholders.push([full, m[0]]);
         }
       }
     };
     const hits = [];
-    walk(distDir, hits);
+    const placeholders = [];
+    walk(distDir, hits, placeholders);
     if (hits.length) {
       console.warn(`[poka-yoke] /posts/blog/ URL shape found in ${hits.length} built HTML file(s) — likely a regression from the /resources/ migration. Files:`);
       for (const f of hits) console.warn(`  ${path.relative(distDir, f)}`);
       console.warn("[poka-yoke] Fix at source: rewrite the link to /resources/SLUG/. The _redirects file will still catch external traffic, but in-tree links should not need a 301 hop.");
+    }
+    if (placeholders.length) {
+      // Informational only. Since filmFrame renders a coming-soon card for any
+      // non-id, a placeholder no longer produces a dead embed — so this must not
+      // block a build. It used to throw in production, which stopped us publishing
+      // a finished chapter just because its film wasn't shot yet. Exactly backwards.
+      console.warn(`[poka-yoke] ${placeholders.length} built page(s) still contain a raw PLACEHOLDER token:`);
+      for (const [f, token] of placeholders) {
+        console.warn(`  ${path.relative(distDir, f)} — ${token}`);
+      }
+      console.warn("[poka-yoke] Not a blocker. But prefer {% filmFrame \"\", \"Title\" %} over a hand-written iframe — it renders a coming-soon card instead of a raw token.");
     }
   });
 
@@ -330,6 +351,71 @@ module.exports = async function(eleventyConfig) {
     const baseStyle = "--maxw:40ch; --d:block; --m:auto;";
     const merged = style ? `${baseStyle} ${style}` : baseStyle;
     return `<img src="${src}" alt="${alt}" loading="lazy" style="${merged}">`;
+  });
+
+  // filmFrame — a chapter's video slot, which renders whether or not the film exists.
+  //
+  // POKA-YOKE by construction: a chapter is often written and published before its
+  // film is shot. Hand-writing the iframe meant a not-yet-recorded chapter shipped a
+  // dead embed (a blank grey box that looks broken), so the only safe options were
+  // "hold the chapter back" or "ship something broken". Neither is good: the written
+  // chapter is useful on its own.
+  //
+  // So the id is validated. A real YouTube id is 11 chars of [A-Za-z0-9_-]; anything
+  // else — empty, TBD, PLACEHOLDER, or a typo — renders an on-brand "film coming
+  // soon" card instead. There is no input that produces a dead iframe, which is why
+  // this replaced a build-time gate: the invalid state is unrepresentable rather than
+  // merely blocked.
+  //
+  // Usage in a chapter:
+  //   {% filmFrame "MMQYKeIHjLs", "Catch bad advice" %}
+  //   {% filmFrame "", "Name and build your agent" %}   → coming-soon card
+  const YT_ID = /^[A-Za-z0-9_-]{11}$/;
+  eleventyConfig.addShortcode("filmFrame", function(embedId = "", title = "") {
+    const frameStyle =
+      "--maxw:820px; --m:2rem auto; --br:14px; --of:hidden; --shadow:14; " +
+      "--bg:linear-gradient(135deg, #2563EB, #5522FA); --p:4px;";
+    const safeTitle = String(title).replace(/[<>&"]/g, (c) =>
+      ({ "<": "&lt;", ">": "&gt;", "&": "&amp;", '"': "&quot;" })[c],
+    );
+
+    if (YT_ID.test(String(embedId).trim())) {
+      return `<div class="premiere-frame" style="${frameStyle}">
+  <iframe src="https://www.youtube.com/embed/${embedId.trim()}"
+    title="How to Build an AI — ${safeTitle}" loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>`;
+    }
+
+    // Coming-soon card. Inline SVG: no external request, nothing to 404, and it
+    // inherits the 16:9 sizing that web-book.css already gives .premiere-frame svg.
+    const label = safeTitle
+      ? `Film coming soon: ${safeTitle}`
+      : "Film coming soon";
+    return `<div class="premiere-frame" style="${frameStyle}">
+  <svg viewBox="0 0 1600 900" role="img" aria-label="${label}. The written chapter below covers everything in it.">
+    <defs>
+      <linearGradient id="ff-bg" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#2563EB"/>
+        <stop offset="0.55" stop-color="#3b2fe8"/>
+        <stop offset="1" stop-color="#5522FA"/>
+      </linearGradient>
+      <radialGradient id="ff-glow" cx="0.5" cy="0.38" r="0.55">
+        <stop offset="0" stop-color="#ffffff" stop-opacity="0.18"/>
+        <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <rect width="1600" height="900" fill="url(#ff-bg)"/>
+    <rect width="1600" height="900" fill="url(#ff-glow)"/>
+    <circle cx="1330" cy="180" r="240" fill="none" stroke="#ffffff" stroke-opacity="0.10" stroke-width="2"/>
+    <circle cx="250" cy="780" r="300" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="2"/>
+    <circle cx="800" cy="392" r="86" fill="#ffffff" fill-opacity="0.14"/>
+    <path d="M772 350 l58 42 -58 42 z" fill="#ffffff" fill-opacity="0.75"/>
+    <text x="800" y="560" text-anchor="middle" font-family="Poppins, sans-serif" font-size="30" font-weight="600" letter-spacing="6" fill="#ffffff" fill-opacity="0.85">FILM COMING SOON</text>
+    <text x="800" y="632" text-anchor="middle" font-family="Poppins, sans-serif" font-size="36" font-weight="400" fill="#ffffff" fill-opacity="0.9">Everything it covers is written below.</text>
+  </svg>
+</div>`;
   });
 
 

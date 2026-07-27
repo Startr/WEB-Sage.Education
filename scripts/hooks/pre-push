@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+# pre-push — run what Cloudflare runs, before Cloudflare runs it.
+#
+# Why: every push to master is a production deploy, so a push that fails its gates
+# burns a Cloudflare build to tell us something we could have known in three seconds.
+#
+# It runs the single command `bun run build`, deliberately — not a hand-assembled
+# list of the same checks. `build` fires the `prebuild` lifecycle script first
+# (verify-shared, check-yaml, check-frontmatter, verify:authors) and then the real
+# production build, which is exactly the sequence CI performs.
+#
+# An earlier version of this hook did assemble its own list, and invoked eleventy as
+# `bunx @11ty/eleventy --input=src` from the repo root. That looked equivalent and
+# was not: package.json runs `cd src && …`, so `process.cwd()` differs, and
+# src/_data/glossary.js resolves its content directory from cwd. The hook failed on a
+# clean tree. Any hook that reimplements the build will drift from it — so don't.
+#
+# SKIP_ARTICLE_AUDIT=1 is the one deviation: the audit rewrites
+# docs/audits/article-quality-audit-latest.md with a fresh timestamp, which would
+# dirty the working tree on every push. CI still runs it.
+#
+# Install:  make install_hooks    (copies this into .git/hooks/ — the house pattern)
+#           Re-run it after editing this file; the copy is a snapshot, not a link.
+# Remove:   make uninstall_hooks
+# Bypass:   git push --no-verify   — fine for a WIP branch, never for master.
+set -uo pipefail
+
+cd "$(git rev-parse --show-toplevel)"
+
+branch=$(git rev-parse --abbrev-ref HEAD)
+echo "[pre-push] running 'bun run build' (prebuild gates + production build) on '$branch'"
+
+if out=$(SKIP_ARTICLE_AUDIT=1 bun run build 2>&1); then
+  echo "[pre-push] ✅ build green — pushing."
+  # Surface non-fatal build lints even on success; they are easy to miss in CI logs.
+  printf '%s\n' "$out" | grep -E '^\[poka-yoke\]' | sed 's/^/  /' || true
+  exit 0
+fi
+
+echo ""
+printf '%s\n' "$out" | tail -25 | sed 's/^/  /'
+echo ""
+if [ "$branch" = "master" ]; then
+  echo "✋ Refusing to push to master — Cloudflare would fail this build too."
+  echo "   Fix the above, or 'git push --no-verify' if you know what you're doing."
+  exit 1
+fi
+echo "⚠️  Build failed, but '$branch' is not master — allowing the push."
+echo "   Fix it before this reaches master."
+exit 0

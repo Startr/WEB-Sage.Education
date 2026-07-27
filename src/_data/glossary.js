@@ -52,10 +52,18 @@ function firstLetter(term) {
 
 module.exports = function () {
   const cwd = process.cwd();
-  const dir = path.join(cwd, "resources/en");
-  const files = fs.readdirSync(dir)
-    .filter(f => f.endsWith(".md"))
-    .map(f => path.join("resources/en", f));
+  // Resolved with readdirSync rather than fs.globSync: globSync is not available
+  // on Cloudflare Pages' build Node, where it silently yields no files and the
+  // glossary comes out empty. config.glob is always a simple "<dir>/*.<ext>"
+  // pattern ("resources/*.md" here, "resources/en/*.md" in WEB-Sage.Education),
+  // so reading the one directory is equivalent — and keeps this file shareable
+  // between the two repos via .shared-files.
+  const dir = path.dirname(config.glob);
+  const ext = path.extname(config.glob);
+  const files = fs
+    .readdirSync(path.join(cwd, dir))
+    .filter((f) => f.endsWith(ext))
+    .map((f) => path.join(dir, f));
   const entries = new Map();
 
   for (const rel of files) {

@@ -105,7 +105,11 @@ the thing that stops your agent doing your thinking for you.
 
 ## Your turn
 
-1. Open the agent notebook and run the first few cells to wake your model up.
+[▶ Open the Week-6 agent notebook in Colab](https://colab.research.google.com/drive/1pE2S8v5LD9zqhvASGEhB_XIxd_Arz6TI?usp=sharing)
+
+*Still have the [full summer notebook](https://colab.research.google.com/drive/14FK9IpWdEFuxsh9MPg7-I4pAPBWjwelQ?usp=sharing) open from earlier weeks? **Use that one instead.** The model you fine-tuned is still in memory there, so your agent runs on your own model with nothing to download and nothing to publish.*
+
+1. Run the first few cells to wake your model up.
 2. Give your agent a **name** and a personality that sounds like you.
 3. Keep the coach rule at the top of `priorities`.
 4. Run it, and ask it to help you plan something **real** that's actually on your plate.

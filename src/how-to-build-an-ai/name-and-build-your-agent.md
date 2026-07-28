@@ -4,7 +4,7 @@ description: A model answers questions. An agent has a job, a name, and rules ab
 order: 7
 ---
 
-{% filmFrame "", "Name and build your agent" %}
+{% filmFrame "NzJyFi82I0o", "Name and build your agent" %}
 
 By now you've built a model, given it a memory, and taught it to catch bad advice. So the next
 step is a smarter brain, right?

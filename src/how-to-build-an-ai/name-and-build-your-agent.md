@@ -27,11 +27,9 @@ you.
 
 Same brain. Completely different help.
 
-Think about the difference between someone who's very clever and someone who's very clever *and*
-knows they're your planning coach. The second one asks what your week looks like before suggesting
-anything. Not because they're smarter — because they understand the role they're in.
+Think about the difference between someone who's very clever and someone who's very clever *and* knows they're your planning coach. The second one asks what your week looks like before suggesting anything. Not because they're smarter — because they understand the role they're in.
 
-Nobody had ever told that useless-plan assistant what its role was, what to care about, or how you
+Nobody had ever told that useless-plan assistant what its role was, what to care about, or how you 
 like to be helped. So it guessed. And a confident guess looks exactly like a finished plan.
 
 ## It's one file, and it's plain writing

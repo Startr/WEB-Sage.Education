@@ -12,7 +12,7 @@ That's this chapter. There are two ways to do it, and **you only need one**. The
 terminal and no password, and it works on a Chromebook or a phone. The second never leaves Colab.
 **Start with the first one.** You can always come back for the second.
 
-{% filmFrame "", "Get your work from Colab into the project" %}
+{% filmFrame "_pkAdMvAV8w", "Get your work from Colab into the project" %}
 
 ## Before you start
 
@@ -72,8 +72,7 @@ The link is one of the three things the hand-in asks for; the other two don't in
 
 ## Route 2 — without leaving Colab
 
-Your file is already in Colab, so you can do all of this in a cell instead. Nothing here is required;
-Route 1 gets your work in perfectly well.
+**This one isn't in the film — it's written out here instead.** Your file is already in Colab, so you can do all of this in a cell rather than downloading anything. Nothing here is required; Route 1 gets your work in perfectly well.
 
 ### First, your token
 

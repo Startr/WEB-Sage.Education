@@ -84,6 +84,10 @@ In order, most important first. This is where behaviour lives. Keep the coach ru
 
 ## Your turn
 
+Watch it done first if you'd rather, then do it yourself:
+
+{% filmFrame "_pkAdMvAV8w", "A blank file becomes a working agent" %}
+
 [▶ Open the agent notebook in Colab](https://colab.research.google.com/drive/1pE2S8v5LD9zqhvASGEhB_XIxd_Arz6TI?usp=sharing)
 
 *Still have the [full summer notebook](https://colab.research.google.com/drive/14FK9IpWdEFuxsh9MPg7-I4pAPBWjwelQ?usp=sharing) open from the earlier chapters? Use that one instead. The model you fine-tuned is still in memory there, so your agent runs on your own model with nothing to download and nothing to publish.*

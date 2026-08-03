@@ -159,7 +159,7 @@ Plan: [yes-fix-both-and-fluffy-badger.md](https://claude.is/plans/yes-fix-both-a
 ### Live Classes — Exploration
 
 - [ ] **Event Detail Page Exploration**: Evaluate richer event detail pages linking to Startr.Space resources
-  - [ ] Compare options: inline ICS vs dedicated event page
+  - [x] Compare options: inline ICS vs dedicated event page
   - [ ] Prototype or outline event page structure including links + ICS access
   - [ ] Review implications of hosting on startr.space vs Sage.Education
   - [ ] Capture decision and next steps in documentation

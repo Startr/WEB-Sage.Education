@@ -4,11 +4,13 @@ description: Your agent feels better than what you started with. Finding out whe
 order: 10
 ---
 
-{% filmFrame "", "Prove it got better" %}
+{% filmFrame "Exl1xLbCJJc", "Prove it got better, and make a pull request" %}
 
-<!-- FILM SLOT — pass the YouTube id here when the film premieres, and rewrite the
-     "still being made" sentence directly below at the same time. That sentence makes
-     a claim about the film's absence, so it goes false the moment the id lands.
+<!-- FILM SLOT — id landed 2026-08-03: Exl1xLbCJJc, published live rather than premiered.
+     The film covers this chapter AND the pull request, so it also suits
+     open-your-first-pull-request.md, which has no film of its own.
+     If this slot ever changes again, check the prose around it in the same edit —
+     any sentence describing the film's presence or absence goes stale with the id.
      Swapping an embed is never only an embed swap. -->
 
 So far you've built an agent with a name, a job, and rules about how it works with you. It probably feels better than what you started with.

@@ -6,7 +6,7 @@ order: 10
 
 {% filmFrame "Exl1xLbCJJc", "Prove it got better, and make a pull request" %}
 
-<!-- FILM SLOT — id landed 2026-08-03: Exl1xLbCJJc, published live rather than premiered.
+<!-- FILM SLOT — id landed 2026-08-07: Exl1xLbCJJc, published live rather than premiered.
      The film covers this chapter AND the pull request, so it also suits
      open-your-first-pull-request.md, which has no film of its own.
      If this slot ever changes again, check the prose around it in the same edit —
@@ -103,7 +103,7 @@ On screen the notebook labels the two settings **filter off** and **filter on**.
 | --- | --- | --- |
 | Asked a question first | 4 out of 10 | 9 out of 10 |
 
-In this example four became nine, so the filter is doing great work. You can read that straight off the page, and you no longer have to take anyone's word for it, including your own.
+In this example four became nine, so the coaching instruction is doing great work. You can read that straight off the page, and you no longer have to take anyone's word for it, including your own.
 
 ## Then three sentences
 
@@ -115,7 +115,7 @@ The table is the easy part. The three sentences are the actual skill, and they'r
 
 Written out, that looks like this:
 
-> I turned my bad-advice filter **on** and changed nothing else. It went from asking a question first 4 times out of 10 to asking 9 times out of 10. I think the filter catches the "give me the finished plan" requests before my agent answers them, so it stops and asks instead.
+> I switched the coaching instruction **on** and changed nothing else. It went from asking a question first 4 times out of 10 to asking 9 times out of 10. I think telling it to ask one question first stops it reaching for a finished plan, so it checks with me instead.
 
 Three sentences. That third one is where you're doing science rather than just reporting.
 

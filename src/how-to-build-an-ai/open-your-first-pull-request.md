@@ -4,6 +4,16 @@ description: A pull request is how you offer your work to a shared project, and 
 order: 8
 ---
 
+{% filmFrame "Exl1xLbCJJc", "Open your first pull request", 306 %}
+
+<!-- FILM SLOT — this chapter has no film of its own, by decision. The walkthrough is
+     a section inside the Week 7 film (Exl1xLbCJJc), so the embed above starts at 306s
+     rather than at 0. Shooting a second video of the same material would be waste.
+     The `start` argument to filmFrame exists for this. If you change the timestamp,
+     change the "starts partway in" sentence below in the same edit. -->
+
+*This one starts partway into a longer film, right at the pull-request walkthrough. Everything before it is about testing whether your agent got better, so scrub back to the beginning if you want that part too.*
+
 A **pull request** is how you offer your work to a shared project. It's the polite version of "here's something I made, would you like it?" Getting one merged is what puts your name on the project as a contributor.
 
 This is **optional**. Your certificate doesn't depend on it. But if you'd like to try, here's every step, and you don't have to do it alone — tell us you're going for it and we'll pair up with you.

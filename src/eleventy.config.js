@@ -399,11 +399,27 @@ module.exports = async function(eleventyConfig) {
   // this replaced a build-time gate: the invalid state is unrepresentable rather than
   // merely blocked.
   //
+  // A third argument starts the film partway in, for a chapter whose subject is a
+  // SECTION of a longer film rather than a film of its own. That is the case for
+  // "Open your first pull request": the walkthrough is beat 6 of the Week 7 film, and
+  // shooting a second video of the same material would be waste. The alternative was
+  // a hand-written iframe on that one chapter, which skips the id validation above
+  // and the coming-soon card below — so the capability belongs here instead.
+  //
+  // Same principle as the id: an invalid start time cannot produce a broken URL. Only
+  // a positive integer is appended; anything else (empty, null, "soon", 3.5, negative)
+  // is ignored and the film simply plays from the beginning.
+  //
   // Usage in a chapter:
   //   {% filmFrame "MMQYKeIHjLs", "Catch bad advice" %}
-  //   {% filmFrame "", "Name and build your agent" %}   → coming-soon card
+  //   {% filmFrame "", "Name and build your agent" %}          → coming-soon card
+  //   {% filmFrame "Exl1xLbCJJc", "Open your first PR", 306 %} → starts at 5:06
+  //
+  // If you pass a start time, say so in the prose beside the embed. A reader dropped
+  // into the middle of a longer film needs to know that is deliberate, and that they
+  // can scrub back. The copy next to an embed always makes claims about the film.
   const YT_ID = /^[A-Za-z0-9_-]{11}$/;
-  eleventyConfig.addShortcode("filmFrame", function(embedId = "", title = "") {
+  eleventyConfig.addShortcode("filmFrame", function(embedId = "", title = "", startSeconds = null) {
     const frameStyle =
       "--maxw:820px; --m:2rem auto; --br:14px; --of:hidden; --shadow:14; " +
       "--bg:linear-gradient(135deg, #2563EB, #5522FA); --p:4px;";
@@ -411,9 +427,15 @@ module.exports = async function(eleventyConfig) {
       ({ "<": "&lt;", ">": "&gt;", "&": "&amp;", '"': "&quot;" })[c],
     );
 
+    // Only a positive integer survives. Number(null) and Number("") are both 0, so the
+    // default and an empty string both fall through to no parameter, as intended.
+    const start = Number(startSeconds);
+    const startParam =
+      Number.isInteger(start) && start > 0 ? `?start=${start}` : "";
+
     if (YT_ID.test(String(embedId).trim())) {
       return `<div class="premiere-frame" style="${frameStyle}">
-  <iframe src="https://www.youtube.com/embed/${embedId.trim()}"
+  <iframe src="https://www.youtube.com/embed/${embedId.trim()}${startParam}"
     title="How to Build an AI — ${safeTitle}" loading="lazy"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

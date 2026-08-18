@@ -132,7 +132,7 @@ Plan: [yes-fix-both-and-fluffy-badger.md](https://claude.is/plans/yes-fix-both-a
 ### TodoScope Alignment
 
 - [ ] **TodoScope Convention Sync**: Finish aligning this repo to TodoScope conventions
-  - [ ] Migrate any existing inline comment TODOs in source to `TODO:` / `FIXME:` / `BUG:` tags
+  - [ ] Migrate any existing inline comment TODOs in source to `TODO:` / `FIXME:` / `:` tags
   - [ ] Review `.todoscope-exclude.csv` — confirm excluded paths are accurate for this 11ty site
   - [ ] Run TodoScope scanner and verify kanban board columns match expectations
   - [ ] Adjust this file's section headers if any cards land in unexpected columns
@@ -247,6 +247,11 @@ Plan: [yes-fix-both-and-fluffy-badger.md](https://claude.is/plans/yes-fix-both-a
 ## Bugs
 
 _No known bugs tracked here. Use `# BUG:` inline tags in source to flag defects — they'll appear in this column automatically._
+
+- [ ] **Mobile Responsive Issues**: All pages should be optimized for mobile devices
+  - [ ] Sage logo squished and title text in nav cut-off in portrait mode
+  - [ ] Sign-in button doesn't work on the left side of the button in portait mode
+  - [ ] In landscape, in the hero the title gets cut-off
 
 ## Done
 

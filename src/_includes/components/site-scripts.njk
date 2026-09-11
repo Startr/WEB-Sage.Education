@@ -1,16 +1,16 @@
 
 
-    <script src="/assets/js/packages/cookie.js"></script>
+    <script src="/assets/js/packages/cookie.js" defer></script>
     <script src="/assets/js/application.js" type="module"></script>
     <script src="/assets/js/script.js" type="module"></script>
     {% if site.enableHyperscript %}
     <script src="https://unpkg.com/hyperscript.org@0.9.14" defer></script>
     {% endif %}
     <!-- WOW.js for scroll reveal animations (Animate.css v4) -->
-    <script src="/assets/js/packages/wow.min.js"></script>
+    <script src="/assets/js/packages/wow.min.js" defer></script>
     <script>
       // Respect prefers-reduced-motion; adjust animateClass for Animate.css v4
-      (function () {
+      document.addEventListener('DOMContentLoaded', function () {
         if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)
           return;
         try {
@@ -20,7 +20,7 @@
         } catch (e) {
           // NOOP if WOW isn't available
         }
-      })();
+      });
     </script>
 
     {% include "components/matomo.njk" %}

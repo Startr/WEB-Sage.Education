@@ -343,6 +343,146 @@ table {
     url(../fonts/MonaspaceRadon-Medium.woff) format("woff");
 }
 
+/* Self-hosted Playfair Display + Source Serif 4.
+   Previously loaded from fonts.googleapis.com, which exposed every visitor's IP
+   to Google. Files copied from WEB-Sage.is, which scrubbed Google Fonts on
+   2026-05-24. Upright faces only, matching sage.is: italics are synthesized by
+   the browser, exactly as they already are in production there. */
+
+@font-face {
+  font-display: swap;
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/source-serif-4-v14-latin-300.woff2) format("woff2"),
+    url(../fonts/source-serif-4-v14-latin-300.woff) format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/source-serif-4-v14-latin-regular.woff2) format("woff2"),
+    url(../fonts/source-serif-4-v14-latin-regular.woff) format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 600;
+  src: url(../fonts/source-serif-4-v14-latin-600.woff2) format("woff2"),
+    url(../fonts/source-serif-4-v14-latin-600.woff) format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/source-serif-4-v14-latin-700.woff2) format("woff2"),
+    url(../fonts/source-serif-4-v14-latin-700.woff) format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/playfair-display-v40-latin-regular.woff2) format("woff2"),
+    url(../fonts/playfair-display-v40-latin-regular.woff) format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/playfair-display-v40-latin-700.woff2) format("woff2"),
+    url(../fonts/playfair-display-v40-latin-700.woff) format("woff");
+}
+
+/* Self-hosted Cormorant + Poppins.
+   Previously pulled from fonts.googleapis.com by layouts/base/head.html, which
+   requested all 18 Poppins weights and leaked every visitor's IP to Google.
+   Only the weights actually used are shipped: Cormorant is the body face
+   (weight 500) and Poppins is used on .button and strong. */
+
+@font-face {
+  font-display: swap;
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/cormorant-v24-latin-regular.woff2) format("woff2"),
+    url(../fonts/cormorant-v24-latin-regular.woff) format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/cormorant-v24-latin-500.woff2) format("woff2"),
+    url(../fonts/cormorant-v24-latin-500.woff) format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 600;
+  src: url(../fonts/cormorant-v24-latin-600.woff2) format("woff2"),
+    url(../fonts/cormorant-v24-latin-600.woff) format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/cormorant-v24-latin-700.woff2) format("woff2"),
+    url(../fonts/cormorant-v24-latin-700.woff) format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/poppins-v24-latin-regular.woff2) format("woff2"),
+    url(../fonts/poppins-v24-latin-regular.woff) format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/poppins-v24-latin-500.woff2) format("woff2"),
+    url(../fonts/poppins-v24-latin-500.woff) format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url(../fonts/poppins-v24-latin-600.woff2) format("woff2"),
+    url(../fonts/poppins-v24-latin-600.woff) format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/poppins-v24-latin-700.woff2) format("woff2"),
+    url(../fonts/poppins-v24-latin-700.woff) format("woff");
+}
+
+
+
 html {
   background: var(--color-white);
   font-size: 16px;

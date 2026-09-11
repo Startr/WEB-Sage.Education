@@ -1,12 +1,11 @@
 
-    {% if site.googleFontsUrl %}
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="{{ site.googleFontsUrl }}">
-    {% endif %}
-    <link rel="stylesheet" href="/assets/css/animate.css" type="text/css">
+    <link rel="preconnect" href="https://startr.style" crossorigin>
+    <link rel="dns-prefetch" href="https://startr.style">
+    <!-- animate.css drives WOW scroll reveals only; load it off the critical path -->
+    <link rel="stylesheet" href="/assets/css/animate.css" type="text/css" media="print" onload="this.media='all';this.onload=null">
+    <noscript><link rel="stylesheet" href="/assets/css/animate.css" type="text/css"></noscript>
     <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
-    <link rel="stylesheet" href="https://startr.style/style.css" type="text/css">
+    <link rel="stylesheet" href="https://startr.style/style.min.css" type="text/css">
     {% if site.includeArticleCss %}
     <link rel="stylesheet" href="/assets/css/article.css" type="text/css">
     {% endif %}

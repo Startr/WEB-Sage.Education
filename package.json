@@ -23,7 +23,9 @@
     "build:noaudit": "cd src && SKIP_ARTICLE_AUDIT=1 NODE_ENV=production bunx @11ty/eleventy --output=../dist",
     "optimize": "bun run buildfresh:prod && echo 'Build optimized for production'",
     "install:bun": "bun install",
-    "clean": "rm -rf node_modules && rm -f bun.lock bun.lockb && bun install"
+    "clean": "rm -rf node_modules && rm -f bun.lock bun.lockb && bun install",
+    "minify:css": "node scripts/minify-css.mjs",
+    "postbuild": "bun run minify:css"
   },
   "keywords": [],
   "author": "",
@@ -35,6 +37,7 @@
     "@11ty/eleventy-plugin-bundle": "^1.0.4",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "esbuild": "^0.25.0",
     "luxon": "^3.3.0",
     "markdown-it-anchor": "^8.6.7"
   },

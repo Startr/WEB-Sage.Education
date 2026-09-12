@@ -33,6 +33,9 @@ Plan: [`~/.claude/plans/are-you-able-to-twinkly-pike.md`](~/.claude/plans/are-yo
 - [ ] **JSON-LD upgrade** in `src/_includes/base.njk`: same paywall structured-data treatment.
 - [ ] **Per-locale gate copy** deferred to Phase 2 — Phase 1 ships English component copy across all locales. Flag the constraint when translation contributors land on `/pt/`, `/de/`, `/fr/` pages.
 - [ ] **Daily-rebuild cron + heartbeat** (cross-cutting; coordinated with sage.is and pb.sage.is).
+- [ ] **Cross-site member hint** (2026-09-12): members of one site hit the gate on the other — both hosts share one `subscribers` collection, but membership lives in per-origin localStorage. The gate now says "Already a member of Sage.is or Sage.Education? Enter the same email to unlock."
+  - [x] `src/_data/member_network.yaml` is hardlinked from WEB-Sage.is (canonical) via `.shared-files`; the gate renders its hint whenever `existingMemberLink.href` is empty.
+  - [ ] Verify: both builds render the hint; `make verify-shared` passes here; deploy both sites.
 
 ### Critical Infrastructure & Security
 

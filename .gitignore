@@ -13,6 +13,8 @@
 !/.stignore
 !/.todoscope-exclude.csv
 !.eleventyignore
+# Hardlink manifest shared with WEB-Sage.is (make sync-shared / verify-shared)
+!/.shared-files
 
 # Obsidian workspace state is per-machine UI state (open panes, recent files).
 # Tracking it churns every commit — matches the rule already in WEB-Sage.is.

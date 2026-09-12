@@ -1,0 +1,18 @@
+# Shared membership network for the signup gate.
+#
+# HARDLINKED into ../WEB-Sage.Education (listed in .shared-files). Edit in
+# place only (`cat > file < tmp`); Edit/Write tools and BSD `sed -i` sever
+# the link. Commit the change in BOTH repos — each deploys its own copy.
+#
+# Every brand listed here must post its gate to the same PocketBase
+# `subscribers` collection. Verified 2026-09-11: the same email returns the
+# same record id via pb.sage.is and pb.sage.education. Membership itself is
+# per-origin localStorage, so a member of one site unlocks another by
+# entering the same email — this hint tells them so.
+
+brands:
+  - Sage.is
+  - Sage.Education
+
+# `{brands}` is replaced with the list above, joined with " or ".
+hint: "Already a member of {brands}? Enter the same email to unlock."

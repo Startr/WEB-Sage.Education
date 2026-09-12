@@ -276,6 +276,13 @@
     <a href="{{ g.existingMemberLink.href }}"
        style="--c: var(--c-ink); --td: underline;">{{ g.copy.existingMemberLinkLabel }}</a>
   </p>
+  {%- else %}
+  {#- Shared member list, no sign-in route yet: re-entering the email unlocks.
+      Data is hardlinked from _data/member_network.yaml; unguarded on purpose
+      so a missing file fails the build instead of dropping the hint. #}
+  <p class="signup-gate__member-hint" style="--size: 0.85rem; --m: 0.75rem 0 0; --c: var(--c-muted);">
+    {{ member_network.hint | replace("{brands}", member_network.brands | join(" or ")) }}
+  </p>
   {%- endif %}
 
   <p style="--size: 0.75rem; --lh: 1.4; --m: 1.25rem 0 0; --c: var(--c-fade);">{{ g.copy.fineprint }}</p>

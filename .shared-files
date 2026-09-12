@@ -1,0 +1,27 @@
+# Files hardlinked between WEB-Sage.is (canonical) and WEB-Sage.Education.
+# Paths are relative to the repo root.
+# `make sync-shared` re-establishes hardlinks. `make verify-shared` fails on inode drift.
+# Lines starting with # and blank lines are ignored.
+
+# Glossary feature
+src/_data/glossary.js
+src/resources/glossary/index.njk
+src/assets/js/controllers/footnote_preview_controller.js
+src/assets/css/glossary.css
+
+# Reused vendor + controllers (byte-identical between the two sites)
+src/assets/js/controllers/glossary_controller.js
+src/assets/js/packages/popper.js
+src/assets/js/packages/stimulus.js
+
+# Shared template macros
+src/_includes/components/filter-search.njk
+
+# Build-time gates
+scripts/check-yaml.mjs
+
+# Signup gate — shared member network (brands + cross-site hint)
+src/_data/member_network.yaml
+
+# The manifest itself — so adding a new shared file is a single edit
+.shared-files

@@ -21,10 +21,14 @@ unlockEndpoint: "https://pb.sage.education/api/sage/gate-unlock"
 # not payments or auth state. See plan §"Vendor-agnostic CORS escape".
 storageKey: sage_gate_member
 
-defaultThresholdDays: 60
+# Free window: 180 days since 2026-09-15 (was 60) so recent writing stays
+# open longer. Keep default, blog, and the /resources/ entries in step — for
+# /resources/ URLs the section entry wins, so changing only the default does
+# nothing.
+defaultThresholdDays: 180
 
 thresholdsByContentType:
-  blog: 60
+  blog: 180
   case-study: 90
   pdf: 0
   newsletter: never
@@ -35,7 +39,7 @@ thresholdsByContentType:
 #
 # Current Sage.Education routing renders ALL article URLs as
 # `/resources/<slug>/` with no locale prefix (the EN file wins; pt/de/fr
-# get deduped to the same slug). So `/resources/: 60` is what actually
+# get deduped to the same slug). So `/resources/: 180` is what actually
 # fires today and gates every published article uniformly.
 #
 # The per-locale entries below are RESERVED for when i18n routing matures
@@ -43,8 +47,8 @@ thresholdsByContentType:
 # They're dormant but harmless — left in place so the per-locale gating
 # switch flips on automatically the moment URLs include the locale.
 thresholdsBySection:
-  /resources/: 60          # ← current canonical entry (active today)
-  /en/resources/: 60       # dormant until URL routing changes
+  /resources/: 180         # ← current canonical entry (active today)
+  /en/resources/: 180      # dormant until URL routing changes
   /pt/resources/: never    # dormant; "never" while translation is in flight
   /de/resources/: never    # dormant
   /fr/resources/: never    # dormant

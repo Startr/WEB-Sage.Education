@@ -36,6 +36,9 @@ Plan: [`~/.claude/plans/are-you-able-to-twinkly-pike.md`](~/.claude/plans/are-yo
 - [ ] **Cross-site member hint** (2026-09-12): members of one site hit the gate on the other — both hosts share one `subscribers` collection, but membership lives in per-origin localStorage. The gate now says "Already a member of Sage.is or Sage.Education? Enter the same email to unlock."
   - [x] `src/_data/member_network.yaml` is hardlinked from WEB-Sage.is (canonical) via `.shared-files`; the gate renders its hint whenever `existingMemberLink.href` is empty.
   - [ ] Verify: both builds render the hint; `make verify-shared` passes here; deploy both sites.
+- [ ] **Free window 60 → 180 days** (2026-09-15, both sites) — keeps recent writing open longer. Measured in built `dist/`: 28 of 52 published URLs gated (115 source files incl. pt/de/fr collapse to 52 URLs).
+  - [ ] `src/_data/signup_gate.yaml`: `defaultThresholdDays`, `thresholdsByContentType.blog`, `thresholdsBySection./resources/` + dormant `/en/resources/` → 180.
+  - [ ] Takes effect on the next build only — no daily-rebuild cron yet, so articles cross day 180 on the next push.
 
 ### Critical Infrastructure & Security
 
@@ -141,6 +144,10 @@ Plan: [yes-fix-both-and-fluffy-badger.md](https://claude.is/plans/yes-fix-both-a
   - [ ] Adjust this file's section headers if any cards land in unexpected columns
 
 ## Backlog
+
+### Signup Gate — Never Gate Search Engines
+
+- [ ] **Serve full article text to search crawlers** (filed 2026-09-15). Tracked in WEB-Sage.is `TODO.md` → Backlog → *Signup Gate — Never Gate Search Engines*; the same gate ships on both sites, so decide and fix once.
 
 ### Infrastructure & Sovereignty
 

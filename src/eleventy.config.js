@@ -261,6 +261,9 @@ module.exports = async function(eleventyConfig) {
     // "How to Build an AI" — the summer-program guide book, mounted at its
     // original URL (/how-to-build-an-ai/) rather than under /books/.
     { name: "how-to-build-an-ai", glob: "how-to-build-an-ai/*.md" },
+    // Professional-learning modules live under /modules/<slug>/ and reuse the
+    // book chapter/index templates wholesale.
+    { name: "healthy-ai-policy", glob: "modules/healthy-ai-policy/*.md" },
   ];
 
   for (const book of books) {
@@ -288,6 +291,7 @@ module.exports = async function(eleventyConfig) {
       "books/*/index.njk",
       "features/workspace/index.njk",
       "how-to-build-an-ai/index.njk",
+      "modules/*/index.md",
     ]);
   });
 

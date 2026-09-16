@@ -223,7 +223,13 @@
      <path xmlns="http://www.w3.org/2000/svg" d="M394.033.25h76.67L303.202 191.693l197.052 260.511h-154.29L225.118 294.205 86.844 452.204H10.127l179.16-204.77L.254.25H158.46l109.234 144.417zm-26.908 406.063h42.483L135.377 43.73h-45.59z" fill="#000"/> 
     </svg></template>
 
-  {{ content | safe }}
+  {# `gated-content` is what signup-gate.njk's script trims when a page sets
+     `gated: true`. On every other page the gate <aside> ships display:none and
+     its script returns early, so this include is inert. #}
+  <div class="gated-content">
+    {{ content | safe }}
+  </div>
+  {% include "signup-gate.njk" %}
 
   {# Include backlinks if available #}
   {% include "partials/backlinks.njk" %}

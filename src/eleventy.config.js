@@ -531,7 +531,12 @@ module.exports = async function(eleventyConfig) {
   eleventyConfig.addCollection("booksBySlug", function(collectionApi) {
     const grouped = {};
     const all = collectionApi
-      .getFilteredByGlob(["books/**/*.md", "how-to-build-an-ai/*.md"])
+      // Every mount that uses the book templates must be listed here, not just
+      // under `books/` — this collection is what book-base.njk reads to build
+      // the sidebar table of contents. A book missing from this glob still
+      // gets prev/next (chapter.njk falls back to collections[slug]) but
+      // renders no menu at all, which looks like a broken page.
+      .getFilteredByGlob(["books/**/*.md", "how-to-build-an-ai/*.md", "modules/*/*.md"])
       .filter(isChapterItem)
       .sort(sortByOrder);
     for (const item of all) {
